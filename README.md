@@ -14,7 +14,6 @@ This research notebook explores questions in number theory, graph theory and add
 | [P002](problems/graph-theory/P002-prime-matching-reconfiguration.md) | Graph reconfiguration | Are prime-sum perfect matchings connected by four-vertex switches? | Candidate; novelty unverified |
 | [P003](problems/graph-theory/P003-prime-matching-packing.md) | Extremal graph theory | Does the prime-sum graph have as many edge-disjoint perfect matchings as its minimum degree? | Candidate; novelty unverified |
 | [P004](problems/number-theory/P004-sidon-exchange-connectivity.md) | Additive combinatorics | Are Sidon sets connected by single-element exchanges below the square-root scale? | Candidate; novelty unverified |
-
 | [P005](problems/graph-theory/P005-coprime-permutation-switches.md) | Arithmetic graph reconfiguration | Are coprime permutations connected under validity-preserving value swaps? | Candidate; novelty unverified |
 | [P006](problems/number-theory/P006-prime-avoiding-sidon-sets.md) | Additive number theory | What is the maximum size of a Sidon set with no prime differences? | Candidate; novelty unverified |
 
