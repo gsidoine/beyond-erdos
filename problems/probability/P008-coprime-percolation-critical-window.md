@@ -166,11 +166,11 @@ This completes the proof. \(\square\)
 
 The implicit function \(b_n\) is **exactly computable** from the degrees but not expressed by a simple asymptotic formula beyond leading order.
 
-**Problem P008.** Determine an explicit, number-theoretic formula \(B(n)\), ideally as an asymptotic expansion in ordinary and iterated logarithms, satisfying
+**Problem P008 (asymptotic-evaluation task; admissible expansion class still to be specified precisely).** Determine an explicit, number-theoretic formula \(B(n)\), ideally as an asymptotic expansion in ordinary and iterated logarithms, satisfying
 \[
 \boxed{b_n-B(n)=o\left(\frac{\log\log n}{n}\right).}
 \]
-Such a formula would locate the **entire Gumbel transition** without first enumerating the coprime graph's degree profile and numerically solving \(\mu_n(b_n)=1\).
+Here **explicit** must mean a non-tautological expression in standard arithmetic functions and/or finitely many ordinary and iterated logarithms with universal coefficients, **not** another name for the unique root of the same degree-sum equation. A fully formal conjecture should first fix the allowable family of expansions. Such a formula would locate the **entire Gumbel transition** without first enumerating the coprime graph's degree profile and numerically solving \(\mu_n(b_n)=1\).
 
 Is a finite deterministic expansion of this accuracy possible, or are secondary arithmetic oscillations on the scale of the window unavoidable?
 
@@ -198,5 +198,14 @@ python experiments/coprime_window.py --n 3000 --trials 40 --seed 90215
 - Xiang Qi, *Random Meta-Structure: A Random Graph Model Based on Abstract Binary Relations* (2026 preprint), DOI [10.5281/zenodo.21737868](https://doi.org/10.5281/zenodo.21737868), explicitly considers independent thinning of the coprime graph as an example. Its threshold estimate concerns a heuristic *giant component*, not the Gumbel connectivity law stated here.
 - [Bollobás–Borgs–Chayes–Riordan, *Percolation on dense graph sequences* (2010)](https://doi.org/10.1214/09-AOP478) develops general dense-host percolation theory.
 - [Erdős–Sárközy, *On cycles in the coprime graph of integers*](https://doi.org/10.37236/1323) is part of the host graph's classical literature.
+
+**Essential general prior art uncovered on 2026-10-28:**
+
+- Gupta, Lee and Li, *The Connectivity Threshold for Dense Graphs* (SODA 2021), [SIAM proceedings](https://epubs.siam.org/doi/book/10.1137/1.9781611976465), study the **same general operation**—independent edge retention on a fixed deterministic host graph—and develop sharp connectivity thresholds based on approximate mincuts. The extent to which their theorem subsumes the arithmetic leading threshold is not yet assessed.
+- Penrose, *Inhomogeneous random graphs, isolated vertices, and Poisson approximation* (2018), [DOI 10.1017/jpr.2018.9](https://doi.org/10.1017/jpr.2018.9), studies Poisson isolates in broader nonuniform random graph settings.
+- Hladký and Viswanathan, *Connectivity of Inhomogeneous Random Graphs II* (2026), [DOI 10.1002/rsa.70098](https://doi.org/10.1002/rsa.70098), study connectivity and low-degree profiles for graphon-sampled random graphs. This is not automatically the same as our deterministic \([n]\) host.
+- Martineau, *On coprime percolation, the visibility graphon, and the local limit of the GCD profile* (2022), [DOI 10.1214/21-ECP381](https://doi.org/10.1214/21-ECP381), deals with gcd-defined lattice colorings/visibility structures; despite the title, it does **not** define our independent-edge percolation question.
+
+See [the complete eight-problem literature audit](../../literature-audits/2026-10-28-comprehensive-P001-P008.md).
 
 **Scholarly caveat:** This proof and its critical-window conclusion are novel *to this exploratory session*, **not yet certified novel relative to the mathematical literature**. The proof also requires a separate adversarial mathematical audit before journal-level claims. See the dated audit note.
