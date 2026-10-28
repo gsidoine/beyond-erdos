@@ -24,7 +24,7 @@ Every problem has a permanent identifier, its own self-contained statement, evid
 | [P007](problems/graph-theory/P007-coprime-difference-spectrum.md) | Coprime path difference spectrum | graph labeling | reframe | known subproblem |
 | [P008](problems/probability/P008-coprime-percolation-critical-window.md) | Arithmetic centering of coprime percolation | probability | needs specification | not certified |
 | [P009](problems/number-theory/P009-two-prime-palette-pairings.md) | Two-prime palette pairings | number theory | candidate | closely related |
-| [P010](problems/graph-theory/P010-minimum-coprime-adjacencies.md) | Minimum coprime adjacencies | graph theory | candidate | not certified |
+| [P010](problems/graph-theory/P010-minimum-coprime-adjacencies.md) | Minimum coprime adjacencies | graph theory | proved internally | priority not certified |
 <!-- CATALOG:END -->
 
 For precise definitions, follow each ID. To filter by subject, status or title in a browser, open [the searchable catalogue](docs/index.html). If GitHub Pages is enabled for the repository's `docs/` folder, the same page can be published as a standalone website.
@@ -34,6 +34,7 @@ For precise definitions, follow each ID. To filter by subject, status or title i
 | Label | Meaning |
 |---|---|
 | **candidate** | A precise mathematical question, but not certified original or unresolved |
+| **proved internally** | Complete argument supplied in this repository; independently verified correctness and originality are **not** yet certified |
 | **reframe** | Some original formulation is known or misleading; the surviving question must be isolated |
 | **needs specification** | The research goal is meaningful, but its current statement is not a fully formal yes/no question |
 | **not certified** | No exhaustive prior-art check or independent specialist certification |
@@ -42,8 +43,17 @@ For precise definitions, follow each ID. To filter by subject, status or title i
 
 An *internal proof* is not a published or externally verified theorem. Likewise, exact computations apply only to the stated finite instances.
 
+## Mathematical progress
+
+**P010 has an internally complete exact solution:** for every \(n\ge4\),
+\[
+h(n)=\pi(n)-\pi(n/2)+\max\!\left(1,\left\lceil\frac{\pi(n/2)-\pi(n/3)}2\right\rceil\right).
+\]
+See the [constructive theorem](theorems/P010-exact-coprime-adjacencies.md) and [dependency-free verification program](experiments/P010_construct_optimal_permutation.py). This resolves the original P010 extremal question **within this research notebook**. A historical priority and external referee audit are still required before claiming a new published mathematical result.
+
 ## Evidence and prior art
 
+- [New exact P010 theorem and priority audit](audits/2026-10-28-P010-resolution-proof-and-novelty.md) — independent mathematical review still pending.
 - [All-ten adversarial review](audits/2026-10-28-P001-P010-adversarial-review.md) — proof checks, reproductions, explicit gaps, and selection criteria.
 - [Comprehensive P001–P008 literature review](literature-audits/2026-10-28-comprehensive-P001-P008.md) — close mathematical predecessors and one confirmed prior-art collision.
 - [P009/P010 literature review](literature-audits/2026-10-28-pass-4.md) — prime differences and the earlier Erdős–Freud–Hegyvári work.
@@ -56,6 +66,7 @@ An *internal proof* is not a published or externally verified theorem. Likewise,
 data/problems.json               Canonical index and status data
 problems/                        Ten mathematical problem dossiers
 experiments/                     Computational tests and witnesses
+theorems/                        Full proof dossiers for internally resolved questions
 audits/                          Proof, numerical, and novelty reviews
 literature-audits/               Dated source-by-source literature surveys
 docs/                            Optional searchable static catalogue

@@ -214,12 +214,12 @@
       "title": "Minimum coprime adjacencies",
       "area": "graph theory",
       "file": "problems/graph-theory/P010-minimum-coprime-adjacencies.md",
-      "question": "What is the asymptotic minimum number of adjacent coprime pairs in a permutation of 1,…,n?",
-      "status": "candidate",
-      "novelty": "not certified",
-      "result": "(7/12+o(1))n/log n ≤ h(n) ≤ (1+o(1))n/log n",
-      "verification": "Exact MILP at selected n≤200",
-      "priority": "focus",
+      "question": "What is the exact minimum number of adjacent coprime pairs in a permutation of 1,…,n? (Resolved internally.)",
+      "status": "proved internally",
+      "novelty": "priority not certified",
+      "result": "Exact formula for n≥4: h(n)=π(n)−π(n/2)+max(1,ceil((π(n/2)−π(n/3))/2)); hence h(n)∼(7/12)n/log n",
+      "verification": "Constructive proof with prime-factor paths; explicit witnesses checked n≤10,000",
+      "priority": "external proof and novelty audit",
       "sources": [
         {
           "name": "Erdős–Freud–Hegyvári (1983)",
@@ -228,6 +228,10 @@
         {
           "name": "OEIS A076220 (opposite extreme)",
           "url": "https://oeis.org/A076220"
+        },
+        {
+          "name": "Rosser–Schoenfeld prime-counting inequality",
+          "url": "https://oeis.org/A060208"
         }
       ]
     }
