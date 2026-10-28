@@ -71,3 +71,6 @@ Targeted searches did not expose a direct treatment of this exact arithmetic swi
 ## Cross-problem literature review (2026-10-28)
 
 Pomerance and Sah–Sawhney study the underlying coprime permutations; Dyer–Jerrum–Müller study matching switches. Exact arithmetic connectivity was not located. This is **not a certification of novelty or of unresolved status**. Read the [full P001–P008 audit](../../literature-audits/2026-10-28-comprehensive-P001-P008.md) before citing this question in a mathematical publication.
+## Discovery pass 4 follow-up (2026-10-28)
+
+A tempting generic argument fails: even a bipartite graph with one universal row and one universal column can have *two isolated* perfect matchings in its 4-cycle switch graph. An explicit 5-by-5 matrix counterexample is in the pass-4 literature audit. Thus a proof of P005 must exploit more than the universally coprime index 1. See the [dated detailed audit](../../literature-audits/2026-10-28-pass-4.md).

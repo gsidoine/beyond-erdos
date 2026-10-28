@@ -98,3 +98,6 @@ This connects Sidon/Golomb-ruler extremal theory to prime-difference-avoiding se
 ## Cross-problem literature review (2026-10-28)
 
 Classical Sidon extremal theory gives benchmarks; no direct prime-difference-free extremal asymptotic was located in the targeted audit. This is **not a certification of novelty or of unresolved status**. Read the [full P001–P008 audit](../../literature-audits/2026-10-28-comprehensive-P001-P008.md) before citing this question in a mathematical publication.
+## Discovery pass 4 follow-up (2026-10-28)
+
+Further searches found no direct asymptotic formula under the names 'prime-free Golomb ruler', 'Sidon no prime differences' or 'composite Golomb-ruler distances'. This absence of a hit is **not** evidence of novelty. The current lower constant 1/sqrt(2) comes from an elementary dilation; the next substantive objective should be a genuinely stronger asymptotic bound. See the [dated detailed audit](../../literature-audits/2026-10-28-pass-4.md).
