@@ -24,7 +24,7 @@ Every problem has a permanent identifier, its own self-contained statement, evid
 | [P007](problems/graph-theory/P007-coprime-difference-spectrum.md) | Coprime path difference spectrum | graph labeling | reframe | known subproblem |
 | [P008](problems/probability/P008-coprime-percolation-critical-window.md) | Arithmetic centering of coprime percolation | probability | needs specification | not certified |
 | [P009](problems/number-theory/P009-two-prime-palette-pairings.md) | Two-prime palette pairings | number theory | candidate | closely related |
-| [P010](problems/graph-theory/P010-minimum-coprime-adjacencies.md) | Minimum coprime adjacencies | graph theory | candidate | not certified |
+| [P010](problems/graph-theory/P010-minimum-coprime-adjacencies.md) | Minimum coprime adjacencies | graph theory | proved internally | priority not certified |
 <!-- CATALOG:END -->
 
 For precise definitions, follow each ID. To filter by subject, status or title in a browser, open [the searchable catalogue](docs/index.html). If GitHub Pages is enabled for the repository's `docs/` folder, the same page can be published as a standalone website.
