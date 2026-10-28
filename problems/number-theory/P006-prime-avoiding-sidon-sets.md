@@ -1,5 +1,14 @@
 # P006 — How large can a Sidon set with no prime differences be?
 
+<!-- DOSSIER-SUMMARY -->
+> **Research question:** What is the asymptotic maximum size of a Sidon set whose positive differences avoid all primes?  
+> **Formulation:** candidate. **Novelty:** not certified.  
+> **Verified/known progress:** Asymptotic lower constant at least 1/√2 and upper at most 1.  
+> **Finite evidence:** Small exact MILP optima through N=60.  
+> **Navigation:** [All ten problems](../../README.md#problem-catalogue) · [Source-by-source audit](../../audits/2026-10-28-novelty-quality-gate.md)
+<!-- /DOSSIER-SUMMARY -->
+
+
 **Area:** additive number theory, extremal combinatorics  
 **Date proposed:** 2026-10-28  
 **Status:** candidate, exact novelty and unresolved status **unverified**
