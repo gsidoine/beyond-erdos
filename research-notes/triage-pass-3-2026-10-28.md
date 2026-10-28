@@ -2,6 +2,8 @@
 
 ## Discarded as open: coprime graceful permutations
 
+**Literature correction:** This complete iff theorem is *previously known*: Panma and Rochanakul, [*Prime-Graceful Graphs* (2021), Theorem 2.1](https://thaijmath.com/index.php/thaijmath/article/view/1264), explicitly prove that the path \(P_n\) is prime-graceful iff \(n\le5\). Our parity proof is an independent rederivation only. The remaining extremal problem has not been matched to a published answer.
+
 A permutation of \(\{1,\ldots,n\}\) with all adjacent entries coprime and all \(n-1\) consecutive gaps distinct exists **iff \(n\le5\)**. A complete parity proof is in [P007](../problems/graph-theory/P007-coprime-difference-spectrum.md).
 
 For \(n\ge6\), too many distinct even gaps would need to arise from adjacent pairs of odd vertices, but parity and the need to separate even vertices permit at most one odd–odd adjacency when \(n\) is even and at most two when \(n\) is odd.

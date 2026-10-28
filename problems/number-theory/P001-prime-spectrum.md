@@ -45,3 +45,7 @@ The sum \(3\) requires \(\{1,2\}\). The sum \(5\) requires \(\{1,4\}\) or \(\{2,
 ## Novelty audit
 
 Not completed. Check research on prime-sum partitions, rainbow perfect matchings, and arithmetic matchings. Do not present this as a certified new open problem.
+
+## Cross-problem literature review (2026-10-28)
+
+Greenfield–Greenfield (1998) establishes the prime-pairing foundation; see exact rainbow-matching connections in the audit. This is **not a certification of novelty or of unresolved status**. Read the [full P001–P008 audit](../../literature-audits/2026-10-28-comprehensive-P001-P008.md) before citing this question in a mathematical publication.
