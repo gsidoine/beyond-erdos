@@ -15,6 +15,9 @@ This research notebook explores questions in number theory, graph theory and add
 | [P003](problems/graph-theory/P003-prime-matching-packing.md) | Extremal graph theory | Does the prime-sum graph have as many edge-disjoint perfect matchings as its minimum degree? | Candidate; novelty unverified |
 | [P004](problems/number-theory/P004-sidon-exchange-connectivity.md) | Additive combinatorics | Are Sidon sets connected by single-element exchanges below the square-root scale? | Candidate; novelty unverified |
 
+| [P005](problems/graph-theory/P005-coprime-permutation-switches.md) | Arithmetic graph reconfiguration | Are coprime permutations connected under validity-preserving value swaps? | Candidate; novelty unverified |
+| [P006](problems/number-theory/P006-prime-avoiding-sidon-sets.md) | Additive number theory | What is the maximum size of a Sidon set with no prime differences? | Candidate; novelty unverified |
+
 ## Working standards
 
 1. **State the problem precisely.** Record quantifiers, definitions and exceptional cases.
@@ -27,6 +30,8 @@ This research notebook explores questions in number theory, graph theory and add
 **Status vocabulary:** *candidate (unverified)*, *credible unresolved (literature-audited)*, *conjecture (evidence-backed)*, *proved*, *disproved*, or *previously known*.
 
 ## Computation
+
+Research pass 2 adds an exact C++17 coprime-permutation connectivity check and an exact SciPy MILP for prime-difference-free Sidon sets. Consult their problem pages for bounds and solver-status caveats.
 
 The included standard-library script enumerates prime-sum perfect matchings and four-cycle swaps for small instances:
 
