@@ -1,0 +1,235 @@
+{
+  "schema_version": 1,
+  "last_reviewed": "2026-10-28",
+  "source": "Beyond Erdős: independently proposed candidate questions; not posed by Erdős",
+  "problems": [
+    {
+      "id": "P001",
+      "title": "Prime-spectrum saturation",
+      "area": "number theory",
+      "file": "problems/number-theory/P001-prime-spectrum.md",
+      "question": "Does the maximum distinct-prime-sum deficit of a prime-sum perfect matching stay bounded?",
+      "status": "candidate",
+      "novelty": "not certified",
+      "result": "Interior prime sums realized by a partial matching; completion is open in this study",
+      "verification": "Exact small matching optimization",
+      "priority": "watch",
+      "sources": [
+        {
+          "name": "Greenfield & Greenfield (1998)",
+          "url": "https://cs.uwaterloo.ca/journals/JIS/green.html"
+        },
+        {
+          "name": "OEIS A000341",
+          "url": "https://oeis.org/A000341"
+        }
+      ]
+    },
+    {
+      "id": "P002",
+      "title": "Prime-sum matching reconfiguration",
+      "area": "graph theory",
+      "file": "problems/graph-theory/P002-prime-matching-reconfiguration.md",
+      "question": "Are all prime-sum perfect matchings joined by four-cycle switches?",
+      "status": "candidate",
+      "novelty": "not certified",
+      "result": "One connected component through n=12 in exhaustive tests",
+      "verification": "Enumerated 423,884 matchings at n=12 in initial exploration",
+      "priority": "retain",
+      "sources": [
+        {
+          "name": "Dyer–Jerrum–Müller (2017)",
+          "url": "https://doi.org/10.1145/2822322"
+        },
+        {
+          "name": "Bonamy et al. (2019)",
+          "url": "https://doi.org/10.4230/LIPIcs.MFCS.2019.80"
+        }
+      ]
+    },
+    {
+      "id": "P003",
+      "title": "Edge-disjoint prime-sum matchings",
+      "area": "graph theory",
+      "file": "problems/graph-theory/P003-prime-matching-packing.md",
+      "question": "Is the maximum perfect-matching packing equal to the host graph's minimum degree?",
+      "status": "candidate",
+      "novelty": "not certified",
+      "result": "Equivalent to a min-cut condition for an arithmetic bipartite factor",
+      "verification": "Integral max flow tested to n=3,000 (finite only)",
+      "priority": "focus",
+      "sources": [
+        {
+          "name": "Greenfield & Greenfield (1998)",
+          "url": "https://cs.uwaterloo.ca/journals/JIS/green.html"
+        },
+        {
+          "name": "Chen–Fu–Guo (2021)",
+          "url": "https://doi.org/10.1007/s00373-020-02241-1"
+        }
+      ]
+    },
+    {
+      "id": "P004",
+      "title": "Sidon exchange connectivity",
+      "area": "additive combinatorics",
+      "file": "problems/number-theory/P004-sidon-exchange-connectivity.md",
+      "question": "Are size-k Sidon sets connected by feasible one-mark exchanges below the square-root scale?",
+      "status": "candidate",
+      "novelty": "not certified",
+      "result": "Elementary connectivity theorem for N > 2(2k-1)^3",
+      "verification": "Small disconnected/connected cases enumerated",
+      "priority": "retain",
+      "sources": [
+        {
+          "name": "Sidon/Golomb ruler equivalence",
+          "url": "https://mathworld.wolfram.com/SidonSet.html"
+        },
+        {
+          "name": "Dotú–Van Hentenryck (2005)",
+          "url": "https://cs.brown.edu/research/pubs/pdfs/2005/Dotu-2005-SHE.pdf"
+        }
+      ]
+    },
+    {
+      "id": "P005",
+      "title": "Coprime permutation switches",
+      "area": "graph theory",
+      "file": "problems/graph-theory/P005-coprime-permutation-switches.md",
+      "question": "Can all permutations satisfying gcd(i,σ(i))=1 be connected by valid two-position swaps?",
+      "status": "candidate",
+      "novelty": "not certified",
+      "result": "No universal-row/column shortcut; arithmetic structure is essential",
+      "verification": "3,459,600 states at n=14, one component",
+      "priority": "focus",
+      "sources": [
+        {
+          "name": "Pomerance (2022)",
+          "url": "https://arxiv.org/abs/2203.03085"
+        },
+        {
+          "name": "Sah–Sawhney (2022)",
+          "url": "https://doi.org/10.1112/mtk.12159"
+        },
+        {
+          "name": "Switch chain (2017)",
+          "url": "https://doi.org/10.1145/2822322"
+        }
+      ]
+    },
+    {
+      "id": "P006",
+      "title": "Sidon sets without prime differences",
+      "area": "additive combinatorics",
+      "file": "problems/number-theory/P006-prime-avoiding-sidon-sets.md",
+      "question": "What is the asymptotic maximum size of a Sidon set whose positive differences avoid all primes?",
+      "status": "candidate",
+      "novelty": "not certified",
+      "result": "Asymptotic lower constant at least 1/√2 and upper at most 1",
+      "verification": "Small exact MILP optima through N=60",
+      "priority": "retain",
+      "sources": [
+        {
+          "name": "Sidon set bounds",
+          "url": "https://mathworld.wolfram.com/SidonSet.html"
+        },
+        {
+          "name": "Carter–Hunter–O'Bryant (2025)",
+          "url": "https://doi.org/10.1007/s10474-024-01499-8"
+        }
+      ]
+    },
+    {
+      "id": "P007",
+      "title": "Coprime path difference spectrum",
+      "area": "graph labeling",
+      "file": "problems/graph-theory/P007-coprime-difference-spectrum.md",
+      "question": "Can a coprime Hamiltonian path attain the parity upper bound for distinct adjacent differences?",
+      "status": "reframe",
+      "novelty": "known subproblem",
+      "result": "Full graceful existence iff n≤5 is a published 2021 theorem; extremal extension unverified",
+      "verification": "Exact finite MILP checks in selected sizes",
+      "priority": "review",
+      "sources": [
+        {
+          "name": "Panma–Rochanakul (2021), Theorem 2.1",
+          "url": "https://thaijmath.com/index.php/thaijmath/article/view/1264"
+        },
+        {
+          "name": "Gracesize of trees (2025)",
+          "url": "https://arxiv.org/abs/2511.11331"
+        }
+      ]
+    },
+    {
+      "id": "P008",
+      "title": "Arithmetic centering of coprime percolation",
+      "area": "probability",
+      "file": "problems/probability/P008-coprime-percolation-critical-window.md",
+      "question": "Can the critical connectivity center be approximated by a specified non-tautological arithmetic expansion?",
+      "status": "needs specification",
+      "novelty": "not certified",
+      "result": "Internal threshold/Gumbel arguments require external proof and priority audit",
+      "verification": "Finite degree-profile and center checks",
+      "priority": "review",
+      "sources": [
+        {
+          "name": "Gupta–Lee–Li (2021)",
+          "url": "https://doi.org/10.1137/1.9781611976465.7"
+        },
+        {
+          "name": "Penrose (2018)",
+          "url": "https://doi.org/10.1017/jpr.2018.9"
+        },
+        {
+          "name": "Hladký–Viswanathan (2026)",
+          "url": "https://doi.org/10.1002/rsa.70098"
+        }
+      ]
+    },
+    {
+      "id": "P009",
+      "title": "Two-prime palette pairings",
+      "area": "number theory",
+      "file": "problems/number-theory/P009-two-prime-palette-pairings.md",
+      "question": "Can 1,…,2n always be paired using at most two distinct prime sums?",
+      "status": "candidate",
+      "novelty": "closely related",
+      "result": "One-color iff 2n+1 prime; two-color certificate from short prime difference",
+      "verification": "Sieve certificates through n=1,000,000 (finite only)",
+      "priority": "review",
+      "sources": [
+        {
+          "name": "Greenfield–Greenfield (1998)",
+          "url": "https://cs.uwaterloo.ca/journals/JIS/green.html"
+        },
+        {
+          "name": "OEIS A202472",
+          "url": "https://oeis.org/A202472"
+        }
+      ]
+    },
+    {
+      "id": "P010",
+      "title": "Minimum coprime adjacencies",
+      "area": "graph theory",
+      "file": "problems/graph-theory/P010-minimum-coprime-adjacencies.md",
+      "question": "What is the asymptotic minimum number of adjacent coprime pairs in a permutation of 1,…,n?",
+      "status": "candidate",
+      "novelty": "not certified",
+      "result": "(7/12+o(1))n/log n ≤ h(n) ≤ (1+o(1))n/log n",
+      "verification": "Exact MILP at selected n≤200",
+      "priority": "focus",
+      "sources": [
+        {
+          "name": "Erdős–Freud–Hegyvári (1983)",
+          "url": "https://users.renyi.hu/~p_erdos/1983-02.pdf"
+        },
+        {
+          "name": "OEIS A076220 (opposite extreme)",
+          "url": "https://oeis.org/A076220"
+        }
+      ]
+    }
+  ]
+}
