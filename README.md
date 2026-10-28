@@ -25,6 +25,17 @@ P008 contains a complete, independently auditable proof of a sharp asymptotic co
 
 P007 also records a fully resolved false starting conjecture (coprime graceful permutations exist only for \(n\le5\)) and retains a sharper extremal problem with exact MILP evidence through many finite cases.
 
+| [P009](problems/number-theory/P009-two-prime-palette-pairings.md) | Additive number theory | Can every prime-sum perfect matching problem be solved using at most two distinct prime values? | Candidate; linked to classical prime-difference questions |
+| [P010](problems/graph-theory/P010-minimum-coprime-adjacencies.md) | Arithmetic graph theory | What is the smallest possible number of coprime adjacencies in a permutation of `[n]`? | Candidate; rigorous asymptotic bounds and exact finite tests |
+
+### New research, pass 4
+
+[P009/P010 literature audit](literature-audits/2026-10-28-pass-4.md) records known antecedents (including **Erdős–Freud–Hegyvári 1983**, on arithmetic of adjacent permutation entries), a finite failed generalization relevant to P005, and a solved/triaged gcd-spectrum idea. P009 has explicit prime-pair witnesses for every `2<=n<=100000`; P010 has rigorous prime-obstruction and prime-factor-grouping bounds
+\[
+(7/12+o(1))n/\log n\le h(n)\le(1+o(1))n/\log n.
+\]
+**No claim that either exact problem is newly discovered and open has been independently certified.**
+
 ## Working standards
 
 1. **State the problem precisely.** Record quantifiers, definitions and exceptional cases.
