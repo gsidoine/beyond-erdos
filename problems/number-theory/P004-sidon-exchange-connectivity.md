@@ -1,5 +1,14 @@
 # P004 — Exchange connectivity of finite Sidon sets
 
+<!-- DOSSIER-SUMMARY -->
+> **Research question:** Are size-k Sidon sets connected by feasible one-mark exchanges below the square-root scale?  
+> **Formulation:** candidate. **Novelty:** not certified.  
+> **Verified/known progress:** Elementary connectivity theorem for N > 2(2k-1)^3.  
+> **Finite evidence:** Small disconnected/connected cases enumerated.  
+> **Navigation:** [All ten problems](../../README.md#problem-catalogue) · [Source-by-source audit](../../audits/2026-10-28-novelty-quality-gate.md)
+<!-- /DOSSIER-SUMMARY -->
+
+
 **Area:** additive combinatorics, graph reconfiguration  
 **Status:** candidate question; novelty and unresolved status unverified  
 **Proposed:** 28 October 2026
