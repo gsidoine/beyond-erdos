@@ -16,7 +16,6 @@ This research notebook explores questions in number theory, graph theory and add
 | [P004](problems/number-theory/P004-sidon-exchange-connectivity.md) | Additive combinatorics | Are Sidon sets connected by single-element exchanges below the square-root scale? | Candidate; novelty unverified |
 | [P005](problems/graph-theory/P005-coprime-permutation-switches.md) | Arithmetic graph reconfiguration | Are coprime permutations connected under validity-preserving value swaps? | Candidate; novelty unverified |
 | [P006](problems/number-theory/P006-prime-avoiding-sidon-sets.md) | Additive number theory | What is the maximum size of a Sidon set with no prime differences? | Candidate; novelty unverified |
-
 | [P007](problems/graph-theory/P007-coprime-difference-spectrum.md) | Graph labeling / number theory | Does a coprime Hamiltonian path attain the parity upper bound on its number of distinct gaps? | Candidate; novelty unverified |
 | [P008](problems/probability/P008-coprime-percolation-critical-window.md) | Random graphs / number theory | Can the connectivity window of a percolated coprime graph be centered by an **explicit arithmetic expansion**? | Candidate centering question; leading threshold + Gumbel law proved here, novelty unverified |
 
