@@ -34,6 +34,7 @@ For precise definitions, follow each ID. To filter by subject, status or title i
 | Label | Meaning |
 |---|---|
 | **candidate** | A precise mathematical question, but not certified original or unresolved |
+| **proved internally** | Complete argument supplied in this repository; independently verified correctness and originality are **not** yet certified |
 | **reframe** | Some original formulation is known or misleading; the surviving question must be isolated |
 | **needs specification** | The research goal is meaningful, but its current statement is not a fully formal yes/no question |
 | **not certified** | No exhaustive prior-art check or independent specialist certification |
@@ -41,6 +42,14 @@ For precise definitions, follow each ID. To filter by subject, status or title i
 | **closely related** | Strong connection to an older question; independence is not settled |
 
 An *internal proof* is not a published or externally verified theorem. Likewise, exact computations apply only to the stated finite instances.
+
+## Mathematical progress
+
+**P010 has an internally complete exact solution:** for every \(n\ge4\),
+\[
+h(n)=\pi(n)-\pi(n/2)+\max\!\left(1,\left\lceil\frac{\pi(n/2)-\pi(n/3)}2\right\rceil\right).
+\]
+See the [constructive theorem](theorems/P010-exact-coprime-adjacencies.md) and [dependency-free verification program](experiments/P010_construct_optimal_permutation.py). This resolves the original P010 extremal question **within this research notebook**. A historical priority and external referee audit are still required before claiming a new published mathematical result.
 
 ## Evidence and prior art
 
