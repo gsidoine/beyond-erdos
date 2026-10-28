@@ -17,14 +17,18 @@ This research notebook explores questions in number theory, graph theory and add
 | [P005](problems/graph-theory/P005-coprime-permutation-switches.md) | Arithmetic graph reconfiguration | Are coprime permutations connected under validity-preserving value swaps? | Candidate; novelty unverified |
 | [P006](problems/number-theory/P006-prime-avoiding-sidon-sets.md) | Additive number theory | What is the maximum size of a Sidon set with no prime differences? | Candidate; novelty unverified |
 
-| [P007](problems/graph-theory/P007-coprime-difference-spectrum.md) | Graph labeling / number theory | Does a coprime Hamiltonian path attain the parity upper bound on its number of distinct gaps? | Candidate; novelty unverified |
+| [P007](problems/graph-theory/P007-coprime-difference-spectrum.md) | Graph labeling / number theory | Does a coprime Hamiltonian path attain the parity upper bound on its number of distinct gaps? | **Full graceful case already known (2021)**; extremal extension unverified |
 | [P008](problems/probability/P008-coprime-percolation-critical-window.md) | Random graphs / number theory | Can the connectivity window of a percolated coprime graph be centered by an **explicit arithmetic expansion**? | Candidate centering question; leading threshold + Gumbel law proved here, novelty unverified |
 
 ### Highlight of research pass 3
 
 P008 contains a complete, independently auditable proof of a sharp asymptotic connectivity transition at \(e^\gamma\log n\log\log n/n\), a Poisson limit for isolated vertices, and a Gumbel connectivity window at an implicitly defined center. **This is an internally derived mathematical result, not a certified novelty or priority claim.** The remaining question asks for an explicit arithmetic centering to the much finer window scale \(\log\log n/n\).
 
-P007 also records a fully resolved false starting conjecture (coprime graceful permutations exist only for \(n\le5\)) and retains a sharper extremal problem with exact MILP evidence through many finite cases.
+P007 also records a **previously known** fully resolved result of Panma–Rochanakul (2021): coprime graceful permutations exist only for \(n\le5\) and retains a sharper extremal problem with exact MILP evidence through many finite cases.
+
+## Literature audit (all selected problems)
+
+The [comprehensive P001–P008 audit (28 October 2026)](literature-audits/2026-10-28-comprehensive-P001-P008.md) identifies direct precedents, general equivalences, verified prior-art collisions, and unresolved novelty questions. **None of the eight exact candidate questions is yet certified genuinely novel**; in particular P007's complete prime-graceful path existence theorem was published in 2021.
 
 ## Working standards
 
