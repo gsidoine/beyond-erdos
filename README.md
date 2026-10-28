@@ -53,6 +53,7 @@ See the [constructive theorem](theorems/P010-exact-coprime-adjacencies.md) and [
 
 ## Evidence and prior art
 
+- [P010 publication assessment, fresh P001–P009 references, and interval-sum factor incubator](audits/2026-10-28-P010-publication-and-novelty-followup.md) — journal-policy warnings and a new unpromoted candidate.
 - [New exact P010 theorem and priority audit](audits/2026-10-28-P010-resolution-proof-and-novelty.md) — independent mathematical review still pending.
 - [All-ten adversarial review](audits/2026-10-28-P001-P010-adversarial-review.md) — proof checks, reproductions, explicit gaps, and selection criteria.
 - [Comprehensive P001–P008 literature review](literature-audits/2026-10-28-comprehensive-P001-P008.md) — close mathematical predecessors and one confirmed prior-art collision.
