@@ -67,3 +67,7 @@ Targeted searches did not expose a direct treatment of this exact arithmetic swi
 2. Seek a pivot strategy using positions/values \(1\) and arithmetic structure.
 3. Test whether every coprime permutation reduces to the cyclic shift in \(O(n^2)\) switches.
 4. Investigate whether a standard matching-reconfiguration theorem already handles the coprime graph.
+
+## Cross-problem literature review (2026-10-28)
+
+Pomerance and Sah–Sawhney study the underlying coprime permutations; Dyer–Jerrum–Müller study matching switches. Exact arithmetic connectivity was not located. This is **not a certification of novelty or of unresolved status**. Read the [full P001–P008 audit](../../literature-audits/2026-10-28-comprehensive-P001-P008.md) before citing this question in a mathematical publication.
