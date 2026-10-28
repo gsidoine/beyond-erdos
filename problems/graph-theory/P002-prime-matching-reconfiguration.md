@@ -43,3 +43,7 @@ The figures are **exhaustive finite computations, not a proof**. The included sc
 ## Literature audit
 
 Four-cycle matching reconfiguration, switch chains and Markov bases are established subjects. Audit whether a general theorem implies this special claim; do not assume that specifying prime-sum edges makes an existing problem new.
+
+## Cross-problem literature review (2026-10-28)
+
+Dyer–Jerrum–Müller and Bonamy et al. established the general four-cycle switch framework; the prime-sum special case still requires an exact overlap check. This is **not a certification of novelty or of unresolved status**. Read the [full P001–P008 audit](../../literature-audits/2026-10-28-comprehensive-P001-P008.md) before citing this question in a mathematical publication.
