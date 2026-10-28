@@ -16,7 +16,15 @@ D(n)=\max_{\text{coprime orderings}}
 
 A path is **graceful** if all its \(n-1\) differences are distinct. Classical graceful permutations exist for every \(n\), but the coprimality condition changes the situation fundamentally.
 
-## Complete elementary obstruction
+## Important prior art: the fully graceful question is previously known
+
+**Correction (literature audit, 2026-10-28):** The statement "a coprime graceful permutation of \([n]\) exists if and only if \(n\le5\)" is **not a newly discovered theorem**. It is **Theorem 2.1** of:
+
+Sayan Panma and Penying Rochanakul, *Prime-Graceful Graphs*, **Thai Journal of Mathematics** 19(4), 1685–1697 (2021), [journal page](https://thaijmath.com/index.php/thaijmath/article/view/1264). Their "prime-graceful labeling of \(P_n\)" exactly matches our full-distinct-gap condition. The independent parity argument below is a rederivation of their established theorem, not a priority claim.
+
+Older literature also studies *weaker* prime-graceful labelings with a larger label range; those positive path results are not contradictory because they use more labels than \([n]\). This terminology is essential when searching for P007's precise **maximum number of distinct differences** variant.
+
+## Complete elementary obstruction (previously known, reproduced here)
 
 **Proposition 1.** There exists a coprime graceful permutation of \([n]\) if and only if \(1\le n\le5\).
 
@@ -57,6 +65,10 @@ All neighboring numbers are coprime, and there are 7 distinct differences, attai
 - Determine whether every possible **odd** difference can be simultaneously realized in one coprime Hamiltonian path.
 - Identify stability: how rigid are upper-bound attaining paths?
 - Try to falsify the equality at larger \(n\), or prove a weaker all-\(n\) lower bound \(D(n)\ge (1/2-o(1))n\).
+
+## Revised novelty assessment
+
+**The existence/fully graceful result is conclusively previously known (2021).** The extremal parameter \(D(n)\) may still be an original quantitative extension, but overlaps an established named subfield, and no peer-reviewed novelty claim should be made before checking the graph-labeling surveys for equivalent "partial graceful"/"maximum distinct edge labels" parameters.
 
 ## Novelty warning
 
