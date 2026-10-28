@@ -42,3 +42,7 @@ The proposed conjecture is therefore an explicit arithmetic cut-expansion statem
 ## Evidence and novelty
 
 Earlier exploratory tests were reported, but the numerical claims are deliberately **not** included as verified evidence in this entry until independently reproduced in committed code. No comprehensive novelty audit has been completed.
+
+## Cross-problem literature review (2026-10-28)
+
+Prior work on prime-sum graph Hamiltonicity and explicit constructions of multiple matchings does not immediately give a minimum-degree factor packing. This is **not a certification of novelty or of unresolved status**. Read the [full P001–P008 audit](../../literature-audits/2026-10-28-comprehensive-P001-P008.md) before citing this question in a mathematical publication.
