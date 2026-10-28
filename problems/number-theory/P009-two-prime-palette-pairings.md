@@ -61,7 +61,7 @@ Thus one concrete sufficient condition is that \(2n\) admit a representation as 
 
 ## Exact finite tests
 
-A sieve-generated certificate \(q\) as in Theorem 2 exists for **every \(1\le n\le100{,}000\)**. For small cases with \(2n+1\) prime, the one-color theorem of course suffices; the sieve tests an even stronger two-prime certificate there. A fixed implementation is in [`experiments/two_prime_palette.py`](../../experiments/two_prime_palette.py).
+A sieve-generated certificate \(q\) as in Theorem 2 exists for **every \(2\le n\le100{,}000\)**. The case \(n=1\) is handled by Theorem 1. For cases with \(2n+1\) prime, the one-color theorem of course suffices; the sieve also finds a two-prime certificate when \(n\ge2\). A fixed implementation is in [`experiments/two_prime_palette.py`](../../experiments/two_prime_palette.py).
 
 | \(n\) | Prime \(q\) | Prime \(p=2n+q\) |
 |---:|---:|---:|
