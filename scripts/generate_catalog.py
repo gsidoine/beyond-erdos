@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
-"""Generate README catalogue and static browser data from data/problems.json.
+"""Generate all catalogue views from data/problems.json (standard library only).
 
-Standard library only.
 Usage:
     python scripts/generate_catalog.py
     python scripts/generate_catalog.py --check
@@ -16,6 +15,31 @@ README = ROOT / "README.md"
 BROWSER_DATA = ROOT / "docs" / "problems.json"
 START = "<!-- CATALOG:START -->"
 END = "<!-- CATALOG:END -->"
+DOSSIER_START = "<!-- DOSSIER-SUMMARY -->"
+DOSSIER_END = "<!-- /DOSSIER-SUMMARY -->"
+
+
+def dossier_summary(p):
+    return "\n".join([
+        DOSSIER_START,
+        f"> **Research question:** {p['question']}  ",
+        f"> **Formulation:** {p['status']}. **Novelty:** {p['novelty']}.  ",
+        f"> **Verified/known progress:** {p['result']}.  ",
+        f"> **Finite evidence:** {p['verification']}.  ",
+        "> **Navigation:** [All ten problems](../../README.md#problem-catalogue) · "
+        "[Source-by-source audit](../../audits/2026-10-28-novelty-quality-gate.md)",
+        DOSSIER_END,
+    ])
+
+
+def replace_marked(text, start, end, replacement):
+    if text.count(start) != 1 or text.count(end) != 1:
+        raise ValueError(f"Expected exactly one marker pair: {start} / {end}")
+    a = text.index(start)
+    b = text.index(end) + len(end)
+    if a >= b:
+        raise ValueError("Marker ordering is invalid")
+    return text[:a] + replacement + text[b:]
 
 
 def generate():
@@ -31,15 +55,21 @@ def generate():
             f"{r['area']} | {r['status']} | {r['novelty']} |"
         )
     old = README.read_text(encoding="utf-8")
-    if old.count(START) != 1 or old.count(END) != 1:
-        raise ValueError("README must contain exactly one catalogue marker pair")
-    a = old.index(START) + len(START)
-    b = old.index(END)
-    if a >= b:
-        raise ValueError("Catalogue markers are reversed")
-    readme = old[:a] + "\n" + "\n".join(lines) + "\n" + old[b:]
+    readme = replace_marked(
+        old, START, END,
+        START + "\n" + "\n".join(lines) + "\n" + END
+    )
     browser = json.dumps(obj, ensure_ascii=False, indent=2) + "\n"
     return readme, browser
+
+
+def dossier_views():
+    for r in json.loads(DATA.read_text(encoding="utf-8"))["problems"]:
+        path = ROOT / r["file"]
+        original = path.read_text(encoding="utf-8")
+        desired = replace_marked(original, DOSSIER_START, DOSSIER_END,
+                                 dossier_summary(r))
+        yield path, desired
 
 
 if __name__ == "__main__":
@@ -48,15 +78,14 @@ if __name__ == "__main__":
                         help="Exit nonzero if generated content is stale")
     args = parser.parse_args()
     readme, browser = generate()
+    views = [(README, readme), (BROWSER_DATA, browser)] + list(dossier_views())
     if args.check:
-        stale = []
-        for p, expected in [(README, readme), (BROWSER_DATA, browser)]:
-            if p.read_text(encoding="utf-8") != expected:
-                stale.append(str(p.relative_to(ROOT)))
+        stale = [str(p.relative_to(ROOT)) for p, expected in views
+                 if p.read_text(encoding="utf-8") != expected]
         if stale:
             parser.exit(1, "Outdated generated file(s): " + ", ".join(stale) + "\n")
-        print("Generated catalogue and browser data are up to date.")
+        print("Catalogue, browser data and all ten dossier summaries are current.")
     else:
-        README.write_text(readme, encoding="utf-8")
-        BROWSER_DATA.write_text(browser, encoding="utf-8")
-        print("Regenerated README catalogue and docs/problems.json.")
+        for p, expected in views:
+            p.write_text(expected, encoding="utf-8")
+        print("Regenerated README, browser data and dossier summaries.")
