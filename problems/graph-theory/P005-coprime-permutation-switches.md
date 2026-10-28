@@ -67,3 +67,7 @@ Targeted searches did not expose a direct treatment of this exact arithmetic swi
 2. Seek a pivot strategy using positions/values \(1\) and arithmetic structure.
 3. Test whether every coprime permutation reduces to the cyclic shift in \(O(n^2)\) switches.
 4. Investigate whether a standard matching-reconfiguration theorem already handles the coprime graph.
+
+## Discovery pass 4 follow-up (2026-10-28)
+
+A tempting generic argument fails: even a bipartite graph with one universal row and one universal column can have *two isolated* perfect matchings in its 4-cycle switch graph. An explicit 5-by-5 matrix counterexample is in the pass-4 literature audit. Thus a proof of P005 must exploit more than the universally coprime index 1. See the [dated detailed audit](../../literature-audits/2026-10-28-pass-4.md).
