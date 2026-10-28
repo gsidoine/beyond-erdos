@@ -1,0 +1,45 @@
+# PXXX — Short descriptive mathematical title
+
+**Area:** [subject]  
+**Formulation status:** candidate / reframe / needs specification  
+**Novelty:** not certified; date last checked  
+**Origin:** precise attribution; never label as an Erdős problem unless Erdős actually posed it
+
+## Statement
+
+Define every mathematical object first. Then state the question in one sentence or display. Avoid words such as "explicit" unless the allowed class is defined.
+
+## Why it matters
+
+Give the minimal motivating example, the nearby historical problem and the distinctive mathematical content.
+
+## Theorems already proved
+
+**Proposition.** [Statement]  
+**Proof.** [Full proof with precise scope and assumptions.]
+
+For previously known theorems, give the original citation rather than implying new priority.
+
+## Finite experiments (not proofs)
+
+| Parameter | Result | Method / certification |
+|---|---|---|
+| ... | ... | solver status, gap, seed, and reproducibility |
+
+Commands, source filenames, versions and hardware when relevant. Do not extrapolate.
+
+## Adversarial falsification
+
+What counterexamples, invariants, and exact reformulations were tested? What failed? Are there easy degenerate or impossible cases?
+
+## Closest prior art / novelty audit
+
+Cite **primary** mathematical references and state *exactly* which assertions they prove and which they do not. Record search date, terminology and accessible sources. Distinguish "not found" from "open".
+
+## Remaining gap and next research step
+
+State the precise theorem/obstruction needed. Avoid speculative significance claims.
+
+## Revision history
+
+- YYYY-MM-DD: Created / corrected / prior-art collision found.
