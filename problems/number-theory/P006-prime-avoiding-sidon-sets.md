@@ -94,3 +94,7 @@ This connects Sidon/Golomb-ruler extremal theory to prime-difference-avoiding se
 2. Replace the generic MILP with an exact combinatorial search that scales to larger \(N\).
 3. Investigate modular constructions (Bose–Chowla, Singer, Ruzsa) under prime-gap exclusions.
 4. Audit additive-combinatorics literature for forbidden-difference Sidon families.
+
+## Cross-problem literature review (2026-10-28)
+
+Classical Sidon extremal theory gives benchmarks; no direct prime-difference-free extremal asymptotic was located in the targeted audit. This is **not a certification of novelty or of unresolved status**. Read the [full P001–P008 audit](../../literature-audits/2026-10-28-comprehensive-P001-P008.md) before citing this question in a mathematical publication.
