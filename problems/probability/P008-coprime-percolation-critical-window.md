@@ -174,9 +174,26 @@ Such a formula would locate the **entire Gumbel transition** without first enume
 
 Is a finite deterministic expansion of this accuracy possible, or are secondary arithmetic oscillations on the scale of the window unavoidable?
 
+## Finite checks of the critical-window scaling
+
+[`experiments/coprime_window.py`](../../experiments/coprime_window.py) computes all degrees **exactly** by Möbius inversion, solves \(\mu_n(b_n)=1\) by bisection, then independently samples the percolated graph at \(b_n+t a_n\). Illustrative fixed-seed runs:
+
+| \(n\) | Numerically computed \(b_n\) | \(b_n / (\log n\log\log n/n)\) | Connected at \(t=0\) (40 trials) |
+|---:|---:|---:|---:|
+| 300 | 0.0452942 | 1.368 | 16/40 |
+| 1000 | 0.0177003 | 1.326 | 14/40 |
+| 3000 | 0.0071887 | 1.295 | 15/40 |
+| 10000 | 0.0025903 | 1.267 | 15/40 |
+
+The Gumbel limit at \(t=0\) is \(e^{-1}\approx0.3679\). The coefficient \(b_n/(\log n\log\log n/n)\) converges **very slowly** at these small-to-moderate values and is not close to its asymptotic limit \(e^\gamma\approx1.7811\). The exact center is essential in finite simulations. Monte Carlo counts are illustrative, not proofs.
+
+```sh
+python experiments/coprime_window.py --n 3000 --trials 40 --seed 90215
+```
+
 ## Reproducibility, evidence, novelty
 
-[\`experiments/coprime_percolation.py\`](../../experiments/coprime_percolation.py) samples independent edge retention by geometric waiting times in the complete graph, accepting a sampled edge only when its endpoints are coprime. It records connectivity and isolates for finite \(n\); these simulations illustrate the theory but do **not** prove it.
+[`experiments/coprime_percolation.py`](../../experiments/coprime_percolation.py) samples independent edge retention by geometric waiting times in the complete graph, accepting a sampled edge only when its endpoints are coprime. It records connectivity and isolates for finite \(n\); these simulations illustrate the theory but do **not** prove it.
 
 - Xiang Qi, *Random Meta-Structure: A Random Graph Model Based on Abstract Binary Relations* (2026 preprint), DOI [10.5281/zenodo.21737868](https://doi.org/10.5281/zenodo.21737868), explicitly considers independent thinning of the coprime graph as an example. Its threshold estimate concerns a heuristic *giant component*, not the Gumbel connectivity law stated here.
 - [Bollobás–Borgs–Chayes–Riordan, *Percolation on dense graph sequences* (2010)](https://doi.org/10.1214/09-AOP478) develops general dense-host percolation theory.
