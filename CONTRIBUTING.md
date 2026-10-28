@@ -16,6 +16,7 @@ This is a **curated exploratory research notebook**, not an official catalogue o
 - **candidate** — mathematically stated but not certified novel/unresolved.
 - **reframe** — a known theorem or ambiguous formulation forces a narrower question.
 - **needs specification** — not yet a precise mathematical yes/no problem.
+- **proved internally** — a complete written mathematical argument has been produced within this project, **not** independently refereed or certified novel; preserve original question and cite the proof.
 
 The **novelty field** is separate. Never equate failure to find a source with evidence of originality. A confirmed earlier result must carry precise attribution in the dossier; for example, the full prime-graceful path theorem (P007 subproblem) is due to Panma and Rochanakul (2021).
 
