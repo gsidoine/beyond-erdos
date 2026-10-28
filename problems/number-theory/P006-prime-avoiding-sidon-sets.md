@@ -94,3 +94,7 @@ This connects Sidon/Golomb-ruler extremal theory to prime-difference-avoiding se
 2. Replace the generic MILP with an exact combinatorial search that scales to larger \(N\).
 3. Investigate modular constructions (Bose–Chowla, Singer, Ruzsa) under prime-gap exclusions.
 4. Audit additive-combinatorics literature for forbidden-difference Sidon families.
+
+## Discovery pass 4 follow-up (2026-10-28)
+
+Further searches found no direct asymptotic formula under the names 'prime-free Golomb ruler', 'Sidon no prime differences' or 'composite Golomb-ruler distances'. This absence of a hit is **not** evidence of novelty. The current lower constant 1/sqrt(2) comes from an elementary dilation; the next substantive objective should be a genuinely stronger asymptotic bound. See the [dated detailed audit](../../literature-audits/2026-10-28-pass-4.md).
