@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
-from generate_catalog import generate, README, BROWSER_DATA  # noqa: E402
+from generate_catalog import generate, dossier_views, README, BROWSER_DATA  # noqa: E402
 
 
 class CatalogueTests(unittest.TestCase):
@@ -48,6 +48,13 @@ class CatalogueTests(unittest.TestCase):
         readme, browser = generate()
         self.assertEqual(README.read_text(encoding="utf-8"), readme)
         self.assertEqual(BROWSER_DATA.read_text(encoding="utf-8"), browser)
+
+    def test_every_dossier_summary_matches_canonical_data(self):
+        views = list(dossier_views())
+        self.assertEqual(len(views), 10)
+        for path, generated in views:
+            with self.subTest(dossier=str(path)):
+                self.assertEqual(path.read_text(encoding="utf-8"), generated)
 
     def test_single_contiguous_table(self):
         readme = README.read_text(encoding="utf-8")
