@@ -53,6 +53,7 @@ See the [constructive theorem](theorems/P010-exact-coprime-adjacencies.md) and [
 
 ## Evidence and prior art
 
+- [New exact P010 theorem and priority audit](audits/2026-10-28-P010-resolution-proof-and-novelty.md) — independent mathematical review still pending.
 - [All-ten adversarial review](audits/2026-10-28-P001-P010-adversarial-review.md) — proof checks, reproductions, explicit gaps, and selection criteria.
 - [Comprehensive P001–P008 literature review](literature-audits/2026-10-28-comprehensive-P001-P008.md) — close mathematical predecessors and one confirmed prior-art collision.
 - [P009/P010 literature review](literature-audits/2026-10-28-pass-4.md) — prime differences and the earlier Erdős–Freud–Hegyvári work.
@@ -65,6 +66,7 @@ See the [constructive theorem](theorems/P010-exact-coprime-adjacencies.md) and [
 data/problems.json               Canonical index and status data
 problems/                        Ten mathematical problem dossiers
 experiments/                     Computational tests and witnesses
+theorems/                        Full proof dossiers for internally resolved questions
 audits/                          Proof, numerical, and novelty reviews
 literature-audits/               Dated source-by-source literature surveys
 docs/                            Optional searchable static catalogue
