@@ -1,128 +1,185 @@
-# P008 — The critical window of connectivity in the random coprime graph
+# P008 — Arithmetic centering of the random coprime graph's connectivity window
 
-**Area:** random graphs, probabilistic number theory, percolation  
+**Area:** probabilistic number theory, arithmetic random graphs  
 **Origin:** discovery pass 3, 2026-10-28  
-**Status:** exact critical-window question **open candidate**; leading-order threshold **proved here**, novelty of result unverified
+**Status:** *explicit arithmetic centering* is a candidate question; leading transition and Gumbel law are proved below. **Novelty of the theorem and the open question is not certified.**
 
-## Model
+## Setup
 
-Let \(C_n\) be the graph on vertices \(1,\ldots,n\) with distinct \(a,b\) adjacent if \(\gcd(a,b)=1\). Form \(C_n(p)\) by retaining each edge of \(C_n\) **independently** with probability \(p\). This is bond percolation on a deterministic arithmetic host graph, not the Erdős–Rényi model \(G(n,p)\).
+Let \(C_n\) be the coprime graph on \(\{1,\ldots,n\}\), with distinct \(a,b\) adjacent iff \(\gcd(a,b)=1\). Independently retain each permitted edge with probability \(p\), obtaining \(C_n(p)\). This is bond percolation on the arithmetic graph, **not** an Erdős–Rényi \(G(n,p)\) graph.
 
-Let \(\gamma\) denote the Euler–Mascheroni constant.
-
-## Leading-order threshold: theorem
-
-**Theorem (arithmetic connectivity transition; proof below).** For a fixed \(c>0\), put
+Let \(\gamma\) be the Euler–Mascheroni constant, let \(d_n(v)\) be the degree of vertex \(v\) in \(C_n\), and put
 \[
-p_n=c\,\frac{\log n\,\log\log n}{n}.
+\mu_n(p)=\sum_{v=1}^n(1-p)^{d_n(v)}.
+\]
+This is the exact expected number of isolated vertices.
+
+For \(n\ge2\), there is a unique \(b_n\in(0,1)\) satisfying
+\[
+\boxed{\mu_n(b_n)=1}.
+\]
+Define the window scale
+\[
+a_n=e^\gamma\frac{\log\log n}{n}.
+\]
+
+## Main results: fully stated mathematical claims, requiring independent audit
+
+**Theorem 1 (leading connectivity threshold).** Fix \(c>0\) and set
+\[
+p_n=c\frac{\log n\log\log n}{n}.
 \]
 Then
 \[
-\Pr(C_n(p_n)\text{ is connected})\longrightarrow
+\Pr(C_n(p_n)\text{ connected})\to
 \begin{cases}
 0,&c<e^\gamma,\\
 1,&c>e^\gamma.
 \end{cases}
 \]
+For \(c<e^\gamma\) there are isolated vertices with high probability; for \(c>e^\gamma\) the graph is connected with high probability.
 
-In fact, for \(c<e^\gamma\), the graph has isolated vertices with high probability; and for \(c>e^\gamma\), it is connected with high probability.
-
-This result is **not presented as a certified new theorem**. Its mathematical argument is supplied so that it can be independently audited and compared with the literature.
-
-### Number-theoretic ingredients
-
-Let \(d_n(v)\) be the degree of \(v\) in \(C_n\). Möbius inversion gives, uniformly for \(v\le n\),
+**Theorem 2 (Poisson and Gumbel critical window).** The center and width satisfy
 \[
-d_n(v)=n\frac{\varphi(v)}{v}+O(2^{\omega(v)}+1),
+b_n\sim e^\gamma\frac{\log n\log\log n}{n},
+\qquad a_n=e^\gamma\frac{\log\log n}{n}.
 \]
-where \(\omega(v)\) is the number of distinct prime factors of \(v\). Since \(\max_{v\le n}2^{\omega(v)}=n^{o(1)}\) and the classical minimal order of the totient ratio is
+For each fixed \(t\in\mathbb R\), at \(p=b_n+t a_n\) the number of isolated vertices converges in distribution to \(\mathrm{Poisson}(e^{-t})\), and
 \[
-\min_{1\le v\le n}\frac{\varphi(v)}{v}
- =\frac{e^{-\gamma}+o(1)}{\log\log n},
+\boxed{
+\Pr(C_n(b_n+t a_n)\text{ connected})
+\longrightarrow \exp(-e^{-t}).
+}
 \]
-we have
-\[
-\delta(C_n)\ge (e^{-\gamma}-o(1))\frac{n}{\log\log n}.
-\]
-Mertens' product theorem and the prime number theorem will also be used.
+In particular, the probability of having *no* isolated vertices and yet being disconnected tends to zero throughout this window.
 
-### Proof: subcritical side
+Theorem 2 concerns **the implicitly defined exact center \(b_n\)**; finding its explicit number-theoretic asymptotics to the width \(a_n\) is the remaining question.
 
-Let \(y=\log n/(\log\log n)^2\) and let \(Q=\prod_{q\le y,\;q\ \mathrm{prime}}q\). The prime number theorem gives
+## Proof of Theorem 1
+
+### Number theory
+
+Uniformly for \(1\le v\le n\), the standard Möbius inversion identity gives
 \[
-Q=\exp((1+o(1))y)=n^{o(1)},
+d_n(v)=n\frac{\varphi(v)}v+O(2^{\omega(v)}+1).
 \]
-while Mertens' theorem gives
+Since \(\max_{v\le n}2^{\omega(v)}=n^{o(1)}\), and the classical minimal-order estimate for the Euler totient ratio is
 \[
-\rho_Q:=\frac{\varphi(Q)}{Q}
- =\prod_{q\le y}(1-1/q)
- =\frac{e^{-\gamma}+o(1)}{\log\log n}.
+\min_{v\le n}\frac{\varphi(v)}v
+ =(e^{-\gamma}+o(1))/\log\log n,
+\]
+we obtain
+\[
+\delta(C_n)\ge (e^{-\gamma}-o(1))n/\log\log n. \tag{1}
 \]
 
-There are \(m=\lfloor n/Q\rfloor=n^{1-o(1)}\) vertices divisible by \(Q\). Each such \(v\) has
-\[
-d_n(v)\le\#\{1\le j\le n:\gcd(j,Q)=1\}\le n\rho_Q+Q
-\]
-by periodicity modulo \(Q\). No two such vertices are adjacent, since their gcd is divisible by \(Q>1\). Therefore their isolated-vertex events in the independently percolated graph involve **disjoint sets of random edges**, and hence are mutually independent.
+### Below the threshold: independent low-degree vertices
 
-For any of these vertices,
+Put \(y=\log n/(\log\log n)^2\) and \(Q=\prod_{q\le y,\ q\ {\rm prime}}q\). By the prime number theorem, \(Q=\exp((1+o(1))y)=n^{o(1)}\); by Mertens' product theorem,
 \[
-\Pr(v\text{ isolated})=(1-p_n)^{d_n(v)}
- \ge(1-p_n)^{n\rho_Q+Q}
- =n^{-c e^{-\gamma}+o(1)}.
+\rho=\frac{\varphi(Q)}Q
+=\frac{e^{-\gamma}+o(1)}{\log\log n}.
 \]
-For \(c<e^\gamma\), the expected number of isolates among these independent events is at least \(n^{1-c e^{-\gamma}-o(1)}\to\infty\). The probability that none is isolated is at most the exponential of minus this quantity, hence tends to zero. The graph is disconnected with high probability.
-
-### Proof: supercritical side
-
-Fix \(c>e^\gamma\), and let \(s_0=\lceil n/\sqrt{\log n}\rceil\). A graph is disconnected iff it has a nonempty vertex subset \(S\), \(|S|=s\le n/2\), with no retained edge crossing \(S\) and \(S^c\).
-
-**Small cuts \(1\le s\le s_0\).** The minimum degree bound implies
+There are \(m=\lfloor n/Q\rfloor=n^{1-o(1)}\) multiples of \(Q\) among the vertices. Every such vertex \(v\) has degree at most the number of integers coprime to \(Q\), bounded by \(n\rho+Q\) by periodicity modulo \(Q\). Distinct multiples of \(Q\) cannot be adjacent to one another, so their incident-edge sets are pairwise disjoint. Their isolated-vertex events in \(C_n(p_n)\) are consequently **independent**, each having probability at least
 \[
-e_{C_n}(S,S^c)\ge s(\delta(C_n)-(s-1))
- \ge(e^{-\gamma}-o(1))\,s\,n/\log\log n,
+(1-p_n)^{n\rho+Q}=n^{-c e^{-\gamma}+o(1)}.
 \]
-since \(s_0=o(n/\log\log n)\). Thus \(p_n e_{C_n}(S,S^c)\ge(1+\eta)s\log n\) for some fixed \(\eta>0\) and all large \(n\). Union bounding over at most \(n^s\) sets yields probability \(o(1)\) of any such empty cut.
+If \(c<e^\gamma\), their expected isolated count grows at least as \(n^{1-c e^{-\gamma}-o(1)}\to\infty\); independence shows that the probability none is isolated tends to zero.
 
-**Large cuts \(s_0\le s\le n/2\).** Let \(H\) be the primes in \((\sqrt n,n]\). The prime number theorem gives \(h=|H|\sim n/\log n\). Every \(v\in[n]\) is coprime to **all but at most one** member of \(H\): no integer at most \(n\) has two distinct prime factors exceeding \(\sqrt n\). If \(|H\cap S^c|\ge h/2\), every vertex in \(S\) has at least \(h/2-1\) neighbors in \(H\cap S^c\); otherwise every vertex in \(S^c\) has at least \(h/2-1\) neighbors in \(H\cap S\). As \(s\le n-s\), either way
+### Above the threshold: two cut ranges
+
+Fix \(c>e^\gamma\). A disconnected graph has a nonempty \(S\subset[n]\), \(|S|=s\le n/2\), with no retained edges crossing to its complement.
+
+For \(s\le s_1=\lceil n/\sqrt{\log n}\rceil\), the minimum-degree bound (1) and the trivial internal-edge bound imply
 \[
-e_{C_n}(S,S^c)\ge s(h/2-1)=(1/2-o(1))\,sn/\log n.
+e_{C_n}(S,S^c)\ge s\bigl(\delta(C_n)-(s-1)\bigr)
+\ge(e^{-\gamma}-o(1))sn/\log\log n.
 \]
-For a fixed \(S\), the probability its cut is empty is therefore at most
+Thus the probability the cut is empty is at most \(n^{-(1+\eta)s}\) for some \(\eta>0\). There are at most \(n^s\) choices of \(S\); a union bound gives \(o(1)\).
+
+For \(s_1\le s\le n/2\), let \(H\) be the primes in \((\sqrt n,n]\). The prime number theorem gives \(h=|H|\sim n/\log n\). **Every integer at most \(n\) is coprime to all but at most one member of \(H\)**, since it cannot have two prime factors greater than \(\sqrt n\). If at least half of \(H\) lies in \(S^c\), each vertex in \(S\) has at least \(h/2-1\) neighbors there; otherwise each vertex in \(S^c\) has at least \(h/2-1\) neighbors in \(S\). Therefore
 \[
-\exp(-(c/2-o(1))s\log\log n).
+e_{C_n}(S,S^c)\ge s(h/2-1)
+ =(1/2-o(1))sn/\log n.
 \]
-Meanwhile
+At \(p_n=c\log n\log\log n/n\), an empty cut has probability at most \(\exp(-(c/2-o(1))s\log\log n)\). But
 \[
 {n\choose s}\le(en/s)^s
- \le\exp(s(1+\tfrac12\log\log n))
+\le\exp(s(1+\tfrac12\log\log n))
 \]
-because \(s\ge n/\sqrt{\log n}\). Since \(c>e^\gamma>1\), the resulting union bound over large \(s\) tends to zero.
+because \(s\ge n/\sqrt{\log n}\). Since \(c>e^\gamma>1\), the union bound again gives \(o(1)\). This proves Theorem 1. \(\square\)
 
-Both ranges are controlled, so the graph is connected with high probability. \(\square\)
+## Proof of Theorem 2
 
-## New open candidate: critical window / connectivity vs isolation
-
-For \(0<\lambda<\infty\) define \(p_n(\lambda)\) implicitly by
+**Step 1: center.** Since \(\mu_n(p)\) is strictly decreasing, the subcritical argument above implies \(\mu_n(c\log n\log\log n/n)\to\infty\) when \(c<e^\gamma\). Conversely (1) yields
 \[
-\mu_n(p_n):=\sum_{v=1}^n(1-p_n)^{d_n(v)}=\lambda.
+\mu_n(p)\le n\exp(-p\delta(C_n))\to0
 \]
-For all sufficiently large \(n\), such \(p_n(\lambda)\in(0,1)\) exists and is unique. The theorem implies \(p_n(\lambda)\sim e^\gamma\log n\log\log n/n\).
+when \(c>e^\gamma\). Hence \(b_n\sim e^\gamma\log n\log\log n/n\).
 
-**Question A (Poisson window).** Is the number of isolated vertices of \(C_n(p_n(\lambda))\) asymptotically Poisson with mean \(\lambda\)?
-
-**Question B (connectivity window).** Is
+**Step 2: window normalization.** Write \(q_v=(1-b_n)^{d_n(v)}\), so \(\sum_v q_v=1\). For fixed \(\varepsilon>0\), the total \(q_v\)-weight of vertices with
 \[
-\lim_{n\to\infty}\Pr(C_n(p_n(\lambda))\text{ connected})=e^{-\lambda}?
+d_n(v)\ge(1+\varepsilon)e^{-\gamma}n/\log\log n
 \]
-Equivalently at this scale, is having no isolated vertices asymptotically sufficient for connectivity? A process-level strengthening asks whether the last isolated vertex disappears at the same hitting time as full connectivity, with high probability.
+is at most \(n\cdot n^{-(1+\varepsilon)+o(1)}=o(1)\). On the complementary vertices, (1) gives
+\[
+a_n d_n(v)=1+O(\varepsilon)+o(1).
+\]
+For each fixed \(t\), comparing \((1-b_n-t a_n)^{d_n(v)}\) with \(q_v\) therefore yields \(\mu_n(b_n+t a_n)\to e^{-t}\), first on the complementary vertices and then for all vertices by letting \(\varepsilon\downarrow0\). The discarded high-degree vertices remain negligible even for \(t<0\), since the change multiplies each \(q_v\) by at most \(\exp(O(\log\log n))=(\log n)^{O(1)}\).
 
-This formulation does **not** call the already-proved leading threshold an open problem.
+**Step 3: Poisson isolates.** Let \(I_n\) count isolated vertices at \(p=b_n+t a_n\). Then \(\mu_n(p)\to\lambda=e^{-t}\), and \(\max_v(1-p)^{d_n(v)}\to0\) by (1). For distinct fixed vertices \(v_1,\ldots,v_k\),
+\[
+\Pr(\text{all }v_i\text{ isolated})
+=\prod_{i=1}^k(1-p)^{d_n(v_i)}\,(1-p)^{-e_{C_n}(\{v_1,\ldots,v_k\})}.
+\]
+The correction factor is uniformly \(1+o(1)\) for fixed \(k\), since the induced graph has at most \(\binom k2\) edges and \(p\to0\). Summing over distinct tuples gives the factorial moments \(\mathbb E[(I_n)_k]\to\lambda^k\). Therefore \(I_n\Rightarrow\mathrm{Poisson}(\lambda)\).
 
-## Finite simulation
+**Step 4: no nontrivial disconnected components.** Still let \(p=b_n+t a_n\), so \(p\sim e^\gamma\log n\log\log n/n\) and \(\mu_n(p)=O(1)\).
 
-[\`experiments/coprime_percolation.py\`](../../experiments/coprime_percolation.py) samples the model by generating potential Erdős–Rényi edges via geometric waiting times and retaining only those with \(\gcd=1\). Fixed-seed runs at \(n=1000,3000,10000\) and \(c=1.0,1.4,1.78,2.2\) show the predicted movement from disconnected to connected. These moderate sizes **cannot** confirm the asymptotic constant.
+For \(2\le s\le s_0=\lfloor n/(\log n)^3\rfloor\), sum over vertex sets \(S\) of size \(s\) that could form an isolated **connected** component. By Cayley's tree count and a union bound over internal spanning trees,
+\[
+\Pr(S\text{ is a component})
+\le s^{s-2}p^{s-1}(1-p)^{e_{C_n}(S,S^c)}.
+\]
+Put \(q_v(p)=(1-p)^{d_n(v)}\). Since \(e_{C_n}(S,S^c)=\sum_{v\in S}d_n(v)-2e_{C_n}(S)\) and \(2e_{C_n}(S)\le s(s-1)\),
+\[
+\sum_{|S|=s}\Pr(S\text{ is a component})
+\le \frac{s^{s-2}}{s!}\,p^{s-1}(1-p)^{-s(s-1)}\mu_n(p)^s.
+\]
+For \(s\le s_0\), \(p\,s=O(\log\log n/(\log n)^2)=o(1)\), so the right side is bounded by \(e^{O(s)}p^{s-1}\mu_n(p)^s\), uniformly; summing over \(s\ge2\) gives \(O(p)=o(1)\).
 
-## Related research and novelty caveat
+For \(s_0\le s\le s_1=\lceil n/\sqrt{\log n}\rceil\), the small-cut estimate from Theorem 1 gives
+\[
+p\,e_{C_n}(S,S^c)=(1-o(1))s\log n.
+\]
+Since \(\log(en/s)\le1+3\log\log n\), a union bound excludes every empty cut in this range.
 
-Xiang Qi, *Random Meta-Structure* (2026 preprint, DOI 10.5281/zenodo.21737868) explicitly considers Bernoulli thinning of the coprime graph, but its coprime example discusses a heuristic **giant-component** scale, not the critical connectivity window proposed here. More general literature studies percolation on fixed dense graphs and inhomogeneous random graphs. The exact asymptotic connectivity theorem above is **not certified novel** and must be compared with general results before publication. See the dated literature audit.
+For \(s_1\le s\le n/2\), the prime-hub large-cut estimate from Theorem 1 still applies, with \(c=e^\gamma+o(1)>1\), and excludes every empty cut.
+
+Thus with high probability **there is no connected component of size between 2 and \(n/2\)**. A disconnected graph with no isolated vertices must have such a component. Therefore
+\[
+\Pr(C_n(p)\text{ connected})=\Pr(I_n=0)+o(1)\to e^{-\lambda}=\exp(-e^{-t}).
+\]
+This completes the proof. \(\square\)
+
+## The remaining candidate open problem: explicit centering
+
+The implicit function \(b_n\) is **exactly computable** from the degrees but not expressed by a simple asymptotic formula beyond leading order.
+
+**Problem P008.** Determine an explicit, number-theoretic formula \(B(n)\), ideally as an asymptotic expansion in ordinary and iterated logarithms, satisfying
+\[
+\boxed{b_n-B(n)=o\left(\frac{\log\log n}{n}\right).}
+\]
+Such a formula would locate the **entire Gumbel transition** without first enumerating the coprime graph's degree profile and numerically solving \(\mu_n(b_n)=1\).
+
+Is a finite deterministic expansion of this accuracy possible, or are secondary arithmetic oscillations on the scale of the window unavoidable?
+
+## Reproducibility, evidence, novelty
+
+[\`experiments/coprime_percolation.py\`](../../experiments/coprime_percolation.py) samples independent edge retention by geometric waiting times in the complete graph, accepting a sampled edge only when its endpoints are coprime. It records connectivity and isolates for finite \(n\); these simulations illustrate the theory but do **not** prove it.
+
+- Xiang Qi, *Random Meta-Structure: A Random Graph Model Based on Abstract Binary Relations* (2026 preprint), DOI [10.5281/zenodo.21737868](https://doi.org/10.5281/zenodo.21737868), explicitly considers independent thinning of the coprime graph as an example. Its threshold estimate concerns a heuristic *giant component*, not the Gumbel connectivity law stated here.
+- [Bollobás–Borgs–Chayes–Riordan, *Percolation on dense graph sequences* (2010)](https://doi.org/10.1214/09-AOP478) develops general dense-host percolation theory.
+- [Erdős–Sárközy, *On cycles in the coprime graph of integers*](https://doi.org/10.37236/1323) is part of the host graph's classical literature.
+
+**Scholarly caveat:** This proof and its critical-window conclusion are novel *to this exploratory session*, **not yet certified novel relative to the mathematical literature**. The proof also requires a separate adversarial mathematical audit before journal-level claims. See the dated audit note.
