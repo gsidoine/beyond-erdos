@@ -1,5 +1,14 @@
 # P009 — Can prime-sum pairings use only two prime values?
 
+<!-- DOSSIER-SUMMARY -->
+> **Research question:** Can 1,…,2n always be paired using at most two distinct prime sums?  
+> **Formulation:** candidate. **Novelty:** closely related.  
+> **Verified/known progress:** One-color iff 2n+1 prime; two-color certificate from short prime difference.  
+> **Finite evidence:** Sieve certificates through n=1,000,000 (finite only).  
+> **Navigation:** [All ten problems](../../README.md#problem-catalogue) · [Source-by-source audit](../../audits/2026-10-28-novelty-quality-gate.md)
+<!-- /DOSSIER-SUMMARY -->
+
+
 **Area:** additive number theory, extremal arithmetic matchings  
 **First proposed:** 2026-10-28  
 **Status:** candidate problem, **unresolved and originality status unverified**  

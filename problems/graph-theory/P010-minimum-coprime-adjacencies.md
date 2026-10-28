@@ -1,5 +1,14 @@
 # P010 — How few coprime adjacencies can a permutation have?
 
+<!-- DOSSIER-SUMMARY -->
+> **Research question:** What is the asymptotic minimum number of adjacent coprime pairs in a permutation of 1,…,n?  
+> **Formulation:** candidate. **Novelty:** not certified.  
+> **Verified/known progress:** (7/12+o(1))n/log n ≤ h(n) ≤ (1+o(1))n/log n.  
+> **Finite evidence:** Exact MILP at selected n≤200.  
+> **Navigation:** [All ten problems](../../README.md#problem-catalogue) · [Source-by-source audit](../../audits/2026-10-28-novelty-quality-gate.md)
+<!-- /DOSSIER-SUMMARY -->
+
+
 **Area:** arithmetic graph theory, Hamiltonian path cover, prime distribution  
 **First proposed:** 2026-10-28  
 **Status:** candidate extremal question, **novelty and unresolved status unverified**

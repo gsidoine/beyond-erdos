@@ -1,5 +1,14 @@
 # P003 — Maximum perfect-matching packing in a prime-sum graph
 
+<!-- DOSSIER-SUMMARY -->
+> **Research question:** Is the maximum perfect-matching packing equal to the host graph's minimum degree?  
+> **Formulation:** candidate. **Novelty:** not certified.  
+> **Verified/known progress:** Equivalent to a min-cut condition for an arithmetic bipartite factor.  
+> **Finite evidence:** Integral max flow tested to n=3,000 (finite only).  
+> **Navigation:** [All ten problems](../../README.md#problem-catalogue) · [Source-by-source audit](../../audits/2026-10-28-novelty-quality-gate.md)
+<!-- /DOSSIER-SUMMARY -->
+
+
 **Area:** extremal graph theory, arithmetic graph factors  
 **Status:** candidate conjecture; novelty and unresolved status unverified  
 **Proposed:** 28 October 2026

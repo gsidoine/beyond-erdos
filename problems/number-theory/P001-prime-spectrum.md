@@ -1,5 +1,14 @@
 # P001 — Prime-spectrum saturation
 
+<!-- DOSSIER-SUMMARY -->
+> **Research question:** Does the maximum distinct-prime-sum deficit of a prime-sum perfect matching stay bounded?  
+> **Formulation:** candidate. **Novelty:** not certified.  
+> **Verified/known progress:** Interior prime sums realized by a partial matching; completion is open in this study.  
+> **Finite evidence:** Exact small matching optimization.  
+> **Navigation:** [All ten problems](../../README.md#problem-catalogue) · [Source-by-source audit](../../audits/2026-10-28-novelty-quality-gate.md)
+<!-- /DOSSIER-SUMMARY -->
+
+
 **Area:** additive number theory, rainbow matchings  
 **Status:** candidate question; novelty and unresolved status unverified  
 **Proposed:** 28 October 2026

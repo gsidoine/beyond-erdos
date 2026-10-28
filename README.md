@@ -1,71 +1,80 @@
 # Beyond Erdős
 
-**Original candidate mathematical questions in the spirit of Paul Erdős.**
+**An independent notebook of ten exploratory problems in number theory, graph theory and probability, inspired by the problem-posing tradition of Paul Erdős.**
 
-This research notebook explores questions in number theory, graph theory and additive combinatorics through exact definitions, proofs, counterexample searches, reproducible computation and historical literature checks.
+**Important:** These are **not** problems claimed to have been posed by Erdős, not part of [erdosproblems.com](https://www.erdosproblems.com/), and not certified to be new or unresolved. Our collection is independent of [teorth/erdosproblems](https://github.com/teorth/erdosproblems). We draw inspiration from that repository's clear, data-driven organization—not its problem content.
 
-> **Attribution:** These questions were independently formulated in an AI-assisted brainstorming session on 28 October 2026, inspired by the tradition of Paul Erdős. They are **not** claimed to have been posed by Erdős or to be new and unresolved. This repository is not affiliated with [erdosproblems.com](https://www.erdosproblems.com/) or [teorth/erdosproblems](https://github.com/teorth/erdosproblems).
+**Explore:** [Problem catalogue below](#problem-catalogue) · [Interactive searchable browser](docs/index.html) · [Research audits](#evidence-and-prior-art) · [How to contribute](CONTRIBUTING.md)
 
-## Research questions
+> **Research freeze:** P001–P010. No new problem IDs will be added until proof, novelty, and problem-quality reviews are complete.
 
-| ID | Area | Question | Status |
-|---|---|---|---|
-| [P001](problems/number-theory/P001-prime-spectrum.md) | Additive number theory | Can prime-sum perfect matchings realize all but a bounded number of available prime sums? | Candidate; novelty unverified |
-| [P002](problems/graph-theory/P002-prime-matching-reconfiguration.md) | Graph reconfiguration | Are prime-sum perfect matchings connected by four-vertex switches? | Candidate; novelty unverified |
-| [P003](problems/graph-theory/P003-prime-matching-packing.md) | Extremal graph theory | Does the prime-sum graph have as many edge-disjoint perfect matchings as its minimum degree? | Candidate; novelty unverified |
-| [P004](problems/number-theory/P004-sidon-exchange-connectivity.md) | Additive combinatorics | Are Sidon sets connected by single-element exchanges below the square-root scale? | Candidate; novelty unverified |
-| [P005](problems/graph-theory/P005-coprime-permutation-switches.md) | Arithmetic graph reconfiguration | Are coprime permutations connected under validity-preserving value swaps? | Candidate; novelty unverified |
-| [P006](problems/number-theory/P006-prime-avoiding-sidon-sets.md) | Additive number theory | What is the maximum size of a Sidon set with no prime differences? | Candidate; novelty unverified |
+## Problem catalogue
 
-| [P007](problems/graph-theory/P007-coprime-difference-spectrum.md) | Graph labeling / number theory | Does a coprime Hamiltonian path attain the parity upper bound on its number of distinct gaps? | **Full graceful case already known (2021)**; extremal extension unverified |
-| [P008](problems/probability/P008-coprime-percolation-critical-window.md) | Random graphs / number theory | Can the connectivity window of a percolated coprime graph be centered by an **explicit arithmetic expansion**? | Candidate centering question; leading threshold + Gumbel law proved here, novelty unverified |
+Every problem has a permanent identifier, its own self-contained statement, evidence, and nearest prior art. *Candidate* means **under investigation**, not "verified open".
 
-### Highlight of research pass 3
+<!-- CATALOG:START -->
+| ID | Question | Area | Formulation | Novelty |
+|---|---|---|---|---|
+| [P001](problems/number-theory/P001-prime-spectrum.md) | Prime-spectrum saturation | number theory | candidate | not certified |
+| [P002](problems/graph-theory/P002-prime-matching-reconfiguration.md) | Prime-sum matching reconfiguration | graph theory | candidate | not certified |
+| [P003](problems/graph-theory/P003-prime-matching-packing.md) | Edge-disjoint prime-sum matchings | graph theory | candidate | not certified |
+| [P004](problems/number-theory/P004-sidon-exchange-connectivity.md) | Sidon exchange connectivity | additive combinatorics | candidate | not certified |
+| [P005](problems/graph-theory/P005-coprime-permutation-switches.md) | Coprime permutation switches | graph theory | candidate | not certified |
+| [P006](problems/number-theory/P006-prime-avoiding-sidon-sets.md) | Sidon sets without prime differences | additive combinatorics | candidate | not certified |
+| [P007](problems/graph-theory/P007-coprime-difference-spectrum.md) | Coprime path difference spectrum | graph labeling | reframe | known subproblem |
+| [P008](problems/probability/P008-coprime-percolation-critical-window.md) | Arithmetic centering of coprime percolation | probability | needs specification | not certified |
+| [P009](problems/number-theory/P009-two-prime-palette-pairings.md) | Two-prime palette pairings | number theory | candidate | closely related |
+| [P010](problems/graph-theory/P010-minimum-coprime-adjacencies.md) | Minimum coprime adjacencies | graph theory | candidate | not certified |
+<!-- CATALOG:END -->
 
-P008 contains a complete, independently auditable proof of a sharp asymptotic connectivity transition at \(e^\gamma\log n\log\log n/n\), a Poisson limit for isolated vertices, and a Gumbel connectivity window at an implicitly defined center. **This is an internally derived mathematical result, not a certified novelty or priority claim.** The remaining question asks for an explicit arithmetic centering to the much finer window scale \(\log\log n/n\).
+For precise definitions, follow each ID. To filter by subject, status or title in a browser, open [the searchable catalogue](docs/index.html). If GitHub Pages is enabled for the repository's `docs/` folder, the same page can be published as a standalone website.
 
-P007 also records a **previously known** fully resolved result of Panma–Rochanakul (2021): coprime graceful permutations exist only for \(n\le5\) and retains a sharper extremal problem with exact MILP evidence through many finite cases.
+## How to interpret the labels
 
-## Literature audit (all selected problems)
+| Label | Meaning |
+|---|---|
+| **candidate** | A precise mathematical question, but not certified original or unresolved |
+| **reframe** | Some original formulation is known or misleading; the surviving question must be isolated |
+| **needs specification** | The research goal is meaningful, but its current statement is not a fully formal yes/no question |
+| **not certified** | No exhaustive prior-art check or independent specialist certification |
+| **known subproblem** | A specific subclaim is already established in earlier literature |
+| **closely related** | Strong connection to an older question; independence is not settled |
 
-The [comprehensive P001–P008 audit (28 October 2026)](literature-audits/2026-10-28-comprehensive-P001-P008.md) identifies direct precedents, general equivalences, verified prior-art collisions, and unresolved novelty questions. **None of the eight exact candidate questions is yet certified genuinely novel**; in particular P007's complete prime-graceful path existence theorem was published in 2021.
+An *internal proof* is not a published or externally verified theorem. Likewise, exact computations apply only to the stated finite instances.
 
-| [P009](problems/number-theory/P009-two-prime-palette-pairings.md) | Additive number theory | Can every prime-sum perfect matching problem be solved using at most two distinct prime values? | Candidate; linked to classical prime-difference questions |
-| [P010](problems/graph-theory/P010-minimum-coprime-adjacencies.md) | Arithmetic graph theory | What is the smallest possible number of coprime adjacencies in a permutation of `[n]`? | Candidate; rigorous asymptotic bounds and exact finite tests |
+## Evidence and prior art
 
-### New research, pass 4
+- [All-ten adversarial review](audits/2026-10-28-P001-P010-adversarial-review.md) — proof checks, reproductions, explicit gaps, and selection criteria.
+- [Comprehensive P001–P008 literature review](literature-audits/2026-10-28-comprehensive-P001-P008.md) — close mathematical predecessors and one confirmed prior-art collision.
+- [P009/P010 literature review](literature-audits/2026-10-28-pass-4.md) — prime differences and the earlier Erdős–Freud–Hegyvári work.
+- [Current novelty and quality gate](audits/2026-10-28-novelty-quality-gate.md) — precise citations and retain/reframe priorities.
+- [Experiments](experiments/) — code for finite optimization, enumeration and random-graph simulations. See [dependencies](requirements-experiments.txt).
 
-[P009/P010 literature audit](literature-audits/2026-10-28-pass-4.md) records known antecedents (including **Erdős–Freud–Hegyvári 1983**, on arithmetic of adjacent permutation entries), a finite failed generalization relevant to P005, and a solved/triaged gcd-spectrum idea. P009 has explicit prime-pair witnesses for every `2<=n<=100000`; P010 has rigorous prime-obstruction and prime-factor-grouping bounds
-\[
-(7/12+o(1))n/\log n\le h(n)\le(1+o(1))n/\log n.
-\]
-**No claim that either exact problem is newly discovered and open has been independently certified.**
+## How this repository works
 
-## Working standards
-
-1. **State the problem precisely.** Record quantifiers, definitions and exceptional cases.
-2. **Try to disprove before promoting.** Search for easy contradictions, counterexamples and known equivalents.
-3. **Separate evidence from proof.** A numerical pattern is never a theorem.
-4. **Reproduce computations.** Include source code and parameters for every published computational claim.
-5. **Audit the literature.** Record related references and exact overlap. Do not infer novelty from a failure to find search hits.
-6. **Preserve corrections.** False conjectures and known equivalent problems are archived rather than erased.
-
-**Status vocabulary:** *candidate (unverified)*, *credible unresolved (literature-audited)*, *conjecture (evidence-backed)*, *proved*, *disproved*, or *previously known*.
-
-## Computation
-
-Research pass 3 adds a coprime difference-spectrum MILP and two percolation samplers, including a numerical solver for the exact critical center. Install the optional Python dependencies from [requirements-experiments.txt](requirements-experiments.txt) and see each problem page for commands.
-
-Research pass 2 adds an exact C++17 coprime-permutation connectivity check and an exact SciPy MILP for prime-difference-free Sidon sets. Consult their problem pages for bounds and solver-status caveats.
-
-The included standard-library script enumerates prime-sum perfect matchings and four-cycle swaps for small instances:
-
-```bash
-python experiments/reconfiguration_small.py --max-n 10
+```text
+data/problems.json               Canonical index and status data
+problems/                        Ten mathematical problem dossiers
+experiments/                     Computational tests and witnesses
+audits/                          Proof, numerical, and novelty reviews
+literature-audits/               Dated source-by-source literature surveys
+docs/                            Optional searchable static catalogue
+scripts/                          Generate and validate the index
+tests/                           Dependency-free index checks
+research-notes/                  Explored and rejected questions
 ```
 
-See [literature-audits](literature-audits/README.md) for novelty-review standards.
+The table above and `docs/problems.json` are **generated views** of `data/problems.json`. After changing metadata, run:
 
-## Scope
+```bash
+python scripts/generate_catalog.py
+python -m unittest discover -s tests -v
+```
 
-The aim is not to accumulate speculative conjectures. It is to ask concise, consequential mathematical questions, refine them adversarially and identify structural discoveries worth presenting to other mathematicians.
+Use `python scripts/generate_catalog.py --check` to verify that all generated views are current.
+
+## Submission and credit
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) and the [problem dossier template](PROBLEM_TEMPLATE.md). Every mathematical addition should disclose its proof status, attempts at disproof, computational methodology, the *closest* previously published result, and a dated novelty assessment. Known theorems must credit their earlier authors; "not found" is never treated as "new".
+
+This is a **research notebook**, not a prize list, journal, or official Erdős problem database.
