@@ -1,5 +1,14 @@
 # P008 — Arithmetic centering of the random coprime graph's connectivity window
 
+<!-- DOSSIER-SUMMARY -->
+> **Research question:** Can the critical connectivity center be approximated by a specified non-tautological arithmetic expansion?  
+> **Formulation:** needs specification. **Novelty:** not certified.  
+> **Verified/known progress:** Internal threshold/Gumbel arguments require external proof and priority audit.  
+> **Finite evidence:** Finite degree-profile and center checks.  
+> **Navigation:** [All ten problems](../../README.md#problem-catalogue) · [Source-by-source audit](../../audits/2026-10-28-novelty-quality-gate.md)
+<!-- /DOSSIER-SUMMARY -->
+
+
 **Area:** probabilistic number theory, arithmetic random graphs  
 **Origin:** discovery pass 3, 2026-10-28  
 **Status:** *explicit arithmetic centering* is a candidate question; leading transition and Gumbel law are proved below. **Novelty of the theorem and the open question is not certified.**
