@@ -40,7 +40,7 @@ class CatalogueTests(unittest.TestCase):
                     self.assertRegex(source["url"], r"^https://")
 
     def test_explicit_quality_statuses(self):
-        allowed = {"candidate", "reframe", "needs specification"}
+        allowed = {"candidate", "reframe", "needs specification", "proved internally"}
         for r in self.problems:
             self.assertIn(r["status"], allowed)
 
