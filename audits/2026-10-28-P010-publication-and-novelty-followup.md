@@ -60,7 +60,7 @@ $$
 
 hold for every $n$ and every interval of allowed sums $[a,b]$?
 
-- **Exact exhaustive test**: All valid intervals, all $n\le40$, satisfy the equality by integral max flow. The numerical script [\`experiments/test_interval_sum_factors.py\`](../experiments/test_interval_sum_factors.py) reproduces this finite experiment using SciPy.
+- **Exact exhaustive test**: All valid intervals, all $n\le40$, satisfy the equality by integral max flow. The numerical script [`experiments/test_interval_sum_factors.py`](../experiments/test_interval_sum_factors.py) reproduces this finite experiment using SciPy.
 - **Why the restriction is real:** for arbitrary sets of allowed sums it fails already for $n=3$, $S=\{1,3\}$. The matrix $\bigl(\begin{smallmatrix}0&1&0\\1&0&1\\0&1&0\end{smallmatrix}\bigr)$ has minimum degree 1 but no perfect matching, since rows 0 and 2 have only column 1 as neighbor.
 - **Established adjacent theory:** Convex-bipartite graphs, Toeplitz and Hankel support matrices, and standard bipartite $k$-factors are well studied. In particular, [Hao–Li–Yu (2025)](https://doi.org/10.1016/j.disc.2025.114511) give conditions for general factors. I have **not** found the exact interval-sum assertion, but the search was not exhaustive and the assertion may follow easily from known interval-matrix theorems.
 
