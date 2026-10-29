@@ -23,6 +23,7 @@ Define an exchange graph $\mathcal E_{N,k}(W)$ with this family as vertices. Joi
 ## Main question
 
 For scaling regimes $k=k(N)$, particularly $k$ approaching a nonzero fraction of $\sqrt N$, study the random variables
+
 $$
 X_{N,k}(q)=|\mathsf{Sid}_{N,k}(W_N(q))|,\qquad
 C_{N,k}(q)=\#\text{components of }\mathcal E_{N,k}(W_N(q)).
