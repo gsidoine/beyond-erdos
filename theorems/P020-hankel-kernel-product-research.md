@@ -27,7 +27,7 @@ we are in the *middle* case of Remark 2.4.6: the second characteristic polynomia
 **Corollary.** With $V=\ker H$ as above, for every finite field and every $k\ge1$,
 $$
 \boxed{
-\dim_F\operatorname{span}\{fg:f,g\in V\}=2k-1.
+\dim_F\mathrm{span}\{fg:f,g\in V\}=2k-1.
 }\tag{2}
 $$
 
