@@ -56,24 +56,24 @@ A specialist's full bibliography audit is still required before labels such as *
 
 ### P011 — Random sum-diagonal matching/factor transitions
 
-- **Definition:** Independently retain *sum labels*, not edges, in a bipartite graph on \([n]\times[n]\). This gives strongly correlated anti-diagonals.
+- **Definition:** Independently retain *sum labels*, not edges, in a bipartite graph on $[n]\times[n]$. This gives strongly correlated anti-diagonals.
 - **Structural implication:** could distinguish additive correlation from Erdős–Rényi matching universality and predict cut/factor obstructions.
 - **Closest prior art:** Campos–Dahia–Marciano, [random Cayley sum graphs (2024)](https://doi.org/10.1112/jlms.70041), and recent random Cayley sum graph subgraph thresholds [KolKom 2026](https://kolkom26.zib.de/). The random-sum *paradigm is known*; the nonperiodic **matching/factor** observables were not located in our targeted audit.
-- **Adversarial check:** factor saturation at the current minimum degree is **not monotone** under addition of sum labels. The P011 dossier gives an explicit \(n=3\) example. Only the perfect-matching existence event is unambiguously monotone.
+- **Adversarial check:** factor saturation at the current minimum degree is **not monotone** under addition of sum labels. The P011 dossier gives an explicit $n=3$ example. Only the perfect-matching existence event is unambiguously monotone.
 
 ### P012 — Switch-space geometry under random thinning of the coprime graph
 
-- **Definition:** Percolate edges of the arithmetic \(\gcd=1\) bipartite host independently. Conditional on at least two perfect matchings, study connectedness of the **4-cycle matching flip graph**.
+- **Definition:** Percolate edges of the arithmetic $\gcd=1$ bipartite host independently. Conditional on at least two perfect matchings, study connectedness of the **4-cycle matching flip graph**.
 - **Structural implication:** probes separation between the onset of *certificates* and the onset of *local coordination between certificates*, potentially a new universality class of random solution spaces.
 - **Closest prior art:** [Dyer–Jerrum–Müller (2017)](https://doi.org/10.1145/2822322); [Bonamy et al. (2019)](https://doi.org/10.4230/LIPIcs.MFCS.2019.80); [Sah–Sawhney (2022)](https://doi.org/10.1112/mtk.12159); [Balachandran–Kush (2021)](https://doi.org/10.37236/9148).
 - **Adversarial check:** one-matching cases are vacuously connected, and adding edges need not preserve reconfiguration connectivity. No unjustified monotone-threshold conjecture is asserted.
 
 ### P013 — Random-site Sidon exchange geometry
 
-- **Definition:** Retain sites in \([N]\) independently and study the valid one-mark-exchange graph on Sidon \(k\)-sets contained in the retained subset.
+- **Definition:** Retain sites in $[N]$ independently and study the valid one-mark-exchange graph on Sidon $k$-sets contained in the retained subset.
 - **Structural implication:** possible separation between the existence of additive configurations and a connected state space, combining extremal additive combinatorics with random CSP clustering.
 - **Closest prior art:** [Luque–Torre–Lacasa (2013)](https://doi.org/10.1103/PhysRevE.88.052119) studied random Sidon decision phase transitions, and [Dotú–Van Hentenryck (2005)](https://cs.brown.edu/research/pubs/pdfs/2005/Dotu-2005-SHE.pdf) studied local Golomb-ruler optimization. The *feasible-state reconfiguration* statistic was not found in the targeted review.
-- **Adversarial check:** \(k=2\) is trivial (a Johnson graph). Meaningful regimes require larger \(k\), and conditional connectivity is not automatically monotone.
+- **Adversarial check:** $k=2$ is trivial (a Johnson graph). Meaningful regimes require larger $k$, and conditional connectivity is not automatically monotone.
 
 ## Search integrity and an instructive warning
 
