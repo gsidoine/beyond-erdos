@@ -75,6 +75,6 @@ A targeted search of the terms *random Cayley sum graph homology*, *random Cayle
 
 ## Test and review programme
 
-The dependency-free program [\`experiments/P014_sum_flag_cliques.py\`](../../experiments/P014_sum_flag_cliques.py) exhaustively verifies the four-clique expectation for small odd cyclic groups. It does not test asymptotic homology, so it cannot justify claims about homology phase transitions.
+The dependency-free program [`experiments/P014_sum_flag_cliques.py`](../../experiments/P014_sum_flag_cliques.py) exhaustively verifies the four-clique expectation for small odd cyclic groups. It does not test asymptotic homology, so it cannot justify claims about homology phase transitions.
 
 Before promoting a specific threshold conjecture, compare topological statistics with Erdős–Rényi graphs **at matched density**, control for excess edge-count variance in the sum model, and test whether clique-dependence survives relevant normalizations. Document counterexamples instead of extrapolating from finite simulations.
