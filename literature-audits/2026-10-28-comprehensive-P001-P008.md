@@ -56,9 +56,11 @@
 **Important near-overlap.** A MathOverflow discussion of prime-sum Hamiltonicity describes making **two edge-disjoint perfect matchings** from suitable prime congruence classes: https://mathoverflow.net/questions/241569/for-which-n-is-there-a-permutation-such-that-the-sum-of-any-two-adjacent-eleme. This gives constructive precedent, not the full $\delta$-packing conjecture.
 
 **Classical exact reduction.** In a bipartite graph $G=(U,V,E)$, a $k$-regular spanning factor exists iff, for all $X\subseteq U$, $Y\subseteq V$,
+
 $$
 e(X,V\setminus Y)\ge k(|X|-|Y|).
 $$
+
 This follows from integral max-flow/min-cut and is **standard**, not a new result. An extremal proof must show these inequalities for the arithmetic host.
 
 **Assessment:** exact saturation conjecture not found in cited source statements, but highly vulnerable to overlooked arithmetic cut obstructions; a complete counterexample search and exact-flow benchmarks should precede promotion.
@@ -123,9 +125,11 @@ Panma and Rochanakul, *Prime-Graceful Graphs*, *Thai Journal of Mathematics* 19(
 **Status of our internally supplied proofs.** Our P008 contains an internally derived leading-order threshold $e^\gamma\log n\log\log n/n$, Poisson isolated-vertex limit, and Gumbel window when centered by $\mu_n(b_n)=1$. The generic architecture—isolates, factorial moments, cuts—is well established. An **independent mathematical audit** and review of whether Gupta–Lee–Li or other general results subsume the argument are needed before any publication or priority claim.
 
 **Remaining centering task is not yet a crisp yes/no conjecture.** As currently worded, "find an explicit formula for $b_n$" requires a precise admissible class of expressions and an error target, otherwise the exact implicit equation $\mu_n(b_n)=1$ itself already defines $b_n$. A meaningful task is to derive a specified elementary/logarithmic asymptotic approximation $B(n)$ satisfying
+
 $$
 b_n-B(n)=o(\log\log n/n).
 $$
+
 Before claiming openness, define the desired finite expansion class (e.g. explicit combinations of iterated logarithms with universal coefficients), and rule out tautological restatements of the exact degree sum.
 
 **Assessment:** highest potential analytic significance, but highest burden of novelty and proof audit. The **model** is known, the **general mechanism** is known, and only the arithmetic specialisation/fine evaluation might offer novelty.
