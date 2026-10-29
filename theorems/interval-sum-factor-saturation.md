@@ -100,6 +100,20 @@ has minimum degree 1 but no perfect matching, because rows 0 and 2 both have onl
 
 The proven result is a **structural control case**: full consecutive bands saturate minimum degree, sparse nonconsecutive sum sets need not, and prime-supported sets remain an arithmetic question.
 
+## The theorem is stronger than a generic convex-neighborhood assumption
+
+Even a bipartite graph whose adjacency matrix has **consecutive 1s in every row and every column** need not have a factor of its minimum degree. Consider
+\[
+M=\begin{pmatrix}
+1&1&0&0&0\\
+1&1&0&0&0\\
+1&1&0&0&0\\
+1&1&1&1&1\\
+1&1&1&1&1
+\end{pmatrix}.
+\]
+This matrix is **biconvex** in the displayed ordering: every row and column has a consecutive block of 1s. Its minimum row/column degree is 2. But the first three rows collectively see only the first two columns, violating Hall's condition. Thus it has **no perfect matching**, let alone two. The extra aligned *constant-diagonal interval* structure of \(G_{n;a,b}\) is essential to the proof, rather than arbitrary biconvexity alone.
+
 ## Novelty and research-priority warning
 
 This theorem has a complete proof within this research notebook, but its **publication priority has not been established**. General \(k\)-factor existence, Toeplitz and consecutive-ones matrices, convex bipartite graphs, bounded-displacement permutations and banded matrix decompositions are classical topics. Nearby sources include:
