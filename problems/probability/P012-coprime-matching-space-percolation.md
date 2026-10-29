@@ -1,0 +1,59 @@
+# P012 — When does a random coprime graph have a connected matching space?
+
+<!-- DOSSIER-SUMMARY -->
+> **Research question:** Under independent thinning of the coprime bipartite graph, at what density do all surviving perfect matchings become connected by alternating four-cycle switches?  
+> **Formulation:** candidate. **Novelty:** apparent novelty — targeted search, exact observable unverified.  
+> **Verified/known progress:** The deterministic switch problem P005 and general matching-reconfiguration theory are known inputs; random-fiber connectivity is not established here.  
+> **Finite evidence:** The relevant connectivity property is generally nonmonotone under adding edges; uniqueness of a perfect matching must be handled separately.  
+> **Navigation:** [Full catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+<!-- /DOSSIER-SUMMARY -->
+
+**Fields:** probability, arithmetic graph theory, graph reconfiguration  
+**Proposed:** 2026-10-29  
+**Research status:** candidate, unproved, not certified novel.
+
+## Model
+
+Let \(B_n\) have two copies of \([n]\) with edge \((i,j)\) precisely when \(\gcd(i,j)=1\). Independently retain every permitted edge with probability \(p\), giving \(B_n(p)\).
+
+Let \(\mathcal M_n(p)\) be the set of all perfect matchings of \(B_n(p)\). Define the **switch-space graph** \(\mathcal F_n(p)\) whose vertices are \(\mathcal M_n(p)\), with an edge whenever one matching can be obtained from another by replacing two matched edges with the two crossed edges of an alternating 4-cycle that is present in the thinned graph.
+
+The original P005 is the deterministic endpoint \(p=1\).
+
+## Main structural question
+
+Study the probability
+\[
+\Pr\!\left(\mathcal F_n(p)\text{ is connected}\ \middle|\ |\mathcal M_n(p)|\ge2\right)
+\]
+as \(n\to\infty\), and determine the **separation of scales** between (i) existence of perfect matchings, (ii) existence of multiple perfect matchings, and (iii) four-cycle connectivity of **all** perfect matchings.
+
+One possible outcome is a phase diagram with a substantial regime where perfect matchings exist in abundance but their switch space is fragmented. Identify arithmetic causes for such fragmentation and compare with \(G(n,n,p)\) and other deterministic host graph families.
+
+This statement asks for the phase diagram **without asserting that the connectivity event is monotone or has a sharp threshold**.
+
+## Why a separate problem?
+
+Perfect-matching existence is a property of the base graph. Connectedness of its **space of certificates** is a strictly higher-level property and can differ strongly between hosts with similar minimum degree and matching counts. This tests the proposed Meta Erdős theme of *local-to-global certificate coordination* and links the fixed-host coprime model (P005) to arithmetic random graph behavior (P008).
+
+## Important elementary obstruction
+
+A matched edge that lies on **no alternating four-cycle** cannot be changed by a permitted switch. If two perfect matchings differ on such a frozen edge, the switch space is disconnected.
+
+A matching space with a **single** matching is trivially connected, so we condition on having at least two. Even after this conditioning, switch connectivity need not be monotone in the edge set: adding new edges can create a new perfect matching in a different component. We therefore do not claim a conventional increasing-event threshold.
+
+## Prior literature
+
+- Dyer–Jerrum–Müller, [*On the switch Markov chain for perfect matchings* (2017)](https://doi.org/10.1145/2822322), studies the fixed-host switch chain and hereditary connectivity classes.
+- Bonamy et al., [*The Perfect Matching Reconfiguration Problem* (2019)](https://doi.org/10.4230/LIPIcs.MFCS.2019.80), establishes broad computational difficulty, including bipartite examples.
+- Pomerance, [*Coprime permutations* (2022)](https://arxiv.org/abs/2203.03085), and Sah–Sawhney, [*Enumerating coprime permutations* (2022)](https://doi.org/10.1112/mtk.12159), treat the underlying deterministic matching family.
+- Balachandran–Kush, [*The Normalized Matching Property in Random and Pseudorandom Bipartite Graphs*](https://doi.org/10.37236/9148), studies a different matching threshold for independent-edge random bipartite hosts.
+
+The operation and the arithmetic host graph are individually established. The **specific percolated switch-space phase diagram** was not found in our targeted source search, but may be implicit in general switching or random graph theory.
+
+## Proposed tests
+
+1. Enumerate every perfect matching of tiny thinned hosts and construct their four-cycle reconfiguration graph exactly.
+2. Check whether the trivial one-matching regime distorts initial probability estimates.
+3. Attempt an invariant/certificate for disconnected components based on frozen edges or isolated alternating cycles.
+4. Search for direct results on switching chains for random bipartite host graphs before promoting any claimed novelty.
