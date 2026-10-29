@@ -15,9 +15,11 @@
 ## Model and precise questions
 
 Let $S_n(p)\subseteq\{0,1,\dots,2n-2\}$ include each **sum value** independently with probability $p$. Define the balanced bipartite graph $G_n^\Sigma(p)$ with two copies of $\{0,\dots,n-1\}$, where
+
 $$
 (i,j)\in E(G_n^\Sigma(p))\quad\Longleftrightarrow\quad i+j\in S_n(p).
 $$
+
 **Important:** edges on the same anti-diagonal are perfectly correlated; randomizing **sum values** is not the usual independent-edge model $G(n,n,p)$.
 
 Write $\nu_n(p)$ for the size of a maximum matching, $\lambda_n(p)$ for the maximum number of edge-disjoint perfect matchings, and $\delta_n(p)$ for the graph's minimum degree.
@@ -25,9 +27,11 @@ Write $\nu_n(p)$ for the size of a maximum matching, $\lambda_n(p)$ for the maxi
 **Question A (monotone):** Determine the location and limiting window, if any, of the event $\nu_n(p)=n$. Does isolated-vertex disappearance govern the transition despite the strong sum-diagonal dependence?
 
 **Question B (not monotone in general):** Determine the asymptotic behavior of
+
 $$
 \Pr\bigl(\lambda_n(p)=\delta_n(p)\,\big|\,\delta_n(p)>0\bigr).
 $$
+
 For which sparsity regimes does this probability tend to 0 or 1? If necessary, condition additionally on the existence of a perfect matching. We do **not** assert that this event has a monotone threshold.
 
 **Question C:** Do random sum-support graphs have matching and factor statistics in the same universality class as random bipartite graphs, or is the diagonal dependence a genuinely different obstruction mechanism?
@@ -37,9 +41,11 @@ For which sparsity regimes does this probability tend to 0 or 1? If necessary, c
 A positive universality theorem would transfer matching and factor phenomena from Erdős–Rényi graphs to **strongly correlated additive graph ensembles**. A negative answer would isolate arithmetic cuts that standard independent-edge heuristics miss. The deterministic extremes connect P003 (prime-supported sums) and our **proved** interval-sum factor theorem.
 
 The perfect matching event is monotone under adding sums. Factor saturation at the *current minimum degree* is not monotone: at $n=3$, allowed sums $S=\{1\}$ give $\delta=\lambda=0$; adding sum $3$ gives
+
 $$
 A=\begin{pmatrix}0&1&0\\1&0&1\\0&1&0\end{pmatrix},
 $$
+
 where $\delta=1$ but $\lambda=0$. Adding sum $2$ recovers the interval $[1,3]$ and $\lambda=\delta$. Consequently **Question B should not be described as a conventional monotone threshold without further proof**.
 
 ## Known work and novelty audit
