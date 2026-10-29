@@ -1,6 +1,5 @@
 {
   "schema_version": 1,
-  "last_reviewed": "2026-10-29",
   "source": "Meta Erdős: independently proposed candidate questions; not posed by Erdős",
   "problems": [
     {
@@ -217,7 +216,7 @@
       "question": "What is the exact minimum number of adjacent coprime pairs in a permutation of 1,…,n? (Resolved internally.)",
       "status": "proved internally",
       "novelty": "internal proof; priority unverified",
-      "result": "Exact formula for n≥4: h(n)=π(n)−π(n/2)+max(1,ceil((π(n/2)−π(n/3))/2)); hence h(n)∼(7/12)n/log n",
+      "result": "Exact path-cover formula and asymptotic proved in the repository; manuscript submitted to Integers",
       "verification": "Constructive proof with prime-factor paths; explicit witnesses checked n≤10,000",
       "priority": "external proof and novelty audit",
       "sources": [
@@ -598,5 +597,5 @@
       ]
     }
   ],
-  "discovery_phase": "closed_at_P025_pending_second_consolidation"
+  "catalogue_policy": "Open to community contributions; proposed additions and status changes require source review"
 }
