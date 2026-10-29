@@ -84,6 +84,10 @@ The construction also refines P004: P004 considers one-element exchanges among f
 
 **Novelty status:** This is an apparently distinct **specific simplicial complex and homology question** after a targeted search, not an invention of topological additive combinatorics. Source-by-source review is incomplete and specialist originality certification is absent.
 
+### Source-comparison clarification (29 October 2026)
+
+Superdock's 2023 construction uses **colored incidence configurations / projective-plane structures** and obtains correspondences with individual Sidon sets in finite abelian groups. That is a serious established **Sidon/topology connection**, but it is not the same *stated complex* as our hereditary set system of **all Sidon subsets of $[N]$**. This comparison **does not certify originality**; see the [source-level audit](../../audits/2026-10-29-P015-P016-P018-P020-source-comparison-and-P010-snapshot.md).
+
 ## Falsification before any stronger conjecture
 
 1. Independently reproduce the $\mathbb F_2$ boundary ranks, not just the face counts.
