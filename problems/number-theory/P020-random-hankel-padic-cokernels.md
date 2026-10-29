@@ -3,7 +3,7 @@
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** Does the cokernel of an n×n Haar-random p-adic Hankel matrix converge in distribution to a describable measure on finite abelian p-groups?  
 > **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
-> **Verified/known progress:** Classical finite-field corank formula yields P(trivial cokernel)=1−1/p for all n, excluding the usual Cohen–Lenstra law.  
+> **Verified/known progress:** Classical finite-field corank law; new internally proved exact group probabilities for all cyclic and two-generator cokernels, stable for n≥3; historical priority unverified.  
 > **Finite evidence:** Exact finite-field Hankel rank enumerations over F₂ (n≤4) and F₃ (n≤3), not p-adic group distribution.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
 <!-- /DOSSIER-SUMMARY -->
@@ -67,6 +67,30 @@ $$
 Thus **the usual independent-entry Cohen–Lenstra law cannot be the limit here**. This is an exact, well-motivated reason to ask for a different law, not numerical speculation.
 
 The corank distribution determines only the dimension of $C_n/pC_n$ over $\mathbb F_p$; it does **not** determine higher $p$-power invariant factors or the isomorphism class of $C_n$.
+
+## New internally proved partial group law (29 October 2026)
+
+**Important:** This is an **internal mathematical result**, not an externally refereed proof or certified originality claim. See the [complete theorem note and proof](../../theorems/P020-padic-hankel-cyclic-and-rank-two-laws.md) and the [independent exact modular checks](../../experiments/P020_padic_rank_two_lifts.py).
+
+**Cyclic case:** For all \(n\ge2\) and \(j\ge1\),
+\[
+\Pr(C_n\simeq\mathbb Z/p^j\mathbb Z)
+=(1-p^{-1})(1-p^{-2})p^{-j}.
+\]
+
+**Every two-generator group:** For \(n\ge3\), \(1\le a\le b\), and \(\rho_2=p^{-3}-p^{-5}\),
+\[
+\Pr(C_n\simeq\mathbb Z/p^a\oplus\mathbb Z/p^b)
+=\begin{cases}
+\rho_2 p^{-3(a-1)}(1-p^{-1}),&a=b,\\
+\rho_2 p^{-3(a-1)}(p^{-1}-p^{-3})(1-p^{-1})p^{-(b-a-1)},&a<b.
+\end{cases}
+\]
+The key conditional lifting lemma says that, after fixing a corank-one or corank-two reduction modulo \(p\), the nonunit block has the distribution of \(p\) times a Haar-uniform **symmetric** matrix of the corresponding size. In corank two, surjectivity follows from the linear independence of \(f^2,fg,g^2\) for two linearly independent polynomials \(f,g\).
+
+**Consequence:** Exactly \(1-p^{-5}\) of the probability mass is now characterized by group-specific formulas independent of \(n\ge3\); hence the total-variation distance between **any two** such \(n\)-distributions is at most \(p^{-5}\). **This is not a full limit theorem.** For corank at least three, polynomial-product dependencies obstruct this particular argument.
+
+**Priority caution:** The base finite-field rank formula is not new. Targeted review did not locate these precise higher-invariant-factor formulas in the cited sources, but specialist priority review of structured p-adic Smith forms remains outstanding.
 
 ## Independent finite falsification
 
