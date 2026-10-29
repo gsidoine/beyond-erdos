@@ -1,10 +1,10 @@
 # P029 — Reconfiguration of prime-supported permutation X-ray fibers
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** Is there a universal bounded-size exchange connecting every fiber of prime-sum permutations with the same anti-diagonal X-ray?
-> **Formulation:** candidate. **Novelty:** high overlap risk with existing permutation X-ray/discrete tomography theory.
-> **Verified/known progress:** No two-position swap can preserve a nontrivial exact sum multiset; an explicit prime-supported fiber with two members differs at four positions.
-> **Finite evidence:** Exhaustive prime-sum matching fiber enumeration for n≤13; dependency-free script.
+> **Research question:** Is there a universal bounded-size exchange connecting every fiber of prime-sum permutations with the same anti-diagonal X-ray?  
+> **Formulation:** candidate. **Novelty:** high overlap risk with existing permutation X-ray/discrete tomography theory.  
+> **Verified/known progress:** No two-position swap can preserve a nontrivial exact sum multiset; an explicit prime-supported fiber with two members differs at four positions.  
+> **Finite evidence:** Exhaustive prime-sum matching fiber enumeration for n≤13; dependency-free script.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
