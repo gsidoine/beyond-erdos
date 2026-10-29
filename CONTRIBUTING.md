@@ -1,4 +1,4 @@
-# Contributing to Beyond Erdős
+# Contributing to Meta Erdős
 
 This is a **curated exploratory research notebook**, not an official catalogue of Erdős problems and not a claim of original published open questions. The collection is currently **frozen at P001–P010**; do not introduce P011 until the audit gate is explicitly lifted.
 
