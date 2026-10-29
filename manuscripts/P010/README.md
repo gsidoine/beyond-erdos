@@ -19,16 +19,16 @@
 
 ## Theorem in the submitted version
 
-For each \(n\ge4\), the minimum number of gcd-one adjacent pairs across all permutations of \([n]\) equals
+For each $n\ge4$, the minimum number of gcd-one adjacent pairs across all permutations of $[n]$ equals
 
 $$
 h(n)=\pi(n)-\pi(n/2)+
 \max\left\{1,\left\lceil\frac{\pi(n/2)-\pi(n/3)}2\right\rceil\right\},
 $$
 
-with \(h(n)\sim 7n/(12\log n)\).
+with $h(n)\sim 7n/(12\log n)$.
 
-The manuscript proves \(h(n)=\operatorname{pc}(H_n)-1\) for the non-coprime graph \(H_n\), gives the lower bound using isolated vertices and prime leaves, and constructs an optimal path cover using classes by largest prime factor. It includes reference entries [1]–[8], a 2020 Mathematics Subject Classification, and an AI-use declaration stating ChatGPT assistance with preliminary exploration, proof construction, verification code, early drafts, mathematical review, grammar and literature checking.
+The manuscript proves $h(n)=\operatorname{pc}(H_n)-1$ for the non-coprime graph $H_n$, gives the lower bound using isolated vertices and prime leaves, and constructs an optimal path cover using classes by largest prime factor. It includes reference entries [1]–[8], a 2020 Mathematics Subject Classification, and an AI-use declaration stating ChatGPT assistance with preliminary exploration, proof construction, verification code, early drafts, mathematical review, grammar and literature checking.
 
 The manuscript has **already been submitted** and must not be silently changed in the repository; future proof, priority, or copyediting amendments should receive their own version labels.
 
