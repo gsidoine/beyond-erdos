@@ -73,12 +73,14 @@ The corank distribution determines only the dimension of $C_n/pC_n$ over $\mathb
 **Important:** This is an **internal mathematical result**, not an externally refereed proof or certified originality claim. See the [complete theorem note and proof](../../theorems/P020-padic-hankel-cyclic-and-rank-two-laws.md) and the [independent exact modular checks](../../experiments/P020_padic_rank_two_lifts.py).
 
 **Cyclic case:** For all $n\ge2$ and $j\ge1$,
+
 $$
 \Pr(C_n\simeq\mathbb Z/p^j\mathbb Z)
 =(1-p^{-1})(1-p^{-2})p^{-j}.
 $$
 
 **Every two-generator group:** For $n\ge3$, $1\le a\le b$, and $\rho_2=p^{-3}-p^{-5}$,
+
 $$
 \Pr(C_n\simeq\mathbb Z/p^a\oplus\mathbb Z/p^b)
 =\begin{cases}
@@ -86,6 +88,7 @@ $$
 \rho_2 p^{-3(a-1)}(p^{-1}-p^{-3})(1-p^{-1})p^{-(b-a-1)},&a<b.
 \end{cases}
 $$
+
 The key conditional lifting lemma says that, after fixing a corank-one or corank-two reduction modulo $p$, the nonunit block has the distribution of $p$ times a Haar-uniform **symmetric** matrix of the corresponding size. In corank two, surjectivity follows from the linear independence of $f^2,fg,g^2$ for two linearly independent polynomials $f,g$.
 
 **Consequence:** Exactly $1-p^{-5}$ of the probability mass is now characterized by group-specific formulas independent of $n\ge3$; hence the total-variation distance between **any two** such $n$-distributions is at most $p^{-5}$. **This is not a full limit theorem.** For corank at least three, polynomial-product dependencies obstruct this particular argument.
