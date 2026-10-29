@@ -26,7 +26,7 @@ For scaling regimes $k=k(N)$, particularly $k$ approaching a nonzero fraction of
 
 $$
 X_{N,k}(q)=|\mathsf{Sid}_{N,k}(W_N(q))|,\qquad
-C_{N,k}(q)=\#\text{components of }\mathcal E_{N,k}(W_N(q)).
+C_{N,k}(q)=\mathrm{number\ of\ components\ of\ }\mathcal E_{N,k}(W_N(q)).
 $$
 
 **Can the appearance of Sidon states and the emergence of a single feasible exchange component occur at parametrically different scales of $q$?** Determine meaningful scaling limits and/or transition regimes when the expected number of states becomes large.
