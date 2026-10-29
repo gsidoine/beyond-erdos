@@ -16,7 +16,7 @@ Let
 
 $$
 h(n)=\min_{(a_1,\dots,a_n)\in S_n}
-\#\{i<n:\gcd(a_i,a_{i+1})=1\}.
+\sum_{i=1}^{n-1}\mathbf{1}_{\gcd(a_i,a_{i+1})=1}.
 $$
 
 Then for every $n\ge4$,

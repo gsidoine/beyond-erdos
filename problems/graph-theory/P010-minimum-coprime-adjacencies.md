@@ -19,16 +19,13 @@
 For a permutation $a=(a_1,\dots,a_n)$ of $[n]$, let
 
 $$
-h(n)=\min_a\#\{i:\gcd(a_i,a_{i+1})=1\}.
+h(n)=\min_{a\in S_n}\sum_{i=1}^{n-1}\mathbf{1}_{\gcd(a_i,a_{i+1})=1}.
 $$
 
 Set $A_n=\pi(n)-\pi(n/2)$, $B_n=\pi(n/2)-\pi(n/3)$. The following theorem **resolves the original question**:
 
 $$
-\boxed{\displaystyle
-h(n)=A_n+\max\left\{1,\left\lceil\frac{B_n}{2}\right\rceil\right\}
-\quad(n\ge4).
-}
+\boxed{h(n)=A_n+\max\left(1,\left\lceil\frac{B_n}{2}\right\rceil\right),\qquad n\ge4.}
 $$
 
 For the three exceptional small inputs, $h(1)=0,\ h(2)=1,\ h(3)=2$.
