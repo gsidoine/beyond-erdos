@@ -62,11 +62,11 @@ For example, at $q=7,p=1/2$, the formula gives $\mathbb E K_7=7/8$, whereas for 
 
 The excess expected number of four-cliques, relative to the Erdős–Rényi baseline, has **relative size**
 
-$
+$$
 \frac{\mathbb E K_q-\binom q4p^6}{\binom q4p^6}
 =\frac{3(1-p)}{(q-2)p}
 \qquad(q\ge5,\ p>0).
-$
+$$
 
 Indeed,
 
