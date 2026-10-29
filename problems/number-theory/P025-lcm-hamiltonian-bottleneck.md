@@ -21,9 +21,9 @@ $$
 
 (For \(N<3\), make no cycle claim.) Put \(t_N=\Lambda(N)/N\).
 
-**P025.** Determine the asymptotic order of \(t_N\). In particular, is \(t_N=\Theta(N/\log N)\)? If so, does \(t_N\log N/N\) tend to a positive finite constant?
+**P025 (cyclic-only residual question).** Does the cyclic bottleneck satisfy \(\Lambda(N)\sim N^2/(4\log N)\), matching the **already known 1983 linear-path optimum**? More generally, determine the cyclic-to-linear bottleneck ratio and its exact finite behaviour. **Do not state the corresponding path asymptotic as a conjecture.**
 
-The conjectural order is a **question**, not a claimed theorem.
+**Major close predecessor:** Erdős–Freud–Hegyvári (1983), Theorem 1, already proves that the *linear* analogue has exact asymptotic \((1+o(1))N^2/(4\log N)\). The corresponding sequence is [OEIS A064764](https://oeis.org/A064764). Whether requiring the closing edge is a genuinely independent asymptotic problem must be audited before flagship promotion.
 
 ## A rigorous nontrivial lower bound
 
@@ -37,16 +37,16 @@ $$
 \boxed{t_N\ge(1+o(1))\frac{N}{4\log N}.}
 $$
 
-The trivial upper bound is \(t_N\le N\), since \(\operatorname{lcm}(a,b)\le ab\le N^2\). There is a genuine factor-\(\log N\) gap between these elementary bounds.
+The trivial upper bound is \(t_N\le N\), since \(\operatorname{lcm}(a,b)\le ab\le N^2\). This is an *elementary rederivation* of the lower scale of the 1983 path theorem, **not a new lower bound**. The 1983 theorem gives the same first-order value for the path optimum; the remaining question is the cost of closing the cycle.
 
 ## Prior art and precise distinction
 
 - [Melotti–Saias, *On path partitions of the divisor graph* (2020)](https://doi.org/10.4064/aa190516-10-9): divisibility and path partitions, not a Hamiltonian **lcm bottleneck**.
-- [McNew, *Permutations and the divisor graph of [1,n]* (2023)](https://doi.org/10.1112/mtk.12215): arithmetic permutation/divisor graph results; check exact paper theorem before claiming independence.
-- [Erdős–Freud–Hegyvári, *Arithmetical properties of permutations of integers* (1983)](https://users.renyi.hu/~p_erdos/1983-02.pdf): **high-risk predecessor** concerning adjacent gcd/lcm extremal functionals. Its statements must be checked closely: it may already determine this minimax quantity or a closely related path variant.
+- [McNew, *Permutations and the divisor graph of [1,n]* (2023)](https://doi.org/10.1112/mtk.12177): arithmetic permutation/divisor graph results; check exact paper theorem before claiming independence.
+- [Erdős–Freud–Hegyvári, *Arithmetical properties of permutations of integers* (1983)](https://users.renyi.hu/~p_erdos/1983-02.pdf): **high-risk predecessor** concerning adjacent gcd/lcm extremal functionals. **Direct confirmed predecessor:** Theorem 1 establishes the exact first-order optimal value for **linear paths**. It does not in its displayed statement include the closing edge of a cycle. This makes the cyclic distinction narrow and susceptible to easy reduction.
 - [P010 submitted manuscript](../graph-theory/P010-minimum-coprime-adjacencies.md): counts coprime transitions, not the maximal adjacent lcm along a **cycle**.
 
-**Priority status:** high historical-collision risk. Do **not** present this as genuinely open until the 1983 paper and McNew have been checked for this exact minimax problem. The counting lower bound is elementary and not a novelty claim.
+**Priority status:** **confirmed direct collision for the linear analogue**, with only the cyclic-endpoint strengthening presently surviving. Do **not** promote until checking the original 1983 construction and whether it can be closed with no asymptotic cost. The counting lower bound is elementary and not a novelty claim.
 
 ## Next falsification gate
 
@@ -54,4 +54,4 @@ Compute \(\Lambda(N)\) exactly for small \(N\) by sorting distinct lcm edge weig
 
 ## Revision history
 
-- 2026-10-29: Proposed as prospective P025; high priority-risk tag.
+- 2026-10-29: Proposed. Same-day primary-source check finds the linear path asymptotic **already proved** by Erdős–Freud–Hegyvári, Theorem 1; reframed as cyclic-only residual question and corrected McNew DOI.
