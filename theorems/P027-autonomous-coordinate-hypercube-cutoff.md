@@ -123,10 +123,10 @@ Walsh characters diagonalize H_k and have eigenvalues 1−|S|/k. The two tensor 
 
 Let f(n) be the number of maximum primitive subsets of [2n], the established integer sequence [OEIS A174094](https://oeis.org/A174094). The exact product factorization implies the **integer divisibility**
 
-$
+$$
 \boxed{2^{k_n}\mid f(n),\qquad
 \nu_2(f(n))\ge\frac{1454}{8505}n+O(1).}
-$
+$$
 
 This is stronger in a different direction than an exponential **lower bound on the numerical size** of f(n): it controls an arithmetic prime-power divisor of the count. The proof is immediate from Theorem 2, and **historical priority of this divisibility consequence is not established**. The counting paper of Liu–Pach–Palincza and references on OEIS A174094 must be compared before any novelty claim.
 
