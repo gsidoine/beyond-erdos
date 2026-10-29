@@ -5,7 +5,7 @@
 > **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
 > **Verified/known progress:** Equivalent to a min-cut condition for an arithmetic bipartite factor.  
 > **Finite evidence:** Integral max flow tested to n=3,000 (finite only).  
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
 
@@ -52,6 +52,6 @@ The proposed conjecture is therefore an explicit arithmetic cut-expansion statem
 
 Earlier exploratory tests were reported, but the numerical claims are deliberately **not** included as verified evidence in this entry until independently reproduced in committed code. No comprehensive novelty audit has been completed.
 
-## Cross-problem literature review (2026-10-28)
+## Related literature
 
 Prior work on prime-sum graph Hamiltonicity and explicit constructions of multiple matchings does not immediately give a minimum-degree factor packing. This is **not a certification of novelty or of unresolved status**. Read the [full P001–P008 audit](../../literature-audits/2026-10-28-comprehensive-P001-P008.md) before citing this question in a mathematical publication.

@@ -3,15 +3,14 @@
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** What is the exact minimum number of adjacent coprime pairs in a permutation of 1,…,n? (Resolved internally.)  
 > **Formulation:** proved internally. **Novelty:** internal proof; priority unverified.  
-> **Verified/known progress:** Exact formula for n≥4: h(n)=π(n)−π(n/2)+max(1,ceil((π(n/2)−π(n/3))/2)); hence h(n)∼(7/12)n/log n.  
+> **Verified/known progress:** Exact path-cover formula and asymptotic proved in the repository; manuscript submitted to Integers.  
 > **Finite evidence:** Constructive proof with prime-factor paths; explicit witnesses checked n≤10,000.  
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
 
 **Area:** arithmetic graph theory, extremal Hamiltonian paths, prime distribution  
-**Original candidate:** 2026-10-28  
-**Resolution:** **proved internally on 2026-10-28**; a fully written constructive proof is available below  
+**Research status:** Proved internally; the manuscript has been submitted to *Integers*.  
 **Novelty:** **not certified**; independent proof audit and source-priority verification are required
 
 ## Exact statement
@@ -63,8 +62,8 @@ The original "exceptions" $n=9$ and $n=21$ are not exceptions to the theorem. Th
 
 The closest known historical predecessor is **Erdős, Freud and Hegyvári (1983)**, [*Arithmetical properties of permutations of integers*](https://users.renyi.hu/~p_erdos/1983-02.pdf), investigating arithmetic properties of consecutive elements of permutations. The located theorem statements concern extrema of adjacent gcd/lcm **values**, not this exact count of gcd-one adjacencies. This is not sufficient to establish that the new theorem is original: synonym searches, older path-cover literature, and external specialist review are still necessary.
 
-The graph-theoretic path-cover reduction is standard, as is the bound $\pi(2x)\le2\pi(x)$ (Rosser–Schoenfeld; see [OEIS A060208](https://oeis.org/A060208)). What is proved here is the exact arithmetic path-cover formula and the constructive decomposition, **new to this exploratory research program but not yet certified novel**.
+The graph-theoretic path-cover reduction is standard, as is the bound $\pi(2x)\le2\pi(x)$ (Rosser–Schoenfeld; see [OEIS A060208](https://oeis.org/A060208)). What is proved here is the exact arithmetic path-cover formula and the constructive decomposition, **established by the proof presented here, without a claim of independently certified historical novelty**.
 
-## Research follow-up
+## Publication status
 
-Since the original extremal question has been answered internally, this entry should **not be listed among unresolved conjectures**. Next steps are an adversarial independent proof reading, a comprehensive priority search, and (if original) a possible short stand-alone mathematical note. No new problem ID is being introduced.
+The theorem is presented in [*The Minimum Number of Coprime Adjacencies in a Permutation*](../../manuscripts/P010/coprime_adjacencies.pdf), **submitted to the journal *Integers***. The entry is resolved in the repository and must not be classified as an unresolved conjecture. Submission does not imply acceptance, publication or independently certified historical novelty. The [manuscript record](../../manuscripts/P010/README.md) and [constructive proof](../../theorems/P010-exact-coprime-adjacencies.md) give the corresponding details.

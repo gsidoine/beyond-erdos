@@ -21,7 +21,7 @@ The additional $\max\{1,\cdot\}$ is **necessary** when $B_n=\pi(n/2)-\pi(n/3)=0$
 
 ## Proof review: what could go wrong?
 
-1. **Noncoprime path-cover equivalence:** Valid. Cutting a permutation at each gcd-one transition creates paths; joining a minimum path cover uses at most one gcd-one transition per join, so $h(n)=\operatorname{pc}(H_n)-1$.
+1. **Noncoprime path-cover equivalence:** Valid. Cutting a permutation at each gcd-one transition creates paths; joining a minimum path cover uses at most one gcd-one transition per join, so $h(n)=\mathrm{pc}(H_n)-1$.
 2. **Obstruction accounting:** Valid. The vertex 1 and primes $>n/2$ are isolated. Each prime $q\in(n/3,n/2]$ has the *unique* neighbor $2q$; therefore at most two such primes appear as endpoints of a path. For $n\ge4$, $\{2,4\}$ guarantees a nonempty remaining component even if there are no degree-one primes.
 3. **Largest-prime-factor partition:** Classes $C_p$ are cliques. The particular multiples $2p,4p$ stay in $C_p$ because the multipliers 2 and 4 have largest prime factor at most $p$.
 4. **Middle-class assumption:** For $n\ge12$ and $n/4<p\le n/3$, $p\ge5$ and $C_p=\{p,2p,3p\}$; there is no stray integer in the class. This matters because the 3-hub connector has a **non-even** endpoint $3p$.

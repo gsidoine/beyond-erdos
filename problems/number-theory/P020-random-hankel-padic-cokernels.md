@@ -3,9 +3,9 @@
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** Does the cokernel of an n×n Haar-random p-adic Hankel matrix converge in distribution to a describable measure on finite abelian p-groups?  
 > **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
-> **Verified/known progress:** Classical finite-field corank formula yields P(trivial cokernel)=1−1/p for all n, excluding the usual Cohen–Lenstra law.  
-> **Finite evidence:** Exact finite-field Hankel rank enumerations over F₂ (n≤4) and F₃ (n≤3), not p-adic group distribution.  
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+> **Verified/known progress:** Classical Hankel corank law; internally proved cyclic/two-generator probabilities and all-k elementary-abelian cokernel probabilities.  
+> **Finite evidence:** Exact modular group counts at p=2 (n≤4), p=3 (n≤3); kernel-product rank proved from Yiasemides (2024).  
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
 **Area:** algebraic probability, number theory, random matrices  
@@ -25,7 +25,7 @@ The entries on each anti-diagonal are identical, so **only $2n-1$ independent ra
 Set
 
 $$
-C_n=\operatorname{coker}(H_n:\mathbb Z_p^n\longrightarrow\mathbb Z_p^n).
+C_n=\mathrm{coker}(H_n:\mathbb Z_p^n\longrightarrow\mathbb Z_p^n).
 $$
 
 With probability one, $\det(H_n)\ne0$ in $\mathbb Z_p$, so $C_n$ is a finite abelian $p$-group.
@@ -45,12 +45,12 @@ The question is deliberately **not** whether the law equals ordinary Cohen–Len
 **Known theorem (finite-field Hankel rank counts, credited to the literature).** A uniformly sampled square $n\times n$ Hankel matrix over $\mathbb F_p$ has
 
 $$
-\Pr\bigl(\operatorname{corank} H_n\ge k\bigr)
+\Pr\bigl(\mathrm{corank} H_n\ge k\bigr)
 =p^{-(2k-1)}
 \quad(1\le k\le n).
 $$
 
-This follows from the classical count of rank-at-most-$r$ Hankel matrices over a finite field (for $r<n$), namely $p^{2r}$ matrices out of $p^{2n-1}$ possibilities. See Dwivedi and Grinberg (2022) for the classical count, independent earlier derivations, and refinements. **We do not claim this rank formula as an original result.**
+This follows from the classical count of rank-at-most-$r$ Hankel matrices over a finite field (for $r<n$), namely $p^{2r}$ matrices out of $p^{2n-1}$ possibilities. See Dwivedi and Grinberg (2022) for the classical count, independent earlier derivations, and refinements. **The rank formula is classical and not original to this catalogue.**
 
 In particular, for every $n$,
 
@@ -67,6 +67,52 @@ $$
 Thus **the usual independent-entry Cohen–Lenstra law cannot be the limit here**. This is an exact, well-motivated reason to ask for a different law, not numerical speculation.
 
 The corank distribution determines only the dimension of $C_n/pC_n$ over $\mathbb F_p$; it does **not** determine higher $p$-power invariant factors or the isomorphism class of $C_n$.
+
+## New internally proved partial group law (29 October 2026)
+
+**Important:** This is an **internal mathematical result**, not an externally refereed proof or certified originality claim. See the [complete theorem note and proof](../../theorems/P020-padic-hankel-cyclic-and-rank-two-laws.md) and the [independent exact modular checks](../../experiments/P020_padic_rank_two_lifts.py).
+
+**Cyclic case:** For all $n\ge2$ and $j\ge1$,
+
+$$
+\Pr(C_n\simeq\mathbb Z/p^j\mathbb Z)
+=(1-p^{-1})(1-p^{-2})p^{-j}.
+$$
+
+**Every two-generator group:** For $n\ge3$, $1\le a\le b$, and $\rho_2=p^{-3}-p^{-5}$,
+
+$$
+\Pr(C_n\simeq\mathbb Z/p^a\oplus\mathbb Z/p^b)
+=\begin{cases}
+\rho_2 p^{-3(a-1)}(1-p^{-1}),&a=b,\\
+\rho_2 p^{-3(a-1)}(p^{-1}-p^{-3})(1-p^{-1})p^{-(b-a-1)},&a<b.
+\end{cases}
+$$
+
+The key conditional lifting lemma says that, after fixing a corank-one or corank-two reduction modulo $p$, the nonunit block has the distribution of $p$ times a Haar-uniform **symmetric** matrix of the corresponding size. In corank two, surjectivity follows from the linear independence of $f^2,fg,g^2$ for two linearly independent polynomials $f,g$.
+
+**Consequence:** Exactly $1-p^{-5}$ of the probability mass is now characterized by group-specific formulas independent of $n\ge3$; hence the total-variation distance between **any two** such $n$-distributions is at most $p^{-5}$. **This is not a full limit theorem.** For corank at least three, polynomial-product dependencies obstruct this particular argument.
+
+**Priority caution:** The base finite-field rank formula is not new. Targeted review did not locate these precise higher-invariant-factor formulas in the cited sources, but specialist priority review of structured p-adic Smith forms remains outstanding.
+
+## Further exact law: **all elementary abelian cokernels**
+
+The [second P020 proof note](../../theorems/P020-elementary-abelian-cokernel-laws.md) uses the **published finite-field Hankel kernel classification** of [Yiasemides (2024), Theorem 2.4.4 / Remark 2.4.6](https://doi.org/10.1007/s40687-023-00418-7), not merely finite extrapolation. For every $1\le k<n$,
+
+$$
+\boxed{
+\Pr\bigl(C_n\simeq(\mathbb Z/p\mathbb Z)^k\bigr)
+=(1-p^{-1})\bigl(p^{-(2k-1)}-p^{-(2k+1)}\bigr).
+}
+$$
+
+For $k=n$, replace the expression in parentheses by $p^{-(2n-1)}$. This formula holds for **every** $n$ and prime $p$; for fixed $k$, the probability is constant in $n$ once $n>k$.
+
+**First-order mechanism.** If $\bar H_n$ has corank $k$, Yiasemides's theorem implies its polynomial kernel is $A(z)\mathbb F_p[z]_{\le k-1}$. In the shift basis $A,Az,\ldots,Az^{k-1}$, products span the $2k-1$ coefficients of $A^2z^t$. A Haar lift therefore induces a **uniform $k\times k$ Hankel form modulo $p$** on that kernel. The form is nonsingular with the classical probability $1-p^{-1}$. Combining this conditional probability with the already-known exact corank distribution gives the displayed group law.
+
+An [independent exhaustive mod-$p^2$ enumerator](../../experiments/P020_elementary_cokernel_mod_p2.py) verifies every elementary-group count for $p=2$, $n=2,3,4$, and $p=3$, $n=2,3$, including examples with **three and four generators**. The kernel-product dimension $2k-1$ is now a [proved corollary of published Hankel theory](../../theorems/P020-hankel-kernel-product-research.md), not an empirical conjecture.
+
+**Critical limitation:** the Schur complement may acquire nonlinear corrections at higher powers of $p$. The conditional first-order Haar-Hankel law does **not** imply an exact Haar-Hankel distribution at every $p$-adic order. Thus general groups with at least three generators and higher exponents, and the complete limiting law, remain open in this project. Historical priority of the *group probability* formula also remains unverified.
 
 ## Independent finite falsification
 

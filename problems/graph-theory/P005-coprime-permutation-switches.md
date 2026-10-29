@@ -5,12 +5,11 @@
 > **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
 > **Verified/known progress:** No universal-row/column shortcut; arithmetic structure is essential.  
 > **Finite evidence:** 3,459,600 states at n=14, one component.  
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
 
 **Area:** number theory and graph reconfiguration  
-**Date proposed:** 2026-10-28  
 **Status:** candidate, exact novelty and unresolved status **unverified**
 
 ## Definition
@@ -29,7 +28,7 @@ Let $\mathcal C_n$ be the graph of coprime permutations and these switches. Equi
 
 **Is $\mathcal C_n$ connected for every $n\ge1$?**
 
-Stronger: does $\operatorname{diam}(\mathcal C_n)$ grow at most polynomially in $n$? Can a canonical coprime permutation be reached by a monotone local reduction?
+Stronger: does $\mathrm{diam}(\mathcal C_n)$ grow at most polynomially in $n$? Can a canonical coprime permutation be reached by a monotone local reduction?
 
 ## Finite verification
 
@@ -77,9 +76,9 @@ Targeted searches did not expose a direct treatment of this exact arithmetic swi
 3. Test whether every coprime permutation reduces to the cyclic shift in $O(n^2)$ switches.
 4. Investigate whether a standard matching-reconfiguration theorem already handles the coprime graph.
 
-## Cross-problem literature review (2026-10-28)
+## Related literature
 
 Pomerance and Sah–Sawhney study the underlying coprime permutations; Dyer–Jerrum–Müller study matching switches. Exact arithmetic connectivity was not located. This is **not a certification of novelty or of unresolved status**. Read the [full P001–P008 audit](../../literature-audits/2026-10-28-comprehensive-P001-P008.md) before citing this question in a mathematical publication.
-## Discovery pass 4 follow-up (2026-10-28)
+## Additional literature comparison
 
-A tempting generic argument fails: even a bipartite graph with one universal row and one universal column can have *two isolated* perfect matchings in its 4-cycle switch graph. An explicit 5-by-5 matrix counterexample is in the pass-4 literature audit. Thus a proof of P005 must exploit more than the universally coprime index 1. See the [dated detailed audit](../../literature-audits/2026-10-28-pass-4.md).
+A tempting generic argument fails: even a bipartite graph with one universal row and one universal column can have *two isolated* perfect matchings in its 4-cycle switch graph. An explicit 5-by-5 matrix counterexample is in the pass-4 literature audit. Thus a proof of P005 must exploit more than the universally coprime index 1. See the [archived literature audit](../../literature-audits/2026-10-28-pass-4.md).

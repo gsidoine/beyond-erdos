@@ -5,7 +5,7 @@
 > **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
 > **Verified/known progress:** For fixed 0<p<1, the normalized height is asymptotically between p and 1 in probability; convergence to a constant is unproved.  
 > **Finite evidence:** Exact dynamic program cross-checked against all subsets for N≤9; exploratory sampling at larger N.  
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
 **Area:** probability, number theory, partially ordered sets  

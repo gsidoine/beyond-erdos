@@ -5,11 +5,10 @@
 > **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
 > **Verified/known progress:** Minimal nonfaces have size 3 or 4; exact F2 Betti numbers exhibit migration from lower to higher dimensions.  
 > **Finite evidence:** Exact augmented boundary-rank computations through N=23; no asymptotic vanishing claim.  
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
 **Fields:** additive combinatorics, topological combinatorics, simplicial complexes  
-**Proposed:** 2026-10-29  
 **Research status:** candidate; *not* certified new or unresolved.
 
 ## Definition and central question
@@ -44,6 +43,18 @@ The word *eventual* is essential: the inclusion $K_N\hookrightarrow K_{N+1}$ doe
 This complex is **not** a flag complex. For example, $\{1,2,4,5\}$ has all three-element subsets Sidon, but is not itself Sidon: $2-1=5-4$. The natural representation is the independence complex of a **mixed 3/4-uniform hypergraph of additive collisions**, not the independence complex of an ordinary graph.
 
 This creates a bridge between 3-term progression avoidance, Sidon restrictions, hypergraph independence complexes, and homology of discrete constraint spaces.
+
+## Exact persistence constraint: factor-two nullity
+
+**Proposition (elementary; historical priority unverified).** For every integer $M\ge1$, every $k\ge0$, and any coefficient ring $R$, the inclusion $K_M\hookrightarrow K_{2M}$ induces the zero homomorphism on reduced homology:
+
+$$
+\widetilde H_k(K_M;R)\longrightarrow\widetilde H_k(K_{2M};R).
+$$
+
+**Proof.** Let $A\subseteq[M]$ be any Sidon set, and append $x=2M$. Its old positive differences are at most $M-1$. Each new difference $x-a$ is at least $M$, and the new differences are pairwise distinct. Therefore $A\cup\{2M\}$ is Sidon. Consequently every face of $K_M$ is a face of the closed star of vertex $2M$ in $K_{2M}$, and the inclusion factors through that star, which is a cone. Its map on reduced homology is zero. $\square$
+
+**Interpretation.** Under the standard inclusion filtration, a homology class born at $M$ dies by $2M$; equivalently, there are no persistent bars spanning the full interval from $M$ to $2M$. This does **not** imply eventual fixed-dimensional vanishing: new classes may be born at arbitrarily large indices. The coning property was additionally checked by exact finite face enumeration for $1\le M\le12$, but the proof works for all $M$. This is recorded as an elementary observation, **not** a priority or publication claim. See the [flagship source-comparison gate](../../audits/2026-10-29-flagship-source-comparison-and-shortlist.md).
 
 ## Exact initial topological experiments
 

@@ -1,6 +1,5 @@
 {
   "schema_version": 1,
-  "last_reviewed": "2026-10-29",
   "source": "Meta Erdős: independently proposed candidate questions; not posed by Erdős",
   "problems": [
     {
@@ -217,7 +216,7 @@
       "question": "What is the exact minimum number of adjacent coprime pairs in a permutation of 1,…,n? (Resolved internally.)",
       "status": "proved internally",
       "novelty": "internal proof; priority unverified",
-      "result": "Exact formula for n≥4: h(n)=π(n)−π(n/2)+max(1,ceil((π(n/2)−π(n/3))/2)); hence h(n)∼(7/12)n/log n",
+      "result": "Exact path-cover formula and asymptotic proved in the repository; manuscript submitted to Integers",
       "verification": "Constructive proof with prime-factor paths; explicit witnesses checked n≤10,000",
       "priority": "external proof and novelty audit",
       "sources": [
@@ -461,8 +460,8 @@
       "question": "Does the cokernel of an n×n Haar-random p-adic Hankel matrix converge in distribution to a describable measure on finite abelian p-groups?",
       "status": "candidate",
       "novelty": "apparent novelty (targeted audit)",
-      "result": "Classical finite-field corank formula yields P(trivial cokernel)=1−1/p for all n, excluding the usual Cohen–Lenstra law",
-      "verification": "Exact finite-field Hankel rank enumerations over F₂ (n≤4) and F₃ (n≤3), not p-adic group distribution",
+      "result": "Classical Hankel corank law; internally proved cyclic/two-generator probabilities and all-k elementary-abelian cokernel probabilities",
+      "verification": "Exact modular group counts at p=2 (n≤4), p=3 (n≤3); kernel-product rank proved from Yiasemides (2024)",
       "priority": "structural discovery, freeze after P020",
       "sources": [
         {
@@ -476,9 +475,127 @@
         {
           "name": "Jang–Kaplan–Lee–Yu (2026), structured random p-adic matrices",
           "url": "https://arxiv.org/abs/2606.06993"
+        },
+        {
+          "name": "Yiasemides (2024), characteristic polynomials and Hankel kernels",
+          "url": "https://doi.org/10.1007/s40687-023-00418-7"
+        }
+      ]
+    },
+    {
+      "id": "P021",
+      "title": "Random Cayley-sum sandpile groups",
+      "area": "algebraic probability",
+      "file": "problems/probability/P021-cayley-sum-sandpile-laws.md",
+      "question": "Does the Sylow-ell sandpile group of a random prime-cyclic Cayley-sum graph converge to a law different from Erdős–Rényi?",
+      "status": "candidate",
+      "novelty": "not certified (targeted audit)",
+      "result": "Precisely defined correlated graph-Laplacian cokernel; no limiting group law yet proved",
+      "verification": "Model and connectivity-conditioning requirements specified; exact Smith-form experiments pending",
+      "priority": "new candidate; conditional",
+      "sources": [
+        {
+          "name": "Wood (2017), sandpile groups of random graphs",
+          "url": "https://doi.org/10.1090/jams/866"
+        },
+        {
+          "name": "Sandpile groups of Cayley graphs (2024)",
+          "url": "https://doi.org/10.1080/00927872.2024.2347582"
+        }
+      ]
+    },
+    {
+      "id": "P022",
+      "title": "Random unimodular triangle complex homology",
+      "area": "discrete geometry",
+      "file": "problems/geometry/P022-random-unimodular-triangle-complex.md",
+      "question": "What are homology regimes for random lattice-site complexes whose two-faces have normalized area one?",
+      "status": "candidate",
+      "novelty": "not certified (targeted audit)",
+      "result": "At N=1 with all four vertices kept the complex is the tetrahedral boundary, with reduced H2 nonzero",
+      "verification": "Exact elementary N=1 example only; finite Betti experiments pending",
+      "priority": "new candidate; exploratory",
+      "sources": [
+        {
+          "name": "Unimodular triangulations (2021)",
+          "url": "https://doi.org/10.1090/memo/1321"
+        },
+        {
+          "name": "Łuczak–Peled (2018), random complexes",
+          "url": "https://doi.org/10.1007/s00454-017-9938-z"
+        }
+      ]
+    },
+    {
+      "id": "P023",
+      "title": "Rank of random prime-divisibility incidence matrices",
+      "area": "probabilistic number theory",
+      "file": "problems/probability/P023-random-prime-incidence-rank.md",
+      "question": "When do independently retained prime-incidence vectors of integers up to N span all small-prime coordinates over F2?",
+      "status": "candidate",
+      "novelty": "not certified (targeted audit)",
+      "result": "Full rank iff no nonzero prime-parity functional annihilates all retained columns; exact zero-row probability",
+      "verification": "Deterministic parity characterization proved; probabilistic threshold unproved",
+      "priority": "new candidate; conditional",
+      "sources": [
+        {
+          "name": "Linial–Rothschild (1981), subset incidence rank",
+          "url": "https://doi.org/10.1137/0602037"
+        },
+        {
+          "name": "Wang–Stanley (2017), random Smith forms",
+          "url": "https://doi.org/10.1137/16M1098140"
+        }
+      ]
+    },
+    {
+      "id": "P024",
+      "title": "Zero forcing on the divisor comparability graph",
+      "area": "graph theory",
+      "file": "problems/graph-theory/P024-zero-forcing-divisor-graph.md",
+      "question": "What is the asymptotic zero-forcing number of the divisibility comparability graph on integers 1,...,N?",
+      "status": "candidate",
+      "novelty": "not certified (targeted audit)",
+      "result": "The primes above N/2 are twin leaves, yielding Z(D_N) >= pi(N)-pi(N/2)-1",
+      "verification": "Elementary rigorous lower bound; exact finite zero-forcing computations pending",
+      "priority": "new candidate; conditional",
+      "sources": [
+        {
+          "name": "MathWorld, Zero Forcing Number",
+          "url": "https://mathworld.wolfram.com/ZeroForcingNumber.html"
+        },
+        {
+          "name": "Lewis–Souza (2021), divisibility order",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0097316520301837"
+        }
+      ]
+    },
+    {
+      "id": "P025",
+      "title": "Cyclic lcm Hamiltonian bottleneck",
+      "area": "number theory",
+      "file": "problems/number-theory/P025-lcm-hamiltonian-bottleneck.md",
+      "question": "Does closing the permutation into a cycle preserve the known N²/(4 log N) minimum adjacent-lcm bottleneck asymptotic?",
+      "status": "reframe",
+      "novelty": "confirmed collision for linear-path analogue",
+      "result": "Erdős–Freud–Hegyvári (1983) already prove the linear-path asymptotic; cyclic-only variation remains under review",
+      "verification": "Elementary lower bound recovered; no independent cyclic upper bound",
+      "priority": "high-overlap watch; not flagship",
+      "sources": [
+        {
+          "name": "Erdős–Freud–Hegyvári (1983), Theorem 1",
+          "url": "https://users.renyi.hu/~p_erdos/1983-02.pdf"
+        },
+        {
+          "name": "OEIS A064764, linear bottleneck",
+          "url": "https://oeis.org/A064764"
+        },
+        {
+          "name": "McNew (2023), lcm-restricted permutations",
+          "url": "https://doi.org/10.1112/mtk.12177"
         }
       ]
     }
   ],
-  "discovery_phase": "closed_at_P020_pending_consolidation"
+  "catalogue_policy": "Open to community contributions; proposed additions and status changes require source review"
 }

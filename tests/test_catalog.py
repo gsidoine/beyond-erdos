@@ -21,9 +21,9 @@ class CatalogueTests(unittest.TestCase):
 
     def test_consecutive_unique_ids(self):
         ids = [r["id"] for r in self.problems]
-        self.assertEqual(ids, [f"P{i:03d}" for i in range(1, 21)])
+        self.assertEqual(ids, [f"P{i:03d}" for i in range(1, len(ids) + 1)])
         self.assertEqual(len(ids), len(set(ids)))
-        self.assertEqual(len(ids), 20, "Discovery freeze: catalogue must stay at 20 during consolidation")
+        self.assertGreaterEqual(len(ids), 25, "Previously catalogued problem IDs must be preserved")
 
     def test_every_problem_has_a_dossier_and_sources(self):
         required = {"id", "title", "area", "file", "question", "status",

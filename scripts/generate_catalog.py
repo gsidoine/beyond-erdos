@@ -27,7 +27,7 @@ def dossier_summary(p):
         f"> **Verified/known progress:** {p['result']}.  ",
         f"> **Finite evidence:** {p['verification']}.  ",
         "> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · "
-        "[Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)",
+        "[Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)",
         DOSSIER_END,
     ])
 

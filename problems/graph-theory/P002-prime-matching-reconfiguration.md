@@ -5,7 +5,7 @@
 > **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
 > **Verified/known progress:** One connected component through n=12 in exhaustive tests.  
 > **Finite evidence:** Enumerated 423,884 matchings at n=12 in initial exploration.  
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
 
@@ -53,6 +53,6 @@ The figures are **exhaustive finite computations, not a proof**. The included sc
 
 Four-cycle matching reconfiguration, switch chains and Markov bases are established subjects. Audit whether a general theorem implies this special claim; do not assume that specifying prime-sum edges makes an existing problem new.
 
-## Cross-problem literature review (2026-10-28)
+## Related literature
 
 Dyer–Jerrum–Müller and Bonamy et al. established the general four-cycle switch framework; the prime-sum special case still requires an exact overlap check. This is **not a certification of novelty or of unresolved status**. Read the [full P001–P008 audit](../../literature-audits/2026-10-28-comprehensive-P001-P008.md) before citing this question in a mathematical publication.

@@ -17,4 +17,4 @@ Useful starting points:
 - [OEIS](https://oeis.org/)
 - arXiv, MathSciNet, zbMATH, journal archives, and research on matchings, reconfiguration and Sidon sets.
 
-The four inaugural problems were proposed on 2026-10-28; no exhaustive literature certification has yet been completed. Do not promote statuses without a dated, documented audit.
+The research catalogue currently contains 25 entries. These audit files record the scope and findings of individual literature searches, not a blanket certification of originality. For the current status of each question, use its problem dossier and the [public catalogue](../README.md#problem-catalogue). Additional source corrections and citations are welcome.

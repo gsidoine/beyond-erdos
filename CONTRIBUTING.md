@@ -1,43 +1,64 @@
 # Contributing to Meta Erdős
 
-This is a **curated exploratory research notebook**, not an official catalogue of Erdős problems and not a claim of original published open questions. **The collection is frozen at P001–P020** for a comprehensive consolidation audit. Do not add new numbered problems until the freeze is explicitly lifted. Current contributions should prioritize counterexamples, corrected proofs, exact references, novelty downgrades, reproducibility and clearer mathematical statements.
+**Contributions are welcome.** Meta Erdős is a public mathematical research catalogue. Its 25 existing entries span open candidates, questions needing reformulation, and proved results. Contributions can propose additional questions, refine existing statements, give proofs or counterexamples, supply verifiable computations, and correct bibliographic claims.
 
-## A change worth submitting
+The catalogue is independent of the official Erdős Problems collection. Inclusion does not imply that a problem was posed by Erdős, is historically novel, or is known to be open.
 
-1. **Locate the closest work**: at least one primary source or explicit description of why none could be located. Search mathematical synonyms and equivalent formulations, not just the proposed title.
-2. **State a precise result**: definitions, quantifiers, ranges, and exceptions; mark each assertion as a proved proposition, finite computation, heuristic, or open candidate.
-3. **Challenge your own claim**: small counterexamples, invariants, reduction to a known theorem, and any failed proof attempts.
-4. **Record evidence**: reproducible code or proof, environment/solver status, cases tested, finite limits. Integer-programming termination is "optimal" only with an optimal solver status.
-5. **Write a dated audit entry**: citations with DOI or stable links, exact mathematical overlap, status decision, and outstanding questions.
-6. **Update the canonical catalogue**: edit `data/problems.json` and run `python scripts/generate_catalog.py`, then `python -m unittest discover -s tests -v`. Do **not** hand-edit the generated table or `docs/problems.json`.
+## Proposing a problem
 
-## Status policy
+Open an issue or pull request describing the mathematical question and how it differs from the closest known work. New identifiers are assigned consecutively during review; **the current count of 25 is not a cap on contributions**.
 
-- **candidate** — mathematically stated but not certified novel/unresolved.
-- **reframe** — a known theorem or ambiguous formulation forces a narrower question.
-- **needs specification** — not yet a precise mathematical yes/no problem.
-- **proved internally** — a complete written mathematical argument has been produced within this project, **not** independently refereed or certified novel; preserve original question and cite the proof.
+A useful submission includes:
 
-The **novelty field** is separate. **Apparent novelty (targeted audit)** indicates no direct predecessor was found in the listed targeted searches; it never asserts certified originality or unresolved status. Never equate failure to find a source with evidence of originality. A confirmed earlier result must carry precise attribution in the dossier; for example, the full prime-graceful path theorem (P007 subproblem) is due to Panma and Rochanakul (2021).
+1. **A precise statement:** definitions, ranges, quantifiers, boundary cases and an unambiguous conjecture or question.
+2. **Mathematical motivation:** why an answer would clarify a structural phenomenon or connect established fields.
+3. **Prior art:** primary citations and a precise account of what their theorems already settle. Search equivalent terminology, not only the proposed title.
+4. **Evidence and falsification:** rigorous partial results, counterexamples, computational experiments, or clear explanations of what has not been checked.
+5. **Reproducibility:** code, instructions, mathematical certificates and solver status where applicable. Finite tests must not be reported as general proofs.
 
-## Problem dossier
+Use [the problem template](PROBLEM_TEMPLATE.md) for a full dossier. Research notes and failed approaches are welcome when they sharpen the surviving question.
 
-Follow [PROBLEM_TEMPLATE.md](PROBLEM_TEMPLATE.md), and ensure links remain valid. Do not erase rejected ideas; document them in `research-notes/`.
+## Improving an existing entry
 
-## Pull requests
+Refer to its permanent ID and identify the assertion being modified. Separate a new proof from an experimental observation and a historical correction. Preserve attribution when the same result is known in published work. When a question is resolved, update its **status and literature context**, rather than deleting the entry or presenting it as still open.
 
-Prefer one conceptual change per PR: a corrected proof, a counterexample, an improved bound, or an audit. Link directly to the relevant problem ID, provide expected versus observed finite outputs, and list remaining mathematical objections. No automated pass makes a paper peer-reviewed or novel.
+The catalogue uses these research statuses:
 
-## Mathematical Markdown rendering
+| Status | Meaning |
+|---|---|
+| `candidate` | A formulated question still under investigation, without certified novelty or unresolved status |
+| `reframe` | A close predecessor or formulation issue requires the remaining question to be isolated |
+| `needs specification` | A research objective without a sufficiently precise mathematical statement |
+| `proved internally` | A written proof is available in the repository; external refereeing and historical priority are separate |
 
-GitHub repository Markdown supports MathJax when you use **single dollars** for inline expressions (`$x^2$`) and **double dollars** for centered display equations, with blank lines around the display block:
+The `novelty` field records the scope of literature checking, **not** an originality certificate.
 
-```markdown
-Let $\\gamma$ be the Euler--Mascheroni constant.
+## Updating the catalogue
 
-$$
-\\mu_n(p)=\\sum_{v=1}^n(1-p)^{d_n(v)}.
-$$
+`data/problems.json` is the canonical index. Edit it and the relevant problem dossier, then regenerate the derived views:
+
+```bash
+python scripts/generate_catalog.py
+python scripts/generate_catalog.py --check
+python -m unittest discover -s tests -v
+
 ```
 
-Do not use the old `\\(...\\)` or `\\[...\\]` delimiters; GitHub may show them as ordinary text. Never transform LaTeX inside code fences. The `tests/test_math_markdown.py` regression checks the delimiters in every Markdown file. Official reference: [GitHub, Writing mathematical expressions](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions).
+Do not hand-edit the generated table in `README.md`, the copy in `docs/problems.json`, or the generated summaries in the problem dossiers.
+
+A pull request should state the mathematical change, evidence and known limitations. Automated checks establish repository consistency; they do not certify a conjecture or independently referee a proof.
+
+## Mathematical Markdown
+
+Use GitHub-compatible MathJax notation: single dollar signs for inline mathematics and double dollar signs on separate lines for display mathematics, with blank lines surrounding each display. Avoid raw hash characters in mathematical expressions and ensure LaTeX commands are compatible with the repository's rendering checks.
+
+```markdown
+Let $d_n(v)$ denote the degree of vertex $v$.
+
+$$
+\mu_n(p)=\sum_{v=1}^n(1-p)^{d_n(v)}.
+$$
+
+```
+
+The repository's Markdown tests check syntax, local links and the integrity of the submitted P010 manuscript. See [GitHub's mathematical expression guide](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions).

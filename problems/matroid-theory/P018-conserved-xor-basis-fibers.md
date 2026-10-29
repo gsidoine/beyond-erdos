@@ -5,7 +5,7 @@
 > **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
 > **Verified/known progress:** Single-element moves cannot preserve XOR; two-exchange fibers are connected for all W at d=4 but can be disconnected at d=5.  
 > **Finite evidence:** All 32,768 available sets at d=4 checked, plus explicit ten-vector d=5 counterexample with components 4 and 2.  
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
 **Area:** matroid theory, algebraic combinatorics, random discrete structures  
@@ -19,7 +19,7 @@ For $d\ge2$, let $V_d=\mathbb F_2^d$ and fix a nonzero vector $s\in V_d$. Take a
 $$
 \mathcal B(W,s)=
 \left\{B\subseteq W:
-|B|=d,\ \operatorname{span}(B)=V_d,\
+|B|=d,\ \mathrm{span}(B)=V_d,\
 \bigoplus_{v\in B}v=s\right\}.
 $$
 
@@ -71,6 +71,14 @@ $$
 
 Both components contain valid full-rank bases with identical XOR sum $1$. **No edge joins the two components**, because no pair of bases from different components shares three vectors. This is a genuine negative result: *two-element conservative exchange is not universally sufficient*.
 
+**Sharper exact finite conclusion (independently checked, 29 October 2026).** Although the two-exchange fiber has two components, exchanges replacing **at most three** vectors connect all six bases. In particular,
+
+$
+\{2,5,8,21,27\}\longrightarrow\{8,21,24,26,30\}
+$
+
+is a valid **three-vector** exchange across the components: the bases have XOR $1$ and share exactly the vectors $8$ and $21$. Hence the least exchange size connecting **this specific restricted fiber** is exactly $3$. This does not imply $t(5)=3$ universally over all $W$.
+
 These facts were obtained independently before writing the reproducer, which is [`experiments/P018_conserved_xor_bases.py`](../../experiments/P018_conserved_xor_bases.py).
 
 ### Exact exchange distance of the displayed six-basis example
@@ -78,6 +86,7 @@ These facts were obtained independently before writing the reproducer, which is 
 Of the six bases listed above, every pair of bases in opposite two-exchange components requires replacing **at least 3** vectors, and some opposite-component pairs differ by **exactly 3** vectors. Since each two-exchange component is internally connected, permitting replacements of **up to 3** basis vectors reconnects this particular fiber. Its minimum connecting exchange size is therefore **exactly 3**.
 
 This is a finite statement **only for the displayed ten-vector $W$**, not a claim that three-exchange connectivity holds for every available set in dimension 5.
+See the [second-pass source/obstruction audit](../../audits/2026-10-29-P008-P015-P018-P020-source-obstruction-pass.md) for the independent check and caveats.
 
 ## Structural significance
 
@@ -92,7 +101,7 @@ The dimension-five obstruction makes the program materially different from a con
 - **Hörsch, Imolay, Mizutani, Oki, Schwarcz**, [*Problems on Group-labeled Matroid Bases* (2024)](https://arxiv.org/abs/2402.16259): precisely the general **group-label-sum constraint on matroid bases**, with algorithms and proximity results. The concept of constrained bases **is not original to this project**; their published questions do not evidently give the two-replacement fiber component classification for the special vector-as-label model.
 - [*Towards the Proximity Conjecture on Group-Labeled Matroids* (ICALP 2025)](https://doi.org/10.4230/LIPIcs.ICALP.2025.85): proximity of label-avoiding bases under exchanges; not automatically connectivity of *one fixed sum fiber* using only intermediate bases of the same sum.
 - **Lubiw and Pathak**, [*Reconfiguring Ordered Bases of a Matroid* (2016)](https://arxiv.org/abs/1612.00958): base exchange with **position labels**, a different labeling constraint.
-- [*Reconfiguration of basis pairs in regular matroids* (2026)](https://doi.org/10.1016/j.jctb.2025.10.009): White's conjecture, symmetric exchanges between **two bases**, and toric-ideal generators. Our states are **one basis with fixed vector XOR**, but this is a serious conceptual near-predecessor.
+- [*Reconfiguration of basis pairs in regular matroids* (2026)](https://doi.org/10.1016/j.jctb.2025.10.009): White's conjecture, symmetric exchanges between **two bases**, and toric-ideal generators. The states considered here are **one basis with fixed vector XOR**, but this is a serious conceptual near-predecessor.
 
 **Novelty classification:** exact constrained fiber question and exhibited d=5 obstruction appear distinct in the targeted sources, but may follow from algebraic statistics/toric ideals of binary matroids. No claim of newness or unresolved status without expert source-level audit.
 

@@ -5,12 +5,11 @@
 > **Formulation:** candidate. **Novelty:** strong prior-art overlap.  
 > **Verified/known progress:** One-color iff 2n+1 prime; two-color certificate from short prime difference.  
 > **Finite evidence:** Sieve certificates through n=1,000,000 (finite only).  
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
 
 **Area:** additive number theory, extremal arithmetic matchings  
-**First proposed:** 2026-10-28  
 **Status:** candidate problem, **unresolved and originality status unverified**  
 **Relationship:** quantitative dual to P001 (maximize the number of colors vs. minimize the number).
 

@@ -1,22 +1,68 @@
 # Meta Erdős
 
-**An independent notebook of twenty research entries in number theory, graph theory and probability, inspired by the problem-posing tradition of Paul Erdős.**
+**Meta Erdős is an open, community-contributable catalogue of mathematical research questions, conjectures and partial results.** The collection currently contains **25 numbered research entries (P001–P025)** in number theory, graph theory, probability, geometry, topology and matroid theory.
 
-**Important:** These are **not** problems claimed to have been posed by Erdős, not part of [erdosproblems.com](https://www.erdosproblems.com/), and not certified to be new or unresolved. Our collection is independent of [teorth/erdosproblems](https://github.com/teorth/erdosproblems). We draw inspiration from that repository's clear, data-driven organization—not its problem content.
+The project takes inspiration from Paul Erdős's problem-posing tradition. These entries are **not claimed to have been posed by Erdős**, do not belong to [erdosproblems.com](https://www.erdosproblems.com/) or [teorth/erdosproblems](https://github.com/teorth/erdosproblems), and are **not certified to be previously unknown or unresolved**. Established results and close predecessors are attributed in the individual dossiers.
 
-**Explore:** [Problem catalogue below](#problem-catalogue) · [Interactive searchable browser](docs/index.html) · **[Full P001–P020 consolidation audit](audits/2026-10-29-P001-P020-first-collection-consolidation.md)** · [How to contribute](CONTRIBUTING.md)
+**Browse:** [Catalogue](#problem-catalogue) · [Searchable browser](docs/index.html) · [Mathematical results](#mathematical-results) · [Literature and audits](#literature-and-audits) · [Contribute](CONTRIBUTING.md)
 
-> **Discovery freeze (29 October 2026): P001–P020.** The first collection is complete for editorial review. **Do not add P021 or later entries** until a collection-wide proof, novelty, significance and redundancy audit is complete. The number 20 is a research milestone, not a claim that all twenty are genuinely new open problems.
+## Status and scope
 
-## First collection: consolidation decisions
+The 25 entries have different research statuses; **they are not all open conjectures**.
 
 The [29 October 2026 portfolio-wide audit](audits/2026-10-29-P001-P020-first-collection-consolidation.md) and the [second-pass source-level comparison, including the P010 manuscript snapshot](audits/2026-10-29-P015-P016-P018-P020-source-comparison-and-P010-snapshot.md) reviews **all twenty IDs** for well-posedness, closest prior art, structural significance, evidence quality and potential overlap. It gives a provisional shortlist of **P003, P005, P014, P016, P017, P018 and P020**, with **P010 on a separate theorem/publication track**. These are **editorial priorities, not certified novel/open problems**.
+| Status | Entries | Meaning |
+|---|---|---|
+| Candidate | 21 | A mathematical research question under investigation; historical novelty and unresolved status are not certified |
+| Reframe | 2 (P007, P025) | A close or known predecessor requires the surviving question to be stated more narrowly |
+| Needs specification | 1 (P008) | The intended mathematical question requires a sharper formal statement |
+| Proved internally | 1 (P010) | A complete proof is supplied; independent refereeing and historical priority assessment are distinct matters |
 
-Key restrictions: **P007** contains a previously known prime-graceful special case, **P008** still needs a precise non-tautological formulation, **P009** closely overlaps a classical prime-difference certificate, and **P010** is internally solved. The collection remains frozen at P001–P020 pending deeper referee and priority checks.
+These labels distinguish the research status of a *question* from the historical novelty of its formulation. Computations only certify the finite instances and methods specified in their dossiers.
+
+Among the research candidates, **P005, P017, P018 and P020** are the current editorial focus, with **P003 and P016** among the strongest additional directions. These are not rankings of mathematical priority or claims of external validation.
+
+**Contributions are welcome**, including new problem proposals, counterexamples, proof improvements, bibliographic corrections and reproducible experiments. New IDs are assigned through review rather than an arbitrary numerical target; see [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## P010 — Submitted manuscript
+
+The original P010 question, **the minimum number of coprime adjacencies in a permutation**, has a complete constructive proof in this repository. The resulting manuscript, *The Minimum Number of Coprime Adjacencies in a Permutation*, **has been submitted to the journal _Integers_**. Submission does **not** imply acceptance or publication.
+
+- [Submitted manuscript (PDF)](manuscripts/P010/coprime_adjacencies.pdf)
+- [Manuscript information](manuscripts/P010/README.md)
+- [P010 problem dossier](problems/graph-theory/P010-minimum-coprime-adjacencies.md)
+- [Constructive proof and supporting argument](theorems/P010-exact-coprime-adjacencies.md)
+
+For $n\ge4$, the established formula in the manuscript is
+
+$$
+h(n)=\pi(n)-\pi(n/2)+
+\max\{1,\lceil(\pi(n/2)-\pi(n/3))/2\rceil\}.
+$$
+
+In particular, $h(n)\sim 7n/(12\log n)$. This is a **resolved entry**, not one of the currently open candidates. Any claim of historical originality remains subject to specialist comparison.
+
+## Mathematical results
+
+**P020 — Random $p$-adic Hankel cokernels.** The repository contains internal proofs of exact laws for cyclic and two-generator cokernels, plus every elementary abelian cokernel, with finite modular checks. The higher-exponent group distribution and the full limiting law remain unresolved. The finite-field kernel classification used in these proofs is explicitly credited to earlier literature.
+
+- [P020 problem dossier](problems/number-theory/P020-random-hankel-padic-cokernels.md)
+- [Cyclic and two-generator results](theorems/P020-padic-hankel-cyclic-and-rank-two-laws.md)
+- [Elementary abelian group probabilities](theorems/P020-elementary-abelian-cokernel-laws.md)
+- [Finite-field kernel structure and prior art](theorems/P020-hankel-kernel-product-research.md)
+
+**Interval-sum factor saturation.** A separate [constructive theorem](theorems/interval-sum-factor-saturation.md) proves that a bipartite graph with allowed sum interval $a\le i+j\le b$ contains as many edge-disjoint perfect matchings as its minimum degree. This is not claimed as a resolution of P003 and does not have a numbered open-problem entry.
+
+## Second consolidation pass — primary sources and submission provenance
+
+- [P010 manuscript snapshot and reference verification](manuscripts/P010-2026-10-29-submission-snapshot-and-policy-audit.md): records the author-supplied **two-page PDF's** exact SHA-256 and bibliography checks. **Important:** the current official *INTEGERS* policy appears to exclude research developed with AI assistance in mathematics/code, as transparently disclosed in that manuscript. The PDF binary is not included in this repository change.
+- [P008/P015/P018/P020 source-and-obstruction review](audits/2026-10-29-P008-P015-P018-P020-source-obstruction-pass.md): cautious distinctions from the closest colored-triangulation, group-labeled-matroid, random-matrix and host-percolation literature; independent validation of P018's exact three-exchange bridge.
+
+The **P001–P020 discovery freeze remains active**. These updates neither certify historical originality nor alter the mathematical status of any numbered problem.
 
 ## Problem catalogue
 
-Every problem has a permanent identifier, its own self-contained statement, evidence, and nearest prior art. *Candidate* means **under investigation**, not "verified open".
+The table below is generated from [the canonical metadata](data/problems.json). Each entry links to its full mathematical formulation, known results, finite experiments, prior-art comparison and remaining questions.
 
 <!-- CATALOG:START -->
 | ID | Question | Area | Formulation | Novelty |
@@ -41,111 +87,38 @@ Every problem has a permanent identifier, its own self-contained statement, evid
 | [P018](problems/matroid-theory/P018-conserved-xor-basis-fibers.md) | Conserved-XOR basis exchange fibers | matroid theory | candidate | apparent novelty (targeted audit) |
 | [P019](problems/geometry/P019-no-three-line-exchange.md) | Exchange complexity of optimal no-three-in-line configurations | discrete geometry | candidate | apparent novelty (targeted audit) |
 | [P020](problems/number-theory/P020-random-hankel-padic-cokernels.md) | Cokernel laws of random p-adic Hankel matrices | algebraic probability | candidate | apparent novelty (targeted audit) |
+| [P021](problems/probability/P021-cayley-sum-sandpile-laws.md) | Random Cayley-sum sandpile groups | algebraic probability | candidate | not certified (targeted audit) |
+| [P022](problems/geometry/P022-random-unimodular-triangle-complex.md) | Random unimodular triangle complex homology | discrete geometry | candidate | not certified (targeted audit) |
+| [P023](problems/probability/P023-random-prime-incidence-rank.md) | Rank of random prime-divisibility incidence matrices | probabilistic number theory | candidate | not certified (targeted audit) |
+| [P024](problems/graph-theory/P024-zero-forcing-divisor-graph.md) | Zero forcing on the divisor comparability graph | graph theory | candidate | not certified (targeted audit) |
+| [P025](problems/number-theory/P025-lcm-hamiltonian-bottleneck.md) | Cyclic lcm Hamiltonian bottleneck | number theory | reframe | confirmed collision for linear-path analogue |
 <!-- CATALOG:END -->
 
-For precise definitions, follow each ID. To filter by subject, status or title in a browser, open [the searchable catalogue](docs/index.html). If GitHub Pages is enabled for the repository's `docs/` folder, the same page can be published as a standalone website.
+Browse and filter the same entries in the [searchable catalogue](docs/index.html).
 
-## How to interpret the labels
+## Literature and audits
 
-| Label | Meaning |
-|---|---|
-| **candidate** | A precise mathematical question, but not certified original or unresolved |
-| **proved internally** | Complete argument supplied in this repository; independently verified correctness and originality are **not** yet certified |
-| **reframe** | Some original formulation is known or misleading; the surviving question must be isolated |
-| **needs specification** | The research goal is meaningful, but its current statement is not a fully formal yes/no question |
-| **not certified** | No exhaustive prior-art check or independent specialist certification |
-| **apparent novelty (targeted audit)** | An exact prior answer was not located in a dated targeted search; no assertion of genuine novelty or open status |
-| **strong prior-art overlap** | A closely connected classical conjecture or sufficient condition is already known |
-| **needs precise formulation** | The remaining claimed open question has not yet been made mathematically sharp |
-| **internal proof; priority unverified** | A proof exists within this project, but the originality and priority are not certified |
-| **known subproblem** | A specific subclaim is already established in earlier literature |
-| **closely related** | Strong connection to an older question; independence is not settled |
+Historical source reviews and mathematical audits are preserved for transparency. They are **research records rather than continuously updated statements of priority**; consult the individual dossier and its references for the claims currently attached to a question.
 
-An *internal proof* is not a published or externally verified theorem. Likewise, exact computations apply only to the stated finite instances.
+- [Catalogue-wide literature comparison, P001–P025](audits/2026-10-29-P001-P025-literature-source-gate.md)
+- [Focused review of the candidate research directions](audits/2026-10-29-flagship-source-comparison-and-shortlist.md)
+- [Earlier consolidation, P001–P020](audits/2026-10-29-P001-P020-first-collection-consolidation.md)
+- [Literature review archive](literature-audits/README.md)
+- [Proof and research audit archive](audits/)
 
-## Mathematical progress
+A missing exact source in a search is **not** proof that a question is new or open. A published theorem must be attributed to its authors even when a proof is independently rediscovered.
 
-**P010 has an internally complete exact solution:** for every $n\ge4$,
+## Reproducibility and contributions
 
-$$
-h(n)=\pi(n)-\pi(n/2)+\max\!\left(1,\left\lceil\frac{\pi(n/2)-\pi(n/3)}2\right\rceil\right).
-$$
+Problem definitions and references live in `problems/`; mathematical proof notes in `theorems/`; code and finite certificates in `experiments/`; and the canonical catalogue index in `data/problems.json`. Supporting research and literature reviews are preserved in `audits/` and `literature-audits/`.
 
-See the [constructive theorem](theorems/P010-exact-coprime-adjacencies.md) and [dependency-free verification program](experiments/P010_construct_optimal_permutation.py). This resolves the original P010 extremal question **within this research notebook**. A historical priority and external referee audit are still required before claiming a new published mathematical result.
-
-## New unnumbered theorem: interval-sum factor saturation
-
-Every bipartite graph on two copies of `{0,…,n−1}` with allowed edges satisfying `a ≤ i+j ≤ b` admits as many edge-disjoint perfect matchings as its minimum degree. The [full constructive proof](theorems/interval-sum-factor-saturation.md) and [dependency-free verification program](experiments/interval_sum_factor_construct.py) are available. This **resolves an incubator question**, not P003; no new problem identifier is added, and historical novelty remains unverified.
-
-## Research generation and novelty tiers
-
-- **Apparent novelty (targeted audit)** means that the listed searches have not located an exact equivalent or resolution. It **does not mean** proven new, independently verified open or original as a mathematical object.
-- The newly added P011–P013 are first-stage research questions. None has a claimed asymptotic theorem, formal novelty certification, or prize attribution.
-- **Structural impact takes priority over incremental computation:** ask questions whose answers would explain mechanisms, classify mathematical structures or distinguish universality classes.
-
-Read the [29 October novelty and new-directions audit](literature-audits/2026-10-29-novelty-and-new-directions.md) for the explicit predecessor matrix and caveats.
-
-## Recent mathematical progress and proposed discoveries
-
-- **P010:** [Publication significance and priority audit](audits/2026-10-29-P010-publishability-priority-review.md) — exact theorem appears suitable for a short paper **if novel**, but no human referee or definitive priority certification yet.
-- **P015:** [Odd-area convex lattice triangulations](problems/geometry/P015-odd-area-lattice-triangulations.md) — geometric parity becomes four fixed vertex colors; ask if all valid triangulations connect by valid diagonal flips. [Research audit](literature-audits/2026-10-29-P015-geometry-and-P010-priority.md).
-
-## New topological research question
-
-- [P016 — Topology of the Sidon simplicial complex](problems/topology/P016-sidon-complex-homology.md) asks whether the reduced homology of arithmetic constraint complexes eventually vanishes in each fixed dimension. [First-pass originality audit](literature-audits/2026-10-29-P016-sidon-complex-topology.md). Exact finite Betti calculations are not an asymptotic proof.
-
-## Discovery roadmap
-
-The planned collection is **frozen at P001–P020**, ahead of a collection-wide mathematical and historical consolidation. The previous 25-entry target has been superseded. Each new entry needs a crisp mathematical question, a structural payoff, a falsification attempt, reproducible results where practical, and the closest published work.
-
-- [P017 — Random divisibility chains](problems/probability/P017-random-divisibility-chain-height.md) asks for a density-dependent time constant for longest chains in Bernoulli-restricted divisibility orders.
-- [P018 — Conserved-XOR matroid bases](problems/matroid-theory/P018-conserved-xor-basis-fibers.md) studies how local exchange connectivity fails when a linear-algebraic quantity must remain constant. Its first obstruction appears at dimension five in exact finite tests.
-- [Dated cross-field novelty review](literature-audits/2026-10-29-P017-P018-cross-field-problem-screen.md) records distinct prior art and what is or is not demonstrated.
-
-## Final discovery batch and consolidation
-
-- **[P019 — No-three-in-line exchange complexity](problems/geometry/P019-no-three-line-exchange.md).** The set of all optimal general-position grid configurations has a natural simultaneous-exchange graph; small examples already disprove universal 2-move connectivity.
-- **[P020 — Random Hankel cokernel laws](problems/number-theory/P020-random-hankel-padic-cokernels.md).** Established finite-field rank formulas show a different mod-p behavior from independent-entry random matrices, motivating the full $p$-adic group law.
-- [Final-batch literature and mathematical audit](literature-audits/2026-10-29-P019-P020-final-batch.md).
-
-**Next project phase: consolidation, not problem generation.** Evaluate each statement for proof integrity, exact historical overlap, compelling structural consequences, and possible merger or demotion; then choose a smaller flagship set.
-
-## Evidence and prior art
-
-- [P010 publication assessment, fresh P001–P009 references, and interval-sum factor incubator](audits/2026-10-28-P010-publication-and-novelty-followup.md) — journal-policy warnings and a new unpromoted candidate.
-- [New exact P010 theorem and priority audit](audits/2026-10-28-P010-resolution-proof-and-novelty.md) — independent mathematical review still pending.
-- [All-ten adversarial review](audits/2026-10-28-P001-P010-adversarial-review.md) — proof checks, reproductions, explicit gaps, and selection criteria.
-- [Comprehensive P001–P008 literature review](literature-audits/2026-10-28-comprehensive-P001-P008.md) — close mathematical predecessors and one confirmed prior-art collision.
-- [P009/P010 literature review](literature-audits/2026-10-28-pass-4.md) — prime differences and the earlier Erdős–Freud–Hegyvári work.
-- [Current novelty and quality gate](audits/2026-10-28-novelty-quality-gate.md) — precise citations and retain/reframe priorities.
-- [Experiments](experiments/) — code for finite optimization, enumeration and random-graph simulations. See [dependencies](requirements-experiments.txt).
-
-## How this repository works
-
-```text
-data/problems.json               Canonical index and status data
-problems/                        Ten mathematical problem dossiers
-experiments/                     Computational tests and witnesses
-theorems/                        Full proof dossiers for internally resolved questions
-audits/                          Proof, numerical, and novelty reviews
-literature-audits/               Dated source-by-source literature surveys
-docs/                            Optional searchable static catalogue
-scripts/                          Generate and validate the index
-tests/                           Dependency-free index checks
-research-notes/                  Explored and rejected questions
-```
-
-The table above and `docs/problems.json` are **generated views** of `data/problems.json`. After changing metadata, run:
+To validate a contribution:
 
 ```bash
 python scripts/generate_catalog.py
+python scripts/generate_catalog.py --check
 python -m unittest discover -s tests -v
+
 ```
 
-Use `python scripts/generate_catalog.py --check` to verify that all generated views are current.
-
-## Submission and credit
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) and the [problem dossier template](PROBLEM_TEMPLATE.md). Every mathematical addition should disclose its proof status, attempts at disproof, computational methodology, the *closest* previously published result, and a dated novelty assessment. Known theorems must credit their earlier authors; "not found" is never treated as "new".
-
-This is a **research notebook**, not a prize list, journal, or official Erdős problem database.
+Do not edit generated catalogue tables or dossier summary blocks directly: the generator synchronizes them from the metadata. See [the contribution guide](CONTRIBUTING.md) and [problem template](PROBLEM_TEMPLATE.md) for research standards, status categories, evidence and attribution.

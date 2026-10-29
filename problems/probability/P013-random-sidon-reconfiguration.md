@@ -5,11 +5,10 @@
 > **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
 > **Verified/known progress:** Random Sidon decision phase behavior is known; feasible exchange components form a distinct proposed observable.  
 > **Finite evidence:** k=2 degenerate connectivity checked conceptually; no large-case claim.  
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
 **Fields:** additive combinatorics, random discrete structures, reconfiguration  
-**Proposed:** 2026-10-29  
 **Research status:** candidate, unproved, not certified novel.
 
 ## Model
@@ -26,7 +25,7 @@ For scaling regimes $k=k(N)$, particularly $k$ approaching a nonzero fraction of
 
 $$
 X_{N,k}(q)=|\mathsf{Sid}_{N,k}(W_N(q))|,\qquad
-C_{N,k}(q)=\#\text{components of }\mathcal E_{N,k}(W_N(q)).
+C_{N,k}(q)=\mathrm{number\ of\ components\ of\ }\mathcal E_{N,k}(W_N(q)).
 $$
 
 **Can the appearance of Sidon states and the emergence of a single feasible exchange component occur at parametrically different scales of $q$?** Determine meaningful scaling limits and/or transition regimes when the expected number of states becomes large.
