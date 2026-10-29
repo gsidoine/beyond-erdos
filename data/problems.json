@@ -378,6 +378,54 @@
           "url": "https://doi.org/10.5070/C62156880"
         }
       ]
+    },
+    {
+      "id": "P017",
+      "title": "Random divisibility-poset chain height",
+      "area": "probability",
+      "file": "problems/probability/P017-random-divisibility-chain-height.md",
+      "question": "Does the longest divisibility chain in a Bernoulli random subset of [N] have a deterministic limiting length after division by log₂ N?",
+      "status": "candidate",
+      "novelty": "apparent novelty (targeted audit)",
+      "result": "For fixed 0<p<1, the normalized height is asymptotically between p and 1 in probability; convergence to a constant is unproved",
+      "verification": "Exact dynamic program cross-checked against all subsets for N≤9; exploratory sampling at larger N",
+      "priority": "structural discovery",
+      "sources": [
+        {
+          "name": "Kohayakawa–Kreuter–Osthus (2000), random Boolean lattice chains",
+          "url": "https://doi.org/10.1002/%28SICI%291098-2418%28200003%2916%3A2%3C177%3A%3AAID-RSA4%3E3.0.CO;2-9"
+        },
+        {
+          "name": "Lewis–Souza (2021), dimension of the divisibility order",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0097316520301837"
+        }
+      ]
+    },
+    {
+      "id": "P018",
+      "title": "Conserved-XOR basis exchange fibers",
+      "area": "matroid theory",
+      "file": "problems/matroid-theory/P018-conserved-xor-basis-fibers.md",
+      "question": "What exchange size is necessary to connect vector-space bases with a fixed XOR total, and how does connectivity change under random deletion of available vectors?",
+      "status": "candidate",
+      "novelty": "apparent novelty (targeted audit)",
+      "result": "Single-element moves cannot preserve XOR; two-exchange fibers are connected for all W at d=4 but can be disconnected at d=5",
+      "verification": "All 32,768 available sets at d=4 checked, plus explicit ten-vector d=5 counterexample with components 4 and 2",
+      "priority": "structural discovery",
+      "sources": [
+        {
+          "name": "Hörsch–Imolay–Mizutani–Oki–Schwarcz (2024), group-labeled matroid bases",
+          "url": "https://arxiv.org/abs/2402.16259"
+        },
+        {
+          "name": "Group-labeled matroid proximity (ICALP 2025)",
+          "url": "https://doi.org/10.4230/LIPIcs.ICALP.2025.85"
+        },
+        {
+          "name": "Reconfiguration of basis pairs in regular matroids (2026)",
+          "url": "https://doi.org/10.1016/j.jctb.2025.10.009"
+        }
+      ]
     }
   ]
 }
