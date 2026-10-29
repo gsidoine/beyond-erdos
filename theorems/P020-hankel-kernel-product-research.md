@@ -1,55 +1,56 @@
-# P020 continuation — Kernel-product rank and the obstruction to higher-rank lifting
+# P020 — Exact Hankel kernel-product structure (a corollary of existing finite-field theory)
 
-**Date:** 29 October 2026. **Status:** one proved elementary lower bound, exact exhaustive finite evidence, a conjectural upper equality for Hankel kernels. **Not a proof of P020's full distribution.**
+**29 October 2026; mathematical status: proved using Yiasemides (2024), Theorem 2.4.4 and Remark 2.4.6.** The kernel classification itself and the finite-field rank laws are **previously published**, not original to Meta Erdős. The extension to first-order p-adic lifting and elementary abelian cokernels is treated separately in [the elementary-cokernel note](P020-elementary-abelian-cokernel-laws.md).
 
-## A general polynomial-subspace inequality (proved, not claimed original)
+## Known finite-field kernel classification, specialized to square Hankel matrices
 
-Let $F$ be any field and $V\subseteq F[z]$ a finite-dimensional linear subspace of dimension $k\ge1$. Put
+Let F be a finite field, and let
 $$
-V\cdot V:=\operatorname{span}_F\{fg:f,g\in V\}.
+H=(h_{i+j})_{0\le i,j<n}\in F^{n\times n},\qquad
+k=\dim_F\ker H\ge1.
 $$
-Then
-$$
-\boxed{\dim_F(V\cdot V)\ge2k-1.}
-$$
+Identify vectors $(v_0,\ldots,v_{n-1})$ with polynomials $f(z)=\sum_{i=0}^{n-1}v_i z^i$.
 
-**Proof.** Row-reduce polynomial coefficients to choose a basis $f_1,\ldots,f_k$ with strictly increasing degrees $d_1<\cdots<d_k$. The products
+**Proposition (direct consequence of Yiasemides).** There is a nonzero polynomial $A(z)\in F[z]$ with degree at most $n-k$ such that
 $$
-f_1 f_1,\ f_1f_2,\ \ldots,\ f_1f_k,\quad
-f_2f_k,\ \ldots,\ f_kf_k
-$$
-have the $2k-1$ distinct degrees
-$$
-2d_1<d_1+d_2<\cdots<d_1+d_k<d_2+d_k<\cdots<2d_k.
-$$
-Distinct-degree polynomials are linearly independent. □
-
-This is a polynomial-space product-growth inequality of classical additive-combinatorial flavor, **not certified novel**.
-
-## Numerical exact assertion for square Hankel kernels
-
-Let $H=(h_{i+j})_{0\le i,j<n}$ be any square Hankel matrix over $F$. Identify $\ker H\subset F^n$ with polynomials of degree at most $n-1$. If $\dim\ker H=k$, numerical exhaustive checks suggest the **strong equality**
-$$
-\boxed{\dim_F((\ker H)\cdot(\ker H))=2k-1.}\tag{K}
+\boxed{\ker H=\{A(z)B(z):B\in F[z],\ \deg B\le k-1\}.}\tag{1}
 $$
 
-The left side is the rank of the first-order map from the $2n-1$ independent Hankel parameters to symmetric bilinear forms on the kernel. For $k\ge3$, equality (K) says this first-order random form lies on a lower-dimensional linear subspace, so **the Haar-symmetric-matrix lemma from P020 cannot be generalized unchanged**.
+**Derivation from the source.** In [Yiasemides, Theorem 2.4.4 and Remark 2.4.6](https://doi.org/10.1007/s40687-023-00418-7), the Hankel sequence has length parameter $m=2n-2$, its first characteristic degree is its middle rank $r=n-k$, and its second characteristic degree is $m-r+2=n+k$. In the article's notation, take the Hankel rectangle to be $n$ rows by $n$ columns (we use $n$ for the dimension and $m$ only for the sequence index, to avoid a clash with the source). Since the number of columns is $n$ and
+$$
+r=n-k<n<n+k,
+$$
+we are in the *middle* case of Remark 2.4.6: the second characteristic polynomial does not contribute, and the kernel consists exactly of multiples of the first polynomial by factors of degree at most $n-r-1=k-1$. The source's $k=0$ rank case is excluded here; if $H=0$, choose $A=1$. The polynomial $A$ is nonzero and satisfies the degree bound because its multiple $Az^{k-1}$ fits in the $n$ coefficient positions. This proves (1). No new finite-field kernel theorem is claimed.
 
-The test is exact finite-field linear algebra, exhaustive over:
-- $F=\mathbb F_2$, every Hankel matrix of sizes $n=3,4,5,6$, i.e. $2^{2n-1}$ matrices at each $n$;
-- $F=\mathbb F_3$, every Hankel matrix of sizes $n=3,4,5$, i.e. $3^{2n-1}$ matrices at each $n$.
+## Exact product-space dimension for *every* finite-field square Hankel matrix
 
-All cases satisfied (K), for every observed $k$; see [reproducible code](../experiments/P020_kernel_product_dimension.py). No evidence from finite enumerations proves (K) for all fields and sizes.
+**Corollary.** With $V=\ker H$ as above, for every finite field and every $k\ge1$,
+$$
+\boxed{
+\dim_F\operatorname{span}\{fg:f,g\in V\}=2k-1.
+}\tag{2}
+$$
 
-## Essential historical input newly located
+**Proof.** Equation (1) gives $V=A F[z]_{\le k-1}$. The products span
+$$
+A^2F[z]_{\le2k-2},
+$$
+because every monomial $z^t$, $0\le t\le2k-2$, is a product $z^iz^j$ with $0\le i,j<k$. Multiplication by nonzero $A^2$ is injective in the polynomial ring, yielding dimension $2k-1$. $\square$
 
-[Yiasemides, *The variance and correlations of the divisor function in $\mathbb F_q[T]$, and Hankel matrices*, Research in the Mathematical Sciences 11 (2024), article 11](https://doi.org/10.1007/s40687-023-00418-7), especially **Theorems 2.4.4 and 2.4.9**, characterizes kernels of finite-field Hankel matrices using **two characteristic polynomials** and bounded-degree polynomial multiples. This is a much closer structural predecessor than generic random matrix Smith theory. A genuine proof of (K) must be compared to this classification and could be a straightforward corollary. **Do not claim (K) or its proof concept original.**
+For context, the general inequality $\dim(V\cdot V)\ge 2k-1$ holds for **any** $k$-dimensional polynomial subspace: choose a basis $f_1,\ldots,f_k$ with strictly increasing degrees and note that the $2k-1$ products $f_1f_1,\ldots,f_1f_k,f_2f_k,\ldots,f_kf_k$ have distinct degrees. This inequality is elementary and not claimed new.
 
-## Next route to the full p-group distribution
+## What the equality means for p-adic lifting
 
-1. Establish or refute (K) over **arbitrary** finite fields using the two-generator kernel structure; check any exceptional field characteristic or boundary shape.
-2. Classify the **image subspace** of the first-order lifting map up to congruence, not just its dimension. A $2k-1$-dimensional space might be conjugate to $k\times k$ Hankel forms or another linear series; matrix ranks alone do not establish that.
-3. Examine Schur-complement nonlinear terms. Even if first-order images are Hankel-like, higher mod-$p^r$ corrections need not be Haar in a fixed Hankel subspace.
-4. Derive exact distributions of groups with **three generators**, then test whether the unresolved tail mass can be made arbitrarily small in total variation as $n\to\infty$. The rank-two theorem already determines mass $1-p^{-5}$ for all $n\ge3$.
+For a Hankel matrix over $\mathbb Z_p$ whose reduction has corank $k$, choose kernel basis $A,Az,\ldots,Az^{k-1}$ over $\mathbb F_p$. The linearized first-order map from the $2n-1$ independent anti-diagonal perturbations to forms on the kernel has the $2k-1$ coefficient functionals of $A(z)^2z^t$ for $0\le t\le2k-2$. Thus, in the polynomial-shift basis, the first-order random form is **uniform among k-by-k Hankel forms**, not all symmetric forms when $k\ge3$. For $k=1,2$, the two form spaces coincide.
 
-**Mathematical scope:** the previous [P020 two-generator theorem](P020-padic-hankel-cyclic-and-rank-two-laws.md) remains intact. This note introduces a new *testable conjecture* and a theorem that is valid for all polynomial subspaces, but does not extend the Haar-lifting theorem to $k\ge3$.
+**Important:** this is a first-order mod-$p$ assertion. The Schur-complement correction may affect higher p-power invariants, so equation (2) **does not imply** the full conditional residual matrix is Haar p-adic Hankel at all orders. The exact consequence for elementary abelian cokernels is proved separately.
+
+## Exact independent verification
+
+The program [P020 kernel-product dimension](../experiments/P020_kernel_product_dimension.py) independently exhausts all binary Hankel matrices of sizes 3–6 and ternary Hankel matrices of sizes 3–5, recovers their kernels, and verifies equality (2) using finite-field rank elimination. These **checks support** the proof and are not its basis.
+
+## Primary source / priority
+
+[Yiasemides, *The variance and correlations of the divisor function in F_q[T], and Hankel matrices*, Research in the Mathematical Sciences 11 (2024), article 11, Theorem 2.4.4 and Remark 2.4.6](https://doi.org/10.1007/s40687-023-00418-7).
+
+This is the closest source for the kernel assertion. **The classification is credited to the published article**, and the product equality is recorded as its elementary corollary. The remaining open part of P020 concerns complete higher-exponent group laws and a limit distribution for all finite abelian p-groups.
