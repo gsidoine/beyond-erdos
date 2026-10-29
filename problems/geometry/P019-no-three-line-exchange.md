@@ -1,11 +1,11 @@
 # P019 — Reconfiguration complexity of optimal no-three-in-line sets
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** How many selected grid points must one replace simultaneously to connect all maximum-size no-three-in-line configurations on the $n\times n$ lattice grid?
-> **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit); the classical extremal no-three-in-line question is well studied.
-> **Verified/known progress:** One-point moves are impossible whenever an optimal configuration has $2n$ points; at most-two-point moves are then rectangle switches.
-> **Finite evidence:** Exact exhaustive configurations for $n=3,\dots,7$ give minimum connecting exchange sizes $2,4,3,5,6$ respectively.
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Targeted audit](../../literature-audits/2026-10-29-P019-P020-final-batch.md)
+> **Research question:** Does a universal bound exist on the number of points that must be simultaneously replaced to connect all maximum-size no-three-in-line subsets of an n×n grid?  
+> **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
+> **Verified/known progress:** When the maximum size is 2n, single-point exchanges are impossible and two-point exchanges are rectangle switches.  
+> **Finite evidence:** Exact optimal configuration exchange graphs through n=7; minimal connecting move sizes 2,4,3,5,6 for n=3,...,7.  
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
 <!-- /DOSSIER-SUMMARY -->
 
 **Area:** discrete geometry and reconfiguration theory  
