@@ -48,6 +48,7 @@ This creates a bridge between 3-term progression avoidance, Sidon restrictions, 
 ## Exact persistence constraint: factor-two nullity
 
 **Proposition (elementary; historical priority unverified).** For every integer $M\ge1$, every $k\ge0$, and any coefficient ring $R$, the inclusion $K_M\hookrightarrow K_{2M}$ induces the zero homomorphism on reduced homology:
+
 $$
 \widetilde H_k(K_M;R)\longrightarrow\widetilde H_k(K_{2M};R).
 $$
