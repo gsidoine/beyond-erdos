@@ -326,6 +326,32 @@
           "url": "https://doi.org/10.1112/jlms.12872"
         }
       ]
+    },
+    {
+      "id": "P015",
+      "title": "Odd-area lattice triangulation flip connectivity",
+      "area": "discrete geometry",
+      "file": "problems/geometry/P015-odd-area-lattice-triangulations.md",
+      "question": "Are all odd-normalized-area triangulations of a convex lattice polygon connected by odd-area-preserving diagonal flips when all four mod-2 vertex residues occur?",
+      "status": "candidate",
+      "novelty": "apparent novelty (targeted audit)",
+      "result": "Odd doubled area iff the triangle has three different mod-2 vertex classes; flips require all four classes",
+      "verification": "Exhaustive parity color patterns through n=9 (zero disconnected four-class cases); six-vertex three-color obstruction",
+      "priority": "structural discovery",
+      "sources": [
+        {
+          "name": "Baur et al., coloured triangulation flip graphs (2025)",
+          "url": "https://arxiv.org/abs/2402.06546"
+        },
+        {
+          "name": "Acharya–Mütze–Verciani, colorful triangulations (2025)",
+          "url": "https://doi.org/10.20382/jocg.v16i1a9"
+        },
+        {
+          "name": "Debrohim–Sasaki–Nunes, cyclic colors (2026)",
+          "url": "https://arxiv.org/abs/2608.26006"
+        }
+      ]
     }
   ]
 }
