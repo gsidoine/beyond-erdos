@@ -101,7 +101,7 @@ Hence $\lambda(G_{n;a,b})\ge k=\delta(G_{n;a,b})$. The reverse inequality is tri
 
 ## Reproducibility and adversarial scope
 
-The dependency-free script [\`experiments/interval_sum_factor_construct.py\`](../experiments/interval_sum_factor_construct.py) implements exactly the block lemma, checks every row and column has degree $k$, checks every edge lies in the permitted band, and reverses columns to return a factor in the original sum graph. A separate SciPy [integral max-flow verifier](../experiments/test_interval_sum_factors.py) has tested all intervals through $n=40$.
+The dependency-free script [`experiments/interval_sum_factor_construct.py`](../experiments/interval_sum_factor_construct.py) implements exactly the block lemma, checks every row and column has degree $k$, checks every edge lies in the permitted band, and reverses columns to return a factor in the original sum graph. A separate SciPy [integral max-flow verifier](../experiments/test_interval_sum_factors.py) has tested all intervals through $n=40$.
 
 The new block construction has also been checked for every $1\le k\le n\le69$, and the translated interval theorem for every interval through $n=25$. These finite checks **do not** replace the proof.
 
