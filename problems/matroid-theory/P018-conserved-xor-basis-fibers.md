@@ -1,11 +1,11 @@
 # P018 — Conserved-XOR basis exchange and random matroid fibers
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** What is the minimum simultaneous exchange size needed to connect bases of a binary vector space that share a prescribed XOR sum, and how does the answer change under random deletion of available vectors?
-> **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit); group-labeled bases and matroid reconfiguration are established subjects.
-> **Verified/known progress:** Two-element exchanges are the smallest nontrivial moves. Exhaustive dimension-four tests find connected nonempty fibers, while dimension five has an explicit disconnected two-exchange fiber.
-> **Finite evidence:** All 32,768 available-vector subsets in dimension four were tested for a fixed nonzero XOR label; one ten-vector dimension-five instance has six bases in components of sizes four and two.
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Literature audit](../../literature-audits/2026-10-29-P017-P018-cross-field-problem-screen.md)
+> **Research question:** What exchange size is necessary to connect vector-space bases with a fixed XOR total, and how does connectivity change under random deletion of available vectors?  
+> **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
+> **Verified/known progress:** Single-element moves cannot preserve XOR; two-exchange fibers are connected for all W at d=4 but can be disconnected at d=5.  
+> **Finite evidence:** All 32,768 available sets at d=4 checked, plus explicit ten-vector d=5 counterexample with components 4 and 2.  
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
 <!-- /DOSSIER-SUMMARY -->
 
 **Area:** matroid theory, algebraic combinatorics, random discrete structures  
