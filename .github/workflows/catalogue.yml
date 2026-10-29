@@ -58,6 +58,9 @@ jobs:
       - name: Verify P027 primitive-set exchange exact diameter
         run: python experiments/P027_primitive_exchange_diameter.py
 
+      - name: Verify P027 autonomous arithmetic bands, product factor and eigenfunctions
+        run: python experiments/P027_autonomous_coordinates.py
+
       - name: Verify P028 divisor-complex Euler expectation
         run: python experiments/P028_random_divisor_euler.py
 
