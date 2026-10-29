@@ -1,6 +1,6 @@
-# Beyond Erdős
+# Meta Erdős
 
-**An independent notebook of ten exploratory problems in number theory, graph theory and probability, inspired by the problem-posing tradition of Paul Erdős.**
+**An independent notebook of ten research entries in number theory, graph theory and probability, inspired by the problem-posing tradition of Paul Erdős.**
 
 **Important:** These are **not** problems claimed to have been posed by Erdős, not part of [erdosproblems.com](https://www.erdosproblems.com/), and not certified to be new or unresolved. Our collection is independent of [teorth/erdosproblems](https://github.com/teorth/erdosproblems). We draw inspiration from that repository's clear, data-driven organization—not its problem content.
 
@@ -50,6 +50,10 @@ An *internal proof* is not a published or externally verified theorem. Likewise,
 h(n)=\pi(n)-\pi(n/2)+\max\!\left(1,\left\lceil\frac{\pi(n/2)-\pi(n/3)}2\right\rceil\right).
 \]
 See the [constructive theorem](theorems/P010-exact-coprime-adjacencies.md) and [dependency-free verification program](experiments/P010_construct_optimal_permutation.py). This resolves the original P010 extremal question **within this research notebook**. A historical priority and external referee audit are still required before claiming a new published mathematical result.
+
+## New unnumbered theorem: interval-sum factor saturation
+
+Every bipartite graph on two copies of `{0,…,n−1}` with allowed edges satisfying `a ≤ i+j ≤ b` admits as many edge-disjoint perfect matchings as its minimum degree. The [full constructive proof](theorems/interval-sum-factor-saturation.md) and [dependency-free verification program](experiments/interval_sum_factor_construct.py) are available. This **resolves an incubator question**, not P003; no new problem identifier is added, and historical novelty remains unverified.
 
 ## Evidence and prior art
 

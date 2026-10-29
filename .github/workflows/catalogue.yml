@@ -20,3 +20,8 @@ jobs:
         run: python experiments/P010_construct_optimal_permutation.py --max-n 500
       - name: Verify P010 construction at n = 10000
         run: python experiments/P010_construct_optimal_permutation.py --n 10000
+
+      - name: Verify constructive interval-sum factors for all bands up to n=65
+        run: python experiments/interval_sum_factor_construct.py --check-bands 65
+      - name: Verify all sum intervals through n=20
+        run: python experiments/interval_sum_factor_construct.py --check-intervals 20
