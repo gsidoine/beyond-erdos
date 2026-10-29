@@ -81,6 +81,11 @@ is a valid **three-vector** exchange across the components: the bases have XOR $
 
 These facts were obtained independently before writing the reproducer, which is [`experiments/P018_conserved_xor_bases.py`](../../experiments/P018_conserved_xor_bases.py).
 
+### Exact exchange distance of the displayed six-basis example
+
+Of the six bases listed above, every pair of bases in opposite two-exchange components requires replacing **at least 3** vectors, and some opposite-component pairs differ by **exactly 3** vectors. Since each two-exchange component is internally connected, permitting replacements of **up to 3** basis vectors reconnects this particular fiber. Its minimum connecting exchange size is therefore **exactly 3**.
+
+This is a finite statement **only for the displayed ten-vector $W$**, not a claim that three-exchange connectivity holds for every available set in dimension 5.
 See the [second-pass source/obstruction audit](../../audits/2026-10-29-P008-P015-P018-P020-source-obstruction-pass.md) for the independent check and caveats.
 
 ## Structural significance

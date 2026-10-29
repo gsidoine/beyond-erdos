@@ -72,6 +72,12 @@ It is also a test of the general Meta Erdős theme that a feasible combinatorial
 
 **Novelty status:** *apparently distinct after targeted searching*, but no genuine originality certification. Before presenting P015 as a newly posed open problem, check whether general arbitrary-vertex-color "rainbow triangulation" connectivity is already solved or follows from the 2026 cyclic-color theorem.
 
+### Source-level boundary clarified, 29 October 2026
+
+The **2025 arbitrary-pattern colorful-triangulation result** of Acharya–Mütze–Verciani concerns **two vertex colors** and requires each face to contain **both colors**. It does not directly address a face requiring **three different colors among four fixed colors**. The **2026** Debrohim–Sasaki–Nunes theorem *does* use the three-distinct-color face condition, but establishes connectivity for **cyclically repeated colorings**, not explicitly for arbitrary patterns in the accessible abstract. This is the unresolved historical boundary, not a claim that all colored triangulation reconfiguration is new.
+
+See the [source-level comparison](../../audits/2026-10-29-P015-P016-P018-P020-source-comparison-and-P010-snapshot.md). No complete full-text proof comparison with the 2026 preprint was possible during this pass.
+
 ## Next falsification, without a proof-first agenda
 
 1. Exhaustively verify the graph for every four-color pattern with $n=10$ using dynamic state-space enumeration and color-class/dihedral symmetries.

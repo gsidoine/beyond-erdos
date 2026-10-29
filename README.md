@@ -10,6 +10,7 @@ The project takes inspiration from Paul Erdős's problem-posing tradition. These
 
 The 25 entries have different research statuses; **they are not all open conjectures**.
 
+The [29 October 2026 portfolio-wide audit](audits/2026-10-29-P001-P020-first-collection-consolidation.md) and the [second-pass source-level comparison, including the P010 manuscript snapshot](audits/2026-10-29-P015-P016-P018-P020-source-comparison-and-P010-snapshot.md) reviews **all twenty IDs** for well-posedness, closest prior art, structural significance, evidence quality and potential overlap. It gives a provisional shortlist of **P003, P005, P014, P016, P017, P018 and P020**, with **P010 on a separate theorem/publication track**. These are **editorial priorities, not certified novel/open problems**.
 | Status | Entries | Meaning |
 |---|---|---|
 | Candidate | 21 | A mathematical research question under investigation; historical novelty and unresolved status are not certified |

@@ -144,6 +144,14 @@ A solution would connect structured linear algebra, finite-field rank enumeratio
 
 Targeted searches for *random Hankel cokernel*, *Hankel Smith normal form probability*, *Hankel Cohen–Lenstra law* and *random p-adic Hankel matrix invariant factors* did not locate the exact limiting finite-$p$-group question. **This is not an originality certificate**; a deeper specialist citation-chain and full-text review is required.
 
+### Additional structured-cokernel precedents (29 October 2026)
+
+- [Wang–Stanley (2017), *The Smith Normal Form Distribution of a Random Integer Matrix*](https://doi.org/10.1137/16M1098140): general Smith-form distribution methods for polynomial congruences and random integer matrices.
+- [Kovaleva (2023), *On the distribution of equivalence classes of random symmetric $p$-adic matrices*](https://doi.org/10.1112/mtk.12212): the distribution of **Haar-random symmetric** matrices. A Hankel matrix is symmetric but lies in a **lower-dimensional linear subspace** with repeated entries; this measure is not the full symmetric Haar ensemble.
+- [Van Peski (2024), *Local limits in $p$-adic random matrix theory*](https://doi.org/10.1112/plms.12626): broader limiting Smith-form theory.
+
+These enlarge the nearest-competitor search; none of their accessible stated results is claimed here to settle the **specific Haar-Hankel full invariant-factor distribution**. See the [source comparison](../../audits/2026-10-29-P015-P016-P018-P020-source-comparison-and-P010-snapshot.md).
+
 ## Screening before further work
 
 1. Check whether finite-$p^k$ Hankel invariant-factor counts are already known under the vocabulary *Hankel forms*, *moment matrices* or *linear recurrence sequences*.

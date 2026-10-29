@@ -108,6 +108,18 @@ The largest *least qualifying prime* $q$ among tested $n$ was $379$, attained at
 
 **Verdict:** the "two prime values" pairing formulation was not located in this targeted search, but its best simple sufficient condition is an explicit known prime-difference problem. Do not claim a fresh arithmetic breakthrough from Theorem 2 or the finite checks. An external specialist novelty review remains necessary.
 
+## A verified two-palette matching outside the standard reflection-pair *form*
+
+For $n=4$ the pairs
+
+$
+\{1,6\},\quad \{2,5\},\quad \{3,8\},\quad \{4,7\}
+$
+
+partition $[8]$ and have prime sums **$7,7,11,11$**, respectively. The two primes differ by **4**, not $2n=8$. Thus **not every two-palette matching is the standard two-interval construction with prime sums $q$ and $q+2n$**.
+
+This does **not** show that the existence of a two-palette matching can hold where *no* standard prime-pair certificate exists; a separate such certificate exists when $n=4$. Therefore the logical relationship between the **two existence statements** remains unproved. See the [dated source-level audit](../../audits/2026-10-29-P015-P016-P018-P020-source-comparison-and-P010-snapshot.md).
+
 ## Next mathematical attacks
 
 1. Characterize two-color matchings directly via the union of two reflection matchings (paths and even cycles), without presupposing $p-q=2n$.
