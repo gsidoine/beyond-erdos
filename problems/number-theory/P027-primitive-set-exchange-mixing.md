@@ -35,7 +35,7 @@ $$
 Consequently,
 
 $$
-\boxed{\operatorname{diam}(G_n)=
+\boxed{\mathrm{diam}(G_n)=
 \#\{u\le n/2:\ u\text{ odd}\}+
 \#\{2n/3<u\le n:\ u\text{ odd}\}
 =\frac{5n}{12}+O(1).}
