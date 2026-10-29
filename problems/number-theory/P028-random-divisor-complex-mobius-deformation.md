@@ -1,10 +1,10 @@
 # P028 — Random divisor-complex Euler characteristics and a Möbius deformation
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** What are the asymptotic mean and fluctuations of the Euler characteristic of Bernoulli-thinned integer divisibility order complexes?
-> **Formulation:** candidate. **Novelty:** not certified; arithmetic Dirichlet convolution and order-complex Möbius theory are classical.
-> **Verified/known progress:** Internally derived exact Euler-characteristic expectation with Dirichlet series p(zeta−1)/(1+p(zeta−1)); p=1 recovers the Mertens function.
-> **Finite evidence:** Exact enumerative small-N checks and independent coefficient recurrence.
+> **Research question:** What are the asymptotic mean and fluctuations of the Euler characteristic of Bernoulli-thinned integer divisibility order complexes?  
+> **Formulation:** candidate. **Novelty:** not certified; arithmetic Dirichlet convolution and order-complex Möbius theory are classical.  
+> **Verified/known progress:** Internally derived exact Euler-characteristic expectation with Dirichlet series p(zeta−1)/(1+p(zeta−1)); p=1 recovers the Mertens function.  
+> **Finite evidence:** Exact enumerative small-N checks and independent coefficient recurrence.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
