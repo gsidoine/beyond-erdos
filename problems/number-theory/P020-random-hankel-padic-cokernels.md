@@ -99,12 +99,12 @@ The key conditional lifting lemma says that, after fixing a corank-one or corank
 
 The [second P020 proof note](../../theorems/P020-elementary-abelian-cokernel-laws.md) uses the **published finite-field Hankel kernel classification** of [Yiasemides (2024), Theorem 2.4.4 / Remark 2.4.6](https://doi.org/10.1007/s40687-023-00418-7), not merely finite extrapolation. For every $1\le k<n$,
 
-$
+$$
 \boxed{
 \Pr\bigl(C_n\simeq(\mathbb Z/p\mathbb Z)^k\bigr)
 =(1-p^{-1})\bigl(p^{-(2k-1)}-p^{-(2k+1)}\bigr).
 }
-$
+$$
 
 For $k=n$, replace the expression in parentheses by $p^{-(2n-1)}$. This formula holds for **every** $n$ and prime $p$; for fixed $k$, the probability is constant in $n$ once $n>k$.
 
