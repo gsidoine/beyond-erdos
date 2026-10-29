@@ -32,7 +32,7 @@ def xor_basis(vectors, d, total=1):
     return count == d
 
 
-def component_sizes(bases, d):
+def component_sizes(bases, d, t=2):
     sets = [set(x) for x in bases]
     remaining = set(range(len(bases)))
     sizes = []
@@ -43,7 +43,7 @@ def component_sizes(bases, d):
             i = stack.pop()
             count += 1
             neighbors = [j for j in remaining
-                         if len(sets[i] & sets[j]) == d - 2]
+                         if 2 <= d - len(sets[i] & sets[j]) <= t]
             for j in neighbors:
                 remaining.remove(j)
                 stack.append(j)
@@ -85,7 +85,9 @@ def verify_dimension_five():
     assert set(bases) == set(expected), bases
     sizes = component_sizes(bases, d)
     assert sizes == [2, 4], sizes
-    print("PASS d=5: 10 available vectors, 6 bases, component sizes [2,4]")
+    assert component_sizes(bases, d, t=3) == [6]
+    assert {8, 21} == set((2, 5, 8, 21, 27)) & set((8, 21, 24, 26, 30))
+    print("PASS d=5: 10 vectors, 6 bases, t=2 components [2,4], t=3 connected")
     for B in bases:
         assert xor_basis(B, d, s)
 

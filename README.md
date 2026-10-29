@@ -52,6 +52,13 @@ In particular, $h(n)\sim 7n/(12\log n)$. This is a **resolved entry**, not one o
 
 **Interval-sum factor saturation.** A separate [constructive theorem](theorems/interval-sum-factor-saturation.md) proves that a bipartite graph with allowed sum interval $a\le i+j\le b$ contains as many edge-disjoint perfect matchings as its minimum degree. This is not claimed as a resolution of P003 and does not have a numbered open-problem entry.
 
+## Second consolidation pass — primary sources and submission provenance
+
+- [P010 manuscript snapshot and reference verification](manuscripts/P010-2026-10-29-submission-snapshot-and-policy-audit.md): records the author-supplied **two-page PDF's** exact SHA-256 and bibliography checks. **Important:** the current official *INTEGERS* policy appears to exclude research developed with AI assistance in mathematics/code, as transparently disclosed in that manuscript. The PDF binary is not included in this repository change.
+- [P008/P015/P018/P020 source-and-obstruction review](audits/2026-10-29-P008-P015-P018-P020-source-obstruction-pass.md): cautious distinctions from the closest colored-triangulation, group-labeled-matroid, random-matrix and host-percolation literature; independent validation of P018's exact three-exchange bridge.
+
+The **P001–P020 discovery freeze remains active**. These updates neither certify historical originality nor alter the mathematical status of any numbered problem.
+
 ## Problem catalogue
 
 The table below is generated from [the canonical metadata](data/problems.json). Each entry links to its full mathematical formulation, known results, finite experiments, prior-art comparison and remaining questions.
