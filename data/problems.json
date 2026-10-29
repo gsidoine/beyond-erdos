@@ -352,6 +352,32 @@
           "url": "https://arxiv.org/abs/2608.26006"
         }
       ]
+    },
+    {
+      "id": "P016",
+      "title": "Topology of the Sidon simplicial complex",
+      "area": "topological combinatorics",
+      "file": "problems/topology/P016-sidon-complex-homology.md",
+      "question": "Does each fixed-dimensional reduced homology group of the simplicial complex of all Sidon subsets of [N] vanish for all sufficiently large N?",
+      "status": "candidate",
+      "novelty": "apparent novelty (targeted audit)",
+      "result": "Minimal nonfaces have size 3 or 4; exact F2 Betti numbers exhibit migration from lower to higher dimensions",
+      "verification": "Exact augmented boundary-rank computations through N=23; no asymptotic vanishing claim",
+      "priority": "structural discovery",
+      "sources": [
+        {
+          "name": "Superdock (2023), Sidon sets and simplicial configurations",
+          "url": "https://doi.org/10.1016/j.disc.2022.113117"
+        },
+        {
+          "name": "Carter–O'Bryant–Tao (2026), Sidon geometry",
+          "url": "https://arxiv.org/abs/2610.36207"
+        },
+        {
+          "name": "Berghoff (2022), independence complex homology",
+          "url": "https://doi.org/10.5070/C62156880"
+        }
+      ]
     }
   ]
 }
