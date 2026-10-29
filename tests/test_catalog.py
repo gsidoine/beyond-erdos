@@ -56,6 +56,14 @@ class CatalogueTests(unittest.TestCase):
             with self.subTest(dossier=str(path)):
                 self.assertEqual(path.read_text(encoding="utf-8"), generated)
 
+    def test_current_public_links_use_renamed_repository(self):
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        self.assertTrue(readme.startswith("# Meta Erdős"))
+        for path in [ROOT / "docs" / "index.html", ROOT / "docs" / "README.md"]:
+            text = path.read_text(encoding="utf-8")
+            self.assertIn("meta-erdos", text)
+            self.assertNotIn("beyond-erdos", text)
+
     def test_single_contiguous_table(self):
         readme = README.read_text(encoding="utf-8")
         marker = readme.split("<!-- CATALOG:START -->", 1)[1].split(
