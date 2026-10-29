@@ -300,6 +300,32 @@
           "url": "https://cs.brown.edu/research/pubs/pdfs/2005/Dotu-2005-SHE.pdf"
         }
       ]
+    },
+    {
+      "id": "P014",
+      "title": "Homology of random Cayley sum flag complexes",
+      "area": "probabilistic topology",
+      "file": "problems/topology/P014-random-cayley-sum-flag-homology.md",
+      "question": "Do clique complexes of random Cayley sum graphs over cyclic prime groups have the same homology-vanishing exponents as Erdős–Rényi flag complexes?",
+      "status": "candidate",
+      "novelty": "apparent novelty (targeted audit)",
+      "result": "Exact triangle expectation matches Erdős–Rényi; four-clique expectation has an additive-parallelogram correction",
+      "verification": "Exact enumeration of K4 motif moments for odd cyclic orders 5, 7, 9",
+      "priority": "new structural candidate",
+      "sources": [
+        {
+          "name": "Kahle (2009), topology of random clique complexes",
+          "url": "https://doi.org/10.1016/j.disc.2008.02.037"
+        },
+        {
+          "name": "Conlon–Fox–Pham–Yepremyan, random Cayley clique structure",
+          "url": "https://arxiv.org/abs/2412.21194"
+        },
+        {
+          "name": "Newman (2024), flag homology thresholds",
+          "url": "https://doi.org/10.1112/jlms.12872"
+        }
+      ]
     }
   ]
 }

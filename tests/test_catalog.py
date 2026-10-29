@@ -21,7 +21,7 @@ class CatalogueTests(unittest.TestCase):
 
     def test_consecutive_unique_ids(self):
         ids = [r["id"] for r in self.problems]
-        self.assertEqual(ids, [f"P{i:03d}" for i in range(1, 14)])
+        self.assertEqual(ids, [f"P{i:03d}" for i in range(1, 15)])
         self.assertEqual(len(ids), len(set(ids)))
 
     def test_every_problem_has_a_dossier_and_sources(self):

@@ -9,7 +9,7 @@ This is a **curated exploratory research notebook**, not an official catalogue o
 3. **Challenge your own claim**: small counterexamples, invariants, reduction to a known theorem, and any failed proof attempts.
 4. **Record evidence**: reproducible code or proof, environment/solver status, cases tested, finite limits. Integer-programming termination is "optimal" only with an optimal solver status.
 5. **Write a dated audit entry**: citations with DOI or stable links, exact mathematical overlap, status decision, and outstanding questions.
-6. **Update the canonical catalogue**: edit \`data/problems.json\` and run \`python scripts/generate_catalog.py\`, then \`python -m unittest discover -s tests -v\`. Do **not** hand-edit the generated table or \`docs/problems.json\`.
+6. **Update the canonical catalogue**: edit `data/problems.json` and run `python scripts/generate_catalog.py`, then `python -m unittest discover -s tests -v`. Do **not** hand-edit the generated table or `docs/problems.json`.
 
 ## Status policy
 
@@ -22,8 +22,22 @@ The **novelty field** is separate. **Apparent novelty (targeted audit)** indicat
 
 ## Problem dossier
 
-Follow [PROBLEM_TEMPLATE.md](PROBLEM_TEMPLATE.md), and ensure links remain valid. Do not erase rejected ideas; document them in \`research-notes/\`.
+Follow [PROBLEM_TEMPLATE.md](PROBLEM_TEMPLATE.md), and ensure links remain valid. Do not erase rejected ideas; document them in `research-notes/`.
 
 ## Pull requests
 
 Prefer one conceptual change per PR: a corrected proof, a counterexample, an improved bound, or an audit. Link directly to the relevant problem ID, provide expected versus observed finite outputs, and list remaining mathematical objections. No automated pass makes a paper peer-reviewed or novel.
+
+## Mathematical Markdown rendering
+
+GitHub repository Markdown supports MathJax when you use **single dollars** for inline expressions (`$x^2$`) and **double dollars** for centered display equations, with blank lines around the display block:
+
+```markdown
+Let $\\gamma$ be the Euler--Mascheroni constant.
+
+$$
+\\mu_n(p)=\\sum_{v=1}^n(1-p)^{d_n(v)}.
+$$
+```
+
+Do not use the old `\\(...\\)` or `\\[...\\]` delimiters; GitHub may show them as ordinary text. Never transform LaTeX inside code fences. The `tests/test_math_markdown.py` regression checks the delimiters in every Markdown file. Official reference: [GitHub, Writing mathematical expressions](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions).

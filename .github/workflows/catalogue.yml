@@ -25,3 +25,6 @@ jobs:
         run: python experiments/interval_sum_factor_construct.py --check-bands 65
       - name: Verify all sum intervals through n=20
         run: python experiments/interval_sum_factor_construct.py --check-intervals 20
+
+      - name: Verify P014 exact random sum-graph four-clique moments
+        run: python experiments/P014_sum_flag_cliques.py

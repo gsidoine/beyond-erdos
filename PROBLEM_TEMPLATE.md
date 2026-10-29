@@ -43,3 +43,7 @@ State the precise theorem/obstruction needed. Avoid speculative significance cla
 ## Revision history
 
 - YYYY-MM-DD: Created / corrected / prior-art collision found.
+
+## Markdown equations
+
+For mathematical notation use GitHub-compatible MathJax **inline** `$x^2$` and **display** `$$` blocks separated from text by blank lines. Avoid `\\(...\\)` and `\\[...\\]`. Code examples belong inside fenced code blocks, not mathematical delimiters.
