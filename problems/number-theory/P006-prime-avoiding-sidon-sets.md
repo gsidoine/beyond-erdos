@@ -15,25 +15,25 @@
 
 ## Definition
 
-A finite set \(A\subseteq[1,N]\) is Sidon if all differences \(b-a>0\) with \(a<b\in A\) are distinct. This is equivalent to the usual distinct-unordered-pair-sums definition.
+A finite set $A\subseteq[1,N]$ is Sidon if all differences $b-a>0$ with $a<b\in A$ are distinct. This is equivalent to the usual distinct-unordered-pair-sums definition.
 
-Call \(A\) *prime-difference-free* if no positive difference between its elements is prime. Define
+Call $A$ *prime-difference-free* if no positive difference between its elements is prime. Define
 
-\[
+$$
 F_{\neg\mathbb P}(N)=
 \max\{|A|: A\subseteq[1,N] \text{ is Sidon and }
 (A-A)\cap\mathbb P=\varnothing\}.
-\]
+$$
 
-Here \(\mathbb P\) denotes the positive primes, and only **positive** differences matter.
+Here $\mathbb P$ denotes the positive primes, and only **positive** differences matter.
 
 ## Main question
 
-**Determine the asymptotic order and leading constant of \(F_{\neg\mathbb P}(N)\).** In particular,
+**Determine the asymptotic order and leading constant of $F_{\neg\mathbb P}(N)$.** In particular,
 
-\[
+$$
 \text{is } F_{\neg\mathbb P}(N)=(1+o(1))\sqrt N\;?
-\]
+$$
 
 This is a **question**, not an asserted conjecture. It may be false; even existence of a limiting leading constant is unverified.
 
@@ -41,22 +41,22 @@ This is a **question**, not an asserted conjecture. It may be false; even existe
 
 **Proposition.**
 
-\[
+$$
 \frac{1}{\sqrt2}\le
 \liminf_{N\to\infty}\frac{F_{\neg\mathbb P}(N)}{\sqrt N}
 \le \limsup_{N\to\infty}\frac{F_{\neg\mathbb P}(N)}{\sqrt N}
 \le 1.
-\]
+$$
 
-**Proof.** Let \(M=\lfloor N/2\rfloor\). Classical finite Sidon constructions give a Sidon set \(S\subseteq[1,M]\) of cardinality \((1-o(1))\sqrt M\). As \(S\) is Sidon, at most one pair in \(S\) has difference \(1\). Delete one endpoint of that pair if it exists, leaving \(S'\) with at least \(|S|-1\) elements and no difference \(1\). The set \(A=2S'\subseteq[1,N]\) is Sidon and all its positive differences are even and at least \(4\), hence composite. Thus \(|A|\ge(1-o(1))\sqrt{N/2}\). The upper bound follows immediately from the standard \((1+o(1))\sqrt N\) upper bound for Sidon sets. \(\square\)
+**Proof.** Let $M=\lfloor N/2\rfloor$. Classical finite Sidon constructions give a Sidon set $S\subseteq[1,M]$ of cardinality $(1-o(1))\sqrt M$. As $S$ is Sidon, at most one pair in $S$ has difference $1$. Delete one endpoint of that pair if it exists, leaving $S'$ with at least $|S|-1$ elements and no difference $1$. The set $A=2S'\subseteq[1,N]$ is Sidon and all its positive differences are even and at least $4$, hence composite. Thus $|A|\ge(1-o(1))\sqrt{N/2}$. The upper bound follows immediately from the standard $(1+o(1))\sqrt N$ upper bound for Sidon sets. $\square$
 
 ## Certified small computations
 
-We formulated the maximum problem as a **mixed integer linear program**. Binary \(x_a\) indicates \(a\in A\). Prime differences forbid \(x_a=x_b=1\). For every composite difference \(d\), auxiliary \(y_{a,a+d}\) must equal \(1\) whenever both endpoints are selected, and the sum of these auxiliary variables is at most \(1\). Translation invariance permits fixing \(x_1=1\).
+We formulated the maximum problem as a **mixed integer linear program**. Binary $x_a$ indicates $a\in A$. Prime differences forbid $x_a=x_b=1$. For every composite difference $d$, auxiliary $y_{a,a+d}$ must equal $1$ whenever both endpoints are selected, and the sum of these auxiliary variables is at most $1$. Translation invariance permits fixing $x_1=1$.
 
 All entries below were solved with status **optimal** (status 0, zero MIP gap); these are **finite values only**.
 
-| \(N\) | \(F_{\neg\mathbb P}(N)\) |
+| $N$ | $F_{\neg\mathbb P}(N)$ |
 |---:|---:|
 | 12 | 3 |
 | 18 | 4 |
@@ -68,13 +68,13 @@ All entries below were solved with status **optimal** (status 0, zero MIP gap); 
 | 54 | 7 |
 | 60 | 7 |
 
-One seven-element witness at \(N=48\) is
+One seven-element witness at $N=48$ is
 
-\[
+$$
 A=\{1,7,21,25,37,46,47\}.
-\]
+$$
 
-Its positive differences are distinct and composite (or \(1\)); this witness is not presented as a new record for ordinary Sidon sets.
+Its positive differences are distinct and composite (or $1$); this witness is not presented as a new record for ordinary Sidon sets.
 
 Reproducibility: [`experiments/prime_avoiding_sidon_milp.py`](../../experiments/prime_avoiding_sidon_milp.py) (requires NumPy + SciPy).
 
@@ -99,8 +99,8 @@ This connects Sidon/Golomb-ruler extremal theory to prime-difference-avoiding se
 
 ## Next work
 
-1. Seek an upper bound strictly below \((1+o(1))\sqrt N\) or construct sets breaking \(1/\sqrt 2\) asymptotically.
-2. Replace the generic MILP with an exact combinatorial search that scales to larger \(N\).
+1. Seek an upper bound strictly below $(1+o(1))\sqrt N$ or construct sets breaking $1/\sqrt 2$ asymptotically.
+2. Replace the generic MILP with an exact combinatorial search that scales to larger $N$.
 3. Investigate modular constructions (Bose–Chowla, Singer, Ruzsa) under prime-gap exclusions.
 4. Audit additive-combinatorics literature for forbidden-difference Sidon families.
 
