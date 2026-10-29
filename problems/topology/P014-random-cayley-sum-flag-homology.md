@@ -1,11 +1,11 @@
 # P014 — Homology transitions in random Cayley sum flag complexes
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** Do random Cayley sum graph clique complexes have the same homology-vanishing exponent windows as Erdős–Rényi flag complexes?  
-> **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit); model and general topological questions are known.  
-> **Verified/known progress:** The triangle expectation matches Erdős–Rényi but the four-clique expectation has an explicit additive-parallelogram correction.  
-> **Finite evidence:** Exact enumeration verifies the four-clique moment for odd cyclic groups of orders 5, 7, and 9.  
-> **Navigation:** [Full catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-random-cayley-sum-topology.md)
+> **Research question:** Do clique complexes of random Cayley sum graphs over cyclic prime groups have the same homology-vanishing exponents as Erdős–Rényi flag complexes?  
+> **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
+> **Verified/known progress:** Exact triangle expectation matches Erdős–Rényi; four-clique expectation has an additive-parallelogram correction.  
+> **Finite evidence:** Exact enumeration of K4 motif moments for odd cyclic orders 5, 7, 9.  
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
 <!-- /DOSSIER-SUMMARY -->
 
 **Area:** probabilistic topology, additive combinatorics, random graph theory  
