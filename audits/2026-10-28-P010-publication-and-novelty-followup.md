@@ -5,10 +5,12 @@
 ## Executive judgment — P010
 
 **Claim:** [P010 exact theorem](../theorems/P010-exact-coprime-adjacencies.md) gives, for every $n\ge4$,
+
 $$
 h(n)=\pi(n)-\pi(n/2)+
 \max\{1,\lceil(\pi(n/2)-\pi(n/3))/2\rceil\}.
 $$
+
 The proof is an **explicit optimal path-cover construction**, not an unproved guess or an asymptotic heuristic. Its finite regression tests have passed through $n=10\,000$.
 
 **Importance, conditional on novelty:** a **worthwhile, clean, short exact result** in multiplicative number theory and graph extremal combinatorics. It determines an extremal quantity for every $n$ and identifies an unexpected $7/12$ leading constant using a constructive largest-prime-factor decomposition with gluing via multiples of 2 and 3. It is **not** a solution of a longstanding public conjecture and does not yet establish a general graph theorem; do **not** describe it as a major breakthrough.
@@ -51,9 +53,11 @@ The proof is an **explicit optimal path-cover construction**, not an unproved gu
 A natural additive generalization of the P003 host is the balanced bipartite graph $H_n(a,b)$ with row and column vertex labels $0,\ldots,n-1$, and an edge $(i,j)$ exactly when $a\le i+j\le b$. Define its minimum degree $\delta$ and maximum number $\lambda$ of edge-disjoint perfect matchings.
 
 **Incubator question:** does
+
 $$
 \lambda(H_n(a,b))=\delta(H_n(a,b))
 $$
+
 hold for every $n$ and every interval of allowed sums $[a,b]$?
 
 - **Exact exhaustive test**: All valid intervals, all $n\le40$, satisfy the equality by integral max flow. The numerical script [\`experiments/test_interval_sum_factors.py\`](../experiments/test_interval_sum_factors.py) reproduces this finite experiment using SciPy.
