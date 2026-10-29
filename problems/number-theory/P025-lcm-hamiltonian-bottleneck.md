@@ -5,7 +5,7 @@
 > **Formulation:** reframe. **Novelty:** confirmed collision for linear-path analogue.  
 > **Verified/known progress:** Erdős–Freud–Hegyvári (1983) already prove the linear-path asymptotic; cyclic-only variation remains under review.  
 > **Finite evidence:** Elementary lower bound recovered; no independent cyclic upper bound.  
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
 **Area:** multiplicative combinatorics, Hamiltonian graph theory, extremal permutations. **Status:** candidate.
@@ -53,6 +53,3 @@ The trivial upper bound is $t_N\le N$, since $\mathrm{lcm}(a,b)\le ab\le N^2$. T
 
 Compute $\Lambda(N)$ exactly for small $N$ by sorting distinct lcm edge weights and testing Hamiltonian cycles, with integer exactness and solver certificates. Compare Hamiltonian paths versus cycles; test whether the lower-order answer can be read directly from a known adjacent-lcm extremal theorem. If known, preserve ID as a historical note rather than claim an original problem.
 
-## Revision history
-
-- 2026-10-29: Proposed. Same-day primary-source check finds the linear path asymptotic **already proved** by Erdős–Freud–Hegyvári, Theorem 1; reframed as cyclic-only residual question and corrected McNew DOI.
