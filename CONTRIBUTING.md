@@ -1,6 +1,6 @@
 # Contributing to Meta Erdős
 
-This is a **curated exploratory research notebook**, not an official catalogue of Erdős problems and not a claim of original published open questions. P001–P010 are consolidated; P011–P013 begin a **problem-generation phase**. New entries need precise statements, meaningful structural implications and a dated predecessor audit, but are not expected to be solved before inclusion.
+This is a **curated exploratory research notebook**, not an official catalogue of Erdős problems and not a claim of original published open questions. **The collection is frozen at P001–P020** for a comprehensive consolidation audit. Do not add new numbered problems until the freeze is explicitly lifted. Current contributions should prioritize counterexamples, corrected proofs, exact references, novelty downgrades, reproducibility and clearer mathematical statements.
 
 ## A change worth submitting
 
