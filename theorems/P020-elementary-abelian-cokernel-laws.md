@@ -4,7 +4,7 @@
 
 ## Setup and exact result
 
-Let $p$ be prime, $n\ge1$, and let $H_n=(X_{i+j})_{0\le i,j<n}$, where $X_0,\ldots,X_{2n-2}$ are independent Haar-uniform elements of $\mathbb Z_p$. Put $C_n=\operatorname{coker}H_n$.
+Let $p$ be prime, $n\ge1$, and let $H_n=(X_{i+j})_{0\le i,j<n}$, where $X_0,\ldots,X_{2n-2}$ are independent Haar-uniform elements of $\mathbb Z_p$. Put $C_n=\mathrm{coker}H_n$.
 
 **Theorem.** For every $1\le k<n$,
 $$
@@ -57,12 +57,12 @@ The $2k-1$ polynomials $A^2z^t$ are linearly independent over $\mathbb F_p$ (the
 
 The cokernel is elementary abelian of rank $k$ precisely when every nonunit Smith factor of $H_n$ has valuation one, equivalently when $T/p\bmod p$ is invertible. The classical finite-field square Hankel-rank enumeration implies that a uniform $k\times k$ Hankel matrix is invertible with probability $1-p^{-1}$, for every $k\ge1$. Thus
 $$
-\Pr(C_n\simeq(\mathbb Z/p)^k\mid\operatorname{corank}(\bar H_n)=k)=1-p^{-1}.\tag{3}
+\Pr(C_n\simeq(\mathbb Z/p)^k\mid\mathrm{corank}(\bar H_n)=k)=1-p^{-1}.\tag{3}
 $$
 
 Finally the *classical* corank tail probabilities are
 $$
-\Pr(\operatorname{corank}(\bar H_n)\ge j)=p^{-(2j-1)}\quad(1\le j\le n).
+\Pr(\mathrm{corank}(\bar H_n)\ge j)=p^{-(2j-1)}\quad(1\le j\le n).
 $$
 Subtract successive tails for $k<n$ and use the last tail for $k=n$. Multiplication by (3) proves (1) and (2). $\square$
 
