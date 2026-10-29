@@ -626,9 +626,9 @@
       "question": "Determine the mixing-time order and possible cutoff for single-chain heat-bath dynamics on maximum primitive subsets of [2n].",
       "status": "candidate",
       "novelty": "not certified; closely related to counting primitive sets and distributive-lattice walks",
-      "result": "An internally proved exact Hamming-distance theorem and diameter formula give diameter 5n/12+O(1); mixing remains unproved",
-      "verification": "Exact exhaustive graph distances for 2n≤20, agreeing with the theorem",
-      "priority": "promising; exact structural theorem and high literature proximity",
+      "result": "Exact exchange diameter 5n/12+O(1); autonomous fair-bit factor of size (1454/8505)n+O(1); projected heat-bath cutoff yields full mixing lower bound (n/2)log n−O(n). Full mixing still open",
+      "verification": "Five-band criterion checked n≤1000; full product and uniform conditional updates exhaustively checked n≤30; small finite spectral calculations",
+      "priority": "theorem-stage structural progress; residual-core spectral gap and full-chain cutoff remain open; specialist novelty audit required",
       "sources": [
         {
           "name": "Liu–Pach–Palincza (2021), maximum primitive sets",
