@@ -426,6 +426,59 @@
           "url": "https://doi.org/10.1016/j.jctb.2025.10.009"
         }
       ]
+    },
+    {
+      "id": "P019",
+      "title": "Exchange complexity of optimal no-three-in-line configurations",
+      "area": "discrete geometry",
+      "file": "problems/geometry/P019-no-three-line-exchange.md",
+      "question": "Does a universal bound exist on the number of points that must be simultaneously replaced to connect all maximum-size no-three-in-line subsets of an n×n grid?",
+      "status": "candidate",
+      "novelty": "apparent novelty (targeted audit)",
+      "result": "When the maximum size is 2n, single-point exchanges are impossible and two-point exchanges are rectangle switches",
+      "verification": "Exact optimal configuration exchange graphs through n=7; minimal connecting move sizes 2,4,3,5,6 for n=3,...,7",
+      "priority": "structural discovery, freeze after P020",
+      "sources": [
+        {
+          "name": "Guy–Kelly (1968), no-three-in-line problem",
+          "url": "https://doi.org/10.4153/CMB-1968-062-3"
+        },
+        {
+          "name": "Prellberg (2026), no-three-in-line constraint solving",
+          "url": "https://doi.org/10.1016/j.jcta.2026.106244"
+        },
+        {
+          "name": "Flammenkamp, no-three-in-line database",
+          "url": "https://wwwhomes.uni-bielefeld.de/achim/no3in/readme.html"
+        }
+      ]
+    },
+    {
+      "id": "P020",
+      "title": "Cokernel laws of random p-adic Hankel matrices",
+      "area": "algebraic probability",
+      "file": "problems/number-theory/P020-random-hankel-padic-cokernels.md",
+      "question": "Does the cokernel of an n×n Haar-random p-adic Hankel matrix converge in distribution to a describable measure on finite abelian p-groups?",
+      "status": "candidate",
+      "novelty": "apparent novelty (targeted audit)",
+      "result": "Classical finite-field corank formula yields P(trivial cokernel)=1−1/p for all n, excluding the usual Cohen–Lenstra law",
+      "verification": "Exact finite-field Hankel rank enumerations over F₂ (n≤4) and F₃ (n≤3), not p-adic group distribution",
+      "priority": "structural discovery, freeze after P020",
+      "sources": [
+        {
+          "name": "Dwivedi–Grinberg (2022), finite-field Hankel ranks",
+          "url": "https://doi.org/10.1016/j.laa.2022.02.014"
+        },
+        {
+          "name": "Wood (2019), random integral cokernels",
+          "url": "https://doi.org/10.1353/ajm.2019.0008"
+        },
+        {
+          "name": "Jang–Kaplan–Lee–Yu (2026), structured random p-adic matrices",
+          "url": "https://arxiv.org/abs/2606.06993"
+        }
+      ]
     }
-  ]
+  ],
+  "discovery_phase": "closed_at_P020_pending_consolidation"
 }
