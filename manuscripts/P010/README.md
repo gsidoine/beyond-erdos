@@ -13,7 +13,7 @@ For a permutation $a=(a_1,\ldots,a_n)$ of $[n]$, let $h(n)$ be the minimum numbe
 
 $$
 h(n)=\pi(n)-\pi(n/2)+
-\max\left\{1,\left\lceil\frac{\pi(n/2)-\pi(n/3)}{2}\right\rceil\right\}.
+\max\{1,\lceil(\pi(n/2)-\pi(n/3))/2\rceil\}.
 $$
 
 In particular, $h(n)\sim 7n/(12\log n)$.
