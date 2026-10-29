@@ -1,11 +1,11 @@
 # P012 — When does a random coprime graph have a connected matching space?
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** Under independent thinning of the coprime bipartite graph, at what density do all surviving perfect matchings become connected by alternating four-cycle switches?  
-> **Formulation:** candidate. **Novelty:** apparent novelty — targeted search, exact observable unverified.  
-> **Verified/known progress:** The deterministic switch problem P005 and general matching-reconfiguration theory are known inputs; random-fiber connectivity is not established here.  
-> **Finite evidence:** The relevant connectivity property is generally nonmonotone under adding edges; uniqueness of a perfect matching must be handled separately.  
-> **Navigation:** [Full catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+> **Research question:** At what densities do the perfect matchings of a thinned coprime graph form one four-cycle reconfiguration component?  
+> **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
+> **Verified/known progress:** Connects P005 matching switches to P008 arithmetic thinning; phase diagram not yet determined.  
+> **Finite evidence:** Frozen-edge obstruction identified; unique-matching and nonmonotonicity caveats.  
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
 <!-- /DOSSIER-SUMMARY -->
 
 **Fields:** probability, arithmetic graph theory, graph reconfiguration  
