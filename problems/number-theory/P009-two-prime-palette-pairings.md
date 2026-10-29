@@ -112,9 +112,9 @@ The largest *least qualifying prime* $q$ among tested $n$ was $379$, attained at
 
 For $n=4$ the pairs
 
-$
+$$
 \{1,6\},\quad \{2,5\},\quad \{3,8\},\quad \{4,7\}
-$
+$$
 
 partition $[8]$ and have prime sums **$7,7,11,11$**, respectively. The two primes differ by **4**, not $2n=8$. Thus **not every two-palette matching is the standard two-interval construction with prime sums $q$ and $q+2n$**.
 
