@@ -2,10 +2,10 @@
 
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** What is the exact minimum number of adjacent coprime pairs in a permutation of 1,…,n? (Resolved internally.)  
-> **Formulation:** proved internally. **Novelty:** priority not certified.  
+> **Formulation:** proved internally. **Novelty:** internal proof; priority unverified.  
 > **Verified/known progress:** Exact formula for n≥4: h(n)=π(n)−π(n/2)+max(1,ceil((π(n/2)−π(n/3))/2)); hence h(n)∼(7/12)n/log n.  
 > **Finite evidence:** Constructive proof with prime-factor paths; explicit witnesses checked n≤10,000.  
-> **Navigation:** [All ten problems](../../README.md#problem-catalogue) · [Source-by-source audit](../../audits/2026-10-28-novelty-quality-gate.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
 <!-- /DOSSIER-SUMMARY -->
 
 
