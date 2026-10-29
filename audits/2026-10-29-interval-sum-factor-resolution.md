@@ -7,15 +7,18 @@
 ## What was proved
 
 Let $G_{n;a,b}$ be bipartite on two copies of $\{0,\ldots,n-1\}$, joining $i,j$ iff $a\le i+j\le b$. Then for **every** $n\ge1$ and every integer interval $[a,b]$,
+
 $$
 \boxed{\lambda(G_{n;a,b})=\delta(G_{n;a,b})}.
 $$
 
 The complete **constructive** proof is in [theorems/interval-sum-factor-saturation.md](../theorems/interval-sum-factor-saturation.md). Its main move is an edge-exchange formula on a $k+r$ block:
+
 $$
 (t+s+1,r+s)\longmapsto(t+s+1,k+t),
 \quad 0\le t<r,\ 0\le s<k-r.
 $$
+
 It corrects the overfull and underfull columns of two overlapping complete rectangles while preserving row degrees and staying inside a consecutive diagonal band. Block decomposition of $n$ completes the proof; bipartite regular-factor decomposition yields the matchings.
 
 This resolves the incubator conjecture raised in the P010 publication assessment pass; **it does not resolve P003**, whose allowed sums are sparse primes instead of an interval.
