@@ -209,7 +209,7 @@ This is an application of the classical [Propp–Wilson exact sampling framework
 
 The [standard-library verification program](../experiments/P027_autonomous_coordinates.py) confirms the arithmetic classification for n≤1000, checks its product-factor property by enumerating all feasible exponent configurations for n≤30, and independently verifies the Walsh eigenfunction relation and first-step distributions on small state spaces.
 
-For extra spectral evidence, the optional [SciPy-based full-chain eigensolver](../experiments/P027_full_heatbath_spectrum.py) computes finite-n gaps. Some observed n·gap values are below 1, so the free-bit gap 1/n **does not automatically determine the full gap**.
+For extra spectral evidence, the optional [SciPy-based full-chain eigensolver](../experiments/P027_full_heatbath_spectrum.py) computes finite-n gaps. Some observed n·gap values are below 1, so the free-bit gap 1/n **does not automatically determine the full gap**. The [standard-library monotone grand-coupling experiment](../experiments/P027_monotone_coupling.py) measures finite-size coalescence of the extremal exponent vectors under shared heat-bath quantiles. Sample sizes exhibit coalescence on the scale of a few multiples of n log n, but **this is only a heuristic for a possible upper bound**, not an asymptotic proof or a mixing-time estimate with certified confidence.
 
 **What remains:** Establish or disprove a polynomial upper bound on γ(R_n)^{-1}, and in particular whether the full chain has mixing time Θ(n log n) or cutoff. Theorems 1–3 prove a sharp **projection** cutoff only.
 
