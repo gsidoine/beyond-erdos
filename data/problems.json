@@ -461,8 +461,8 @@
       "question": "Does the cokernel of an n×n Haar-random p-adic Hankel matrix converge in distribution to a describable measure on finite abelian p-groups?",
       "status": "candidate",
       "novelty": "apparent novelty (targeted audit)",
-      "result": "Classical mod-p corank law; internally proved exact all cyclic and two-generator cokernel probabilities, n-stable",
-      "verification": "Exact prime-power modular enumeration; higher corank kernel-product equality checked through n=6 at p=2 and n=5 at p=3",
+      "result": "Classical Hankel corank law; internally proved cyclic/two-generator probabilities and all-k elementary-abelian cokernel probabilities",
+      "verification": "Exact modular group counts at p=2 (n≤4), p=3 (n≤3); kernel-product rank proved from Yiasemides (2024)",
       "priority": "structural discovery, freeze after P020",
       "sources": [
         {
@@ -476,6 +476,10 @@
         {
           "name": "Jang–Kaplan–Lee–Yu (2026), structured random p-adic matrices",
           "url": "https://arxiv.org/abs/2606.06993"
+        },
+        {
+          "name": "Yiasemides (2024), characteristic polynomials and Hankel kernels",
+          "url": "https://doi.org/10.1007/s40687-023-00418-7"
         }
       ]
     },
