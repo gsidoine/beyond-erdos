@@ -14,6 +14,10 @@ The [29 October 2026 portfolio-wide audit](audits/2026-10-29-P001-P020-first-col
 
 Key restrictions: **P007** contains a previously known prime-graceful special case, **P008** still needs a precise non-tautological formulation, **P009** closely overlaps a classical prime-difference certificate, and **P010** is internally solved. The collection remains frozen at P001–P020 pending deeper referee and priority checks.
 
+## New theorem-stage progress on P020 (29 October 2026)
+
+The [Haar p-adic Hankel rank-two theorem note](theorems/P020-padic-hankel-cyclic-and-rank-two-laws.md) gives **internally proved, explicit and size-stable probabilities** for every cyclic and every exactly two-generator finite abelian \(p\)-group cokernel. The formulas describe precisely \(1-p^{-5}\) of the probability mass for all matrix sizes \(n\ge3\), and have [independent exact modular enumeration checks](experiments/P020_padic_rank_two_lifts.py). **The full limiting distribution remains open**; historical priority and external referee validation are still pending.
+
 ## Problem catalogue
 
 Every problem has a permanent identifier, its own self-contained statement, evidence, and nearest prior art. *Candidate* means **under investigation**, not "verified open".
