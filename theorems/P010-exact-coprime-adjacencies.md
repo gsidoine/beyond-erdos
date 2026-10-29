@@ -38,10 +38,10 @@ This exact formula is proved by a constructive path cover in a noncoprime graph.
 
 ## Step 1 — Graph equivalence and lower bound
 
-Let $H_n$ have vertex set $[n]$, with $\{u,v\}$ an edge iff $u\ne v$ and $\gcd(u,v)>1$. Let $\operatorname{pc}(H_n)$ be the least number of **vertex-disjoint paths covering all vertices**, allowing singleton paths. Cutting a permutation immediately after every coprime adjacent pair produces $c(a)+1$ paths in $H_n$; conversely concatenating any path cover produces at most $k-1$ coprime adjacencies if the cover has $k$ components. Thus
+Let $H_n$ have vertex set $[n]$, with $\{u,v\}$ an edge iff $u\ne v$ and $\gcd(u,v)>1$. Let $\mathrm{pc}(H_n)$ be the least number of **vertex-disjoint paths covering all vertices**, allowing singleton paths. Cutting a permutation immediately after every coprime adjacent pair produces $c(a)+1$ paths in $H_n$; conversely concatenating any path cover produces at most $k-1$ coprime adjacencies if the cover has $k$ components. Thus
 
 $$
-h(n)=\operatorname{pc}(H_n)-1.
+h(n)=\mathrm{pc}(H_n)-1.
 $$
 
 For $n\ge4$, vertex 1 and every prime $p\in(n/2,n]$ are **isolated** in $H_n$: there are $A_n+1$ such vertices. The set of remaining nonisolated vertices is nonempty (it contains 2 and 4), and hence requires at least one further path.
@@ -49,7 +49,7 @@ For $n\ge4$, vertex 1 and every prime $p\in(n/2,n]$ are **isolated** in $H_n$: t
 Every prime $q\in(n/3,n/2]$ has precisely one neighbor in $H_n$, namely $2q$; these are $B_n$ distinct degree-one vertices. Any path can have **at most two** degree-one vertices, both as endpoints. Such leaves cannot lie in the paths for the isolated vertices. Therefore
 
 $$
-\operatorname{pc}(H_n)\ge A_n+1+\max\{1,\lceil B_n/2\rceil\},
+\mathrm{pc}(H_n)\ge A_n+1+\max\{1,\lceil B_n/2\rceil\},
 $$
 
 or
@@ -171,7 +171,7 @@ $$
 Therefore $h(n)=(7/12+o(1))n/\log n$. This also identifies the *entire* optimal path-cover number:
 
 $$
-\operatorname{pc}(H_n)=h(n)+1.
+\mathrm{pc}(H_n)=h(n)+1.
 $$
 
 The earlier small cases $n=9$ and $n=21$, which were previously described as exceptions to the leaf-prime lower bound, are explained exactly by the extra $\max\{1,\cdot\}$ term. There are no exceptions to the corrected formula for $n\ge4$.
