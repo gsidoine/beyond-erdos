@@ -13,9 +13,11 @@ For $n\ge6$, too many distinct even gaps would need to arise from adjacent pairs
 ## P007 retained as a candidate
 
 The rigorous parity bound is
+
 $$
 D(n)\le \min\left(n-1,\left\lfloor(n+3)/2\right\rfloor\right).
 $$
+
 An exact integer-programming formulation saturates this bound for $n=3,\ldots,30$ and selected $n\le120$. The all-$n$ equality remains a candidate conjecture, not a verified new open problem.
 
 ## P008: deeper theorem replaced successive open questions
