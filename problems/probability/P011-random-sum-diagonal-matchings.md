@@ -1,11 +1,11 @@
 # P011 — Matching transitions in random sum-diagonal graphs
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** In a random sum-diagonal bipartite graph, how do perfect-matching existence and minimum-degree factor saturation emerge as the sum-inclusion probability changes?  
-> **Formulation:** candidate. **Novelty:** apparent novelty — targeted search, exact observable unverified.  
-> **Verified/known progress:** The underlying random sum-graph paradigm is known; the matchings/factors question is newly proposed within this project, not proven open.  
-> **Finite evidence:** Exact deterministic examples show that minimum-degree factor saturation is not monotone in the set of allowed sums.  
-> **Navigation:** [Full catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+> **Research question:** In random sum-diagonal bipartite graphs, how do perfect matchings and min-degree factor saturation emerge?  
+> **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
+> **Verified/known progress:** Random sum-graphs are known; matching and factor phase behavior not located; factor saturation not monotone.  
+> **Finite evidence:** Explicit three-by-three obstruction to monotonicity; no asymptotic claims.  
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
 <!-- /DOSSIER-SUMMARY -->
 
 **Field:** probabilistic combinatorics / additive graph theory  
