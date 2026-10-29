@@ -1,0 +1,1 @@
+- `erdos-portrait.jpg`: portrait of Paul Erdős. Source/credit: Photo by George Csicsery from the documentary N is a Number 1993
