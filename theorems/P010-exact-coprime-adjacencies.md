@@ -178,7 +178,7 @@ The earlier small cases $n=9$ and $n=21$, which were previously described as exc
 
 ## Reproducibility
 
-[The independent standard-library witness generator](../../experiments/P010_construct_optimal_permutation.py) implements this construction and verifies gcd values and optimality against the formula. Finite trials of the construction succeeded for all $12\le n\le10{,}000$; extensive direct checks of the resulting paths were made for the smaller instances and sampled larger cases. This program is a sanity check, not a formal proof.
+[The independent standard-library witness generator](../experiments/P010_construct_optimal_permutation.py) implements this construction and verifies gcd values and optimality against the formula. Finite trials of the construction succeeded for all $12\le n\le10{,}000$; extensive direct checks of the resulting paths were made for the smaller instances and sampled larger cases. This program is a sanity check, not a formal proof.
 
 ## Novelty and historical audit
 
