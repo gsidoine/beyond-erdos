@@ -14,6 +14,13 @@ The [29 October 2026 portfolio-wide audit](audits/2026-10-29-P001-P020-first-col
 
 Key restrictions: **P007** contains a previously known prime-graceful special case, **P008** still needs a precise non-tautological formulation, **P009** closely overlaps a classical prime-difference certificate, and **P010** is internally solved. The collection remains frozen at P001–P020 pending deeper referee and priority checks.
 
+## Second consolidation pass — primary sources and submission provenance
+
+- [P010 manuscript snapshot and reference verification](manuscripts/P010-2026-10-29-submission-snapshot-and-policy-audit.md): records the author-supplied **two-page PDF's** exact SHA-256 and bibliography checks. **Important:** the current official *INTEGERS* policy appears to exclude research developed with AI assistance in mathematics/code, as transparently disclosed in that manuscript. The PDF binary is not included in this repository change.
+- [P008/P015/P018/P020 source-and-obstruction review](audits/2026-10-29-P008-P015-P018-P020-source-obstruction-pass.md): cautious distinctions from the closest colored-triangulation, group-labeled-matroid, random-matrix and host-percolation literature; independent validation of P018's exact three-exchange bridge.
+
+The **P001–P020 discovery freeze remains active**. These updates neither certify historical originality nor alter the mathematical status of any numbered problem.
+
 ## Problem catalogue
 
 Every problem has a permanent identifier, its own self-contained statement, evidence, and nearest prior art. *Candidate* means **under investigation**, not "verified open".
