@@ -1,6 +1,6 @@
 # Contributing to Meta Erdős
 
-This is a **curated exploratory research notebook**, not an official catalogue of Erdős problems and not a claim of original published open questions. The collection is currently **frozen at P001–P010**; do not introduce P011 until the audit gate is explicitly lifted.
+This is a **curated exploratory research notebook**, not an official catalogue of Erdős problems and not a claim of original published open questions. P001–P010 are consolidated; P011–P013 begin a **problem-generation phase**. New entries need precise statements, meaningful structural implications and a dated predecessor audit, but are not expected to be solved before inclusion.
 
 ## A change worth submitting
 
@@ -18,7 +18,7 @@ This is a **curated exploratory research notebook**, not an official catalogue o
 - **needs specification** — not yet a precise mathematical yes/no problem.
 - **proved internally** — a complete written mathematical argument has been produced within this project, **not** independently refereed or certified novel; preserve original question and cite the proof.
 
-The **novelty field** is separate. Never equate failure to find a source with evidence of originality. A confirmed earlier result must carry precise attribution in the dossier; for example, the full prime-graceful path theorem (P007 subproblem) is due to Panma and Rochanakul (2021).
+The **novelty field** is separate. **Apparent novelty (targeted audit)** indicates no direct predecessor was found in the listed targeted searches; it never asserts certified originality or unresolved status. Never equate failure to find a source with evidence of originality. A confirmed earlier result must carry precise attribution in the dossier; for example, the full prime-graceful path theorem (P007 subproblem) is due to Panma and Rochanakul (2021).
 
 ## Problem dossier
 
