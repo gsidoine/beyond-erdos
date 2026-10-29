@@ -1,7 +1,7 @@
 # Incubator resolution and research decision — interval-sum factor theorem
 
 **Date:** 2026-10-29  
-**Repository:** \`gsidoine/meta-erdos\` (formerly \`beyond-erdos\`)  
+**Repository:** `gsidoine/meta-erdos` (formerly `beyond-erdos`)  
 **Category:** unnumbered theorem, derived from P003's factor-packing research. **No P011 was created.**
 
 ## What was proved
@@ -55,4 +55,4 @@ Targeted searches using "interval-sum graph factor min degree", "consecutive dia
 
 **For P005:** continue with canonical reconfiguration and invariant searches; nothing here addresses the switch graph.
 
-**For the catalogue:** keep P001–P010, including the now-internally-proved P010, unchanged. Publish the unnumbered interval theorem under \`theorems/\` and link the audit. Do not present the general interval conjecture as still open.
+**For the catalogue:** keep P001–P010, including the now-internally-proved P010, unchanged. Publish the unnumbered interval theorem under `theorems/` and link the audit. Do not present the general interval conjecture as still open.
