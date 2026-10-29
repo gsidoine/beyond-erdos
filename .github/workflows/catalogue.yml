@@ -46,3 +46,8 @@ jobs:
 
       - name: Verify P020 classical finite-field Hankel corank formula
         run: python experiments/P020_hankel_finite_field_ranks.py
+
+      - name: Verify all-rank P020 elementary cokernel laws modulo p²
+        run: python experiments/P020_elementary_cokernel_mod_p2.py
+      - name: Verify P020 finite-field Hankel kernel-product corollary
+        run: python experiments/P020_kernel_product_dimension.py

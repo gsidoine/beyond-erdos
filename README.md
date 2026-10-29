@@ -1,22 +1,28 @@
 # Meta Erdős
 
-**An independent notebook of twenty research entries in number theory, graph theory and probability, inspired by the problem-posing tradition of Paul Erdős.**
+**An independent notebook of twenty-five research entries in number theory, graph theory and probability, inspired by the problem-posing tradition of Paul Erdős.**
 
 **Important:** These are **not** problems claimed to have been posed by Erdős, not part of [erdosproblems.com](https://www.erdosproblems.com/), and not certified to be new or unresolved. Our collection is independent of [teorth/erdosproblems](https://github.com/teorth/erdosproblems). We draw inspiration from that repository's clear, data-driven organization—not its problem content.
 
-**Explore:** [Problem catalogue below](#problem-catalogue) · [Interactive searchable browser](docs/index.html) · **[Current four-flagship review](audits/2026-10-29-flagship-source-comparison-and-shortlist.md)** · [Full P001–P020 audit](audits/2026-10-29-P001-P020-first-collection-consolidation.md) · [How to contribute](CONTRIBUTING.md)
+**Explore:** [Problem catalogue below](#problem-catalogue) · [Interactive searchable browser](docs/index.html) · **[Current four-flagship review](audits/2026-10-29-flagship-source-comparison-and-shortlist.md)** · **[P001–P025 literature review](audits/2026-10-29-P001-P025-literature-source-gate.md)** · [First P001–P020 audit](audits/2026-10-29-P001-P020-first-collection-consolidation.md) · [How to contribute](CONTRIBUTING.md)
 
-> **Discovery freeze (29 October 2026): P001–P020.** The first collection is complete for editorial review. **Do not add P021 or later entries** until a collection-wide proof, novelty, significance and redundancy audit is complete. The number 20 is a research milestone, not a claim that all twenty are genuinely new open problems.
+> **Second discovery freeze (29 October 2026): P001–P025.** Five additional candidates P021–P025 were added after the first 20-entry consolidation. **Do not add P026 or later entries** until the 25-entry proof, novelty and significance audit is complete. P025 has a confirmed direct historical predecessor for its linear-path analogue and is explicitly marked for reformulation.
 
 ## First collection: consolidation decisions
 
 The [29 October 2026 portfolio-wide audit](audits/2026-10-29-P001-P020-first-collection-consolidation.md) reviews **all twenty IDs** for well-posedness, closest prior art, structural significance, evidence quality and potential overlap. A [second, focused source-comparison gate](audits/2026-10-29-flagship-source-comparison-and-shortlist.md) narrows the provisional **featured research shortlist to P005, P017, P018 and P020**, with **P003 and P016 as strong reserves**, and **P014 as an exploratory reserve**. **P010 stays on its separate theorem/publication track.** These are **editorial priorities, not certified novel/open problems**.
 
-Key restrictions: **P007** contains a previously known prime-graceful special case, **P008** still needs a precise non-tautological formulation, **P009** closely overlaps a classical prime-difference certificate, and **P010** is internally solved. The collection remains frozen at P001–P020 pending deeper referee and priority checks.
+Key restrictions: **P007** contains a previously known prime-graceful special case, **P008** still needs a precise non-tautological formulation, **P009** closely overlaps a classical prime-difference certificate, and **P010** is internally solved. The collection is now frozen at P001–P025 pending a second comprehensive consolidation. **P025 is already a high-overlap cyclic-only variant** of a theorem by Erdős–Freud–Hegyvári (1983).
 
 ## New theorem-stage progress on P020 (29 October 2026)
 
-The [Haar p-adic Hankel rank-two theorem note](theorems/P020-padic-hankel-cyclic-and-rank-two-laws.md) gives **internally proved, explicit and size-stable probabilities** for every cyclic and every exactly two-generator finite abelian \(p\)-group cokernel. The formulas describe precisely \(1-p^{-5}\) of the probability mass for all matrix sizes \(n\ge3\), and have [independent exact modular enumeration checks](experiments/P020_padic_rank_two_lifts.py). **The full limiting distribution remains open**; historical priority and external referee validation are still pending.
+The [Haar p-adic Hankel rank-two theorem note](theorems/P020-padic-hankel-cyclic-and-rank-two-laws.md) gives **internally proved, explicit and size-stable probabilities** for every cyclic and every exactly two-generator finite abelian \(p\)-group cokernel. The formulas describe precisely \(1-p^{-5}\) of the probability mass for all matrix sizes \(n\ge3\), and have [independent exact modular enumeration checks](experiments/P020_padic_rank_two_lifts.py). A [further theorem](theorems/P020-elementary-abelian-cokernel-laws.md) gives **exact probabilities for every elementary abelian p-group** of arbitrary fixed rank, proved using [Yiasemides's published finite-field Hankel kernel theorem](theorems/P020-hankel-kernel-product-research.md) and independently checked modulo p². **The full limiting distribution remains open**; historical priority and external referee validation are still pending.
+
+## Second collection expansion and submission provenance
+
+**P021–P025** are precise, **not certified novel/open** research questions: arithmetic random sandpile groups, unimodular triangle homology, binary prime-incidence rank, divisor-graph zero forcing and cyclic least-common-multiple bottlenecks. See the [25-entry source review](audits/2026-10-29-P001-P025-literature-source-gate.md). The cyclic P025 problem has a **confirmed near-collision** with [Erdős–Freud–Hegyvári's 1983 linear-path theorem](https://users.renyi.hu/~p_erdos/1983-02.pdf) and must not be advertised as independent of that result.
+
+For **P010**, the author-provided two-page PDF *The Minimum Number of Coprime Adjacencies in a Permutation* was submitted to *Integers*. Its exact SHA-256 and a binary-transfer note are in [the P010 manuscript record](manuscripts/P010/README.md). **The PDF itself has not yet been committed into this GitHub branch**; the unchanged original is separately packaged for upload. No false live PDF link is supplied.
 
 ## Problem catalogue
 
@@ -45,6 +51,11 @@ Every problem has a permanent identifier, its own self-contained statement, evid
 | [P018](problems/matroid-theory/P018-conserved-xor-basis-fibers.md) | Conserved-XOR basis exchange fibers | matroid theory | candidate | apparent novelty (targeted audit) |
 | [P019](problems/geometry/P019-no-three-line-exchange.md) | Exchange complexity of optimal no-three-in-line configurations | discrete geometry | candidate | apparent novelty (targeted audit) |
 | [P020](problems/number-theory/P020-random-hankel-padic-cokernels.md) | Cokernel laws of random p-adic Hankel matrices | algebraic probability | candidate | apparent novelty (targeted audit) |
+| [P021](problems/probability/P021-cayley-sum-sandpile-laws.md) | Random Cayley-sum sandpile groups | algebraic probability | candidate | not certified (targeted audit) |
+| [P022](problems/geometry/P022-random-unimodular-triangle-complex.md) | Random unimodular triangle complex homology | discrete geometry | candidate | not certified (targeted audit) |
+| [P023](problems/probability/P023-random-prime-incidence-rank.md) | Rank of random prime-divisibility incidence matrices | probabilistic number theory | candidate | not certified (targeted audit) |
+| [P024](problems/graph-theory/P024-zero-forcing-divisor-graph.md) | Zero forcing on the divisor comparability graph | graph theory | candidate | not certified (targeted audit) |
+| [P025](problems/number-theory/P025-lcm-hamiltonian-bottleneck.md) | Cyclic lcm Hamiltonian bottleneck | number theory | reframe | confirmed collision for linear-path analogue |
 <!-- CATALOG:END -->
 
 For precise definitions, follow each ID. To filter by subject, status or title in a browser, open [the searchable catalogue](docs/index.html). If GitHub Pages is enabled for the repository's `docs/` folder, the same page can be published as a standalone website.

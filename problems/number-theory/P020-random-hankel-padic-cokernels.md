@@ -3,8 +3,8 @@
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** Does the cokernel of an n×n Haar-random p-adic Hankel matrix converge in distribution to a describable measure on finite abelian p-groups?  
 > **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
-> **Verified/known progress:** Classical finite-field corank law; new internally proved exact group probabilities for all cyclic and two-generator cokernels, stable for n≥3; historical priority unverified.  
-> **Finite evidence:** Exact finite-field Hankel rank enumerations over F₂ (n≤4) and F₃ (n≤3), not p-adic group distribution.  
+> **Verified/known progress:** Classical Hankel corank law; internally proved cyclic/two-generator probabilities and all-k elementary-abelian cokernel probabilities.  
+> **Finite evidence:** Exact modular group counts at p=2 (n≤4), p=3 (n≤3); kernel-product rank proved from Yiasemides (2024).  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
 <!-- /DOSSIER-SUMMARY -->
 
@@ -91,6 +91,25 @@ The key conditional lifting lemma says that, after fixing a corank-one or corank
 **Consequence:** Exactly \(1-p^{-5}\) of the probability mass is now characterized by group-specific formulas independent of \(n\ge3\); hence the total-variation distance between **any two** such \(n\)-distributions is at most \(p^{-5}\). **This is not a full limit theorem.** For corank at least three, polynomial-product dependencies obstruct this particular argument.
 
 **Priority caution:** The base finite-field rank formula is not new. Targeted review did not locate these precise higher-invariant-factor formulas in the cited sources, but specialist priority review of structured p-adic Smith forms remains outstanding.
+
+## Further exact law: **all elementary abelian cokernels**
+
+The [second P020 proof note](../../theorems/P020-elementary-abelian-cokernel-laws.md) uses the **published finite-field Hankel kernel classification** of [Yiasemides (2024), Theorem 2.4.4 / Remark 2.4.6](https://doi.org/10.1007/s40687-023-00418-7), not merely finite extrapolation. For every $1\le k<n$,
+
+$
+\boxed{
+\Pr\bigl(C_n\simeq(\mathbb Z/p\mathbb Z)^k\bigr)
+=(1-p^{-1})\bigl(p^{-(2k-1)}-p^{-(2k+1)}\bigr).
+}
+$
+
+For $k=n$, replace the expression in parentheses by $p^{-(2n-1)}$. This formula holds for **every** $n$ and prime $p$; for fixed $k$, the probability is constant in $n$ once $n>k$.
+
+**First-order mechanism.** If $\bar H_n$ has corank $k$, Yiasemides's theorem implies its polynomial kernel is $A(z)\mathbb F_p[z]_{\le k-1}$. In the shift basis $A,Az,\ldots,Az^{k-1}$, products span the $2k-1$ coefficients of $A^2z^t$. A Haar lift therefore induces a **uniform $k\times k$ Hankel form modulo $p$** on that kernel. The form is nonsingular with the classical probability $1-p^{-1}$. Combining this conditional probability with the already-known exact corank distribution gives the displayed group law.
+
+An [independent exhaustive mod-$p^2$ enumerator](../../experiments/P020_elementary_cokernel_mod_p2.py) verifies every elementary-group count for $p=2$, $n=2,3,4$, and $p=3$, $n=2,3$, including examples with **three and four generators**. The kernel-product dimension $2k-1$ is now a [proved corollary of published Hankel theory](../../theorems/P020-hankel-kernel-product-research.md), not an empirical conjecture.
+
+**Critical limitation:** the Schur complement may acquire nonlinear corrections at higher powers of $p$. The conditional first-order Haar-Hankel law does **not** imply an exact Haar-Hankel distribution at every $p$-adic order. Thus general groups with at least three generators and higher exponents, and the complete limiting law, remain open in this project. Historical priority of the *group probability* formula also remains unverified.
 
 ## Independent finite falsification
 
