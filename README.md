@@ -1,6 +1,6 @@
 # Meta Erdős
 
-**Meta Erdős is an open, community-contributable catalogue of mathematical research questions, conjectures and partial results.** The collection currently contains **25 numbered research entries (P001–P025)** in number theory, graph theory, probability, geometry, topology and matroid theory.
+**Meta Erdős is an open, community-contributable catalogue of mathematical research questions, conjectures and partial results.** The collection currently contains **30 numbered research entries (P001–P030)** in number theory, graph theory, probability, geometry, topology and matroid theory.
 
 The project takes inspiration from Paul Erdős's problem-posing tradition. These entries are **not claimed to have been posed by Erdős**, do not belong to [erdosproblems.com](https://www.erdosproblems.com/) or [teorth/erdosproblems](https://github.com/teorth/erdosproblems), and are **not certified to be previously unknown or unresolved**. Established results and close predecessors are attributed in the individual dossiers.
 
@@ -8,19 +8,19 @@ The project takes inspiration from Paul Erdős's problem-posing tradition. These
 
 ## Status and scope
 
-The 25 entries have different research statuses; **they are not all open conjectures**.
+The 30 entries have different research statuses; **they are not all open conjectures**.
 
 The [29 October 2026 portfolio-wide audit](audits/2026-10-29-P001-P020-first-collection-consolidation.md) and the [second-pass source-level comparison, including the P010 manuscript snapshot](audits/2026-10-29-P015-P016-P018-P020-source-comparison-and-P010-snapshot.md) reviews **all twenty IDs** for well-posedness, closest prior art, structural significance, evidence quality and potential overlap. It gives a provisional shortlist of **P003, P005, P014, P016, P017, P018 and P020**, with **P010 on a separate theorem/publication track**. These are **editorial priorities, not certified novel/open problems**.
 | Status | Entries | Meaning |
 |---|---|---|
-| Candidate | 21 | A mathematical research question under investigation; historical novelty and unresolved status are not certified |
+| Candidate | 26 | A mathematical research question under investigation; historical novelty and unresolved status are not certified |
 | Reframe | 2 (P007, P025) | A close or known predecessor requires the surviving question to be stated more narrowly |
 | Needs specification | 1 (P008) | The intended mathematical question requires a sharper formal statement |
 | Proved internally | 1 (P010) | A complete proof is supplied; independent refereeing and historical priority assessment are distinct matters |
 
 These labels distinguish the research status of a *question* from the historical novelty of its formulation. Computations only certify the finite instances and methods specified in their dossiers.
 
-Among the research candidates, **P005, P017, P018 and P020** are the current editorial focus, with **P003 and P016** among the strongest additional directions. These are not rankings of mathematical priority or claims of external validation.
+Among the earlier research candidates, **P005, P017, P018 and P020** are leading directions, with **P003 and P016** as additional subjects of interest. The newer P026–P030 questions remain candidates pending fuller historical review; the P027 exchange-graph diameter is already proved internally, whereas its mixing question is open. These are not rankings of mathematical priority or claims of external validation.
 
 **Contributions are welcome**, including new problem proposals, counterexamples, proof improvements, bibliographic corrections and reproducible experiments. New IDs are assigned through review rather than an arbitrary numerical target; see [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -59,6 +59,12 @@ In particular, $h(n)\sim 7n/(12\log n)$. This is a **resolved entry**, not one o
 - [P008/P015/P018/P020 source-and-obstruction review](audits/2026-10-29-P008-P015-P018-P020-source-obstruction-pass.md): cautious distinctions from the closest colored-triangulation, group-labeled-matroid, random-matrix and host-percolation literature; independent validation of P018's exact three-exchange bridge.
 
 The **P001–P020 discovery freeze remains active**. These updates neither certify historical originality nor alter the mathematical status of any numbered problem.
+
+## Additional arithmetic and combinatorial research
+
+The newest dossiers examine **four-cycle generation in prime-sum graphs** ([P026](problems/graph-theory/P026-prime-sum-square-cycle-generation.md)), **random walks on maximum primitive sets** ([P027](problems/number-theory/P027-primitive-set-exchange-mixing.md)), **random divisibility-complex Euler characteristics** ([P028](problems/number-theory/P028-random-divisor-complex-mobius-deformation.md)), **prime-sum permutation X-ray fibers** ([P029](problems/graph-theory/P029-prime-sum-permutation-xray-fibers.md)) and **simultaneous prime-sum/prime-difference matchings** ([P030](problems/number-theory/P030-double-prime-perfect-matchings.md)).
+
+An [exact primitive-set exchange theorem](theorems/P027-primitive-set-exchange-diameter.md) establishes a Hamming graph metric and diameter $5n/12+O(1)$ on maximum primitive subsets of $[2n]$; its historical novelty has not been certified. Every new question has explicit predecessor citations and finite or theoretical baseline evidence. In particular, P029 reuses the previously studied discrete-tomography *X-ray* object rather than claiming to invent it.
 
 ## Problem catalogue
 
