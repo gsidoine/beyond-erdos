@@ -19,7 +19,7 @@ For $d\ge2$, let $V_d=\mathbb F_2^d$ and fix a nonzero vector $s\in V_d$. Take a
 $$
 \mathcal B(W,s)=
 \left\{B\subseteq W:
-|B|=d,\ \operatorname{span}(B)=V_d,\
+|B|=d,\ \mathrm{span}(B)=V_d,\
 \bigoplus_{v\in B}v=s\right\}.
 $$
 
