@@ -1,11 +1,11 @@
 # P017 — Longest chains in a randomly thinned divisibility poset
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** Does the longest divisibility chain in a Bernoulli random subset of $[N]$, normalized by $\log_2 N$, converge to a deterministic density-dependent constant?
-> **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit); random posets and arithmetic divisibility orders are established.
-> **Verified/known progress:** Elementary logarithmic upper bound and binomial lower bound; the putative limit is not proved.
-> **Finite evidence:** Exact dynamic-programming chain lengths in independent Bernoulli samples show stable-looking density-dependent ratios, not a theorem.
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Literature audit](../../literature-audits/2026-10-29-P017-P018-cross-field-problem-screen.md)
+> **Research question:** Does the longest divisibility chain in a Bernoulli random subset of [N] have a deterministic limiting length after division by log₂ N?  
+> **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
+> **Verified/known progress:** For fixed 0<p<1, the normalized height is asymptotically between p and 1 in probability; convergence to a constant is unproved.  
+> **Finite evidence:** Exact dynamic program cross-checked against all subsets for N≤9; exploratory sampling at larger N.  
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
 <!-- /DOSSIER-SUMMARY -->
 
 **Area:** probability, number theory, partially ordered sets  
