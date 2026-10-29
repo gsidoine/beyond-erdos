@@ -1,10 +1,10 @@
 # P026 — Do four-cycles generate the prime-sum graph cycle space?
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** Do the four-cycles of the bipartite prime-sum graph generate its entire binary cycle space for every n, and how efficiently can its cycles be filled by squares?
-> **Formulation:** candidate. **Novelty:** not certified (specialist source check needed).
-> **Verified/known progress:** Exact finite-field elimination gives vanishing square-filled first homology for n up to 60; no proof for all n.
-> **Finite evidence:** Exhaustive enumeration of all four-cycles and their GF(2) boundary span; reproducible standard-library code.
+> **Research question:** Do the four-cycles of the bipartite prime-sum graph generate its entire binary cycle space for every n, and how efficiently can its cycles be filled by squares?  
+> **Formulation:** candidate. **Novelty:** not certified (specialist source check needed).  
+> **Verified/known progress:** Exact finite-field elimination gives vanishing square-filled first homology for n up to 60; no proof for all n.  
+> **Finite evidence:** Exhaustive enumeration of all four-cycles and their GF(2) boundary span; reproducible standard-library code.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
