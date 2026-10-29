@@ -91,7 +91,7 @@ A solution would connect structured linear algebra, finite-field rank enumeratio
 ## Nearest literature and priority caveat
 
 - **Dwivedi and Grinberg**, [*On the rank of Hankel matrices over finite fields* (2022)](https://doi.org/10.1016/j.laa.2022.02.014): **direct prior art** proving or refining the classical finite-field rank counts. It does not, in the accessible summary, determine the full $p$-adic finite-abelian-group distribution.
-- **Wood**, [*Random integral matrices and the Cohen–Lenstra heuristics*](https://doi.org/10.1090/ajm/1568): canonical cokernel universality for matrices with independent entries. The independent-entry hypothesis fails spectacularly for Hankel matrices.
+- **Wood**, [*Random integral matrices and the Cohen–Lenstra heuristics*](https://doi.org/10.1353/ajm.2019.0008): canonical cokernel universality for matrices with independent entries. The independent-entry hypothesis fails spectacularly for Hankel matrices.
 - **Maples**, [*Cokernels of random matrices satisfy the Cohen–Lenstra heuristics*](https://arxiv.org/abs/1301.1239): another direct baseline for independent-entry cokernels.
 - **Jang, Kaplan, Lee and Yu**, [*A mod $p$ determinant criterion for Cohen–Lenstra convergence of random $p$-adic matrices with prescribed zero patterns* (2026)](https://arxiv.org/abs/2606.06993): very recent extension to matrices with **prescribed zeros** and independent free entries, conceptually different from repeated anti-diagonal entries.
 - **Miller and Stanton**, [*Orthogonal polynomials and Smith normal form* (2017)](https://arxiv.org/abs/1704.03539): systematic Smith forms for several **deterministic structured Hankel matrices**, not an explicit Haar-random distribution in the accessible description.
