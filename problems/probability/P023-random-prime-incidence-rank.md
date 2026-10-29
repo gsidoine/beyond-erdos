@@ -1,10 +1,11 @@
 # P023 — Full rank of random prime-divisibility incidence matrices
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** When does randomly retaining integers make their small-prime incidence vectors span the entire binary prime-coordinate space?
-> **Formulation:** candidate; Bernoulli column model and growth regime specified.
-> **Novelty:** unverified, targeted comparison 2026-10-29.
-> **Verified preliminary fact:** full row rank is equivalent to the absence of a nonzero annihilating parity character.
+> **Research question:** When do independently retained prime-incidence vectors of integers up to N span all small-prime coordinates over F2?  
+> **Formulation:** candidate. **Novelty:** not certified (targeted audit).  
+> **Verified/known progress:** Full rank iff no nonzero prime-parity functional annihilates all retained columns; exact zero-row probability.  
+> **Finite evidence:** Deterministic parity characterization proved; probabilistic threshold unproved.  
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
 <!-- /DOSSIER-SUMMARY -->
 
 **Area:** probabilistic number theory, random matrices, finite-field linear algebra. **Status:** candidate.
