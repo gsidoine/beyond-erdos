@@ -71,7 +71,7 @@ $$
 
 Both components contain valid full-rank bases with identical XOR sum $1$. **No edge joins the two components**, because no pair of bases from different components shares three vectors. This is a genuine negative result: *two-element conservative exchange is not universally sufficient*.
 
-These facts were obtained independently before writing the reproducer, which is [\`experiments/P018_conserved_xor_bases.py\`](../../experiments/P018_conserved_xor_bases.py).
+These facts were obtained independently before writing the reproducer, which is [`experiments/P018_conserved_xor_bases.py`](../../experiments/P018_conserved_xor_bases.py).
 
 ## Structural significance
 
