@@ -67,3 +67,10 @@ hold for every \(n\) and every interval of allowed sums \([a,b]\)?
 - **P010:** prioritize human mathematical checking and historical priority, then assess an honest independent short paper. It does not need additional million-scale brute-force checks.
 - **P003/P005:** try structural theorems (P003 arithmetic cut expansion; P005 canonical reconfiguration) rather than merely larger numbers.
 - **Incubator:** establish factor saturation for interval-sum graphs or kill it; it becomes a formal research problem only if a substantive theorem or novel obstruction survives the literature check.
+
+
+---
+
+## Update — 29 October 2026: incubator conjecture resolved
+
+The interval-sum factor conjecture proposed in the preceding section is **proved for all parameters** by a constructive block-factor theorem. See [the complete proof](../theorems/interval-sum-factor-saturation.md) and [dated audit](2026-10-29-interval-sum-factor-resolution.md). It is **no longer an open candidate** and has not been given a P011 ID. This proof does not settle P003, and the theorem's originality remains unverified.
