@@ -28,3 +28,6 @@ jobs:
 
       - name: Verify P014 exact random sum-graph four-clique moments
         run: python experiments/P014_sum_flag_cliques.py
+
+      - name: Verify P015 parity-area flip connectivity through nine vertices
+        run: python experiments/P015_odd_area_flip_graph.py --max-n 9
