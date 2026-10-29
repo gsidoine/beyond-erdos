@@ -5,7 +5,7 @@
 > **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
 > **Verified/known progress:** Interior prime sums realized by a partial matching; completion is open in this study.  
 > **Finite evidence:** Exact small matching optimization.  
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
 
@@ -55,6 +55,6 @@ $[\varepsilon n,(4-\varepsilon)n]$.
 
 Not completed. Check research on prime-sum partitions, rainbow perfect matchings, and arithmetic matchings. Do not present this as a certified new open problem.
 
-## Cross-problem literature review (2026-10-28)
+## Related literature
 
 Greenfield–Greenfield (1998) establishes the prime-pairing foundation; see exact rainbow-matching connections in the audit. This is **not a certification of novelty or of unresolved status**. Read the [full P001–P008 audit](../../literature-audits/2026-10-28-comprehensive-P001-P008.md) before citing this question in a mathematical publication.
