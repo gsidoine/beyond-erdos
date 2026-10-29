@@ -97,6 +97,8 @@ A sieve-generated certificate $q$ as in Theorem 2 exists for **every $2\le n\le1
 
 The largest *least qualifying prime* $q$ among tested $n$ was $379$, attained at $n=90{,}407$. All tests are **finite**, with no implication of an unconditional theorem for every integer.
 
+**Two distinct verification horizons.** The preceding table and $q=379$ record refer to the original script's run through **$n=100{,}000$**. A **separate, independent sieve** in [`audits/verify_p003_p009.py`](../../audits/verify_p003_p009.py) was run through **$n=1{,}000{,}000$** with no missing certificates; over that larger range the largest *least qualifying prime* was **$q=619$**, first attained at **$n=436{,}349$**. The dated [adversarial review](../../audits/2026-10-28-P001-P010-adversarial-review.md) records that million-case run. This clarifies the two ranges; the source's default verification script tests only through 100,000 and **neither horizon proves the conjecture**.
+
 ## Novelty and difficulty audit
 
 - Lawrence E. and Stephen J. Greenfield, [*Some Problems of Combinatorial Number Theory Related to Bertrand's Postulate*](https://cs.uwaterloo.ca/journals/JIS/green.html), *Journal of Integer Sequences* 1 (1998), prove the baseline pairing.
