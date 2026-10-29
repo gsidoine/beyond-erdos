@@ -2,10 +2,10 @@
 
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** What is the asymptotic maximum size of a Sidon set whose positive differences avoid all primes?  
-> **Formulation:** candidate. **Novelty:** not certified.  
+> **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
 > **Verified/known progress:** Asymptotic lower constant at least 1/√2 and upper at most 1.  
 > **Finite evidence:** Small exact MILP optima through N=60.  
-> **Navigation:** [All ten problems](../../README.md#problem-catalogue) · [Source-by-source audit](../../audits/2026-10-28-novelty-quality-gate.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
 <!-- /DOSSIER-SUMMARY -->
 
 

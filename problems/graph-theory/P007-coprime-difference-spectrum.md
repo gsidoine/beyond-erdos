@@ -2,10 +2,10 @@
 
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** Can a coprime Hamiltonian path attain the parity upper bound for distinct adjacent differences?  
-> **Formulation:** reframe. **Novelty:** known subproblem.  
+> **Formulation:** reframe. **Novelty:** known subproblem; extension unverified.  
 > **Verified/known progress:** Full graceful existence iff n≤5 is a published 2021 theorem; extremal extension unverified.  
 > **Finite evidence:** Exact finite MILP checks in selected sizes.  
-> **Navigation:** [All ten problems](../../README.md#problem-catalogue) · [Source-by-source audit](../../audits/2026-10-28-novelty-quality-gate.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
 <!-- /DOSSIER-SUMMARY -->
 
 

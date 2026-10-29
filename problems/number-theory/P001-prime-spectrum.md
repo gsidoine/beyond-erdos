@@ -2,10 +2,10 @@
 
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** Does the maximum distinct-prime-sum deficit of a prime-sum perfect matching stay bounded?  
-> **Formulation:** candidate. **Novelty:** not certified.  
+> **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
 > **Verified/known progress:** Interior prime sums realized by a partial matching; completion is open in this study.  
 > **Finite evidence:** Exact small matching optimization.  
-> **Navigation:** [All ten problems](../../README.md#problem-catalogue) · [Source-by-source audit](../../audits/2026-10-28-novelty-quality-gate.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
 <!-- /DOSSIER-SUMMARY -->
 
 

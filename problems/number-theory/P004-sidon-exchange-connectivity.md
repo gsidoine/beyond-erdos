@@ -2,10 +2,10 @@
 
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** Are size-k Sidon sets connected by feasible one-mark exchanges below the square-root scale?  
-> **Formulation:** candidate. **Novelty:** not certified.  
+> **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
 > **Verified/known progress:** Elementary connectivity theorem for N > 2(2k-1)^3.  
 > **Finite evidence:** Small disconnected/connected cases enumerated.  
-> **Navigation:** [All ten problems](../../README.md#problem-catalogue) · [Source-by-source audit](../../audits/2026-10-28-novelty-quality-gate.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
 <!-- /DOSSIER-SUMMARY -->
 
 

@@ -26,8 +26,8 @@ def dossier_summary(p):
         f"> **Formulation:** {p['status']}. **Novelty:** {p['novelty']}.  ",
         f"> **Verified/known progress:** {p['result']}.  ",
         f"> **Finite evidence:** {p['verification']}.  ",
-        "> **Navigation:** [All ten problems](../../README.md#problem-catalogue) · "
-        "[Source-by-source audit](../../audits/2026-10-28-novelty-quality-gate.md)",
+        "> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · "
+        "[Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)",
         DOSSIER_END,
     ])
 
@@ -84,7 +84,7 @@ if __name__ == "__main__":
                  if p.read_text(encoding="utf-8") != expected]
         if stale:
             parser.exit(1, "Outdated generated file(s): " + ", ".join(stale) + "\n")
-        print("Catalogue, browser data and all ten dossier summaries are current.")
+        print("Catalogue, browser data and all dossier summaries are current.")
     else:
         for p, expected in views:
             p.write_text(expected, encoding="utf-8")

@@ -2,10 +2,10 @@
 
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** Can all permutations satisfying gcd(i,σ(i))=1 be connected by valid two-position swaps?  
-> **Formulation:** candidate. **Novelty:** not certified.  
+> **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
 > **Verified/known progress:** No universal-row/column shortcut; arithmetic structure is essential.  
 > **Finite evidence:** 3,459,600 states at n=14, one component.  
-> **Navigation:** [All ten problems](../../README.md#problem-catalogue) · [Source-by-source audit](../../audits/2026-10-28-novelty-quality-gate.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
 <!-- /DOSSIER-SUMMARY -->
 
 

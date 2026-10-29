@@ -2,10 +2,10 @@
 
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** Can 1,…,2n always be paired using at most two distinct prime sums?  
-> **Formulation:** candidate. **Novelty:** closely related.  
+> **Formulation:** candidate. **Novelty:** strong prior-art overlap.  
 > **Verified/known progress:** One-color iff 2n+1 prime; two-color certificate from short prime difference.  
 > **Finite evidence:** Sieve certificates through n=1,000,000 (finite only).  
-> **Navigation:** [All ten problems](../../README.md#problem-catalogue) · [Source-by-source audit](../../audits/2026-10-28-novelty-quality-gate.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
 <!-- /DOSSIER-SUMMARY -->
 
 

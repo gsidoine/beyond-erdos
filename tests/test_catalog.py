@@ -19,9 +19,9 @@ class CatalogueTests(unittest.TestCase):
         cls.data = json.loads((ROOT / "data" / "problems.json").read_text(encoding="utf-8"))
         cls.problems = cls.data["problems"]
 
-    def test_frozen_ten_unique_ids(self):
+    def test_consecutive_unique_ids(self):
         ids = [r["id"] for r in self.problems]
-        self.assertEqual(ids, [f"P{i:03d}" for i in range(1, 11)])
+        self.assertEqual(ids, [f"P{i:03d}" for i in range(1, 14)])
         self.assertEqual(len(ids), len(set(ids)))
 
     def test_every_problem_has_a_dossier_and_sources(self):
@@ -51,7 +51,7 @@ class CatalogueTests(unittest.TestCase):
 
     def test_every_dossier_summary_matches_canonical_data(self):
         views = list(dossier_views())
-        self.assertEqual(len(views), 10)
+        self.assertEqual(len(views), len(self.problems))
         for path, generated in views:
             with self.subTest(dossier=str(path)):
                 self.assertEqual(path.read_text(encoding="utf-8"), generated)
@@ -69,8 +69,8 @@ class CatalogueTests(unittest.TestCase):
         marker = readme.split("<!-- CATALOG:START -->", 1)[1].split(
             "<!-- CATALOG:END -->", 1)[0]
         rows = [ln for ln in marker.splitlines() if ln.startswith("|")]
-        self.assertEqual(len(rows), 12)
-        self.assertEqual(sum(1 for ln in rows if re.match(r"^\| \[P\d{3}\]", ln)), 10)
+        self.assertEqual(len(rows), len(self.problems) + 2)
+        self.assertEqual(sum(1 for ln in rows if re.match(r"^\| \[P\d{3}\]", ln)), len(self.problems))
 
 
 if __name__ == "__main__":
