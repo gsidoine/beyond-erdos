@@ -4,7 +4,7 @@
 **Related problem:** [P010 — Minimum coprime adjacencies](../problems/graph-theory/P010-minimum-coprime-adjacencies.md)  
 **Author:** G. Sidoine, Independent Researcher, France; ORCID 0009-0005-4525-1182.  
 **Manuscript title:** *The Minimum Number of Coprime Adjacencies in a Permutation*.  
-**Submitted journal contemplated/reported by the author:** *Integers: The Electronic Journal of Combinatorial Number Theory*. **No submission receipt, editorial decision or journal acceptance was available to verify in this audit.**
+**Submission status:** The author reports submission to *Integers: The Electronic Journal of Combinatorial Number Theory*. No editorial acceptance or publication is claimed. This archived note is not an independent submission-receipt verification.
 
 ## Exact supplied submission snapshot
 
@@ -13,7 +13,7 @@ The author supplied a **two-page PDF** in the project's conversation on 29 Octob
 - Size: **214,297 bytes**, A4, 2 pages, produced by pdfTeX.
 - SHA-256: \`3aae034589f58b9593891a53ee5d54ea20f1106c774364e1ff564df417837737\`.
 - Content: abstract, exact formula for $h(n)$, constructive proof using noncoprime-graph path covers, small witnesses $n=4,\ldots,11$, nonmonotonicity remark, eight references, an AI-use declaration, and author affiliation/ORCID.
-- The user-supplied **binary PDF itself is not committed in this PR**; this record preserves its identity and audit context without creating an altered or falsely attributed manuscript file. If the author wants the PDF publicly archived, commit the *unaltered source PDF*, checking applicable publication/preprint permissions first. The authoritative author-supplied PDF remains with the original project conversation.
+- **Current repository state:** The exact submitted binary is available as [P010 PDF](P010/coprime_adjacencies.pdf); its SHA-256 remains the value recorded above. The original version of this archival note preceded the PDF upload and therefore referred to a file that was not yet committed.
 
 The mathematical theorem agrees with [the canonical proof](../theorems/P010-exact-coprime-adjacencies.md):
 
@@ -25,15 +25,14 @@ $$
 
 with $h(1)=0,h(2)=1,h(3)=2$ and $h(n)\sim 7n/(12\log n)$. The PDF proof uses prime-factor classes, 2/3-multiple connections, the Rosser–Schoenfeld/Dusart inequality $\pi(2x)\le 2\pi(x)$ for $x\ge3$, and an explicit list of optimal short permutations. This source comparison is **not** an independent refereeing of the full argument.
 
-## Critical journal-policy conflict: official guidance checked 29 October 2026
+## Corrected journal AI-use policy
 
-**[INTEGERS author instructions](https://math.colgate.edu/~integers/submit.html)** explicitly state that manuscripts making use of **artificial intelligence in the production of mathematics, code, bibliography, or other content** will **not be considered**, although basic grammar/spelling assistance is exempt. The accompanying submission email is also required to confirm compliance with this policy.
+**Correction of this source record:** An earlier version inaccurately stated that *Integers* categorically refused manuscripts involving AI-supported mathematical research or code. That conclusion is **not supported by the official published author instructions**.
 
-The author-supplied PDF explicitly discloses that ChatGPT assisted **preliminary mathematical exploration, proof construction, verification code, early drafts, and literature/reference checks**, well beyond the policy's grammar/spelling exception.
+The current [*Integers* submission guidelines](https://math.colgate.edu/~integers/submit.html) state that AI tools **may support manuscript preparation**, provided they are **not a substitute for human critical thinking**, the author assumes responsibility for the accuracy of mathematical statements and references, the manuscript's **narrative and wording are authored by humans**, and a statement discloses non-grammar/spelling AI use when the manuscript is submitted. A submission email is required to confirm compliance.
 
-**Consequence:** On the stated facts, this manuscript appears **incompatible with the INTEGERS submission policy**, despite its transparent and responsible disclosure. This is a policy/eligibility warning, not a claim of a journal rejection or a mathematical defect. The author should **contact the editorial office and obtain clarification**, and must not remove or weaken the disclosure to evade the rule. If the journal confirms the incompatibility, withdraw or redirect appropriately rather than making a knowingly false compliance statement. Rewriting the prose does **not erase historical AI assistance in the mathematical research**.
+The submitted P010 manuscript contains an AI-use declaration. Whether the submitted wording, human verification, and disclosures satisfy the journal's requirements is **an editorial decision**, not something this archival audit can decide. No acceptance, rejection or incompatibility determination follows from the policy text alone.
 
-No submission, withdrawal or editor contact is performed by this repository change.
 
 ## Independent source-level reference checks (manuscript numbering)
 
@@ -52,6 +51,6 @@ No submission, withdrawal or editor contact is performed by this repository chan
 
 ## Publication recommendation
 
-The mathematical content is a defensible **short arithmetic-combinatorics note**, conditional on independent human proof verification and complete priority review. *INTEGERS* is **not an appropriate confirmed outlet under its posted AI policy**. Prefer a journal whose verified editorial policy permits AI-assisted mathematical exploration with transparent disclosure and rigorous human accountability. Any alternative must be evaluated against its current rules rather than assumed acceptable.
+The mathematical content is a plausible **short arithmetic-combinatorics note**, conditional on independent human proof verification and deeper priority review. *Integers* permits AI assistance under its stated conditions; the submission's compliance and editorial outcome are for the journal to assess. No external refereeing or publication claim is made.
 
 This record is **not** a new manuscript, a publication claim, or a source substitution for the user's original PDF.
