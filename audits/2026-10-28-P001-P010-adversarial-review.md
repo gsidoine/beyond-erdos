@@ -32,25 +32,31 @@ For each prime $p\in[\varepsilon n,(4-\varepsilon)n]$, the representations $p=a+
 ### P002 and P005 — Same formal switch operation, different arithmetic hosts
 
 In both, edges of the reconfiguration graph correspond to flipping an alternating 4-cycle in a bipartite perfect matching. Standard irreducibility results for chordal-bipartite hosts do not automatically apply to these non-chordal examples. A universal row/column is not enough: the bipartite adjacency matrix with rows
+
 $$
 [11111;\ 10110;\ 11010;\ 11100;\ 10000]
 $$
+
 has a universal row and column but exactly two isolated perfect matchings, with permutations $(5,3,4,2,1)$ and $(5,4,2,3,1)$. Explicit enumeration confirms **zero valid four-cycle switches from either matching**. Arithmetic-specific structure is necessary.
 
 ### P003 — Cut condition and strong falsification attempt
 
 The arithmetic host is bipartite (odd/even vertices). A spanning $k$-factor exists exactly when every $X\subseteq U,\ Y\subseteq V$ satisfies
+
 $$
 e(X,V\setminus Y)\ge k(|X|-|Y|).
 $$
+
 Integral max-flow with capacity $k$ from source to each odd vertex, capacity 1 along each prime-sum edge, and capacity $k$ from each even vertex to sink certifies whether $k=\delta$ is possible. The largest independently checked case n=3000 has **2,087,452 prime-sum edges**, $\delta=648$, and maximum flow **1,944,000 = 3000\cdot648$**. This is an exact computational certificate of feasibility at that finite n, not an infinite proof. An explicit violating cut would refute the conjecture.
 
 ### P004 — Sparse connectivity proof and dense counterexamples
 
 A Sidon set of size s has at most
+
 $$
 s+2s\binom s2+\binom s2\le s^3
 $$
+
 forbidden points for extension (occupied points, new-old difference collisions, midpoint collisions). Given two k-sets A and B, construct a disjoint auxiliary k-set C such that both A∪C and B∪C remain Sidon; N>2(2k-1)^3 suffices. Hence at most 2k feasible one-element moves connect A to B. This is a rigorous **cubic-scale** result, not a proof near the conjectured $N^{1/2}$ scale. Exhaustive small disconnected cases bar an unqualified connectivity statement.
 
 ### P006 — Small instances do not identify the asymptotic constant
