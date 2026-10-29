@@ -5,7 +5,7 @@
 > **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
 > **Verified/known progress:** When the maximum size is 2n, single-point exchanges are impossible and two-point exchanges are rectangle switches.  
 > **Finite evidence:** Exact optimal configuration exchange graphs through n=7; minimal connecting move sizes 2,4,3,5,6 for n=3,...,7.  
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
 **Area:** discrete geometry and reconfiguration theory  
@@ -60,7 +60,7 @@ The dependency-free [exact enumerator](../../experiments/P019_no_three_line_exch
 
 ## Why a solution could be structural
 
-The classical no-three-in-line problem concerns **maximum size**. Our question concerns the *geometry of the entire optimum solution space*: can extremal configurations be connected by bounded coordinated changes, or are large-scale changes essential?
+The classical no-three-in-line problem concerns **maximum size**. The question here concerns the *geometry of the entire optimum solution space*: can extremal configurations be connected by bounded coordinated changes, or are large-scale changes essential?
 
 A bounded $\tau(n)$ would indicate surprising flexibility of extremal geometric arrangements. Unboundedness would give a quantitative notion of geometric rigidity, potentially leading to invariants that obstruct local rearrangements. Either outcome may connect integer-grid geometry with constrained combinatorial reconfiguration and higher-degree exchange moves.
 

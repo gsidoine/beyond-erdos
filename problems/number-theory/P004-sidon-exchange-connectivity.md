@@ -5,7 +5,7 @@
 > **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
 > **Verified/known progress:** Elementary connectivity theorem for N > 2(2k-1)^3.  
 > **Finite evidence:** Small disconnected/connected cases enumerated.  
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
 
@@ -53,6 +53,6 @@ Every $k$-subset of a Sidon set is Sidon. Exchange the elements of $A$ with thos
 
 Not completed. The theorem has a complete elementary proof above but is **not claimed new**.
 
-## Cross-problem literature review (2026-10-28)
+## Related literature
 
 Golomb-ruler one-mark local searches are previously known; they often traverse invalid states and do not prove connectivity among Sidon-only states. This is **not a certification of novelty or of unresolved status**. Read the [full P001–P008 audit](../../literature-audits/2026-10-28-comprehensive-P001-P008.md) before citing this question in a mathematical publication.

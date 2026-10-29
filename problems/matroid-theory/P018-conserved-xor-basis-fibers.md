@@ -5,7 +5,7 @@
 > **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
 > **Verified/known progress:** Single-element moves cannot preserve XOR; two-exchange fibers are connected for all W at d=4 but can be disconnected at d=5.  
 > **Finite evidence:** All 32,768 available sets at d=4 checked, plus explicit ten-vector d=5 counterexample with components 4 and 2.  
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
 **Area:** matroid theory, algebraic combinatorics, random discrete structures  
@@ -86,7 +86,7 @@ The dimension-five obstruction makes the program materially different from a con
 - **Hörsch, Imolay, Mizutani, Oki, Schwarcz**, [*Problems on Group-labeled Matroid Bases* (2024)](https://arxiv.org/abs/2402.16259): precisely the general **group-label-sum constraint on matroid bases**, with algorithms and proximity results. The concept of constrained bases **is not original to this project**; their published questions do not evidently give the two-replacement fiber component classification for the special vector-as-label model.
 - [*Towards the Proximity Conjecture on Group-Labeled Matroids* (ICALP 2025)](https://doi.org/10.4230/LIPIcs.ICALP.2025.85): proximity of label-avoiding bases under exchanges; not automatically connectivity of *one fixed sum fiber* using only intermediate bases of the same sum.
 - **Lubiw and Pathak**, [*Reconfiguring Ordered Bases of a Matroid* (2016)](https://arxiv.org/abs/1612.00958): base exchange with **position labels**, a different labeling constraint.
-- [*Reconfiguration of basis pairs in regular matroids* (2026)](https://doi.org/10.1016/j.jctb.2025.10.009): White's conjecture, symmetric exchanges between **two bases**, and toric-ideal generators. Our states are **one basis with fixed vector XOR**, but this is a serious conceptual near-predecessor.
+- [*Reconfiguration of basis pairs in regular matroids* (2026)](https://doi.org/10.1016/j.jctb.2025.10.009): White's conjecture, symmetric exchanges between **two bases**, and toric-ideal generators. The states considered here are **one basis with fixed vector XOR**, but this is a serious conceptual near-predecessor.
 
 **Novelty classification:** exact constrained fiber question and exhibited d=5 obstruction appear distinct in the targeted sources, but may follow from algebraic statistics/toric ideals of binary matroids. No claim of newness or unresolved status without expert source-level audit.
 

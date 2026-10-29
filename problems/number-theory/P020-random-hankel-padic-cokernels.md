@@ -5,7 +5,7 @@
 > **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
 > **Verified/known progress:** Classical Hankel corank law; internally proved cyclic/two-generator probabilities and all-k elementary-abelian cokernel probabilities.  
 > **Finite evidence:** Exact modular group counts at p=2 (n≤4), p=3 (n≤3); kernel-product rank proved from Yiasemides (2024).  
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
 **Area:** algebraic probability, number theory, random matrices  
@@ -50,7 +50,7 @@ $$
 \quad(1\le k\le n).
 $$
 
-This follows from the classical count of rank-at-most-$r$ Hankel matrices over a finite field (for $r<n$), namely $p^{2r}$ matrices out of $p^{2n-1}$ possibilities. See Dwivedi and Grinberg (2022) for the classical count, independent earlier derivations, and refinements. **We do not claim this rank formula as an original result.**
+This follows from the classical count of rank-at-most-$r$ Hankel matrices over a finite field (for $r<n$), namely $p^{2r}$ matrices out of $p^{2n-1}$ possibilities. See Dwivedi and Grinberg (2022) for the classical count, independent earlier derivations, and refinements. **The rank formula is classical and not original to this catalogue.**
 
 In particular, for every $n$,
 

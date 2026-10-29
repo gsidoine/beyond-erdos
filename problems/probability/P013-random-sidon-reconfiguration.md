@@ -5,11 +5,10 @@
 > **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
 > **Verified/known progress:** Random Sidon decision phase behavior is known; feasible exchange components form a distinct proposed observable.  
 > **Finite evidence:** k=2 degenerate connectivity checked conceptually; no large-case claim.  
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
 **Fields:** additive combinatorics, random discrete structures, reconfiguration  
-**Proposed:** 2026-10-29  
 **Research status:** candidate, unproved, not certified novel.
 
 ## Model

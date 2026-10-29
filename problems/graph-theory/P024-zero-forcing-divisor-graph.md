@@ -5,7 +5,7 @@
 > **Formulation:** candidate. **Novelty:** not certified (targeted audit).  
 > **Verified/known progress:** The primes above N/2 are twin leaves, yielding Z(D_N) >= pi(N)-pi(N/2)-1.  
 > **Finite evidence:** Elementary rigorous lower bound; exact finite zero-forcing computations pending.  
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
 **Area:** spectral graph theory, integer arithmetic, graph propagation. **Status:** candidate.
@@ -43,6 +43,3 @@ In particular $Z(D_N)=\Omega(N/\log N)$. This lower bound does **not** rule out 
 
 Independently compute exact minimum forcing sets for $N\le20$ via exhaustive subset search and forcing closure. Test candidate asymptotic bounds and look for twin-vertex reductions based on common quotient patterns. Any upper bound should come with a valid chronology, not merely a set that dominates the graph.
 
-## Revision history
-
-- 2026-10-29: Created as prospective P024, exploratory.

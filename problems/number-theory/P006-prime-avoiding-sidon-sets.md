@@ -5,12 +5,11 @@
 > **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
 > **Verified/known progress:** Asymptotic lower constant at least 1/√2 and upper at most 1.  
 > **Finite evidence:** Small exact MILP optima through N=60.  
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
 
 **Area:** additive number theory, extremal combinatorics  
-**Date proposed:** 2026-10-28  
 **Status:** candidate, exact novelty and unresolved status **unverified**
 
 ## Definition
@@ -52,7 +51,7 @@ $$
 
 ## Certified small computations
 
-We formulated the maximum problem as a **mixed integer linear program**. Binary $x_a$ indicates $a\in A$. Prime differences forbid $x_a=x_b=1$. For every composite difference $d$, auxiliary $y_{a,a+d}$ must equal $1$ whenever both endpoints are selected, and the sum of these auxiliary variables is at most $1$. Translation invariance permits fixing $x_1=1$.
+The maximum problem can be formulated as a **mixed integer linear program**. Binary $x_a$ indicates $a\in A$. Prime differences forbid $x_a=x_b=1$. For every composite difference $d$, auxiliary $y_{a,a+d}$ must equal $1$ whenever both endpoints are selected, and the sum of these auxiliary variables is at most $1$. Translation invariance permits fixing $x_1=1$.
 
 All entries below were solved with status **optimal** (status 0, zero MIP gap); these are **finite values only**.
 
@@ -104,9 +103,9 @@ This connects Sidon/Golomb-ruler extremal theory to prime-difference-avoiding se
 3. Investigate modular constructions (Bose–Chowla, Singer, Ruzsa) under prime-gap exclusions.
 4. Audit additive-combinatorics literature for forbidden-difference Sidon families.
 
-## Cross-problem literature review (2026-10-28)
+## Related literature
 
 Classical Sidon extremal theory gives benchmarks; no direct prime-difference-free extremal asymptotic was located in the targeted audit. This is **not a certification of novelty or of unresolved status**. Read the [full P001–P008 audit](../../literature-audits/2026-10-28-comprehensive-P001-P008.md) before citing this question in a mathematical publication.
-## Discovery pass 4 follow-up (2026-10-28)
+## Additional literature comparison
 
-Further searches found no direct asymptotic formula under the names 'prime-free Golomb ruler', 'Sidon no prime differences' or 'composite Golomb-ruler distances'. This absence of a hit is **not** evidence of novelty. The current lower constant 1/sqrt(2) comes from an elementary dilation; the next substantive objective should be a genuinely stronger asymptotic bound. See the [dated detailed audit](../../literature-audits/2026-10-28-pass-4.md).
+Further searches found no direct asymptotic formula under the names 'prime-free Golomb ruler', 'Sidon no prime differences' or 'composite Golomb-ruler distances'. This absence of a hit is **not** evidence of novelty. The current lower constant 1/sqrt(2) comes from an elementary dilation; the next substantive objective should be a genuinely stronger asymptotic bound. See the [archived literature audit](../../literature-audits/2026-10-28-pass-4.md).

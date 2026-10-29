@@ -5,11 +5,10 @@
 > **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
 > **Verified/known progress:** Connects P005 matching switches to P008 arithmetic thinning; phase diagram not yet determined.  
 > **Finite evidence:** Frozen-edge obstruction identified; unique-matching and nonmonotonicity caveats.  
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
 **Fields:** probability, arithmetic graph theory, graph reconfiguration  
-**Proposed:** 2026-10-29  
 **Research status:** candidate, unproved, not certified novel.
 
 ## Model
@@ -51,7 +50,7 @@ A matching space with a **single** matching is trivially connected, so we condit
 - Pomerance, [*Coprime permutations* (2022)](https://arxiv.org/abs/2203.03085), and Sah–Sawhney, [*Enumerating coprime permutations* (2022)](https://doi.org/10.1112/mtk.12159), treat the underlying deterministic matching family.
 - Balachandran–Kush, [*The Normalized Matching Property in Random and Pseudorandom Bipartite Graphs*](https://doi.org/10.37236/9148), studies a different matching threshold for independent-edge random bipartite hosts.
 
-The operation and the arithmetic host graph are individually established. The **specific percolated switch-space phase diagram** was not found in our targeted source search, but may be implicit in general switching or random graph theory.
+The operation and the arithmetic host graph are individually established. The **specific percolated switch-space phase diagram** was not found in the cited targeted source search, but may be implicit in general switching or random graph theory.
 
 ## Proposed tests
 

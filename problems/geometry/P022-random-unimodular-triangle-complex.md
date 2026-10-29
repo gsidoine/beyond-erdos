@@ -5,7 +5,7 @@
 > **Formulation:** candidate. **Novelty:** not certified (targeted audit).  
 > **Verified/known progress:** At N=1 with all four vertices kept the complex is the tetrahedral boundary, with reduced H2 nonzero.  
 > **Finite evidence:** Exact elementary N=1 example only; finite Betti experiments pending.  
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
 **Area:** discrete geometry, random topology, arithmetic combinatorics. **Status:** candidate.
@@ -42,6 +42,3 @@ For $N=1$ with all four vertices retained, all four triples are unimodular: the 
 
 Generate every area-one triple on $V_N$ exactly for small $N$; compute reduced boundary ranks and link structure using integer determinant tests. Determine whether $p=1$ has a general homology theorem before inferring a random threshold. Compare first-face and first-cycle occurrences; do not extrapolate numerical Betti migration.
 
-## Revision history
-
-- 2026-10-29: Created as prospective P022; not certified novel/open.

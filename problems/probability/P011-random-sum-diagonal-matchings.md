@@ -5,11 +5,10 @@
 > **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
 > **Verified/known progress:** Random sum-graphs are known; matching and factor phase behavior not located; factor saturation not monotone.  
 > **Finite evidence:** Explicit three-by-three obstruction to monotonicity; no asymptotic claims.  
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
 **Field:** probabilistic combinatorics / additive graph theory  
-**Proposed:** 2026-10-29  
 **Research status:** candidate, unproved, not certified novel.
 
 ## Model and precise questions
@@ -38,7 +37,7 @@ For which sparsity regimes does this probability tend to 0 or 1? If necessary, c
 
 ## Structural reason this might matter
 
-A positive universality theorem would transfer matching and factor phenomena from Erdős–Rényi graphs to **strongly correlated additive graph ensembles**. A negative answer would isolate arithmetic cuts that standard independent-edge heuristics miss. The deterministic extremes connect P003 (prime-supported sums) and our **proved** interval-sum factor theorem.
+A positive universality theorem would transfer matching and factor phenomena from Erdős–Rényi graphs to **strongly correlated additive graph ensembles**. A negative answer would isolate arithmetic cuts that standard independent-edge heuristics miss. The deterministic extremes connect P003 (prime-supported sums) and the **proved** interval-sum factor theorem.
 
 The perfect matching event is monotone under adding sums. Factor saturation at the *current minimum degree* is not monotone: at $n=3$, allowed sums $S=\{1\}$ give $\delta=\lambda=0$; adding sum $3$ gives
 
@@ -53,7 +52,7 @@ where $\delta=1$ but $\lambda=0$. Adding sum $2$ recovers the interval $[1,3]$ a
 - Campos, Dahia and Marciano, [*On the independence number of sparser random Cayley graphs* (2024)](https://doi.org/10.1112/jlms.70041), work on random **Cayley sum graphs** over finite cyclic groups. The *randomize sum values* model is **not a new general idea**; their main observable is independence number rather than the exact bipartite factor question here.
 - [KolKom 2026, *On subgraph thresholds of random Cayley sum graphs*](https://kolkom26.zib.de/) further treats subgraph thresholds in a related cyclic model.
 - Balachandran and Kush, [*The Normalized Matching Property in Random and Pseudorandom Bipartite Graphs* (2021)](https://doi.org/10.37236/9148), studies independently sampled bipartite edges and a stronger matching property, not the same sum-diagonal dependence.
-- [Our proved consecutive-interval factor theorem](../../theorems/interval-sum-factor-saturation.md) is a deterministic positive boundary case, not the random result.
+- [The proved consecutive-interval factor theorem](../../theorems/interval-sum-factor-saturation.md) is a deterministic positive boundary case, not the random result.
 
 **Novelty level:** *apparent distinctness of this specific matching/factor question after a targeted search*. The underlying random sum graph model and generic matching questions are classical; comprehensive synonym/citation-chain review is outstanding.
 
