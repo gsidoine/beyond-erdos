@@ -1,10 +1,10 @@
 # P030 — Perfect matchings with prime sums and prime differences
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** Does a perfect matching exist for every even n≥8 in the graph of integer pairs whose sum and absolute difference are both prime?
-> **Formulation:** candidate. **Novelty:** not certified; prime sum/difference cycles have explicit earlier study.
-> **Verified/known progress:** Every odd n is impossible by parity; exact finite matchings exist for every even n in [8,400], while n=2,4,6 fail.
-> **Finite evidence:** Dependency-free exact bipartite matching enumeration/checker for even n≤400 and parity obstruction.
+> **Research question:** Does a perfect matching exist for every even n≥8 in the graph of integer pairs whose sum and absolute difference are both prime?  
+> **Formulation:** candidate. **Novelty:** not certified; prime sum/difference cycles have explicit earlier study.  
+> **Verified/known progress:** Every odd n is impossible by parity; exact finite matchings exist for every even n in [8,400], while n=2,4,6 fail.  
+> **Finite evidence:** Dependency-free exact bipartite matching checker for every even n≤400 and parity obstruction.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
