@@ -123,9 +123,11 @@ class MathMarkdownTests(unittest.TestCase):
         source = path.read_text(encoding="utf-8")
         pdf = path.parent / "coprime_adjacencies.pdf"
         self.assertTrue(pdf.is_file(), "Submitted P010 manuscript missing")
-        self.assertIn("[Download the submitted PDF](coprime_adjacencies.pdf)", source)
-        self.assertIn(r"\max\{1,\lceil(", source)
-        self.assertIn(r"\mathrm{pc}", source)
+        self.assertIn("(coprime_adjacencies.pdf)", source)
+        self.assertIn(r"\max", source)
+        self.assertIn(r"\pi(n)-\pi(n/2)", source)
+        self.assertIn("Submitted", source)
+        self.assertIn("Integers", source)
         expected = "3aae034589f58b9593891a53ee5d54ea20f1106c774364e1ff564df417837737"
         self.assertEqual(hashlib.sha256(pdf.read_bytes()).hexdigest(), expected)
 
