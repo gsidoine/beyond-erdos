@@ -51,3 +51,18 @@ jobs:
         run: python experiments/P020_elementary_cokernel_mod_p2.py
       - name: Verify P020 finite-field Hankel kernel-product corollary
         run: python experiments/P020_kernel_product_dimension.py
+
+      - name: Verify P026 prime-sum square-cycle GF2 generation
+        run: python experiments/P026_prime_sum_square_homology.py
+
+      - name: Verify P027 primitive-set exchange exact diameter
+        run: python experiments/P027_primitive_exchange_diameter.py
+
+      - name: Verify P028 divisor-complex Euler expectation
+        run: python experiments/P028_random_divisor_euler.py
+
+      - name: Verify P029 prime-sum permutation X-ray fibers
+        run: python experiments/P029_prime_sum_xray_fibers.py
+
+      - name: Verify P030 double-prime perfect matching witnesses
+        run: python experiments/P030_double_prime_matchings.py

@@ -36,7 +36,7 @@ The historical anchor is **Hörsch–Imolay–Mizutani–Oki–Schwarcz (2024), 
 
 ## P020: separate rank from full $p$-adic cokernel structure
 
-The **mod-$p$ Hankel corank formula** is known (Dwivedi–Grinberg 2022 and earlier). It gives $\Pr(\operatorname{corank}\ge k)=p^{-(2k-1)}$ and trivial cokernel probability $1-p^{-1}$, so the independent-entry Cohen–Lenstra distribution is **not** a valid limiting guess.
+The **mod-$p$ Hankel corank formula** is known (Dwivedi–Grinberg 2022 and earlier). It gives $\Pr(\mathrm{corank}\ge k)=p^{-(2k-1)}$ and trivial cokernel probability $1-p^{-1}$, so the independent-entry Cohen–Lenstra distribution is **not** a valid limiting guess.
 
 The genuine P020 question concerns **all invariant-factor exponents** in the Smith normal form and the **distribution over isomorphism classes of finite $p$-groups**; the rank law alone cannot recover this.
 

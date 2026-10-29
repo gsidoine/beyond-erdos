@@ -73,9 +73,9 @@ Both components contain valid full-rank bases with identical XOR sum $1$. **No e
 
 **Sharper exact finite conclusion (independently checked, 29 October 2026).** Although the two-exchange fiber has two components, exchanges replacing **at most three** vectors connect all six bases. In particular,
 
-$
+$$
 \{2,5,8,21,27\}\longrightarrow\{8,21,24,26,30\}
-$
+$$
 
 is a valid **three-vector** exchange across the components: the bases have XOR $1$ and share exactly the vectors $8$ and $21$. Hence the least exchange size connecting **this specific restricted fiber** is exactly $3$. This does not imply $t(5)=3$ universally over all $W$.
 
