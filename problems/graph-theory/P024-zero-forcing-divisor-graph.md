@@ -1,10 +1,11 @@
 # P024 — Zero forcing on the integer divisibility graph
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** What is the asymptotic zero-forcing number of the comparability graph of divisibility on [N]?
-> **Formulation:** candidate; classical zero-forcing process on an explicit arithmetic graph.
-> **Novelty:** unverified, targeted comparison 2026-10-29.
-> **Elementary bound:** at least \(\pi(N)-\pi(N/2)-1\) initially blue vertices are needed.
+> **Research question:** What is the asymptotic zero-forcing number of the divisibility comparability graph on integers 1,...,N?  
+> **Formulation:** candidate. **Novelty:** not certified (targeted audit).  
+> **Verified/known progress:** The primes above N/2 are twin leaves, yielding Z(D_N) >= pi(N)-pi(N/2)-1.  
+> **Finite evidence:** Elementary rigorous lower bound; exact finite zero-forcing computations pending.  
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
 <!-- /DOSSIER-SUMMARY -->
 
 **Area:** spectral graph theory, integer arithmetic, graph propagation. **Status:** candidate.
