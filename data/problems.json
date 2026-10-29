@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "last_reviewed": "2026-10-28",
+  "last_reviewed": "2026-10-29",
   "source": "Meta Erdős: independently proposed candidate questions; not posed by Erdős",
   "problems": [
     {
@@ -10,7 +10,7 @@
       "file": "problems/number-theory/P001-prime-spectrum.md",
       "question": "Does the maximum distinct-prime-sum deficit of a prime-sum perfect matching stay bounded?",
       "status": "candidate",
-      "novelty": "not certified",
+      "novelty": "apparent novelty (targeted audit)",
       "result": "Interior prime sums realized by a partial matching; completion is open in this study",
       "verification": "Exact small matching optimization",
       "priority": "watch",
@@ -32,7 +32,7 @@
       "file": "problems/graph-theory/P002-prime-matching-reconfiguration.md",
       "question": "Are all prime-sum perfect matchings joined by four-cycle switches?",
       "status": "candidate",
-      "novelty": "not certified",
+      "novelty": "apparent novelty (targeted audit)",
       "result": "One connected component through n=12 in exhaustive tests",
       "verification": "Enumerated 423,884 matchings at n=12 in initial exploration",
       "priority": "retain",
@@ -54,7 +54,7 @@
       "file": "problems/graph-theory/P003-prime-matching-packing.md",
       "question": "Is the maximum perfect-matching packing equal to the host graph's minimum degree?",
       "status": "candidate",
-      "novelty": "not certified",
+      "novelty": "apparent novelty (targeted audit)",
       "result": "Equivalent to a min-cut condition for an arithmetic bipartite factor",
       "verification": "Integral max flow tested to n=3,000 (finite only)",
       "priority": "focus",
@@ -76,7 +76,7 @@
       "file": "problems/number-theory/P004-sidon-exchange-connectivity.md",
       "question": "Are size-k Sidon sets connected by feasible one-mark exchanges below the square-root scale?",
       "status": "candidate",
-      "novelty": "not certified",
+      "novelty": "apparent novelty (targeted audit)",
       "result": "Elementary connectivity theorem for N > 2(2k-1)^3",
       "verification": "Small disconnected/connected cases enumerated",
       "priority": "retain",
@@ -98,7 +98,7 @@
       "file": "problems/graph-theory/P005-coprime-permutation-switches.md",
       "question": "Can all permutations satisfying gcd(i,σ(i))=1 be connected by valid two-position swaps?",
       "status": "candidate",
-      "novelty": "not certified",
+      "novelty": "apparent novelty (targeted audit)",
       "result": "No universal-row/column shortcut; arithmetic structure is essential",
       "verification": "3,459,600 states at n=14, one component",
       "priority": "focus",
@@ -124,7 +124,7 @@
       "file": "problems/number-theory/P006-prime-avoiding-sidon-sets.md",
       "question": "What is the asymptotic maximum size of a Sidon set whose positive differences avoid all primes?",
       "status": "candidate",
-      "novelty": "not certified",
+      "novelty": "apparent novelty (targeted audit)",
       "result": "Asymptotic lower constant at least 1/√2 and upper at most 1",
       "verification": "Small exact MILP optima through N=60",
       "priority": "retain",
@@ -146,7 +146,7 @@
       "file": "problems/graph-theory/P007-coprime-difference-spectrum.md",
       "question": "Can a coprime Hamiltonian path attain the parity upper bound for distinct adjacent differences?",
       "status": "reframe",
-      "novelty": "known subproblem",
+      "novelty": "known subproblem; extension unverified",
       "result": "Full graceful existence iff n≤5 is a published 2021 theorem; extremal extension unverified",
       "verification": "Exact finite MILP checks in selected sizes",
       "priority": "review",
@@ -168,7 +168,7 @@
       "file": "problems/probability/P008-coprime-percolation-critical-window.md",
       "question": "Can the critical connectivity center be approximated by a specified non-tautological arithmetic expansion?",
       "status": "needs specification",
-      "novelty": "not certified",
+      "novelty": "needs precise formulation",
       "result": "Internal threshold/Gumbel arguments require external proof and priority audit",
       "verification": "Finite degree-profile and center checks",
       "priority": "review",
@@ -194,7 +194,7 @@
       "file": "problems/number-theory/P009-two-prime-palette-pairings.md",
       "question": "Can 1,…,2n always be paired using at most two distinct prime sums?",
       "status": "candidate",
-      "novelty": "closely related",
+      "novelty": "strong prior-art overlap",
       "result": "One-color iff 2n+1 prime; two-color certificate from short prime difference",
       "verification": "Sieve certificates through n=1,000,000 (finite only)",
       "priority": "review",
@@ -216,7 +216,7 @@
       "file": "problems/graph-theory/P010-minimum-coprime-adjacencies.md",
       "question": "What is the exact minimum number of adjacent coprime pairs in a permutation of 1,…,n? (Resolved internally.)",
       "status": "proved internally",
-      "novelty": "priority not certified",
+      "novelty": "internal proof; priority unverified",
       "result": "Exact formula for n≥4: h(n)=π(n)−π(n/2)+max(1,ceil((π(n/2)−π(n/3))/2)); hence h(n)∼(7/12)n/log n",
       "verification": "Constructive proof with prime-factor paths; explicit witnesses checked n≤10,000",
       "priority": "external proof and novelty audit",
@@ -232,6 +232,72 @@
         {
           "name": "Rosser–Schoenfeld prime-counting inequality",
           "url": "https://oeis.org/A060208"
+        }
+      ]
+    },
+    {
+      "id": "P011",
+      "title": "Random sum-diagonal matching transitions",
+      "area": "probability",
+      "file": "problems/probability/P011-random-sum-diagonal-matchings.md",
+      "question": "In random sum-diagonal bipartite graphs, how do perfect matchings and min-degree factor saturation emerge?",
+      "status": "candidate",
+      "novelty": "apparent novelty (targeted audit)",
+      "result": "Random sum-graphs are known; matching and factor phase behavior not located; factor saturation not monotone",
+      "verification": "Explicit three-by-three obstruction to monotonicity; no asymptotic claims",
+      "priority": "structural discovery",
+      "sources": [
+        {
+          "name": "Campos–Dahia–Marciano (2024), random Cayley sum graphs",
+          "url": "https://doi.org/10.1112/jlms.70041"
+        },
+        {
+          "name": "Balachandran–Kush (2021), matching in random bipartite graphs",
+          "url": "https://doi.org/10.37236/9148"
+        }
+      ]
+    },
+    {
+      "id": "P012",
+      "title": "Coprime matching-space percolation",
+      "area": "probability",
+      "file": "problems/probability/P012-coprime-matching-space-percolation.md",
+      "question": "At what densities do the perfect matchings of a thinned coprime graph form one four-cycle reconfiguration component?",
+      "status": "candidate",
+      "novelty": "apparent novelty (targeted audit)",
+      "result": "Connects P005 matching switches to P008 arithmetic thinning; phase diagram not yet determined",
+      "verification": "Frozen-edge obstruction identified; unique-matching and nonmonotonicity caveats",
+      "priority": "structural discovery",
+      "sources": [
+        {
+          "name": "Dyer–Jerrum–Müller (2017), matching switches",
+          "url": "https://doi.org/10.1145/2822322"
+        },
+        {
+          "name": "Sah–Sawhney (2022), coprime permutations",
+          "url": "https://doi.org/10.1112/mtk.12159"
+        }
+      ]
+    },
+    {
+      "id": "P013",
+      "title": "Random-site Sidon exchange geometry",
+      "area": "probability",
+      "file": "problems/probability/P013-random-sidon-reconfiguration.md",
+      "question": "Can Sidon-set existence and feasible one-element-exchange connectivity have different transition regimes inside a random subset of [N]?",
+      "status": "candidate",
+      "novelty": "apparent novelty (targeted audit)",
+      "result": "Random Sidon decision phase behavior is known; feasible exchange components form a distinct proposed observable",
+      "verification": "k=2 degenerate connectivity checked conceptually; no large-case claim",
+      "priority": "structural discovery",
+      "sources": [
+        {
+          "name": "Luque–Torre–Lacasa (2013), random Sidon phase transitions",
+          "url": "https://doi.org/10.1103/PhysRevE.88.052119"
+        },
+        {
+          "name": "Dotú–Van Hentenryck (2005), Golomb ruler search",
+          "url": "https://cs.brown.edu/research/pubs/pdfs/2005/Dotu-2005-SHE.pdf"
         }
       ]
     }
