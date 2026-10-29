@@ -5,7 +5,7 @@
 > **Formulation:** candidate. **Novelty:** not certified (targeted audit).  
 > **Verified/known progress:** Precisely defined correlated graph-Laplacian cokernel; no limiting group law yet proved.  
 > **Finite evidence:** Model and connectivity-conditioning requirements specified; exact Smith-form experiments pending.  
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
 **Area:** random graphs, arithmetic groups, algebraic probability. **Status:** candidate (not certified novel or open).
@@ -39,6 +39,3 @@ The group is well-defined if the graph is connected; its cardinality equals the 
 
 Compute exact Smith forms at small primes $q$ for each label subset $S$; compare the $\ell$-rank and elementary-divisor probabilities to equal-size Erdős–Rényi graphs. Test the connectivity-conditioned distribution and the special prime $\ell=2$ separately. Do not claim a threshold for a nonmonotone group-type event.
 
-## Revision history
-
-- 2026-10-29: Created as prospective P021; historical status unverified.
