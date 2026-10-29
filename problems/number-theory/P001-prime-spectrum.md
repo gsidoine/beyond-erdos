@@ -15,38 +15,38 @@
 
 ## Definition
 
-Let \(M\) range over perfect matchings of \(\{1,\dots,2n\}\) for which every paired sum \(a+b\) is prime. Such matchings exist, for example by a Bertrand-postulate induction. Put
+Let $M$ range over perfect matchings of $\{1,\dots,2n\}$ for which every paired sum $a+b$ is prime. Such matchings exist, for example by a Bertrand-postulate induction. Put
 
-\[
+$$
 R(n)=\max_M |\{a+b:\{a,b\}\in M\}|,
 \qquad
 D(n)=\pi(4n-1)-1-R(n).
-\]
+$$
 
-Here \(\pi\) is the prime-counting function. The \(-1\) excludes the prime \(2\), which cannot be the sum of two *distinct* positive integers.
+Here $\pi$ is the prime-counting function. The $-1$ excludes the prime $2$, which cannot be the sum of two *distinct* positive integers.
 
 ## Main question
 
-**Is \(D(n)\) bounded as \(n\to\infty\)?**
+**Is $D(n)$ bounded as $n\to\infty$?**
 
-A weaker question is whether \(R(n)\sim\pi(4n)\).
+A weaker question is whether $R(n)\sim\pi(4n)$.
 
 ### Immediate obstruction
 
-The sum \(3\) requires \(\{1,2\}\). The sum \(5\) requires \(\{1,4\}\) or \(\{2,3\}\). Both sums cannot occur in one perfect matching. Thus \(D(n)\ge1\) for \(n\ge2\).
+The sum $3$ requires $\{1,2\}$. The sum $5$ requires $\{1,4\}$ or $\{2,3\}$. Both sums cannot occur in one perfect matching. Thus $D(n)\ge1$ for $n\ge2$.
 
 ## Rigorous partial result
 
-**Proposition.** For any fixed \(0<\varepsilon<2\) and all sufficiently large \(n\), one can select pairwise vertex-disjoint pairs from \(\{1,\ldots,2n\}\) whose sums realize **every prime** in
-\([\varepsilon n,(4-\varepsilon)n]\).
+**Proposition.** For any fixed $0<\varepsilon<2$ and all sufficiently large $n$, one can select pairwise vertex-disjoint pairs from $\{1,\ldots,2n\}$ whose sums realize **every prime** in
+$[\varepsilon n,(4-\varepsilon)n]$.
 
-**Proof.** Any odd prime \(p\) in this interval has at least \(\varepsilon n/2-O(1)\) representations \(p=a+b\) with \(1\le a<b\le 2n\), uniformly in \(p\). For a fixed \(p\), these representation pairs are vertex-disjoint. By the prime number theorem there are only \(O(n/\log n)=o(n)\) target primes. Choose a representation for each target prime greedily. Previously chosen pairs use \(o(n)\) vertices, and can therefore block only \(o(n)\) of the \(\Omega(n)\) candidate pairs for the next prime. A disjoint choice always remains. \(\square\)
+**Proof.** Any odd prime $p$ in this interval has at least $\varepsilon n/2-O(1)$ representations $p=a+b$ with $1\le a<b\le 2n$, uniformly in $p$. For a fixed $p$, these representation pairs are vertex-disjoint. By the prime number theorem there are only $O(n/\log n)=o(n)$ target primes. Choose a representation for each target prime greedily. Previously chosen pairs use $o(n)$ vertices, and can therefore block only $o(n)$ of the $\Omega(n)$ candidate pairs for the next prime. A disjoint choice always remains. $\square$
 
 **The gap:** A partial matching realizing many sums need not extend to a *prime-sum perfect matching*. The completion problem is substantial.
 
 ## Next attacks
 
-- Prove or refute a uniform bound on \(D(n)\).
+- Prove or refute a uniform bound on $D(n)$.
 - Search for small-prime incompatibilities and forced-pair obstructions.
 - Investigate absorption, matching completion, or rainbow-matching techniques.
 - Reproduce earlier exploratory optimization observations with published solver code before citing their numerical values.
