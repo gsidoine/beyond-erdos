@@ -36,7 +36,7 @@ For $n\ge4$, the established formula in the manuscript is
 
 $$
 h(n)=\pi(n)-\pi(n/2)+
-\max\left\{1,\left\lceil\frac{\pi(n/2)-\pi(n/3)}{2}\right\rceil\right\}.
+\max\{1,\lceil(\pi(n/2)-\pi(n/3))/2\rceil\}.
 $$
 
 In particular, $h(n)\sim 7n/(12\log n)$. This is a **resolved entry**, not one of the currently open candidates. Any claim of historical originality remains subject to specialist comparison.
