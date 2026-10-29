@@ -1,12 +1,12 @@
 # Meta Erdős
 
-**An independent notebook of fifteen research entries in number theory, graph theory and probability, inspired by the problem-posing tradition of Paul Erdős.**
+**An independent notebook of sixteen research entries in number theory, graph theory and probability, inspired by the problem-posing tradition of Paul Erdős.**
 
 **Important:** These are **not** problems claimed to have been posed by Erdős, not part of [erdosproblems.com](https://www.erdosproblems.com/), and not certified to be new or unresolved. Our collection is independent of [teorth/erdosproblems](https://github.com/teorth/erdosproblems). We draw inspiration from that repository's clear, data-driven organization—not its problem content.
 
 **Explore:** [Problem catalogue below](#problem-catalogue) · [Interactive searchable browser](docs/index.html) · [Research audits](#evidence-and-prior-art) · [How to contribute](CONTRIBUTING.md)
 
-> **Research strategy (29 October 2026):** P001–P010 are consolidated; P011–P015 inaugurate a **problem-discovery phase**. The goal is to formulate, challenge and source-audit structurally consequential questions **before** attempting general proofs.
+> **Research strategy (29 October 2026):** P001–P010 are consolidated; P011–P016 inaugurate a **problem-discovery phase**. The goal is to formulate, challenge and source-audit structurally consequential questions **before** attempting general proofs.
 
 ## Problem catalogue
 
@@ -30,6 +30,7 @@ Every problem has a permanent identifier, its own self-contained statement, evid
 | [P013](problems/probability/P013-random-sidon-reconfiguration.md) | Random-site Sidon exchange geometry | probability | candidate | apparent novelty (targeted audit) |
 | [P014](problems/topology/P014-random-cayley-sum-flag-homology.md) | Homology of random Cayley sum flag complexes | probabilistic topology | candidate | apparent novelty (targeted audit) |
 | [P015](problems/geometry/P015-odd-area-lattice-triangulations.md) | Odd-area lattice triangulation flip connectivity | discrete geometry | candidate | apparent novelty (targeted audit) |
+| [P016](problems/topology/P016-sidon-complex-homology.md) | Topology of the Sidon simplicial complex | topological combinatorics | candidate | apparent novelty (targeted audit) |
 <!-- CATALOG:END -->
 
 For precise definitions, follow each ID. To filter by subject, status or title in a browser, open [the searchable catalogue](docs/index.html). If GitHub Pages is enabled for the repository's `docs/` folder, the same page can be published as a standalone website.
@@ -78,6 +79,10 @@ Read the [29 October novelty and new-directions audit](literature-audits/2026-10
 
 - **P010:** [Publication significance and priority audit](audits/2026-10-29-P010-publishability-priority-review.md) — exact theorem appears suitable for a short paper **if novel**, but no human referee or definitive priority certification yet.
 - **P015:** [Odd-area convex lattice triangulations](problems/geometry/P015-odd-area-lattice-triangulations.md) — geometric parity becomes four fixed vertex colors; ask if all valid triangulations connect by valid diagonal flips. [Research audit](literature-audits/2026-10-29-P015-geometry-and-P010-priority.md).
+
+## New topological research question
+
+- [P016 — Topology of the Sidon simplicial complex](problems/topology/P016-sidon-complex-homology.md) asks whether the reduced homology of arithmetic constraint complexes eventually vanishes in each fixed dimension. [First-pass originality audit](literature-audits/2026-10-29-P016-sidon-complex-topology.md). Exact finite Betti calculations are not an asymptotic proof.
 
 ## Evidence and prior art
 
