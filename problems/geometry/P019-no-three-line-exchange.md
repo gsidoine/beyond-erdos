@@ -52,7 +52,7 @@ Exhaustive finite enumeration gives the following results (distinct **labeled**,
 | 4 | 11 | 7 | 4 |
 | 5 | 32 | 12 | 3 |
 | 6 | 50 | 46 | 5 |
-| 7 | 132 | 93 | 6 |
+| 7 | 132 | 92 | 6 |
 
 These finite values show that the naive conjecture **“two switches connect all optimal sets” is already false at $n=4$**. They do **not** show that $\tau(n)$ tends to infinity.
 
