@@ -10,7 +10,7 @@
 
 ## First collection: consolidation decisions
 
-The [29 October 2026 portfolio-wide audit](audits/2026-10-29-P001-P020-first-collection-consolidation.md) reviews **all twenty IDs** for well-posedness, closest prior art, structural significance, evidence quality and potential overlap. It gives a provisional shortlist of **P003, P005, P014, P016, P017, P018 and P020**, with **P010 on a separate theorem/publication track**. These are **editorial priorities, not certified novel/open problems**.
+The [29 October 2026 portfolio-wide audit](audits/2026-10-29-P001-P020-first-collection-consolidation.md) and the [second-pass source-level comparison, including the P010 manuscript snapshot](audits/2026-10-29-P015-P016-P018-P020-source-comparison-and-P010-snapshot.md) reviews **all twenty IDs** for well-posedness, closest prior art, structural significance, evidence quality and potential overlap. It gives a provisional shortlist of **P003, P005, P014, P016, P017, P018 and P020**, with **P010 on a separate theorem/publication track**. These are **editorial priorities, not certified novel/open problems**.
 
 Key restrictions: **P007** contains a previously known prime-graceful special case, **P008** still needs a precise non-tautological formulation, **P009** closely overlaps a classical prime-difference certificate, and **P010** is internally solved. The collection remains frozen at P001–P020 pending deeper referee and priority checks.
 
