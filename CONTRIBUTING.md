@@ -27,3 +27,17 @@ Follow [PROBLEM_TEMPLATE.md](PROBLEM_TEMPLATE.md), and ensure links remain valid
 ## Pull requests
 
 Prefer one conceptual change per PR: a corrected proof, a counterexample, an improved bound, or an audit. Link directly to the relevant problem ID, provide expected versus observed finite outputs, and list remaining mathematical objections. No automated pass makes a paper peer-reviewed or novel.
+
+## Mathematical Markdown rendering
+
+GitHub repository Markdown supports MathJax when you use **single dollars** for inline expressions (`$x^2$`) and **double dollars** for centered display equations, with blank lines around the display block:
+
+```markdown
+Let $\\gamma$ be the Euler--Mascheroni constant.
+
+$$
+\\mu_n(p)=\\sum_{v=1}^n(1-p)^{d_n(v)}.
+$$
+```
+
+Do not use the old `\\(...\\)` or `\\[...\\]` delimiters; GitHub may show them as ordinary text. Never transform LaTeX inside code fences. The `tests/test_math_markdown.py` regression checks the delimiters in every Markdown file. Official reference: [GitHub, Writing mathematical expressions](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions).
