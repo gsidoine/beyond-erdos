@@ -34,3 +34,9 @@ jobs:
 
       - name: Verify P016 exact Sidon-complex reduced Betti numbers
         run: python experiments/P016_sidon_complex_betti.py --max-n 12
+
+      - name: Verify P017 exact divisor-chain DP and finite samples
+        run: python experiments/P017_random_divisor_chains.py --max-power 10 --samples 5
+
+      - name: Verify P018 all dimension-four restrictions and dimension-five counterexample
+        run: python experiments/P018_conserved_xor_bases.py
