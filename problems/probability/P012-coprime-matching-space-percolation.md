@@ -23,9 +23,11 @@ The original P005 is the deterministic endpoint $p=1$.
 ## Main structural question
 
 Study the probability
+
 $$
 \Pr\!\left(\mathcal F_n(p)\text{ is connected}\ \middle|\ |\mathcal M_n(p)|\ge2\right)
 $$
+
 as $n\to\infty$, and determine the **separation of scales** between (i) existence of perfect matchings, (ii) existence of multiple perfect matchings, and (iii) four-cycle connectivity of **all** perfect matchings.
 
 One possible outcome is a phase diagram with a substantial regime where perfect matchings exist in abundance but their switch space is fragmented. Identify arithmetic causes for such fragmentation and compare with $G(n,n,p)$ and other deterministic host graph families.
