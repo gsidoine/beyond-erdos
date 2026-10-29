@@ -71,7 +71,17 @@ $$
 
 Both components contain valid full-rank bases with identical XOR sum $1$. **No edge joins the two components**, because no pair of bases from different components shares three vectors. This is a genuine negative result: *two-element conservative exchange is not universally sufficient*.
 
+**Sharper exact finite conclusion (independently checked, 29 October 2026).** Although the two-exchange fiber has two components, exchanges replacing **at most three** vectors connect all six bases. In particular,
+
+$
+\{2,5,8,21,27\}\longrightarrow\{8,21,24,26,30\}
+$
+
+is a valid **three-vector** exchange across the components: the bases have XOR $1$ and share exactly the vectors $8$ and $21$. Hence the least exchange size connecting **this specific restricted fiber** is exactly $3$. This does not imply $t(5)=3$ universally over all $W$.
+
 These facts were obtained independently before writing the reproducer, which is [`experiments/P018_conserved_xor_bases.py`](../../experiments/P018_conserved_xor_bases.py).
+
+See the [second-pass source/obstruction audit](../../audits/2026-10-29-P008-P015-P018-P020-source-obstruction-pass.md) for the independent check and caveats.
 
 ## Structural significance
 
