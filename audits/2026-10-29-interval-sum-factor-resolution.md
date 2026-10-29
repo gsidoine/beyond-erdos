@@ -38,6 +38,7 @@ A first, independently coded factor constructor checked **every** \(1\le k\le n\
 
 **This is not certified original.** Consecutive-one/convex bipartite graph matchings, bounded-band Toeplitz matrices and \(k\)-factor theorems are mature subjects. Related source checks:
 
+- [Fulkerson (1964), *The Maximum Number of Disjoint Permutations Contained in a Matrix of Zeros and Ones*](https://doi.org/10.4153/CJM-1964-069-0): a highly relevant earlier treatment of **exactly the disjoint permutation-matrix packing objective**, in arbitrary supports; our construction may be a known easy special case.
 - [Liu (2008), *Bipartite Toughness and k-Factors in Bipartite Graphs*](https://doi.org/10.1155/2008/597408): gives the generic necessary/sufficient min-cut characterization.
 - [A linear-time maximum-matching algorithm for convex bipartite graphs (1996)](https://doi.org/10.1016/0898-1221(96)00079-X): matching algorithms for a broad host class.
 - [Bipartite finite Toeplitz graphs (2013)](https://doi.org/10.1016/j.dam.2013.05.020): structural results for Toeplitz-related graphs.
