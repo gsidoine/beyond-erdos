@@ -12,7 +12,7 @@
 
 ## Definition and question
 
-For \(N\ge1\), let \(V_N=\{0,\ldots,N\}^2\subset\mathbb Z^2\). Independently keep each lattice point with probability \(p_N\). Let \(U_N(p_N)\) be the *two-dimensional simplicial complex* whose maximal two-faces are the triples of retained distinct vertices \(\{a,b,c\}\) satisfying
+For $N\ge1$, let $V_N=\{0,\ldots,N\}^2\subset\mathbb Z^2$. Independently keep each lattice point with probability $p_N$. Let $U_N(p_N)$ be the *two-dimensional simplicial complex* whose maximal two-faces are the triples of retained distinct vertices $\{a,b,c\}$ satisfying
 
 $$
 |\det(b-a,c-a)|=1.
@@ -20,15 +20,15 @@ $$
 
 Include each edge and vertex of such a triangle, and every remaining retained vertex as a singleton; **do not** add triangles of larger area or fill higher cliques.
 
-For fixed \(k=0,1,2\), determine the asymptotic regimes of \(\Pr(\widetilde H_k(U_N(p_N);\mathbb F_2)\ne0)\), especially at \(p_N=N^{-\alpha}\) and at fixed density \(p_N=p\). More strongly, is there a natural normalization under which \(\beta_1\) satisfies a law of large numbers?
+For fixed $k=0,1,2$, determine the asymptotic regimes of $\Pr(\widetilde H_k(U_N(p_N);\mathbb F_2)\ne0)$, especially at $p_N=N^{-\alpha}$ and at fixed density $p_N=p$. More strongly, is there a natural normalization under which $\beta_1$ satisfies a law of large numbers?
 
 No monotonicity of nonzero homology is assumed: adding vertices can both create and fill cycles.
 
 ## A rigorous basic distinction
 
-A lattice triangle has normalized area one precisely if its edge-difference vectors are a basis of \(\mathbb Z^2\). Thus the two-faces encode the unimodular bases of the rank-two integral lattice, rather than independently chosen triangular faces. The number of all retained vertices is \(\mathrm{Bin}((N+1)^2,p_N)\), but this does not control nontrivial homology because long primitive segments can participate in unimodular triangles.
+A lattice triangle has normalized area one precisely if its edge-difference vectors are a basis of $\mathbb Z^2$. Thus the two-faces encode the unimodular bases of the rank-two integral lattice, rather than independently chosen triangular faces. The number of all retained vertices is $\mathrm{Bin}((N+1)^2,p_N)$, but this does not control nontrivial homology because long primitive segments can participate in unimodular triangles.
 
-For \(N=1\) with all four vertices retained, all four triples are unimodular: the resulting complex is the boundary of a tetrahedron, so \(\widetilde H_1=0\) and \(\widetilde H_2\cong\mathbb F_2\). This serves as a simple exact topological sanity check.
+For $N=1$ with all four vertices retained, all four triples are unimodular: the resulting complex is the boundary of a tetrahedron, so $\widetilde H_1=0$ and $\widetilde H_2\cong\mathbb F_2$. This serves as a simple exact topological sanity check.
 
 ## Nearest primary literature
 
@@ -40,7 +40,7 @@ For \(N=1\) with all four vertices retained, all four triples are unimodular: th
 
 ## Adversarial next step
 
-Generate every area-one triple on \(V_N\) exactly for small \(N\); compute reduced boundary ranks and link structure using integer determinant tests. Determine whether \(p=1\) has a general homology theorem before inferring a random threshold. Compare first-face and first-cycle occurrences; do not extrapolate numerical Betti migration.
+Generate every area-one triple on $V_N$ exactly for small $N$; compute reduced boundary ranks and link structure using integer determinant tests. Determine whether $p=1$ has a general homology theorem before inferring a random threshold. Compare first-face and first-cycle occurrences; do not extrapolate numerical Betti migration.
 
 ## Revision history
 
