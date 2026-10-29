@@ -80,3 +80,24 @@ A specialist's full bibliography audit is still required before labels such as *
 A [2026 PNAS paper by Alexeev and Mixon](https://doi.org/10.1073/pnas.2531760123) reports finding that Marshall Hall, Jr. had published a counterexample decades before a supposedly longstanding open Erdős question was posed. This is a concrete reminder that even historical *open-problem status* can be misleading. Meta Erdős therefore uses **apparent novelty — targeted audit**, not "new/open certified", for unresolved entries without external bibliography review.
 
 **Decision:** do not resume trying to prove all 13 entries. Focus the next passes on generating, filtering and clearly stating mathematically consequential problems. P010 and the interval-sum factor lemma remain preserved as internally proved results with external priority still to be checked.
+
+
+## Additional candidate P014 — Random Cayley-sum flag-complex homology
+
+**Added 29 October 2026.** Instead of independent graph edges, retain each group **sum label** independently and take the clique complex of the resulting random Cayley sum graph on an odd cyclic prime group. Determine whether the homology-vanishing exponents agree with independent-edge random flag complexes.
+
+**Nearest mathematics:**
+- [Kahle (2009)](https://doi.org/10.1016/j.disc.2008.02.037): homology phase regimes of Erdős–Rényi flag complexes.
+- [Newman (2024)](https://doi.org/10.1112/jlms.12872): refined one-sided sharp topological thresholds.
+- [Conlon–Fox–Pham–Yepremyan (2024/25)](https://arxiv.org/abs/2412.21194): repeated group-derived sum colors change clique combinatorics; the Cayley-sum graph model is *not new*.
+- [Simplicial complexes defined on groups (2025)](https://doi.org/10.1515/math-2025-0171): further general background for group-related homological structures. It does not directly settle the proposed random sum-flag homology exponents in the material located.
+
+**Mathematical screening:** the triangle count has mean $\binom q3p^3$ as in Erdős–Rényi, but the four-clique count has exact mean
+
+$$
+\binom q4p^6+\frac{q(q-1)(q-3)}8(p^5-p^6).
+$$
+
+The correction comes from additive parallelograms; it was independently derived and exhaustively verified at small odd orders. This establishes nontrivial correlated local structure, but **does not settle or predict the homology exponents**. A targeted search did not reveal the exact homology-window question. Its genuine novelty remains unresolved and it should not be described as an entirely new random graph model.
+
+See [P014](../problems/topology/P014-random-cayley-sum-flag-homology.md) for the precise question, proof of the local motif identity, and limitations.
