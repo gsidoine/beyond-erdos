@@ -5,11 +5,10 @@
 > **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
 > **Verified/known progress:** Exact triangle expectation matches Erdős–Rényi; four-clique expectation has an additive-parallelogram correction.  
 > **Finite evidence:** Exact enumeration of K4 motif moments for odd cyclic orders 5, 7, 9.  
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
 **Area:** probabilistic topology, additive combinatorics, random graph theory  
-**Proposed:** 2026-10-29  
 **Status:** exploratory candidate; mathematical novelty and unresolved status **not certified**.
 
 ## Model and precise question
@@ -24,7 +23,7 @@ $$
 
 **Main question.** Does the sequence of homology-emergence and homology-vanishing power-law exponents agree with the Erdős–Rényi flag-complex model $X(G(q,p))$, or can additive dependence change the exponents or the shape of the transition windows?
 
-A second question asks how these thresholds change when the ambient groups have substantial $2$-torsion. We restrict the main question to odd primes to make additive coincidences transparent.
+A second question asks how these thresholds change when the ambient groups have substantial $2$-torsion. The main question is restricted to odd primes to make additive coincidences transparent.
 
 **No assertion of coincident thresholds is made.** Unlike individual edges in an Erdős–Rényi graph, all edges sharing a sum label are perfectly correlated.
 
