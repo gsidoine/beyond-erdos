@@ -29,7 +29,7 @@ Let $\mathcal C_n$ be the graph of coprime permutations and these switches. Equi
 
 **Is $\mathcal C_n$ connected for every $n\ge1$?**
 
-Stronger: does $\operatorname{diam}(\mathcal C_n)$ grow at most polynomially in $n$? Can a canonical coprime permutation be reached by a monotone local reduction?
+Stronger: does $\mathrm{diam}(\mathcal C_n)$ grow at most polynomially in $n$? Can a canonical coprime permutation be reached by a monotone local reduction?
 
 ## Finite verification
 

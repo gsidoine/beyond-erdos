@@ -24,9 +24,11 @@
 **P005.** The primary Pomerance and Sah–Sawhney papers principally bound/count coprime permutations; they do not provide a theorem connecting every such state by permitted transpositions. The Dyer–Jerrum–Müller theory explicitly treats switch-chain ergodicity for classes of bipartite hosts; its generic sufficient classes cannot simply be applied without verifying the gcd-one host's structural properties. A proof would be a *specific arithmetic reconfiguration theorem*, not a new general switch formalism. Next gate: establish a canonical reduction or exhibit a high-n obstruction; independently verify whether the host belongs to a stronger known tractable class.
 
 **P017.** Fixed-p Bernoulli thinning of [N] gives a natural one-parameter limit question:
-\[
+
+$$
 L_N(p)/\log_2 N \xrightarrow{\mathbb P}c(p)?
-\]
+$$
+
 The known easy sandwich p≤liminf and limsup≤1 does not supply existence. Random Boolean-lattice chains are analogous but do not identify this weighted, multiplicatively truncated poset. Next gate: try renormalization or independent multi-scale inequalities with carefully handled boundary effects; check random number-theoretic divisibility-order literature beyond Boolean-lattice keyword searches.
 
 **P018.** ICALP 2024 defines general abelian group labels and studies existence/avoidance/proximity; the exact **zero-forbidden versus fixed-target** distinction is critical. ICALP 2025 proximity bounds do not yield a chain of bases all with the same prescribed sum. The d=5 example of two components under 2-replacement is explicitly exhibited in [P018](../problems/matroid-theory/P018-conserved-xor-basis-fibers.md); it disproves universal two-exchange connectivity. Next gate: characterize minimal connecting move size t(d), and test equivalence with fiber graphs/Markov bases in algebraic statistics before asserting novelty.
@@ -36,13 +38,17 @@ The known easy sandwich p≤liminf and limsup≤1 does not supply existence. Ran
 ### New elementary consequence for P016 (proof, not priority claim)
 
 **Proposition (factor-two null persistence).** Let K_N be the complex of Sidon subsets of [N], with pairwise distinct positive differences. For every M≥1 and every homological dimension k≥0, the inclusion
-\[
+
+$$
 K_M\hookrightarrow K_{2M}
-\]
+$$
+
 induces the **zero map**
-\[
+
+$$
 \widetilde H_k(K_M;R)\longrightarrow\widetilde H_k(K_{2M};R)
-\]
+$$
+
 for any coefficient ring R.
 
 **Proof.** If A⊆[M] is Sidon, all its old positive differences are at most M−1. Every new difference introduced by adjoining x=2M is 2M−a≥M for a∈A; these new differences are mutually distinct and cannot equal an old difference. Hence A∪{2M} is Sidon. Therefore the entire image of K_M lies in the closed star of the vertex 2M in K_{2M}, which is a cone. The inclusion factors through this contractible subcomplex, so its induced map on reduced homology is zero. □

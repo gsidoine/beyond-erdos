@@ -5,15 +5,15 @@
 **Reported submission:** *Integers*, 29 October 2026.  
 **Version:** supplied two-page final submission PDF, **not** an earlier pre-submission draft.
 
-**Canonical PDF path intended for this repository:**
+**Canonical PDF (exact submitted version):**
 
-\`manuscripts/P010/coprime_adjacencies_integers_submitted_2026-10-29.pdf\`
+[Download the submitted PDF](coprime_adjacencies.pdf) (`manuscripts/P010/coprime_adjacencies.pdf`)
 
-**Status:** The exact binary is **not yet checked into this GitHub branch**. It is preserved in an external transfer ZIP supplied alongside the PR and should be added through GitHub's **Add file → Upload files** action. The connector currently used for this PR cannot read the uploaded sandbox PDF as binary bytes for a Git blob. Do not interpret this README as confirmation of a file that is not there yet.
+**Status:** The original submitted binary **is present on `main`**, and its Git blob SHA-1 (`1555806c0929164edbcf0a558513b5c23d6ab76e`) exactly matches a `git hash-object` of the author's submitted PDF. Its 214,297-byte size also matches. This is a byte-for-byte integrity check, not a claim of mathematical referee acceptance.
 
 **SHA-256 (exact original bytes):**
 
-\`3aae034589f58b9593891a53ee5d54ea20f1106c774364e1ff564df417837737\`
+`3aae034589f58b9593891a53ee5d54ea20f1106c774364e1ff564df417837737`
 
 **Number of PDF pages:** 2. The PDF was visually rendered and its complete text inspected.
 
@@ -23,12 +23,12 @@ For each $n\ge4$, the minimum number of gcd-one adjacent pairs across all permut
 
 $$
 h(n)=\pi(n)-\pi(n/2)+
-\max\left\{1,\left\lceil\frac{\pi(n/2)-\pi(n/3)}2\right\rceil\right\},
+\max\{1,\lceil(\pi(n/2)-\pi(n/3))/2\rceil\},
 $$
 
 with $h(n)\sim 7n/(12\log n)$.
 
-The manuscript proves $h(n)=\operatorname{pc}(H_n)-1$ for the non-coprime graph $H_n$, gives the lower bound using isolated vertices and prime leaves, and constructs an optimal path cover using classes by largest prime factor. It includes reference entries [1]–[8], a 2020 Mathematics Subject Classification, and an AI-use declaration stating ChatGPT assistance with preliminary exploration, proof construction, verification code, early drafts, mathematical review, grammar and literature checking.
+The manuscript proves $h(n)=\mathrm{pc}(H_n)-1$ for the non-coprime graph $H_n$, gives the lower bound using isolated vertices and prime leaves, and constructs an optimal path cover using classes by largest prime factor. It includes reference entries [1]–[8], a 2020 Mathematics Subject Classification, and an AI-use declaration stating ChatGPT assistance with preliminary exploration, proof construction, verification code, early drafts, mathematical review, grammar and literature checking.
 
 The manuscript has **already been submitted** and must not be silently changed in the repository; future proof, priority, or copyediting amendments should receive their own version labels.
 
@@ -39,12 +39,14 @@ The manuscript has **already been submitted** and must not be silently changed i
 - [P010 publishability and priority audit](../../audits/2026-10-29-P010-publishability-priority-review.md)
 - [Current literature status](../../audits/2026-10-29-P001-P025-literature-source-gate.md)
 
-## Post-upload integrity check
+## Binary integrity
 
-Once the exact binary has been uploaded at the path above, verify locally:
+The repository PDF is the original author-submitted document, not a recreated PDF. To check the Git object against a local copy:
 
-\`\`\`sh
-sha256sum manuscripts/P010/coprime_adjacencies_integers_submitted_2026-10-29.pdf
-\`\`\`
+```sh
+git hash-object manuscripts/P010/coprime_adjacencies.pdf
+sha256sum manuscripts/P010/coprime_adjacencies.pdf
 
-The result must match the SHA-256 above. Only then should the repository claim to host the submitted PDF itself.
+```
+
+The expected Git blob SHA-1 is `1555806c0929164edbcf0a558513b5c23d6ab76e` and the expected file SHA-256 is `3aae034589f58b9593891a53ee5d54ea20f1106c774364e1ff564df417837737`.

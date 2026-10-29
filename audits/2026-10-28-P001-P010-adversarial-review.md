@@ -47,7 +47,7 @@ $$
 e(X,V\setminus Y)\ge k(|X|-|Y|).
 $$
 
-Integral max-flow with capacity $k$ from source to each odd vertex, capacity 1 along each prime-sum edge, and capacity $k$ from each even vertex to sink certifies whether $k=\delta$ is possible. The largest independently checked case n=3000 has **2,087,452 prime-sum edges**, $\delta=648$, and maximum flow **1,944,000 = 3000\cdot648$**. This is an exact computational certificate of feasibility at that finite n, not an infinite proof. An explicit violating cut would refute the conjecture.
+Integral max-flow with capacity $k$ from source to each odd vertex, capacity 1 along each prime-sum edge, and capacity $k$ from each even vertex to sink certifies whether $k=\delta$ is possible. The largest independently checked case n=3000 has **2,087,452 prime-sum edges**, $\delta=648$, and maximum flow **1,944,000** ($3000\cdot648$). This is an exact computational certificate of feasibility at that finite n, not an infinite proof. An explicit violating cut would refute the conjecture.
 
 ### P004 — Sparse connectivity proof and dense counterexamples
 

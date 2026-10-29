@@ -12,11 +12,11 @@
 
 ## Definition
 
-For $T\ge1$, let $L_N(T)$ be the graph on $[N]$ with distinct $a,b$ adjacent exactly when $\operatorname{lcm}(a,b)\le T$. Define
+For $T\ge1$, let $L_N(T)$ be the graph on $[N]$ with distinct $a,b$ adjacent exactly when $\mathrm{lcm}(a,b)\le T$. Define
 
 $$
 \Lambda(N)=\min_{\text{cyclic permutations }(a_1,\ldots,a_N)}
-\ \max_{1\le i\le N}\operatorname{lcm}(a_i,a_{i+1}),
+\ \max_{1\le i\le N}\mathrm{lcm}(a_i,a_{i+1}),
 \qquad a_{N+1}=a_1.
 $$
 
@@ -30,7 +30,7 @@ $$
 
 Let $P_N$ be the primes in $(N/2,N]$, with $r=|P_N|=\pi(N)-\pi(N/2)$. Suppose a Hamiltonian cycle uses only edges of lcm at most $tN$, with $t<N/4$. No two distinct vertices in $P_N$ can be adjacent because their lcm is their product $>N^2/4>tN$.
 
-For any $q\in P_N$ and neighbor $m\ne q$, $m$ cannot be a multiple of $q$ within $[N]$, hence $\operatorname{lcm}(q,m)=qm$ and $m\le tN/q<2t$. Therefore all $2r$ cycle edges incident with $P_N$ must meet the fewer than $2t$ vertices $m<2t$. Each such vertex has only two cycle edges, so $2r\le 4t$ and $t\ge r/2$.
+For any $q\in P_N$ and neighbor $m\ne q$, $m$ cannot be a multiple of $q$ within $[N]$, hence $\mathrm{lcm}(q,m)=qm$ and $m\le tN/q<2t$. Therefore all $2r$ cycle edges incident with $P_N$ must meet the fewer than $2t$ vertices $m<2t$. Each such vertex has only two cycle edges, so $2r\le 4t$ and $t\ge r/2$.
 
 If instead $t\ge N/4$, that bound is even stronger asymptotically. By the prime number theorem $r\sim N/(2\log N)$, so in all cases
 
@@ -38,7 +38,7 @@ $$
 \boxed{t_N\ge(1+o(1))\frac{N}{4\log N}.}
 $$
 
-The trivial upper bound is $t_N\le N$, since $\operatorname{lcm}(a,b)\le ab\le N^2$. This is an *elementary rederivation* of the lower scale of the 1983 path theorem, **not a new lower bound**. The 1983 theorem gives the same first-order value for the path optimum; the remaining question is the cost of closing the cycle.
+The trivial upper bound is $t_N\le N$, since $\mathrm{lcm}(a,b)\le ab\le N^2$. This is an *elementary rederivation* of the lower scale of the 1983 path theorem, **not a new lower bound**. The 1983 theorem gives the same first-order value for the path optimum; the remaining question is the cost of closing the cycle.
 
 ## Prior art and precise distinction
 

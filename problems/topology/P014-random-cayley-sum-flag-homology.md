@@ -62,17 +62,17 @@ For example, at $q=7,p=1/2$, the formula gives $\mathbb E K_7=7/8$, whereas for 
 
 The excess expected number of four-cliques, relative to the Erdős–Rényi baseline, has **relative size**
 
-$
+$$
 \frac{\mathbb E K_q-\binom q4p^6}{\binom q4p^6}
 =\frac{3(1-p)}{(q-2)p}
 \qquad(q\ge5,\ p>0).
-$
+$$
 
 Indeed,
 
-$
+$$
 \frac{q(q-1)(q-3)/8}{\binom q4}=\frac{3}{q-2}.
-$
+$$
 
 Consequently the relative excess is **$o(1)$ whenever $qp\to\infty$**. The exact four-clique correction is real, but **does not by itself demonstrate a different leading threshold**, and at some natural topological scales the first-order four-clique expectations coincide. The open problem remains whether *higher-order correlations*, local-link structure or torsion effects produce genuinely different homological behavior. This observation is part of the adversarial case against promoting a premature topological conjecture.
 

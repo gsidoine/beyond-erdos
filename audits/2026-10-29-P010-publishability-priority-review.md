@@ -31,11 +31,11 @@ and $h(1)=0,h(2)=1,h(3)=2$. Hence $h(n)\sim(7/12)n/\log n$.
 
 The lower bound comes from isolated vertex $1$, primes greater than $n/2$, and leaves at primes in $(n/3,n/2]$ in the **noncoprime** graph. The upper bound is the difficult part: partition the integers by their largest prime factor, pair selected blocks through 3-multiples, and join all resulting even-ended paths through 2-multiples. The inequality $\pi(2x)\le2\pi(x)$ ($x\ge3$) supplies enough components for the endpoint capacities.
 
-An informative comparison with general graph theory: the independence number of the noncoprime graph is exactly $\pi(n)+1$ (at most one member with any given smallest prime factor, achieved by the set $\{1\}$ together with all primes). Thus Gallai–Milgram's general path-cover bound gives $\operatorname{pc}(H_n)\le\pi(n)+1$, whereas this arithmetic theorem determines the exact smaller value $\operatorname{pc}(H_n)=h(n)+1$ and the asymptotic ratio $\operatorname{pc}(H_n)/\alpha(H_n)\to7/12$. The general theorem does not automatically yield the refinement.
+An informative comparison with general graph theory: the independence number of the noncoprime graph is exactly $\pi(n)+1$ (at most one member with any given smallest prime factor, achieved by the set $\{1\}$ together with all primes). Thus Gallai–Milgram's general path-cover bound gives $\mathrm{pc}(H_n)\le\pi(n)+1$, whereas this arithmetic theorem determines the exact smaller value $\mathrm{pc}(H_n)=h(n)+1$ and the asymptotic ratio $\mathrm{pc}(H_n)/\alpha(H_n)\to7/12$. The general theorem does not automatically yield the refinement.
 
 ## Proof audit — what was checked and what was not
 
-1. The identity $h(n)=\operatorname{pc}(H_n)-1$ is correct.
+1. The identity $h(n)=\mathrm{pc}(H_n)-1$ is correct.
 2. Every prime in $(n/3,n/2]$ is a degree-one vertex (with sole neighbor $2q$) in the noncoprime graph. Isolated vertex and leaf counting needs the $\max(1,\lceil B_n/2\rceil)$ correction; this correctly handles $n=9,21$.
 3. The largest-prime-factor classes induce cliques; small classes contain suitable even endpoints; intermediate classes have the stated three members when $n\ge12$.
 4. The odd number of intermediate classes is repaired by attaching the leftover class to the class of 3 through a 3-divisible edge; no vertex is used twice.

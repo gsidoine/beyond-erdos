@@ -20,7 +20,7 @@ $$
 
 Independently retain each column with probability $\theta_N$. Denote the resulting random matrix by $A_N(\theta_N)$.
 
-**P023.** Determine the threshold scale (if one exists) for $\operatorname{rank}_{\mathbb F_2}A_N=d_N$ as $N\to\infty$, and decide whether its location and limiting window are determined by the absence of zero rows (i.e. by every small prime occurring in at least one retained integer). Compare the regimes $\alpha<1/2$, $\alpha=1/2$, and $\alpha>1/2$.
+**P023.** Determine the threshold scale (if one exists) for $\mathrm{rank}_{\mathbb F_2}A_N=d_N$ as $N\to\infty$, and decide whether its location and limiting window are determined by the absence of zero rows (i.e. by every small prime occurring in at least one retained integer). Compare the regimes $\alpha<1/2$, $\alpha=1/2$, and $\alpha>1/2$.
 
 ## Exact characterization and basic obstruction
 
