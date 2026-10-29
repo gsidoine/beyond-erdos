@@ -118,6 +118,7 @@ This matrix is **biconvex** in the displayed ordering: every row and column has 
 
 This theorem has a complete proof within this research notebook, but its **publication priority has not been established**. General \(k\)-factor existence, Toeplitz and consecutive-ones matrices, convex bipartite graphs, bounded-displacement permutations and banded matrix decompositions are classical topics. Nearby sources include:
 
+- [D. R. Fulkerson, *The Maximum Number of Disjoint Permutations Contained in a Matrix of Zeros and Ones*, Canadian Journal of Mathematics 16 (1964), 729–735](https://doi.org/10.4153/CJM-1964-069-0): a **direct historical predecessor for the packing parameter itself**, treating disjoint permutation matrices in arbitrary 0–1 supports. Whether this paper already implies the special consecutive-band formula by a short corollary must be checked before any novelty claim.
 - [Liu, *Bipartite Toughness and k-Factors in Bipartite Graphs* (2008)](https://doi.org/10.1155/2008/597408): standard necessary/sufficient \(k\)-factor cut inequalities.
 - [A linear time algorithm for maximum matchings in convex, bipartite graphs (1996)](https://doi.org/10.1016/0898-1221(96)00079-X): convex bipartite matching algorithms, but not this exact constructive factor statement in the accessible abstract.
 - [Bipartite finite Toeplitz graphs (2013)](https://doi.org/10.1016/j.dam.2013.05.020): Toeplitz-pattern graphs; not established as the same graph/result.
