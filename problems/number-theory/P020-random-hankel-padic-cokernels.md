@@ -3,8 +3,8 @@
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** Does the cokernel of an n×n Haar-random p-adic Hankel matrix converge in distribution to a describable measure on finite abelian p-groups?  
 > **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
-> **Verified/known progress:** Classical finite-field corank law; new internally proved exact group probabilities for all cyclic and two-generator cokernels, stable for n≥3; historical priority unverified.  
-> **Finite evidence:** Exact finite-field Hankel rank enumerations over F₂ (n≤4) and F₃ (n≤3), not p-adic group distribution.  
+> **Verified/known progress:** Classical mod-p corank law; internally proved exact all cyclic and two-generator cokernel probabilities, n-stable.  
+> **Finite evidence:** Exact prime-power modular enumeration; higher corank kernel-product equality checked through n=6 at p=2 and n=5 at p=3.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
 <!-- /DOSSIER-SUMMARY -->
 
