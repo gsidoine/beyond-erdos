@@ -9,7 +9,7 @@ This is a **curated exploratory research notebook**, not an official catalogue o
 3. **Challenge your own claim**: small counterexamples, invariants, reduction to a known theorem, and any failed proof attempts.
 4. **Record evidence**: reproducible code or proof, environment/solver status, cases tested, finite limits. Integer-programming termination is "optimal" only with an optimal solver status.
 5. **Write a dated audit entry**: citations with DOI or stable links, exact mathematical overlap, status decision, and outstanding questions.
-6. **Update the canonical catalogue**: edit \`data/problems.json\` and run \`python scripts/generate_catalog.py\`, then \`python -m unittest discover -s tests -v\`. Do **not** hand-edit the generated table or \`docs/problems.json\`.
+6. **Update the canonical catalogue**: edit `data/problems.json` and run `python scripts/generate_catalog.py`, then `python -m unittest discover -s tests -v`. Do **not** hand-edit the generated table or `docs/problems.json`.
 
 ## Status policy
 
@@ -22,7 +22,7 @@ The **novelty field** is separate. **Apparent novelty (targeted audit)** indicat
 
 ## Problem dossier
 
-Follow [PROBLEM_TEMPLATE.md](PROBLEM_TEMPLATE.md), and ensure links remain valid. Do not erase rejected ideas; document them in \`research-notes/\`.
+Follow [PROBLEM_TEMPLATE.md](PROBLEM_TEMPLATE.md), and ensure links remain valid. Do not erase rejected ideas; document them in `research-notes/`.
 
 ## Pull requests
 
