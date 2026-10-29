@@ -1,10 +1,11 @@
 # P021 — Sandpile groups of random Cayley-sum graphs
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** Does the Sylow-\(\ell\) sandpile group of a dense random prime-cyclic Cayley-sum graph have a limiting distribution, and is it different from the Erdős–Rényi law?
-> **Formulation:** candidate; fixed edge-label density, fixed auxiliary prime.
-> **Novelty:** unverified, targeted comparison 2026-10-29.
-> **Evidence:** model and exact distributional observable specified; no asymptotic theorem claimed.
+> **Research question:** Does the Sylow-ell sandpile group of a random prime-cyclic Cayley-sum graph converge to a law different from Erdős–Rényi?  
+> **Formulation:** candidate. **Novelty:** not certified (targeted audit).  
+> **Verified/known progress:** Precisely defined correlated graph-Laplacian cokernel; no limiting group law yet proved.  
+> **Finite evidence:** Model and connectivity-conditioning requirements specified; exact Smith-form experiments pending.  
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
 <!-- /DOSSIER-SUMMARY -->
 
 **Area:** random graphs, arithmetic groups, algebraic probability. **Status:** candidate (not certified novel or open).
