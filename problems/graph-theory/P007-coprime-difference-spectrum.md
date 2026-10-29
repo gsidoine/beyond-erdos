@@ -18,6 +18,7 @@
 A **coprime ordering** of $[n]$ is a permutation $(a_1,\ldots,a_n)$ with $\gcd(a_i,a_{i+1})=1$ for $1\le i<n$. This is a Hamiltonian path of the coprime graph on $[n]$.
 
 Define
+
 $$
 D(n)=\max_{\text{coprime orderings}}
   \left|\{|a_{i+1}-a_i|:1\le i<n\}\right|.
@@ -40,6 +41,7 @@ Older literature also studies *weaker* prime-graceful labelings with a larger la
 **Proof.** All adjacent even–even pairs are forbidden by coprimality. Every edge whose difference is even must therefore join two odd integers. Write $o=\lceil n/2\rceil$, $e=\lfloor n/2\rfloor$. The $e$ even integers occur in the path as nonadjacent vertices. Their positions force at least $e-1$ distinct odd-vertex runs, so the number of odd–odd adjacent pairs is at most $o-(e-1)$: at most one if $n$ is even, and at most two if $n$ is odd. A graceful permutation must realize *all* even differences in $\{1,\ldots,n-1\}$: there are $\lfloor(n-1)/2\rfloor$ of them. For even $n\ge6$, this requires at least two odd–odd edges, contradiction; for odd $n\ge7$, it requires at least three, contradiction. The cases $n=1,\ldots,5$ have witnesses, e.g. for $n=5$, $(2,3,5,1,4)$, with differences $1,2,4,3$ and all adjacent pairs coprime. Smaller cases follow by direct examples. $\square$
 
 **Proposition 2 (sharp candidate upper bound).** For every $n\ge2$,
+
 $$
 D(n)\le \min\left\{n-1,\left\lfloor\frac{n+3}{2}\right\rfloor\right\}.
 $$
@@ -49,6 +51,7 @@ $$
 ## Main candidate conjecture
 
 **Is the upper bound always attained?**
+
 $$
 \boxed{D(n)=\min\left\{n-1,\left\lfloor\frac{n+3}{2}\right\rfloor\right\}
 \quad\text{for every } n\ge2.}
@@ -63,9 +66,11 @@ A positive answer would determine the exact maximum number of distinct gaps alon
 This optimizer found equality in Proposition 2 for **every $n=3,\ldots,30$**, and for additional $n=32,35,40,45,50,60,70,71,79,80,89,90,99,100,120$, with status 0 (optimal). The finite checks, including the larger selected instances, do not imply the conjecture.
 
 Example at $n=12$:
+
 $$
 (8,3,4,7,6,5,12,1,11,2,9,10).
 $$
+
 All neighboring numbers are coprime, and there are 7 distinct differences, attaining the upper bound $\lfloor15/2\rfloor=7$.
 
 ## Research directions
