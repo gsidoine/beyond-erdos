@@ -119,6 +119,17 @@ Theorem 1 makes every autonomous bit unconstrained by all other coordinates. Hen
 
 Walsh characters diagonalize H_k and have eigenvalues 1−|S|/k. The two tensor summands commute, so tensor products of their eigenfunctions give the stated spectrum and gap formula. The residual core chain is irreducible by the exchange-connectivity theorem; all heat-bath coordinate kernels are conditional-expectation (positive semidefinite) operators. □
 
+## Corollary — Exponentially growing power-of-two divisibility
+
+Let f(n) be the number of maximum primitive subsets of [2n], the established integer sequence [OEIS A174094](https://oeis.org/A174094). The exact product factorization implies the **integer divisibility**
+
+$
+\boxed{2^{k_n}\mid f(n),\qquad
+\nu_2(f(n))\ge\frac{1454}{8505}n+O(1).}
+$
+
+This is stronger in a different direction than an exponential **lower bound on the numerical size** of f(n): it controls an arithmetic prime-power divisor of the count. The proof is immediate from Theorem 2, and **historical priority of this divisibility consequence is not established**. The counting paper of Liu–Pach–Palincza and references on OEIS A174094 must be compared before any novelty claim.
+
 ## Theorem 3 — Cutoff of the projected chain and lower bound for P027
 
 Let Y_t be the projection of the full chain onto F_n. Start all its bits at 0, and write k=k_n. Then for every integer t≥0 the chi-squared distance from the uniform law π_k is **exactly**
