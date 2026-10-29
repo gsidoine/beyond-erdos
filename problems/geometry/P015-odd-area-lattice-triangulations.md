@@ -1,11 +1,11 @@
 # P015 — Flip connectivity of odd-area lattice triangulations
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** If a convex lattice polygon admits triangulations in which every triangle has odd doubled area and all four vertex parity classes occur, are all such triangulations joined by flips that preserve odd doubled areas?  
-> **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit), with substantial related colored-flip literature.  
-> **Verified/known progress:** A normalized lattice triangle has odd area parity exactly when its vertices have three distinct residues mod 2; a valid flip uses all four residues.  
-> **Finite evidence:** Exhaustive four-color patterns through n=9, plus random checks n=10,11; no disconnected state graph found with all four residues. Three-residue instances can be disconnected.  
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Dated audit](../../literature-audits/2026-10-29-P015-geometry-and-P010-priority.md)
+> **Research question:** Are all odd-normalized-area triangulations of a convex lattice polygon connected by odd-area-preserving diagonal flips when all four mod-2 vertex residues occur?  
+> **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
+> **Verified/known progress:** Odd doubled area iff the triangle has three different mod-2 vertex classes; flips require all four classes.  
+> **Finite evidence:** Exhaustive parity color patterns through n=9 (zero disconnected four-class cases); six-vertex three-color obstruction.  
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
 <!-- /DOSSIER-SUMMARY -->
 
 **Fields:** discrete geometry, lattice arithmetic, combinatorial reconfiguration  
