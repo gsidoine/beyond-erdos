@@ -1,10 +1,10 @@
 # P027 — Mixing and geometry of maximum primitive-set exchanges
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** Determine the mixing-time order and possible cutoff for single-chain heat-bath dynamics on maximum primitive subsets of [2n].
-> **Formulation:** candidate. **Novelty:** not certified; closely related to counting primitive sets and distributive-lattice walks.
-> **Verified/known progress:** An internally proved exact Hamming-distance theorem and diameter formula give diameter 5n/12+O(1); mixing remains unproved.
-> **Finite evidence:** Exact exhaustive graph distances for 2n≤20, agreeing with the theorem.
+> **Research question:** Determine the mixing-time order and possible cutoff for single-chain heat-bath dynamics on maximum primitive subsets of [2n].  
+> **Formulation:** candidate. **Novelty:** not certified; closely related to counting primitive sets and distributive-lattice walks.  
+> **Verified/known progress:** An internally proved exact Hamming-distance theorem and diameter formula give diameter 5n/12+O(1); mixing remains unproved.  
+> **Finite evidence:** Exact exhaustive graph distances for 2n≤20, agreeing with the theorem.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
