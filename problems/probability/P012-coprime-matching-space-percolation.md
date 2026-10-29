@@ -14,21 +14,21 @@
 
 ## Model
 
-Let \(B_n\) have two copies of \([n]\) with edge \((i,j)\) precisely when \(\gcd(i,j)=1\). Independently retain every permitted edge with probability \(p\), giving \(B_n(p)\).
+Let $B_n$ have two copies of $[n]$ with edge $(i,j)$ precisely when $\gcd(i,j)=1$. Independently retain every permitted edge with probability $p$, giving $B_n(p)$.
 
-Let \(\mathcal M_n(p)\) be the set of all perfect matchings of \(B_n(p)\). Define the **switch-space graph** \(\mathcal F_n(p)\) whose vertices are \(\mathcal M_n(p)\), with an edge whenever one matching can be obtained from another by replacing two matched edges with the two crossed edges of an alternating 4-cycle that is present in the thinned graph.
+Let $\mathcal M_n(p)$ be the set of all perfect matchings of $B_n(p)$. Define the **switch-space graph** $\mathcal F_n(p)$ whose vertices are $\mathcal M_n(p)$, with an edge whenever one matching can be obtained from another by replacing two matched edges with the two crossed edges of an alternating 4-cycle that is present in the thinned graph.
 
-The original P005 is the deterministic endpoint \(p=1\).
+The original P005 is the deterministic endpoint $p=1$.
 
 ## Main structural question
 
 Study the probability
-\[
+$$
 \Pr\!\left(\mathcal F_n(p)\text{ is connected}\ \middle|\ |\mathcal M_n(p)|\ge2\right)
-\]
-as \(n\to\infty\), and determine the **separation of scales** between (i) existence of perfect matchings, (ii) existence of multiple perfect matchings, and (iii) four-cycle connectivity of **all** perfect matchings.
+$$
+as $n\to\infty$, and determine the **separation of scales** between (i) existence of perfect matchings, (ii) existence of multiple perfect matchings, and (iii) four-cycle connectivity of **all** perfect matchings.
 
-One possible outcome is a phase diagram with a substantial regime where perfect matchings exist in abundance but their switch space is fragmented. Identify arithmetic causes for such fragmentation and compare with \(G(n,n,p)\) and other deterministic host graph families.
+One possible outcome is a phase diagram with a substantial regime where perfect matchings exist in abundance but their switch space is fragmented. Identify arithmetic causes for such fragmentation and compare with $G(n,n,p)$ and other deterministic host graph families.
 
 This statement asks for the phase diagram **without asserting that the connectivity event is monotone or has a sharp threshold**.
 
