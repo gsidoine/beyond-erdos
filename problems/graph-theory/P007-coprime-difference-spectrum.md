@@ -5,12 +5,11 @@
 > **Formulation:** reframe. **Novelty:** known subproblem; extension unverified.  
 > **Verified/known progress:** Full graceful existence iff n≤5 is a published 2021 theorem; extremal extension unverified.  
 > **Finite evidence:** Exact finite MILP checks in selected sizes.  
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
 
 **Area:** graph labeling, number theory, extremal paths  
-**Origin:** discovery pass 3, 2026-10-28  
 **Status:** candidate unresolved question; originality **not** certified
 
 ## Definition
@@ -28,7 +27,7 @@ A path is **graceful** if all its $n-1$ differences are distinct. Classical grac
 
 ## Important prior art: the fully graceful question is previously known
 
-**Correction (literature audit, 2026-10-28):** The statement "a coprime graceful permutation of $[n]$ exists if and only if $n\le5$" is **not a newly discovered theorem**. It is **Theorem 2.1** of:
+**Established predecessor:** The statement "a coprime graceful permutation of $[n]$ exists if and only if $n\le5$" is **not a newly discovered theorem**. It is **Theorem 2.1** of:
 
 Sayan Panma and Penying Rochanakul, *Prime-Graceful Graphs*, **Thai Journal of Mathematics** 19(4), 1685–1697 (2021), [journal page](https://thaijmath.com/index.php/thaijmath/article/view/1264). Their "prime-graceful labeling of $P_n$" exactly matches our full-distinct-gap condition. The independent parity argument below is a rederivation of their established theorem, not a priority claim.
 
