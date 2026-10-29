@@ -1,6 +1,6 @@
 # Contributing to Meta Erdős
 
-This is a **curated exploratory research notebook**, not an official catalogue of Erdős problems and not a claim of original published open questions. **The collection is frozen at P001–P020** for a comprehensive consolidation audit. Do not add new numbered problems until the freeze is explicitly lifted. Current contributions should prioritize counterexamples, corrected proofs, exact references, novelty downgrades, reproducibility and clearer mathematical statements.
+This is a **curated exploratory research notebook**, not an official catalogue of Erdős problems and not a claim of original published open questions. **The collection is frozen at P001–P025** pending its second comprehensive consolidation. Do not add P026 or later until the freeze is explicitly lifted. Current contributions should prioritize counterexamples, corrected proofs, exact references, novelty downgrades, reproducibility and clearer mathematical statements.
 
 ## A change worth submitting
 
@@ -33,11 +33,11 @@ Prefer one conceptual change per PR: a corrected proof, a counterexample, an imp
 GitHub repository Markdown supports MathJax when you use **single dollars** for inline expressions (`$x^2$`) and **double dollars** for centered display equations, with blank lines around the display block:
 
 ```markdown
-Let $\\gamma$ be the Euler--Mascheroni constant.
+Let $\gamma$ be the Euler--Mascheroni constant.
 
 $$
-\\mu_n(p)=\\sum_{v=1}^n(1-p)^{d_n(v)}.
+\mu_n(p)=\sum_{v=1}^n(1-p)^{d_n(v)}.
 $$
 ```
 
-Do not use the old `\\(...\\)` or `\\[...\\]` delimiters; GitHub may show them as ordinary text. Never transform LaTeX inside code fences. The `tests/test_math_markdown.py` regression checks the delimiters in every Markdown file. Official reference: [GitHub, Writing mathematical expressions](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions).
+Do not use the old `\\(...\\)` or `\\[...\\]` delimiters; GitHub may show them as ordinary text. Never transform LaTeX inside code fences. The `tests/test_math_markdown.py` regression checks delimiters, unsupported commands, code-rendering artifacts, and local Markdown links in every Markdown file. Keep formulas in source Markdown that GitHub can actually render. Official reference: [GitHub, Writing mathematical expressions](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions).
