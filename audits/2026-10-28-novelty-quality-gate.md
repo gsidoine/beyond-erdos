@@ -6,7 +6,7 @@
 
 ## Read this first
 
-The central defect in the previous repository was not just presentation: the README's ten entries became **split across multiple Markdown tables**, and chronological research commentary made them hard to browse. The new \`data/problems.json\` is the source of truth for a single ten-entry README table and a static searchable browser. **The number of candidate questions is frozen at ten.**
+The central defect in the previous repository was not just presentation: the README's ten entries became **split across multiple Markdown tables**, and chronological research commentary made them hard to browse. The new `data/problems.json` is the source of truth for a single ten-entry README table and a static searchable browser. **The number of candidate questions is frozen at ten.**
 
 Neither a published theorem nor the existence of many exact computations means that the full candidate is original. In the table, *not found settled* means exactly that: an accessible literature search did not find a settling source.
 
