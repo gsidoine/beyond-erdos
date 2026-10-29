@@ -1,11 +1,11 @@
 # P016 — Topological connectivity of the Sidon simplicial complex
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** For the simplicial complex whose faces are all Sidon subsets of $[N]$, in which dimensions does reduced homology occur, and does each fixed-dimensional homology eventually vanish?
-> **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit); additive and topological ingredients separately classical.
-> **Verified/known progress:** The minimal forbidden faces are 3-term arithmetic progressions and additive quadruples with four distinct entries.
-> **Finite evidence:** Exact $\mathbb F_2$ Betti numbers computed through $N=23$; prominent migration of nonzero homology to higher dimensions.
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Dated novelty review](../../literature-audits/2026-10-29-P016-sidon-complex-topology.md)
+> **Research question:** Does each fixed-dimensional reduced homology group of the simplicial complex of all Sidon subsets of [N] vanish for all sufficiently large N?  
+> **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
+> **Verified/known progress:** Minimal nonfaces have size 3 or 4; exact F2 Betti numbers exhibit migration from lower to higher dimensions.  
+> **Finite evidence:** Exact augmented boundary-rank computations through N=23; no asymptotic vanishing claim.  
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
 <!-- /DOSSIER-SUMMARY -->
 
 **Fields:** additive combinatorics, topological combinatorics, simplicial complexes  
@@ -82,7 +82,7 @@ The construction also refines P004: P004 considers one-element exchanges among f
 - [Carter, O'Bryant and Tao, *On the diameter and distribution of Sidon sets* (October 2026)](https://arxiv.org/abs/2610.36207) gives very recent **extremal Sidon geometry**, not a result on the homology of the complex of all Sidon subsets.
 - A 2026 work titled [*Persistent Homology of Additive Relations*](https://www.researchgate.net/publication/404901446_Persistent_Homology_of_Additive_Relations) also constructs topology from additive structures, using **additive fibers and weighted graph complexes**. Its constructions should be checked for possible equivalences before any strong novelty claim.
 
-**Novety status:** This is an apparently distinct **specific simplicial complex and homology question** after a targeted search, not an invention of topological additive combinatorics. Source-by-source review is incomplete and specialist originality certification is absent.
+**Novelty status:** This is an apparently distinct **specific simplicial complex and homology question** after a targeted search, not an invention of topological additive combinatorics. Source-by-source review is incomplete and specialist originality certification is absent.
 
 ## Falsification before any stronger conjecture
 
