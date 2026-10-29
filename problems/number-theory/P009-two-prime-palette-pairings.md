@@ -17,21 +17,27 @@
 ## Statement
 
 For a perfect matching $M$ of $\{1,2,\ldots,2n\}$ in which every matched pair has a prime sum, define its **prime palette** as
+
 $$
 \mathcal P(M)=\{a+b:\{a,b\}\in M\}.
 $$
+
 Set
+
 $$
 \kappa(n)=\min_M|\mathcal P(M)|.
 $$
+
 Prime-sum perfect matchings exist by the classical Greenfield–Greenfield/Bertrand argument.
 
 **Question.** Is
+
 $$
 \boxed{\kappa(n)\le2\quad\text{for every }n\ge1?}
 $$
 
 In fact, the computations support the sharper complete formula
+
 $$
 \kappa(n)=
 \begin{cases}
@@ -51,19 +57,25 @@ This proposition is elementary and **not claimed new**.
 ## Theorem 2: prime-difference certificate for two colors
 
 **Proposition.** Suppose there exist odd primes $q,p$ with
+
 $$
 3\le q\le 2n-1,\qquad p=2n+q.
 $$
+
 Then $\kappa(n)\le2$. If $2n+1$ is composite, then $\kappa(n)=2$.
 
 **Proof.** Pair the initial even-length interval $\{1,\ldots,q-1\}$ by
+
 $$
 \{a,q-a\},\quad 1\le a\le(q-1)/2.
 $$
+
 Every such pair has sum $q$. Pair the remaining even-length interval $\{q,\ldots,2n\}$ by
+
 $$
 \{a,p-a\},\quad q\le a\le(p-1)/2.
 $$
+
 Every pair in the second interval has sum $p$. Each integer is used exactly once, and both sums are prime. If $2n+1$ is composite, Theorem 1 rules out one color. $\square$
 
 Thus one concrete sufficient condition is that $2n$ admit a representation as the **difference of two primes** $p-q$, with the smaller prime $q<2n$. This is a *short-prime-pair* strengthening of the classical 1905 **Maillet conjecture**, which only asks for a representation $2n=p-q$ without our upper bound on $q$. Our sufficient condition is **not** asserted necessary: other two-color matchings can exist with sums whose difference is not $2n$.
