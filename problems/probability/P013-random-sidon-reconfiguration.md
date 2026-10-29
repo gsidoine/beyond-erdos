@@ -1,11 +1,11 @@
 # P013 — Reconfiguration of Sidon sets in a random ambient set
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** When allowed integer sites are selected at random, what is the phase diagram for existence and valid one-element-exchange connectivity of size-k Sidon subsets?  
-> **Formulation:** candidate. **Novelty:** apparent novelty — targeted search, exact observable unverified.  
-> **Verified/known progress:** Sidon constraints and random Sidon-set phase transitions are established; valid-state exchange connectivity is a distinct proposed observable, not yet certified open.  
-> **Finite evidence:** The graph of size-two subsets is trivially connected whenever at least one state exists; genuine reconfiguration questions begin at larger sizes.  
-> **Navigation:** [Full catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+> **Research question:** Can Sidon-set existence and feasible one-element-exchange connectivity have different transition regimes inside a random subset of [N]?  
+> **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
+> **Verified/known progress:** Random Sidon decision phase behavior is known; feasible exchange components form a distinct proposed observable.  
+> **Finite evidence:** k=2 degenerate connectivity checked conceptually; no large-case claim.  
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
 <!-- /DOSSIER-SUMMARY -->
 
 **Fields:** additive combinatorics, random discrete structures, reconfiguration  
