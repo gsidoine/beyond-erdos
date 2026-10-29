@@ -16,7 +16,6 @@ The project takes inspiration from Paul Erdős's problem-posing tradition. These
 
 The 30 entries have different research statuses; **they are not all open conjectures**.
 
-The [29 October 2026 portfolio-wide audit](audits/2026-10-29-P001-P020-first-collection-consolidation.md) and the [second-pass source-level comparison, including the P010 manuscript snapshot](audits/2026-10-29-P015-P016-P018-P020-source-comparison-and-P010-snapshot.md) reviews **all twenty IDs** for well-posedness, closest prior art, structural significance, evidence quality and potential overlap. It gives a provisional shortlist of **P003, P005, P014, P016, P017, P018 and P020**, with **P010 on a separate theorem/publication track**. These are **editorial priorities, not certified novel/open problems**.
 | Status | Entries | Meaning |
 |---|---|---|
 | Candidate | 26 | A mathematical research question under investigation; historical novelty and unresolved status are not certified |
@@ -71,6 +70,8 @@ The **P001–P020 discovery freeze remains active**. These updates neither certi
 The newest dossiers examine **four-cycle generation in prime-sum graphs** ([P026](problems/graph-theory/P026-prime-sum-square-cycle-generation.md)), **random walks on maximum primitive sets** ([P027](problems/number-theory/P027-primitive-set-exchange-mixing.md)), **random divisibility-complex Euler characteristics** ([P028](problems/number-theory/P028-random-divisor-complex-mobius-deformation.md)), **prime-sum permutation X-ray fibers** ([P029](problems/graph-theory/P029-prime-sum-permutation-xray-fibers.md)) and **simultaneous prime-sum/prime-difference matchings** ([P030](problems/number-theory/P030-double-prime-perfect-matchings.md)).
 
 An [exact primitive-set exchange theorem](theorems/P027-primitive-set-exchange-diameter.md) establishes a Hamming graph metric and diameter $5n/12+O(1)$ on maximum primitive subsets of $[2n]$; its historical novelty has not been certified. Every new question has explicit predecessor citations and finite or theoretical baseline evidence. In particular, P029 reuses the previously studied discrete-tomography *X-ray* object rather than claiming to invent it.
+
+**P027 — Uniform sampling of maximum primitive sets.** An exact [autonomous-coordinate decomposition theorem](theorems/P027-autonomous-coordinate-hypercube-cutoff.md) isolates $(1454/8505)n+O(1)$ independent fair binary choices, proves cutoff for their heat-bath projection, and establishes a rigorous $(n/2)\log n-O(n)$ mixing-time **lower bound** for the complete chain. The remaining spectral-gap and full-chain cutoff questions are open. [P027 dossier](problems/number-theory/P027-primitive-set-exchange-mixing.md).
 
 ## Problem catalogue
 

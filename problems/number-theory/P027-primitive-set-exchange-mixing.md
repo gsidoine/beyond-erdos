@@ -3,8 +3,8 @@
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** Determine the mixing-time order and possible cutoff for single-chain heat-bath dynamics on maximum primitive subsets of [2n].  
 > **Formulation:** candidate. **Novelty:** not certified; closely related to counting primitive sets and distributive-lattice walks.  
-> **Verified/known progress:** An internally proved exact Hamming-distance theorem and diameter formula give diameter 5n/12+O(1); mixing remains unproved.  
-> **Finite evidence:** Exact exhaustive graph distances for 2n≤20, agreeing with the theorem.  
+> **Verified/known progress:** Exact exchange diameter 5n/12+O(1); autonomous fair-bit factor of size (1454/8505)n+O(1); projected heat-bath cutoff yields full mixing lower bound (n/2)log n−O(n). Full mixing still open.  
+> **Finite evidence:** Five-band criterion checked n≤1000; full product and uniform conditional updates exhaustively checked n≤30; small finite spectral calculations.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
@@ -43,14 +43,32 @@ $$
 
 **Proof:** see [Primitive-set exchange geometry](../../theorems/P027-primitive-set-exchange-diameter.md). The source decomposition is classical and the theorem is **internally proved**, not externally refereed or historically certified original.
 
+## Exact autonomous factor and rigorous mixing lower bound
+
+The [autonomous-coordinate theorem](../../theorems/P027-autonomous-coordinate-hypercube-cutoff.md) identifies **five disjoint arithmetic bands** of coordinates that are completely unconstrained by every other coordinate. Their number satisfies
+
+$$
+k_n=\frac{1454}{8505}n+O(1).
+$$
+
+Under the uniform distribution on maximum primitive sets these coordinates are independent fair bits; the state space is exactly their hypercube times a residual interacting factor. The single-chain heat-bath walk projected onto these bits has **total-variation cutoff** at (n/2)log k_n with O(n) window. Therefore the **full chain** has the rigorous necessary mixing time
+
+$$
+t_{\mathrm{mix}}(n,\varepsilon)\ge\frac n2\log n-O_\varepsilon(n).
+$$
+
+The full transition operator splits into a hypercube refresh and a **residual core** operator, giving an exact spectral decomposition and reducing the remaining upper-bound question to the core chain. None of this proves the full walk mixes in O(n log n), has a cutoff, or has a spectral gap of order 1/n. The [dependency-free finite checker](../../experiments/P027_autonomous_coordinates.py) and [optional full-chain spectral diagnostic](../../experiments/P027_full_heatbath_spectrum.py) accompany the proof.
+
 ## Existing literature and novelty caveat
 
 - [Liu–Pach–Palincza, *The number of maximum primitive sets of integers* (2021)](https://doi.org/10.1017/S0963548321000018): crucial primary predecessor. They prove the exponential counting constant exists; **the family M_n and dyadic chain decomposition are known**. Do not present either as original.
 - [Heat-bath random walks with Markov bases (2018)](https://doi.org/10.1016/j.aam.2017.08.002): general heat-bath dynamics on integer fibers.
+- [Propp–Wilson, *Exact sampling with coupled Markov chains* (1996)](https://doi.org/10.1002/(SICI)1098-2418(199608/09)9:1/2%3C223::AID-RSA14%3E3.0.CO;2-O): establishes general monotone exact sampling and supplies examples with exponentially slow mixing; **distributivity is insufficient to guarantee rapid mixing**.
+- [Alexeev et al., *Primitive sets and von Mangoldt chains* (2026)](https://arxiv.org/abs/2605.00301): uses a different chain to bound weighted primitive-set sums; not the finite uniform heat-bath process.
 - [Rowmotion Markov chains (2024)](https://www.sciencedirect.com/science/article/pii/S0196885823001847): random walks on distributive lattices; closely related abstract machinery.
 
 A specialized mixing theorem could already apply to this arithmetic poset. The exact-diameter argument is included for transparency, not novelty certification.
 
 ## Next adversarial gate
 
-Seek a known general mixing theorem for uniformly random order ideals or monotone functions that subsumes the exponent constraints. Compute exact spectral gaps for n with tractable |M_n|; compare two natural update rules (whole-chain heat bath versus adjacent 2-exponent toggles) rather than conflating their mixing times.
+Seek a known general mixing theorem for uniformly random order ideals or monotone functions that subsumes the exponent constraints. Obtain a uniform spectral-gap lower bound for the **residual core** and determine whether the full walk has O(n log n) mixing or cutoff. Compare two natural update rules (whole-chain heat bath versus adjacent 2-exponent toggles) rather than conflating their mixing times.
