@@ -17,9 +17,11 @@
 ## Exact statement
 
 For a permutation $a=(a_1,\dots,a_n)$ of $[n]$, let
+
 $$
 h(n)=\min_a\#\{i:\gcd(a_i,a_{i+1})=1\}.
 $$
+
 Set $A_n=\pi(n)-\pi(n/2)$, $B_n=\pi(n/2)-\pi(n/3)$. The following theorem **resolves the original question**:
 
 $$
@@ -32,6 +34,7 @@ $$
 For the three exceptional small inputs, $h(1)=0,\ h(2)=1,\ h(3)=2$.
 
 **Corollary (prime number theorem).**
+
 $$
 \boxed{\displaystyle h(n)\sim\frac7{12}\frac{n}{\log n}.}
 $$
