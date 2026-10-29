@@ -1,5 +1,11 @@
 # Meta Erdős
 
+<p align="center">
+  <img src="assets/erdos-portrait.jpg" alt="Paul Erdős" width="420">
+</p>
+
+<p align="center"><em>Paul Erdős</em></p>
+
 **Meta Erdős is an open, community-contributable catalogue of mathematical research questions, conjectures and partial results.** The collection currently contains **30 numbered research entries (P001–P030)** in number theory, graph theory, probability, geometry, topology and matroid theory.
 
 The project takes inspiration from Paul Erdős's problem-posing tradition. These entries are **not claimed to have been posed by Erdős**, do not belong to [erdosproblems.com](https://www.erdosproblems.com/) or [teorth/erdosproblems](https://github.com/teorth/erdosproblems), and are **not certified to be previously unknown or unresolved**. Established results and close predecessors are attributed in the individual dossiers.
