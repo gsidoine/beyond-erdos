@@ -43,13 +43,14 @@
       <h1>Meta Erdős</h1>
       <p>Questions in graph theory, number theory, additive combinatorics and probability. Browse precise statements, tested evidence, and the nearest established mathematics.</p>
       <div class="notice"><strong>Not certified new open problems.</strong> These are independently proposed research candidates inspired by the tradition of Paul Erdős. Not affiliated with Erdős Problems or teorth/erdosproblems.</div>
-      <p><strong>30 research entries:</strong> 26 candidates, two requiring reformulation, one requiring specification, and one internally proved result. <a href="https://github.com/gsidoine/meta-erdos/blob/main/manuscripts/P010/README.md">P010 has been submitted to <em>Integers</em></a> (not accepted or published). <a href="https://github.com/gsidoine/meta-erdos/blob/main/CONTRIBUTING.md">Contributions welcome</a>; see the <a href="https://github.com/gsidoine/meta-erdos#status-and-scope">status guide</a> and <a href="https://github.com/gsidoine/meta-erdos#literature-and-audits">literature archive</a>.</p>
+      <p><strong>30 research entries:</strong> 26 candidates, two requiring reformulation, one requiring specification, and one internally proved result. <a href="https://github.com/gsidoine/meta-erdos/blob/main/manuscripts/P010/README.md">P010 has been submitted to <em>Integers</em></a> (not accepted or published). <a href="https://github.com/gsidoine/meta-erdos/blob/main/CONTRIBUTING.md">Contributions welcome</a>; see the <a href="https://github.com/gsidoine/meta-erdos/blob/main/audits/portfolio-consolidation-P001-P030.md">consolidated 30-entry research portfolio</a> for priorities, historical overlap and next research steps.</p>
     </header>
     <section aria-label="Catalogue filters">
       <div class="bar">
         <input id="search" type="search" placeholder="Search questions, IDs, results…" aria-label="Search problems">
         <select id="area" aria-label="Filter by area"><option value="">All fields</option></select>
         <select id="status" aria-label="Filter by formulation"><option value="">All statuses</option></select>
+        <select id="tier" aria-label="Filter by editorial research priority"><option value="">All research tiers</option></select>
       </div>
       <div id="count" aria-live="polite">Loading problem catalogue…</div>
     </section>
@@ -80,8 +81,9 @@
       const term=$("search").value.trim().toLowerCase();
       const area=$("area").value;
       const status=$("status").value;
+      const tier=$("tier").value;
       const filtered=problems.filter(p=>
-        (!area||p.area===area)&&(!status||p.status===status)&&
+        (!area||p.area===area)&&(!status||p.status===status)&&(!tier||p.portfolio_tier===tier)&&
         (!term||[p.id,p.title,p.area,p.question,p.result,p.verification,p.novelty].join(" ").toLowerCase().includes(term))
       );
       $("count").textContent=filtered.length+" of "+problems.length+" problems";
@@ -89,7 +91,7 @@
       for(const p of filtered){
         const card=document.createElement("article");
         const meta=asText("div","", "meta");
-        for(const v of [p.id,p.area,p.status,p.novelty])
+        for(const v of [p.id,p.area,p.status,"Tier "+p.portfolio_tier,p.novelty])
           meta.append(asText("span",v,"tag"));
         const h=asText("h2","");
         const link=document.createElement("a");
@@ -113,9 +115,11 @@
       problems=data.problems;
       const areas=[...new Set(problems.map(p=>p.area))].sort();
       const statuses=[...new Set(problems.map(p=>p.status))].sort();
+      const tiers=[...new Set(problems.map(p=>p.portfolio_tier))].sort();
       for(const v of areas){const o=document.createElement("option");o.value=v;o.textContent=v;$("area").append(o)}
       for(const v of statuses){const o=document.createElement("option");o.value=v;o.textContent=v;$("status").append(o)}
-      for(const id of ["search","area","status"])$(id).addEventListener("input",draw);
+      for(const v of tiers){const o=document.createElement("option");o.value=v;o.textContent=v;$("tier").append(o)}
+      for(const id of ["search","area","status","tier"])$(id).addEventListener("input",draw);
       draw();
     }).catch(err=>{
       $("count").textContent="Unable to load catalogue: "+err.message+". Open the repository README instead.";

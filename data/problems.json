@@ -22,7 +22,8 @@
           "name": "OEIS A000341",
           "url": "https://oeis.org/A000341"
         }
-      ]
+      ],
+      "portfolio_tier": "C"
     },
     {
       "id": "P002",
@@ -44,7 +45,8 @@
           "name": "Bonamy et al. (2019)",
           "url": "https://doi.org/10.4230/LIPIcs.MFCS.2019.80"
         }
-      ]
+      ],
+      "portfolio_tier": "C"
     },
     {
       "id": "P003",
@@ -66,7 +68,8 @@
           "name": "Chen–Fu–Guo (2021)",
           "url": "https://doi.org/10.1007/s00373-020-02241-1"
         }
-      ]
+      ],
+      "portfolio_tier": "A"
     },
     {
       "id": "P004",
@@ -88,7 +91,8 @@
           "name": "Dotú–Van Hentenryck (2005)",
           "url": "https://cs.brown.edu/research/pubs/pdfs/2005/Dotu-2005-SHE.pdf"
         }
-      ]
+      ],
+      "portfolio_tier": "B"
     },
     {
       "id": "P005",
@@ -114,7 +118,8 @@
           "name": "Switch chain (2017)",
           "url": "https://doi.org/10.1145/2822322"
         }
-      ]
+      ],
+      "portfolio_tier": "A"
     },
     {
       "id": "P006",
@@ -136,7 +141,8 @@
           "name": "Carter–Hunter–O'Bryant (2025)",
           "url": "https://doi.org/10.1007/s10474-024-01499-8"
         }
-      ]
+      ],
+      "portfolio_tier": "B"
     },
     {
       "id": "P007",
@@ -158,7 +164,8 @@
           "name": "Gracesize of trees (2025)",
           "url": "https://arxiv.org/abs/2511.11331"
         }
-      ]
+      ],
+      "portfolio_tier": "D"
     },
     {
       "id": "P008",
@@ -184,7 +191,8 @@
           "name": "Hladký–Viswanathan (2026)",
           "url": "https://doi.org/10.1002/rsa.70098"
         }
-      ]
+      ],
+      "portfolio_tier": "D"
     },
     {
       "id": "P009",
@@ -206,7 +214,8 @@
           "name": "OEIS A202472",
           "url": "https://oeis.org/A202472"
         }
-      ]
+      ],
+      "portfolio_tier": "D"
     },
     {
       "id": "P010",
@@ -232,7 +241,8 @@
           "name": "Rosser–Schoenfeld prime-counting inequality",
           "url": "https://oeis.org/A060208"
         }
-      ]
+      ],
+      "portfolio_tier": "R"
     },
     {
       "id": "P011",
@@ -254,7 +264,8 @@
           "name": "Balachandran–Kush (2021), matching in random bipartite graphs",
           "url": "https://doi.org/10.37236/9148"
         }
-      ]
+      ],
+      "portfolio_tier": "C"
     },
     {
       "id": "P012",
@@ -276,7 +287,8 @@
           "name": "Sah–Sawhney (2022), coprime permutations",
           "url": "https://doi.org/10.1112/mtk.12159"
         }
-      ]
+      ],
+      "portfolio_tier": "C"
     },
     {
       "id": "P013",
@@ -298,7 +310,8 @@
           "name": "Dotú–Van Hentenryck (2005), Golomb ruler search",
           "url": "https://cs.brown.edu/research/pubs/pdfs/2005/Dotu-2005-SHE.pdf"
         }
-      ]
+      ],
+      "portfolio_tier": "C"
     },
     {
       "id": "P014",
@@ -324,7 +337,8 @@
           "name": "Newman (2024), flag homology thresholds",
           "url": "https://doi.org/10.1112/jlms.12872"
         }
-      ]
+      ],
+      "portfolio_tier": "B"
     },
     {
       "id": "P015",
@@ -350,7 +364,8 @@
           "name": "Debrohim–Sasaki–Nunes, cyclic colors (2026)",
           "url": "https://arxiv.org/abs/2608.26006"
         }
-      ]
+      ],
+      "portfolio_tier": "C"
     },
     {
       "id": "P016",
@@ -376,7 +391,8 @@
           "name": "Berghoff (2022), independence complex homology",
           "url": "https://doi.org/10.5070/C62156880"
         }
-      ]
+      ],
+      "portfolio_tier": "B"
     },
     {
       "id": "P017",
@@ -398,7 +414,8 @@
           "name": "Lewis–Souza (2021), dimension of the divisibility order",
           "url": "https://www.sciencedirect.com/science/article/pii/S0097316520301837"
         }
-      ]
+      ],
+      "portfolio_tier": "A"
     },
     {
       "id": "P018",
@@ -424,7 +441,8 @@
           "name": "Reconfiguration of basis pairs in regular matroids (2026)",
           "url": "https://doi.org/10.1016/j.jctb.2025.10.009"
         }
-      ]
+      ],
+      "portfolio_tier": "A"
     },
     {
       "id": "P019",
@@ -436,7 +454,7 @@
       "novelty": "apparent novelty (targeted audit)",
       "result": "When the maximum size is 2n, single-point exchanges are impossible and two-point exchanges are rectangle switches",
       "verification": "Exact optimal configuration exchange graphs through n=7; minimal connecting move sizes 2,4,3,5,6 for n=3,...,7",
-      "priority": "structural discovery, freeze after P020",
+      "priority": "exploratory — exchange rigidity and finite optimal configurations",
       "sources": [
         {
           "name": "Guy–Kelly (1968), no-three-in-line problem",
@@ -450,7 +468,8 @@
           "name": "Flammenkamp, no-three-in-line database",
           "url": "https://wwwhomes.uni-bielefeld.de/achim/no3in/readme.html"
         }
-      ]
+      ],
+      "portfolio_tier": "C"
     },
     {
       "id": "P020",
@@ -462,7 +481,7 @@
       "novelty": "apparent novelty (targeted audit)",
       "result": "Classical Hankel corank law; internally proved cyclic/two-generator probabilities and all-k elementary-abelian cokernel probabilities",
       "verification": "Exact modular group counts at p=2 (n≤4), p=3 (n≤3); kernel-product rank proved from Yiasemides (2024)",
-      "priority": "structural discovery, freeze after P020",
+      "priority": "theorem-building — higher-exponent three-generator group laws",
       "sources": [
         {
           "name": "Dwivedi–Grinberg (2022), finite-field Hankel ranks",
@@ -480,7 +499,8 @@
           "name": "Yiasemides (2024), characteristic polynomials and Hankel kernels",
           "url": "https://doi.org/10.1007/s40687-023-00418-7"
         }
-      ]
+      ],
+      "portfolio_tier": "A"
     },
     {
       "id": "P021",
@@ -502,7 +522,8 @@
           "name": "Sandpile groups of Cayley graphs (2024)",
           "url": "https://doi.org/10.1080/00927872.2024.2347582"
         }
-      ]
+      ],
+      "portfolio_tier": "C"
     },
     {
       "id": "P022",
@@ -524,7 +545,8 @@
           "name": "Łuczak–Peled (2018), random complexes",
           "url": "https://doi.org/10.1007/s00454-017-9938-z"
         }
-      ]
+      ],
+      "portfolio_tier": "C"
     },
     {
       "id": "P023",
@@ -546,7 +568,8 @@
           "name": "Wang–Stanley (2017), random Smith forms",
           "url": "https://doi.org/10.1137/16M1098140"
         }
-      ]
+      ],
+      "portfolio_tier": "B"
     },
     {
       "id": "P024",
@@ -568,7 +591,8 @@
           "name": "Lewis–Souza (2021), divisibility order",
           "url": "https://www.sciencedirect.com/science/article/pii/S0097316520301837"
         }
-      ]
+      ],
+      "portfolio_tier": "C"
     },
     {
       "id": "P025",
@@ -594,7 +618,8 @@
           "name": "McNew (2023), lcm-restricted permutations",
           "url": "https://doi.org/10.1112/mtk.12177"
         }
-      ]
+      ],
+      "portfolio_tier": "D"
     },
     {
       "id": "P026",
@@ -616,7 +641,8 @@
           "name": "Ohsugi–Hibi (1999), quadratic toric ideals",
           "url": "https://doi.org/10.1006/jabr.1999.7918"
         }
-      ]
+      ],
+      "portfolio_tier": "B"
     },
     {
       "id": "P027",
@@ -638,7 +664,8 @@
           "name": "Heat-bath random walks with Markov bases (2018)",
           "url": "https://doi.org/10.1016/j.aam.2017.08.002"
         }
-      ]
+      ],
+      "portfolio_tier": "A"
     },
     {
       "id": "P028",
@@ -664,7 +691,8 @@
           "name": "Nontrivial divisor functions and ordered factorizations",
           "url": "https://doi.org/10.1007/s11139-018-0093-9"
         }
-      ]
+      ],
+      "portfolio_tier": "B"
     },
     {
       "id": "P029",
@@ -686,7 +714,8 @@
           "name": "Del Lungo (2002), diagonal reconstruction",
           "url": "https://doi.org/10.1016/S0304-3975(02)00015-4"
         }
-      ]
+      ],
+      "portfolio_tier": "D"
     },
     {
       "id": "P030",
@@ -708,7 +737,8 @@
           "name": "Prime Sum Graphs and the Induced Trees They Contain (2025)",
           "url": "https://doi.org/10.1007/s00373-025-02999-2"
         }
-      ]
+      ],
+      "portfolio_tier": "B"
     }
   ],
   "catalogue_policy": "Open to community contributions; proposed additions and status changes require source review"
