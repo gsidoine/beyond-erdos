@@ -2,7 +2,7 @@
 
 **Area:** [subject]  
 **Formulation status:** candidate / reframe / needs specification  
-**Novelty:** not certified; date last checked  
+**Novelty:** scope of source verification; not certified unless independently established  
 **Origin:** precise attribution; never label as an Erdős problem unless Erdős actually posed it
 
 ## Statement
@@ -34,15 +34,15 @@ What counterexamples, invariants, and exact reformulations were tested? What fai
 
 ## Closest prior art / novelty audit
 
-Cite **primary** mathematical references and state *exactly* which assertions they prove and which they do not. Record search date, terminology and accessible sources. Distinguish "not found" from "open".
+Cite **primary** mathematical references and state *exactly* which assertions they prove and which they do not. Record search terminology, accessible sources, and the exact mathematical distinction. Distinguish "not found" from "open".
 
 ## Remaining gap and next research step
 
 State the precise theorem/obstruction needed. Avoid speculative significance claims.
 
-## Revision history
+## Attribution and changes
 
-- YYYY-MM-DD: Created / corrected / prior-art collision found.
+Credit earlier results and summarize substantial changes when relevant; Git history preserves individual revisions.
 
 ## Markdown equations
 
