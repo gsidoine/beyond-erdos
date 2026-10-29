@@ -595,6 +595,120 @@
           "url": "https://doi.org/10.1112/mtk.12177"
         }
       ]
+    },
+    {
+      "id": "P026",
+      "title": "Four-cycle generation in prime-sum bipartite graphs",
+      "area": "graph theory",
+      "file": "problems/graph-theory/P026-prime-sum-square-cycle-generation.md",
+      "question": "Do the four-cycles of the bipartite prime-sum graph generate its entire binary cycle space for every n, and how efficiently can its cycles be filled by squares?",
+      "status": "candidate",
+      "novelty": "not certified (specialist source check needed)",
+      "result": "Exact finite-field elimination gives vanishing square-filled first homology for n up to 60; no proof for all n",
+      "verification": "Exhaustive enumeration of all four-cycles and their GF(2) boundary span; reproducible standard-library code",
+      "priority": "new candidate; arithmetic topology / toric overlap risk",
+      "sources": [
+        {
+          "name": "Prime Sum Graphs and the Induced Trees They Contain (2025)",
+          "url": "https://doi.org/10.1007/s00373-025-02999-2"
+        },
+        {
+          "name": "Ohsugi–Hibi (1999), quadratic toric ideals",
+          "url": "https://doi.org/10.1006/jabr.1999.7918"
+        }
+      ]
+    },
+    {
+      "id": "P027",
+      "title": "Mixing of maximum primitive-set exchanges",
+      "area": "multiplicative combinatorics",
+      "file": "problems/number-theory/P027-primitive-set-exchange-mixing.md",
+      "question": "Determine the mixing-time order and possible cutoff for single-chain heat-bath dynamics on maximum primitive subsets of [2n].",
+      "status": "candidate",
+      "novelty": "not certified; closely related to counting primitive sets and distributive-lattice walks",
+      "result": "An internally proved exact Hamming-distance theorem and diameter formula give diameter 5n/12+O(1); mixing remains unproved",
+      "verification": "Exact exhaustive graph distances for 2n≤20, agreeing with the theorem",
+      "priority": "promising; exact structural theorem and high literature proximity",
+      "sources": [
+        {
+          "name": "Liu–Pach–Palincza (2021), maximum primitive sets",
+          "url": "https://doi.org/10.1017/S0963548321000018"
+        },
+        {
+          "name": "Heat-bath random walks with Markov bases (2018)",
+          "url": "https://doi.org/10.1016/j.aam.2017.08.002"
+        }
+      ]
+    },
+    {
+      "id": "P028",
+      "title": "Möbius deformation from random divisibility complexes",
+      "area": "analytic number theory",
+      "file": "problems/number-theory/P028-random-divisor-complex-mobius-deformation.md",
+      "question": "What are the asymptotic mean and fluctuations of the Euler characteristic of Bernoulli-thinned integer divisibility order complexes?",
+      "status": "candidate",
+      "novelty": "not certified; arithmetic Dirichlet convolution and order-complex Möbius theory are classical",
+      "result": "Internally derived exact Euler-characteristic expectation with Dirichlet series p(zeta−1)/(1+p(zeta−1)); p=1 recovers the Mertens function",
+      "verification": "Exact enumerative small-N checks and independent coefficient recurrence",
+      "priority": "promising; analytic number theory and random topology",
+      "sources": [
+        {
+          "name": "DLMF, Dirichlet convolution",
+          "url": "https://dlmf.nist.gov/27.5"
+        },
+        {
+          "name": "The Poset of Proper Divisibility (2017)",
+          "url": "https://doi.org/10.1137/15M1049142"
+        },
+        {
+          "name": "Nontrivial divisor functions and ordered factorizations",
+          "url": "https://doi.org/10.1007/s11139-018-0093-9"
+        }
+      ]
+    },
+    {
+      "id": "P029",
+      "title": "Prime-supported permutation X-ray fiber reconfiguration",
+      "area": "combinatorics",
+      "file": "problems/graph-theory/P029-prime-sum-permutation-xray-fibers.md",
+      "question": "Is there a universal bounded-size exchange connecting every fiber of prime-sum permutations with the same anti-diagonal X-ray?",
+      "status": "candidate",
+      "novelty": "high overlap risk with existing permutation X-ray/discrete tomography theory",
+      "result": "No two-position swap can preserve a nontrivial exact sum multiset; an explicit prime-supported fiber with two members differs at four positions",
+      "verification": "Exhaustive prime-sum matching fiber enumeration for n≤13; dependency-free script",
+      "priority": "high-overlap reserve pending Markov-basis source review",
+      "sources": [
+        {
+          "name": "Bebeacua–Mansour–Postnikov–Severini (2005), X-rays",
+          "url": "https://doi.org/10.1016/j.endm.2005.05.063"
+        },
+        {
+          "name": "Del Lungo (2002), diagonal reconstruction",
+          "url": "https://doi.org/10.1016/S0304-3975(02)00015-4"
+        }
+      ]
+    },
+    {
+      "id": "P030",
+      "title": "Double-prime perfect matchings on integer intervals",
+      "area": "number theory",
+      "file": "problems/number-theory/P030-double-prime-perfect-matchings.md",
+      "question": "Does a perfect matching exist for every even n≥8 in the graph of integer pairs whose sum and absolute difference are both prime?",
+      "status": "candidate",
+      "novelty": "not certified; prime sum/difference cycles have explicit earlier study",
+      "result": "Every odd n is impossible by parity; exact finite matchings exist for every even n in [8,400], while n=2,4,6 fail",
+      "verification": "Dependency-free exact bipartite matching checker for every even n≤400 and parity obstruction",
+      "priority": "promising; arithmetic Hall obstruction with direct Hamiltonicity predecessor",
+      "sources": [
+        {
+          "name": "OEIS A227050, prime-sum-and-difference circular arrangements",
+          "url": "https://oeis.org/A227050"
+        },
+        {
+          "name": "Prime Sum Graphs and the Induced Trees They Contain (2025)",
+          "url": "https://doi.org/10.1007/s00373-025-02999-2"
+        }
+      ]
     }
   ],
   "catalogue_policy": "Open to community contributions; proposed additions and status changes require source review"
