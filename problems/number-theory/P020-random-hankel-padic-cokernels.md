@@ -1,11 +1,11 @@
 # P020 — Cokernel laws for random $p$-adic Hankel matrices
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** Does the cokernel of a Haar-random $p$-adic Hankel matrix converge to an explicit probability distribution on finite abelian $p$-groups as the matrix size grows?
-> **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit); finite-field Hankel rank distributions and random cokernel theory are established.
-> **Verified/known progress:** Classical exact Hankel rank enumeration gives a stable corank distribution that rules out the standard independent-entry Cohen–Lenstra law.
-> **Finite evidence:** Exhaustive rank enumerations over $\mathbb F_2$ for sizes 2–4 and $\mathbb F_3$ for sizes 2–3 reproduce the established formula.
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Targeted audit](../../literature-audits/2026-10-29-P019-P020-final-batch.md)
+> **Research question:** Does the cokernel of an n×n Haar-random p-adic Hankel matrix converge in distribution to a describable measure on finite abelian p-groups?  
+> **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
+> **Verified/known progress:** Classical finite-field corank formula yields P(trivial cokernel)=1−1/p for all n, excluding the usual Cohen–Lenstra law.  
+> **Finite evidence:** Exact finite-field Hankel rank enumerations over F₂ (n≤4) and F₃ (n≤3), not p-adic group distribution.  
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
 <!-- /DOSSIER-SUMMARY -->
 
 **Area:** algebraic probability, number theory, random matrices  
