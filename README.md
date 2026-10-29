@@ -53,9 +53,11 @@ An *internal proof* is not a published or externally verified theorem. Likewise,
 ## Mathematical progress
 
 **P010 has an internally complete exact solution:** for every $n\ge4$,
+
 $$
 h(n)=\pi(n)-\pi(n/2)+\max\!\left(1,\left\lceil\frac{\pi(n/2)-\pi(n/3)}2\right\rceil\right).
 $$
+
 See the [constructive theorem](theorems/P010-exact-coprime-adjacencies.md) and [dependency-free verification program](experiments/P010_construct_optimal_permutation.py). This resolves the original P010 extremal question **within this research notebook**. A historical priority and external referee audit are still required before claiming a new published mathematical result.
 
 ## New unnumbered theorem: interval-sum factor saturation
