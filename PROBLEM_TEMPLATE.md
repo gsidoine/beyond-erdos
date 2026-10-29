@@ -1,7 +1,7 @@
 # PXXX — Short descriptive mathematical title
 
 **Area:** [subject]  
-**Formulation status:** candidate / reframe / needs specification  
+**Formulation status:** candidate / reframe / needs specification / proved internally  
 **Novelty:** scope of source verification; not certified unless independently established  
 **Origin:** precise attribution; never label as an Erdős problem unless Erdős actually posed it
 
