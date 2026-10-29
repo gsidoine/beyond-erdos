@@ -16,63 +16,63 @@
 
 ## Statement
 
-For a perfect matching \(M\) of \(\{1,2,\ldots,2n\}\) in which every matched pair has a prime sum, define its **prime palette** as
-\[
+For a perfect matching $M$ of $\{1,2,\ldots,2n\}$ in which every matched pair has a prime sum, define its **prime palette** as
+$$
 \mathcal P(M)=\{a+b:\{a,b\}\in M\}.
-\]
+$$
 Set
-\[
+$$
 \kappa(n)=\min_M|\mathcal P(M)|.
-\]
+$$
 Prime-sum perfect matchings exist by the classical Greenfield–Greenfield/Bertrand argument.
 
 **Question.** Is
-\[
+$$
 \boxed{\kappa(n)\le2\quad\text{for every }n\ge1?}
-\]
+$$
 
 In fact, the computations support the sharper complete formula
-\[
+$$
 \kappa(n)=
 \begin{cases}
 1,&2n+1\text{ prime},\\
 2,&2n+1\text{ composite}.
 \end{cases}
-\]
+$$
 
 ## Theorem 1: exact one-color classification
 
-**Proposition.** \(\kappa(n)=1\) if and only if \(2n+1\) is prime.
+**Proposition.** $\kappa(n)=1$ if and only if $2n+1$ is prime.
 
-**Proof.** The sum of all \(2n\) integers is \(n(2n+1)\). If all \(n\) pair sums equal one prime \(p\), then \(np=n(2n+1)\), hence \(p=2n+1\). Conversely, if \(2n+1\) is prime, the pairs \(\{i,2n+1-i\}\) for \(1\le i\le n\) use that single sum. \(\square\)
+**Proof.** The sum of all $2n$ integers is $n(2n+1)$. If all $n$ pair sums equal one prime $p$, then $np=n(2n+1)$, hence $p=2n+1$. Conversely, if $2n+1$ is prime, the pairs $\{i,2n+1-i\}$ for $1\le i\le n$ use that single sum. $\square$
 
 This proposition is elementary and **not claimed new**.
 
 ## Theorem 2: prime-difference certificate for two colors
 
-**Proposition.** Suppose there exist odd primes \(q,p\) with
-\[
+**Proposition.** Suppose there exist odd primes $q,p$ with
+$$
 3\le q\le 2n-1,\qquad p=2n+q.
-\]
-Then \(\kappa(n)\le2\). If \(2n+1\) is composite, then \(\kappa(n)=2\).
+$$
+Then $\kappa(n)\le2$. If $2n+1$ is composite, then $\kappa(n)=2$.
 
-**Proof.** Pair the initial even-length interval \(\{1,\ldots,q-1\}\) by
-\[
+**Proof.** Pair the initial even-length interval $\{1,\ldots,q-1\}$ by
+$$
 \{a,q-a\},\quad 1\le a\le(q-1)/2.
-\]
-Every such pair has sum \(q\). Pair the remaining even-length interval \(\{q,\ldots,2n\}\) by
-\[
+$$
+Every such pair has sum $q$. Pair the remaining even-length interval $\{q,\ldots,2n\}$ by
+$$
 \{a,p-a\},\quad q\le a\le(p-1)/2.
-\]
-Every pair in the second interval has sum \(p\). Each integer is used exactly once, and both sums are prime. If \(2n+1\) is composite, Theorem 1 rules out one color. \(\square\)
+$$
+Every pair in the second interval has sum $p$. Each integer is used exactly once, and both sums are prime. If $2n+1$ is composite, Theorem 1 rules out one color. $\square$
 
-Thus one concrete sufficient condition is that \(2n\) admit a representation as the **difference of two primes** \(p-q\), with the smaller prime \(q<2n\). This is a *short-prime-pair* strengthening of the classical 1905 **Maillet conjecture**, which only asks for a representation \(2n=p-q\) without our upper bound on \(q\). Our sufficient condition is **not** asserted necessary: other two-color matchings can exist with sums whose difference is not \(2n\).
+Thus one concrete sufficient condition is that $2n$ admit a representation as the **difference of two primes** $p-q$, with the smaller prime $q<2n$. This is a *short-prime-pair* strengthening of the classical 1905 **Maillet conjecture**, which only asks for a representation $2n=p-q$ without our upper bound on $q$. Our sufficient condition is **not** asserted necessary: other two-color matchings can exist with sums whose difference is not $2n$.
 
 ## Exact finite tests
 
-A sieve-generated certificate \(q\) as in Theorem 2 exists for **every \(2\le n\le100{,}000\)**. The case \(n=1\) is handled by Theorem 1. For cases with \(2n+1\) prime, the one-color theorem of course suffices; the sieve also finds a two-prime certificate when \(n\ge2\). A fixed implementation is in [`experiments/two_prime_palette.py`](../../experiments/two_prime_palette.py).
+A sieve-generated certificate $q$ as in Theorem 2 exists for **every $2\le n\le100{,}000$**. The case $n=1$ is handled by Theorem 1. For cases with $2n+1$ prime, the one-color theorem of course suffices; the sieve also finds a two-prime certificate when $n\ge2$. A fixed implementation is in [`experiments/two_prime_palette.py`](../../experiments/two_prime_palette.py).
 
-| \(n\) | Prime \(q\) | Prime \(p=2n+q\) |
+| $n$ | Prime $q$ | Prime $p=2n+q$ |
 |---:|---:|---:|
 | 4 | 3 | 11 |
 | 7 | 3 | 17 |
@@ -83,13 +83,13 @@ A sieve-generated certificate \(q\) as in Theorem 2 exists for **every \(2\le n\
 | 10,000 | 11 | 20,011 |
 | 100,000 | 3 | 200,003 |
 
-The largest *least qualifying prime* \(q\) among tested \(n\) was \(379\), attained at \(n=90{,}407\). All tests are **finite**, with no implication of an unconditional theorem for every integer.
+The largest *least qualifying prime* $q$ among tested $n$ was $379$, attained at $n=90{,}407$. All tests are **finite**, with no implication of an unconditional theorem for every integer.
 
 ## Novelty and difficulty audit
 
 - Lawrence E. and Stephen J. Greenfield, [*Some Problems of Combinatorial Number Theory Related to Bertrand's Postulate*](https://cs.uwaterloo.ca/journals/JIS/green.html), *Journal of Integer Sequences* 1 (1998), prove the baseline pairing.
 - [OEIS A000341](https://oeis.org/A000341) counts all prime-sum perfect matchings, rather than their minimum number of distinct sums.
-- [OEIS A202472](https://oeis.org/A202472) counts primes \(q<2n\) for which \(q+2n\) is prime: **exactly the sufficient certificates in Theorem 2**. Thus the prime-pair input is emphatically *not a new number-theoretic problem*.
+- [OEIS A202472](https://oeis.org/A202472) counts primes $q<2n$ for which $q+2n$ is prime: **exactly the sufficient certificates in Theorem 2**. Thus the prime-pair input is emphatically *not a new number-theoretic problem*.
 - János Pintz, [*On the difference of primes*](https://arxiv.org/abs/1206.0149) (2012), studies differences of primes and their gaps; the classical Maillet conjecture concerns representation of all even integers as differences of primes.
 - A [2018 Mathematics Stack Exchange discussion](https://math.stackexchange.com/questions/3031150/pair-up-1-2n-that-the-sums-of-each-pair-are-different-primes) asks the *opposite*, maximally many distinct prime sums, closely related to P001, not the two-color problem.
 
@@ -97,7 +97,7 @@ The largest *least qualifying prime* \(q\) among tested \(n\) was \(379\), attai
 
 ## Next mathematical attacks
 
-1. Characterize two-color matchings directly via the union of two reflection matchings (paths and even cycles), without presupposing \(p-q=2n\).
+1. Characterize two-color matchings directly via the union of two reflection matchings (paths and even cycles), without presupposing $p-q=2n$.
 2. Determine whether the two-color statement can be reduced to a theorem *strictly weaker* than Maillet's prime-difference conjecture.
 3. Search for counterexamples where the short prime-pair certificate fails but a more complicated two-color pairing survives.
 4. Study the number of possible prime palettes and the trade-off with P001's maximum spectrum.
