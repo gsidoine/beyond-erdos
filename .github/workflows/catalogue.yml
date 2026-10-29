@@ -40,3 +40,9 @@ jobs:
 
       - name: Verify P018 all dimension-four restrictions and dimension-five counterexample
         run: python experiments/P018_conserved_xor_bases.py
+
+      - name: Verify P019 exact no-three-in-line exchange components
+        run: python experiments/P019_no_three_line_exchange.py --max-n 7
+
+      - name: Verify P020 classical finite-field Hankel corank formula
+        run: python experiments/P020_hankel_finite_field_ranks.py
