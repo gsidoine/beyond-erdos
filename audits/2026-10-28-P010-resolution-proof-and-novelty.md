@@ -14,6 +14,7 @@ n-1,&n=1,2,3,\$$2mm]
 \max\left\{1,\left\lceil(\pi(n/2)-\pi(n/3))/2\right\rceil\right\},&n\ge4.
 \end{cases}
 $$
+
 The complete written constructive proof is [here](../theorems/P010-exact-coprime-adjacencies.md).
 
 The additional $\max\{1,\cdot\}$ is **necessary** when $B_n=\pi(n/2)-\pi(n/3)=0$, for instance $n=9$ and $n=21$. Those values were previously thought to be exceptions to the prime-leaf lower bound; they instead demonstrate the need to count at least one nonisolated path component.
