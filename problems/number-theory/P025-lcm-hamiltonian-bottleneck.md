@@ -1,10 +1,11 @@
 # P025 — Bottleneck Hamiltonicity in least-common-multiple graphs
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** How large must the allowed adjacent lcm be before [N] admits a Hamiltonian cycle?
-> **Formulation:** candidate; minimum bottleneck exactly defined.
-> **Novelty:** unverified, targeted comparison 2026-10-29.
-> **Elementary bound:** normalized bottleneck at least \((1+o(1))N/(4\log N)\).
+> **Research question:** Does closing the permutation into a cycle preserve the known N²/(4 log N) minimum adjacent-lcm bottleneck asymptotic?  
+> **Formulation:** reframe. **Novelty:** confirmed collision for linear-path analogue.  
+> **Verified/known progress:** Erdős–Freud–Hegyvári (1983) already prove the linear-path asymptotic; cyclic-only variation remains under review.  
+> **Finite evidence:** Elementary lower bound recovered; no independent cyclic upper bound.  
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
 <!-- /DOSSIER-SUMMARY -->
 
 **Area:** multiplicative combinatorics, Hamiltonian graph theory, extremal permutations. **Status:** candidate.
