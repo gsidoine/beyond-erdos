@@ -2,10 +2,10 @@
 
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** Can the critical connectivity center be approximated by a specified non-tautological arithmetic expansion?  
-> **Formulation:** needs specification. **Novelty:** not certified.  
+> **Formulation:** needs specification. **Novelty:** needs precise formulation.  
 > **Verified/known progress:** Internal threshold/Gumbel arguments require external proof and priority audit.  
 > **Finite evidence:** Finite degree-profile and center checks.  
-> **Navigation:** [All ten problems](../../README.md#problem-catalogue) · [Source-by-source audit](../../audits/2026-10-28-novelty-quality-gate.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
 <!-- /DOSSIER-SUMMARY -->
 
 
