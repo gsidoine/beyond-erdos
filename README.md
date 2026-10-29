@@ -25,7 +25,7 @@ The 30 entries have different research statuses; **they are not all open conject
 
 These labels distinguish the research status of a *question* from the historical novelty of its formulation. Computations only certify the finite instances and methods specified in their dossiers.
 
-Among the earlier research candidates, **P005, P017, P018 and P020** are leading directions, with **P003 and P016** as additional subjects of interest. The newer P026–P030 questions remain candidates pending fuller historical review; the P027 exchange-graph diameter is already proved internally, whereas its mixing question is open. These are not rankings of mathematical priority or claims of external validation.
+The [consolidated P001–P030 research portfolio](audits/portfolio-consolidation-P001-P030.md) groups the questions into five mathematical programs and distinguishes publication-ready proofs from provisional candidate questions. **P003, P005, P017, P018, P020 and P027** are the current theorem-building priorities; this is an editorial research focus, **not** a certification of novelty or openness. Contributions and newly proposed IDs remain welcome.
 
 **Contributions are welcome**, including new problem proposals, counterexamples, proof improvements, bibliographic corrections and reproducible experiments. New IDs are assigned through review rather than an arbitrary numerical target; see [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -58,16 +58,16 @@ In particular, $h(n)\sim 7n/(12\log n)$. This is a **resolved entry**, not one o
 
 **Interval-sum factor saturation.** A separate [constructive theorem](theorems/interval-sum-factor-saturation.md) proves that a bipartite graph with allowed sum interval $a\le i+j\le b$ contains as many edge-disjoint perfect matchings as its minimum degree. This is not claimed as a resolution of P003 and does not have a numbered open-problem entry.
 
-## Second consolidation pass — primary sources and submission provenance
+## Research portfolio and source verification
 
-- [P010 manuscript snapshot and reference verification](manuscripts/P010-2026-10-29-submission-snapshot-and-policy-audit.md): records the author-supplied **two-page PDF's** exact SHA-256 and bibliography checks. **Important:** the current official *INTEGERS* policy appears to exclude research developed with AI assistance in mathematics/code, as transparently disclosed in that manuscript. The PDF binary is not included in this repository change.
-- [P008/P015/P018/P020 source-and-obstruction review](audits/2026-10-29-P008-P015-P018-P020-source-obstruction-pass.md): cautious distinctions from the closest colored-triangulation, group-labeled-matroid, random-matrix and host-percolation literature; independent validation of P018's exact three-exchange bridge.
+The [P001–P030 consolidation](audits/portfolio-consolidation-P001-P030.md) provides a dossier-by-dossier evidence matrix, identifies shared host graphs and nonredundant observables, records close published predecessors, and prioritizes testable theorem targets. Older literature and proof reviews remain accessible as [historical research records](audits/README.md), not as the current source of catalogue status.
 
-The **P001–P020 discovery freeze remains active**. These updates neither certify historical originality nor alter the mathematical status of any numbered problem.
+The submitted [P010 PDF](manuscripts/P010/coprime_adjacencies.pdf) is in this repository. *Integers* [permits supporting AI-tool use subject to its authorial-writing, accuracy and disclosure requirements](https://math.colgate.edu/~integers/submit.html); the manuscript includes an AI-use statement. Its exact eligibility and editorial outcome are for the journal to determine. Submission does **not** establish acceptance or publication.
 
-## Additional arithmetic and combinatorial research
 
-The newest dossiers examine **four-cycle generation in prime-sum graphs** ([P026](problems/graph-theory/P026-prime-sum-square-cycle-generation.md)), **random walks on maximum primitive sets** ([P027](problems/number-theory/P027-primitive-set-exchange-mixing.md)), **random divisibility-complex Euler characteristics** ([P028](problems/number-theory/P028-random-divisor-complex-mobius-deformation.md)), **prime-sum permutation X-ray fibers** ([P029](problems/graph-theory/P029-prime-sum-permutation-xray-fibers.md)) and **simultaneous prime-sum/prime-difference matchings** ([P030](problems/number-theory/P030-double-prime-perfect-matchings.md)).
+## Arithmetic and combinatorial extensions
+
+Several additional dossiers examine **four-cycle generation in prime-sum graphs** ([P026](problems/graph-theory/P026-prime-sum-square-cycle-generation.md)), **random walks on maximum primitive sets** ([P027](problems/number-theory/P027-primitive-set-exchange-mixing.md)), **random divisibility-complex Euler characteristics** ([P028](problems/number-theory/P028-random-divisor-complex-mobius-deformation.md)), **prime-sum permutation X-ray fibers** ([P029](problems/graph-theory/P029-prime-sum-permutation-xray-fibers.md)) and **simultaneous prime-sum/prime-difference matchings** ([P030](problems/number-theory/P030-double-prime-perfect-matchings.md)).
 
 An [exact primitive-set exchange theorem](theorems/P027-primitive-set-exchange-diameter.md) establishes a Hamming graph metric and diameter $5n/12+O(1)$ on maximum primitive subsets of $[2n]$; its historical novelty has not been certified. Every new question has explicit predecessor citations and finite or theoretical baseline evidence. In particular, P029 reuses the previously studied discrete-tomography *X-ray* object rather than claiming to invent it.
 
@@ -118,7 +118,8 @@ Browse and filter the same entries in the [searchable catalogue](docs/index.html
 
 Historical source reviews and mathematical audits are preserved for transparency. They are **research records rather than continuously updated statements of priority**; consult the individual dossier and its references for the claims currently attached to a question.
 
-- [Catalogue-wide literature comparison, P001–P025](audits/2026-10-29-P001-P025-literature-source-gate.md)
+- [Current research portfolio and priority matrix, P001–P030](audits/portfolio-consolidation-P001-P030.md)
+- [Historical literature comparison, P001–P025](audits/2026-10-29-P001-P025-literature-source-gate.md)
 - [Focused review of the candidate research directions](audits/2026-10-29-flagship-source-comparison-and-shortlist.md)
 - [Earlier consolidation, P001–P020](audits/2026-10-29-P001-P020-first-collection-consolidation.md)
 - [Literature review archive](literature-audits/README.md)
