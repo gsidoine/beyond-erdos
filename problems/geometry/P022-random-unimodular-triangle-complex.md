@@ -1,10 +1,11 @@
 # P022 — Homology of random unimodular lattice-triangle complexes
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** What are the homological phase regimes of the complex whose triangles have normalized lattice area one when lattice vertices are randomly retained?
-> **Formulation:** candidate; random vertex model precisely specified.
-> **Novelty:** unverified, targeted comparison 2026-10-29.
-> **Evidence:** distinction from standard independent-face random complexes specified.
+> **Research question:** What are homology regimes for random lattice-site complexes whose two-faces have normalized area one?  
+> **Formulation:** candidate. **Novelty:** not certified (targeted audit).  
+> **Verified/known progress:** At N=1 with all four vertices kept the complex is the tetrahedral boundary, with reduced H2 nonzero.  
+> **Finite evidence:** Exact elementary N=1 example only; finite Betti experiments pending.  
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
 <!-- /DOSSIER-SUMMARY -->
 
 **Area:** discrete geometry, random topology, arithmetic combinatorics. **Status:** candidate.
