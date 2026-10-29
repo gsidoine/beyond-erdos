@@ -47,15 +47,15 @@ $$
 
 The [autonomous-coordinate theorem](../../theorems/P027-autonomous-coordinate-hypercube-cutoff.md) identifies **five disjoint arithmetic bands** of coordinates that are completely unconstrained by every other coordinate. Their number satisfies
 
-$
+$$
 k_n=\frac{1454}{8505}n+O(1).
-$
+$$
 
 Under the uniform distribution on maximum primitive sets these coordinates are independent fair bits; the state space is exactly their hypercube times a residual interacting factor. The single-chain heat-bath walk projected onto these bits has **total-variation cutoff** at (n/2)log k_n with O(n) window. Therefore the **full chain** has the rigorous necessary mixing time
 
-$
+$$
 t_{\mathrm{mix}}(n,\varepsilon)\ge\frac n2\log n-O_\varepsilon(n).
-$
+$$
 
 The full transition operator splits into a hypercube refresh and a **residual core** operator, giving an exact spectral decomposition and reducing the remaining upper-bound question to the core chain. None of this proves the full walk mixes in O(n log n), has a cutoff, or has a spectral gap of order 1/n. The [dependency-free finite checker](../../experiments/P027_autonomous_coordinates.py) and [optional full-chain spectral diagnostic](../../experiments/P027_full_heatbath_spectrum.py) accompany the proof.
 
