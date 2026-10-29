@@ -5,7 +5,7 @@
 > **Formulation:** candidate. **Novelty:** not certified (targeted audit).  
 > **Verified/known progress:** Full rank iff no nonzero prime-parity functional annihilates all retained columns; exact zero-row probability.  
 > **Finite evidence:** Deterministic parity characterization proved; probabilistic threshold unproved.  
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
 **Area:** probabilistic number theory, random matrices, finite-field linear algebra. **Status:** candidate.
@@ -52,6 +52,3 @@ This is necessary evidence for a scale of order $N^{\alpha-1}\log N$, **not proo
 
 Start with the deterministic full-column rank (the prime columns $m=p$ give the standard basis). Enumerate small $N$ distributions exactly or with certified modular row reduction; distinguish zero-row obstruction from a nonzero left-kernel vector. Search for a parity obstruction that persists after every row is covered. Do not assert the proposed threshold scale without a matching upper bound.
 
-## Revision history
-
-- 2026-10-29: Created as prospective P023; novelty unresolved.
