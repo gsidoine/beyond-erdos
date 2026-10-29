@@ -1,12 +1,12 @@
 # Meta Erdős
 
-**An independent notebook of sixteen research entries in number theory, graph theory and probability, inspired by the problem-posing tradition of Paul Erdős.**
+**An independent notebook of eighteen research entries in number theory, graph theory and probability, inspired by the problem-posing tradition of Paul Erdős.**
 
 **Important:** These are **not** problems claimed to have been posed by Erdős, not part of [erdosproblems.com](https://www.erdosproblems.com/), and not certified to be new or unresolved. Our collection is independent of [teorth/erdosproblems](https://github.com/teorth/erdosproblems). We draw inspiration from that repository's clear, data-driven organization—not its problem content.
 
 **Explore:** [Problem catalogue below](#problem-catalogue) · [Interactive searchable browser](docs/index.html) · [Research audits](#evidence-and-prior-art) · [How to contribute](CONTRIBUTING.md)
 
-> **Research strategy (29 October 2026):** P001–P010 are consolidated; P011–P016 inaugurate a **problem-discovery phase**. The goal is to formulate, challenge and source-audit structurally consequential questions **before** attempting general proofs.
+> **Research strategy (29 October 2026):** P001–P010 are consolidated; P011–P018 inaugurate a **problem-discovery phase**. The goal is to formulate, challenge and source-audit structurally consequential questions **before** attempting general proofs.
 
 ## Problem catalogue
 
@@ -31,6 +31,8 @@ Every problem has a permanent identifier, its own self-contained statement, evid
 | [P014](problems/topology/P014-random-cayley-sum-flag-homology.md) | Homology of random Cayley sum flag complexes | probabilistic topology | candidate | apparent novelty (targeted audit) |
 | [P015](problems/geometry/P015-odd-area-lattice-triangulations.md) | Odd-area lattice triangulation flip connectivity | discrete geometry | candidate | apparent novelty (targeted audit) |
 | [P016](problems/topology/P016-sidon-complex-homology.md) | Topology of the Sidon simplicial complex | topological combinatorics | candidate | apparent novelty (targeted audit) |
+| [P017](problems/probability/P017-random-divisibility-chain-height.md) | Random divisibility-poset chain height | probability | candidate | apparent novelty (targeted audit) |
+| [P018](problems/matroid-theory/P018-conserved-xor-basis-fibers.md) | Conserved-XOR basis exchange fibers | matroid theory | candidate | apparent novelty (targeted audit) |
 <!-- CATALOG:END -->
 
 For precise definitions, follow each ID. To filter by subject, status or title in a browser, open [the searchable catalogue](docs/index.html). If GitHub Pages is enabled for the repository's `docs/` folder, the same page can be published as a standalone website.
@@ -83,6 +85,14 @@ Read the [29 October novelty and new-directions audit](literature-audits/2026-10
 ## New topological research question
 
 - [P016 — Topology of the Sidon simplicial complex](problems/topology/P016-sidon-complex-homology.md) asks whether the reduced homology of arithmetic constraint complexes eventually vanishes in each fixed dimension. [First-pass originality audit](literature-audits/2026-10-29-P016-sidon-complex-topology.md). Exact finite Betti calculations are not an asymptotic proof.
+
+## Discovery roadmap
+
+We are building toward **approximately 25 selectively screened problems**, after which new additions pause for a consolidation audit. **25 is a ceiling, not a quota.** Each new entry needs a crisp mathematical question, a structural payoff, a falsification attempt, reproducible results where practical, and the closest published work.
+
+- [P017 — Random divisibility chains](problems/probability/P017-random-divisibility-chain-height.md) asks for a density-dependent time constant for longest chains in Bernoulli-restricted divisibility orders.
+- [P018 — Conserved-XOR matroid bases](problems/matroid-theory/P018-conserved-xor-basis-fibers.md) studies how local exchange connectivity fails when a linear-algebraic quantity must remain constant. Its first obstruction appears at dimension five in exact finite tests.
+- [Dated cross-field novelty review](literature-audits/2026-10-29-P017-P018-cross-field-problem-screen.md) records distinct prior art and what is or is not demonstrated.
 
 ## Evidence and prior art
 
