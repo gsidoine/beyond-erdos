@@ -5,12 +5,11 @@
 > **Formulation:** needs specification. **Novelty:** needs precise formulation.  
 > **Verified/known progress:** Internal threshold/Gumbel arguments require external proof and priority audit.  
 > **Finite evidence:** Finite degree-profile and center checks.  
-> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Latest novelty audit](../../literature-audits/2026-10-29-novelty-and-new-directions.md)
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
 
 **Area:** probabilistic number theory, arithmetic random graphs  
-**Origin:** discovery pass 3, 2026-10-28  
 **Status:** *explicit arithmetic centering* is a candidate question; leading transition and Gumbel law are proved below. **Novelty of the theorem and the open question is not certified.**
 
 ## Setup
