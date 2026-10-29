@@ -9,7 +9,7 @@
 $$
 h(n)=
 \begin{cases}
-n-1,&n=1,2,3,\$$2mm]
+n-1,&n=1,2,3,\\
 \pi(n)-\pi(n/2)+
 \max\left\{1,\left\lceil(\pi(n/2)-\pi(n/3))/2\right\rceil\right\},&n\ge4.
 \end{cases}
