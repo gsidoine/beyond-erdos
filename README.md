@@ -1,12 +1,12 @@
 # Meta Erdős
 
-**An independent notebook of thirteen research entries in number theory, graph theory and probability, inspired by the problem-posing tradition of Paul Erdős.**
+**An independent notebook of fourteen research entries in number theory, graph theory and probability, inspired by the problem-posing tradition of Paul Erdős.**
 
 **Important:** These are **not** problems claimed to have been posed by Erdős, not part of [erdosproblems.com](https://www.erdosproblems.com/), and not certified to be new or unresolved. Our collection is independent of [teorth/erdosproblems](https://github.com/teorth/erdosproblems). We draw inspiration from that repository's clear, data-driven organization—not its problem content.
 
 **Explore:** [Problem catalogue below](#problem-catalogue) · [Interactive searchable browser](docs/index.html) · [Research audits](#evidence-and-prior-art) · [How to contribute](CONTRIBUTING.md)
 
-> **Research strategy (29 October 2026):** P001–P010 are consolidated; P011–P013 inaugurate a **problem-discovery phase**. The goal is to formulate, challenge and source-audit structurally consequential questions **before** attempting general proofs.
+> **Research strategy (29 October 2026):** P001–P010 are consolidated; P011–P014 inaugurate a **problem-discovery phase**. The goal is to formulate, challenge and source-audit structurally consequential questions **before** attempting general proofs.
 
 ## Problem catalogue
 
@@ -28,6 +28,7 @@ Every problem has a permanent identifier, its own self-contained statement, evid
 | [P011](problems/probability/P011-random-sum-diagonal-matchings.md) | Random sum-diagonal matching transitions | probability | candidate | apparent novelty (targeted audit) |
 | [P012](problems/probability/P012-coprime-matching-space-percolation.md) | Coprime matching-space percolation | probability | candidate | apparent novelty (targeted audit) |
 | [P013](problems/probability/P013-random-sidon-reconfiguration.md) | Random-site Sidon exchange geometry | probability | candidate | apparent novelty (targeted audit) |
+| [P014](problems/topology/P014-random-cayley-sum-flag-homology.md) | Homology of random Cayley sum flag complexes | probabilistic topology | candidate | apparent novelty (targeted audit) |
 <!-- CATALOG:END -->
 
 For precise definitions, follow each ID. To filter by subject, status or title in a browser, open [the searchable catalogue](docs/index.html). If GitHub Pages is enabled for the repository's `docs/` folder, the same page can be published as a standalone website.
