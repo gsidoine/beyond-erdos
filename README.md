@@ -4,9 +4,15 @@
 
 **Important:** These are **not** problems claimed to have been posed by Erdős, not part of [erdosproblems.com](https://www.erdosproblems.com/), and not certified to be new or unresolved. Our collection is independent of [teorth/erdosproblems](https://github.com/teorth/erdosproblems). We draw inspiration from that repository's clear, data-driven organization—not its problem content.
 
-**Explore:** [Problem catalogue below](#problem-catalogue) · [Interactive searchable browser](docs/index.html) · [Research audits](#evidence-and-prior-art) · [How to contribute](CONTRIBUTING.md)
+**Explore:** [Problem catalogue below](#problem-catalogue) · [Interactive searchable browser](docs/index.html) · **[Full P001–P020 consolidation audit](audits/2026-10-29-P001-P020-first-collection-consolidation.md)** · [How to contribute](CONTRIBUTING.md)
 
 > **Discovery freeze (29 October 2026): P001–P020.** The first collection is complete for editorial review. **Do not add P021 or later entries** until a collection-wide proof, novelty, significance and redundancy audit is complete. The number 20 is a research milestone, not a claim that all twenty are genuinely new open problems.
+
+## First collection: consolidation decisions
+
+The [29 October 2026 portfolio-wide audit](audits/2026-10-29-P001-P020-first-collection-consolidation.md) reviews **all twenty IDs** for well-posedness, closest prior art, structural significance, evidence quality and potential overlap. It gives a provisional shortlist of **P003, P005, P014, P016, P017, P018 and P020**, with **P010 on a separate theorem/publication track**. These are **editorial priorities, not certified novel/open problems**.
+
+Key restrictions: **P007** contains a previously known prime-graceful special case, **P008** still needs a precise non-tautological formulation, **P009** closely overlaps a classical prime-difference certificate, and **P010** is internally solved. The collection remains frozen at P001–P020 pending deeper referee and priority checks.
 
 ## Problem catalogue
 
