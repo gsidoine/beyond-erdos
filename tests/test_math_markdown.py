@@ -53,8 +53,8 @@ class MathMarkdownTests(unittest.TestCase):
     def test_p008_equation_source(self):
         file = ROOT / "problems/probability/P008-coprime-percolation-critical-window.md"
         source = file.read_text(encoding="utf-8")
-        self.assertIn(r"$\\gamma$", source)
-        self.assertIn(r"\\mu_n(p)=\\sum_{v=1}^n(1-p)^{d_n(v)}.", source)
+        self.assertIn(r"$\gamma$", source)
+        self.assertIn(r"\mu_n(p)=\sum_{v=1}^n(1-p)^{d_n(v)}.", source)
         self.assertIn("$$\n\\mu_n(p)", source)
 
 
