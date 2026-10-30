@@ -652,9 +652,9 @@
       "question": "Determine the mixing-time order and possible cutoff for single-chain heat-bath dynamics on maximum primitive subsets of [2n].",
       "status": "candidate",
       "novelty": "not certified; closely related to counting primitive sets and distributive-lattice walks",
-      "result": "Exact exchange diameter 5n/12+O(1); autonomous fair-bit factor of size (1454/8505)n+O(1); projected heat-bath cutoff yields full mixing lower bound (n/2)log n−O(n). Full mixing still open",
-      "verification": "Five-band criterion checked n≤1000; full product and uniform conditional updates exhaustively checked n≤30; small finite spectral calculations",
-      "priority": "theorem-stage structural progress; residual-core spectral gap and full-chain cutoff remain open; specialist novelty audit required",
+      "result": "Exact exchange diameter and binary projection; new isolated positive-density 23-state components yield full mixing lower bound (363/202)n log n−O(n) and 23-adic divisibility, while full mixing remains unresolved",
+      "verification": "Exact 23-state enumeration and rational Rayleigh quotient 101/363; five-block isolation checked arithmetically and by finite samples; earlier binary factor checked n≤1000",
+      "priority": "theorem-building — improved sharp-scale lower obstruction; full interacting-core mixing upper bound and historical novelty remain open",
       "sources": [
         {
           "name": "Liu–Pach–Palincza (2021), maximum primitive sets",
