@@ -1,4 +1,4 @@
-"""Guard against malformed TeX in mathematics-bearing GitHub Markdown.
+r"""Guard against malformed TeX in mathematics-bearing GitHub Markdown.
 
 This supplements tests/test_math_markdown.py, which checks Markdown delimiters.
 It specifically prevents P010 regressions that the original tests missed:
@@ -22,7 +22,7 @@ MATH_BLOCK_RE = re.compile(r"(?ms)^\$\$[ \t]*\n(.*?)\n\$\$[ \t]*$")
 
 
 def tex_groups_balanced(expression):
-    """Validate literal { } nesting, excluding escaped \{ and \} characters."""
+    r"""Validate literal { } nesting, excluding escaped \{ and \} characters."""
     depth = 0
     pos = 0
     while pos < len(expression):
