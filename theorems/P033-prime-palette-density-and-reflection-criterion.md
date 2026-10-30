@@ -177,6 +177,35 @@ Every common prime divisor of the half-differences is at most δn, since it divi
 
 First let n→∞ with R fixed, then R→∞. The finite Euler products converge to the strictly positive constant $\mathfrak C$, and the discarded fraction tends to zero. This proves Lemma 3. □
 
+## Generalization — Visible tuples of any fixed number of primes
+
+The Euler-product argument is not specific to three primes or to the prime-sum graph. It yields a general *prime visibility* law.
+
+**Theorem 4.** Fix an integer $k\ge3$ and intervals $(\alpha_i,\beta_i)$ with $0<\alpha_i<\beta_i$, for $i=1,\ldots,k$. For each n, independently choose primes $p_i\in(\alpha_i n,\beta_i n)$, uniformly from their respective sets. Then
+
+$
+\boxed{
+\lim_{n\to\infty}
+\Pr\left(\gcd\left(
+\frac{p_2-p_1}{2},\ldots,\frac{p_k-p_1}{2}
+\right)=1\right)
+=
+\mathfrak C_k
+=
+\left(1-2^{-(k-1)}\right)
+\prod_{\substack{\ell\ge3\\\ell\ \mathrm{prime}}}
+\left(1-(\ell-1)^{-(k-1)}\right).
+}
+$
+
+**Proof.** For a fixed odd prime ℓ, the condition that ℓ divides *all* the half-differences means all k primes have the same reduced residue modulo ℓ. PNT for fixed progressions makes the limiting probability $(\ell-1)^{-(k-1)}$. For ℓ=2, the condition is congruence of all primes modulo 4, with probability $2^{-(k-1)}$. CRT gives the product across any fixed finite set of prime obstructions.
+
+The large-ℓ remainder vanishes uniformly in the three **first** selected primes by the same Brun–Titchmarsh argument as in Lemma 3: for ℓ≤√n, three primes all in one residue class contribute $O(n^3/(\ell^2\log^3 n))$; for ℓ>√n, fixing the first prime and counting all integers in the matching residue classes for the second and third contributes $O(n^{5/2}/\log n+n^2)$ after summation. The three intervals need only have fixed positive lengths and endpoints proportional to n; their mutual positions are irrelevant. Any k-tuple obstructed by ℓ also has its first three primes obstructed, while the remaining k−3 primes are unrestricted. Therefore the same $O(1/R)+o(1)$ **relative** tail bound holds for each fixed k≥3. Let n→∞ at fixed R, then R→∞. $\square$
+
+For orientation, $\mathfrak C_3\approx0.49512138$ and $\mathfrak C_4\approx0.74846809$; for fixed k the constants increase to 1 as k→∞. By contrast, for **two** independently selected primes, the lone half-difference has gcd 1 only when the primes differ by exactly 2; this event has limiting probability zero by the PNT and the trivial bound of one candidate partner per prime. This is a threshold between two and three primes in the *asymptotic visibility statistic*—not a solution of the twin-prime conjecture.
+
+This generalized number-theoretic law is presented as a **consequence of classical methods**, with historical priority unverified. Only the k=3 case is needed for P033.
+
 ## Completion of Theorem 1
 
 For fixed δ<1/5, choose D=ceil(δn). Then n≥5D for all sufficiently large n. By Lemma 2, **a prime triple from $\mathcal T_\delta(n)$ connects [n] if and only if it belongs to $\mathcal U_\delta(n)$**.
