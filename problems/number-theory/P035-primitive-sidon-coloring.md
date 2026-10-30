@@ -3,7 +3,7 @@
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** Can [N] be partitioned into (1+o(1))sqrt(N) sets, each Sidon and a divisibility antichain?  
 > **Formulation:** candidate. **Novelty:** unverified; combines classical Sidon coloring and primitive sets.  
-> **Verified/known progress:** sqrt(N)(1-o(1)) <= chi_PS(N) <= (2+sqrt(2)+o(1))sqrt(N) by dyadic bands and classical Sidon partitions.  
+> **Verified/known progress:** sqrt(N)(1-o(1)) <= chi_PS(N) <= (1+sqrt(2)+o(1))sqrt(N) by dyadic bands and classical Sidon partitions.  
 > **Finite evidence:** Proof of dyadic band upper bound; no computational all-N claim.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
@@ -50,9 +50,7 @@ $$
 =(1+\sqrt2)\sqrt N.
 $$
 
-The claimed theorem uses the **weaker conservative coefficient** \(2+\sqrt2\) to absorb small bands and any finite-size overhead; an explicit tail split at \(N/2^{j+1}\ge (\log N)^4\) shows small-band contribution \(O((\log N)^4)\) if the remaining tiny integers are assigned singleton classes, while the large bands have a uniform \(1+o(1)\) Sidon-coloring bound. In fact the same argument proves the sharper \((1+\sqrt2+o(1))\sqrt N\) bound. We retain the sharper statement as the operative bound below.
-
-**Sharper upper bound:** \(\chi_{\mathrm{PS}}(N)\le (1+\sqrt2+o(1))\sqrt N\). The initial conservative coefficient in the displayed theorem is valid but unnecessarily weak.
+To justify summing the asymptotic error terms, split the bands where the band length is at least $(\\log N)^4$ from the remaining tail. For the long bands, the asymptotic Sidon-coloring bound is uniform because their lengths all tend to infinity. The short bands contain altogether $O((\\log N)^4)$ integers and may be colored with singleton classes, which contribute $o(\\sqrt N)$. This proves the stated $1+\\sqrt2$ upper constant.
 
 ## Why the question is not settled by the baseline
 
