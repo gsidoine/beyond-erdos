@@ -60,7 +60,7 @@ $$
 Then [the explicit six-cycle construction](P033-linear-six-cycle-packing.md) guarantees a six-cycle. The graph is bipartite. Thus its girth is
 
 $$
-\boxed{\operatorname{girth}(G_n(p,q,r))=
+\boxed{\mathrm{girth}(G_n(p,q,r))=
 \begin{cases}
 4,&p+r=2q,\\
 6,&p+r\ne2q.
