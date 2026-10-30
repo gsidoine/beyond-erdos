@@ -2,7 +2,7 @@
 
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** Does the bipartite graph on two copies of [n], joined when i+j is prime, have diameter exactly seven for all sufficiently large n?  
-> **Formulation:** candidate. **Novelty:** strong prior-art overlap risk with interval-constrained prime differences and Erdős problem 17.  
+> **Formulation:** candidate. **Novelty:** high overlap risk: prime-difference conjectures.  
 > **Verified/known progress:** Only prime-sum-two edge is a bridge; diameter seven is equivalent to uniformly finding prime pairs with prescribed even differences in bounded intervals.  
 > **Finite evidence:** Exact bridge-based diameters for 2≤n≤250; independent all-pairs BFS for n≤35.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
@@ -52,3 +52,10 @@ The [exact graph verifier](../../experiments/P032_prime_sum_diameter.py) checks 
 - [Chen–Fu–Guo, *Hamiltonicity in Prime Sum Graphs*](https://doi.org/10.1007/s00373-020-02241-1): older graph uses one vertex copy and a distinct invariant.
 
 **Priority warning:** this question may be an elementary reformulation of already-studied prime-difference coverage. Establish independent mathematical significance before presenting it as a novel conjecture.
+
+
+## Consolidation disposition (P001–P035 audit)
+
+**Disposition — source gate, high analytic dependence.** Diameter seven translates into uniformly constrained prime-pair differences. Check exact relation to Erdős problem 17 and sieve barriers before describing this as an independent tractable problem. Preserve finite experiments only as finite evidence.
+
+This is a priority/novelty gate, not an independently refereed claim about whether the surviving problem is open.
