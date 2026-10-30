@@ -61,6 +61,9 @@ jobs:
       - name: Verify P027 autonomous arithmetic bands, product factor and eigenfunctions
         run: python experiments/P027_autonomous_coordinates.py
 
+      - name: Verify P027 23-state arithmetic motif isolation and exact rational spectral witness
+        run: python experiments/P027_five_site_mixing_obstruction.py
+
       - name: Verify P028 divisor-complex Euler expectation
         run: python experiments/P028_random_divisor_euler.py
 
