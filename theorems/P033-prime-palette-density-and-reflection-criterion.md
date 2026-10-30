@@ -183,7 +183,7 @@ The Euler-product argument is not specific to three primes or to the prime-sum g
 
 **Theorem 4.** Fix an integer $k\ge3$ and intervals $(\alpha_i,\beta_i)$ with $0<\alpha_i<\beta_i$, for $i=1,\ldots,k$. For each n, independently choose primes $p_i\in(\alpha_i n,\beta_i n)$, uniformly from their respective sets. Then
 
-$
+$$
 \boxed{
 \lim_{n\to\infty}
 \Pr\left(\gcd\left(
@@ -196,7 +196,7 @@ $
 \prod_{\substack{\ell\ge3\\\ell\ \mathrm{prime}}}
 \left(1-(\ell-1)^{-(k-1)}\right).
 }
-$
+$$
 
 **Proof.** For a fixed odd prime ℓ, the condition that ℓ divides *all* the half-differences means all k primes have the same reduced residue modulo ℓ. PNT for fixed progressions makes the limiting probability $(\ell-1)^{-(k-1)}$. For ℓ=2, the condition is congruence of all primes modulo 4, with probability $2^{-(k-1)}$. CRT gives the product across any fixed finite set of prime obstructions.
 
