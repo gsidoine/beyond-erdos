@@ -56,6 +56,8 @@ In particular, $h(n)\sim 7n/(12\log n)$. This is a **resolved entry**, not one o
 - [Elementary abelian group probabilities](theorems/P020-elementary-abelian-cokernel-laws.md)
 - [Finite-field kernel structure and prior art](theorems/P020-hankel-kernel-product-research.md)
 
+**P033 — Three prime-sum colors.** An [unconditional eventual-connectivity theorem](theorems/P033-eventual-three-prime-sum-connectivity.md) proves that three prime sums connect $[n]$ for **every sufficiently large $n$**, using an elementary graph lemma and Siegel–Walfisz. Combined with the previously proved two-color/twin-prime criterion, this implies $\kappa(n)=3$ for a density-one set of integers $n$. **The full all-$n$ conjecture remains unresolved**, because the analytic threshold is ineffective. Historical originality is not certified. [P033 dossier](problems/graph-theory/P033-prime-sum-three-palette.md).
+
 **Interval-sum factor saturation.** A separate [constructive theorem](theorems/interval-sum-factor-saturation.md) proves that a bipartite graph with allowed sum interval $a\le i+j\le b$ contains as many edge-disjoint perfect matchings as its minimum degree. This is not claimed as a resolution of P003 and does not have a numbered open-problem entry.
 
 ## Research portfolio and source verification
