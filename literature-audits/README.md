@@ -17,4 +17,4 @@ Useful starting points:
 - [OEIS](https://oeis.org/)
 - arXiv, MathSciNet, zbMATH, journal archives, and research on matchings, reconfiguration and Sidon sets.
 
-The research catalogue currently contains 30 entries. These audit files record the scope and findings of individual literature searches, not a blanket certification of originality. For the current status of each question, use its problem dossier and the [public catalogue](../README.md#problem-catalogue). Additional source corrections and citations are welcome.
+The research catalogue currently contains 33 entries. These audit files record the scope and findings of individual literature searches, not a blanket certification of originality. For the current status of each question, use its problem dossier and the [public catalogue](../README.md#problem-catalogue). Additional source corrections and citations are welcome.
