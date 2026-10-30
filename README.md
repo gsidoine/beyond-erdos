@@ -29,6 +29,10 @@ The [35-entry novelty and proof-gate audit](audits/consolidation-P001-P035-novel
 
 **Contributions are welcome**, including new problem proposals, counterexamples, proof improvements, bibliographic corrections and reproducible experiments. New IDs are assigned through review rather than an arbitrary numerical target; see [CONTRIBUTING.md](CONTRIBUTING.md).
 
+## Focus-session curation: primary and secondary research
+
+The 35 permanent entries are now separately curated as **12 primary research questions, 22 secondary/incubating entries, and one internally resolved entry (P010)**. This is a consequence-based research focus, **not** certification of historical novelty or external open status. See the [primary/secondary assessment](audits/primary-secondary-catalogue-P001-P035.md), the machine-readable [curation allocation](data/curation.json), and the latest [P020/P027/P033 parallel research pass](audits/2026-10-30-focus-session-P020-P027-P033.md). The weekly practice is to **draft five new questions, not promote five**; every promotion requires an explicit consequence and prior-art gate. The symbolic Erdős-inspired stakes are not actual cash awards.
+
 ## P010 — Submitted manuscript
 
 The original P010 question, **the minimum number of coprime adjacencies in a permutation**, has a complete constructive proof in this repository. The resulting manuscript, *The Minimum Number of Coprime Adjacencies in a Permutation*, **has been submitted to the journal _Integers_**. Submission does **not** imply acceptance or publication.
