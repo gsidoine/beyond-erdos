@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "freeze": "P001–P035",
-  "policy": "Consequence-based editorial curation, not factual originality or true cash rewards",
+  "policy": "Curated two-catalogue view: The Acorns (high consequence) and The Seedbed (exploration); The Harvest holds internally resolved results. Symbolic stakes, not cash awards.",
   "primary": [
     "P003",
     "P005",
@@ -44,14 +44,22 @@
     "P010"
   ],
   "weekly_focus": {
-    "drafts_per_week": 5,
+    "cadence": "Explore and test ideas on most days; once each weekend, shortlist around five of that week's candidate problems.",
+    "weekend_shortlist_target": 5,
+    "automatic_promotions": 0,
+    "review_principle": "Keep around five strongest weekly candidates in the active workshop, not necessarily in The Acorns; promote only after mathematical and prior-art gates.",
     "required_reviews": [
-      "proof/finite falsification",
-      "closest predecessor and alternate terminology",
-      "structural consequences of positive and negative outcomes",
-      "precision and independence from another catalogue item"
+      "test precision and falsification",
+      "search known equivalents and alternative terminology",
+      "describe significant positive and negative consequences",
+      "judge independence from existing research tracks"
     ],
-    "promotion_rule": "No automatic promotion; record explicit meaningful consequence. An unresolved, deep, famous or difficult problem does not qualify automatically."
+    "promotion_rule": "Weekend selection is not main-catalogue promotion. An Acorn requires verified mathematical potential, substantive consequence and a defensible scope."
   },
-  "note": "This is a provisional editorial triage that preserves the canonical P001–P035 IDs and current problem paths."
+  "note": "This is a provisional editorial triage that preserves the canonical P001–P035 IDs and current problem paths.",
+  "catalogue_names": {
+    "primary": "The Acorns",
+    "secondary": "The Seedbed",
+    "resolved": "The Harvest"
+  }
 }
