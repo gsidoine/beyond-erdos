@@ -798,9 +798,9 @@
       "question": "Can the graph on [n] be made connected using edges with only three distinct prime sums, for every n≥3?",
       "status": "candidate",
       "novelty": "not certified; Chen–Fu–Guo (2021) established three-color Hamiltonian-prime-set phenomena for some orders, not this stated eventual connectivity theorem",
-      "result": "Internally proved three prime sums connect [n] for every sufficiently large n (PNT + Siegel–Walfisz); exact twin-prime characterization for two colors. The all-n conjecture remains unresolved because the threshold is ineffective",
-      "verification": "Exact arithmetic interval-reflection lemma tested on over 1000 admissible triples; prime witnesses at n=500,1000,2000,5000,10000,30000; exact palette minima for n≤120",
-      "priority": "theorem-stage: unconditional eventual connectivity proved; eliminate ineffective finite exceptions or find elementary proof; specialist novelty audit pending",
+      "result": "New quantified theorem: for any fixed 0<δ<1/5, asymptotically (3/4)C₂≈49.5121% of prime triples p<q<n<r in δ-relative intervals connect [n]. Sharper reflection criterion n≥5D; two colors characterized by twin primes; all-n remains unproved",
+      "verification": "Exact three-reflection sufficient condition tested on 77,795 artificial triples; prime-triple fractions checked through n=20,000; certified three-color witnesses for every 3≤n≤1,000,000 (existing n≤120 test and new n≥60 test)",
+      "priority": "theorem-building — quantitative prime palette density and million-case finite certification; still seek a uniform effective threshold or all-n constructive proof",
       "portfolio_tier": "B",
       "sources": [
         {
@@ -818,6 +818,10 @@
         {
           "name": "Siegel–Walfisz theorem (Kedlaya, analytic number theory notes)",
           "url": "https://kskedlaya.org/ant/chapter-11.html"
+        },
+        {
+          "name": "Montgomery–Vaughan Brun–Titchmarsh inequality for short intervals (cited in JTNB)",
+          "url": "https://jtnb.centre-mersenne.org/item/10.5802/jtnb.1024.pdf"
         }
       ]
     }
