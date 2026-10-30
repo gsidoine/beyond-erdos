@@ -132,7 +132,7 @@ $$
 
 ### Proof
 
-Choose a stationary-orthonormal eigenbasis $1,\psi_1,\ldots,\psi_{22}$ for $-Q$, with eigenvalues $\lambda_j\ge\lambda_*$. On $k_n$ blocks, tensor products of these eigenfunctions are eigenfunctions of $P_n^{\mathrm{proj}}$ with eigenvalues $1-(\sum_i\lambda_{j_i})/n$. There is a finite constant $C$ such that, from any fixed identical initial block state,
+Choose a stationary-orthonormal eigenbasis $1,\psi_1,\ldots,\psi_{22}$ for $-Q$, with eigenvalues $\lambda_j\ge\lambda_*$. On $k_n$ blocks, tensor products of these eigenfunctions are eigenfunctions of $P_n^{\mathrm{proj}}$ with eigenvalues $1-(\sum_i\lambda_{j_i})/n$. Each conditional heat-bath operator $H_j$ is an orthogonal projection, so the eigenvalues of $-Q$ lie in $[0,5]$; since $5k_n/n<1$ for all sufficiently large $n$, the product eigenvalues used below are nonnegative. This justifies their exponential upper bounds after squaring. There is a finite constant $C$ such that, from any fixed identical initial block state,
 
 $$
 \chi^2(\mathcal L(\mathcal Y_{n,t})\Vert\pi_*^{\otimes k_n})
