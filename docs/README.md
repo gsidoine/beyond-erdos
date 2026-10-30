@@ -1,6 +1,6 @@
 # Searchable Meta Erdős catalogue
 
-`index.html` is a responsive, local-searchable browser for **12 Acorns, 22 Seedbed questions and one resolved Harvest result** (35 permanent entries).
+`index.html` is a responsive, local-searchable browser for **12 Acorns, 22 Seedbed questions and one resolved Harvest result** (35 permanent entries; **35 current research entries** in the full archive).
 
 The browser opens on The Acorns and lets readers switch between The Acorns, The Seedbed, The Harvest and the full archive. Collection membership is generated from [`../data/curation.json`](../data/curation.json) into `curation.json`. The browser also filters by **editorial research tier** (A theorem-building, B promising, C incubation, D reframe/source gate, R resolved). These priorities are provisional and are explained in the [current 35-entry consolidation](../audits/consolidation-P001-P035-novelty-and-proof-gates.md); they are not mathematical truth statuses. The [earlier 30-entry consolidation](../audits/portfolio-consolidation-P001-P030.md) is retained for historical context.
 
