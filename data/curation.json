@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "freeze": "P001–P035",
+  "freeze": "P001–P036",
   "policy": "Curated two-catalogue view: The Acorns (high consequence) and The Seedbed (exploration); The Harvest holds internally resolved results. Symbolic stakes, not cash awards.",
   "primary": [
     "P003",
@@ -38,7 +38,8 @@
     "P029",
     "P032",
     "P034",
-    "P035"
+    "P035",
+    "P036"
   ],
   "resolved": [
     "P010"
