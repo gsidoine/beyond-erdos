@@ -39,12 +39,13 @@
 <body>
   <main>
     <header>
-      <div class="eyebrow">Open mathematical research catalogue · P001–P035</div>
+      <div class="eyebrow">Acorns · Seedbed · Harvest · P001–P035</div>
       <h1>Meta Erdős</h1>
       <p>Questions in graph theory, number theory, additive combinatorics and probability. Browse precise statements, tested evidence, and the nearest established mathematics.</p>
       <div class="notice"><strong>Not certified new open problems.</strong> These are independently proposed research candidates inspired by the tradition of Paul Erdős. Not affiliated with Erdős Problems or teorth/erdosproblems.</div>
-      <p><strong>35 research entries:</strong> 31 candidates, two requiring reformulation, one requiring specification, and one internally proved result. <a href="https://github.com/gsidoine/meta-erdos/blob/main/manuscripts/P010/README.md">P010 has been submitted to <em>Integers</em></a> (not accepted or published). <a href="https://github.com/gsidoine/meta-erdos/blob/main/CONTRIBUTING.md">Contributions welcome</a>; see the <a href="https://github.com/gsidoine/meta-erdos/blob/main/audits/portfolio-consolidation-P001-P030.md">consolidated 30-entry research portfolio</a> for priorities, historical overlap and next research steps.</p>
+      <p><strong>12 Acorns · 22 Seedbed questions · 1 Harvest result:</strong> 31 candidates, two requiring reformulation, one requiring specification, and one internally proved result. <a href="https://github.com/gsidoine/meta-erdos/blob/main/manuscripts/P010/README.md">P010 has been submitted to <em>Integers</em></a> (not accepted or published). <a href="https://github.com/gsidoine/meta-erdos/blob/main/CONTRIBUTING.md">Contributions welcome</a>; see the <a href="https://github.com/gsidoine/meta-erdos/blob/main/audits/primary-secondary-catalogue-P001-P035.md">current 35-entry curated research portfolio</a> for priorities, historical overlap and next research steps.</p>
     </header>
+    <section aria-label="Research collections"><div class="bar"><label for="collection">Collection</label><select id="collection" aria-label="Choose research collection"><option value="primary">The Acorns (12)</option><option value="secondary">The Seedbed (22)</option><option value="resolved">The Harvest (1)</option><option value="all">Complete archive (35)</option></select></div></section>
     <section aria-label="Catalogue filters">
       <div class="bar">
         <input id="search" type="search" placeholder="Search questions, IDs, results…" aria-label="Search problems">
@@ -63,6 +64,7 @@
     const base="https://github.com/gsidoine/meta-erdos/blob/main/";
     const $=id=>document.getElementById(id);
     let problems=[];
+    let curation=null;
     const asText=(tag,value,cls)=>{
       const el=document.createElement(tag);
       el.textContent=value;
@@ -82,11 +84,13 @@
       const area=$("area").value;
       const status=$("status").value;
       const tier=$("tier").value;
+      const collection=$("collection").value;
+      const allowed = collection==="all" ? null : new Set(curation?.[collection] || []);
       const filtered=problems.filter(p=>
-        (!area||p.area===area)&&(!status||p.status===status)&&(!tier||p.portfolio_tier===tier)&&
+        (!allowed||allowed.has(p.id))&&(!area||p.area===area)&&(!status||p.status===status)&&(!tier||p.portfolio_tier===tier)&&
         (!term||[p.id,p.title,p.area,p.question,p.result,p.verification,p.novelty].join(" ").toLowerCase().includes(term))
       );
-      $("count").textContent=filtered.length+" of "+problems.length+" problems";
+      $("count").textContent=filtered.length+" shown in "+$("collection").selectedOptions[0].textContent;
       $("catalogue").replaceChildren();
       for(const p of filtered){
         const card=document.createElement("article");
@@ -108,7 +112,9 @@
         $("catalogue").append(card);
       }
     }
-    fetch("./problems.json").then(r=>{
+    Promise.all([fetch("./problems.json"),fetch("./curation.json")]).then(async ([r,c])=>{
+      if(!c.ok)throw Error("Curation HTTP "+c.status);
+      curation=await c.json();
       if(!r.ok)throw Error("HTTP "+r.status);
       return r.json();
     }).then(data=>{
@@ -119,7 +125,7 @@
       for(const v of areas){const o=document.createElement("option");o.value=v;o.textContent=v;$("area").append(o)}
       for(const v of statuses){const o=document.createElement("option");o.value=v;o.textContent=v;$("status").append(o)}
       for(const v of tiers){const o=document.createElement("option");o.value=v;o.textContent=v;$("tier").append(o)}
-      for(const id of ["search","area","status","tier"])$(id).addEventListener("input",draw);
+      for(const id of ["collection","search","area","status","tier"])$(id).addEventListener("input",draw);
       draw();
     }).catch(err=>{
       $("count").textContent="Unable to load catalogue: "+err.message+". Open the repository README instead.";
