@@ -75,3 +75,8 @@ Either prove $\liminf \chi_{\mathrm{PS}}(N)/\sqrt N>1$, or produce colorings wit
 **Disposition — source gate.** The Sidon partition theorem SR(k)=k²+o(k²) is established by Espinosa-García et al. (2024), Theorem 1, DOI 10.1007/s40590-024-00676-7. Our dyadic bound is a combination of classical coloring and primitive-band observations, not an original foundational theorem. Originality of the simultaneous constraint remains unverified.
 
 This is a priority/novelty gate, not an independently refereed claim about whether the surviving problem is open.
+
+
+## Related resolved extremal question (distinct from the coloring problem)
+
+The maximum size of a **single** Sidon set that is also a divisibility antichain is $(1+o(1))\sqrt N$. An elementary [translation-and-divisor-sum argument](../../theorems/P035-primitive-sidon-translation-lemma.md) establishes this sharp leading constant. This does **not** resolve the minimum number of primitive Sidon classes needed to partition $[N]$, and historical priority for the combined extremal observation remains unverified.
