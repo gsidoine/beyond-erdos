@@ -43,21 +43,16 @@ This is the involution identity $(R_r R_q R_p)^2=\mathrm{id}$, with $R_s(t)=s-t$
 **Theorem 2.** If $n\ge 6D+5$ and the three odd sums satisfy the above inequalities, then $G_n(p,q,r)$ contains at least
 
 $$
-\boxed{\left\lfloor \frac{n-6D-4}{18}\right\rfloor}
+\boxed{\left\lfloor \frac{n-6D-4}{36}\right\rfloor}
 $$
 
-pairwise *vertex-disjoint* six-cycles. More precisely, if $X$ is the set of admissible odd $x$ in Theorem 1, the packing has at least $\lceil |X|/9\rceil$ cycles.
+pairwise *vertex-disjoint* six-cycles. More precisely, if $X$ is the set of admissible odd $x$ in Theorem 1, the packing has at least $\lceil |X|/18\rceil$ cycles.
 
-**Proof.** Let $O_x=\{x,x+q-p,x+q-r\}$ be the odd-vertex set of the cycle indexed by $x$. Because the graph is bipartite and each of the three distinct sums determines at most one neighbor of any specified vertex, every even vertex in the cycle is one of the three reflections of one of the odd vertices; we can argue directly that the even-vertex set is
+**Proof.** Let $O_x=\{x,x+q-p,x+q-r\}$ and $E_x=\{p-x,p+r-q-x,r-x\}$ be respectively the sets of odd and even vertices of the cycle indexed by $x$. The odd set is a translate of a three-element pattern, and the even set is a *reflected* translate of a (possibly different) three-element pattern.
 
-$$
-E_x=\{p-x,\;p+r-q-x,\;r-x\}
-=\{p-y:y\in O_x\}.
-$$
+For a fixed $x$, there are at most $3\cdot3=9$ indices $y$ with $O_x\cap O_y\ne\emptyset$: every intersection determines one of nine ordered choices of offsets. Likewise there are at most nine indices $y$ with $E_x\cap E_y\ne\emptyset$. As the graph is bipartite, cycles indexed by $x$ and $y$ overlap only if one of these two intersections occurs. Thus at most **18** candidate indices $y$ (including $x$) conflict with a given cycle.
 
-Therefore cycles at $x$ and $y$ share a vertex **if and only if** $O_x\cap O_y\ne\emptyset$. Indeed the map $z\mapsto p-z$ is a bijection of the integers, so the even sets intersect exactly when the odd sets intersect.
-
-Each $O_x$ is a translate of the fixed three-element set $\{0,q-p,q-r\}$. For each $x$, there are at most $3\cdot3=9$ values of $y$ for which $O_x\cap O_y\ne\emptyset$, counting $y=x$. Greedily select a cycle and discard all overlapping candidate cycles; each selection removes at most nine candidates. This produces at least $\lceil |X|/9\rceil$ disjoint cycles. The interval $[3D+2,n-3D-2]$ contains $n-6D-3$ integers and at least $\lfloor(n-6D-3)/2\rfloor$ odd integers, yielding the conservative stated lower bound. QED.
+Greedily select a cycle and discard all overlapping candidate cycles; each choice discards at most 18 candidates, so we obtain at least $\lceil |X|/18\rceil$ vertex-disjoint cycles. The interval $[3D+2,n-3D-2]$ contains $n-6D-3$ integers and at least $\lfloor(n-6D-3)/2\rfloor$ odd integers. The conservative displayed lower bound follows. QED.
 
 **Corollary 3 (prime palette with both global and local structure).** Fix $0<\delta<1/6$. Every triple of primes in the P033 short-interval family
 
@@ -68,7 +63,7 @@ $$
 has, for sufficiently large $n$, at least
 
 $$
-\left(\frac{1-6\delta}{18}+o(1)\right)n
+\left(\frac{1-6\delta}{36}+o(1)\right)n
 $$
 
 vertex-disjoint six-cycles. By the [prime-palette density theorem](P033-prime-palette-density-and-reflection-criterion.md), an asymptotic fraction
