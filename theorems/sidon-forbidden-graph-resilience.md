@@ -94,6 +94,18 @@ has length $N-o(N)$ and contains a Sidon set of size $(1-o(1))\sqrt N$.
 
 Thus graphs with the **same order of forbidden edges** can produce either a severe loss or no asymptotic loss. No necessary-and-sufficient criterion can depend *only* on the edge-count exponent.
 
+## Extension to arbitrary forbidden configurations
+
+The averaging part of Theorem 1 is not limited to graph edges. Let $\mathcal H$ be any family of distinct subsets of $[N]$, each containing **at least two distinct vertices**. A specified hyperedge $H\subseteq[v]$ occurs in at most one translated Singer set, since two distinct members of $H$ already determine the unique translate. Hyperedges outside $[v]$ never occur.
+
+It follows that one Singer translate contains at most $|\mathcal H|/v$ forbidden hyperedges. Deleting one vertex from each such hyperedge produces a Sidon set avoiding every configuration in $\mathcal H$ of size at least
+
+$$
+\boxed{q+1-\frac{|\mathcal H|}{q^2+q+1}.}
+$$
+
+Thus **any family of $o(N^{3/2})$ arbitrary forbidden configurations of size at least two** can be simultaneously avoided by an asymptotically maximal Sidon subset of $[N]$. This is a general design-incidence alteration principle, not a claim of independent novelty. Hyperedges of size one are excluded because their incidence under Singer translations is $q+1$, not at most one.
+
 ## A refined upper bound in the critical window
 
 Let $G_{N,D}$ join all pairs $x<y$ in $[N]$ for which $y-x\le D$. Write an independent Sidon set as $a_1<\cdots<a_k$. Its $k-1$ adjacent gaps
