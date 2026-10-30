@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
-from generate_catalog import generate, dossier_views, README, BROWSER_DATA  # noqa: E402
+from generate_catalog import generate, dossier_views, README, BROWSER_DATA, BROWSER_CURATION  # noqa: E402
 
 
 class CatalogueTests(unittest.TestCase):
@@ -46,9 +46,10 @@ class CatalogueTests(unittest.TestCase):
             self.assertIn(r["status"], allowed)
 
     def test_generated_views_current(self):
-        readme, browser = generate()
+        readme, browser, curation = generate()
         self.assertEqual(README.read_text(encoding="utf-8"), readme)
         self.assertEqual(BROWSER_DATA.read_text(encoding="utf-8"), browser)
+        self.assertEqual(BROWSER_CURATION.read_text(encoding="utf-8"), curation)
 
     def test_every_dossier_summary_matches_canonical_data(self):
         views = list(dossier_views())

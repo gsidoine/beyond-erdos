@@ -6,11 +6,13 @@
 
 <p align="center"><em>Paul Erdős</em></p>
 
+<p align="center"><em>“The purpose of life is to prove and to conjecture.”</em><br><small>— Paul Erdős, as recorded by <a href="https://mathshistory.st-andrews.ac.uk/Biographies/Erdos/quotations/">MacTutor</a>. The stronger wording about problems being “equally important” has not been verified.</small></p>
+
 **Meta Erdős is an open, community-contributable catalogue of mathematical research questions, conjectures and partial results.** The collection currently contains **35 numbered research entries (P001–P035)** in number theory, graph theory, probability, geometry, topology and matroid theory.
 
 The project takes inspiration from Paul Erdős's problem-posing tradition. These entries are **not claimed to have been posed by Erdős**, do not belong to [erdosproblems.com](https://www.erdosproblems.com/) or [teorth/erdosproblems](https://github.com/teorth/erdosproblems), and are **not certified to be previously unknown or unresolved**. Established results and close predecessors are attributed in the individual dossiers.
 
-**Browse:** [Catalogue](#problem-catalogue) · [Searchable browser](docs/index.html) · [Mathematical results](#mathematical-results) · [Literature and audits](#literature-and-audits) · [Contribute](CONTRIBUTING.md)
+**Browse:** [The Acorns](#the-acorns) · [The Seedbed](#the-seedbed) · [Complete index](#problem-catalogue) · [Searchable browser](docs/index.html) · [Mathematical results](#mathematical-results) · [Literature and audits](#literature-and-audits) · [Contribute](CONTRIBUTING.md)
 
 ## Status and scope
 
@@ -25,13 +27,69 @@ The 35 entries have different research statuses; **they are not all open conject
 
 These labels distinguish the research status of a *question* from the historical novelty of its formulation. Computations only certify the finite instances and methods specified in their dossiers.
 
-The [35-entry novelty and proof-gate audit](audits/consolidation-P001-P035-novelty-and-proof-gates.md) and [earlier P001–P030 portfolio](audits/portfolio-consolidation-P001-P030.md) groups the questions into five mathematical programs and distinguishes publication-ready proofs from provisional candidate questions. **P003, P005, P017, P018, P020 and P027** are the current theorem-building priorities; this is an editorial research focus, **not** a certification of novelty or openness. Contributions and newly proposed IDs remain welcome.
+The [35-entry novelty and proof-gate audit](audits/consolidation-P001-P035-novelty-and-proof-gates.md) and [earlier P001–P030 portfolio](audits/portfolio-consolidation-P001-P030.md) document the mathematical programmes and historical caveats. The Acorns are our current selected research questions; this is an editorial research focus, **not** a certification of novelty or openness. Contributions and newly proposed IDs remain welcome.
 
 **Contributions are welcome**, including new problem proposals, counterexamples, proof improvements, bibliographic corrections and reproducible experiments. New IDs are assigned through review rather than an arbitrary numerical target; see [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## Focus-session curation: primary and secondary research
+## The Acorns
 
-The 35 permanent entries are now separately curated as **12 primary research questions, 22 secondary/incubating entries, and one internally resolved entry (P010)**. This is a consequence-based research focus, **not** certification of historical novelty or external open status. See the [primary/secondary assessment](audits/primary-secondary-catalogue-P001-P035.md), the machine-readable [curation allocation](data/curation.json), and the latest [P020/P027/P033 parallel research pass](audits/2026-10-30-focus-session-P020-P027-P033.md). The weekly practice is to **draft five new questions, not promote five**; every promotion requires an explicit consequence and prior-art gate. The symbolic Erdős-inspired stakes are not actual cash awards.
+**12 selected research questions with high potential mathematical consequences.** An Acorn is a question worth sustained attention, not a claim of novelty, solvability, or a cash prize. Inspired by Erdős's [“acorn” metaphor](https://www.erdosproblems.com/). Selection and justification: [curation report](audits/primary-secondary-catalogue-P001-P035.md).
+
+<!-- ACORNS:START -->
+| ID | Problem | Area |
+|---|---|---|
+| [P003](problems/graph-theory/P003-prime-matching-packing.md) | Edge-disjoint prime-sum matchings | graph theory |
+| [P005](problems/graph-theory/P005-coprime-permutation-switches.md) | Coprime permutation switches | graph theory |
+| [P006](problems/number-theory/P006-prime-avoiding-sidon-sets.md) | Sidon sets without prime differences | additive combinatorics |
+| [P014](problems/topology/P014-random-cayley-sum-flag-homology.md) | Homology of random Cayley sum flag complexes | probabilistic topology |
+| [P017](problems/probability/P017-random-divisibility-chain-height.md) | Random divisibility-poset chain height | probability |
+| [P018](problems/matroid-theory/P018-conserved-xor-basis-fibers.md) | Conserved-XOR basis exchange fibers | matroid theory |
+| [P020](problems/number-theory/P020-random-hankel-padic-cokernels.md) | Cokernel laws of random p-adic Hankel matrices | algebraic probability |
+| [P026](problems/graph-theory/P026-prime-sum-square-cycle-generation.md) | Four-cycle generation in prime-sum bipartite graphs | graph theory |
+| [P027](problems/number-theory/P027-primitive-set-exchange-mixing.md) | Mixing of maximum primitive-set exchanges | multiplicative combinatorics |
+| [P030](problems/number-theory/P030-double-prime-perfect-matchings.md) | Double-prime perfect matchings on integer intervals | number theory |
+| [P031](problems/number-theory/P031-coprime-sidon-extremum.md) | How large can a pairwise-coprime Sidon set be? | number theory |
+| [P033](problems/graph-theory/P033-prime-sum-three-palette.md) | Can three prime sums connect all integers? | graph theory |
+<!-- ACORNS:END -->
+
+## The Seedbed
+
+**22 exploratory questions kept alive for testing, reframing and possible promotion.** The Seedbed is not a rejection bin. Existing IDs, history and experiments stay accessible.
+
+<!-- SEEDBED:START -->
+| ID | Problem | Area |
+|---|---|---|
+| [P001](problems/number-theory/P001-prime-spectrum.md) | Prime-spectrum saturation | number theory |
+| [P002](problems/graph-theory/P002-prime-matching-reconfiguration.md) | Prime-sum matching reconfiguration | graph theory |
+| [P004](problems/number-theory/P004-sidon-exchange-connectivity.md) | Sidon exchange connectivity | additive combinatorics |
+| [P007](problems/graph-theory/P007-coprime-difference-spectrum.md) | Coprime path difference spectrum | graph labeling |
+| [P008](problems/probability/P008-coprime-percolation-critical-window.md) | Arithmetic centering of coprime percolation | probability |
+| [P009](problems/number-theory/P009-two-prime-palette-pairings.md) | Two-prime palette pairings | number theory |
+| [P011](problems/probability/P011-random-sum-diagonal-matchings.md) | Random sum-diagonal matching transitions | probability |
+| [P012](problems/probability/P012-coprime-matching-space-percolation.md) | Coprime matching-space percolation | probability |
+| [P013](problems/probability/P013-random-sidon-reconfiguration.md) | Random-site Sidon exchange geometry | probability |
+| [P015](problems/geometry/P015-odd-area-lattice-triangulations.md) | Odd-area lattice triangulation flip connectivity | discrete geometry |
+| [P016](problems/topology/P016-sidon-complex-homology.md) | Topology of the Sidon simplicial complex | topological combinatorics |
+| [P019](problems/geometry/P019-no-three-line-exchange.md) | Exchange complexity of optimal no-three-in-line configurations | discrete geometry |
+| [P021](problems/probability/P021-cayley-sum-sandpile-laws.md) | Random Cayley-sum sandpile groups | algebraic probability |
+| [P022](problems/geometry/P022-random-unimodular-triangle-complex.md) | Random unimodular triangle complex homology | discrete geometry |
+| [P023](problems/probability/P023-random-prime-incidence-rank.md) | Rank of random prime-divisibility incidence matrices | probabilistic number theory |
+| [P024](problems/graph-theory/P024-zero-forcing-divisor-graph.md) | Zero forcing on the divisor comparability graph | graph theory |
+| [P025](problems/number-theory/P025-lcm-hamiltonian-bottleneck.md) | Cyclic lcm Hamiltonian bottleneck | number theory |
+| [P028](problems/number-theory/P028-random-divisor-complex-mobius-deformation.md) | Möbius deformation from random divisibility complexes | analytic number theory |
+| [P029](problems/graph-theory/P029-prime-sum-permutation-xray-fibers.md) | Prime-supported permutation X-ray fiber reconfiguration | combinatorics |
+| [P032](problems/graph-theory/P032-prime-sum-bipartite-diameter.md) | Is the prime-sum bipartite diameter eventually seven? | graph theory |
+| [P034](problems/graph-theory/P034-four-prime-sum-biconnectivity.md) | Four prime sums without cut vertices | graph theory |
+| [P035](problems/number-theory/P035-primitive-sidon-coloring.md) | Sidon coloring by divisibility antichains | additive combinatorics |
+<!-- SEEDBED:END -->
+
+## The Harvest — internally resolved results
+
+**[P010](problems/graph-theory/P010-minimum-coprime-adjacencies.md)** remains in a distinct resolved-results track (submitted to *Integers*, not accepted or externally certified). See the manuscript section below.
+
+## The research rhythm
+
+We explore and test problems **throughout the week**, without a daily quota. **Each weekend, shortlist roughly five of the strongest new candidate questions for the active workshop**—not five automatic Acorn promotions. Promotion requires a consequence statement, mathematical falsification, alternate-terminology literature comparison and clear separation from existing questions. [Machine-readable curation](data/curation.json) · [parallel research audit](audits/2026-10-30-focus-session-P020-P027-P033.md).
 
 ## P010 — Submitted manuscript
 
@@ -88,6 +146,8 @@ The [P027 finite-template theorem](theorems/P027-finite-arithmetic-template-tran
 **P035 — Primitive Sidon coloring.** Can [N] be colored with asymptotically sqrt(N) colors so that every class is simultaneously Sidon and a divisibility antichain? An elementary dyadic construction gives at most (1+sqrt(2)+o(1))sqrt(N) classes; the optimal leading constant is unverified. [P035 dossier](problems/number-theory/P035-primitive-sidon-coloring.md).
 
 ## Problem catalogue
+
+This is a **complete archival index of all 35 IDs**, including Acorns, Seedbed and Harvest. Use the two curated catalogues above for research selection.
 
 The table below is generated from [the canonical metadata](data/problems.json). Each entry links to its full mathematical formulation, known results, finite experiments, prior-art comparison and remaining questions.
 

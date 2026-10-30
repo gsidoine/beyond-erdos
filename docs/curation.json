@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "freeze": "P001–P035",
+  "policy": "Curated two-catalogue view: The Acorns (high consequence) and The Seedbed (exploration); The Harvest holds internally resolved results. Symbolic stakes, not cash awards.",
+  "primary": [
+    "P003",
+    "P005",
+    "P006",
+    "P014",
+    "P017",
+    "P018",
+    "P020",
+    "P026",
+    "P027",
+    "P030",
+    "P031",
+    "P033"
+  ],
+  "secondary": [
+    "P001",
+    "P002",
+    "P004",
+    "P007",
+    "P008",
+    "P009",
+    "P011",
+    "P012",
+    "P013",
+    "P015",
+    "P016",
+    "P019",
+    "P021",
+    "P022",
+    "P023",
+    "P024",
+    "P025",
+    "P028",
+    "P029",
+    "P032",
+    "P034",
+    "P035"
+  ],
+  "resolved": [
+    "P010"
+  ],
+  "weekly_focus": {
+    "cadence": "Explore and test ideas on most days; once each weekend, shortlist around five of that week's candidate problems.",
+    "weekend_shortlist_target": 5,
+    "automatic_promotions": 0,
+    "review_principle": "Keep around five strongest weekly candidates in the active workshop, not necessarily in The Acorns; promote only after mathematical and prior-art gates.",
+    "required_reviews": [
+      "test precision and falsification",
+      "search known equivalents and alternative terminology",
+      "describe significant positive and negative consequences",
+      "judge independence from existing research tracks"
+    ],
+    "promotion_rule": "Weekend selection is not main-catalogue promotion. An Acorn requires verified mathematical potential, substantive consequence and a defensible scope."
+  },
+  "note": "This is a provisional editorial triage that preserves the canonical P001–P035 IDs and current problem paths.",
+  "catalogue_names": {
+    "primary": "The Acorns",
+    "secondary": "The Seedbed",
+    "resolved": "The Harvest"
+  }
+}
