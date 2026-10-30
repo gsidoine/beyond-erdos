@@ -90,11 +90,13 @@ jobs:
               core.info(`Deleted reviewed branch ${name}`);
             }
 
+            const pending = [];
             for (const item of retired) {
               const ref = await currentRef(item.name);
               if (!ref) continue;
               if (ref.data.object.sha !== item.sha) {
                 core.warning(`SKIPPED changed branch ${item.name}`);
+                pending.push(item.name);
                 continue;
               }
 
@@ -104,6 +106,7 @@ jobs:
               if (item.kind === 'merged') {
                 if (cmp.data.ahead_by !== 0) {
                   core.warning(`SKIPPED ${item.name}: new work ahead of main`);
+                  pending.push(item.name);
                   continue;
                 }
               } else {
@@ -116,9 +119,9 @@ jobs:
                   JSON.stringify(files) === JSON.stringify(redundantFiles);
                 if (pr.data.state !== 'closed' || pr.data.merged_at ||
                     pr.data.head.sha !== item.sha ||
-                    cmp.data.ahead_by !== 12 ||
-                    cmp.data.behind_by !== 0 || !sameFiles) {
+                    cmp.data.ahead_by !== 12 || !sameFiles) {
                   core.warning('SKIPPED abandoned PR #29: review conditions changed');
+                  pending.push(item.name);
                   continue;
                 }
               }
@@ -126,7 +129,7 @@ jobs:
             }
 
             // Once this maintenance PR itself is merged, retire its branch.
-            const selfName = 'maintenance/retire-stale-branches-and-integrity';
+            const selfName = 'maintenance/retire-final-unmerged-branch';
             const selfRef = await currentRef(selfName);
             if (selfRef) {
               const prs = await github.rest.pulls.list({
@@ -136,5 +139,11 @@ jobs:
               const merged = prs.data.some(pr =>
                 pr.merged_at && pr.head.sha === selfRef.data.object.sha);
               if (merged) await remove(selfName);
-              else core.warning('SKIPPED maintenance branch: not confirmed merged');
+              else {
+                core.warning('SKIPPED maintenance branch: not confirmed merged');
+                pending.push(selfName);
+              }
+            }
+            if (pending.length) {
+              core.setFailed(`Branch cleanup incomplete: ${pending.join(', ')}`);
             }
