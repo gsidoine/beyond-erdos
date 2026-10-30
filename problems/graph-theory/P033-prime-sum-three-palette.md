@@ -24,22 +24,22 @@ Each fixed sum color is a matching, so one color cannot connect three or more ve
 
 ## Quantitative theorem — Almost half of nearby prime triples connect
 
-The [prime-palette density theorem](../../theorems/P033-prime-palette-density-and-reflection-criterion.md) proves that, for every fixed real \(0<\delta<1/5\), among all prime triples
+The [prime-palette density theorem](../../theorems/P033-prime-palette-density-and-reflection-criterion.md) proves that, for every fixed real $0<\delta<1/5$, among all prime triples
 
-$
+$$
 (1-\delta)n<p<q<n<r<(1+\delta)n,
-$
+$$
 
-the proportion whose three sum-color matchings **connect all of \([n]\)** tends to the exact constant
+the proportion whose three sum-color matchings **connect all of $[n]$** tends to the exact constant
 
-$
+$$
 \boxed{\mathfrak C=\frac34\prod_{\substack{\ell\ge3\\\ell\ \mathrm{prime}}}
 \left(1-\frac1{(\ell-1)^2}\right)\approx0.49512138.}
-$
+$$
 
 The prime-product factor is the classical **twin-prime constant**, but **no twin-prime hypothesis** is used. This follows from fixed-modulus prime equidistribution and Brun–Titchmarsh bounds for large common divisors.
 
-The new elementary graph criterion is also stronger: if three odd sums \(p<q<n<r\) are within \(D\) of \(n\) and \(n\ge5D\), their graph is connected **exactly when** their two half-differences are coprime (previously sufficiency required \(n\ge12D+10\)). A [fully reproducible finite verifier](../../experiments/P033_prime_palette_density.py) additionally provides prime-palette witnesses for every \(3\le n\le1{,}000{,}000\), combining the existing exact small-n checker with the improved arithmetic criterion. Neither result supplies an explicit analytic threshold covering all larger \(n\); the **universal all-n question remains unresolved**.
+The new elementary graph criterion is also stronger: if three odd sums $p<q<n<r$ are within $D$ of $n$ and $n\ge5D$, their graph is connected **exactly when** their two half-differences are coprime (previously sufficiency required $n\ge12D+10$). A [fully reproducible finite verifier](../../experiments/P033_prime_palette_density.py) additionally provides prime-palette witnesses for every $3\le n\le1{,}000{,}000$, combining the existing exact small-n checker with the improved arithmetic criterion. Neither result supplies an explicit analytic threshold covering all larger $n$; the **universal all-n question remains unresolved**.
 
 ## Theorem — Three prime sums suffice eventually
 
