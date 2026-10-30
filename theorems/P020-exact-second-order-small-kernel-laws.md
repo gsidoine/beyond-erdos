@@ -4,7 +4,7 @@
 
 ## Setup
 
-Let $H_n=(X_{i+j})_{0\le i,j<n}$ with $2n-1$ independent Haar $\mathbb Z_p$ entries, and put $C_n=\operatorname{coker}H_n$.
+Let $H_n=(X_{i+j})_{0\le i,j<n}$ with $2n-1$ independent Haar $\mathbb Z_p$ entries, and put $C_n=\mathrm{coker}H_n$.
 
 For $1\le k\le n$ write
 
@@ -54,7 +54,7 @@ These are **exact dimension-stable probabilities** once $n>k$, not mere asymptot
 
 Fix the entire first residue vector $X\bmod p$, with $\bar H_n$ of corank $k$. Choose a fixed integral basis of the mod-$p$ radical and split off the invertible $(n-k)$-block by a Schur complement. As in [the first-order theorem](P020-elementary-abelian-cokernel-laws.md), the remaining matrix is $T=pS$ for $S\in\mathrm{Sym}_k(\mathbb Z_p)$; conditional on $X\bmod p$, $\bar S=S\bmod p$ is Haar-uniform among **Hankel $k\times k$ matrices**.
 
-Further condition on the complete first two $p$-adic digits of $X$ (so that $\bar S$ is fixed) and suppose $\operatorname{corank}(\bar S)=j\in\{1,2\}$. Split off the invertible $(k-j)$-block of $\bar S$ and divide the remaining Schur complement by $p$, producing a $j\times j$ matrix $W$ over $\mathbb Z_p$.
+Further condition on the complete first two $p$-adic digits of $X$ (so that $\bar S$ is fixed) and suppose $\mathrm{corank}(\bar S)=j\in\{1,2\}$. Split off the invertible $(k-j)$-block of $\bar S$ and divide the remaining Schur complement by $p$, producing a $j\times j$ matrix $W$ over $\mathbb Z_p$.
 
 **Claim:** conditional on these first two digits, $W\bmod p$ is uniform in $\mathrm{Sym}_j(\mathbb F_p)$.
 
@@ -78,7 +78,7 @@ A uniform symmetric $1\times1$ or $2\times2$ matrix over $\mathbb F_p$ is nonsin
 
 For $p=2$ and $n=k=3$, conditional on $H_3\bmod2=0$, one can write $H_3=2S$ with $S$ uniform Hankel modulo $4$, giving $4^5=1024$ possible anti-diagonal sequences. Direct enumeration (not using the distribution formula) gives:
 
-| $\operatorname{corank}(S\bmod2)$ | Count of $S$ | Count with invertible second-order residual | Predicted count |
+| $\mathrm{corank}(S\bmod2)$ | Count of $S$ | Count with invertible second-order residual | Predicted count |
 |---:|---:|---:|---:|
 | 1 | 384 | 192 | $384(1-1/2)=192$ |
 | 2 | 96 | 48 | $96(1-1/2)=48$ |
