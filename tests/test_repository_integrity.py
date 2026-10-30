@@ -16,13 +16,14 @@ class IntegrationConsistencyTests(unittest.TestCase):
         data = json.loads((ROOT / "data/problems.json").read_text(encoding="utf-8"))
         browser = json.loads((ROOT / "docs/problems.json").read_text(encoding="utf-8"))
         ids = [p["id"] for p in data["problems"]]
-        self.assertEqual(ids, [f"P{i:03d}" for i in range(1, 31)])
+        self.assertEqual(ids[:30], [f"P{i:03d}" for i in range(1, 31)])
+        self.assertEqual(ids, [f"P{i:03d}" for i in range(1, len(ids) + 1)])
         self.assertEqual(data, browser)
         self.assertEqual([p["id"] for p in data["problems"] if p["status"] == "proved internally"], ["P010"])
 
     def test_no_stale_public_documentation(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
-        self.assertIn("**30 numbered research entries", readme)
+        self.assertIn("**33 numbered research entries", readme)
         self.assertIn("submitted to the journal _Integers_", readme)
         for bad in ("P001–P020 discovery freeze remains",
                     "PDF binary is not included",

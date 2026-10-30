@@ -1,6 +1,6 @@
 # Searchable Meta Erdős catalogue
 
-`index.html` is a responsive, local-searchable browser for the **30 current research entries**.
+`index.html` is a responsive, local-searchable browser for the **33 current research entries**.
 
 The browser also filters by **editorial research tier** (A theorem-building, B promising, C incubation, D reframe/source gate, R resolved). These priorities are provisional and are explained in the [current 30-entry consolidation](../audits/portfolio-consolidation-P001-P030.md); they are not mathematical truth statuses.
 
