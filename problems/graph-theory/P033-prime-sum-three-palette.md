@@ -3,8 +3,8 @@
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** Can the graph on [n] be made connected using edges with only three distinct prime sums, for every n≥3?  
 > **Formulation:** candidate. **Novelty:** not certified; Chen–Fu–Guo (2021) established three-color Hamiltonian-prime-set phenomena for some orders, not this stated eventual connectivity theorem.  
-> **Verified/known progress:** Internally proved three prime sums connect [n] for every sufficiently large n (PNT + Siegel–Walfisz); exact twin-prime characterization for two colors. The all-n conjecture remains unresolved because the threshold is ineffective.  
-> **Finite evidence:** Exact arithmetic interval-reflection lemma tested on over 1000 admissible triples; prime witnesses at n=500,1000,2000,5000,10000,30000; exact palette minima for n≤120.  
+> **Verified/known progress:** New quantified theorem: for any fixed 0<δ<1/5, asymptotically (3/4)C₂≈49.5121% of prime triples p<q<n<r in δ-relative intervals connect [n]. Sharper reflection criterion n≥5D; two colors characterized by twin primes; all-n remains unproved.  
+> **Finite evidence:** Exact three-reflection sufficient condition tested on 77,795 artificial triples; prime-triple fractions checked through n=20,000; certified three-color witnesses for every 3≤n≤1,000,000 (existing n≤120 test and new n≥60 test).  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
@@ -21,6 +21,25 @@ $$
 $$
 
 Each fixed sum color is a matching, so one color cannot connect three or more vertices. The question asks whether **three prime-sum matchings always suffice to make a connected graph**, regardless of prime gaps.
+
+## Quantitative theorem — Almost half of nearby prime triples connect
+
+The [prime-palette density theorem](../../theorems/P033-prime-palette-density-and-reflection-criterion.md) proves that, for every fixed real \(0<\delta<1/5\), among all prime triples
+
+$
+(1-\delta)n<p<q<n<r<(1+\delta)n,
+$
+
+the proportion whose three sum-color matchings **connect all of \([n]\)** tends to the exact constant
+
+$
+\boxed{\mathfrak C=\frac34\prod_{\substack{\ell\ge3\\\ell\ \mathrm{prime}}}
+\left(1-\frac1{(\ell-1)^2}\right)\approx0.49512138.}
+$
+
+The prime-product factor is the classical **twin-prime constant**, but **no twin-prime hypothesis** is used. This follows from fixed-modulus prime equidistribution and Brun–Titchmarsh bounds for large common divisors.
+
+The new elementary graph criterion is also stronger: if three odd sums \(p<q<n<r\) are within \(D\) of \(n\) and \(n\ge5D\), their graph is connected **exactly when** their two half-differences are coprime (previously sufficiency required \(n\ge12D+10\)). A [fully reproducible finite verifier](../../experiments/P033_prime_palette_density.py) additionally provides prime-palette witnesses for every \(3\le n\le1{,}000{,}000\), combining the existing exact small-n checker with the improved arithmetic criterion. Neither result supplies an explicit analytic threshold covering all larger \(n\); the **universal all-n question remains unresolved**.
 
 ## Theorem — Three prime sums suffice eventually
 
