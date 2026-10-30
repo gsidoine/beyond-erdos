@@ -27,7 +27,7 @@
 
 **Exact problem.** In prime-sum perfect matchings of $[2n]$, maximize the number of distinct prime values used. Ask whether all but $O(1)$ prime sums in the available interval can be realized.
 
-**Primary historical source.** Lawrence E. Greenfield and Stephen J. Greenfield, *Some Problems of Combinatorial Number Theory Related to Bertrand's Postulate*, *Journal of Integer Sequences* **1** (1998), Article 98.1.2: https://cs.uwaterloo.ca/journals/JIS/green.html. They prove the classical prime-pairing property and formulate additional generalizations. The paper predates our problem by nearly three decades; prime-sum pairing is **not our invention**.
+**Primary historical source.** Lawrence E. Greenfield and Stephen J. Greenfield, *Some Problems of Combinatorial Number Theory Related to Bertrand's Postulate*, *Journal of Integer Sequences* **1** (1998), Article 98.1.2: https://cs.uwaterloo.ca/journals/JIS/green.html. They prove the classical prime-pairing property and formulate additional generalizations. The paper predates the candidate question by nearly three decades; prime-sum pairing is **an established topic**.
 
 **Computational enumeration.** OEIS [A000341](https://oeis.org/A000341) counts all prime-sum perfect matchings and cites Greenfield–Greenfield. The quantity counted there is **not** our maximum number of distinct sum values.
 
@@ -71,7 +71,7 @@ This follows from integral max-flow/min-cut and is **standard**, not a new resul
 
 **Established equivalence.** Finite Sidon sets are precisely Golomb rulers after translation. See MathWorld, https://mathworld.wolfram.com/SidonSet.html, for the correspondence and classical extremal size.
 
-**Very close operational predecessor.** Dotú and Van Hentenryck, *A Memetic Approach to Golomb Rulers* (2005), https://cs.brown.edu/research/pubs/pdfs/2005/Dotu-2005-SHE.pdf, use changing the value of **a single mark** as a local-search move. This is structurally identical to our primitive operation, but their algorithm can visit **infeasible intermediate rulers** and often fixes endpoints. It does **not** establish that the graph of *only valid* Sidon rulers with fixed ambient interval is connected.
+**Very close operational predecessor.** Dotú and Van Hentenryck, *A Memetic Approach to Golomb Rulers* (2005), https://cs.brown.edu/research/pubs/pdfs/2005/Dotu-2005-SHE.pdf, use changing the value of **a single mark** as a local-search move. This is structurally identical to the operation considered in P004, but their algorithm can visit **infeasible intermediate rulers** and often fixes endpoints. It does **not** establish that the graph of *only valid* Sidon rulers with fixed ambient interval is connected.
 
 **Other nearby work.** Carter, Hunter and O'Bryant, *On the diameter of finite Sidon sets*, *Acta Math. Hung.* 175 (2025), https://doi.org/10.1007/s10474-024-01499-8, study the **numerical span/diameter of a Sidon set**, not the graph-theoretic diameter of its local-move reconfiguration graph. Avoid conflating them.
 
@@ -85,7 +85,7 @@ This follows from integral max-flow/min-cut and is **standard**, not a new resul
 
 **Switch precedent.** Dyer–Jerrum–Müller (2016/17), https://eprints.whiterose.ac.uk/id/eprint/111478/1/monotone.pdf, and Bonamy et al. (2019), https://doi.org/10.4230/LIPIcs.MFCS.2019.80, investigate general matching switches. Their results warn against treating connectivity as automatic. In particular, induced 6-cycles show the coprime bipartite graph is **not** chordal bipartite, but this alone neither proves nor disproves global switch connectivity.
 
-**Assessment:** strongest exact-number-theory/reconfiguration bridge among our candidates; direct switch-connectivity resolution not located. Check algebraic statistics of 0–1 matrices with structural zeros/Markov bases in addition to graph-theory searches.
+**Assessment:** a notable number-theory/reconfiguration bridge among the candidates; direct switch-connectivity resolution not located. Check algebraic statistics of 0–1 matrices with structural zeros/Markov bases in addition to graph-theory searches.
 
 ## P006 — Sidon sets avoiding every prime difference
 
@@ -103,7 +103,7 @@ This follows from integral max-flow/min-cut and is **standard**, not a new resul
 
 **Definitive partial prior-art collision.**
 
-Panma and Rochanakul, *Prime-Graceful Graphs*, *Thai Journal of Mathematics* 19(4), 1685–1697 (2021), https://thaijmath.com/index.php/thaijmath/article/view/1264, **Theorem 2.1**: the path $P_n$ has a prime-graceful labeling **if and only if $n\le5$**. Their definition requires precisely the labels $[n]$, coprimality on every path edge, and *all* edge differences distinct. Thus our "graceful coprime permutation exists iff $n\le5$" proof simply rederives a known theorem. This **must never be presented as an original result**.
+Panma and Rochanakul, *Prime-Graceful Graphs*, *Thai Journal of Mathematics* 19(4), 1685–1697 (2021), https://thaijmath.com/index.php/thaijmath/article/view/1264, **Theorem 2.1**: the path $P_n$ has a prime-graceful labeling **if and only if $n\le5$**. Their definition requires precisely the labels $[n]$, coprimality on every path edge, and *all* edge differences distinct. Thus the "graceful coprime permutation exists iff $n\le5$" proof simply rederives a known theorem. This **must never be presented as an original result**.
 
 **Distinguish related positive results carefully.** The same paper discusses "2-prime-graceful" labeling of paths, where the **allowed label range is enlarged**. It is not a contradiction that a path is 2-prime-graceful while it fails to be prime-graceful for $n\ge6$.
 
@@ -119,10 +119,10 @@ Panma and Rochanakul, *Prime-Graceful Graphs*, *Thai Journal of Mathematics* 19(
 
 - Gupta, Lee and Li, *The Connectivity Threshold for Dense Graphs*, SODA 2021, in https://epubs.siam.org/doi/book/10.1137/1.9781611976465, explicitly studies **independent bond percolation on an arbitrary fixed host graph**, with thresholds described via approximate mincuts. This is directly relevant to our mechanism, though its abstract does **not** state the exact $e^\gamma$ arithmetic constant or the Poisson/Gumbel window.
 - Penrose, *Inhomogeneous random graphs, isolated vertices, and Poisson approximation*, *Journal of Applied Probability* 55 (2018), https://doi.org/10.1017/jpr.2018.9, supplies general Poisson techniques for isolated vertices of inhomogeneous random graphs.
-- Hladký and Viswanathan, *Connectivity of Inhomogeneous Random Graphs II*, *Random Structures & Algorithms* 69 (2026), https://doi.org/10.1002/rsa.70098, proves abstract connectivity criteria and studies the low-degree graphon profile; its sampled-vertex graphon framework is **not automatically identical** to our deterministic $[n]$ arithmetic host with $n$-dependent edge thinning.
+- Hladký and Viswanathan, *Connectivity of Inhomogeneous Random Graphs II*, *Random Structures & Algorithms* 69 (2026), https://doi.org/10.1002/rsa.70098, proves abstract connectivity criteria and studies the low-degree graphon profile; its sampled-vertex graphon framework is **not automatically identical** to the deterministic $[n]$ arithmetic host with $n$-dependent edge thinning.
 - Martineau, *On coprime percolation, the visibility graphon, and the local limit of the GCD profile*, *Electronic Communications in Probability* 27 (2022), https://doi.org/10.1214/21-ECP381. Despite the very suggestive title, its "coprime percolation" is **a lattice gcd coloring and visibility graphon**, not the same independent edge-retention connectivity problem. It should be cited as arithmetic geometric context, not as exact prior resolution.
 
-**Status of our internally supplied proofs.** Our P008 contains an internally derived leading-order threshold $e^\gamma\log n\log\log n/n$, Poisson isolated-vertex limit, and Gumbel window when centered by $\mu_n(b_n)=1$. The generic architecture—isolates, factorial moments, cuts—is well established. An **independent mathematical audit** and review of whether Gupta–Lee–Li or other general results subsume the argument are needed before any publication or priority claim.
+**Status of the internal proofs.** P008 contains an internally derived leading-order threshold $e^\gamma\log n\log\log n/n$, Poisson isolated-vertex limit, and Gumbel window when centered by $\mu_n(b_n)=1$. The generic architecture—isolates, factorial moments, cuts—is well established. An **independent mathematical audit** and review of whether Gupta–Lee–Li or other general results subsume the argument are needed before any publication or priority claim.
 
 **Remaining centering task is not yet a crisp yes/no conjecture.** As currently worded, "find an explicit formula for $b_n$" requires a precise admissible class of expressions and an error target, otherwise the exact implicit equation $\mu_n(b_n)=1$ itself already defines $b_n$. A meaningful task is to derive a specified elementary/logarithmic asymptotic approximation $B(n)$ satisfying
 
