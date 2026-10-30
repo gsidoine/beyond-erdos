@@ -1,10 +1,10 @@
 # P031 — How large can a pairwise-coprime Sidon set be?
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** Can [N] contain a pairwise-coprime Sidon set of size (1−o(1))sqrt(N)?
-> **Formulation:** candidate. **Novelty:** not certified; classical Sidon and prime-subset theorems give important bounds.
-> **Verified/known progress:** General upper bound (1+o(1))sqrt(N); a published arbitrary-subset Sidon theorem applied to primes gives a lower bound of order sqrt(N/log N).
-> **Finite evidence:** Exact branch-and-bound optimum for small N with independent Sidon and coprimality validators.
+> **Research question:** Can [N] contain a pairwise-coprime Sidon set of size (1−o(1))sqrt(N)?  
+> **Formulation:** candidate. **Novelty:** not certified; Sidon sets of primes and additive-multiplicative restrictions require a specialist search.  
+> **Verified/known progress:** Classical Sidon bound gives upper (1+o(1))sqrt(N); Sidon-subsets-of-primes results give a lower bound of order sqrt(N/log N).  
+> **Finite evidence:** Exact strong-Sidon and pairwise gcd enumeration for N≤30.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
