@@ -1,5 +1,13 @@
 # P036 — When does a random Schur hypergraph acquire a 2-core?
 
+<!-- DOSSIER-SUMMARY -->
+> **Research question:** What is the threshold and critical law for a nonempty 2-core in the Schur-triple hypergraph induced by a random subset of [N]?  
+> **Formulation:** candidate. **Novelty:** unverified; Schur Ramsey thresholds are close but the peeling observable is different.  
+> **Verified/known progress:** A six-vertex four-edge 2-core has three free parameters and expected count of order N^3 p^6.  
+> **Finite evidence:** Explicit four-edge incidence witness and exact small-N enumerations.  
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
+<!-- /DOSSIER-SUMMARY -->
+
 Let A be a binomial random subset of [N] with vertex-retention probability p. Form the 3-uniform hypergraph with edges {a,b,a+b}, for distinct positive a<b with a+b≤N, whenever all three entries belong to A.
 
 **Problem.** Determine the threshold and critical-window limiting probability for a nonempty 2-core (the maximal subhypergraph of minimum degree at least two). Separately determine the onset of a linear-size core. These are not assumed to coincide.
