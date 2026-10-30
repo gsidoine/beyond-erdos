@@ -1,0 +1,140 @@
+name: Retire reviewed legacy branches
+
+# One-time on merge of this workflow file, plus explicit manual retry.
+# The list is fixed and SHA-pinned: a changed ref is NEVER deleted.
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/retire-legacy-branches.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: read
+
+jobs:
+  cleanup:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete only reviewed unchanged refs
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const retired = [
+              {
+                name: 'research/initial-four-problems',
+                sha: '01f472c3dcd5c50ae4e8d704fda950950a7e003d',
+                kind: 'merged'
+              },
+              {
+                name: 'research/pass-2-coprime-sidon',
+                sha: '7be6445fb5cbbe49c9bc4db9c86badc8ca23a78e',
+                kind: 'merged'
+              },
+              {
+                name: 'research/pass-4-prime-palettes-noncoprime-paths',
+                sha: '4d1670a910c8b5ac3f426030a04def4cc092b247',
+                kind: 'merged'
+              },
+              {
+                name: 'research/P026-P030-arithmetic-combinatorics',
+                sha: '4f4ca413128e1b902db27eb683fd99176edd3730',
+                kind: 'merged'
+              },
+              {
+                name: 'research/pass-3-coprime-differences-percolation',
+                sha: 'a21b082e2647a0b2a5576aab30bd53c8f35e8dc0',
+                kind: 'closed-unmerged-duplicate'
+              }
+            ];
+
+            // This closed, unmerged PR only adds duplicate legacy prose,
+            // duplicate headings and incompatible math delimiters. Nothing
+            // from it is being merged into the canonical 30-entry catalogue.
+            const redundantFiles = [
+              'README.md',
+              'literature-audits/2026-10-28-comprehensive-P001-P008.md',
+              'problems/graph-theory/P002-prime-matching-reconfiguration.md',
+              'problems/graph-theory/P003-prime-matching-packing.md',
+              'problems/graph-theory/P005-coprime-permutation-switches.md',
+              'problems/graph-theory/P007-coprime-difference-spectrum.md',
+              'problems/number-theory/P001-prime-spectrum.md',
+              'problems/number-theory/P004-sidon-exchange-connectivity.md',
+              'problems/number-theory/P006-prime-avoiding-sidon-sets.md',
+              'problems/probability/P008-coprime-percolation-critical-window.md',
+              'research-notes/triage-pass-3-2026-10-28.md'
+            ].sort();
+
+            async function currentRef(name) {
+              try {
+                return await github.rest.git.getRef({
+                  owner, repo, ref: `heads/${name}`
+                });
+              } catch (err) {
+                if (err.status === 404) {
+                  core.info(`Already absent: ${name}`);
+                  return null;
+                }
+                throw err;
+              }
+            }
+
+            async function remove(name) {
+              await github.rest.git.deleteRef({
+                owner, repo, ref: `heads/${name}`
+              });
+              core.info(`Deleted reviewed branch ${name}`);
+            }
+
+            for (const item of retired) {
+              const ref = await currentRef(item.name);
+              if (!ref) continue;
+              if (ref.data.object.sha !== item.sha) {
+                core.warning(`SKIPPED changed branch ${item.name}`);
+                continue;
+              }
+
+              const cmp = await github.rest.repos.compareCommits({
+                owner, repo, base: 'main', head: item.name
+              });
+              if (item.kind === 'merged') {
+                if (cmp.data.ahead_by !== 0) {
+                  core.warning(`SKIPPED ${item.name}: new work ahead of main`);
+                  continue;
+                }
+              } else {
+                const pr = await github.rest.pulls.get({
+                  owner, repo, pull_number: 29
+                });
+                const files = (cmp.data.files || [])
+                  .map(x => x.filename).sort();
+                const sameFiles =
+                  JSON.stringify(files) === JSON.stringify(redundantFiles);
+                if (pr.data.state !== 'closed' || pr.data.merged_at ||
+                    pr.data.head.sha !== item.sha ||
+                    cmp.data.ahead_by !== 12 ||
+                    cmp.data.behind_by !== 0 || !sameFiles) {
+                  core.warning('SKIPPED abandoned PR #29: review conditions changed');
+                  continue;
+                }
+              }
+              await remove(item.name);
+            }
+
+            // Once this maintenance PR itself is merged, retire its branch.
+            const selfName = 'maintenance/retire-stale-branches-and-integrity';
+            const selfRef = await currentRef(selfName);
+            if (selfRef) {
+              const prs = await github.rest.pulls.list({
+                owner, repo, state: 'closed', per_page: 100,
+                head: `${owner}:${selfName}`
+              });
+              const merged = prs.data.some(pr =>
+                pr.merged_at && pr.head.sha === selfRef.data.object.sha);
+              if (merged) await remove(selfName);
+              else core.warning('SKIPPED maintenance branch: not confirmed merged');
+            }

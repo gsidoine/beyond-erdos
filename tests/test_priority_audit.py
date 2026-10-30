@@ -5,6 +5,7 @@ cross-reference. They do NOT establish general conjectures or originality.
 """
 from pathlib import Path
 from itertools import combinations
+import hashlib
 import unittest
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -43,11 +44,12 @@ class PriorityAuditTests(unittest.TestCase):
                 reached.update(new)
                 unseen.difference_update(new)
 
-    def test_p010_pdf_not_committed_in_public_repository(self):
-        self.assertIn(
-            "3aae034589f58b9593891a53ee5d54ea20f1106c774364e1ff564df417837737",
-            AUDIT.read_text(encoding="utf-8"))
-        self.assertFalse((ROOT/"coprime_adjacencies(1).pdf").exists())
+    def test_p010_submitted_pdf_matches_archived_checksum(self):
+        expected = "3aae034589f58b9593891a53ee5d54ea20f1106c774364e1ff564df417837737"
+        self.assertIn(expected, AUDIT.read_text(encoding="utf-8"))
+        pdf = ROOT / "manuscripts/P010/coprime_adjacencies.pdf"
+        self.assertTrue(pdf.is_file())
+        self.assertEqual(hashlib.sha256(pdf.read_bytes()).hexdigest(), expected)
 
 
 if __name__=="__main__":

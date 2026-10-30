@@ -4,6 +4,8 @@ This directory preserves reviews of problem statements, proofs, finite computati
 
 For the current catalogue and research status, start with the [main README](../README.md#status-and-scope) or the [individual problem dossiers](../README.md#problem-catalogue).
 
+The [repository integrity and branch review](repository-integrity-and-branch-review.md) records housekeeping decisions, archival-document corrections, and the safety conditions of the one-time branch-retirement workflow.
+
 The **current portfolio-wide consolidation** is [P001–P030](portfolio-consolidation-P001-P030.md). Its priorities are provisional editorial guidance, not claims of novelty. Earlier source records below are historical snapshots and may include superseded problem counts, manuscript-upload states, or submission-policy interpretations.
 
 The archive includes a [source comparison covering P001–P025](2026-10-29-P001-P025-literature-source-gate.md), a [focused comparison of the leading research candidates](2026-10-29-flagship-source-comparison-and-shortlist.md), an [earlier P001–P020 consolidation](2026-10-29-P001-P020-first-collection-consolidation.md), and [a P010 manuscript-priority assessment](2026-10-29-P010-publishability-priority-review.md).

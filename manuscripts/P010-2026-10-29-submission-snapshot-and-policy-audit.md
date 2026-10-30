@@ -8,10 +8,10 @@
 
 ## Exact supplied submission snapshot
 
-The author supplied a **two-page PDF** in the project's conversation on 29 October 2026, named \`coprime_adjacencies(1).pdf\`.
+The author-submitted **two-page PDF** is archived at [P010/coprime_adjacencies.pdf](P010/coprime_adjacencies.pdf).
 
 - Size: **214,297 bytes**, A4, 2 pages, produced by pdfTeX.
-- SHA-256: \`3aae034589f58b9593891a53ee5d54ea20f1106c774364e1ff564df417837737\`.
+- SHA-256: `3aae034589f58b9593891a53ee5d54ea20f1106c774364e1ff564df417837737`.
 - Content: abstract, exact formula for $h(n)$, constructive proof using noncoprime-graph path covers, small witnesses $n=4,\ldots,11$, nonmonotonicity remark, eight references, an AI-use declaration, and author affiliation/ORCID.
 - **Current repository state:** The exact submitted binary is available as [P010 PDF](P010/coprime_adjacencies.pdf); its SHA-256 remains the value recorded above. The original version of this archival note preceded the PDF upload and therefore referred to a file that was not yet committed.
 
