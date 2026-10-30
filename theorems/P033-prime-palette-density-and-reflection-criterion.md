@@ -10,15 +10,15 @@ $$
 0<\delta<\frac15.
 $$
 
-Let \(\mathcal T_\delta(n)\) consist of **ordered by size** triples of primes
+Let $\mathcal T_\delta(n)$ consist of **ordered by size** triples of primes
 
 $$
 (1-\delta)n<p<q<n<r<(1+\delta)n.
 $$
 
-Write \(C_\delta(n)\) for the number of such triples for which G_n({p,q,r}) is connected.
+Write $C_\delta(n)$ for the number of such triples for which G_n({p,q,r}) is connected.
 
-**Theorem 1 (short-interval prime palette density).** The limiting proportion of *all* triples in \(\mathcal T_\delta(n)\) whose three sum-matchings connect [n] is
+**Theorem 1 (short-interval prime palette density).** The limiting proportion of *all* triples in $\mathcal T_\delta(n)$ whose three sum-matchings connect [n] is
 
 $$
 \boxed{\lim_{n\to\infty}
@@ -45,7 +45,7 @@ There are two ingredients: a sharper exact *deterministic graph criterion*, and 
 
 ## Lemma 2 — An exact finite-interval connectivity criterion
 
-Let \(p<q<n<r\) be **odd positive integers**, with n≥3, and define
+Let $p<q<n<r$ be **odd positive integers**, with n≥3, and define
 
 $$
 a=\frac{q-p}{2},\qquad b=\frac{r-p}{2},\qquad
@@ -54,7 +54,7 @@ a=\frac{q-p}{2},\qquad b=\frac{r-p}{2},\qquad
 m=\#\{x\text{ odd}:r-n\le x\le p-1\}.
 $$
 
-If \(\gcd(a,b)=1\) and \(m\ge a+b\), then the graph G_n({p,q,r}) is connected.
+If $\gcd(a,b)=1$ and $m\ge a+b$, then the graph G_n({p,q,r}) is connected.
 
 In particular, suppose
 
@@ -62,7 +62,7 @@ $$
 n-D\le p<q<n<r\le n+D,\qquad n\ge5D.
 $$
 
-Then G_n({p,q,r}) is connected **if and only if** \(\gcd(a,b)=1\). Necessity holds in *every* three-odd-color connected graph on [n], whether or not the sums are near n, as already proved in the [preceding P033 theorem](P033-eventual-three-prime-sum-connectivity.md).
+Then G_n({p,q,r}) is connected **if and only if** $\gcd(a,b)=1$. Necessity holds in *every* three-odd-color connected graph on [n], whether or not the sums are near n, as already proved in the [preceding P033 theorem](P033-eventual-three-prime-sum-connectivity.md).
 
 ### Proof
 
@@ -72,7 +72,7 @@ $$
 I=\{x\in[n]:x\text{ odd},\ r-n\le x\le p-1\}
 $$
 
-contains m consecutive odd integers. Every reflection \(x\mapsto s-x\) for \(s\in\{p,q,r\}\) sends x∈I to an **even vertex in [n]**. If x and x+2a belong to I, the two-edge path
+contains m consecutive odd integers. Every reflection $x\mapsto s-x$ for $s\in\{p,q,r\}$ sends x∈I to an **even vertex in [n]**. If x and x+2a belong to I, the two-edge path
 
 $$
 x\xrightarrow{\ p\ }p-x\xrightarrow{\ q\ }x+2a
@@ -97,13 +97,13 @@ m=\frac{p-\alpha}{2}\ge\frac{n-2D-1}{2}
 \ge\frac{3D-1}{2}\ge a+b.
 $$
 
-The gcd condition is therefore sufficient. Its necessity is the reflection-residue obstruction: modulo \(2g\), where g=gcd(a,b), every edge sends a residue x to p−x. If g>1, a component visits at most two residue classes modulo \(2g\ge4\), so vertices 1,2,3 cannot all be connected. □
+The gcd condition is therefore sufficient. Its necessity is the reflection-residue obstruction: modulo $2g$, where g=gcd(a,b), every edge sends a residue x to p−x. If g>1, a component visits at most two residue classes modulo $2g\ge4$, so vertices 1,2,3 cannot all be connected. □
 
-**Improvement:** This lowers the uniform interval-separation condition from \(n\ge12D+10\) in the earlier theorem to \(n\ge5D\), while also giving the more general exact criterion involving the actual core length m.
+**Improvement:** This lowers the uniform interval-separation condition from $n\ge12D+10$ in the earlier theorem to $n\ge5D$, while also giving the more general exact criterion involving the actual core length m.
 
 ## Lemma 3 — A positive density of primitive triples of primes
 
-Let \(\mathcal U_\delta(n)\) be the subset of \(\mathcal T_\delta(n)\) with
+Let $\mathcal U_\delta(n)$ be the subset of $\mathcal T_\delta(n)$ with
 
 $$
 \gcd\left(\frac{q-p}{2},\frac{r-p}{2}\right)=1.
@@ -118,9 +118,9 @@ $$
 
 ### Proof: finite local obstructions
 
-Fix any real \(R\ge3\), and impose the absence of common prime divisors ℓ≤R from the two half-differences.
+Fix any real $R\ge3$, and impose the absence of common prime divisors ℓ≤R from the two half-differences.
 
-For an odd prime ℓ, both half-differences are divisible by ℓ **precisely when** the three primes p,q,r are all congruent modulo ℓ. A uniformly distributed reduced residue class has ℓ−1 possibilities, so the probability of this coincidence is \(1/(\ell-1)^2\). For ℓ=2, both half-differences are even precisely when p,q,r have the **same residue modulo 4**, which has probability 1/4 among the two reduced residue classes. The corresponding local survival factors are \(1-1/(\ell-1)^2\) for odd ℓ and 3/4 for ℓ=2.
+For an odd prime ℓ, both half-differences are divisible by ℓ **precisely when** the three primes p,q,r are all congruent modulo ℓ. A uniformly distributed reduced residue class has ℓ−1 possibilities, so the probability of this coincidence is $1/(\ell-1)^2$. For ℓ=2, both half-differences are even precisely when p,q,r have the **same residue modulo 4**, which has probability 1/4 among the two reduced residue classes. The corresponding local survival factors are $1-1/(\ell-1)^2$ for odd ℓ and 3/4 for ℓ=2.
 
 The Chinese remainder theorem makes the local congruence restrictions independent over the fixed modulus
 
@@ -141,7 +141,7 @@ $$
 
 ### Proof: remove the large-prime obstruction
 
-It remains to show that triples with a common prime divisor ℓ>R of both half-differences make up at most an \(O_\delta(1/R)\) proportion, in the limit n→∞.
+It remains to show that triples with a common prime divisor ℓ>R of both half-differences make up at most an $O_\delta(1/R)$ proportion, in the limit n→∞.
 
 When R<ℓ≤√n, all three primes must lie in one residue class mod ℓ. The Brun–Titchmarsh inequality applied to each interval of length δn gives, uniformly in each nonzero residue c mod ℓ,
 
@@ -163,7 +163,7 @@ $$
 O_\delta\left(\frac1R\frac{n^3}{(\log n)^3}\right).
 $$
 
-For √n<ℓ≤δn, it suffices to ignore primality for q and r. For every prime p in the left interval there are at most δn/ℓ integers q>p in the same residue class mod ℓ, and at most δn/ℓ+1 integers r in the upper interval. Since there are \(O_\delta(n/\log n)\) possible p, summing even over **all integers** ℓ>√n yields
+For √n<ℓ≤δn, it suffices to ignore primality for q and r. For every prime p in the left interval there are at most δn/ℓ integers q>p in the same residue class mod ℓ, and at most δn/ℓ+1 integers r in the upper interval. Since there are $O_\delta(n/\log n)$ possible p, summing even over **all integers** ℓ>√n yields
 
 $$
 O_\delta\left(\frac n{\log n}
@@ -173,13 +173,13 @@ O_\delta\left(\frac n{\log n}
 =o_\delta\left(\frac{n^3}{(\log n)^3}\right).
 $$
 
-Every common prime divisor of the half-differences is at most δn, since it divides \((q-p)/2\). Therefore **all** possible obstructions have been covered.
+Every common prime divisor of the half-differences is at most δn, since it divides $(q-p)/2$. Therefore **all** possible obstructions have been covered.
 
-First let n→∞ with R fixed, then R→∞. The finite Euler products converge to the strictly positive constant \(\mathfrak C\), and the discarded fraction tends to zero. This proves Lemma 3. □
+First let n→∞ with R fixed, then R→∞. The finite Euler products converge to the strictly positive constant $\mathfrak C$, and the discarded fraction tends to zero. This proves Lemma 3. □
 
 ## Completion of Theorem 1
 
-For fixed δ<1/5, choose D=ceil(δn). Then n≥5D for all sufficiently large n. By Lemma 2, **a prime triple from \(\mathcal T_\delta(n)\) connects [n] if and only if it belongs to \(\mathcal U_\delta(n)\)**.
+For fixed δ<1/5, choose D=ceil(δn). Then n≥5D for all sufficiently large n. By Lemma 2, **a prime triple from $\mathcal T_\delta(n)$ connects [n] if and only if it belongs to $\mathcal U_\delta(n)$**.
 
 By the ordinary PNT,
 
@@ -195,11 +195,11 @@ Apply Lemma 3 to obtain both asymptotics. □
 
 The accompanying [dependency-free verifier](../experiments/P033_prime_palette_density.py) checks:
 
-- the improved \(n\ge5D\) reflection lemma on more than 70,000 admissible artificial triples;
+- the improved $n\ge5D$ reflection lemma on more than 70,000 admissible artificial triples;
 - the exact proportion of admissible prime triples for n=1000, 3000, 10000 and 20000, against the predicted constant;
 - an efficiently certified prime palette for **every 60≤n≤1,000,000**, using at most the 12 closest primes on either side and **the proved deterministic lemma**, rather than running a global graph traversal each time.
 
-The existing exact P033 verifier covers the smaller cases n=3,…,120. Thus the repository obtains a reproducible complete finite verification of the original \(\kappa(n)\le3\) statement for **every 3≤n≤1,000,000**. This is **not** a universal proof.
+The existing exact P033 verifier covers the smaller cases n=3,…,120. Thus the repository obtains a reproducible complete finite verification of the original $\kappa(n)\le3$ statement for **every 3≤n≤1,000,000**. This is **not** a universal proof.
 
 The theorem gives existence in all sufficiently large n, and this finite verification covers a million values, but the analytic argument supplies **no explicit N₀**. Therefore it is logically invalid to claim that the finite interval and the eventual interval overlap. P033 remains a *candidate* for the full all-n assertion.
 
