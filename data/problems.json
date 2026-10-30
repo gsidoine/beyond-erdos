@@ -851,6 +851,33 @@
         }
       ],
       "portfolio_tier": "C"
+    },
+    {
+      "id": "P035",
+      "title": "Sidon coloring by divisibility antichains",
+      "area": "additive combinatorics",
+      "file": "problems/number-theory/P035-primitive-sidon-coloring.md",
+      "question": "Can [N] be partitioned into (1+o(1))sqrt(N) sets, each Sidon and a divisibility antichain?",
+      "status": "candidate",
+      "novelty": "unverified; classical Sidon-coloring and primitive-set overlap",
+      "result": "(1-o(1))sqrt(N) <= chi_PS(N) <= (1+sqrt(2)+o(1))sqrt(N), using dyadic bands",
+      "verification": "Elementary proof from classical Sidon coloring; no finite exhaustive claim",
+      "priority": "explore",
+      "sources": [
+        {
+          "name": "Sidon coloring of intervals",
+          "url": "https://mathoverflow.net/questions/461551/bounds-on-how-many-sidon-sets-required-to-cover-an-integer-range-from-0-n"
+        },
+        {
+          "name": "Erdős Problems primitive sets",
+          "url": "https://www.erdosproblems.com/tags/primitive%20sets"
+        },
+        {
+          "name": "Erdős Problems Sidon sets",
+          "url": "https://www.erdosproblems.com/tags/sidon%20sets"
+        }
+      ],
+      "portfolio_tier": "C"
     }
   ],
   "catalogue_policy": "Open to community contributions; proposed additions and status changes require source review"
