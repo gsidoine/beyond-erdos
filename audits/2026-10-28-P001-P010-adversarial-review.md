@@ -71,9 +71,9 @@ Moreover, "gracesize" (maximal number of distinct differences under a bijective 
 
 ### P008 — Proof checked, priority and statement still inadequate
 
-For the leading threshold the low-degree primorial multiples provide **independent** isolated-vertex events below $e^\gamma$; the complement cut proof distinguishes small cuts from large cuts controlled by primes >√n. For the implicit-center window, the degree profile plus $b_n\sim e^\gamma\log n\log\log n/n$ gives isolation mean $e^{-t}$, the finite-dimensional factorial moments give Poisson isolates, and a connected-component union bound rules out nontrivial disconnected components. I found no immediate invalid inequality in those core steps, **but this is not independent peer review or a Lean proof**.
+For the leading threshold the low-degree primorial multiples provide **independent** isolated-vertex events below $e^\gamma$; the complement cut proof distinguishes small cuts from large cuts controlled by primes >√n. For the implicit-center window, the degree profile plus $b_n\sim e^\gamma\log n\log\log n/n$ gives isolation mean $e^{-t}$, the finite-dimensional factorial moments give Poisson isolates, and a connected-component union bound rules out nontrivial disconnected components. The review identified no immediate invalid inequality in those core steps; **this is not independent peer review or a Lean proof**.
 
-The random host is a known model, and general fixed-host connectivity theory is extensive: Gupta–Lee–Li (SODA 2021), Penrose (2018), Hladký–Viswanathan (2026), alongside arithmetic coprime graph literature. We must test whether the stated theorem is a direct specialization of existing machinery.
+The random host is a known model, and general fixed-host connectivity theory is extensive: Gupta–Lee–Li (SODA 2021), Penrose (2018), Hladký–Viswanathan (2026), alongside arithmetic coprime graph literature. Further review must test whether the stated theorem is a direct specialization of existing machinery.
 
 **Logical formulation issue:** "find an explicit formula" is not yet a sharply determined yes/no statement. The exact equation $\mu_n(b_n)=1$ already defines $b_n$. Fix a class (e.g. finite polylogarithmic/iterated-log expansions with universal coefficients) and state the attainable error $o(\log\log n/n)$; perhaps first ask for the smallest provable error with a specified two-term formula.
 
@@ -104,5 +104,5 @@ Let A=π(n)-π(n/2) count isolated primes >n/2 in the graph $H_n$ with edges gcd
 
 - Independently run code and review elementary algebra do not establish a new theorem's publication priority.
 - The full 1983 Erdős–Freud–Hegyvári paper and older graph-labeling / Golomb-ruler literature deserve a complete citation-chain audit; some PDF retrievals were inaccessible in this environment, so the whole bibliography was **not** exhaustively read.
-- *Do not add P011* or demote a full entry until: (i) independent specialist novelty check, (ii) code and proof scrutiny on the strong candidates, (iii) precise restatement of P008, and (iv) a choice between consolidating P002/P005 as a common program versus retaining separate hosts.
+- *Do not add P011* or demote a full entry before: (i) independent specialist novelty check, (ii) code and proof scrutiny on the strong candidates, (iii) precise restatement of P008, and (iv) a choice between consolidating P002/P005 as a common program versus retaining separate hosts.
 - Suggested theorem-first focus: **P003**, **P005**, **P010**. Suggested most likely status refinements: **P007**, **P008**, **P009**.
