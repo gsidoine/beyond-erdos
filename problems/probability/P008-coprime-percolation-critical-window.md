@@ -263,3 +263,9 @@ python experiments/coprime_window.py --n 3000 --trials 40 --seed 90215
 See [the complete eight-problem literature audit](../../literature-audits/2026-10-28-comprehensive-P001-P008.md).
 
 **Scholarly caveat:** This proof and its critical-window conclusion are novel *to this exploratory session*, **not yet certified novel relative to the mathematical literature**. The proof also requires a separate adversarial mathematical audit before journal-level claims. See the dated audit note.
+
+## Consolidation disposition (P001–P035 audit)
+
+**Disposition — specification hold.** The internally argued connectivity and Gumbel theorems are not independently refereed. The surviving problem must state an explicit arithmetic approximation F(n), a precise target such as b_n-F(n)=o(a_n), and an allowed class of formulas; without this the phrase 'non-tautological expansion' is not a mathematically testable conjecture. Do not count it as a certified open problem.
+
+This is a priority/novelty gate, not an independently refereed claim about whether the surviving problem is open.

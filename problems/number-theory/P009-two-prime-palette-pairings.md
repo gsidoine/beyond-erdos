@@ -2,7 +2,7 @@
 
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** Can 1,…,2n always be paired using at most two distinct prime sums?  
-> **Formulation:** candidate. **Novelty:** strong prior-art overlap.  
+> **Formulation:** candidate. **Novelty:** high overlap risk: Maillet-type prime differences.  
 > **Verified/known progress:** One-color iff 2n+1 prime; two-color certificate from short prime difference.  
 > **Finite evidence:** Sieve certificates through n=1,000,000 (finite only).  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
@@ -126,3 +126,10 @@ This does **not** show that the existence of a two-palette matching can hold whe
 2. Determine whether the two-color statement can be reduced to a theorem *strictly weaker* than Maillet's prime-difference conjecture.
 3. Search for counterexamples where the short prime-pair certificate fails but a more complicated two-color pairing survives.
 4. Study the number of possible prime palettes and the trade-off with P001's maximum spectrum.
+
+
+## Consolidation disposition (P001–P035 audit)
+
+**Disposition — source gate, not a flagship open conjecture.** The two-label pairing phenomenon is closely tied to prime differences and Maillet-type questions. Compare logical implications in both directions with the literature; finite certificates do not imply unconditional all-n existence.
+
+This is a priority/novelty gate, not an independently refereed claim about whether the surviving problem is open.

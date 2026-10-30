@@ -2,7 +2,7 @@
 
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** Is there a universal bounded-size exchange connecting every fiber of prime-sum permutations with the same anti-diagonal X-ray?  
-> **Formulation:** candidate. **Novelty:** high overlap risk with existing permutation X-ray/discrete tomography theory.  
+> **Formulation:** candidate. **Novelty:** high overlap risk: discrete tomography X-ray fibers.  
 > **Verified/known progress:** No two-position swap can preserve a nontrivial exact sum multiset; an explicit prime-supported fiber with two members differs at four positions.  
 > **Finite evidence:** Exhaustive prime-sum matching fiber enumeration for n≤13; dependency-free script.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
@@ -46,3 +46,10 @@ both have histogram {3,5,5,7}; they differ in **all four positions**. The fiber 
 ## Immediate next checks
 
 Compute R_{n,c}^{(3)}, R_{n,c}^{(4)}, … for the small fibers and test whether prime support requires larger moves than unrestricted tomography. Distinguish (i) preserving the X-ray after every move from (ii) merely preserving it at the endpoints.
+
+
+## Consolidation disposition (P001–P035 audit)
+
+**Disposition — source gate, likely discrete-tomography overlap.** The anti-diagonal X-ray invariant and fiber switches predate this project. Unless the restriction to prime-supported permutations yields a new theorem or a demonstrably different obstruction, this should be demoted from active investigation to historical incubation.
+
+This is a priority/novelty gate, not an independently refereed claim about whether the surviving problem is open.

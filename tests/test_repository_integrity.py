@@ -23,7 +23,7 @@ class IntegrationConsistencyTests(unittest.TestCase):
 
     def test_no_stale_public_documentation(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
-        self.assertIn("**33 numbered research entries", readme)
+        self.assertIn(f"**{len(json.loads((ROOT / 'data/problems.json').read_text(encoding='utf-8'))['problems'])} numbered research entries", readme)
         self.assertIn("submitted to the journal _Integers_", readme)
         for bad in ("P001–P020 discovery freeze remains",
                     "PDF binary is not included",

@@ -12,21 +12,21 @@
 
 ## The question
 
-For a set \(S\) of odd primes, let \(G_n(S)\) have vertex set \([n]\), with an edge between distinct \(i,j\) whenever \(i+j\in S\). Call a graph **2-vertex-connected** if it has at least three vertices, is connected, and remains connected after any one vertex is deleted.
+For a set $S$ of odd primes, let $G_n(S)$ have vertex set $[n]$, with an edge between distinct $i,j$ whenever $i+j\in S$. Call a graph **2-vertex-connected** if it has at least three vertices, is connected, and remains connected after any one vertex is deleted.
 
-**P034.** For every odd \(n\ge7\), can four distinct prime sums make \(G_n(S)\) 2-vertex-connected?
+**P034.** For every odd $n\ge7$, can four distinct prime sums make $G_n(S)$ 2-vertex-connected?
 
-Equivalently, does the minimum number \(\kappa_2(n)\) of prime sums giving 2-vertex-connectivity equal **four for every odd \(n\ge7\)**?
+Equivalently, does the minimum number $\kappa_2(n)$ of prime sums giving 2-vertex-connectivity equal **four for every odd $n\ge7$**?
 
 ## Rigorous baseline: four are necessary for odd n
 
-For odd \(n\ge5\), the sum \(n+1\) is even and greater than two, hence is not prime. Every neighbour of vertex 1 produces an odd prime sum \(1+j\le n+1\), therefore \(1+j\le n\). Every neighbour of vertex n produces an odd prime sum \(n+j\ge n+1\), therefore \(n+j\ge n+2\). The sets of labels incident to 1 and to n are thus **disjoint**.
+For odd $n\ge5$, the sum $n+1$ is even and greater than two, hence is not prime. Every neighbour of vertex 1 produces an odd prime sum $1+j\le n+1$, therefore $1+j\le n$. Every neighbour of vertex n produces an odd prime sum $n+j\ge n+1$, therefore $n+j\ge n+2$. The sets of labels incident to 1 and to n are thus **disjoint**.
 
-In a 2-vertex-connected graph every vertex has degree at least two. Since a fixed sum label determines at most one neighbour of each vertex, two distinct labels are needed at vertex 1 and two **different** labels are needed at vertex n. Hence \(\kappa_2(n)\ge4\) for all odd \(n\ge5\), whenever \(\kappa_2(n)\) is defined.
+In a 2-vertex-connected graph every vertex has degree at least two. Since a fixed sum label determines at most one neighbour of each vertex, two distinct labels are needed at vertex 1 and two **different** labels are needed at vertex n. Hence $\kappa_2(n)\ge4$ for all odd $n\ge5$, whenever $\kappa_2(n)$ is defined.
 
-For even n the lower bound is **not** valid: \(n+1\) may be an odd prime and labels at the two endpoint vertices can overlap. For example \(n=4\), the palette \(\{3,5,7\}\) gives a 4-cycle and is 2-vertex-connected.
+For even n the lower bound is **not** valid: $n+1$ may be an odd prime and labels at the two endpoint vertices can overlap. For example $n=4$, the palette $\{3,5,7\}$ gives a 4-cycle and is 2-vertex-connected.
 
-The restriction \(n\ge7\) is essential: at \(n=5\), vertex 5 has only the prime-sum neighbour 2 (because the possible sums are 6,7,8,9,10). Thus no palette of any size can give degree two at vertex 5.
+The restriction $n\ge7$ is essential: at $n=5$, vertex 5 has only the prime-sum neighbour 2 (because the possible sums are 6,7,8,9,10). Thus no palette of any size can give degree two at vertex 5.
 
 ## Finite evidence and witness method
 

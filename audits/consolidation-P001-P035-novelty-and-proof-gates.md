@@ -55,6 +55,23 @@ No entry currently has the label **historically verified new formulation**. An a
 
 **Counts (editorial dispositions, not mathematical statuses):** incubate: 10; priority: 16; reframe: 2; specify: 1; source-gate: 5; resolved-internally: 1. These must not be confused with the canonical JSON's candidate/reframe/needs-specification/proved-internally status counts.
 
+
+## Downgrade decisions and incubation policy
+
+**Eight flagged entries, not nine:** source gates **P009, P015, P029, P032, P035** (five); known-predecessor reframes **P007, P025** (two); needs specification **P008** (one). These are editorial research-confidence assessments, separate from the canonical problem lifecycle status. A previous public-facing summary counted six source gates in error; the actual 35-row matrix totals five.
+
+**A source gate is not the same as a confirmed duplicate.** The five source-gate entries remain historically documented, but their novelty field now explicitly says **high overlap risk**. P029 has an especially strong case for suspending active effort unless its prime restriction yields a demonstrably nonclassical invariant. P032 risks reduction to difficult prime-pair existence. P035's dyadic estimate is established classical ingredients, not an original theorem, while its simultaneous constraint may still constitute an unstudied problem.
+
+**Reframes** retain only the carefully isolated unsolved-looking extension: P007 maximizes the distinct coprime-path gap spectrum, not graceful existence; P025 asks about the extra *cyclic* closing edge, not the established linear path bottleneck. Both still require source searches under alternative names.
+
+**P008 is a specification hold.** Its full dossier contains internally argued theorems, but the *remaining research question* lacks a uniquely testable expansion class. Before returning it to ordinary candidate status, give a concrete explicit expression F(n) and a stated error target such as b_n-F(n)=o(a_n), together with independent review of its Gumbel-window proof.
+
+**Incubation means:** retain the question and finite artifacts, but suspend headline novelty/open claims and routine computational expansion until a specific promotion gate is met. It is *not* mathematical rejection. Promotion requires (i) a precise theorem/conjecture with bounded scope, (ii) a substantive result or obstruction that cannot be read off a standard theorem, and (iii) a theorem-level prior-art comparison. Incubating entries should have a named next decisive experiment or proof target, a clear last verified baseline, and a cross-reference to any stronger sibling problem.
+
+## CI diagnosis
+
+GitHub Actions **Catalogue consistency** failed on the merge of PR #43: `python scripts/generate_catalog.py --check` reported the P035 dossier as stale. The generated dossier-summary text had diverged from `data/problems.json` during the earlier P035 edits. This repair regenerates exact summaries for all affected dossiers and updates `data/problems.json`, `docs/problems.json`, and the README catalogue together. A successful workflow run is needed before treating the entire repository as green; Node.js 20 deprecation is a separate runner warning, not the check failure.
+
 ## High-confidence known/overlap distinctions
 
 - **P007:** full prime-graceful path existence is a known published theorem; only the refined extremal *partial* gap-spectrum question may survive. **Not a new full gracefulness conjecture.**
@@ -74,7 +91,7 @@ $$
 \mathrm{SR}(k)=k^2+o(k^2),
 $$
 
-where \(\mathrm{SR}(k)\) is the *first* interval length that cannot be partitioned into \(k\) integer Sidon sets (including repeated-element sums). Inverting the monotone parameter gives the precise needed statement: **the minimum Sidon partition count on \([M]\) is \((1+o(1))\sqrt M\)**. Translation preserves the Sidon property, so the result works on arbitrary intervals of \(M\) consecutive integers.
+where $\mathrm{SR}(k)$ is the *first* interval length that cannot be partitioned into $k$ integer Sidon sets (including repeated-element sums). Inverting the monotone parameter gives the precise needed statement: **the minimum Sidon partition count on $[M]$ is $(1+o(1))\sqrt M$**. Translation preserves the Sidon property, so the result works on arbitrary intervals of $M$ consecutive integers.
 
 Therefore the P035 dyadic upper bound
 
