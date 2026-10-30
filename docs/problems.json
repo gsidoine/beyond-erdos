@@ -878,6 +878,33 @@
         }
       ],
       "portfolio_tier": "C"
+    },
+    {
+      "id": "P036",
+      "title": "When does a random Schur hypergraph acquire a 2-core?",
+      "area": "probability",
+      "file": "problems/probability/P036-random-schur-hypergraph-two-core.md",
+      "question": "What is the threshold and critical law for a nonempty 2-core in the Schur-triple hypergraph induced by a random subset of [N]?",
+      "status": "candidate",
+      "novelty": "unverified; Schur Ramsey thresholds are close but the peeling observable is different",
+      "result": "A six-vertex four-edge 2-core has three free parameters and expected count of order N^3 p^6",
+      "verification": "Explicit four-edge incidence witness and exact small-N enumerations",
+      "priority": "exploratory; classify arithmetic 2-core witnesses",
+      "sources": [
+        {
+          "name": "Graham–Rödl–Ruciński Schur threshold (1996)",
+          "url": "https://doi.org/10.1006/jnth.1996.0155"
+        },
+        {
+          "name": "Sharp Ramsey thresholds for Schur triples (2026)",
+          "url": "https://www.cambridge.org/core/journals/forum-of-mathematics-sigma/article/sharp-thresholds-for-ramsey-properties/37118888483709FB8C79D6FDB0F7F254"
+        },
+        {
+          "name": "Cooley–Kang–Zalla loose cores (2022)",
+          "url": "https://doi.org/10.37236/10794"
+        }
+      ],
+      "portfolio_tier": "C"
     }
   ],
   "catalogue_policy": "Open to community contributions; proposed additions and status changes require source review"
