@@ -66,13 +66,25 @@ No entry currently has the label **historically verified new formulation**. An a
 - **P010:** internally proved, submitted to *Integers*; **not open** and not automatically accepted or historically original.
 - **P020 and P027:** serious internal proof packages exist; present general laws remain unproved. Distinguish known building blocks from new consequences. Their high priority is based on mathematical development, not novelty certification.
 
-## P035 red-team issue: a dependency requiring independent verification
+## P035 primary-source correction: the Sidon partition theorem is verified
 
-The new P035 dossier uses the claim that **any interval of M consecutive integers admits a partition into (1+o(1))sqrt(M) Sidon classes**. This must be confirmed at a primary source with the precise **integer Sidon** convention (diagonal sums included), not merely deduced from the existence of *one* size-(1+o(1))sqrt(M) Sidon subset. The two assertions are **not logically equivalent**.
+The sharp **classical** Sidon partition statement used in P035 *is* backed by a primary research source: Espinosa-García, Montejano, Roldán-Pensado and Suárez (2024), *Sidon–Ramsey and B_h-Ramsey numbers*, [DOI 10.1007/s40590-024-00676-7](https://doi.org/10.1007/s40590-024-00676-7), **Theorem 1**, establishes
 
-The lower bound for P035 follows from the classical Sidon maximum-size estimate. The dyadic-upper-bound *method* is correct conditional on a uniform sharp Sidon-partition theorem. **Until that theorem is located and checked, mark the numeric leading upper coefficient 1+sqrt(2) as source-dependent, not independently certified by this audit.** An unconditional but weaker O(sqrt(M)) coloring bound can be obtained by finite-field cyclic Sidon constructions if their covering statement is explicitly proved, and would still imply chi_PS(N)=Theta(sqrt(N)).
+$$
+\mathrm{SR}(k)=k^2+o(k^2),
+$$
 
-Source nearest to the topic: [Sidon–Ramsey number literature](https://doi.org/10.1016/j.dam.2025.07.002). The term *Sidon–Ramsey* names integer interval partitions into Sidon color classes; use it in future source searches, rather than only *Sidon subsets*.
+where \(\mathrm{SR}(k)\) is the *first* interval length that cannot be partitioned into \(k\) integer Sidon sets (including repeated-element sums). Inverting the monotone parameter gives the precise needed statement: **the minimum Sidon partition count on \([M]\) is \((1+o(1))\sqrt M\)**. Translation preserves the Sidon property, so the result works on arbitrary intervals of \(M\) consecutive integers.
+
+Therefore the P035 dyadic upper bound
+
+$$
+\chi_{\mathrm{PS}}(N)\le(1+\sqrt2+o(1))\sqrt N
+$$
+
+is a **valid combination of an established sharp partition theorem and a simple multiplicative-antichain decomposition**, assuming the dyadic asymptotic/tail calculation recorded in the dossier. It is **not independently novel**. The remaining originality question is whether simultaneous *primitive Sidon coloring* has been studied, perhaps under constrained Sidon–Ramsey terminology. Do not claim that adding divisibility is sufficient to establish novelty.
+
+Be especially careful: the sharp finite Sidon *set size* bound in Carter–O'Bryant–Tao (2026) and Theorem 1 on Sidon–Ramsey numbers are **different theorems**. The former does not by itself imply the latter.
 
 ## Proof-validity gates distinct from novelty
 
