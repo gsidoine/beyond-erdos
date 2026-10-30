@@ -78,13 +78,21 @@ $$
 
 throughout $N^{3/2}\le m\le\binom N2$. This completes the sharp-order comparison. QED.
 
-## An explicit obstruction to aggregate-density necessity
+## Why the edge count alone ceases to characterize individual graphs
 
-Two forbidden-position schemes may have the same total number of forbidden pairs but radically different consequences.
+The universal $N^{3/2}$ threshold is best possible, but above it the *placement* of forbidden edges matters.
 
-For $D=N^{3/4}+O(1)$, prohibit all differences $1\le b-a\le D$: every admissible set has size at most $O(N^{1/4})$. The graph has $\Theta(N^{7/4})$ forbidden pairs.
+Let $D=\lfloor N^{3/4}\rfloor$. The graph joining pairs whose integer distance is at most $D$ has $\Theta(N^{7/4})$ edges, and every independent set has $O(N^{1/4})$ elements.
 
-Instead prohibit only differences $N-D\le b-a<N$: this also has only $O(D^2)=O(N^{3/2})$ forbidden pairs, not the same size. To construct *equal-order* incidence examples, take an arbitrary set of $D$ difference values near $N/2$ (giving $\Theta(ND)$ edges), and compare with short differences $1,\ldots,D$; however, no claim is made that the former is harmless without further proof. The robust conclusion is simply that **the distribution of forbidden edges matters above the sharp universal threshold**, not just their total count. For instance, $G$ may be a clique on $N^{7/8}$ vertices (thus $\Theta(N^{7/4})$ edges) yet its complement still contains a consecutive interval of $N-o(N)$ vertices and therefore a Sidon set of size $(1-o(1))\sqrt N$.
+By contrast, let $G$ be the complete graph on the first $\lfloor N^{7/8}\rfloor$ vertices, with the remaining vertices isolated. It also has $\Theta(N^{7/4})$ edges, but the consecutive interval
+
+$$
+\{\lfloor N^{7/8}\rfloor+1,\ldots,N\}
+$$
+
+has length $N-o(N)$ and contains a Sidon set of size $(1-o(1))\sqrt N$.
+
+Thus graphs with the **same order of forbidden edges** can produce either a severe loss or no asymptotic loss. No necessary-and-sufficient criterion can depend *only* on the edge-count exponent.
 
 ## Exact finite incidence check
 
