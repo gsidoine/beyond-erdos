@@ -26,15 +26,15 @@ Each fixed sum color is a matching, so one color cannot connect three or more ve
 
 The [full constructive theorem](../../theorems/P033-eventual-three-prime-sum-connectivity.md) proves **unconditionally** that
 
-$
+$$
 \boxed{\kappa(n)\le3\qquad\text{for all sufficiently large }n.}
-$
+$$
 
 The central graph lemma is elementary: if odd integers $p<q<n<r$ all lie within $D$ of $n$, if
 
-$
+$$
 \gcd((q-p)/2,(r-p)/2)=1,
-$
+$$
 
 and if $n\ge12D+10$, then the union of their three sum-matchings is connected. Reflections give two-step translations of coprime lengths on an interval of odd vertices; all boundary vertices attach to that core.
 
