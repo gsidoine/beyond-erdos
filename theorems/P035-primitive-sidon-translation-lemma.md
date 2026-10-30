@@ -77,6 +77,8 @@ $$
 
 and the elementary translation invariance of Sidonicity. The specific combined asymptotic was not located in targeted searches under *primitive Sidon*, *Sidon divisibility antichain*, *Sidon no divisible pairs*, and *divisibility-avoiding Golomb ruler*. This is a **bounded negative search, not proof of historical novelty**. In particular, the phrase *multiplicative Sidon* describes a different, well-established constraint and should not be treated as an equivalent formulation.
 
+A further terminological caveat is essential: in some additive-combinatorics literature, a *primitive Sidon set* means an additively indecomposable Sidon set over a finite field, not an antichain in the integer divisibility poset. For example, [an *Integers* article (2015)](https://www2.math.ethz.ch/EMIS/journals/INTEGERS/papers/p6erdos/p6erdos.pdf) uses this different meaning of *primitive*. The present result always uses **primitive under divisibility**, as explicitly defined above.
+
 The result is short and rigorous, but its conclusion chiefly shows that one multiplicative restriction incurs no first-order loss in an established extremal problem. Its current editorial placement is **The Seedbed, as a resolved lemma supporting P035**, rather than a new high-consequence Acorn.
 
 ### References
