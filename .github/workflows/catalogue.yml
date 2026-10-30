@@ -82,5 +82,8 @@ jobs:
       - name: Verify P032 exact bipartite prime-sum diameters
         run: python experiments/P032_prime_sum_diameter.py
 
+      - name: Verify P033 eventual three-reflection connectivity lemma and prime witnesses
+        run: python experiments/P033_eventual_connectivity.py
+
       - name: Verify P033 prime palette connectivity and twin-prime baseline
         run: python experiments/P033_prime_sum_three_palette.py
