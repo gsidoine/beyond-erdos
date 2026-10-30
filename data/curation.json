@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "freeze": "P001–P035",
+  "policy": "Consequence-based editorial curation, not factual originality or true cash rewards",
+  "primary": [
+    "P003",
+    "P005",
+    "P006",
+    "P014",
+    "P017",
+    "P018",
+    "P020",
+    "P026",
+    "P027",
+    "P030",
+    "P031",
+    "P033"
+  ],
+  "secondary": [
+    "P001",
+    "P002",
+    "P004",
+    "P007",
+    "P008",
+    "P009",
+    "P011",
+    "P012",
+    "P013",
+    "P015",
+    "P016",
+    "P019",
+    "P021",
+    "P022",
+    "P023",
+    "P024",
+    "P025",
+    "P028",
+    "P029",
+    "P032",
+    "P034",
+    "P035"
+  ],
+  "resolved": [
+    "P010"
+  ],
+  "weekly_focus": {
+    "drafts_per_week": 5,
+    "required_reviews": [
+      "proof/finite falsification",
+      "closest predecessor and alternate terminology",
+      "structural consequences of positive and negative outcomes",
+      "precision and independence from another catalogue item"
+    ],
+    "promotion_rule": "No automatic promotion; record explicit meaningful consequence. An unresolved, deep, famous or difficult problem does not qualify automatically."
+  },
+  "note": "This is a provisional editorial triage that preserves the canonical P001–P035 IDs and current problem paths."
+}
