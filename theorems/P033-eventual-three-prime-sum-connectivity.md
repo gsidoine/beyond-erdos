@@ -2,6 +2,8 @@
 
 **Status:** complete internal proof of the **eventual** theorem; the stronger statement for **every** $n\ge3$ remains open within this repository because the threshold is ineffective. The argument uses established PNT and Siegel–Walfisz results; historical priority of the assembled theorem is **not certified**.
 
+**Stronger continuation.** The [prime-palette density theorem](P033-prime-palette-density-and-reflection-criterion.md) improves the deterministic condition to $n\ge5D$ and proves that **asymptotically 49.5121%** of nearby three-prime palettes connect $[n]$. It uses fixed-modulus prime equidistribution and Brun–Titchmarsh rather than this note's growing-modulus Siegel–Walfisz argument. This earlier proof is preserved as an independent historical proof route.
+
 ## Theorem
 
 For every sufficiently large integer $n$, there exist **three distinct odd primes** $p<q<n<r$ such that the graph on $[n]$ whose edges have sums in $\{p,q,r\}$ is connected.
