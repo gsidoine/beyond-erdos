@@ -49,6 +49,9 @@ jobs:
 
       - name: Verify all-rank P020 elementary cokernel laws modulo p²
         run: python experiments/P020_elementary_cokernel_mod_p2.py
+      - name: Verify P020 second-order small-residual-kernel laws
+        run: python experiments/P020_second_order_small_kernels.py
+
       - name: Verify P020 finite-field Hankel kernel-product corollary
         run: python experiments/P020_kernel_product_dimension.py
 
