@@ -75,7 +75,7 @@ An [exact primitive-set exchange theorem](theorems/P027-primitive-set-exchange-d
 
 ## New questions at the arithmetic–combinatorial boundary
 
-Three short research questions extend the collection: **[P031](problems/number-theory/P031-coprime-sidon-extremum.md)** asks how large a Sidon set can be while remaining pairwise coprime; **[P032](problems/graph-theory/P032-prime-sum-bipartite-diameter.md)** asks whether a two-copy prime-sum graph eventually has diameter seven; and **[P033](problems/graph-theory/P033-first-prime-connectivity.md)** asks whether the first prime above n already connects the prime-sum graph on [n]. All are **candidate questions**, subject to external novelty and existing-theorem checks.
+Three short research questions extend the collection: **[P031](problems/number-theory/P031-coprime-sidon-extremum.md)** asks how large a Sidon set can be while remaining pairwise coprime; **[P032](problems/graph-theory/P032-prime-sum-bipartite-diameter.md)** asks whether a two-copy prime-sum graph eventually has diameter seven; and **[P033](problems/graph-theory/P033-prime-sum-three-palette.md)** asks whether three prime sums always suffice to connect [n]. All are **candidate questions**, subject to external novelty and existing-theorem checks.
 
 The [P027 finite-template theorem](theorems/P027-finite-arithmetic-template-transfer.md) proves that every fixed primitive-set configuration model occurs in linearly many isolated copies inside larger models. Their finite spectral gaps yield rigorous full-chain mixing lower bounds. **It remains open whether the local gaps approach zero**, which would imply super-n log n mixing. This is a conditional route, not a new full-chain mixing theorem.
 
