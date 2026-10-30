@@ -91,7 +91,7 @@ def find_prime_witness(n, prime, denominator=16):
 
 
 def test_prime_examples():
-    prime=sieve(31000)
+    prime=sieve(32000)
     for n in (500, 1000, 2000, 5000, 10000, 30000):
         witness=find_prime_witness(n,prime)
         assert witness is not None,n
