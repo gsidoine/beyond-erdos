@@ -82,7 +82,7 @@ is valid; similarly, whenever x,x+2b∈I, use the reflection sequence with sums 
 
 For any odd x below I, repeat the two-edge move x↦x+2a. The intermediate p−x is in [n], because x<p, and the move first enters I without overshooting: the last x before I is at most α−2, whereas the top of I is β=p−2≥α+2a (as m≥a+b≥a+1). For any odd x above I, repeat x↦x−2b by using sums r then p. Such a high x is at least p, so r−x≥r−n≥1 and r−x≤r−p=2b≤n; moreover the first step enters I without undershooting, since β−α=2(m−1)≥2b. Hence **all odd vertices belong to the same component**.
 
-Each even y<p has an odd neighbor p−y∈[n]; each even y≥p has an odd neighbor r−y∈[n]. The latter upper bound follows from 2b≤n, itself implied by m≥a+b and m≤n/2. So the whole graph is connected.
+Each even y<p has an odd neighbor p−y∈[n]; each even y≥p has an odd neighbor r−y∈[n]. The latter upper bound follows from $2b\le2(m-1)\le n-1$, since $a\ge1$, $m\ge a+b$, and an interval in $[n]$ contains at most $\lceil n/2\rceil$ odd vertices. So the whole graph is connected.
 
 Now suppose n≥5D and p,q,r lie in the displayed interval. Since q≤n−1, the half-difference sum satisfies
 
