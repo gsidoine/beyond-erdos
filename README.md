@@ -6,7 +6,7 @@
 
 <p align="center"><em>Paul Erdős</em></p>
 
-**Meta Erdős is an open, community-contributable catalogue of mathematical research questions, conjectures and partial results.** The collection currently contains **34 numbered research entries (P001–P034)** in number theory, graph theory, probability, geometry, topology and matroid theory.
+**Meta Erdős is an open, community-contributable catalogue of mathematical research questions, conjectures and partial results.** The collection currently contains **35 numbered research entries (P001–P035)** in number theory, graph theory, probability, geometry, topology and matroid theory.
 
 The project takes inspiration from Paul Erdős's problem-posing tradition. These entries are **not claimed to have been posed by Erdős**, do not belong to [erdosproblems.com](https://www.erdosproblems.com/) or [teorth/erdosproblems](https://github.com/teorth/erdosproblems), and are **not certified to be previously unknown or unresolved**. Established results and close predecessors are attributed in the individual dossiers.
 
@@ -14,11 +14,11 @@ The project takes inspiration from Paul Erdős's problem-posing tradition. These
 
 ## Status and scope
 
-The 34 entries have different research statuses; **they are not all open conjectures**.
+The 35 entries have different research statuses; **they are not all open conjectures**.
 
 | Status | Entries | Meaning |
 |---|---|---|
-| Candidate | 30 | A mathematical research question under investigation; historical novelty and unresolved status are not certified |
+| Candidate | 31 | A mathematical research question under investigation; historical novelty and unresolved status are not certified |
 | Reframe | 2 (P007, P025) | A close or known predecessor requires the surviving question to be stated more narrowly |
 | Needs specification | 1 (P008) | The intended mathematical question requires a sharper formal statement |
 | Proved internally | 1 (P010) | A complete proof is supplied; independent refereeing and historical priority assessment are distinct matters |
@@ -81,6 +81,8 @@ Recent short research questions extend the collection: **[P031](problems/number-
 
 The [P027 finite-template theorem](theorems/P027-finite-arithmetic-template-transfer.md) proves that every fixed primitive-set configuration model occurs in linearly many isolated copies inside larger models. Their finite spectral gaps yield rigorous full-chain mixing lower bounds. **It remains open whether the local gaps approach zero**, which would imply super-n log n mixing. This is a conditional route, not a new full-chain mixing theorem.
 
+**P035 — Primitive Sidon coloring.** Can [N] be colored with asymptotically sqrt(N) colors so that every class is simultaneously Sidon and a divisibility antichain? An elementary dyadic construction gives at most (1+sqrt(2)+o(1))sqrt(N) classes; the optimal leading constant is unverified. [P035 dossier](problems/number-theory/P035-primitive-sidon-coloring.md).
+
 ## Problem catalogue
 
 The table below is generated from [the canonical metadata](data/problems.json). Each entry links to its full mathematical formulation, known results, finite experiments, prior-art comparison and remaining questions.
@@ -122,6 +124,7 @@ The table below is generated from [the canonical metadata](data/problems.json). 
 | [P032](problems/graph-theory/P032-prime-sum-bipartite-diameter.md) | Is the prime-sum bipartite diameter eventually seven? | graph theory | candidate | strong prior-art overlap risk with interval-constrained prime differences and Erdős problem 17 |
 | [P033](problems/graph-theory/P033-prime-sum-three-palette.md) | Can three prime sums connect all integers? | graph theory | candidate | not certified; Chen–Fu–Guo (2021) established three-color Hamiltonian-prime-set phenomena for some orders, not this stated eventual connectivity theorem |
 | [P034](problems/graph-theory/P034-four-prime-sum-biconnectivity.md) | Four prime sums without cut vertices | graph theory | candidate | unverified; prime-sum connectivity predecessor |
+| [P035](problems/number-theory/P035-primitive-sidon-coloring.md) | Sidon coloring by divisibility antichains | additive combinatorics | candidate | unverified; classical Sidon-coloring and primitive-set overlap |
 <!-- CATALOG:END -->
 
 Browse and filter the same entries in the [searchable catalogue](docs/index.html).
