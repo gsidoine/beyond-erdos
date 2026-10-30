@@ -87,10 +87,6 @@ The [35-entry novelty and proof-gate audit](audits/consolidation-P001-P035-novel
 
 **[P010](problems/graph-theory/P010-minimum-coprime-adjacencies.md)** remains in a distinct resolved-results track (submitted to *Integers*, not accepted or externally certified). See the manuscript section below.
 
-## The research rhythm
-
-Problems are explored and tested **throughout the week**, without a daily quota. **Each weekend, approximately five of the strongest new candidate questions are shortlisted for the active workshop**—not five automatic Acorn promotions. Promotion requires a consequence statement, mathematical falsification, alternate-terminology literature comparison and clear separation from existing questions. [Machine-readable curation](data/curation.json) · [parallel research audit](audits/2026-10-30-focus-session-P020-P027-P033.md).
-
 ## P010 — Submitted manuscript
 
 The original P010 question, **the minimum number of coprime adjacencies in a permutation**, has a complete constructive proof in this repository. The resulting manuscript, *The Minimum Number of Coprime Adjacencies in a Permutation*, **has been submitted to the journal _Integers_**. Submission does **not** imply acceptance or publication.
