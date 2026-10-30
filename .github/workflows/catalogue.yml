@@ -79,6 +79,9 @@ jobs:
       - name: Verify P027 finite arithmetic template isolation
         run: python experiments/P027_finite_template_transfer.py
 
+      - name: Verify Singer translated Sidon designs and forbidden-edge incidence
+        run: python experiments/sidon_singer_forbidden_graphs.py
+
       - name: Verify P031 pairwise-coprime Sidon exact small cases
         run: python experiments/P031_coprime_sidon.py
 
