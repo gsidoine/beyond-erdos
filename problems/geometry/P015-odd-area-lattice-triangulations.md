@@ -2,7 +2,7 @@
 
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** Are all odd-normalized-area triangulations of a convex lattice polygon connected by odd-area-preserving diagonal flips when all four mod-2 vertex residues occur?  
-> **Formulation:** candidate. **Novelty:** apparent novelty (targeted audit).  
+> **Formulation:** candidate. **Novelty:** high overlap risk: colored triangulation flip graphs.  
 > **Verified/known progress:** Odd doubled area iff the triangle has three different mod-2 vertex classes; flips require all four classes.  
 > **Finite evidence:** Exhaustive parity color patterns through n=9 (zero disconnected four-class cases); six-vertex three-color obstruction.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
@@ -84,3 +84,10 @@ See the [source-level comparison](../../audits/2026-10-29-P015-P016-P018-P020-so
 2. Search for configurations that have a frozen triangulation despite using four parity residues.
 3. Read the proof in Debrohim–Sasaki–Nunes (2026), specifically whether the cyclic hypothesis is essential or merely expositional.
 4. If connectedness is already known, retain the arithmetic translation as a note and **demote** the conjecture rather than claim novelty.
+
+
+## Consolidation disposition (P001–P035 audit)
+
+**Disposition — source gate, downgrade apparent novelty.** The mod-2 parity reduction is elementary and connectedness of colored triangulation flip graphs has prior literature. Require an exact theorem-by-theorem comparison of allowed polygons, cyclic colorings, residue classes and flip constraints before retaining a genuinely distinct formulation.
+
+This is a priority/novelty gate, not an independently refereed claim about whether the surviving problem is open.
