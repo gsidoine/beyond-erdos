@@ -63,17 +63,17 @@ The full transition operator splits into a hypercube refresh and a **residual co
 
 The [isolated arithmetic-block theorem](../../theorems/P027-five-site-arithmetic-blocks-and-mixing-lower-bound.md) identifies a positive density of mutually independent **five-site factors with 23 configurations**. Their exact 23-state heat-bath generator has a certified rational Rayleigh quotient $101/363$, giving the stronger full-chain lower bound
 
-$
+$$
 \boxed{t_{\mathrm{mix}}(n,\varepsilon)\ge
 \frac{363}{202}n\log n-O_\varepsilon(n).}
-$
+$$
 
 The projection onto these factors has total-variation cutoff; **the entire P027 walk has no proved cutoff or matching upper bound**. The factorization also implies
 
-$
+$$
 23^{k_n}\mid f(n),\qquad
 k_n=\frac{16}{63063}n+O(1),
-$
+$$
 
 where $f(n)$ counts maximum primitive sets. Independently isolated three-state pairs also imply a 3-adic valuation lower bound. Exact arithmetic certificates and finite isolation checks appear in the [verification script](../../experiments/P027_five_site_mixing_obstruction.py). The underlying counting framework is established work and the precise historical originality remains unverified.
 
