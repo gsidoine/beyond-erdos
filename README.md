@@ -25,7 +25,7 @@ The 35 entries have different research statuses; **they are not all open conject
 
 These labels distinguish the research status of a *question* from the historical novelty of its formulation. Computations only certify the finite instances and methods specified in their dossiers.
 
-The [consolidated P001–P030 research portfolio](audits/portfolio-consolidation-P001-P030.md) groups the questions into five mathematical programs and distinguishes publication-ready proofs from provisional candidate questions. **P003, P005, P017, P018, P020 and P027** are the current theorem-building priorities; this is an editorial research focus, **not** a certification of novelty or openness. Contributions and newly proposed IDs remain welcome.
+The [35-entry novelty and proof-gate audit](audits/consolidation-P001-P035-novelty-and-proof-gates.md) and [earlier P001–P030 portfolio](audits/portfolio-consolidation-P001-P030.md) groups the questions into five mathematical programs and distinguishes publication-ready proofs from provisional candidate questions. **P003, P005, P017, P018, P020 and P027** are the current theorem-building priorities; this is an editorial research focus, **not** a certification of novelty or openness. Contributions and newly proposed IDs remain welcome.
 
 **Contributions are welcome**, including new problem proposals, counterexamples, proof improvements, bibliographic corrections and reproducible experiments. New IDs are assigned through review rather than an arbitrary numerical target; see [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -98,13 +98,13 @@ The table below is generated from [the canonical metadata](data/problems.json). 
 | [P006](problems/number-theory/P006-prime-avoiding-sidon-sets.md) | Sidon sets without prime differences | additive combinatorics | candidate | apparent novelty (targeted audit) |
 | [P007](problems/graph-theory/P007-coprime-difference-spectrum.md) | Coprime path difference spectrum | graph labeling | reframe | known subproblem; extension unverified |
 | [P008](problems/probability/P008-coprime-percolation-critical-window.md) | Arithmetic centering of coprime percolation | probability | needs specification | needs precise formulation |
-| [P009](problems/number-theory/P009-two-prime-palette-pairings.md) | Two-prime palette pairings | number theory | candidate | strong prior-art overlap |
+| [P009](problems/number-theory/P009-two-prime-palette-pairings.md) | Two-prime palette pairings | number theory | candidate | high overlap risk: Maillet-type prime differences |
 | [P010](problems/graph-theory/P010-minimum-coprime-adjacencies.md) | Minimum coprime adjacencies | graph theory | proved internally | internal proof; priority unverified |
 | [P011](problems/probability/P011-random-sum-diagonal-matchings.md) | Random sum-diagonal matching transitions | probability | candidate | apparent novelty (targeted audit) |
 | [P012](problems/probability/P012-coprime-matching-space-percolation.md) | Coprime matching-space percolation | probability | candidate | apparent novelty (targeted audit) |
 | [P013](problems/probability/P013-random-sidon-reconfiguration.md) | Random-site Sidon exchange geometry | probability | candidate | apparent novelty (targeted audit) |
 | [P014](problems/topology/P014-random-cayley-sum-flag-homology.md) | Homology of random Cayley sum flag complexes | probabilistic topology | candidate | apparent novelty (targeted audit) |
-| [P015](problems/geometry/P015-odd-area-lattice-triangulations.md) | Odd-area lattice triangulation flip connectivity | discrete geometry | candidate | apparent novelty (targeted audit) |
+| [P015](problems/geometry/P015-odd-area-lattice-triangulations.md) | Odd-area lattice triangulation flip connectivity | discrete geometry | candidate | high overlap risk: colored triangulation flip graphs |
 | [P016](problems/topology/P016-sidon-complex-homology.md) | Topology of the Sidon simplicial complex | topological combinatorics | candidate | apparent novelty (targeted audit) |
 | [P017](problems/probability/P017-random-divisibility-chain-height.md) | Random divisibility-poset chain height | probability | candidate | apparent novelty (targeted audit) |
 | [P018](problems/matroid-theory/P018-conserved-xor-basis-fibers.md) | Conserved-XOR basis exchange fibers | matroid theory | candidate | apparent novelty (targeted audit) |
@@ -118,13 +118,13 @@ The table below is generated from [the canonical metadata](data/problems.json). 
 | [P026](problems/graph-theory/P026-prime-sum-square-cycle-generation.md) | Four-cycle generation in prime-sum bipartite graphs | graph theory | candidate | not certified (specialist source check needed) |
 | [P027](problems/number-theory/P027-primitive-set-exchange-mixing.md) | Mixing of maximum primitive-set exchanges | multiplicative combinatorics | candidate | not certified; closely related to counting primitive sets and distributive-lattice walks |
 | [P028](problems/number-theory/P028-random-divisor-complex-mobius-deformation.md) | Möbius deformation from random divisibility complexes | analytic number theory | candidate | not certified; arithmetic Dirichlet convolution and order-complex Möbius theory are classical |
-| [P029](problems/graph-theory/P029-prime-sum-permutation-xray-fibers.md) | Prime-supported permutation X-ray fiber reconfiguration | combinatorics | candidate | high overlap risk with existing permutation X-ray/discrete tomography theory |
+| [P029](problems/graph-theory/P029-prime-sum-permutation-xray-fibers.md) | Prime-supported permutation X-ray fiber reconfiguration | combinatorics | candidate | high overlap risk: discrete tomography X-ray fibers |
 | [P030](problems/number-theory/P030-double-prime-perfect-matchings.md) | Double-prime perfect matchings on integer intervals | number theory | candidate | not certified; prime sum/difference cycles have explicit earlier study |
 | [P031](problems/number-theory/P031-coprime-sidon-extremum.md) | How large can a pairwise-coprime Sidon set be? | number theory | candidate | not certified; Sidon sets of primes and additive-multiplicative restrictions require a specialist search |
-| [P032](problems/graph-theory/P032-prime-sum-bipartite-diameter.md) | Is the prime-sum bipartite diameter eventually seven? | graph theory | candidate | strong prior-art overlap risk with interval-constrained prime differences and Erdős problem 17 |
+| [P032](problems/graph-theory/P032-prime-sum-bipartite-diameter.md) | Is the prime-sum bipartite diameter eventually seven? | graph theory | candidate | high overlap risk: prime-difference conjectures |
 | [P033](problems/graph-theory/P033-prime-sum-three-palette.md) | Can three prime sums connect all integers? | graph theory | candidate | not certified; Chen–Fu–Guo (2021) established three-color Hamiltonian-prime-set phenomena for some orders, not this stated eventual connectivity theorem |
 | [P034](problems/graph-theory/P034-four-prime-sum-biconnectivity.md) | Four prime sums without cut vertices | graph theory | candidate | unverified; prime-sum connectivity predecessor |
-| [P035](problems/number-theory/P035-primitive-sidon-coloring.md) | Sidon coloring by divisibility antichains | additive combinatorics | candidate | unverified; classical Sidon-coloring and primitive-set overlap |
+| [P035](problems/number-theory/P035-primitive-sidon-coloring.md) | Sidon coloring by divisibility antichains | additive combinatorics | candidate | high overlap risk: Sidon–Ramsey coloring and primitive sets |
 <!-- CATALOG:END -->
 
 Browse and filter the same entries in the [searchable catalogue](docs/index.html).
