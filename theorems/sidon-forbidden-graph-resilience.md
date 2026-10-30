@@ -94,6 +94,24 @@ has length $N-o(N)$ and contains a Sidon set of size $(1-o(1))\sqrt N$.
 
 Thus graphs with the **same order of forbidden edges** can produce either a severe loss or no asymptotic loss. No necessary-and-sufficient criterion can depend *only* on the edge-count exponent.
 
+## Concentrated forbidden edges: a vertex-cover criterion
+
+Let $\tau(G)$ be the minimum cardinality of a vertex cover of $G$. Each vertex of $[v]$ belongs to exactly $q+1$ Singer translates. Averaging over $t$ shows that some translate contains at most
+
+$$
+\frac{q+1}{v}\,|U\cap[v]|
+$$
+
+vertices of any prescribed vertex cover $U$. Deleting just those vertices makes the remaining Sidon set independent in $G$. Hence
+
+$$
+\boxed{s(G)\ge(q+1)\left(1-\frac{\tau(G)}v\right).}
+$$
+
+In particular, if $\tau(G)=o(N)$, then $s(G)=(1-o(1))\sqrt N$ **regardless of whether $e(G)$ is larger than $N^{3/2}$**. This is the classical Singer-covering/averaging principle applied to a vertex cover, not a new independent Sidon-subset theorem.
+
+There is also an exact finite threshold: if $e(G[[v]])<v$, the sum of edge incidences over all $v$ Singer translates is less than $v$, so at least one whole Singer translate is already independent in $G$, without any deletion.
+
 ## Extension to arbitrary forbidden configurations
 
 The averaging part of Theorem 1 is not limited to graph edges. Let $\mathcal H$ be any family of distinct subsets of $[N]$, each containing **at least two distinct vertices**. A specified hyperedge $H\subseteq[v]$ occurs in at most one translated Singer set, since two distinct members of $H$ already determine the unique translate. Hyperedges outside $[v]$ never occur.
