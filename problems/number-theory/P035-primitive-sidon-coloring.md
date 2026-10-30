@@ -80,3 +80,8 @@ This is a priority/novelty gate, not an independently refereed claim about wheth
 ## Related resolved extremal question (distinct from the coloring problem)
 
 The maximum size of a **single** Sidon set that is also a divisibility antichain is $(1+o(1))\sqrt N$. An elementary [translation-and-divisor-sum argument](../../theorems/P035-primitive-sidon-translation-lemma.md) establishes this sharp leading constant. This does **not** resolve the minimum number of primitive Sidon classes needed to partition $[N]$, and historical priority for the combined extremal observation remains unverified.
+
+
+## Related general Sidon resilience theorem
+
+The [Singer–Turán forbidden-graph theorem](../../theorems/sidon-forbidden-graph-resilience.md) proves that every graph on `[N]` with $o(N^{3/2})$ forbidden vertex-pairs has a Sidon independent set of size $(1-o(1))\sqrt N$, with a matching worst-case threshold and a sharp-order bound for all edge budgets. Divisibility avoidance is one application, but **a single large constrained Sidon set does not solve the primitive Sidon coloring problem P035**. Historical novelty of the assembled graph-resilience statement is unverified.
