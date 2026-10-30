@@ -3,8 +3,8 @@
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** Determine the mixing-time order and possible cutoff for single-chain heat-bath dynamics on maximum primitive subsets of [2n].  
 > **Formulation:** candidate. **Novelty:** not certified; closely related to counting primitive sets and distributive-lattice walks.  
-> **Verified/known progress:** Exact exchange diameter 5n/12+O(1); autonomous fair-bit factor of size (1454/8505)n+O(1); projected heat-bath cutoff yields full mixing lower bound (n/2)log n−O(n). Full mixing still open.  
-> **Finite evidence:** Five-band criterion checked n≤1000; full product and uniform conditional updates exhaustively checked n≤30; small finite spectral calculations.  
+> **Verified/known progress:** Exact exchange diameter and binary projection; new isolated positive-density 23-state components yield full mixing lower bound (363/202)n log n−O(n) and 23-adic divisibility, while full mixing remains unresolved.  
+> **Finite evidence:** Exact 23-state enumeration and rational Rayleigh quotient 101/363; five-block isolation checked arithmetically and by finite samples; earlier binary factor checked n≤1000.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
@@ -59,6 +59,24 @@ $$
 
 The full transition operator splits into a hypercube refresh and a **residual core** operator, giving an exact spectral decomposition and reducing the remaining upper-bound question to the core chain. None of this proves the full walk mixes in O(n log n), has a cutoff, or has a spectral gap of order 1/n. The [dependency-free finite checker](../../experiments/P027_autonomous_coordinates.py) and [optional full-chain spectral diagnostic](../../experiments/P027_full_heatbath_spectrum.py) accompany the proof.
 
+## New 23-state mixing obstruction
+
+The [isolated arithmetic-block theorem](../../theorems/P027-five-site-arithmetic-blocks-and-mixing-lower-bound.md) identifies a positive density of mutually independent **five-site factors with 23 configurations**. Their exact 23-state heat-bath generator has a certified rational Rayleigh quotient \(101/363\), giving the stronger full-chain lower bound
+
+$
+\boxed{t_{\mathrm{mix}}(n,\varepsilon)\ge
+\frac{363}{202}n\log n-O_\varepsilon(n).}
+$
+
+The projection onto these factors has total-variation cutoff; **the entire P027 walk has no proved cutoff or matching upper bound**. The factorization also implies
+
+$
+23^{k_n}\mid f(n),\qquad
+k_n=\frac{16}{63063}n+O(1),
+$
+
+where \(f(n)\) counts maximum primitive sets. Independently isolated three-state pairs also imply a 3-adic valuation lower bound. Exact arithmetic certificates and finite isolation checks appear in the [verification script](../../experiments/P027_five_site_mixing_obstruction.py). The underlying counting framework is established work and the precise historical originality remains unverified.
+
 ## Existing literature and novelty caveat
 
 - [Liu–Pach–Palincza, *The number of maximum primitive sets of integers* (2021)](https://doi.org/10.1017/S0963548321000018): crucial primary predecessor. They prove the exponential counting constant exists; **the family M_n and dyadic chain decomposition are known**. Do not present either as original.
@@ -71,4 +89,4 @@ A specialized mixing theorem could already apply to this arithmetic poset. The e
 
 ## Next adversarial gate
 
-Seek a known general mixing theorem for uniformly random order ideals or monotone functions that subsumes the exponent constraints. Obtain a uniform spectral-gap lower bound for the **residual core** and determine whether the full walk has O(n log n) mixing or cutoff. Compare two natural update rules (whole-chain heat bath versus adjacent 2-exponent toggles) rather than conflating their mixing times.
+Seek a known general mixing theorem for uniformly random order ideals or monotone functions that subsumes the exponent constraints. Classify the slowest positive-density arithmetic motifs, and obtain a uniform spectral-gap lower bound for the **residual core** and determine whether the full walk has O(n log n) mixing or cutoff. Compare two natural update rules (whole-chain heat bath versus adjacent 2-exponent toggles) rather than conflating their mixing times.
