@@ -739,6 +739,79 @@
         }
       ],
       "portfolio_tier": "B"
+    },
+    {
+      "id": "P031",
+      "title": "How large can a pairwise-coprime Sidon set be?",
+      "area": "number theory",
+      "file": "problems/number-theory/P031-coprime-sidon-extremum.md",
+      "question": "Can [N] contain a pairwise-coprime Sidon set of size (1−o(1))sqrt(N)?",
+      "status": "candidate",
+      "novelty": "not certified; Sidon sets of primes and additive-multiplicative restrictions require a specialist search",
+      "result": "Classical Sidon bound gives upper (1+o(1))sqrt(N); Sidon-subsets-of-primes results give a lower bound of order sqrt(N/log N)",
+      "verification": "Exact strong-Sidon and pairwise gcd enumeration for N≤30",
+      "priority": "promising; seek the sharp constant or a fixed multiplicative density loss",
+      "portfolio_tier": "B",
+      "sources": [
+        {
+          "name": "Bailleul–Riblet, Sidon subsets of arbitrary integer sets (2026)",
+          "url": "https://arxiv.org/abs/2605.03181"
+        },
+        {
+          "name": "Sidon set classical bounds and constructions",
+          "url": "https://mathworld.wolfram.com/SidonSet.html"
+        },
+        {
+          "name": "Carter–O'Bryant–Tao, Sidon diameter and distribution (2026)",
+          "url": "https://arxiv.org/abs/2610.36207"
+        }
+      ]
+    },
+    {
+      "id": "P032",
+      "title": "Is the prime-sum bipartite diameter eventually seven?",
+      "area": "graph theory",
+      "file": "problems/graph-theory/P032-prime-sum-bipartite-diameter.md",
+      "question": "Does the bipartite graph on two copies of [n], joined when i+j is prime, have diameter exactly seven for all sufficiently large n?",
+      "status": "candidate",
+      "novelty": "strong prior-art overlap risk with interval-constrained prime differences and Erdős problem 17",
+      "result": "Only prime-sum-two edge is a bridge; diameter seven is equivalent to uniformly finding prime pairs with prescribed even differences in bounded intervals",
+      "verification": "Exact bridge-based diameters for 2≤n≤250; independent all-pairs BFS for n≤35",
+      "priority": "source-gated; determine whether known prime-difference coverage subsumes the condition",
+      "portfolio_tier": "D",
+      "sources": [
+        {
+          "name": "Erdős problem 17, prime difference coverage",
+          "url": "https://www.erdosproblems.com/17"
+        },
+        {
+          "name": "Croot–Jin, prime sum graphs and induced trees",
+          "url": "https://doi.org/10.1007/s00373-025-02999-2"
+        }
+      ]
+    },
+    {
+      "id": "P033",
+      "title": "Does the first prime after n connect the prime-sum graph?",
+      "area": "graph theory",
+      "file": "problems/graph-theory/P033-first-prime-connectivity.md",
+      "question": "If q is the smallest prime greater than n, is the graph on [n] joining a,b when a+b is prime and at most q always connected?",
+      "status": "candidate",
+      "novelty": "not certified; related prime-sum spanning-tree and Hamiltonicity results require a sharper priority audit",
+      "result": "The first prime greater than n is the sharp necessary bottleneck edge sum for any prime-sum spanning tree",
+      "verification": "Exact connected components checked for every n from 2 through 500",
+      "priority": "promising only if not already entailed by an existing bounded-sum spanning-tree theorem",
+      "portfolio_tier": "B",
+      "sources": [
+        {
+          "name": "Chen–Fu–Guo, Hamiltonicity in Prime Sum Graphs (2021)",
+          "url": "https://doi.org/10.1007/s00373-020-02241-1"
+        },
+        {
+          "name": "Croot–Jin, Prime Sum Graphs and the Induced Trees They Contain",
+          "url": "https://doi.org/10.1007/s00373-025-02999-2"
+        }
+      ]
     }
   ],
   "catalogue_policy": "Open to community contributions; proposed additions and status changes require source review"
