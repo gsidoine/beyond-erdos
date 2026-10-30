@@ -1,6 +1,6 @@
 # P020 — Candidate exponent-$p^2$ law: the second-order affine-offset obstruction
 
-**Status:** research conjecture and precise proof-obstruction audit. The proposed formula would strengthen the prior [one/two residual-factor theorem](P020-exact-second-order-small-kernel-laws.md) to **all** residual coranks. Published finite-field Hankel-rank and kernel structure are credited below. Historical novelty unverified; **does not** settle exponents $p^3$ or the full group law.
+**Status:** research conjecture and precise proof-obstruction audit. The proposed formula would strengthen the prior [one/two residual-factor theorem](../theorems/P020-exact-second-order-small-kernel-laws.md) to **all** residual coranks. Published finite-field Hankel-rank and kernel structure are credited below. Historical novelty unverified; **does not** settle exponents $p^3$ or the full group law.
 
 ## Statement
 
@@ -45,7 +45,7 @@ Every probability is **exactly independent of $n$ for fixed $k$ as soon as $n>k$
 
 ## Attempted proof and exact stopping point
 
-**First layer.** Fix the anti-diagonal input modulo $p$ at a Hankel matrix with corank $k$. The [published finite-field kernel classification](P020-hankel-kernel-product-research.md) supplies a polynomial-shift basis $A,Az,\ldots,Az^{k-1}$ of its radical. Splitting off the invertible block of $H_n$ produces a $k\times k$ Schur complement $T=pS$. By the [proved first-order lifting lemma](P020-elementary-abelian-cokernel-laws.md), $\bar S=S\bmod p$ is a **uniform Hankel** matrix in this basis. Hence the conditional distribution of its nullity $j$ is $\sigma_{k,j}$, the classical square-Hankel corank law.
+**First layer.** Fix the anti-diagonal input modulo $p$ at a Hankel matrix with corank $k$. The [published finite-field kernel classification](P020-hankel-kernel-product-research.md) supplies a polynomial-shift basis $A,Az,\ldots,Az^{k-1}$ of its radical. Splitting off the invertible block of $H_n$ produces a $k\times k$ Schur complement $T=pS$. By the [proved first-order lifting lemma](../theorems/P020-elementary-abelian-cokernel-laws.md), $\bar S=S\bmod p$ is a **uniform Hankel** matrix in this basis. Hence the conditional distribution of its nullity $j$ is $\sigma_{k,j}$, the classical square-Hankel corank law.
 
 When $j=0$, all $k$ nonunit Smith factors of $H_n$ have valuation one, and the theorem follows.
 
