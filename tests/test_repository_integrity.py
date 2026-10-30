@@ -51,13 +51,14 @@ class IntegrationConsistencyTests(unittest.TestCase):
         self.assertIn("PR #29", workflow)
         self.assertIn("pr.data.state !== 'closed'", workflow)
         self.assertIn("github.rest.git.deleteRef", workflow)
+        self.assertIn("core.setFailed", workflow)
         names = (
             "research/initial-four-problems",
             "research/pass-2-coprime-sidon",
             "research/pass-4-prime-palettes-noncoprime-paths",
             "research/P026-P030-arithmetic-combinatorics",
             "research/pass-3-coprime-differences-percolation",
-            "maintenance/retire-stale-branches-and-integrity",
+            "maintenance/retire-final-unmerged-branch",
         )
         for name in names:
             self.assertIn(name, workflow)
