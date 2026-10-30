@@ -54,3 +54,7 @@ python -m unittest discover -s tests -v
 ```
 
 This maintenance audit is separate from source-level mathematical priority checks and independent referee verification.
+
+## Completion verification
+
+The reviewed legacy branches have now been retired. The [first cleanup run](https://github.com/gsidoine/meta-erdos/actions/runs/41017240538) removed the four fully merged refs and the first maintenance ref. The [final cleanup run](https://github.com/gsidoine/meta-erdos/actions/runs/41017544914) removed the abandoned, closed PR #29 ref and its own temporary maintenance ref. Both runs succeeded, and a fresh GitHub branch listing confirms **main is the only remaining branch**. PR #29 remains closed and unmerged. The [post-cleanup catalogue and mathematical CI run](https://github.com/gsidoine/meta-erdos/actions/runs/41017544984) also succeeded. No numbered mathematical statements or manuscript PDF files were changed during cleanup.
