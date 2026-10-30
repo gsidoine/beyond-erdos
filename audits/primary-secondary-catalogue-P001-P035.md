@@ -52,10 +52,10 @@ These 12 are **editorial bets**, not certified new open problems, and are not al
 
 These are **metaphorical editorial stakes only**: no real prize, offer, obligation, competition award, or claim about what Erdős himself would have assigned. The thresholds are a playful way to keep standards high.
 
-- **Foundational ($500+ imaginary):** a solution would introduce a reusable method, decisively settle a broad structural issue, or connect fields in a way other mathematicians can build upon.
-- **Major ($100–499 imaginary):** a substantive new theorem with independent consequences and a genuine unresolved obstacle.
-- **Promising ($50–99 imaginary):** a precise question with at least one plausible significant consequence, even if proof techniques are not yet ready.
-- **Incubation (below $50 imaginary):** interesting but mainly local, derivative, heavily source-dependent, under-specified, or awaiting a first nontrivial result.
+- **Foundational (500+ points imaginary):** a solution would introduce a reusable method, decisively settle a broad structural issue, or connect fields in a way other mathematicians can build upon.
+- **Major (100–499 points imaginary):** a substantive new theorem with independent consequences and a genuine unresolved obstacle.
+- **Promising (50–99 points imaginary):** a precise question with at least one plausible significant consequence, even if proof techniques are not yet ready.
+- **Incubation (below 50 points imaginary):** interesting but mainly local, derivative, heavily source-dependent, under-specified, or awaiting a first nontrivial result.
 
 **Promotion into the primary catalogue is not determined by the imaginary dollar value alone.** Require a short *consequence statement*: “If solved, this changes our understanding of X because Y”; an *alternative-term/source check*; a nontrivial finite or theoretical baseline; and an explicit distinction from the nearest sibling. Difficulty alone is not significance. An elegant counterexample may be as valuable as a proof.
 
