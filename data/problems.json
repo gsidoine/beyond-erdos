@@ -792,23 +792,27 @@
     },
     {
       "id": "P033",
-      "title": "Does the first prime after n connect the prime-sum graph?",
+      "title": "Can three prime sums connect all integers?",
       "area": "graph theory",
-      "file": "problems/graph-theory/P033-first-prime-connectivity.md",
-      "question": "If q is the smallest prime greater than n, is the graph on [n] joining a,b when a+b is prime and at most q always connected?",
+      "file": "problems/graph-theory/P033-prime-sum-three-palette.md",
+      "question": "Can the graph on [n] be made connected using edges with only three distinct prime sums, for every n≥3?",
       "status": "candidate",
-      "novelty": "not certified; related prime-sum spanning-tree and Hamiltonicity results require a sharper priority audit",
-      "result": "The first prime greater than n is the sharp necessary bottleneck edge sum for any prime-sum spanning tree",
-      "verification": "Exact connected components checked for every n from 2 through 500",
-      "priority": "promising only if not already entailed by an existing bounded-sum spanning-tree theorem",
+      "novelty": "not certified; two-prime case overlaps known twin-prime Hamiltonian-path constructions",
+      "result": "Exact two-prime characterization: two colors suffice precisely for a twin-prime pair p,p+2 with n−1≤p≤n+1; three-color universality remains open in this dossier",
+      "verification": "Exhaustive prime-palette search finds exactly two or three necessary colors for every 3≤n≤120",
+      "priority": "promising but history-sensitive; prove a uniform three-color palette or find a counterexample",
       "portfolio_tier": "B",
       "sources": [
         {
-          "name": "Chen–Fu–Guo, Hamiltonicity in Prime Sum Graphs (2021)",
+          "name": "Chen–Fu–Guo, Hamiltonicity in Prime Sum Graphs",
           "url": "https://doi.org/10.1007/s00373-020-02241-1"
         },
         {
-          "name": "Croot–Jin, Prime Sum Graphs and the Induced Trees They Contain",
+          "name": "Prime sum Hamiltonian paths and twin-prime reflection constructions",
+          "url": "https://mathoverflow.net/questions/241569/for-which-n-is-there-a-permutation-such-that-the-sum-of-any-two-adjacent-eleme"
+        },
+        {
+          "name": "Croot–Jin, Prime Sum Graphs and Induced Trees",
           "url": "https://doi.org/10.1007/s00373-025-02999-2"
         }
       ]
