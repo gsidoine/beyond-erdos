@@ -824,6 +824,33 @@
           "url": "https://jtnb.centre-mersenne.org/item/10.5802/jtnb.1024.pdf"
         }
       ]
+    },
+    {
+      "id": "P034",
+      "title": "Four prime sums without cut vertices",
+      "area": "graph theory",
+      "file": "problems/graph-theory/P034-four-prime-sum-biconnectivity.md",
+      "question": "For every odd n≥7, do four distinct prime sums suffice to make the graph on [n] 2-vertex-connected?",
+      "status": "candidate",
+      "novelty": "unverified; prime-sum connectivity predecessor",
+      "result": "For odd n≥5, at least four odd-prime labels are necessary for minimum degree two; the bound is attained in tested odd cases 7≤n≤39",
+      "verification": "Exhaustive four-label search for odd n=7,9,...,39; n=5 impossible even with all prime sums",
+      "priority": "explore",
+      "sources": [
+        {
+          "name": "Chen–Fu–Guo (2021), Hamiltonicity in Prime Sum Graphs",
+          "url": "https://doi.org/10.1007/s00373-020-02241-1"
+        },
+        {
+          "name": "Croot–Jin (2026), Prime Sum Graphs and the Induced Trees They Contain",
+          "url": "https://doi.org/10.1007/s00373-025-02999-2"
+        },
+        {
+          "name": "Meta Erdős P033",
+          "url": "https://github.com/gsidoine/meta-erdos/blob/main/problems/graph-theory/P033-prime-sum-three-palette.md"
+        }
+      ],
+      "portfolio_tier": "C"
     }
   ],
   "catalogue_policy": "Open to community contributions; proposed additions and status changes require source review"

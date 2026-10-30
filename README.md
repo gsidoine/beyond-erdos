@@ -6,7 +6,7 @@
 
 <p align="center"><em>Paul Erdős</em></p>
 
-**Meta Erdős is an open, community-contributable catalogue of mathematical research questions, conjectures and partial results.** The collection currently contains **33 numbered research entries (P001–P033)** in number theory, graph theory, probability, geometry, topology and matroid theory.
+**Meta Erdős is an open, community-contributable catalogue of mathematical research questions, conjectures and partial results.** The collection currently contains **34 numbered research entries (P001–P034)** in number theory, graph theory, probability, geometry, topology and matroid theory.
 
 The project takes inspiration from Paul Erdős's problem-posing tradition. These entries are **not claimed to have been posed by Erdős**, do not belong to [erdosproblems.com](https://www.erdosproblems.com/) or [teorth/erdosproblems](https://github.com/teorth/erdosproblems), and are **not certified to be previously unknown or unresolved**. Established results and close predecessors are attributed in the individual dossiers.
 
@@ -14,11 +14,11 @@ The project takes inspiration from Paul Erdős's problem-posing tradition. These
 
 ## Status and scope
 
-The 33 entries have different research statuses; **they are not all open conjectures**.
+The 34 entries have different research statuses; **they are not all open conjectures**.
 
 | Status | Entries | Meaning |
 |---|---|---|
-| Candidate | 29 | A mathematical research question under investigation; historical novelty and unresolved status are not certified |
+| Candidate | 30 | A mathematical research question under investigation; historical novelty and unresolved status are not certified |
 | Reframe | 2 (P007, P025) | A close or known predecessor requires the surviving question to be stated more narrowly |
 | Needs specification | 1 (P008) | The intended mathematical question requires a sharper formal statement |
 | Proved internally | 1 (P010) | A complete proof is supplied; independent refereeing and historical priority assessment are distinct matters |
@@ -77,7 +77,7 @@ An [exact primitive-set exchange theorem](theorems/P027-primitive-set-exchange-d
 
 ## New questions at the arithmetic–combinatorial boundary
 
-Three short research questions extend the collection: **[P031](problems/number-theory/P031-coprime-sidon-extremum.md)** asks how large a Sidon set can be while remaining pairwise coprime; **[P032](problems/graph-theory/P032-prime-sum-bipartite-diameter.md)** asks whether a two-copy prime-sum graph eventually has diameter seven; and **[P033](problems/graph-theory/P033-prime-sum-three-palette.md)** asks whether three prime sums always suffice to connect [n]. All are **candidate questions**, subject to external novelty and existing-theorem checks.
+Recent short research questions extend the collection: **[P031](problems/number-theory/P031-coprime-sidon-extremum.md)** asks how large a Sidon set can be while remaining pairwise coprime; **[P032](problems/graph-theory/P032-prime-sum-bipartite-diameter.md)** asks whether a two-copy prime-sum graph eventually has diameter seven; and **[P033](problems/graph-theory/P033-prime-sum-three-palette.md)** asks whether three prime sums always suffice to connect [n]; **[P034](problems/graph-theory/P034-four-prime-sum-biconnectivity.md)** asks whether four sums suffice for 2-vertex-connectivity at every odd order at least seven. All are **candidate questions**, subject to external novelty and existing-theorem checks.
 
 The [P027 finite-template theorem](theorems/P027-finite-arithmetic-template-transfer.md) proves that every fixed primitive-set configuration model occurs in linearly many isolated copies inside larger models. Their finite spectral gaps yield rigorous full-chain mixing lower bounds. **It remains open whether the local gaps approach zero**, which would imply super-n log n mixing. This is a conditional route, not a new full-chain mixing theorem.
 
@@ -121,6 +121,7 @@ The table below is generated from [the canonical metadata](data/problems.json). 
 | [P031](problems/number-theory/P031-coprime-sidon-extremum.md) | How large can a pairwise-coprime Sidon set be? | number theory | candidate | not certified; Sidon sets of primes and additive-multiplicative restrictions require a specialist search |
 | [P032](problems/graph-theory/P032-prime-sum-bipartite-diameter.md) | Is the prime-sum bipartite diameter eventually seven? | graph theory | candidate | strong prior-art overlap risk with interval-constrained prime differences and Erdős problem 17 |
 | [P033](problems/graph-theory/P033-prime-sum-three-palette.md) | Can three prime sums connect all integers? | graph theory | candidate | not certified; Chen–Fu–Guo (2021) established three-color Hamiltonian-prime-set phenomena for some orders, not this stated eventual connectivity theorem |
+| [P034](problems/graph-theory/P034-four-prime-sum-biconnectivity.md) | Four prime sums without cut vertices | graph theory | candidate | unverified; prime-sum connectivity predecessor |
 <!-- CATALOG:END -->
 
 Browse and filter the same entries in the [searchable catalogue](docs/index.html).
