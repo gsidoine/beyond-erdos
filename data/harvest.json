@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "description": "Internally proved results; inclusion does not certify originality, publication or external peer review.",
+  "results": [
+    {
+      "id": "H001",
+      "title": "Minimum coprime adjacencies in a permutation",
+      "origin_problem": "P010",
+      "file": "theorems/P010-exact-coprime-adjacencies.md",
+      "status": "proved internally; manuscript submitted to Integers",
+      "priority_note": "Historical priority unverified"
+    },
+    {
+      "id": "H002",
+      "title": "Sharp-order Sidon resilience against arbitrary forbidden pairs",
+      "origin_problem": "P035",
+      "file": "theorems/sidon-forbidden-graph-resilience.md",
+      "status": "proved internally; historical originality unverified",
+      "priority_note": "Singer difference sets and Turan independence are classical; current self-contained argument appears better suited to a larger development than standalone submission."
+    }
+  ]
+}
