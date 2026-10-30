@@ -1,10 +1,10 @@
 # P033 — Can three prime sums connect all integers?
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** Can the graph on [n] be made connected using edges with only three distinct prime sums, for every n≥3?
-> **Formulation:** candidate. **Novelty:** not certified; two-prime case overlaps known twin-prime Hamiltonian-path constructions.
-> **Verified/known progress:** Exact two-prime characterization: two colors suffice precisely for a twin-prime pair p,p+2 with n−1≤p≤n+1; three-color universality remains open in this dossier.
-> **Finite evidence:** Exhaustive prime-palette search finds exactly two or three necessary colors for every 3≤n≤120.
+> **Research question:** Can the graph on [n] be made connected using edges with only three distinct prime sums, for every n≥3?  
+> **Formulation:** candidate. **Novelty:** not certified; two-prime case overlaps known twin-prime Hamiltonian-path constructions.  
+> **Verified/known progress:** Exact two-prime characterization: two colors suffice precisely for a twin-prime pair p,p+2 with n−1≤p≤n+1; three-color universality remains open in this dossier.  
+> **Finite evidence:** Exhaustive prime-palette search finds exactly two or three necessary colors for every 3≤n≤120.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
