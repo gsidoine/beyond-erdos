@@ -82,6 +82,28 @@ This is a priority/novelty gate, not an independently refereed claim about wheth
 The maximum size of a **single** Sidon set that is also a divisibility antichain is $(1+o(1))\sqrt N$. An elementary [translation-and-divisor-sum argument](../../theorems/P035-primitive-sidon-translation-lemma.md) establishes this sharp leading constant. This does **not** resolve the minimum number of primitive Sidon classes needed to partition $[N]$, and historical priority for the combined extremal observation remains unverified.
 
 
-## Related general Sidon resilience theorem
+## Proved supporting corollary: a large primitive Sidon class
 
-The [Singer–Turán forbidden-graph theorem](../../theorems/sidon-forbidden-graph-resilience.md) proves that every graph on `[N]` with $o(N^{3/2})$ forbidden vertex-pairs has a Sidon independent set of size $(1-o(1))\sqrt N$, with a matching worst-case threshold and a sharp-order bound for all edge budgets. Divisibility avoidance is one application, but **a single large constrained Sidon set does not solve the primitive Sidon coloring problem P035**. Historical novelty of the assembled graph-resilience statement is unverified.
+Let $F_{\mathrm{PS}}(N)$ be the maximum cardinality of a subset of $[N]$ that is both Sidon and primitive (an antichain under divisibility). Then
+
+$$
+\boxed{F_{\mathrm{PS}}(N)=(1+o(1))\sqrt N.}
+$$
+
+**Proof as a corollary of Sidon graph resilience.** Let $G_N$ have vertex set $[N]$ and edges $\{a,b\}$ precisely when $a\ne b$ and one of $a,b$ divides the other. Its edge count satisfies
+
+$$
+e(G_N)=\sum_{a=1}^{N}\bigl(\lfloor N/a\rfloor-1\bigr)
+=O(N\log N)=o(N^{3/2}).
+$$
+
+By the [Singer–Turán Sidon resilience theorem](../../theorems/sidon-forbidden-graph-resilience.md), $G_N$ contains an independent Sidon set of size $(1-o(1))\sqrt N$. Its independence means exactly that no two distinct members divide one another. The classical Sidon bound provides the matching upper estimate. $\square$
+
+The [direct translation-and-divisor-sum proof](../../theorems/P035-primitive-sidon-translation-lemma.md) gives the same conclusion without appealing to Singer's cyclic designs. The general resilience theorem also proves the worst-case order
+
+$$
+\min_{e(G)\le m}\max\{|A|:A\subseteq[N]\text{ is Sidon and }G\text{-independent}\}
+=\Theta\left(\min\left\{\sqrt N,\frac{N^2}{m+N}\right\}\right).
+$$
+
+**Scope.** This corollary concerns the size of **one** primitive Sidon class; it does not determine the chromatic number of the graph of Sidon/divisibility constraints or settle the covering/partition conjecture posed in P035. The general resilience theorem is a supporting result, not a corollary *of the conjecture itself*. Its finite-design and extremal ingredients are classical, and historical originality of the combined formulation has not been established.
