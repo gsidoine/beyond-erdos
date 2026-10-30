@@ -56,6 +56,8 @@ In particular, $h(n)\sim 7n/(12\log n)$. This is a **resolved entry**, not one o
 - [Elementary abelian group probabilities](theorems/P020-elementary-abelian-cokernel-laws.md)
 - [Finite-field kernel structure and prior art](theorems/P020-hankel-kernel-product-research.md)
 
+**P033 — Three prime-sum colors.** An [unconditional eventual-connectivity theorem](theorems/P033-eventual-three-prime-sum-connectivity.md) proves that three prime sums connect $[n]$ for **every sufficiently large $n$**, using an elementary graph lemma and Siegel–Walfisz. Combined with the previously proved two-color/twin-prime criterion, this implies $\kappa(n)=3$ for a density-one set of integers $n$. **The full all-$n$ conjecture remains unresolved**, because the analytic threshold is ineffective. Historical originality is not certified. [P033 dossier](problems/graph-theory/P033-prime-sum-three-palette.md).
+
 **Interval-sum factor saturation.** A separate [constructive theorem](theorems/interval-sum-factor-saturation.md) proves that a bipartite graph with allowed sum interval $a\le i+j\le b$ contains as many edge-disjoint perfect matchings as its minimum degree. This is not claimed as a resolution of P003 and does not have a numbered open-problem entry.
 
 ## Research portfolio and source verification
@@ -118,7 +120,7 @@ The table below is generated from [the canonical metadata](data/problems.json). 
 | [P030](problems/number-theory/P030-double-prime-perfect-matchings.md) | Double-prime perfect matchings on integer intervals | number theory | candidate | not certified; prime sum/difference cycles have explicit earlier study |
 | [P031](problems/number-theory/P031-coprime-sidon-extremum.md) | How large can a pairwise-coprime Sidon set be? | number theory | candidate | not certified; Sidon sets of primes and additive-multiplicative restrictions require a specialist search |
 | [P032](problems/graph-theory/P032-prime-sum-bipartite-diameter.md) | Is the prime-sum bipartite diameter eventually seven? | graph theory | candidate | strong prior-art overlap risk with interval-constrained prime differences and Erdős problem 17 |
-| [P033](problems/graph-theory/P033-prime-sum-three-palette.md) | Can three prime sums connect all integers? | graph theory | candidate | not certified; two-prime case overlaps known twin-prime Hamiltonian-path constructions |
+| [P033](problems/graph-theory/P033-prime-sum-three-palette.md) | Can three prime sums connect all integers? | graph theory | candidate | not certified; Chen–Fu–Guo (2021) established three-color Hamiltonian-prime-set phenomena for some orders, not this stated eventual connectivity theorem |
 <!-- CATALOG:END -->
 
 Browse and filter the same entries in the [searchable catalogue](docs/index.html).

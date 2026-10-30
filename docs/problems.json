@@ -797,10 +797,10 @@
       "file": "problems/graph-theory/P033-prime-sum-three-palette.md",
       "question": "Can the graph on [n] be made connected using edges with only three distinct prime sums, for every n≥3?",
       "status": "candidate",
-      "novelty": "not certified; two-prime case overlaps known twin-prime Hamiltonian-path constructions",
-      "result": "Exact two-prime characterization: two colors suffice precisely for a twin-prime pair p,p+2 with n−1≤p≤n+1; three-color universality remains open in this dossier",
-      "verification": "Exhaustive prime-palette search finds exactly two or three necessary colors for every 3≤n≤120",
-      "priority": "promising but history-sensitive; prove a uniform three-color palette or find a counterexample",
+      "novelty": "not certified; Chen–Fu–Guo (2021) established three-color Hamiltonian-prime-set phenomena for some orders, not this stated eventual connectivity theorem",
+      "result": "Internally proved three prime sums connect [n] for every sufficiently large n (PNT + Siegel–Walfisz); exact twin-prime characterization for two colors. The all-n conjecture remains unresolved because the threshold is ineffective",
+      "verification": "Exact arithmetic interval-reflection lemma tested on over 1000 admissible triples; prime witnesses at n=500,1000,2000,5000,10000,30000; exact palette minima for n≤120",
+      "priority": "theorem-stage: unconditional eventual connectivity proved; eliminate ineffective finite exceptions or find elementary proof; specialist novelty audit pending",
       "portfolio_tier": "B",
       "sources": [
         {
@@ -814,6 +814,10 @@
         {
           "name": "Croot–Jin, Prime Sum Graphs and Induced Trees",
           "url": "https://doi.org/10.1007/s00373-025-02999-2"
+        },
+        {
+          "name": "Siegel–Walfisz theorem (Kedlaya, analytic number theory notes)",
+          "url": "https://kskedlaya.org/ant/chapter-11.html"
         }
       ]
     }
