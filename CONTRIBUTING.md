@@ -62,3 +62,8 @@ $$
 ```
 
 The repository's Markdown tests check syntax, local links and the integrity of the submitted P010 manuscript. See [GitHub's mathematical expression guide](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions).
+## Public mathematical exposition
+
+This repository is written **for mathematicians and independent readers**, not as a transcript of a research conversation. Every contribution should be self-contained and impersonal: state definitions, hypotheses, propositions, proofs, computational methods, counterexamples, and precise references. Distinguish proved claims, finite evidence, heuristic reasoning, and open questions. Describe authorship and assistance accurately when disclosure is required, without informal references to an interlocutor.
+
+Avoid reader-directed or conversation-dependent phrases such as “as requested,” “you asked,” “our previous discussion,” “the user supplied,” or editorial notes addressed to an assistant. Historical audit documents may describe a research sequence, but should use archival terms such as “the submitted manuscript,” “the audit,” “the repository,” and “the earlier construction.” Keep the names *The Acorns* and *The Seedbed* for navigation; mathematical status and consequence assessments must remain explicit and neutral. Do not silently rewrite primary references or the factual AI-use disclosure in the submitted P010 materials.
