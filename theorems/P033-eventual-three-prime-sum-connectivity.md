@@ -26,9 +26,9 @@ For positive coprime integers $a,b$ and $m\ge a+b$, the graph on $\{1,\dots,m\}$
 
 There is also a simple *necessary* condition, with no near-$n$ assumption. Let $p,q,r$ be three distinct odd edge sums and set
 
-$
+$$
 g=\gcd\!\left(\frac{q-p}{2},\frac{r-p}{2}\right).
-$
+$$
 
 If their sum-color graph is connected on $[n]$ for $n\ge3$, then **$g=1$**. Indeed, all three sums are congruent to $p$ modulo $2g$. Every edge sends a vertex residue $x$ to $p-x$ modulo $2g$, so a component visits at most the two residue classes $\{x,p-x\}$. If $g>1$, the three vertices $1,2,3$ lie in three distinct residue classes modulo $2g\ge4$ and cannot share one component. Thus the coprime half-difference condition in Lemma 2 is **necessary in every case** and, for sums sufficiently close to $n$, is also sufficient.
 
