@@ -125,6 +125,28 @@ $$
 
 Thus their three prime-sum matchings connect the entire vertex set $[n]$. $\square$
 
+## Corollary — Exact classification for large n, and density one
+
+Combine the eventual three-color theorem with the exact two-color characterization from the [P033 dossier](../problems/graph-theory/P033-prime-sum-three-palette.md). For every sufficiently large $n$,
+
+$
+\boxed{
+\kappa(n)=
+\begin{cases}
+2,&\text{if some }p\in\{n-1,n,n+1\}\text{ has }p,p+2\text{ prime},\\
+3,&\text{otherwise}.
+\end{cases}}
+$
+
+In particular, the set of $n\le X$ with $\kappa(n)\ne3$ has size $O(X/(\log X)^2)$: outside the finite exceptional set, each two-color instance is associated with one of the three values of $n$ neighboring a twin-prime pair, and the classical [sieve upper bound for twin primes](https://kskedlaya.org/ant/chap-brun.html) gives $\pi_2(X)=O(X/\log^2X)$. Thus
+
+$
+\boxed{\#\{3\le n\le X:\kappa(n)=3\}
+=X+O\!\left(\frac{X}{(\log X)^2}\right).}
+$
+
+This does **not** assume the twin prime conjecture. The error expression absorbs a fixed number of small exceptional integers. The asymptotic and exact-for-large-$n$ classification are internally proved consequences of the theorem and known sieve estimates.
+
 ## What is proved and what is not
 
 - **Proved (internally):** $\kappa(n)\le3$ for all sufficiently large $n$.
