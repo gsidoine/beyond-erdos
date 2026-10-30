@@ -69,7 +69,7 @@ uses prime sums $\{7,11\}$, whose difference is **4**, while $2n=8$. Each of the
 
 ## P010: supplied two-page manuscript (not included in the public repository)
 
-The author supplied a **two-page A4 PDF** with title **The Minimum Number of Coprime Adjacencies in a Permutation**. It states the internally proved path-cover theorem, gives the largest-prime-factor construction and prime-counting inequality, includes eight references, and discloses substantive ChatGPT involvement in mathematical exploration, proof construction, code and literature help.
+The reviewed manuscript is a **two-page A4 PDF** with title **The Minimum Number of Coprime Adjacencies in a Permutation**. It states the internally proved path-cover theorem, gives the largest-prime-factor construction and prime-counting inequality, includes eight references, and discloses substantive ChatGPT involvement in mathematical exploration, proof construction, code and literature help.
 
 **Snapshot provenance (filename as uploaded):** `coprime_adjacencies(1).pdf`
 **SHA-256:** `3aae034589f58b9593891a53ee5d54ea20f1106c774364e1ff564df417837737`
