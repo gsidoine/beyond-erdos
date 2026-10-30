@@ -6,7 +6,7 @@
 
 <p align="center"><em>Paul Erdős</em></p>
 
-<p align="center"><em>“The purpose of life is to prove and to conjecture.”</em><br><small>— Paul Erdős, as recorded by <a href="https://mathshistory.st-andrews.ac.uk/Biographies/Erdos/quotations/">MacTutor</a>. The stronger wording about problems being “equally important” has not been verified.</small></p>
+<p align="center"><em>“The purpose of life is to prove and to conjecture.”</em><br><small>— Paul Erdős, as recorded by <a href="https://mathshistory.st-andrews.ac.uk/Biographies/Erdos/quotations/">MacTutor</a>.</small></p>
 
 **Meta Erdős is an open, community-contributable catalogue of mathematical research questions, conjectures and partial results.** The collection currently contains **35 numbered research entries (P001–P035)** in number theory, graph theory, probability, geometry, topology and matroid theory.
 
@@ -27,7 +27,7 @@ The 35 entries have different research statuses; **they are not all open conject
 
 These labels distinguish the research status of a *question* from the historical novelty of its formulation. Computations only certify the finite instances and methods specified in their dossiers.
 
-The [35-entry novelty and proof-gate audit](audits/consolidation-P001-P035-novelty-and-proof-gates.md) and [earlier P001–P030 portfolio](audits/portfolio-consolidation-P001-P030.md) document the mathematical programmes and historical caveats. The Acorns are our current selected research questions; this is an editorial research focus, **not** a certification of novelty or openness. Contributions and newly proposed IDs remain welcome.
+The [35-entry novelty and proof-gate audit](audits/consolidation-P001-P035-novelty-and-proof-gates.md) and [earlier P001–P030 portfolio](audits/portfolio-consolidation-P001-P030.md) document the mathematical programmes and historical caveats. The Acorns are the current selected research questions; this is an editorial research focus, **not** a certification of novelty or openness. Contributions and newly proposed IDs remain welcome.
 
 **Contributions are welcome**, including new problem proposals, counterexamples, proof improvements, bibliographic corrections and reproducible experiments. New IDs are assigned through review rather than an arbitrary numerical target; see [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -89,7 +89,7 @@ The [35-entry novelty and proof-gate audit](audits/consolidation-P001-P035-novel
 
 ## The research rhythm
 
-We explore and test problems **throughout the week**, without a daily quota. **Each weekend, shortlist roughly five of the strongest new candidate questions for the active workshop**—not five automatic Acorn promotions. Promotion requires a consequence statement, mathematical falsification, alternate-terminology literature comparison and clear separation from existing questions. [Machine-readable curation](data/curation.json) · [parallel research audit](audits/2026-10-30-focus-session-P020-P027-P033.md).
+Problems are explored and tested **throughout the week**, without a daily quota. **Each weekend, approximately five of the strongest new candidate questions are shortlisted for the active workshop**—not five automatic Acorn promotions. Promotion requires a consequence statement, mathematical falsification, alternate-terminology literature comparison and clear separation from existing questions. [Machine-readable curation](data/curation.json) · [parallel research audit](audits/2026-10-30-focus-session-P020-P027-P033.md).
 
 ## P010 — Submitted manuscript
 
