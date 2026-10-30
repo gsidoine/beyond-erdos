@@ -29,7 +29,7 @@ This is a coloring question, **not** the P031 question about a single pairwise-c
 
 $$
 (1-o(1))\sqrt N\le \chi_{\mathrm{PS}}(N)\le
-(2+\sqrt 2+o(1))\sqrt N.
+(1+\sqrt 2+o(1))\sqrt N.
 $$
 
 **Lower bound.** Every color class is Sidon in \([N]\), and the classical Erdős–Turán bound makes its size at most \((1+o(1))\sqrt N\). Thus at least \((1-o(1))\sqrt N\) classes are required.
