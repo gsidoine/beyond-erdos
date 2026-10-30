@@ -57,11 +57,11 @@ These are **metaphorical editorial stakes only**: no real prize, offer, obligati
 - **Promising (50–99 points imaginary):** a precise question with at least one plausible significant consequence, even if proof techniques are not yet ready.
 - **Incubation (below 50 points imaginary):** interesting but mainly local, derivative, heavily source-dependent, under-specified, or awaiting a first nontrivial result.
 
-**Promotion into the primary catalogue is not determined by the imaginary dollar value alone.** Require a short *consequence statement*: “If solved, this changes our understanding of X because Y”; an *alternative-term/source check*; a nontrivial finite or theoretical baseline; and an explicit distinction from the nearest sibling. Difficulty alone is not significance. An elegant counterexample may be as valuable as a proof.
+**Promotion into the primary catalogue is not determined by the imaginary dollar value alone.** Require a short *consequence statement*: “If solved, this changes the understanding of X because Y”; an *alternative-term/source check*; a nontrivial finite or theoretical baseline; and an explicit distinction from the nearest sibling. Difficulty alone is not significance. An elegant counterexample may be as valuable as a proof.
 
 ## Weekly focus-session experiment
 
-We explore problems **almost every day** and save worthwhile candidates without a quota. **Each weekend, select roughly five strongest candidates from the week's workshop activity** for closer attention—not five automatic catalogue additions. At the weekend review:
+Problems are explored **almost every day** and worthwhile candidates are retained without a quota. **Each weekend, select roughly five strongest candidates from the week's workshop activity** for closer attention—not five automatic catalogue additions. At the weekend review:
 
 1. **Review the week's drafts:** favor diverse areas and short, consequential questions; more or fewer than five may have been generated.
 2. **Challenge weak versions:** look for easy reductions, low-dimensional counterexamples, known formulations under alternate terminology, and false numerical patterns.
