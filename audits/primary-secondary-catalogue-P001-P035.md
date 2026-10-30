@@ -1,8 +1,8 @@
-# Primary and secondary catalogue — editorial curation at 35
+# The Acorns and The Seedbed — curated research at 35
 
 **Scope:** a selective research-focus view, not deletion or renumbering. The canonical `data/problems.json` keeps all 35 entries and their documented proofs. The machine-readable editorial allocation is [data/curation.json](../data/curation.json).
 
-## Primary: questions whose resolution could yield significant mathematics
+## The Acorns: high-consequence questions
 
 - **P003 — Arithmetic min-cut / perfect-matching packing**
 - **P005 — Connectivity of coprime permutation switches**
@@ -19,7 +19,7 @@
 
 These 12 are **editorial bets**, not certified new open problems, and are not all equally ready for an attack. P014 and P026, for example, require a stronger theorem and a historical overlap check. An unexpected solution of a secondary problem can always trigger promotion.
 
-## Secondary: retain, sharpen, and revisit
+## The Seedbed: retain, sharpen, and revisit
 
 - **P001** — Spectrum close to P003; needs completion obstruction.
 - **P002** — Reconfiguration close to P005; needs arithmetic-specific invariant.
@@ -44,7 +44,7 @@ These 12 are **editorial bets**, not certified new open problems, and are not al
 - **P034** — Too close to P033 for primary until new 2-connectivity theorem.
 - **P035** — Classical Sidon–Ramsey plus dyadic primitive band; novelty gate.
 
-**P010 is separate: resolved internally**, with the submitted *Integers* manuscript. It stays in an accessible **resolved-results archive**, not in either unresolved research bucket.
+**The Harvest contains P010: resolved internally**, with the submitted *Integers* manuscript. It stays in an accessible **resolved-results archive**, not in either unresolved research bucket.
 
 **Counts:** 12 primary + 22 secondary + 1 resolved = **35** unique permanent IDs. The secondary category is not a statement that a result is uninteresting, non-original, or easy; it represents a lower *expected consequence of resolving the current precise formulation* given what is currently known.
 
@@ -61,13 +61,13 @@ These are **metaphorical editorial stakes only**: no real prize, offer, obligati
 
 ## Weekly focus-session experiment
 
-A sustainable goal is **five new draft problems per week**, not five promoted problems. During one weekly session:
+We explore problems **almost every day** and save worthwhile candidates without a quota. **Each weekend, select roughly five strongest candidates from the week's workshop activity** for closer attention—not five automatic catalogue additions. At the weekend review:
 
-1. **Generate five:** at least three areas or distinct mechanisms, with preferably one sentence per central question.
-2. **Kill weak versions:** look for easy reductions, low-dimensional counterexamples, known formulations under alternate terminology, and false numerical patterns.
+1. **Review the week's drafts:** favor diverse areas and short, consequential questions; more or fewer than five may have been generated.
+2. **Challenge weak versions:** look for easy reductions, low-dimensional counterexamples, known formulations under alternate terminology, and false numerical patterns.
 3. **Attach consequences:** what would a positive proof mean; what would a negative answer reveal; what new machinery would it require?
-4. **Promote selectively:** zero, one, or occasionally two; there is no weekly quota for primary entries.
-5. **Archive the others:** preserve useful source notes or falsifications in a draft/secondary intake, without assigning a permanent primary ID prematurely.
+4. **Select around five to retain in the active candidate workshop:** promote zero, one, or occasionally more to The Acorns only after stronger evidence; there is no promotion quota.
+5. **Archive the others in The Seedbed or the unnumbered workshop:** preserve useful source notes or falsifications in a draft/secondary intake, without assigning a permanent primary ID prematurely.
 
 At the end of each month, revisit secondary entries for demotion, sharpening, promotion, or merging into sibling research programmes. **No retroactive ID reuse or deletion of evidence.**
 
