@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Search mathematical research questions and results, with evidence and source references.">
+  <title>Meta Erdős — Research problem catalogue</title>
+  <style>
+    :root { color-scheme: light dark; --ink:#18212d;--muted:#5b6674;--line:#d8dfe6;--bg:#f8f9fb;--paper:#fff;--accent:#235ba8 }
+    * {box-sizing:border-box}
+    body { margin:0; background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif }
+    main {max-width:1140px;margin:auto;padding:32px 22px 72px}
+    a {color:var(--accent)}
+    header {margin-bottom:28px}
+    h1 {font-size:clamp(1.8rem,4vw,2.65rem);letter-spacing:-.045em;margin:0}
+    h2 {font-size:1.15rem;margin:0 0 12px}
+    header p {color:var(--muted);max-width:850px;margin:10px 0}
+    .eyebrow {color:var(--muted);font-weight:650;letter-spacing:.09em;font-size:.78rem;text-transform:uppercase}
+    .notice {border-left:3px solid var(--accent);padding:9px 14px;background:var(--paper);margin-top:19px}
+    .bar {display:flex;gap:12px;flex-wrap:wrap;margin:25px 0 15px}
+    input,select {font:inherit;color:inherit;background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:11px 12px;min-width:190px}
+    input {flex:2 1 280px} select{flex:1 1 190px}
+    #count {color:var(--muted);font-size:.9rem;margin-bottom:13px}
+    .cards {display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:13px}
+    article {background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:19px 20px}
+    article h2{font-size:1.13rem;line-height:1.3;margin:8px 0}
+    article p{margin:9px 0}
+    .meta {display:flex;gap:8px;flex-wrap:wrap}
+    .tag {border:1px solid var(--line);font-size:.75rem;padding:2px 7px;border-radius:6px;color:var(--muted)}
+    .question {font-weight:500}
+    .detail {font-size:.88rem;color:var(--muted)}
+    .refs {font-size:.83rem;margin-top:13px;border-top:1px solid var(--line);padding-top:10px}
+    .refs a {display:inline-block;margin-right:14px;margin-bottom:5px}
+    .footer {margin-top:30px;color:var(--muted);font-size:.9rem}
+    :focus-visible {outline:3px solid var(--accent);outline-offset:2px}
+    @media (prefers-color-scheme:dark){:root{--ink:#f0f3f7;--muted:#aab5c4;--line:#3e4b59;--bg:#121923;--paper:#1d2633;--accent:#89b9ff}}
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="eyebrow">Open mathematical research catalogue · P001–P030</div>
+      <h1>Meta Erdős</h1>
+      <p>Questions in graph theory, number theory, additive combinatorics and probability. Browse precise statements, tested evidence, and the nearest established mathematics.</p>
+      <div class="notice"><strong>Not certified new open problems.</strong> These are independently proposed research candidates inspired by the tradition of Paul Erdős. Not affiliated with Erdős Problems or teorth/erdosproblems.</div>
+      <p><strong>30 research entries:</strong> 26 candidates, two requiring reformulation, one requiring specification, and one internally proved result. <a href="https://github.com/gsidoine/meta-erdos/blob/main/manuscripts/P010/README.md">P010 has been submitted to <em>Integers</em></a> (not accepted or published). <a href="https://github.com/gsidoine/meta-erdos/blob/main/CONTRIBUTING.md">Contributions welcome</a>; see the <a href="https://github.com/gsidoine/meta-erdos/blob/main/audits/portfolio-consolidation-P001-P030.md">consolidated 30-entry research portfolio</a> for priorities, historical overlap and next research steps.</p>
+    </header>
+    <section aria-label="Catalogue filters">
+      <div class="bar">
+        <input id="search" type="search" placeholder="Search questions, IDs, results…" aria-label="Search problems">
+        <select id="area" aria-label="Filter by area"><option value="">All fields</option></select>
+        <select id="status" aria-label="Filter by formulation"><option value="">All statuses</option></select>
+        <select id="tier" aria-label="Filter by editorial research priority"><option value="">All research tiers</option></select>
+      </div>
+      <div id="count" aria-live="polite">Loading problem catalogue…</div>
+    </section>
+    <section id="catalogue" class="cards" aria-label="Mathematical problems"></section>
+    <noscript>This search interface requires JavaScript. See the catalogue in the <a href="https://github.com/gsidoine/meta-erdos#problem-catalogue">GitHub README</a>.</noscript>
+    <div class="footer">Data source: <a href="https://github.com/gsidoine/meta-erdos/blob/main/data/problems.json">data/problems.json</a>. For proofs, computational certificates and literature notes, open each dossier. Exact status is subject to review.</div>
+  </main>
+  <script>
+    "use strict";
+    const base="https://github.com/gsidoine/meta-erdos/blob/main/";
+    const $=id=>document.getElementById(id);
+    let problems=[];
+    const asText=(tag,value,cls)=>{
+      const el=document.createElement(tag);
+      el.textContent=value;
+      if(cls)el.className=cls;
+      return el;
+    };
+    function sourceLink(s) {
+      const a=document.createElement("a");
+      a.textContent=s.name;
+      a.href=s.url;
+      a.target="_blank";
+      a.rel="noopener noreferrer";
+      return a;
+    }
+    function draw() {
+      const term=$("search").value.trim().toLowerCase();
+      const area=$("area").value;
+      const status=$("status").value;
+      const tier=$("tier").value;
+      const filtered=problems.filter(p=>
+        (!area||p.area===area)&&(!status||p.status===status)&&(!tier||p.portfolio_tier===tier)&&
+        (!term||[p.id,p.title,p.area,p.question,p.result,p.verification,p.novelty].join(" ").toLowerCase().includes(term))
+      );
+      $("count").textContent=filtered.length+" of "+problems.length+" problems";
+      $("catalogue").replaceChildren();
+      for(const p of filtered){
+        const card=document.createElement("article");
+        const meta=asText("div","", "meta");
+        for(const v of [p.id,p.area,p.status,"Tier "+p.portfolio_tier,p.novelty])
+          meta.append(asText("span",v,"tag"));
+        const h=asText("h2","");
+        const link=document.createElement("a");
+        link.href=base+p.file;
+        link.textContent=p.title;
+        h.append(link);
+        card.append(meta,h,asText("p",p.question,"question"));
+        card.append(asText("p","Result/partial progress: "+p.result,"detail"));
+        card.append(asText("p","Checked evidence: "+p.verification,"detail"));
+        const refs=asText("div","","refs");
+        refs.append(asText("span","Closest sources: ",""));
+        for(const s of p.sources)refs.append(sourceLink(s));
+        card.append(refs);
+        $("catalogue").append(card);
+      }
+    }
+    fetch("./problems.json").then(r=>{
+      if(!r.ok)throw Error("HTTP "+r.status);
+      return r.json();
+    }).then(data=>{
+      problems=data.problems;
+      const areas=[...new Set(problems.map(p=>p.area))].sort();
+      const statuses=[...new Set(problems.map(p=>p.status))].sort();
+      const tiers=[...new Set(problems.map(p=>p.portfolio_tier))].sort();
+      for(const v of areas){const o=document.createElement("option");o.value=v;o.textContent=v;$("area").append(o)}
+      for(const v of statuses){const o=document.createElement("option");o.value=v;o.textContent=v;$("status").append(o)}
+      for(const v of tiers){const o=document.createElement("option");o.value=v;o.textContent=v;$("tier").append(o)}
+      for(const id of ["search","area","status","tier"])$(id).addEventListener("input",draw);
+      draw();
+    }).catch(err=>{
+      $("count").textContent="Unable to load catalogue: "+err.message+". Open the repository README instead.";
+    });
+  </script>
+</body>
+</html>

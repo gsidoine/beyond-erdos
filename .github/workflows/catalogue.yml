@@ -1,0 +1,71 @@
+name: Catalogue consistency
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  catalogue:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate generated catalogue
+        run: python scripts/generate_catalog.py --check
+      - name: Validate problem metadata
+        run: python -m unittest discover -s tests -v
+
+      - name: Verify P010 constructive extremal formula (all n <= 500)
+        run: python experiments/P010_construct_optimal_permutation.py --max-n 500
+      - name: Verify P010 construction at n = 10000
+        run: python experiments/P010_construct_optimal_permutation.py --n 10000
+
+      - name: Verify constructive interval-sum factors for all bands up to n=65
+        run: python experiments/interval_sum_factor_construct.py --check-bands 65
+      - name: Verify all sum intervals through n=20
+        run: python experiments/interval_sum_factor_construct.py --check-intervals 20
+
+      - name: Verify P014 exact random sum-graph four-clique moments
+        run: python experiments/P014_sum_flag_cliques.py
+
+      - name: Verify P015 parity-area flip connectivity through nine vertices
+        run: python experiments/P015_odd_area_flip_graph.py --max-n 9
+
+      - name: Verify P016 exact Sidon-complex reduced Betti numbers
+        run: python experiments/P016_sidon_complex_betti.py --max-n 12
+
+      - name: Verify P017 exact divisor-chain DP and finite samples
+        run: python experiments/P017_random_divisor_chains.py --max-power 10 --samples 5
+
+      - name: Verify P018 all dimension-four restrictions and dimension-five counterexample
+        run: python experiments/P018_conserved_xor_bases.py
+
+      - name: Verify P019 exact no-three-in-line exchange components
+        run: python experiments/P019_no_three_line_exchange.py --max-n 7
+
+      - name: Verify P020 classical finite-field Hankel corank formula
+        run: python experiments/P020_hankel_finite_field_ranks.py
+
+      - name: Verify all-rank P020 elementary cokernel laws modulo p²
+        run: python experiments/P020_elementary_cokernel_mod_p2.py
+      - name: Verify P020 finite-field Hankel kernel-product corollary
+        run: python experiments/P020_kernel_product_dimension.py
+
+      - name: Verify P026 prime-sum square-cycle GF2 generation
+        run: python experiments/P026_prime_sum_square_homology.py
+
+      - name: Verify P027 primitive-set exchange exact diameter
+        run: python experiments/P027_primitive_exchange_diameter.py
+
+      - name: Verify P027 autonomous arithmetic bands, product factor and eigenfunctions
+        run: python experiments/P027_autonomous_coordinates.py
+
+      - name: Verify P028 divisor-complex Euler expectation
+        run: python experiments/P028_random_divisor_euler.py
+
+      - name: Verify P029 prime-sum permutation X-ray fibers
+        run: python experiments/P029_prime_sum_xray_fibers.py
+
+      - name: Verify P030 double-prime perfect matching witnesses
+        run: python experiments/P030_double_prime_matchings.py
