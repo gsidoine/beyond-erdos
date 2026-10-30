@@ -85,14 +85,7 @@ The [35-entry novelty and proof-gate audit](audits/consolidation-P001-P035-novel
 
 ## The Harvest — internally resolved results
 
-The Harvest records **internally proved results**, not only fully resolved numbered problems. A result may arise from an Acorn or Seedbed problem while its parent question remains open. Harvest inclusion does not establish publication or historical originality.
-
-| Result | Statement and source | Origin | Assessment |
-|---|---|---|---|
-| **H001** | [Exact minimum of coprime adjacencies](theorems/P010-exact-coprime-adjacencies.md) | P010 (resolved) | Internally proved; manuscript submitted to *Integers* |
-| **H002** | [Sidon resilience against arbitrary forbidden graph edges](theorems/sidon-forbidden-graph-resilience.md) | P035 (still open in The Seedbed) | Internally proved; strong classical-method overlap and historical priority unverified |
-
-The stable Harvest identifiers are recorded in [the theorem register](data/harvest.json), separately from the 35 permanent problem IDs. H002 establishes the uniform sharp-order bound for Sidon independent sets under an arbitrary edge budget. It does **not** settle P035's primitive Sidon coloring question, and no separate publication claim is made for its present formulation.
+**[P010](problems/graph-theory/P010-minimum-coprime-adjacencies.md)** remains in a distinct resolved-results track (submitted to *Integers*, not accepted or externally certified). See the manuscript section below.
 
 ## The research rhythm
 
