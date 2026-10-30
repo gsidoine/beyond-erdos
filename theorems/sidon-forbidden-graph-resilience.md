@@ -94,6 +94,33 @@ has length $N-o(N)$ and contains a Sidon set of size $(1-o(1))\sqrt N$.
 
 Thus graphs with the **same order of forbidden edges** can produce either a severe loss or no asymptotic loss. No necessary-and-sufficient criterion can depend *only* on the edge-count exponent.
 
+## A refined upper bound in the critical window
+
+Let $G_{N,D}$ join all pairs $x<y$ in $[N]$ for which $y-x\le D$. Write an independent Sidon set as $a_1<\cdots<a_k$. Its $k-1$ adjacent gaps
+
+$$
+h_i=a_{i+1}-a_i
+$$
+
+are **distinct positive integers**: equality of two different adjacent gaps would give equal sums from two different unordered pairs, contradicting Sidonicity. Independence from $G_{N,D}$ forces $h_i\ge D+1$. Therefore
+
+$$
+N-1\ge\sum_{i=1}^{k-1}h_i
+\ge (k-1)(D+1)+\frac{(k-1)(k-2)}2
+=(k-1)D+\frac{k(k-1)}2.
+$$
+
+Taking $D=\lfloor c\sqrt N\rfloor$ with fixed $c>0$ and writing $k=\alpha\sqrt N+o(\sqrt N)$ yields
+
+$$
+\boxed{\limsup_{N\to\infty}\frac{s(G_{N,D})}{\sqrt N}
+\le\min\{1,\sqrt{c^2+2}-c\}.}
+$$
+
+(The $1$ is the classical Sidon upper bound.) In particular, **every $c>1/2$ causes a strict leading-constant loss**, while the edge count of $G_{N,D}$ is $(c+o(1))N^{3/2}$.
+
+For $0<c\le 1/2$, this elementary adjacent-gap argument gives no loss. It is not known from the present work whether the uniform $o(N^{3/2})$ resilience theorem can be strengthened to a positive fraction of $N^{3/2}$ forbidden edges *with no asymptotic loss*. This is a candidate critical-window question, not a certified new open problem. The recent literature on the distribution and diameter of Sidon sets may provide more refined obstructions.
+
 ## Exact finite incidence check
 
 For $q=2$, the Singer difference set $D=\{0,1,3\}\subseteq\mathbb Z_7$ has three elements. Its seven translates are the lines of the Fano plane. The 21 unordered vertex pairs are distributed **exactly once** among these seven three-element blocks. This identity is the finite combinatorial mechanism behind the averaged edge count above.
