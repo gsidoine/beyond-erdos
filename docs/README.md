@@ -7,3 +7,5 @@ Collection membership comes from [the canonical curation index](../data/curation
 The browser filters by field, research status, priority and collection. Individual entries link to their canonical GitHub dossiers. Source reviews remain in the repository's audit directories.
 
 GitHub Pages may be enabled from `main` under `/docs`. To test locally, serve `docs/` over HTTP; direct `file://` access can block data loading.
+
+Repository: https://github.com/gsidoine/meta-erdos. Earlier catalogue context: [P001–P030 portfolio consolidation](../audits/portfolio-consolidation-P001-P030.md).
