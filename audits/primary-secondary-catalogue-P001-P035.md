@@ -59,18 +59,6 @@ These are **metaphorical editorial stakes only**: no real prize, offer, obligati
 
 **Promotion into the primary catalogue is not determined by the imaginary dollar value alone.** Require a short *consequence statement*: “If solved, this changes the understanding of X because Y”; an *alternative-term/source check*; a nontrivial finite or theoretical baseline; and an explicit distinction from the nearest sibling. Difficulty alone is not significance. An elegant counterexample may be as valuable as a proof.
 
-## Weekly focus-session experiment
-
-Problems are explored **almost every day** and worthwhile candidates are retained without a quota. **Each weekend, select roughly five strongest candidates from the week's workshop activity** for closer attention—not five automatic catalogue additions. At the weekend review:
-
-1. **Review the week's drafts:** favor diverse areas and short, consequential questions; more or fewer than five may have been generated.
-2. **Challenge weak versions:** look for easy reductions, low-dimensional counterexamples, known formulations under alternate terminology, and false numerical patterns.
-3. **Attach consequences:** what would a positive proof mean; what would a negative answer reveal; what new machinery would it require?
-4. **Select around five to retain in the active candidate workshop:** promote zero, one, or occasionally more to The Acorns only after stronger evidence; there is no promotion quota.
-5. **Archive the others in The Seedbed or the unnumbered workshop:** preserve useful source notes or falsifications in a draft/secondary intake, without assigning a permanent primary ID prematurely.
-
-At the end of each month, revisit secondary entries for demotion, sharpening, promotion, or merging into sibling research programmes. **No retroactive ID reuse or deletion of evidence.**
-
 ## Parallel focus-session verdict
 
 See [P020/P027/P033 research audit](2026-10-30-focus-session-P020-P027-P033.md). In P020, second-order corank-three or larger **has not been proved** despite a natural candidate formula; the nonlinear affine shift is a genuine proof obligation. In P027, numerical gaps do not imply their infimum vanishes. In P033, a positive asymptotic triple density has no effective numerical threshold bridging finite checks. The primary status reflects the potential significance of resolving these obstacles, not a claim that they have been resolved.
