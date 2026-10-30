@@ -1,10 +1,10 @@
 # P032 — Is the prime-sum bipartite diameter eventually seven?
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** Does the bipartite graph on two copies of [n], joined when i+j is prime, have diameter exactly seven for all sufficiently large n?
-> **Formulation:** candidate. **Novelty:** not certified; equivalent prime-difference coverage is close to established questions.
-> **Verified/known progress:** The unique sum-two edge is a bridge; diameter seven reduces to two-prime difference witnesses in intervals and elementary connectivity.
-> **Finite evidence:** Exact BFS checks of diameter for small n, using both an all-pairs routine and a bridge-eccentricity identity.
+> **Research question:** Does the bipartite graph on two copies of [n], joined when i+j is prime, have diameter exactly seven for all sufficiently large n?  
+> **Formulation:** candidate. **Novelty:** strong prior-art overlap risk with interval-constrained prime differences and Erdős problem 17.  
+> **Verified/known progress:** Only prime-sum-two edge is a bridge; diameter seven is equivalent to uniformly finding prime pairs with prescribed even differences in bounded intervals.  
+> **Finite evidence:** Exact bridge-based diameters for 2≤n≤250; independent all-pairs BFS for n≤35.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
