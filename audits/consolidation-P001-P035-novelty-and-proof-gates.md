@@ -91,7 +91,7 @@ $$
 \mathrm{SR}(k)=k^2+o(k^2),
 $$
 
-where \(\mathrm{SR}(k)\) is the *first* interval length that cannot be partitioned into \(k\) integer Sidon sets (including repeated-element sums). Inverting the monotone parameter gives the precise needed statement: **the minimum Sidon partition count on \([M]\) is \((1+o(1))\sqrt M\)**. Translation preserves the Sidon property, so the result works on arbitrary intervals of \(M\) consecutive integers.
+where $\mathrm{SR}(k)$ is the *first* interval length that cannot be partitioned into $k$ integer Sidon sets (including repeated-element sums). Inverting the monotone parameter gives the precise needed statement: **the minimum Sidon partition count on $[M]$ is $(1+o(1))\sqrt M$**. Translation preserves the Sidon property, so the result works on arbitrary intervals of $M$ consecutive integers.
 
 Therefore the P035 dyadic upper bound
 
