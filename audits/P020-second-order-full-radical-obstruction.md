@@ -1,6 +1,6 @@
-# P020 — Complete exact exponent-$p^2$ cokernel law for every generator count
+# P020 — Candidate exponent-$p^2$ law: the second-order affine-offset obstruction
 
-**Status:** internally proved theorem. This strengthens the prior [one/two residual-factor theorem](P020-exact-second-order-small-kernel-laws.md) to **all** residual coranks. Published finite-field Hankel-rank and kernel structure are credited below. Historical novelty unverified; **does not** settle exponents $p^3$ or the full group law.
+**Status:** research conjecture and precise proof-obstruction audit. The proposed formula would strengthen the prior [one/two residual-factor theorem](P020-exact-second-order-small-kernel-laws.md) to **all** residual coranks. Published finite-field Hankel-rank and kernel structure are credited below. Historical novelty unverified; **does not** settle exponents $p^3$ or the full group law.
 
 ## Statement
 
@@ -21,7 +21,7 @@ p^{-(2k-1)},&j=k.
 \end{cases}
 $$
 
-**Theorem.** For every $0\le j\le k$,
+**Conjectural formula (not proved in general).** For every $0\le j\le k$,
 
 $$
 \boxed{\Pr\!\left(C_n\simeq
@@ -43,7 +43,7 @@ $$
 
 Every probability is **exactly independent of $n$ for fixed $k$ as soon as $n>k$**. The theorem determines every finite $p$-group with exponent dividing $p^2$ (including the trivial group, whose probability is $1-p^{-1}$).
 
-## Proof by iterated Hankel kernels
+## Attempted proof and exact stopping point
 
 **First layer.** Fix the anti-diagonal input modulo $p$ at a Hankel matrix with corank $k$. The [published finite-field kernel classification](P020-hankel-kernel-product-research.md) supplies a polynomial-shift basis $A,Az,\ldots,Az^{k-1}$ of its radical. Splitting off the invertible block of $H_n$ produces a $k\times k$ Schur complement $T=pS$. By the [proved first-order lifting lemma](P020-elementary-abelian-cokernel-laws.md), $\bar S=S\bmod p$ is a **uniform Hankel** matrix in this basis. Hence the conditional distribution of its nullity $j$ is $\sigma_{k,j}$, the classical square-Hankel corank law.
 
@@ -76,7 +76,7 @@ Thus the map from the free third digits $\Delta_s$ to the $2j-1$ anti-diagonal e
 
 **Crucial audit qualification:** unlike the first layer, the *second Schur-complement correction may depend separately on $u$ and $v$*. Its affine translation has not been proved to lie in the Hankel subspace for arbitrary $j\ge3$. An arbitrary translate of the Hankel subspace need **not** have the same nonsingularity count. Therefore the displayed full theorem for $j\ge3$ is a **candidate conditional formula**, not established by this argument as written. The unconditional established cases are $j=0$ and $j=1,2$ from the preceding P020 notes, and the exceptional **full-radical boundary** described next.
 
-**Rigorous full-radical case $j=k$.** If $\bar S=0$, there is *no* nontrivial second Schur complement: $W=S/p$ itself. Since the original $k$-dimensional radical retains its shift basis $A,Az,\ldots,Az^{k-1}$, the entire second-order affine form is Hankel (the first Schur-complement's quadratic corrections are also Hankel in this shift basis modulo the required order **only after checking their dependence on the coordinate shifts**). This is a proof obligation rather than a completed higher-order argument for general $k$. In the particularly transparent boundary case $n=k$, $H_n\bmod p=0$ and the second reduction is literally a scaled Haar Hankel matrix, so the displayed full-radical formula is rigorously valid **for $n=k$**.
+**Full-radical case $j=k$: caution.** If $\bar S=0$, there is *no* nontrivial second Schur complement: $W=S/p$ itself. Since the original $k$-dimensional radical retains its shift basis $A,Az,\ldots,Az^{k-1}$, the entire second-order affine form is Hankel (the first Schur-complement's quadratic corrections are also Hankel in this shift basis modulo the required order **only after checking their dependence on the coordinate shifts**). This is a proof obligation rather than a completed higher-order argument for general $k$. In the particularly transparent boundary case $n=k$, $H_n\bmod p=0$ and the second reduction is literally a scaled Haar Hankel matrix, so the displayed full-radical formula is rigorously valid **for $n=k$**.
 
 ### Status table (do not overclaim)
 
