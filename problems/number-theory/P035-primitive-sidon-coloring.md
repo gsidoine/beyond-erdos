@@ -2,9 +2,9 @@
 
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** Can [N] be partitioned into (1+o(1))sqrt(N) sets, each Sidon and a divisibility antichain?  
-> **Formulation:** candidate. **Novelty:** unverified; combines classical Sidon coloring and primitive sets.  
-> **Verified/known progress:** sqrt(N)(1-o(1)) <= chi_PS(N) <= (1+sqrt(2)+o(1))sqrt(N) by dyadic bands and classical Sidon partitions.  
-> **Finite evidence:** Proof of dyadic band upper bound; no computational all-N claim.  
+> **Formulation:** candidate. **Novelty:** high overlap risk: Sidon–Ramsey coloring and primitive sets.  
+> **Verified/known progress:** (1-o(1))sqrt(N) <= chi_PS(N) <= (1+sqrt(2)+o(1))sqrt(N), using dyadic bands.  
+> **Finite evidence:** Elementary proof from classical Sidon coloring; no finite exhaustive claim.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
@@ -68,3 +68,10 @@ The combination is a plausible **new formulation**, not a certified new or open 
 ## Falsification
 
 Either prove \(\liminf \chi_{\mathrm{PS}}(N)/\sqrt N>1\), or produce colorings with \((1+o(1))\sqrt N\) colors. More modestly, improve the elementary \(1+\sqrt2\) upper constant without merely changing the dyadic cutoff.
+
+
+## Consolidation disposition (P001–P035 audit)
+
+**Disposition — source gate.** The Sidon partition theorem SR(k)=k²+o(k²) is established by Espinosa-García et al. (2024), Theorem 1, DOI 10.1007/s40590-024-00676-7. Our dyadic bound is a combination of classical coloring and primitive-band observations, not an original foundational theorem. Originality of the simultaneous constraint remains unverified.
+
+This is a priority/novelty gate, not an independently refereed claim about whether the surviving problem is open.
