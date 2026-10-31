@@ -3,8 +3,8 @@
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** Does the local matching resilience of the even–odd coprime graph converge, and is its value determined by finite-prime Hall obstructions?  
 > **Formulation:** candidate. **Novelty:** unverified; original half-resilience conjecture disproved by finite-prime Hall cuts; true sharp limit unknown.  
-> **Verified/known progress:** Proved limsup rho_n ≤ 914/2145 < 1/2 by finite-prime Hall obstructions, refining an elementary 7/15 cut; convergence unknown.  
-> **Finite evidence:** Exact rational prime-support certificates and a concrete n=1155 Hall cut; exhaustive finite Hall values n≤10.  
+> **Verified/known progress:** Proved 16/π²−3/2 ≤ liminf rho_n ≤ limsup rho_n ≤ 914/2145; sharp limit and finite-prime variational equality remain open.  
+> **Finite evidence:** Full Hall-cut lower-bound proof using coprime density and fourth reciprocal-degree moment; exact modular upper certificates and finite values n≤10.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
@@ -40,6 +40,23 @@ For an especially transparent example, let $S\subseteq E_n$ and $U\subseteq O_n$
 Sharper constructions select specified exact small-prime-divisibility patterns. Four primes yield $71/165$; five primes yield $914/2145$. The underlying theorem converts each finite-prime pattern into an exact rational upper bound using a nonuniform product measure on prime supports. The calculations are reproduced by [an exact certificate program](../../experiments/P040_sieve_hall_obstructions.py).
 
 **These bounds are not claimed optimal.** The limit of $\rho_n$ may be smaller or may fail to exist. In particular, convergence to the finite-prime variational infimum has not been established.
+
+## A proved universal lower bound
+
+The [coprime-density and reciprocal-totient moment theorem](../../theorems/P040-positive-resilience-lower-bound.md) gives
+
+$$
+\boxed{
+\frac{16}{\pi^2}-\frac32
+\le\liminf_{n\to\infty}\rho_n
+\le\limsup_{n\to\infty}\rho_n
+\le\frac{914}{2145}.
+}
+$$
+
+The new lower constant is approximately $0.12114$. The proof considers every possible Hall obstruction: intermediate-sized cuts are controlled by the global coprime-edge density $8/\pi^2$, while small cuts are controlled by a uniform fourth reciprocal moment of the prime-factor degree density. Thus the resilience does **not** tend to zero along any subsequence.
+
+This is a two-sided bound, **not** a convergence theorem or a sharp limit. In particular, it does not establish that finite-prime cuts are asymptotically exhaustive.
 
 ## Exact finite Hall search
 
