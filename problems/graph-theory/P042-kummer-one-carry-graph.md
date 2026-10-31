@@ -1,10 +1,10 @@
 # P042 — Hamiltonian paths in one-carry graphs
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** Can the integers 1,...,2^m-1 be ordered so that the sum of each adjacent pair has exactly one binary carry, for every m>=4?
-> **Formulation:** candidate. **Novelty:** unverified; Kummer's theorem and binary carry automata are classical, the exact Hamiltonian question needs specialist comparison.
-> **Verified/known progress:** Internally proved connectivity for m>=4, exactly two leaves, and an exact edge count ((m+2)3^(m-2)-m)/2.
-> **Finite evidence:** Complete graph checks for 2<=m<=8 and independently verified Hamiltonian path witnesses for m=4,5.
+> **Research question:** For every m>=4, does the graph on 1,...,2^m-1 joining a,b when v_2(binomial(a+b,a))=1 have a Hamiltonian path?  
+> **Formulation:** candidate. **Novelty:** unverified; Kummer's theorem and digital carry combinatorics are classical, precise Hamiltonian question requires specialist review.  
+> **Verified/known progress:** Internally proved connectivity for all m>=4, precisely two forced leaves, and |E|=((m+2)3^(m-2)-m)/2; Hamiltonicity remains open.  
+> **Finite evidence:** Complete edge and connectivity checks for m=2..8; explicit Hamiltonian paths for m=4,5 checked against carries and binomial valuations.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
