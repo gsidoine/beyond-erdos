@@ -89,6 +89,9 @@ class PublicEditorialIntegrityTests(unittest.TestCase):
             self.assertIn(f"{n} {label}", guide)
         self.assertIn(f"Complete archive ({len(ids)})", docs)
         self.assertIn(f"**{len(ids)} numbered research entries", readme)
+        self.assertIn(f"complete archival index of all {len(ids)} IDs", readme)
+        self.assertIn("[Searchable browser](https://gsidoine.github.io/meta-erdos/)", readme)
+        self.assertIn("literature-comparison-P001-P041.md", readme)
 
 
     def test_published_erdos_portrait_and_quotation(self):
