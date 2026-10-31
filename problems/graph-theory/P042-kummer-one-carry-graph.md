@@ -4,7 +4,7 @@
 > **Research question:** For every m>=4, does the graph on 1,...,2^m-1 joining a,b when v_2(binomial(a+b,a))=1 have a Hamiltonian path?  
 > **Formulation:** candidate. **Novelty:** unverified; Kummer's theorem and digital carry combinatorics are classical, precise Hamiltonian question requires specialist review.  
 > **Verified/known progress:** Internally proved connectivity for all m>=4, precisely two forced leaves, and |E|=((m+2)3^(m-2)-m)/2; Hamiltonicity remains open.  
-> **Finite evidence:** Complete edge and connectivity checks for m=2..8; explicit Hamiltonian paths for m=4,5 checked against carries and binomial valuations.  
+> **Finite evidence:** Complete edge and connectivity checks for m=2..8; explicit Hamiltonian paths for m=4..8 checked against carries and binomial valuations.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
@@ -28,11 +28,13 @@ $$
 
 edges. Its only degree-one vertices are $2^{m-1}-1$ and $2^m-1$, necessarily the endpoints of any Hamiltonian path. In particular, a Hamiltonian *cycle* is impossible.
 
-The cases $m=2,3$ are disconnected; complete paths are certified for $m=4,5$. The finite computation does not establish Hamiltonicity for every $m$.
+The cases $m=2,3$ are disconnected; complete paths are certified for $4\le m\le8$. The finite computation does not establish Hamiltonicity for every $m$.
 
 ## Computation
 
-The [verifier](../../experiments/P042_kummer_carry_graph.py) checks the exact edge formula, connectivity, and degree-one vertices for $2\le m\le8$, plus the complete Hamiltonian paths for $m=4,5$.
+The [verifier](../../experiments/P042_kummer_carry_graph.py) checks the exact edge formula, connectivity, and degree-one vertices for $2\le m\le8$, plus complete Hamiltonian paths for $4\le m\le8$.
+
+The longer paths are recorded in [machine-checkable form](../../experiments/P042_one_carry_hamiltonian_witnesses.json).
 
 ## Prior art
 
