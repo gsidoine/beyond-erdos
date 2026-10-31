@@ -96,12 +96,21 @@ For the symmetric construction $\mathcal A=\mathcal B$ the theorem yields:
 | $3,5,7$ | $1,2,3,4,5,6,7$ | $19/35$ | $7/15$ |
 | $3,5,7,11$ | $1,2,3,4,5,6,7,11,13$ | $116/231$ | $71/165$ |
 | $3,5,7,11,13$ | $1,2,3,4,5,6,7,13,14,15,17,18,19,20,21,22,25,29,31$ | $683/1365$ | $914/2145$ |
+| $3,5,7,11,13,17$ | $H\cup(H+32)\cup\{19,43\}$, where $H$ is defined below | $18233/36465$ | $5163/12155$ |
 
-All three masses are strictly greater than $1/2$, and the table entries are **exact rational finite sums**, independently checked by [the certificate program](../experiments/P040_sieve_hall_obstructions.py). No global optimality of any listed family is asserted. In particular,
+For the six-prime row, put
 
 $$
-\boxed{\limsup_{n\to\infty}\rho_n\le\frac{914}{2145}
-=0.426107\ldots.}
+H=\{1,2,3,4,5,6,7,13,14,15,17,18,20,21,22,23,27,29,30,31\}.
+$$
+
+The expression $H+32$ means $\{h+32:h\in H\}$; the bitmask convention includes the sixth prime $17$ in bit $32$. The resulting family has $42$ support masks, mass $18233/36465>1/2$, and its largest conditional deletion fraction is $5163/12155$, attained at support mask $4$.
+
+All four masses are strictly greater than $1/2$, and the table entries are **exact rational finite sums**, independently checked by [the certificate program](../experiments/P040_sieve_hall_obstructions.py). No global optimality of any listed family is asserted. In particular,
+
+$$
+\boxed{\limsup_{n\to\infty}\rho_n\le\frac{5163}{12155}
+=0.424763\ldots.}
 $$
 
 ## Surviving research question: arithmetic Hall resilience
@@ -119,7 +128,7 @@ $$
 \right\}.
 $$
 
-The theorem proves $\limsup_n\rho_n\le\alpha_{\mathrm{sieve}}\le914/2145$.
+The theorem proves $\limsup_n\rho_n\le\alpha_{\mathrm{sieve}}\le5163/12155$.
 **Neither convergence of $\rho_n$ nor equality with $\alpha_{\mathrm{sieve}}$ is established.** A matching lower bound would require quantitative Hall expansion beyond finite-prime-pattern obstructions.
 
 The extremal structure links degree-relative matching resilience to disjointness in nonuniform product measures on prime-support families. This is a substantive connection, but the general literature on biased intersecting families is extensive: see the $p$-biased intersecting-family extremal tradition and [Wu–Feng (2026)](https://arxiv.org/abs/2606.26521), alongside [Pomerance, *Coprime Matchings* (2021)](https://arxiv.org/abs/2111.07157). None of these sources is asserted to prove the particular bounds above or the remaining resilience problem. Historical novelty is **unverified**.
