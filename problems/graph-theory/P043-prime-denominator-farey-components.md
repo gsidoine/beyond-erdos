@@ -1,10 +1,10 @@
 # P043 — Components of the prime-denominator Farey graph
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** What is the asymptotic size of the largest connected component of the Farey graph induced by fractions with prime denominators?
-> **Formulation:** candidate. **Novelty:** unverified; Farey graphs and prime-denominator fractions have established prior art.
-> **Verified/known progress:** An exact component-count identity involving twin primes, a forest after removal of 1/2, and exact vertex and edge enumerations are internally proved.
-> **Finite evidence:** Reproducible component and triangle counts for N<=101.
+> **Research question:** What is the asymptotic size of the largest connected component of the Farey graph induced by fractions with prime denominators?  
+> **Formulation:** candidate. **Novelty:** unverified; Farey graphs and prime-denominator fractions have established prior art.  
+> **Verified/known progress:** An exact component-count identity involving twin primes, a forest after removal of 1/2, and exact vertex and edge enumerations are internally proved.  
+> **Finite evidence:** Reproducible component, triangle, and forest checks for N<=101.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
