@@ -1,6 +1,6 @@
 # The Acorns and The Seedbed — curated research at 35
 
-**Scope:** a selective research-focus view, not deletion or renumbering. The canonical `data/problems.json` keeps all 35 entries and their documented proofs. The machine-readable editorial allocation is [data/curation.json](../data/curation.json).
+**Historical scope:** This review records the allocation of P001–P035 at the 35-entry stage; its counts and selections are a dated snapshot, not the current allocation. All permanent problem IDs remain in the [canonical catalogue](../data/problems.json), while the [current editorial allocation](../data/curation.json) is maintained separately.
 
 ## The Acorns: high-consequence questions
 
