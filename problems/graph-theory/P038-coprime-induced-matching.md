@@ -1,5 +1,13 @@
 # P038 — How large can an induced matching in the coprime graph be?
 
+<!-- DOSSIER-SUMMARY -->
+> **Research question:** How close to the Bollobás set-pair upper bound can an induced matching of the coprime graph on [N] be?  
+> **Formulation:** candidate. **Novelty:** unverified; classical Bollobás set-pair extremality is the main predecessor.  
+> **Verified/known progress:** Internally proved log M(N)=T(N) log 2 + O(sqrt(T(N) log T(N))), where T is the inverse N² primorial cutoff.  
+> **Finite evidence:** Explicit complementary-prime induced matching construction checked for finite prime blocks.  
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
+<!-- /DOSSIER-SUMMARY -->
+
 Let $M(N)$ be the maximum number of disjoint pairs $(a_i,b_i)$ of distinct integers in $[N]$ with $\gcd(a_i,b_i)=1$ but with **all four cross-gcds greater than one** for every $i\ne j$.
 
 ## Research question
