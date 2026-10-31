@@ -1,10 +1,10 @@
 # P040 — Local resilience of coprime perfect matchings
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** Does the local perfect-matching resilience of the even–odd coprime graph converge, and is its limit determined by finite-prime Hall obstructions?  
-> **Formulation:** candidate. **Novelty:** unverified; the former conjecture of a 1/2 limit is disproved by explicit arithmetic Hall cuts.  
-> **Verified/known progress:** A finite-prime conditional-density theorem gives limsup ρ_n ≤ 914/2145 < 1/2, refining a simple 7/15 obstruction.  
-> **Finite evidence:** Exact rational sieve certificates and exhaustive Hall-obstruction values for n≤10; a concrete n=1155 obstruction.  
+> **Research question:** Does the local matching resilience of the even–odd coprime graph converge, and is its value determined by finite-prime Hall obstructions?  
+> **Formulation:** candidate. **Novelty:** unverified; original half-resilience conjecture disproved by finite-prime Hall cuts; true sharp limit unknown.  
+> **Verified/known progress:** Proved limsup rho_n ≤ 914/2145 < 1/2 by finite-prime Hall obstructions, refining an elementary 7/15 cut; convergence unknown.  
+> **Finite evidence:** Exact rational prime-support certificates and a concrete n=1155 Hall cut; exhaustive finite Hall values n≤10.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
