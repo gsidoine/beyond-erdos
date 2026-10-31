@@ -53,4 +53,4 @@ The submitted P010 manuscript contains an AI-use declaration. Whether the submit
 
 The mathematical content is a plausible **short arithmetic-combinatorics note**, conditional on independent human proof verification and deeper priority review. *Integers* permits AI assistance under its stated conditions; the submission's compliance and editorial outcome are for the journal to assess. No external refereeing or publication claim is made.
 
-This record is **not** a new manuscript, a publication claim, or a source substitution for the user's original PDF.
+This record is **not** a new manuscript, a publication claim, or a replacement for the canonical submitted manuscript PDF.

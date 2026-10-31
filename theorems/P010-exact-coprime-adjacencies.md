@@ -182,7 +182,7 @@ The earlier small cases $n=9$ and $n=21$, which were previously described as exc
 
 ## Novelty and historical audit
 
-**Do not claim a newly discovered published theorem or established originality.** This is a complete, checkable result derived in the Beyond Erdős exploration. No exact predecessor was found in searches for "fewest coprime adjacent pairs permutation", "maximum noncoprime adjacent pairs", "path cover of noncoprime graph", the $7/12$ constant, or the explicit prime-counting formula. That does **not** rule out earlier proofs using different names.
+**Do not claim a newly discovered published theorem or established originality.** This is a complete, independently checkable proof recorded in the repository. No exact predecessor was found in searches for "fewest coprime adjacent pairs permutation", "maximum noncoprime adjacent pairs", "path cover of noncoprime graph", the $7/12$ constant, or the explicit prime-counting formula. That does **not** rule out earlier proofs using different names.
 
 Most important historical antecedents:
 

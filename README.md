@@ -33,7 +33,7 @@ The [35-entry novelty and proof-gate audit](audits/consolidation-P001-P035-novel
 
 ## The Acorns
 
-**13 selected research questions with high potential mathematical consequences.** An Acorn is a question worth sustained attention, not a claim of novelty, solvability, or a cash prize. Inspired by Erdős's [“acorn” metaphor](https://www.erdosproblems.com/). Selection and justification: [curation report](audits/primary-secondary-catalogue-P001-P035.md).
+**13 selected research questions with high potential mathematical consequences.** An Acorn is a question worth sustained attention, not a claim of novelty, solvability, or a cash prize. Inspired by Erdős's [“acorn” metaphor](https://www.erdosproblems.com/). Current allocation: [canonical curation data](data/curation.json). The [35-entry curation review](audits/primary-secondary-catalogue-P001-P035.md) is a dated historical snapshot.
 
 <!-- ACORNS:START -->
 | ID | Problem | Area |
@@ -203,7 +203,7 @@ Browse and filter the same entries in the [searchable catalogue](docs/index.html
 
 Historical source reviews and mathematical audits are preserved for transparency. They are **research records rather than continuously updated statements of priority**; consult the individual dossier and its references for the claims currently attached to a question.
 
-- [Current research portfolio and priority matrix, P001–P030](audits/portfolio-consolidation-P001-P030.md)
+- [Historical research portfolio and priority matrix, P001–P030](audits/portfolio-consolidation-P001-P030.md)
 - [Historical literature comparison, P001–P025](audits/2026-10-29-P001-P025-literature-source-gate.md)
 - [Focused review of the candidate research directions](audits/2026-10-29-flagship-source-comparison-and-shortlist.md)
 - [Earlier consolidation, P001–P020](audits/2026-10-29-P001-P020-first-collection-consolidation.md)

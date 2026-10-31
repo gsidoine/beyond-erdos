@@ -1,4 +1,4 @@
-# Beyond Erdős — Novelty and quality gate (P001–P010)
+# Meta Erdős — Novelty and quality gate (P001–P010)
 
 **Date:** 2026-10-28  
 **Scope:** all ten existing candidates. **No new problem IDs.**  
