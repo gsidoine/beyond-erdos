@@ -49,6 +49,13 @@ def main():
         print("N=%d pi(sqrt N)=%d saturation=%s" % (n,m,cond))
     # A concrete induced C4, corresponding to prime cycle 2-5-3-7-2.
     verify_hole([14,10,15,21])
+    for x,q_expected,r_expected in [(113,127,5),(1327,1361,7),(15683,15727,9)]:
+        local=primes_up_to(x+100)
+        small=[p for p in local if p<=x]
+        q=next(p for p in local if p>x)
+        r=sum(p*q>x*x for p in small)
+        assert (q,r)==(q_expected,r_expected),(x,q,r)
+        print("x=%d: first prime above x=%d, defect lower bound=%d" % (x,q,r))
     print("P037 certificates passed")
 
 
