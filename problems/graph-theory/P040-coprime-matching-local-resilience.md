@@ -3,8 +3,8 @@
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** Does the local matching resilience of the even–odd coprime graph converge, and is its value determined by finite-prime Hall obstructions?  
 > **Formulation:** candidate. **Novelty:** unverified; original half-resilience conjecture disproved by finite-prime Hall cuts; true sharp limit unknown.  
-> **Verified/known progress:** Proved 16/π²−3/2 ≤ liminf rho_n ≤ limsup rho_n ≤ 5163/12155; sharp limit and finite-prime variational equality remain open.  
-> **Finite evidence:** Full Hall-cut lower-bound proof using coprime density and fourth reciprocal-degree moment; exact modular upper certificates and finite values n≤10.  
+> **Verified/known progress:** Proved 16/π²−3/2 ≤ liminf rho_n ≤ limsup rho_n ≤ 5/12; sharp limit and finite-prime variational equality remain open.  
+> **Finite evidence:** Full Hall-cut lower-bound proof using coprime density and fourth reciprocal-degree moment; exact modular and fractional-sieve certificates and finite values n≤10.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
@@ -39,6 +39,14 @@ For an especially transparent example, let $S\subseteq E_n$ and $U\subseteq O_n$
 
 Sharper constructions select specified exact small-prime-divisibility patterns. Four primes yield $71/165$; five primes yield $914/2145$; six primes yield $5163/12155$. The underlying theorem converts each finite-prime pattern into an exact rational upper bound using a nonuniform product measure on prime supports. The calculations are reproduced by [an exact certificate program](../../experiments/P040_sieve_hall_obstructions.py).
 
+**Fractional refinement.** The [fractional-sieve theorem](../../theorems/P040-fractional-sieve-variational.md) proves that the infimum over finite-prime support families is unchanged when selection within each support class is allowed to be fractional. An exact three-prime fractional certificate, converted to finite-prime families by an auxiliary-prime approximation, improves the bound to
+
+$
+\boxed{\limsup_{n\to\infty}\rho_n\le\frac5{12}=0.416666\ldots.}
+$
+
+The certificate uses the primes $3,5,7$, an exact half-mass fractional profile, and a perturbation with strictly more than half the mass on each side. Its conditional coprime-neighbor fractions and the purification argument appear in the supporting theorem and [exact verifier](../../experiments/P040_fractional_sieve_certificate.py).
+
 **These bounds are not claimed optimal.** The limit of $\rho_n$ may be smaller or may fail to exist. In particular, convergence to the finite-prime variational infimum has not been established.
 
 ## A proved universal lower bound
@@ -50,7 +58,7 @@ $$
 \frac{16}{\pi^2}-\frac32
 \le\liminf_{n\to\infty}\rho_n
 \le\limsup_{n\to\infty}\rho_n
-\le\frac{5163}{12155}.
+\le\frac5{12}.
 }
 $$
 
