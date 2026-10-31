@@ -2,7 +2,7 @@
 
 **Audit date:** 29 October 2026  
 **Scope:** all 20 permanent IDs in the first Meta Erdős collection.  
-**Decision:** **freeze accepted**. Do not add P021 until the current collection is independently checked, re-scoped, and assessed for historical priority.  
+**Scope:** The twenty entries P001–P020 were examined without additions to the catalogue.  
 **Status:** first comprehensive editorial and targeted-literature audit; **not** twenty peer reviews, formal proof verification, or exhaustive MathSciNet/zbMATH coverage.
 
 ## Executive summary
@@ -55,7 +55,7 @@ The classifications below are **proposals**, not silent changes to the mathemati
 | **P019** | Optimal grid general-position exchange complexity | **Medium–high**: classical no-three-in-line enumeration | Moderate–high | Retain; compare to geometric local-repair methods |
 | **P020** | Random Haar $p$-adic Hankel finite-group cokernels | **Medium–high**: finite-field rank law known; random Smith forms | **High** | **Flagship conditional**; investigate structured invariant-factor laws |
 
-**Important numerical discipline:** these are *editorial* judgments. We do not assign percentages to chance of novelty or a journal acceptance rate, because neither is measured.
+No numerical probabilities are assigned to historical novelty or publication outcome.
 
 ## Individual audit notes and precise next gates
 
@@ -177,6 +177,6 @@ These clusters are **navigation links**, not mathematical equivalences. Never si
 
 This preserves all 20 permanent IDs. Nothing is yet **certified original and open**. If deeper literature establishes a prior resolution, move that entry to "historically known" rather than simply deleting it.
 
-## What follows this consolidation report?
+## Unresolved questions
 
 This document is the **first full-portfolio gate**, not a declaration that all twenty historical priority questions are settled. Before seeking community feedback, perform a second, independent phase with full-text primary-source comparisons for the **six collision-risk cases**, and a structured proof/computation audit for the flagship set. Apply verified corrections in separate small PRs after reviewing the evidence. Avoid adding P021 until that work is complete.
