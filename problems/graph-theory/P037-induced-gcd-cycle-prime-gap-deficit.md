@@ -50,6 +50,18 @@ Then $D(N)\ge r(N)$, since those $r(N)$ small prime witnesses cannot be adjacent
 
 The open issue is whether the defect is bounded or grows along an infinite sequence, and whether its extremal scale can be related to **local prime-gap asymmetry**.
 
+## Finite prime-gap witnesses
+
+The simple obstruction $D(N)\ge r(N)$ already gives the certified examples below, with $N=x^2$:
+
+| $x$ | First prime $q_1>x$ | $r(x^2)$ | Consequence |
+|---:|---:|---:|---|
+| 113 | 127 | 5 | $D(113^2)\ge5$ |
+| 1327 | 1361 | 7 | $D(1327^2)\ge7$ |
+| 15683 | 15727 | 9 | $D(15683^2)\ge9$ |
+
+These are finite inequalities only: they **do not prove** that $D(N)$ is unbounded. The [verifier](../../experiments/P037_induced_gcd_cycles.py) recomputes the prime counts independently.
+
 ## Novelty assessment and sources
 
 - Mahadev–Peled, [*Longest cycles in threshold graphs*](https://doi.org/10.1016/0012-365X(93)E0077-H), *Discrete Mathematics* 135 (1994), 169–176, already give longest-cycle algorithms for arbitrary threshold graphs. The auxiliary prime-product graph belongs to this classical graph class.
