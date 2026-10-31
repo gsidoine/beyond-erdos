@@ -121,6 +121,10 @@ jobs:
         run: python experiments/P043_prime_farey_components.py
       - name: Verify P044 squarefree-displacement exact permanents
         run: python experiments/P044_squarefree_displacement_permanent.py
+      - name: Verify P045 finite-field complete-mapping witnesses
+        run: python experiments/P045_additive_multiplicative_permutations.py
+      - name: Verify P046 prime XOR-Sidon finite constructions
+        run: python experiments/P046_prime_xor_sidon.py
       - name: Verify P042 one-carry graph and Hamiltonian witnesses
         run: python experiments/P042_kummer_carry_graph.py
       - name: Verify P041 random-order divisibility finite cases

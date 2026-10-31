@@ -1105,6 +1105,52 @@
         }
       ],
       "portfolio_tier": "B"
+    },
+    {
+      "id": "P045",
+      "title": "Additive complete mappings with almost distinct products",
+      "area": "number theory",
+      "file": "problems/number-theory/P045-additive-multiplicative-complete-mappings.md",
+      "question": "For every prime p>=5, is there a permutation f of F_p such that x+f(x) permutes F_p and xf(x) has exactly p-2 distinct values?",
+      "status": "candidate",
+      "novelty": "unverified; additive and multiplicative complete mappings have extensive literature",
+      "result": "Internally proved that at least two multiplicative image defects are unavoidable for p>=5; the bound is attained at p=5,7,11,13",
+      "verification": "Explicit complete-mapping permutation witnesses and independent exact checks",
+      "priority": "construct or disprove near-injective product images for every prime p>=5",
+      "sources": [
+        {
+          "name": "Bors and Wang (2023), compositions of complete mappings",
+          "url": "https://doi.org/10.1016/j.jcta.2022.105723"
+        },
+        {
+          "name": "Muratović-Ribić and Surdulli (2020), multiplicative analogues",
+          "url": "https://doi.org/10.5644/SJM.16.01.10"
+        }
+      ],
+      "portfolio_tier": "B"
+    },
+    {
+      "id": "P046",
+      "title": "Sidon sets of primes under binary XOR",
+      "area": "number theory",
+      "file": "problems/number-theory/P046-prime-xor-sidon-sets.md",
+      "question": "Can the primes in every sufficiently large dyadic interval contain an XOR-Sidon subset of size at least a constant times the square root of the interval length?",
+      "status": "candidate",
+      "novelty": "unverified; binary Sidon sets and APN functions are classical, prime-restricted extremal size needs comparison",
+      "result": "Internally proved 2^(m/2)/m << s_m <= 2^(m/2)+O(1) for primes in [2^m,2^(m+1))",
+      "verification": "Finite XOR Sidon/APN constructions and exhaustive translate-intersection checks for small m",
+      "priority": "remove the logarithmic loss in prime-restricted binary Sidon construction",
+      "sources": [
+        {
+          "name": "Czerwinski and Pott (2026), On large Sidon sets",
+          "url": "https://doi.org/10.1016/j.jcta.2025.106129"
+        },
+        {
+          "name": "Sidon sets, thin sets, and vectorial Boolean functions (2025)",
+          "url": "https://doi.org/10.1016/j.jcta.2024.106001"
+        }
+      ],
+      "portfolio_tier": "B"
     }
   ],
   "catalogue_policy": "Open to community contributions; proposed additions and status changes require source review"
