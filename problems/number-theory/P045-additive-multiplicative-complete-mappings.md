@@ -1,10 +1,10 @@
 # P045 — Additive complete mappings with almost distinct products
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** For every prime p>=5, is there a permutation f of F_p such that x+f(x) permutes F_p and xf(x) has exactly p-2 distinct values?
-> **Formulation:** candidate. **Novelty:** unverified; additive and multiplicative complete mappings have extensive literature.
-> **Verified/known progress:** Internally proved that at least two multiplicative image defects are unavoidable for p>=5; the bound is attained at p=5,7,11,13.
-> **Finite evidence:** Explicit complete-mapping permutation witnesses and independent exact checks.
+> **Research question:** For every prime p>=5, is there a permutation f of F_p such that x+f(x) permutes F_p and xf(x) has exactly p-2 distinct values?  
+> **Formulation:** candidate. **Novelty:** unverified; additive and multiplicative complete mappings have extensive literature.  
+> **Verified/known progress:** Internally proved that at least two multiplicative image defects are unavoidable for p>=5; the bound is attained at p=5,7,11,13.  
+> **Finite evidence:** Explicit complete-mapping permutation witnesses and independent exact checks.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
