@@ -1,5 +1,13 @@
 # P037 — Prime gaps and induced cycles in the non-coprime graph
 
+<!-- DOSSIER-SUMMARY -->
+> **Research question:** Is 2π(sqrt(N)) minus the longest induced-cycle length of the gcd>1 graph on [N] unbounded?  
+> **Formulation:** candidate. **Novelty:** unverified; prime-product reduction uses classical threshold-graph Hamiltonicity.  
+> **Verified/known progress:** Proved H(N)=(2+o(1))π(sqrt(N)), with an exact prime-product saturation criterion; deficit growth open.  
+> **Finite evidence:** Constructive prime-product cycles and finite saturation certificates.  
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
+<!-- /DOSSIER-SUMMARY -->
+
 Let $G_N$ be the graph on $[N]$ with $ab$ an edge precisely when $\gcd(a,b)>1$. Write $H(N)$ for the greatest length of an **induced cycle** in $G_N$ (a cycle with no chords), taking $H(N)=0$ when none exists.
 
 ## Research question
