@@ -32,3 +32,13 @@ Graham, Rödl and Ruciński, *On Schur Properties of Random Subsets of Integers*
 *Sharp thresholds for Ramsey properties* (Forum of Mathematics, Sigma, 2026), https://www.cambridge.org/core/journals/forum-of-mathematics-sigma/article/sharp-thresholds-for-ramsey-properties/37118888483709FB8C79D6FDB0F7F254, studies Schur hypergraphs and related Ramsey thresholds. Cooley, Kang and Zalla, *Loose Cores and Cycles in Random Hypergraphs*, Electron. J. Combin. 29 (2022), https://doi.org/10.37236/10794, study loose cores in independent-edge hypergraphs, a distinct model and core notion.
 
 The exact vertex-sampled Schur 2-core critical law was not located in the targeted searches. Historical novelty is **unverified**. The nonempty-core threshold and the possible contribution of larger arithmetic cores remain open in this dossier. **Editorial placement: The Seedbed.**
+
+
+## Internally proved critical-scale witness theorem
+
+A [Poisson approximation and second-moment calculation](../../theorems/P036-separated-pasch-poisson-law.md) establish the following for a separated three-parameter family of six-vertex four-edge Schur 2-cores:
+
+- At $p=cN^{-1/2}$, the number of such configurations converges in distribution to $\mathrm{Poisson}(10^{-6}c^6)$.
+- If $pN^{1/2}\to\infty$, the hypergraph has a nonempty 2-core with high probability.
+
+These are **one-sided results**. Neither the absence of all cores when $p=o(N^{-1/2})$ nor the full limiting law for the 2-core event is established. The proof uses a finite rank audit of the six associated linear forms, and historical priority remains unverified.
