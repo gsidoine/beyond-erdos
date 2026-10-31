@@ -1,20 +1,9 @@
-# Literature and novelty audits
+# Literature comparisons
 
-Every question begins at **candidate — novelty unverified**.
+The notes in this directory compare stated problems with published theorems, preprints, reference works and known constructions. They record both direct precedents and differences in hypotheses, conclusions, and ambient structures.
 
-Before calling a candidate a credible open problem:
+Failure to locate a statement does not establish its originality or unresolved status. The scope of each search and the mathematical assertions of its sources determine the strength of its conclusions.
 
-1. Search the exact statement and standard equivalent formulations.
-2. Identify the closest known theorems, counterexamples and research surveys.
-3. Check for hidden elementary reductions and parameter exceptions.
-4. Record citations with dates and distinguish direct overlap from merely related results.
-5. Seek independent expert review; avoid presenting a negative search as proof of novelty.
+The [current catalogue](../README.md#problem-catalogue) contains forty numbered entries. The dated reports refer to the subsets examined at the time of their preparation. The individual dossiers contain subsequent results and amendments.
 
-Useful starting points:
-
-- [Erdős Problems](https://www.erdosproblems.com/)
-- [teorth/erdosproblems](https://github.com/teorth/erdosproblems)
-- [OEIS](https://oeis.org/)
-- arXiv, MathSciNet, zbMATH, journal archives, and research on matchings, reconfiguration and Sidon sets.
-
-The research catalogue currently contains 33 entries. These audit files record the scope and findings of individual literature searches, not a blanket certification of originality. For the current status of each question, use its problem dossier and the [public catalogue](../README.md#problem-catalogue). Additional source corrections and citations are welcome.
+Reference resources include [Erdős Problems](https://www.erdosproblems.com/), [OEIS](https://oeis.org/), [arXiv](https://arxiv.org/), and the Mathematical Reviews and zbMATH bibliographic databases.
