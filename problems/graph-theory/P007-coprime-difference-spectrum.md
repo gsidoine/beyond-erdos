@@ -10,7 +10,7 @@
 
 
 **Area:** graph labeling, number theory, extremal paths  
-**Status:** candidate unresolved question; originality **not** certified
+**Status:** reframed candidate; historical originality and unresolved status of the extremal extension are not certified
 
 ## Definition
 
