@@ -8,7 +8,7 @@
 
 <p align="center"><em>“The purpose of life is to prove and to conjecture.”</em><br><small>— Paul Erdős, as recorded by <a href="https://mathshistory.st-andrews.ac.uk/Biographies/Erdos/quotations/">MacTutor</a>.</small></p>
 
-**Meta Erdős is an open, community-contributable catalogue of mathematical research questions, conjectures and partial results.** The collection currently contains **36 numbered research entries (P001–P036)** in number theory, graph theory, probability, geometry, topology and matroid theory.
+**Meta Erdős is an open, community-contributable catalogue of mathematical research questions, conjectures and partial results.** The collection currently contains **37 numbered research entries (P001–P037)** in number theory, graph theory, probability, geometry, topology and matroid theory.
 
 The project takes inspiration from Paul Erdős's problem-posing tradition. These entries are **not claimed to have been posed by Erdős**, do not belong to [erdosproblems.com](https://www.erdosproblems.com/) or [teorth/erdosproblems](https://github.com/teorth/erdosproblems), and are **not certified to be previously unknown or unresolved**. Established results and close predecessors are attributed in the individual dossiers.
 
@@ -16,11 +16,11 @@ The project takes inspiration from Paul Erdős's problem-posing tradition. These
 
 ## Status and scope
 
-The 36 entries have different research statuses; **they are not all open conjectures**.
+The 37 entries have different research statuses; **they are not all open conjectures**.
 
 | Status | Entries | Meaning |
 |---|---|---|
-| Candidate | 32 | A mathematical research question under investigation; historical novelty and unresolved status are not certified |
+| Candidate | 33 | A mathematical research question under investigation; historical novelty and unresolved status are not certified |
 | Reframe | 2 (P007, P025) | A close or known predecessor requires the surviving question to be stated more narrowly |
 | Needs specification | 1 (P008) | The intended mathematical question requires a sharper formal statement |
 | Proved internally | 1 (P010) | A complete proof is supplied; independent refereeing and historical priority assessment are distinct matters |
@@ -54,7 +54,7 @@ The [35-entry novelty and proof-gate audit](audits/consolidation-P001-P035-novel
 
 ## The Seedbed
 
-**23 exploratory questions kept alive for testing, reframing and possible promotion.** The Seedbed is not a rejection bin. Existing IDs, history and experiments stay accessible.
+**24 exploratory questions kept alive for testing, reframing and possible promotion.** The Seedbed is not a rejection bin. Existing IDs, history and experiments stay accessible.
 
 <!-- SEEDBED:START -->
 | ID | Problem | Area |
@@ -82,6 +82,7 @@ The [35-entry novelty and proof-gate audit](audits/consolidation-P001-P035-novel
 | [P034](problems/graph-theory/P034-four-prime-sum-biconnectivity.md) | Four prime sums without cut vertices | graph theory |
 | [P035](problems/number-theory/P035-primitive-sidon-coloring.md) | Sidon coloring by divisibility antichains | additive combinatorics |
 | [P036](problems/probability/P036-random-schur-hypergraph-two-core.md) | When does a random Schur hypergraph acquire a 2-core? | probability |
+| [P037](problems/graph-theory/P037-induced-gcd-cycle-prime-gap-deficit.md) | Prime-gap deficit of induced cycles in the non-coprime graph | graph theory |
 <!-- SEEDBED:END -->
 
 ## The Harvest — internally resolved results
@@ -187,6 +188,7 @@ The table below is generated from [the canonical metadata](data/problems.json). 
 | [P034](problems/graph-theory/P034-four-prime-sum-biconnectivity.md) | Four prime sums without cut vertices | graph theory | candidate | unverified; prime-sum connectivity predecessor |
 | [P035](problems/number-theory/P035-primitive-sidon-coloring.md) | Sidon coloring by divisibility antichains | additive combinatorics | candidate | high overlap risk: Sidon–Ramsey coloring and primitive sets |
 | [P036](problems/probability/P036-random-schur-hypergraph-two-core.md) | When does a random Schur hypergraph acquire a 2-core? | probability | candidate | unverified; Schur Ramsey thresholds are close but the peeling observable is different |
+| [P037](problems/graph-theory/P037-induced-gcd-cycle-prime-gap-deficit.md) | Prime-gap deficit of induced cycles in the non-coprime graph | graph theory | candidate | unverified; prime-product reduction uses classical threshold-graph Hamiltonicity |
 <!-- CATALOG:END -->
 
 Browse and filter the same entries in the [searchable catalogue](docs/index.html).
