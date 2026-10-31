@@ -18,7 +18,7 @@ $$
 \frac{16}{\pi^2}-\frac32
 \le\liminf_{n\to\infty}\rho_n
 \le\limsup_{n\to\infty}\rho_n
-\le\frac{914}{2145}.
+\le\frac{5163}{12155}.
 }
 $$
 
