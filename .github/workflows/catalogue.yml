@@ -110,4 +110,4 @@ jobs:
         run: python experiments/P039_prime_product_matchings.py
 
       - name: Verify P040 coprime local matching resilience exact small cases
-        run: python experiments/P040_coprime_matching_resilience.py --max-n 9
+        run: python experiments/P040_coprime_matching_resilience.py --max-n 10
