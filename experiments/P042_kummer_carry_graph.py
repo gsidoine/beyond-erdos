@@ -2,6 +2,8 @@
 """Exact finite checks for the binary one-carry graph P042 (stdlib only)."""
 from collections import deque
 from math import comb
+from pathlib import Path
+import json
 
 WITNESSES = {
     4: [7,4,6,5,1,13,10,3,2,11,12,9,14,8,15],
@@ -64,7 +66,9 @@ def verify():
                     assert (b in adj[a])==(v==1),(m,a,b,v)
         print("m=%d vertices=%d edges=%d components=%d" %
               (m,n,edges,len(comps)))
-    for m,path in WITNESSES.items():
+    archived = json.loads((Path(__file__).parent / 'P042_one_carry_hamiltonian_witnesses.json').read_text(encoding='utf-8'))
+    all_witnesses = {**WITNESSES, **{int(k): v for k, v in archived.items()}}
+    for m,path in sorted(all_witnesses.items()):
         adj=graph(m)
         n=(1<<m)-1
         assert len(path)==n and set(path)==set(range(1,n+1))
