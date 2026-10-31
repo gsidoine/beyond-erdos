@@ -83,4 +83,4 @@ The reflection identity and the additive relation $p+r=2q$ are elementary. We ha
 
 ### P031 parallel investigation
 
-We also revisited pairwise-coprime Sidon sets. The comparison with classical dense Sidon constructions and recent additive/multiplicative Sidon literature did not yield a rigorous asymptotic improvement. In particular, **multiplicative Sidon is weaker than pairwise coprimality**; no result about bi-Sidon sets should be transferred to P031 without a separate argument. No unsupported P031 claim is added to the catalogue.
+A separate comparison of pairwise-coprime Sidon sets with classical dense Sidon constructions and recent additive/multiplicative Sidon literature yielded no rigorous asymptotic improvement. In particular, **multiplicative Sidon is weaker than pairwise coprimality**; no result about bi-Sidon sets should be transferred to P031 without a separate argument. No unsupported P031 claim is added to the catalogue.
