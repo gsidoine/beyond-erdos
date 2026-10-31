@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "freeze": "P001–P037",
+  "freeze": "P001–P040",
   "policy": "Curated two-catalogue view: The Acorns (high consequence) and The Seedbed (exploration); The Harvest holds internally resolved results. Symbolic stakes, not cash awards.",
   "primary": [
     "P003",
@@ -14,7 +14,8 @@
     "P027",
     "P030",
     "P031",
-    "P033"
+    "P033",
+    "P040"
   ],
   "secondary": [
     "P001",
@@ -40,12 +41,14 @@
     "P034",
     "P035",
     "P036",
-    "P037"
+    "P037",
+    "P038",
+    "P039"
   ],
   "resolved": [
     "P010"
   ],
-  "note": "This is a provisional editorial triage that preserves the canonical P001–P035 IDs and current problem paths.",
+  "note": "Editorial triage preserving all existing canonical IDs and proofs. Acorn selection reflects mathematical potential, not novelty certification.",
   "catalogue_names": {
     "primary": "The Acorns",
     "secondary": "The Seedbed",
