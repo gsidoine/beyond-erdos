@@ -56,6 +56,10 @@ class PublicEditorialIntegrityTests(unittest.TestCase):
                     target = unquote(target.split("#", 1)[0].split("?", 1)[0])
                     if not target:
                         continue
+                    # Expressions such as [f_i(z)](x) are mathematical notation,
+                    # not file links. Local file paths have an extension or slash.
+                    if not (Path(target).suffix or '/' in target or target.startswith('.')):
+                        continue
                     resolved = (path.parent / target).resolve()
                     if not resolved.is_relative_to(ROOT) or not resolved.exists():
                         failures.append(f"{path.relative_to(ROOT)}:{line_number} -> {target}")
