@@ -1059,6 +1059,52 @@
         }
       ],
       "portfolio_tier": "B"
+    },
+    {
+      "id": "P043",
+      "title": "Components of the prime-denominator Farey graph",
+      "area": "graph theory",
+      "file": "problems/graph-theory/P043-prime-denominator-farey-components.md",
+      "question": "What is the asymptotic size of the largest connected component of the Farey graph induced by fractions with prime denominators?",
+      "status": "candidate",
+      "novelty": "unverified; Farey graphs and prime-denominator fractions have established prior art",
+      "result": "An exact component-count identity involving twin primes, a forest after removal of 1/2, and exact vertex and edge enumerations are internally proved",
+      "verification": "Reproducible component, triangle, and forest checks for N<=101",
+      "priority": "analyze maximal component size through Farey parent recursion and distribution of prime denominators",
+      "sources": [
+        {
+          "name": "Zaman (2008), Farey fractions with prime denominators",
+          "url": "https://www.impan.pl/shop/en/publication/transaction/download/product/82971"
+        },
+        {
+          "name": "Kushwaha and Sarma (2021), Farey-subgraphs and continued fractions",
+          "url": "https://arxiv.org/abs/2106.14856"
+        }
+      ],
+      "portfolio_tier": "B"
+    },
+    {
+      "id": "P044",
+      "title": "Squarefree displacement permutations",
+      "area": "probability",
+      "file": "problems/probability/P044-squarefree-displacement-permutations.md",
+      "question": "What is the optimal second-order term in the number of permutations of [N] with every absolute displacement positive and squarefree?",
+      "status": "candidate",
+      "novelty": "unverified; related squarefree-sum permanents and classical permanent bounds are known",
+      "result": "Internally proved log M(N)=log(N!)+N log(6/pi^2)+O(sqrt N)",
+      "verification": "Exact integer permanents via subset dynamic programming through N=17",
+      "priority": "isolate arithmetic contribution to the subexponential permanent factor",
+      "sources": [
+        {
+          "name": "OEIS A398305, squarefree-sum permutation permanent",
+          "url": "https://oeis.org/A398305"
+        },
+        {
+          "name": "Alon, matchings and subcubes, permanent inequalities",
+          "url": "https://web.math.princeton.edu/~nalon/PDFS/hypcube11.pdf"
+        }
+      ],
+      "portfolio_tier": "B"
     }
   ],
   "catalogue_policy": "Open to community contributions; proposed additions and status changes require source review"
