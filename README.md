@@ -10,7 +10,7 @@
 
 <p align="center"><em>“The purpose of life is to prove and to conjecture.”</em><br><small>— Paul Erdős, as recorded by <a href="https://mathshistory.st-andrews.ac.uk/Biographies/Erdos/quotations/">MacTutor</a>.</small></p>
 
-**Meta Erdős** is a collection of **41 numbered research entries (P001–P041)** in number theory, combinatorics, graph theory, probability and related fields. The entries include conjectures, exact results, counterexamples and finite computations.
+**Meta Erdős** is a collection of **42 numbered research entries (P001–P042)** in number theory, combinatorics, graph theory, probability and related fields. The entries include conjectures, exact results, counterexamples and finite computations.
 
 The collection is independent of [Erdős Problems](https://www.erdosproblems.com/) and [its formalization repository](https://github.com/teorth/erdosproblems). The problems are not attributed to Erdős. Each dossier specifies the mathematical statement and known relations to earlier work.
 
@@ -22,7 +22,7 @@ The entries include unresolved questions, formulations requiring revision, and a
 
 | Status | Entries | Meaning |
 |---|---|---|
-| Candidate | 37 | A mathematical research question under investigation; historical novelty and unresolved status are not certified |
+| Candidate | 38 | A mathematical research question under investigation; historical novelty and unresolved status are not certified |
 | Reframe | 2 (P007, P025) | A close or known predecessor requires the surviving question to be stated more narrowly |
 | Needs specification | 1 (P008) | The intended mathematical question requires a sharper formal statement |
 | Proved internally | 1 (P010) | A complete proof is supplied; independent refereeing and historical priority assessment are distinct matters |
@@ -57,7 +57,7 @@ Thirteen problems selected for their possible structural consequences. The term 
 
 ## The Seedbed
 
-Twenty-seven further questions, together with their partial results, obstructions and references.
+Twenty-eight further questions, together with their partial results, obstructions and references.
 
 <!-- SEEDBED:START -->
 | ID | Problem | Area |
@@ -89,6 +89,7 @@ Twenty-seven further questions, together with their partial results, obstruction
 | [P038](problems/graph-theory/P038-coprime-induced-matching.md) | Fine asymptotics of induced matchings in the coprime graph | graph theory |
 | [P039](problems/number-theory/P039-prime-product-plus-one-matching.md) | Perfect matchings with prime product plus one | number theory |
 | [P041](problems/probability/P041-random-order-divisibility-chains.md) | Random-order divisibility chains | probability |
+| [P042](problems/graph-theory/P042-kummer-one-carry-graph.md) | Hamiltonian paths in one-carry graphs | graph theory |
 <!-- SEEDBED:END -->
 
 ## The Harvest — internally resolved results
@@ -153,7 +154,7 @@ The [P027 finite-template theorem](theorems/P027-finite-arithmetic-template-tran
 
 ## Problem catalogue
 
-This is a **complete archival index of all 41 IDs**, including Acorns, Seedbed and Harvest. Use the two curated catalogues above for research selection.
+This is a **complete archival index of all 42 IDs**, including Acorns, Seedbed and Harvest. Use the two curated catalogues above for research selection.
 
 The table below is generated from [the canonical metadata](data/problems.json). Each entry links to its full mathematical formulation, known results, finite experiments, prior-art comparison and remaining questions.
 
@@ -201,6 +202,7 @@ The table below is generated from [the canonical metadata](data/problems.json). 
 | [P039](problems/number-theory/P039-prime-product-plus-one-matching.md) | Perfect matchings with prime product plus one | number theory | candidate | high overlap: closely related 2020 MathOverflow bilinear prime pairing with two intervals and either sign |
 | [P040](problems/graph-theory/P040-coprime-matching-local-resilience.md) | Local resilience of coprime perfect matchings | graph theory | candidate | unverified; original half-resilience conjecture disproved by finite-prime Hall cuts; true sharp limit unknown |
 | [P041](problems/probability/P041-random-order-divisibility-chains.md) | Random-order divisibility chains | probability | candidate | unverified; related arithmetic-subsequence and hypercube accessibility results are established |
+| [P042](problems/graph-theory/P042-kummer-one-carry-graph.md) | Hamiltonian paths in one-carry graphs | graph theory | candidate | unverified; Kummer's theorem and digital carry combinatorics are classical, precise Hamiltonian question requires specialist review |
 <!-- CATALOG:END -->
 
 Browse and filter the same entries in the [searchable catalogue](docs/index.html).
