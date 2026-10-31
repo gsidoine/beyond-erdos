@@ -25,13 +25,13 @@ There are Θ(N³) such instances, giving an expected count Θ(N³ p⁶). This id
 
 There is also a five-vertex four-edge core on {a,2a,3a,4a,5a}, using {a,2a,3a}, {a,3a,4a}, {a,4a,5a}, {2a,3a,5a}. It has Θ(N) realizations and expected count Θ(N p⁵), so its own first-moment scale is N^(-1/5).
 
-## Known neighbors and novelty gate
+## Related results
 
 Graham, Rödl and Ruciński, *On Schur Properties of Random Subsets of Integers*, J. Number Theory 61 (1996), 388–408, https://doi.org/10.1006/jnth.1996.0155, prove an N^(-1/2) threshold for a Schur Ramsey property, not the stated peeling-core event. **Their Section 4 explicitly studies fairly simple hypergraph cycles, spoiled paths, and handles in the same Schur-triple hypergraph.** Those configurations are highly relevant structural predecessors; the present core problem must be compared at theorem level with their probabilistic lemma before any originality claim.
 
 *Sharp thresholds for Ramsey properties* (Forum of Mathematics, Sigma, 2026), https://www.cambridge.org/core/journals/forum-of-mathematics-sigma/article/sharp-thresholds-for-ramsey-properties/37118888483709FB8C79D6FDB0F7F254, studies Schur hypergraphs and related Ramsey thresholds. Cooley, Kang and Zalla, *Loose Cores and Cycles in Random Hypergraphs*, Electron. J. Combin. 29 (2022), https://doi.org/10.37236/10794, study loose cores in independent-edge hypergraphs, a distinct model and core notion.
 
-The exact vertex-sampled Schur 2-core critical law was not located in the targeted searches. Historical novelty is **unverified**. The nonempty-core threshold and the possible contribution of larger arithmetic cores remain open in this dossier. **Editorial placement: The Seedbed.**
+The exact vertex-sampled Schur 2-core critical law was not located in the targeted searches. Historical novelty is **unverified**. The nonempty-core threshold and the possible contribution of larger arithmetic cores remain open in this dossier. 
 
 
 ## Internally proved critical-scale witness theorem
