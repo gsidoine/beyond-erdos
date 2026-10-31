@@ -41,9 +41,9 @@ Sharper constructions select specified exact small-prime-divisibility patterns. 
 
 **Fractional refinement.** The [fractional-sieve theorem](../../theorems/P040-fractional-sieve-variational.md) proves that the infimum over finite-prime support families is unchanged when selection within each support class is allowed to be fractional. An exact three-prime fractional certificate, converted to finite-prime families by an auxiliary-prime approximation, improves the bound to
 
-$
+$$
 \boxed{\limsup_{n\to\infty}\rho_n\le\frac5{12}=0.416666\ldots.}
-$
+$$
 
 The certificate uses the primes $3,5,7$, an exact half-mass fractional profile, and a perturbation with strictly more than half the mass on each side. Its conditional coprime-neighbor fractions and the purification argument appear in the supporting theorem and [exact verifier](../../experiments/P040_fractional_sieve_certificate.py).
 
