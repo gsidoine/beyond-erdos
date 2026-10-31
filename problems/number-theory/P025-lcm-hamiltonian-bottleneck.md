@@ -8,7 +8,7 @@
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
-**Area:** multiplicative combinatorics, Hamiltonian graph theory, extremal permutations. **Status:** candidate.
+**Area:** multiplicative combinatorics, Hamiltonian graph theory, extremal permutations. **Status:** reframed candidate.
 
 ## Definition
 

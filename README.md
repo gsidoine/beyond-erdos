@@ -6,13 +6,15 @@
 
 <p align="center"><em>Paul Erdős</em></p>
 
+<p align="center"><small>Photograph: George Csicsery / Zala Films, from <em>N Is a Number: A Portrait of Paul Erdős</em> (1993). © George Csicsery / Zala Films.</small></p>
+
 <p align="center"><em>“The purpose of life is to prove and to conjecture.”</em><br><small>— Paul Erdős, as recorded by <a href="https://mathshistory.st-andrews.ac.uk/Biographies/Erdos/quotations/">MacTutor</a>.</small></p>
 
 **Meta Erdős** is a collection of **41 numbered research entries (P001–P041)** in number theory, combinatorics, graph theory, probability and related fields. The entries include conjectures, exact results, counterexamples and finite computations.
 
 The collection is independent of [Erdős Problems](https://www.erdosproblems.com/) and [its formalization repository](https://github.com/teorth/erdosproblems). The problems are not attributed to Erdős. Each dossier specifies the mathematical statement and known relations to earlier work.
 
-**Contents:** [The Acorns](#the-acorns) · [The Seedbed](#the-seedbed) · [Complete index](#problem-catalogue) · [Searchable browser](docs/index.html) · [Mathematical results](#mathematical-results) · [Literature and audits](#literature-and-audits) · [Contribute](CONTRIBUTING.md)
+**Contents:** [The Acorns](#the-acorns) · [The Seedbed](#the-seedbed) · [Complete index](#problem-catalogue) · [Searchable browser](https://gsidoine.github.io/meta-erdos/) · [Mathematical results](#mathematical-results) · [Literature and audits](#literature-and-audits) · [Contribute](CONTRIBUTING.md)
 
 ## Status and scope
 
@@ -126,6 +128,8 @@ In particular, $h(n)\sim 7n/(12\log n)$. This is a **resolved entry**, not one o
 
 ## Research portfolio and source verification
 
+The [P001–P041 literature comparison](audits/literature-comparison-P001-P041.md) identifies established predecessors, precise surviving distinctions, and outstanding priority risks across the current catalogue. It does not certify historical originality.
+
 The [P001–P030 consolidation](audits/portfolio-consolidation-P001-P030.md) provides a dossier-by-dossier evidence matrix, identifies shared host graphs and nonredundant observables, records close published predecessors, and prioritizes testable theorem targets. Older literature and proof reviews remain accessible as [historical research records](audits/README.md), not as the current source of catalogue status.
 
 The submitted [P010 PDF](manuscripts/P010/coprime_adjacencies.pdf) is in this repository. *Integers* [permits supporting AI-tool use subject to its authorial-writing, accuracy and disclosure requirements](https://math.colgate.edu/~integers/submit.html); the manuscript includes an AI-use statement. Its exact eligibility and editorial outcome are for the journal to determine. Submission does **not** establish acceptance or publication.
@@ -149,7 +153,7 @@ The [P027 finite-template theorem](theorems/P027-finite-arithmetic-template-tran
 
 ## Problem catalogue
 
-This is a **complete archival index of all 35 IDs**, including Acorns, Seedbed and Harvest. Use the two curated catalogues above for research selection.
+This is a **complete archival index of all 41 IDs**, including Acorns, Seedbed and Harvest. Use the two curated catalogues above for research selection.
 
 The table below is generated from [the canonical metadata](data/problems.json). Each entry links to its full mathematical formulation, known results, finite experiments, prior-art comparison and remaining questions.
 

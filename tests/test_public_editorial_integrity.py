@@ -89,6 +89,9 @@ class PublicEditorialIntegrityTests(unittest.TestCase):
             self.assertIn(f"{n} {label}", guide)
         self.assertIn(f"Complete archive ({len(ids)})", docs)
         self.assertIn(f"**{len(ids)} numbered research entries", readme)
+        self.assertIn(f"complete archival index of all {len(ids)} IDs", readme)
+        self.assertIn("[Searchable browser](https://gsidoine.github.io/meta-erdos/)", readme)
+        self.assertIn("literature-comparison-P001-P041.md", readme)
 
 
     def test_published_erdos_portrait_and_quotation(self):
@@ -99,6 +102,7 @@ class PublicEditorialIntegrityTests(unittest.TestCase):
         self.assertEqual(published.read_bytes(), original.read_bytes())
         self.assertIn('src="./assets/erdos-portrait.jpg"', page)
         self.assertIn("The purpose of life is to prove and to conjecture.", page)
+        self.assertIn("George Csicsery / Zala Films", page)
         self.assertIn(
             "https://mathshistory.st-andrews.ac.uk/Biographies/Erdos/quotations/",
             page,

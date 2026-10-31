@@ -45,4 +45,6 @@ Random arithmetic-progression subsequences were analyzed by Goh and Zhao, *Arith
 
 Squarefree divisor intervals are Boolean lattices. The squarefree proof uses Hegarty and Martinsson, *On the existence of accessible paths in various models of fitness landscapes*, *Annals of Applied Probability* **24** (2014), 1375–1395 ([DOI](https://doi.org/10.1214/13-AAP949)). The dimension of the divisibility poset is studied by Lewis and Souza, *Journal of Combinatorial Theory, Series A* **179** (2021), 105391 ([DOI](https://doi.org/10.1016/j.jcta.2020.105391)); it is not the random-order statistic here.
 
+The [related P017 problem](P017-random-divisibility-chain-height.md) instead thins the integer divisibility order by independent vertex retention; its longest-chain statistic is not the random-order subsequence length considered here.
+
 Historical novelty of the precise gap question has not been certified.
