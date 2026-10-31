@@ -936,6 +936,75 @@
         }
       ],
       "portfolio_tier": "C"
+    },
+    {
+      "id": "P038",
+      "title": "Fine asymptotics of induced matchings in the coprime graph",
+      "area": "graph theory",
+      "file": "problems/graph-theory/P038-coprime-induced-matching.md",
+      "question": "How close to the Bollobás set-pair upper bound can an induced matching of the coprime graph on [N] be?",
+      "status": "candidate",
+      "novelty": "unverified; classical Bollobás set-pair extremality is the main predecessor",
+      "result": "Internally proved log M(N)=T(N) log 2 + O(sqrt(T(N) log T(N))), where T is the inverse N² primorial cutoff",
+      "verification": "Explicit complementary-prime induced matching construction checked for finite prime blocks",
+      "priority": "refine subexponential gap and characterize near-extremizers",
+      "sources": [
+        {
+          "name": "Füredi, Gyárfás and Király (2023), set pairs",
+          "url": "https://doi.org/10.1017/S0963548323000044"
+        },
+        {
+          "name": "Variations on the Bollobás set-pair theorem (2024)",
+          "url": "https://doi.org/10.1016/j.ejc.2024.103983"
+        }
+      ],
+      "portfolio_tier": "B"
+    },
+    {
+      "id": "P039",
+      "title": "Perfect matchings with prime product plus one",
+      "area": "number theory",
+      "file": "problems/number-theory/P039-prime-product-plus-one-matching.md",
+      "question": "Can [2n] always be paired so that the product of each pair plus one is prime?",
+      "status": "candidate",
+      "novelty": "high overlap: closely related 2020 MathOverflow bilinear prime pairing with two intervals and either sign",
+      "result": "Perfect matching verified for even N≤200 and N=250,300,400; general Hall condition unproved",
+      "verification": "Exact sieve-backed bipartite matching certificates",
+      "priority": "explore; seek arithmetic Hall expansion or a counterexample",
+      "sources": [
+        {
+          "name": "Recamán Santos (2020), product adjacent to prime pairing",
+          "url": "https://mathoverflow.net/questions/361065/pairs-of-integers-whose-product-is-one-more-or-less-than-a-prime"
+        },
+        {
+          "name": "Greenfield and Greenfield (1998), prime-sum pairing",
+          "url": "https://cs.uwaterloo.ca/journals/JIS/green.html"
+        }
+      ],
+      "portfolio_tier": "C"
+    },
+    {
+      "id": "P040",
+      "title": "Half-resilience of coprime perfect matchings",
+      "area": "graph theory",
+      "file": "problems/graph-theory/P040-coprime-matching-local-resilience.md",
+      "question": "Does the even–odd coprime graph retain a perfect matching after any deletion of less than half of each vertex's incident edges?",
+      "status": "candidate",
+      "novelty": "unverified; Pomerance (2021) proves coprime matching existence but not sharp local deletion resilience",
+      "result": "Proved limsup of local matching resilience ≤1/2; exact Hall-obstruction values for n≤10",
+      "verification": "Exhaustive Hall obstruction enumeration on balanced coprime graphs for n≤10",
+      "priority": "high consequence; establish lower resilience and robust arithmetic Hall expansion",
+      "sources": [
+        {
+          "name": "Pomerance (2021), Coprime Matchings",
+          "url": "https://math.dartmouth.edu/~carlp/coprime_int.pdf"
+        },
+        {
+          "name": "Ben-Shimon, Krivelevich and Sudakov, local resilience",
+          "url": "https://doi.org/10.1017/S0963548310000685"
+        }
+      ],
+      "portfolio_tier": "A"
     }
   ],
   "catalogue_policy": "Open to community contributions; proposed additions and status changes require source review"
