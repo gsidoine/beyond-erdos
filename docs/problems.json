@@ -905,6 +905,33 @@
         }
       ],
       "portfolio_tier": "C"
+    },
+    {
+      "id": "P037",
+      "title": "Prime-gap deficit of induced cycles in the non-coprime graph",
+      "area": "graph theory",
+      "file": "problems/graph-theory/P037-induced-gcd-cycle-prime-gap-deficit.md",
+      "question": "Is 2π(sqrt(N)) minus the longest induced-cycle length of the gcd>1 graph on [N] unbounded?",
+      "status": "candidate",
+      "novelty": "unverified; prime-product reduction uses classical threshold-graph Hamiltonicity",
+      "result": "Proved H(N)=(2+o(1))π(sqrt(N)), with an exact prime-product saturation criterion; deficit growth open",
+      "verification": "Constructive prime-product cycles and finite saturation certificates",
+      "priority": "explore fine prime-gap fluctuations, not leading-order asymptotic",
+      "sources": [
+        {
+          "name": "Mahadev–Peled longest cycles in threshold graphs (1994)",
+          "url": "https://doi.org/10.1016/0012-365X(93)E0077-H"
+        },
+        {
+          "name": "Harary–Peled Hamiltonian threshold graphs (1987)",
+          "url": "https://doi.org/10.1016/0166-218X(87)90050-3"
+        },
+        {
+          "name": "Rilwan–Sameema–Oli non-coprime graph of integers (2020)",
+          "url": "https://doi.org/10.14445/22315373/IJMTT-V66I2P513"
+        }
+      ],
+      "portfolio_tier": "C"
     }
   ],
   "catalogue_policy": "Open to community contributions; proposed additions and status changes require source review"
