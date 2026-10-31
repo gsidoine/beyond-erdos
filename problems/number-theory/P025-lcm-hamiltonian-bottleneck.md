@@ -47,16 +47,15 @@ The trivial upper bound is $t_N\le N$, since $\mathrm{lcm}(a,b)\le ab\le N^2$. T
 - [Erdős–Freud–Hegyvári, *Arithmetical properties of permutations of integers* (1983)](https://users.renyi.hu/~p_erdos/1983-02.pdf): **high-risk predecessor** concerning adjacent gcd/lcm extremal functionals. **Direct confirmed predecessor:** Theorem 1 establishes the exact first-order optimal value for **linear paths**. It does not in its displayed statement include the closing edge of a cycle. This makes the cyclic distinction narrow and susceptible to easy reduction.
 - [P010 submitted manuscript](../graph-theory/P010-minimum-coprime-adjacencies.md): counts coprime transitions, not the maximal adjacent lcm along a **cycle**.
 
-**Priority status:** **confirmed direct collision for the linear analogue**, with only the cyclic-endpoint strengthening presently surviving. Do **not** promote until checking the original 1983 construction and whether it can be closed with no asymptotic cost. The counting lower bound is elementary and not a novelty claim.
+**Established linear case.** Erdős–Freud–Hegyvári (1983) determined the leading path bottleneck asymptotic. The cyclic case additionally includes the closing edge; its asymptotic effect has not been determined in the cited results.
 
-## Next falsification gate
+## Finite tests
 
 Compute $\Lambda(N)$ exactly for small $N$ by sorting distinct lcm edge weights and testing Hamiltonian cycles, with integer exactness and solver certificates. Compare Hamiltonian paths versus cycles; test whether the lower-order answer can be read directly from a known adjacent-lcm extremal theorem. If known, preserve ID as a historical note rather than claim an original problem.
 
 
+## Relation to existing results
 
-## Consolidation disposition (P001–P035 audit)
+The question is restricted to Hamiltonian cycles. The path version has an established asymptotic formula; the effect of cyclic closure is the remaining issue.
 
-**Disposition — retain cyclic-only reframe.** Erdős–Freud–Hegyvári (1983) proved the path bottleneck LCM asymptotic. The only candidate here is the added closing edge of a Hamiltonian cycle. Do not re-label the established path theorem as new; compare the cyclic extension with existing circular permutation work.
 
-This is a priority/novelty gate, not an independently refereed claim about whether the surviving problem is open.
