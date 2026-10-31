@@ -102,6 +102,7 @@ class PublicEditorialIntegrityTests(unittest.TestCase):
         self.assertEqual(published.read_bytes(), original.read_bytes())
         self.assertIn('src="./assets/erdos-portrait.jpg"', page)
         self.assertIn("The purpose of life is to prove and to conjecture.", page)
+        self.assertIn("George Csicsery / Zala Films", page)
         self.assertIn(
             "https://mathshistory.st-andrews.ac.uk/Biographies/Erdos/quotations/",
             page,
