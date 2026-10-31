@@ -59,6 +59,6 @@ These are **metaphorical editorial stakes only**: no real prize, offer, obligati
 
 **Promotion into the primary catalogue is not determined by the imaginary dollar value alone.** Require a short *consequence statement*: “If solved, this changes the understanding of X because Y”; an *alternative-term/source check*; a nontrivial finite or theoretical baseline; and an explicit distinction from the nearest sibling. Difficulty alone is not significance. An elegant counterexample may be as valuable as a proof.
 
-## Parallel focus-session verdict
+## Parallel mathematical assessment
 
-See [P020/P027/P033 research audit](2026-10-30-focus-session-P020-P027-P033.md). In P020, second-order corank-three or larger **has not been proved** despite a natural candidate formula; the nonlinear affine shift is a genuine proof obligation. In P027, numerical gaps do not imply their infimum vanishes. In P033, a positive asymptotic triple density has no effective numerical threshold bridging finite checks. The primary status reflects the potential significance of resolving these obstacles, not a claim that they have been resolved.
+See [P020/P027/P033 research audit](2026-10-30-P020-P027-P033-research-audit.md). In P020, second-order corank-three or larger **has not been proved** despite a natural candidate formula; the nonlinear affine shift is a genuine proof obligation. In P027, numerical gaps do not imply their infimum vanishes. In P033, a positive asymptotic triple density has no effective numerical threshold bridging finite checks. The primary status reflects the potential significance of resolving these obstacles, not a claim that they have been resolved.
