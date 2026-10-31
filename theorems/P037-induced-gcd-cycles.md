@@ -60,6 +60,16 @@ If $p_jq_{m-j+2}>N$ for some $j\in[2,m]$, the $j-1$ large primes $q_{m-j+2},\ldo
 
 This saturation theorem is an **arithmetic specialization of classical Hamiltonian threshold-graph criteria**, not a claim of a new general characterization of threshold graphs.
 
+## Corollary: longest induced paths
+
+Let $P(N)$ be the maximum number of vertices of an induced path in $G_N$. Then
+
+$$
+\boxed{P(N)\sim2\pi(\sqrt N).}
+$$
+
+Indeed, removing a vertex from an induced cycle of length $H(N)$ leaves an induced path on $H(N)-1$ vertices. For the reverse inequality, select a common prime witness for each of the $P(N)-1$ successive path edges. Inducedness forces these primes to be distinct, and consecutive witness primes have product at most $N$. Thus they form a path in $T_N$. Since primes above $\sqrt N$ cannot be consecutive on that path, there are at most $\pi(\sqrt N)+1$ large witnesses and at most $\pi(\sqrt N)$ small ones. Hence $P(N)\le2\pi(\sqrt N)+2$, proving the stated asymptotic.
+
 ## Arithmetic consequence and scope
 
 For the deficit $D(N)=2\pi(\sqrt N)-H(N)$, Theorem 2 gives $D(N)=o(\pi(\sqrt N))$. Theorem 3 provides a precise prime-product test for $D(N)=0$. The boundedness or unboundedness of $D(N)$ is not established here.
