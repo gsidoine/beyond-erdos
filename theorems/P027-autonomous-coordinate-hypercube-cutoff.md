@@ -220,4 +220,4 @@ For extra spectral evidence, the optional [SciPy-based full-chain eigensolver](.
 - [Windisch (2018), *Heat-bath random walks with Markov bases*](https://doi.org/10.1016/j.aam.2017.08.002), treats general heat-bath dynamics; its results should not be presumed to cover this growing-dimensional arithmetic model.
 - [Alexeev, Barreto, Li, Lichtman, Price, Shah, Tang, Tao (2026), *Primitive sets and von Mangoldt chains*](https://arxiv.org/abs/2605.00301), uses **different** Markov-chain methods to bound weighted primitive-set sums; not an analysis of the uniform finite primitive-set heat bath.
 
-**Historical novelty remains unverified.** This is an internally rigorous structural pass, not a completed solution of P027 or a publication-ready originality claim.
+The result establishes the stated structural properties but does not determine the mixing time in P027. Historical priority has not been determined.
