@@ -1,7 +1,7 @@
 # Comprehensive prior-art audit: P001–P008
 
 **Date:** 28 October 2026  
-**Purpose:** Adversarial literature review of the eight candidate questions selected for Beyond Erdős.  
+**Purpose:** Adversarial literature review of the eight initial candidate questions in this collection.  
 **Scope:** Targeted searches across publisher articles, arXiv, proceedings, OEIS, Erdős Problems, reference lists, and terminology/equivalence checks. This is a **substantial but non-exhaustive** audit. No systematic subscription-only MathSciNet/zbMATH search or independent specialist assessment is represented as completed.
 
 > **Key correction:** Part of P007 was **already proved in 2021**. The full coprime-graceful path problem is identical to Panma–Rochanakul, Theorem 2.1. P007's *extremal count of distinct gaps* remains a separate candidate question. This is a factual prior-art collision, not just a similarity.
@@ -29,7 +29,7 @@
 
 **Primary historical source.** Lawrence E. Greenfield and Stephen J. Greenfield, *Some Problems of Combinatorial Number Theory Related to Bertrand's Postulate*, *Journal of Integer Sequences* **1** (1998), Article 98.1.2: https://cs.uwaterloo.ca/journals/JIS/green.html. They prove the classical prime-pairing property and formulate additional generalizations. The paper predates the candidate question by nearly three decades; prime-sum pairing is **an established topic**.
 
-**Computational enumeration.** OEIS [A000341](https://oeis.org/A000341) counts all prime-sum perfect matchings and cites Greenfield–Greenfield. The quantity counted there is **not** our maximum number of distinct sum values.
+**Computational enumeration.** OEIS [A000341](https://oeis.org/A000341) counts all prime-sum perfect matchings and cites Greenfield–Greenfield. The quantity counted there is **not** the maximum number of distinct sum values under study.
 
 **Another literature axis.** A prime sum is an edge color; each color class is itself a matching since $a+b=p$ determines the partner uniquely. P001 is a *maximum number of colors represented by one perfect matching*, i.e., a maximum-color/multicolored matching problem rather than necessarily a fully rainbow perfect matching. General rainbow matching and colored spanning-structure work, such as Lang, *On sufficient conditions for spanning structures in dense graphs*, *Proc. London Math. Soc.* (2023), https://doi.org/10.1112/plms.12552, supplies relevant techniques but no located theorem settling this arithmetic instance.
 
