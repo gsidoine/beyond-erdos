@@ -115,5 +115,7 @@ jobs:
       - name: Verify P040 finite-prime Hall-cut counterexamples
         run: python experiments/P040_sieve_hall_obstructions.py
 
+      - name: Verify P040 fractional-sieve rational certificate
+        run: python experiments/P040_fractional_sieve_certificate.py
       - name: Verify P040 coprime local matching resilience exact small cases
         run: python experiments/P040_coprime_matching_resilience.py --max-n 10
