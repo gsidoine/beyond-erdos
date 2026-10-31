@@ -988,12 +988,12 @@
       "title": "Half-resilience of coprime perfect matchings",
       "area": "graph theory",
       "file": "problems/graph-theory/P040-coprime-matching-local-resilience.md",
-      "question": "Does the even–odd coprime graph retain a perfect matching after any deletion of less than half of each vertex's incident edges?",
+      "question": "Does the local matching resilience of the even–odd coprime graph converge, and is its value determined by finite-prime Hall obstructions?",
       "status": "candidate",
-      "novelty": "unverified; Pomerance (2021) proves coprime matching existence but not sharp local deletion resilience",
-      "result": "Proved limsup of local matching resilience ≤1/2; exact Hall-obstruction values for n≤10",
-      "verification": "Exhaustive Hall obstruction enumeration on balanced coprime graphs for n≤10",
-      "priority": "high consequence; establish lower resilience and robust arithmetic Hall expansion",
+      "novelty": "unverified; original half-resilience conjecture disproved by finite-prime Hall cuts; true sharp limit unknown",
+      "result": "Proved limsup rho_n ≤ 914/2145 < 1/2 by finite-prime Hall obstructions, refining an elementary 7/15 cut; convergence unknown",
+      "verification": "Exact rational prime-support certificates and a concrete n=1155 Hall cut; exhaustive finite Hall values n≤10",
+      "priority": "high consequence; identify limiting resilience and characterize minimizing arithmetic Hall cuts",
       "sources": [
         {
           "name": "Pomerance (2021), Coprime Matchings",
@@ -1002,6 +1002,10 @@
         {
           "name": "Ben-Shimon, Krivelevich and Sudakov, local resilience",
           "url": "https://doi.org/10.1017/S0963548310000685"
+        },
+        {
+          "name": "Wu and Feng (2026), nonuniform biased intersecting families",
+          "url": "https://arxiv.org/abs/2606.26521"
         }
       ],
       "portfolio_tier": "A"

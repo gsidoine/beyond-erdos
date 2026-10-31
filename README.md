@@ -194,7 +194,7 @@ The table below is generated from [the canonical metadata](data/problems.json). 
 | [P037](problems/graph-theory/P037-induced-gcd-cycle-prime-gap-deficit.md) | Prime-gap deficit of induced cycles in the non-coprime graph | graph theory | candidate | unverified; unboundedness follows from Pintz (2015), general threshold-cycle theory is classical |
 | [P038](problems/graph-theory/P038-coprime-induced-matching.md) | Fine asymptotics of induced matchings in the coprime graph | graph theory | candidate | unverified; classical Bollobás set-pair extremality is the main predecessor |
 | [P039](problems/number-theory/P039-prime-product-plus-one-matching.md) | Perfect matchings with prime product plus one | number theory | candidate | high overlap: closely related 2020 MathOverflow bilinear prime pairing with two intervals and either sign |
-| [P040](problems/graph-theory/P040-coprime-matching-local-resilience.md) | Half-resilience of coprime perfect matchings | graph theory | candidate | unverified; Pomerance (2021) proves coprime matching existence but not sharp local deletion resilience |
+| [P040](problems/graph-theory/P040-coprime-matching-local-resilience.md) | Half-resilience of coprime perfect matchings | graph theory | candidate | unverified; original half-resilience conjecture disproved by finite-prime Hall cuts; true sharp limit unknown |
 <!-- CATALOG:END -->
 
 Browse and filter the same entries in the [searchable catalogue](docs/index.html).
