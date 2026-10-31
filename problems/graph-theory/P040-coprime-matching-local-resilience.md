@@ -45,14 +45,14 @@ Sharper constructions select specified exact small-prime-divisibility patterns. 
 
 The [coprime-density and reciprocal-totient moment theorem](../../theorems/P040-positive-resilience-lower-bound.md) gives
 
-$
+$$
 \boxed{
 \frac{16}{\pi^2}-\frac32
 \le\liminf_{n\to\infty}\rho_n
 \le\limsup_{n\to\infty}\rho_n
 \le\frac{914}{2145}.
 }
-$
+$$
 
 The new lower constant is approximately $0.12114$. The proof considers every possible Hall obstruction: intermediate-sized cuts are controlled by the global coprime-edge density $8/\pi^2$, while small cuts are controlled by a uniform fourth reciprocal moment of the prime-factor degree density. Thus the resilience does **not** tend to zero along any subsequence.
 
