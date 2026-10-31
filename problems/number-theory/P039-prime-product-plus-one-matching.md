@@ -30,4 +30,4 @@ A proof would require simultaneous Hall expansion for the bilinear prime relatio
 - Greenfield and Greenfield, *Some Problems of Combinatorial Number Theory Related to Bertrand's Postulate* (1998), prove the **prime-sum** analogue: https://cs.uwaterloo.ca/journals/JIS/green.html.
 - The recent paper *Coprime matchings of divisor sets* (Alekseyev, 2026), https://arxiv.org/abs/2610.37512, concerns relatively prime matched values, not primality of their product plus one.
 
-**Status:** candidate with substantial prior-art overlap, no claimed general proof or historical priority. **Editorial placement: The Seedbed.**
+**Status:** candidate with substantial prior-art overlap, no claimed general proof or historical priority. 
