@@ -3,7 +3,7 @@
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** Does the local matching resilience of the even–odd coprime graph converge, and is its value determined by finite-prime Hall obstructions?  
 > **Formulation:** candidate. **Novelty:** unverified; original half-resilience conjecture disproved by finite-prime Hall cuts; true sharp limit unknown.  
-> **Verified/known progress:** Proved 16/π²−3/2 ≤ liminf rho_n ≤ limsup rho_n ≤ 914/2145; sharp limit and finite-prime variational equality remain open.  
+> **Verified/known progress:** Proved 16/π²−3/2 ≤ liminf rho_n ≤ limsup rho_n ≤ 5163/12155; sharp limit and finite-prime variational equality remain open.  
 > **Finite evidence:** Full Hall-cut lower-bound proof using coprime density and fourth reciprocal-degree moment; exact modular upper certificates and finite values n≤10.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
@@ -31,13 +31,13 @@ An earlier formulation asked whether $\rho_n\to1/2$. A random nearly balanced Ha
 
 $$
 \boxed{\limsup_{n\to\infty}\rho_n
-\le\frac{914}{2145}
-=0.426107\ldots<\frac12.}
+\le\frac{5163}{12155}
+=0.424763\ldots<\frac12.}
 $$
 
 For an especially transparent example, let $S\subseteq E_n$ and $U\subseteq O_n$ consist of integers divisible by at least one of $3,5,7$. Both have $(19/35+o(1))n$ vertices. Deleting all coprime edges from $S$ to $U$ destroys every perfect matching by Hall's theorem, while every vertex loses at most $(7/15+o(1))$ of its original incident edges. This gives the elementary bound $\limsup\rho_n\le7/15$.
 
-Sharper constructions select specified exact small-prime-divisibility patterns. Four primes yield $71/165$; five primes yield $914/2145$. The underlying theorem converts each finite-prime pattern into an exact rational upper bound using a nonuniform product measure on prime supports. The calculations are reproduced by [an exact certificate program](../../experiments/P040_sieve_hall_obstructions.py).
+Sharper constructions select specified exact small-prime-divisibility patterns. Four primes yield $71/165$; five primes yield $914/2145$; six primes yield $5163/12155$. The underlying theorem converts each finite-prime pattern into an exact rational upper bound using a nonuniform product measure on prime supports. The calculations are reproduced by [an exact certificate program](../../experiments/P040_sieve_hall_obstructions.py).
 
 **These bounds are not claimed optimal.** The limit of $\rho_n$ may be smaller or may fail to exist. In particular, convergence to the finite-prime variational infimum has not been established.
 
@@ -50,7 +50,7 @@ $$
 \frac{16}{\pi^2}-\frac32
 \le\liminf_{n\to\infty}\rho_n
 \le\limsup_{n\to\infty}\rho_n
-\le\frac{914}{2145}.
+\le\frac{5163}{12155}.
 }
 $$
 
