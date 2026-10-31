@@ -78,21 +78,21 @@ A simple lower bound is $D(N)\ge r(N)$, where $r(N)$ counts small primes $p\le\s
 
 ## Corollary: unbounded deficit (from Pintz's theorem)
 
-$
+$$
 \boxed{\limsup_{N\to\infty}\bigl(2\pi(\sqrt N)-H(N)\bigr)=\infty.}
-$
+$$
 
 **Proof.** Fix an arbitrary integer $k\ge1$. Let $p_1<p_2<\cdots$ denote consecutive primes and $d_i=p_{i+1}-p_i$. Pintz's [Theorem 1 (2015)](https://arxiv.org/abs/1406.2658) supplies infinitely many indices $n$ with
 
-$
+$$
 d_{n+1}>2k\max(d_n,d_{n-1},\ldots,d_{n-k+1}).
-$
+$$
 
 Set $x=p_{n+1}$ and $g=d_{n+1}$, so the first prime greater than $x$ is $q_1=x+g$. The $k+1$ primes $p_{n-k+1},\ldots,p_{n+1}$ all lie in $[x-kM,x]$, where $M$ is the maximum of the preceding $k$ gaps. By the prime number theorem $g=o(x)$, so eventually
 
-$
+$$
 kM<g/2<\frac{xg}{x+g}=x-\frac{x^2}{q_1}.
-$
+$$
 
 Thus each of these $k+1$ primes $p$ satisfies $pq_1>x^2$. Consequently $r(x^2)\ge k+1$, and the previously proved graph-theoretic bound gives $D(x^2)\ge k+1$. Since $k$ was arbitrary, the deficit is unbounded. QED.
 
