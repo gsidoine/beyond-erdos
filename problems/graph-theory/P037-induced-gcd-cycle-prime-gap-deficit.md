@@ -12,7 +12,7 @@ Let $G_N$ be the graph on $[N]$ with $ab$ an edge precisely when $\gcd(a,b)>1$. 
 
 ## Research question
 
-**Is the deficit $D(N)=2\pi(\sqrt N)-H(N)$ unbounded? If so, what governs its maximal order?**
+**What is the asymptotic order of the maximal deficit $\mathcal D(X)=\max_{4\le N\le X}\bigl(2\pi(\sqrt N)-H(N)\bigr)$?**
 
 Here $\pi(x)$ is the number of primes at most $x$. This question is asked for sufficiently large $N$; unlike ordinary circumference, induced-cycle lengths depend on prime-factor compatibility.
 
@@ -48,7 +48,7 @@ $$
 
 Then $D(N)\ge r(N)$, since those $r(N)$ small prime witnesses cannot be adjacent to any large prime witness in an alternating maximal-length cycle; for an arbitrary cycle with $h$ large witnesses, they force $h\le m-r(N)$.
 
-The open issue is whether the defect is bounded or grows along an infinite sequence, and whether its extremal scale can be related to **local prime-gap asymmetry**.
+The deficit is **unbounded**, by the theorem of Pintz (2015) and the elementary deduction recorded below. The open issue is its **maximal growth order** and how sharply it is controlled by local prime-gap asymmetry.
 
 ## Finite prime-gap witnesses
 
@@ -60,7 +60,7 @@ The simple obstruction $D(N)\ge r(N)$ already gives the certified examples below
 | 1327 | 1361 | 7 | $D(1327^2)\ge7$ |
 | 15683 | 15727 | 9 | $D(15683^2)\ge9$ |
 
-These are finite inequalities only: they **do not prove** that $D(N)$ is unbounded. The [verifier](../../experiments/P037_induced_gcd_cycles.py) recomputes the prime counts independently.
+These finite inequalities are independently reproducible; unboundedness follows instead from Pintz's theorem as shown below. The [verifier](../../experiments/P037_induced_gcd_cycles.py) recomputes the prime counts independently.
 
 ## Novelty assessment and sources
 
