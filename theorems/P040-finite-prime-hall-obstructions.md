@@ -128,7 +128,7 @@ $$
 \right\}.
 $$
 
-The theorem proves $\limsup_n\rho_n\le\alpha_{\mathrm{sieve}}\le5163/12155$.
+The finite-prime theorem gives $\limsup_n\rho_n\le\alpha_{\mathrm{sieve}}$. The [fractional-sieve reduction and exact certificate](P040-fractional-sieve-variational.md) additionally give $\alpha_{\mathrm{sieve}}\le5/12$.
 **Neither convergence of $\rho_n$ nor equality with $\alpha_{\mathrm{sieve}}$ is established.** A matching lower bound would require quantitative Hall expansion beyond finite-prime-pattern obstructions.
 
 The extremal structure links degree-relative matching resilience to disjointness in nonuniform product measures on prime-support families. This is a substantive connection, but the general literature on biased intersecting families is extensive: see the $p$-biased intersecting-family extremal tradition and [Wu–Feng (2026)](https://arxiv.org/abs/2606.26521), alongside [Pomerance, *Coprime Matchings* (2021)](https://arxiv.org/abs/2111.07157). None of these sources is asserted to prove the particular bounds above or the remaining resilience problem. Historical novelty is **unverified**.

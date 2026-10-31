@@ -18,12 +18,12 @@ $$
 \frac{16}{\pi^2}-\frac32
 \le\liminf_{n\to\infty}\rho_n
 \le\limsup_{n\to\infty}\rho_n
-\le\frac{5163}{12155}.
+\le\frac5{12}.
 }
 $$
 
 The lower constant is $16/\pi^2-3/2=0.1211389\ldots>0$.
-The upper bound is the previously proved [finite-prime Hall-cut construction](P040-finite-prime-hall-obstructions.md).
+The upper bound follows from the [fractional-sieve reduction and exact three-prime certificate](P040-fractional-sieve-variational.md). The earlier integral constructions remain in the [finite-prime Hall-cut note](P040-finite-prime-hall-obstructions.md).
 Neither convergence of $\rho_n$ nor optimality of either constant is asserted.
 
 ### Lemma 1: edge density

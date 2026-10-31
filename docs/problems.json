@@ -991,8 +991,8 @@
       "question": "Does the local matching resilience of the even–odd coprime graph converge, and is its value determined by finite-prime Hall obstructions?",
       "status": "candidate",
       "novelty": "unverified; original half-resilience conjecture disproved by finite-prime Hall cuts; true sharp limit unknown",
-      "result": "Proved 16/π²−3/2 ≤ liminf rho_n ≤ limsup rho_n ≤ 5163/12155; sharp limit and finite-prime variational equality remain open",
-      "verification": "Full Hall-cut lower-bound proof using coprime density and fourth reciprocal-degree moment; exact modular upper certificates and finite values n≤10",
+      "result": "Proved 16/π²−3/2 ≤ liminf rho_n ≤ limsup rho_n ≤ 5/12; sharp limit and finite-prime variational equality remain open",
+      "verification": "Full Hall-cut lower-bound proof using coprime density and fourth reciprocal-degree moment; exact modular and fractional-sieve certificates and finite values n≤10",
       "priority": "high consequence; identify limiting resilience and characterize minimizing arithmetic Hall cuts",
       "sources": [
         {
