@@ -1,9 +1,9 @@
 # P037 — Prime gaps and induced cycles in the non-coprime graph
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** Is 2π(sqrt(N)) minus the longest induced-cycle length of the gcd>1 graph on [N] unbounded?  
-> **Formulation:** candidate. **Novelty:** unverified; prime-product reduction uses classical threshold-graph Hamiltonicity.  
-> **Verified/known progress:** Proved H(N)=(2+o(1))π(sqrt(N)), with an exact prime-product saturation criterion; deficit growth open.  
+> **Research question:** What is the maximal growth order of 2π(sqrt(N)) minus the longest induced-cycle length in the gcd>1 graph, for N≤X?  
+> **Formulation:** candidate. **Novelty:** unverified; unboundedness follows from Pintz (2015), general threshold-cycle theory is classical.  
+> **Verified/known progress:** Proved H(N)~2π(sqrt(N)) and exact saturation criterion; D(N) unbounded by Pintz (2015); quantitative maximal order unresolved.  
 > **Finite evidence:** Constructive prime-product cycles and finite saturation certificates.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
