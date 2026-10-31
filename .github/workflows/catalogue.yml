@@ -102,3 +102,12 @@ jobs:
 
       - name: Verify P037 prime-product induced cycles and saturation
         run: python experiments/P037_induced_gcd_cycles.py
+
+      - name: Verify P038 coprime induced matching construction
+        run: python experiments/P038_coprime_induced_matching.py
+
+      - name: Verify P039 prime-product-plus-one matching finite instances
+        run: python experiments/P039_prime_product_matchings.py
+
+      - name: Verify P040 coprime local matching resilience exact small cases
+        run: python experiments/P040_coprime_matching_resilience.py --max-n 9
