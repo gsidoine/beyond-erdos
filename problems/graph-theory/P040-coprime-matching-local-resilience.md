@@ -1,56 +1,49 @@
 # P040 — Local resilience of coprime perfect matchings
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** Does the even–odd coprime graph retain a perfect matching after any deletion of less than half of each vertex's incident edges?  
-> **Formulation:** candidate. **Novelty:** unverified; Pomerance (2021) proves coprime matching existence but not sharp local deletion resilience.  
-> **Verified/known progress:** Proved limsup of local matching resilience ≤1/2; exact Hall-obstruction values for n≤10.  
-> **Finite evidence:** Exhaustive Hall obstruction enumeration on balanced coprime graphs for n≤10.  
+> **Research question:** Does the local perfect-matching resilience of the even–odd coprime graph converge, and is its limit determined by finite-prime Hall obstructions?  
+> **Formulation:** candidate. **Novelty:** unverified; the former conjecture of a 1/2 limit is disproved by explicit arithmetic Hall cuts.  
+> **Verified/known progress:** A finite-prime conditional-density theorem gives limsup ρ_n ≤ 914/2145 < 1/2, refining a simple 7/15 obstruction.  
+> **Finite evidence:** Exact rational sieve certificates and exhaustive Hall-obstruction values for n≤10; a concrete n=1155 obstruction.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
-Let $B_n$ be the balanced bipartite graph with parts
+Let $B_n$ be the balanced bipartite graph between $E_n=\{2,4,\ldots,2n\}$ and $O_n=\{1,3,\ldots,2n-1\}$, joining $e\in E_n$ and $o\in O_n$ when $\gcd(e,o)=1$.
 
-$$
-E_n=\{2,4,\ldots,2n\},\qquad O_n=\{1,3,\ldots,2n-1\},
-$$
-
-where $eo$ is an edge if $\gcd(e,o)=1$. Define its **local matching resilience**
+Define its degree-relative perfect-matching resilience by
 
 $$
 \rho_n=\min_{\substack{F\subseteq E(B_n)\\B_n-F\text{ has no perfect matching}}}
 \max_{v\in V(B_n)}\frac{d_F(v)}{d_{B_n}(v)}.
 $$
 
-Here $E(B_n)$ denotes the **edge set** of the graph (the notation $E_n$ above is the even-vertex class).
-
 ## Research question
 
-**Does $\rho_n\to\frac12$?**
+**Does $\rho_n$ converge, and what determines its limiting value?** In particular, does it agree with the infimum of the finite-prime conditional-density Hall obstruction parameters developed in the [supporting theorem](../../theorems/P040-finite-prime-hall-obstructions.md)?
 
-Equivalently, for every fixed $\varepsilon>0$, does every subgraph obtained by retaining more than $(1/2+\varepsilon)$ of each vertex's original coprime neighbors still admit a perfect matching, for all sufficiently large $n$?
+This is a quantitative arithmetic matching question about the exact degree-relative cost of an adversarial Hall violation. It is not merely the known existence of a coprime perfect matching.
 
-The target is sharp if true; the elementary upper-bound argument below gives $\limsup\rho_n\le1/2$.
+## A disproved initial conjecture
 
-## A proved universal obstruction
+An earlier formulation asked whether $\rho_n\to1/2$. A random nearly balanced Hall cut gives the general upper bound $\limsup\rho_n\le1/2$, but **that bound is not sharp for the coprime graph**.
 
-**Proposition.** $\displaystyle \limsup_{n\to\infty}\rho_n\le\frac12$.
-
-**Proof.** For any positive integer $m\le2n$, inclusion–exclusion gives, uniformly,
+**Theorem (finite-prime Hall cuts).** The [complete argument](../../theorems/P040-finite-prime-hall-obstructions.md) establishes
 
 $$
-\#\{k\le n:\gcd(k,m)=1\}
-=n\frac{\varphi(m)}m+O(2^{\omega(m)}).
+\boxed{\limsup_{n\to\infty}\rho_n
+\le\frac{914}{2145}
+=0.426107\ldots<\frac12.}
 $$
 
-The standard estimates $\varphi(m)/m\gg1/\log\log(3m)$ and $2^{\omega(m)}=m^{o(1)}$ show that every vertex of $B_n$ has degree $\gg n/\log\log(3n)$. For an odd vertex $o$ this follows directly from $\gcd(2k,o)=1\iff\gcd(k,o)=1$. For an even vertex $e$, the same estimate applies to odd numbers up to $2n$ coprime to $e$.
+For an especially transparent example, let $S\subseteq E_n$ and $U\subseteq O_n$ consist of integers divisible by at least one of $3,5,7$. Both have $(19/35+o(1))n$ vertices. Deleting all coprime edges from $S$ to $U$ destroys every perfect matching by Hall's theorem, while every vertex loses at most $(7/15+o(1))$ of its original incident edges. This gives the elementary bound $\limsup\rho_n\le7/15$.
 
-Choose independently, uniformly sized vertex subsets $S\subset E_n$ and $T\subset O_n$, where $|S|=\lceil n/2\rceil$ and $|T|=|S|-1$. Delete **all edges from $S$ to $O_n\setminus T$**. The resulting graph violates Hall's condition because the neighborhood of $S$ is contained in the smaller set $T$.
+Sharper constructions select specified exact small-prime-divisibility patterns. Four primes yield $71/165$; five primes yield $914/2145$. The underlying theorem converts each finite-prime pattern into an exact rational upper bound using a nonuniform product measure on prime supports. The calculations are reproduced by [an exact certificate program](../../experiments/P040_sieve_hall_obstructions.py).
 
-For each affected vertex, the number of deleted incident edges is a hypergeometric random variable whose expectation is $(1/2+O(1/n))$ times its original degree. Since the minimum degree is $\gg n/\log\log n$, the hypergeometric concentration inequality and a union bound imply the existence of such $S,T$ with all relative deleted degrees at most $1/2+o(1)$. QED.
+**These bounds are not claimed optimal.** The limit of $\rho_n$ may be smaller or may fail to exist. In particular, convergence to the finite-prime variational infimum has not been established.
 
 ## Exact finite Hall search
 
-Hall's criterion reduces the resilience parameter to an explicit minimax problem over $S\subseteq E_n$, $T\subseteq O_n$ with $|T|=|S|-1$. It is sufficient to remove exactly the edges between $S$ and $O_n\setminus T$. The accompanying exhaustive search finds:
+Hall's criterion reduces $\rho_n$ to minimizing, over nonempty $S\subseteq E_n$ and $T\subseteq O_n$ with $|T|=|S|-1$, the largest degree-relative deletion fraction resulting from removing all edges between $S$ and $O_n\setminus T$. The [exhaustive verifier](../../experiments/P040_coprime_matching_resilience.py) yields:
 
 | $n$ | $\rho_n$ |
 |---:|---:|
@@ -64,15 +57,13 @@ Hall's criterion reduces the resilience parameter to an explicit minimax problem
 | 9 | $1/2$ |
 | 10 | $1/2$ |
 
-These are **exact finite computations**, not an asymptotic proof. No asymptotic lower bound near $1/2$ is established.
+The finite small-$n$ values do not predict the asymptotic behavior: fixed-modulus Hall obstructions only manifest their limiting proportions once the sample interval is sufficiently long.
 
-## Prior art and consequence
+## Literature and mathematical significance
 
-- Pomerance, [*Coprime Matchings*](https://math.dartmouth.edu/~carlp/coprime_int.pdf), *Integers* **21** (2021), proves perfect coprime matchings between sufficiently long intervals and, more strongly, the existence of at least one coprime edge between arbitrary large vertex sets satisfying a Hall-type sum condition. In particular, **plain existence of a matching is already a classical consequence**. That theorem does *not* assert survival after deleting nearly half of every vertex's edges.
-- Bohman and Peng's earlier interval-matching results, discussed in Pomerance (2021), are direct predecessors.
-- Ben-Shimon, Krivelevich and Sudakov, [*Local Resilience and Hamiltonicity Maker–Breaker Games in Random Regular Graphs*](https://doi.org/10.1017/S0963548310000685), develop the classical local-resilience framework for different graph families.
-- The 2023 paper [*On sufficient conditions for spanning structures in dense graphs*](https://doi.org/10.1112/plms.12552) discusses robust expansion and degree-sensitive Hamiltonicity conditions in general dense graphs.
+- Carl Pomerance, [*Coprime Matchings*](https://arxiv.org/abs/2111.07157) (2021), strengthens earlier work of Bohman–Peng on coprime interval matchings. Matching existence and certain Hall nonemptiness statements are established, but do not imply degree-relative resilience under arbitrary edge deletion.
+- Sah and Sawhney, [*Enumerating coprime permutations*](https://doi.org/10.1112/mtk.12159) (2022), exploit small-prime signatures and robust matching/absorption methods for counting coprime permutations.
+- The extremal theory of [nonuniform product-measure intersecting families](https://arxiv.org/abs/2606.26521) provides relevant disjointness-measure comparisons, but is not asserted to determine the present Hall-resilience constant.
+- General local matching resilience and adversarial edge-failure problems are established research areas; the present question fixes a specific arithmetic host graph.
 
-A positive resolution at the sharp constant would require genuinely **quantitative arithmetic Hall expansion** robust under adversarial deletions. It would strengthen the known coprime matching existence results rather than restate them.
-
-**Novelty gate:** the exact degree-relative resilience limit for this balanced arithmetic bipartite graph was not located in targeted searches. That does **not** establish historical originality. **Editorial placement: The Acorns**, selected because the question has a sharp benchmark, a short statement, explicit finite evidence and structural implications connecting sieve theory to extremal matching resilience.
+**Editorial scope.** This problem remains in **The Acorns** in the sharpened form of a quantitative arithmetic Hall-resilience question. The disproved $1/2$ conjecture is preserved as a mathematical negative result rather than presented as open. Historical originality of the sharper formulation and finite-prime bounds requires further specialist review.
