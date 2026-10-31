@@ -1,10 +1,10 @@
 # P046 — Sidon sets of primes under binary XOR
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** Can the primes in every sufficiently large dyadic interval contain an XOR-Sidon subset of size at least a constant times the square root of the interval length?
-> **Formulation:** candidate. **Novelty:** unverified; binary Sidon sets and APN functions are classical, prime-restricted extremal size needs comparison.
-> **Verified/known progress:** Internally proved 2^(m/2)/m << s_m <= 2^(m/2)+O(1) for primes in [2^m,2^(m+1)).
-> **Finite evidence:** Finite XOR Sidon/APN constructions and exhaustive translate-intersection checks for small m.
+> **Research question:** Can the primes in every sufficiently large dyadic interval contain an XOR-Sidon subset of size at least a constant times the square root of the interval length?  
+> **Formulation:** candidate. **Novelty:** unverified; binary Sidon sets and APN functions are classical, prime-restricted extremal size needs comparison.  
+> **Verified/known progress:** Internally proved 2^(m/2)/m << s_m <= 2^(m/2)+O(1) for primes in [2^m,2^(m+1)).  
+> **Finite evidence:** Finite XOR Sidon/APN constructions and exhaustive translate-intersection checks for small m.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
