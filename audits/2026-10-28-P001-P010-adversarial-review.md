@@ -6,7 +6,7 @@
 
 ## Executive decision
 
-**Freeze the portfolio at ten. Do not demote or promote an entire problem yet.** P007 needs a **mandatory attribution correction**: its fully graceful existence theorem is precisely known from 2021. P008 needs an **open-problem formulation correction**: the phrase "explicit formula for the centering" must define an admissible class of non-tautological expressions. P009 is **higher risk for being essentially a reformulation** of a classical prime-difference challenge, although its exact two-color matching statement was not found in prior sources.
+The ten entries were left unchanged after this review. P007 needs a **mandatory attribution correction**: its fully graceful existence theorem is precisely known from 2021. P008 needs an **open-problem formulation correction**: the phrase "explicit formula for the centering" must define an admissible class of non-tautological expressions. P009 is **higher risk for being essentially a reformulation** of a classical prime-difference challenge, although its exact two-color matching statement was not found in prior sources.
 
 | ID | Main question | Proof audit | Independent finite test | Priority / novelty risk |
 |---|---|---|---|---|
@@ -104,5 +104,5 @@ Let A=π(n)-π(n/2) count isolated primes >n/2 in the graph $H_n$ with edges gcd
 
 - Independently run code and review elementary algebra do not establish a new theorem's publication priority.
 - The full 1983 Erdős–Freud–Hegyvári paper and older graph-labeling / Golomb-ruler literature deserve a complete citation-chain audit; some PDF retrievals were inaccessible in this environment, so the whole bibliography was **not** exhaustively read.
-- *Do not add P011* or demote a full entry before: (i) independent specialist novelty check, (ii) code and proof scrutiny on the strong candidates, (iii) precise restatement of P008, and (iv) a choice between consolidating P002/P005 as a common program versus retaining separate hosts.
+- The following questions remained before extending the catalogue: (i) independent specialist novelty check, (ii) code and proof scrutiny on the strong candidates, (iii) precise restatement of P008, and (iv) a choice between consolidating P002/P005 as a common program versus retaining separate hosts.
 - Suggested theorem-first focus: **P003**, **P005**, **P010**. Suggested most likely status refinements: **P007**, **P008**, **P009**.
