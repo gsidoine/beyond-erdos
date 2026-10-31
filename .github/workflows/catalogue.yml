@@ -109,6 +109,9 @@ jobs:
       - name: Verify P039 prime-product-plus-one matching finite instances
         run: python experiments/P039_prime_product_matchings.py
 
+      - name: Cross-check P040 positive resilience lower-bound constants
+        run: python experiments/P040_positive_resilience_lower_bound.py
+
       - name: Verify P040 finite-prime Hall-cut counterexamples
         run: python experiments/P040_sieve_hall_obstructions.py
 
