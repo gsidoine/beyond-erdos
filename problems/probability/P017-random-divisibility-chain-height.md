@@ -70,6 +70,8 @@ Every integer corresponds to its vector of prime exponents; divisibility is coor
 
 The problem connects multiplicative number theory, random-poset height, branching processes and directed percolation without assuming the answer resembles the standard random Boolean lattice.
 
+The [random-order divisibility-chain problem P041](P041-random-order-divisibility-chains.md) studies a distinct model: all integers remain present and the temporal ordering is uniform, whereas the present problem retains each vertex independently and keeps the deterministic divisibility order.
+
 ## Closest literature and novelty limitations
 
 - **Kohayakawa, Kreuter and Osthus**, [*The length of random subsets of Boolean lattices*, Random Structures & Algorithms (2000)](https://doi.org/10.1002/%28SICI%291098-2418%28200003%2916%3A2%3C177%3A%3AAID-RSA4%3E3.0.CO;2-9) study longest chains after random deletion from the **Boolean lattice**, not the weighted multiplicative order on $[N]$.
