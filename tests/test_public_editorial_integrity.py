@@ -108,7 +108,7 @@ class PublicEditorialIntegrityTests(unittest.TestCase):
             page,
         )
         self.assertIn("The Acorns (13)", page)
-        self.assertIn("The Seedbed (27)", page)
+        self.assertIn("The Seedbed (28)", page)
 
 
 if __name__ == "__main__":
