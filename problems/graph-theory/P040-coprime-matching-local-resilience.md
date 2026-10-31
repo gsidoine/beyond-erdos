@@ -1,5 +1,13 @@
 # P040 — Local resilience of coprime perfect matchings
 
+<!-- DOSSIER-SUMMARY -->
+> **Research question:** Does the even–odd coprime graph retain a perfect matching after any deletion of less than half of each vertex's incident edges?  
+> **Formulation:** candidate. **Novelty:** unverified; Pomerance (2021) proves coprime matching existence but not sharp local deletion resilience.  
+> **Verified/known progress:** Proved limsup of local matching resilience ≤1/2; exact Hall-obstruction values for n≤10.  
+> **Finite evidence:** Exhaustive Hall obstruction enumeration on balanced coprime graphs for n≤10.  
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
+<!-- /DOSSIER-SUMMARY -->
+
 Let $B_n$ be the balanced bipartite graph with parts
 
 $$
