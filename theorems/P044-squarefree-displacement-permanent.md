@@ -14,7 +14,7 @@ In particular, $M(N)>0$ for all sufficiently large $N$.
 
 ### Proof
 
-Let $A_N$ be the $N\times N$ zero-one matrix with $(A_N)_{ij}=1$ exactly when $|i-j|$ is positive and squarefree. Then $M(N)=\operatorname{per}(A_N)$.
+Let $A_N$ be the $N\times N$ zero-one matrix with $(A_N)_{ij}=1$ exactly when $|i-j|$ is positive and squarefree. Then $M(N)=\mathrm{per}(A_N)$.
 
 The elementary squarefree-counting estimate is
 
@@ -63,7 +63,7 @@ As $12\eta(s-t)>2N\eta$, the required flow inequality follows. The integral max-
 Its adjacency matrix $B\le A_N$ has all row and column sums $k$. By the van der Waerden permanent inequality applied to $B/k$,
 
 $$
-\operatorname{per}(A_N)\ge\operatorname{per}(B)
+\mathrm{per}(A_N)\ge\mathrm{per}(B)
 \ge N!\left(\frac{k}{N}\right)^N.
 $$
 
@@ -76,7 +76,7 @@ $$
 For the reverse inequality, Brégman's theorem gives
 
 $$
-\operatorname{per}(A_N)\le
+\mathrm{per}(A_N)\le
 \prod_{i=1}^N(r_i!)^{1/r_i},
 $$
 
