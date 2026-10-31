@@ -1,1 +1,1 @@
-- `erdos-portrait.jpg`: portrait of Paul Erdős. Source/credit: Photo by George Csicsery from the documentary N is a Number 1993
+- `erdos-portrait.jpg`: portrait of Paul Erdős. Source: photograph by George Csicsery from the documentary *N Is a Number: A Portrait of Paul Erdős* (1993). Copyright © George Csicsery / Zala Films. Published photo credits identify this image as all rights reserved; an open redistribution license is not documented here. [Credit source](https://www.ams.org/books/mbk/063/mbk063-endmatter.pdf)
