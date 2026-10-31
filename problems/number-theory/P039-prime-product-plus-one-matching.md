@@ -1,5 +1,13 @@
 # P039 — Prime-plus-one product matchings
 
+<!-- DOSSIER-SUMMARY -->
+> **Research question:** Can [2n] always be paired so that the product of each pair plus one is prime?  
+> **Formulation:** candidate. **Novelty:** high overlap: closely related 2020 MathOverflow bilinear prime pairing with two intervals and either sign.  
+> **Verified/known progress:** Perfect matching verified for even N≤200 and N=250,300,400; general Hall condition unproved.  
+> **Finite evidence:** Exact sieve-backed bipartite matching certificates.  
+> **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
+<!-- /DOSSIER-SUMMARY -->
+
 For every even integer $N$, let $B_N$ be the bipartite graph between the odd and even integers in $[N]$, with an edge $ab$ when $ab+1$ is prime.
 
 ## Research question
