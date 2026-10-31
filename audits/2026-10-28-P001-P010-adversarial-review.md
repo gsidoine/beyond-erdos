@@ -1,7 +1,7 @@
-# Beyond Erdős — Adversarial proof, computation, and novelty audit of P001–P010
+# Meta Erdős — Adversarial proof, computation, and novelty audit of P001–P010
 
 **Date:** 2026-10-28  
-**Audited baseline:** P001–P010 in `gsidoine/beyond-erdos` (PR #5 merged; PR #4's comprehensive earlier literature audit was still pending at audit start).  
+**Audited baseline:** The initial P001–P010 repository snapshot (PR #5 merged; PR #4's comprehensive earlier literature audit was still pending at audit start).  
 **Method:** independent implementation of finite checks, line-by-line checks of the principal elementary proofs, attempts to find quick obstructions, and targeted source/equivalence searches. This is **not peer review, formal verification, an exhaustive MathSciNet/zbMATH review, or a certification of originality**.
 
 ## Executive decision
