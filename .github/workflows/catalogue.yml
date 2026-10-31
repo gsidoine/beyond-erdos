@@ -99,3 +99,6 @@ jobs:
 
       - name: Verify P036 Pasch overlap rank conditions
         run: python experiments/P036_pasch_overlap_ranks.py
+
+      - name: Verify P037 prime-product induced cycles and saturation
+        run: python experiments/P037_induced_gcd_cycles.py

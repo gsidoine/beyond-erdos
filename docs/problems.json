@@ -905,6 +905,37 @@
         }
       ],
       "portfolio_tier": "C"
+    },
+    {
+      "id": "P037",
+      "title": "Prime-gap deficit of induced cycles in the non-coprime graph",
+      "area": "graph theory",
+      "file": "problems/graph-theory/P037-induced-gcd-cycle-prime-gap-deficit.md",
+      "question": "What is the maximal growth order of 2π(sqrt(N)) minus the longest induced-cycle length in the gcd>1 graph, for N≤X?",
+      "status": "candidate",
+      "novelty": "unverified; unboundedness follows from Pintz (2015), general threshold-cycle theory is classical",
+      "result": "Proved H(N)~2π(sqrt(N)) and exact saturation criterion; D(N) unbounded by Pintz (2015); quantitative maximal order unresolved",
+      "verification": "Constructive prime-product cycles and finite saturation certificates",
+      "priority": "explore fine prime-gap fluctuations, not leading-order asymptotic",
+      "sources": [
+        {
+          "name": "Mahadev–Peled longest cycles in threshold graphs (1994)",
+          "url": "https://doi.org/10.1016/0012-365X(93)E0077-H"
+        },
+        {
+          "name": "Harary–Peled Hamiltonian threshold graphs (1987)",
+          "url": "https://doi.org/10.1016/0166-218X(87)90050-3"
+        },
+        {
+          "name": "Rilwan–Sameema–Oli non-coprime graph of integers (2020)",
+          "url": "https://doi.org/10.14445/22315373/IJMTT-V66I2P513"
+        },
+        {
+          "name": "Pintz (2015), ratio of consecutive prime gaps, Theorem 1",
+          "url": "https://doi.org/10.1007/978-3-319-22240-0_17"
+        }
+      ],
+      "portfolio_tier": "C"
     }
   ],
   "catalogue_policy": "Open to community contributions; proposed additions and status changes require source review"
