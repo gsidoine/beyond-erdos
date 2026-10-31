@@ -72,7 +72,7 @@ Indeed, removing a vertex from an induced cycle of length $H(N)$ leaves an induc
 
 ## Arithmetic consequence and scope
 
-For the deficit $D(N)=2\pi(\sqrt N)-H(N)$, Theorem 2 gives $D(N)=o(\pi(\sqrt N))$. Theorem 3 provides a precise prime-product test for $D(N)=0$. The boundedness or unboundedness of $D(N)$ is not established here.
+For the deficit $D(N)=2\pi(\sqrt N)-H(N)$, Theorem 2 gives $D(N)=o(\pi(\sqrt N))$. Theorem 3 provides a precise prime-product test for $D(N)=0$. The unboundedness of $D(N)$ follows from Pintz's 2015 prime-gap theorem, as proved below. The **maximal growth order** of $D(N)$ remains undetermined in this dossier.
 
 A simple lower bound is $D(N)\ge r(N)$, where $r(N)$ counts small primes $p\le\sqrt N$ with $pq_1>N$ and $q_1$ is the first prime above $\sqrt N$: such small primes cannot neighbor any large witness, so at most $m-r(N)$ large witnesses can occur on a cycle.
 
