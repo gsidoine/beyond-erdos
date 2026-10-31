@@ -117,6 +117,10 @@ jobs:
 
       - name: Verify P040 fractional-sieve rational certificate
         run: python experiments/P040_fractional_sieve_certificate.py
+      - name: Verify P043 prime-denominator Farey structural identities
+        run: python experiments/P043_prime_farey_components.py
+      - name: Verify P044 squarefree-displacement exact permanents
+        run: python experiments/P044_squarefree_displacement_permanent.py
       - name: Verify P042 one-carry graph and Hamiltonian witnesses
         run: python experiments/P042_kummer_carry_graph.py
       - name: Verify P041 random-order divisibility finite cases
