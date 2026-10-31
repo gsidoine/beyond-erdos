@@ -88,8 +88,8 @@ All neighboring numbers are coprime, and there are 7 distinct differences, attai
 Graceful path labelings and prime labelings of paths are classical topics, and the coprime graph is well studied. A targeted search found no exact statement of this **maximum-distinct-difference** parameter, but no exhaustive synonym/equivalence audit has been performed. It may already be known. Related sources are recorded in the dated literature audit.
 
 
-## Consolidation disposition (P001–P035 audit)
+## Relation to existing results
 
-**Disposition — retain only the extremal reframe.** Prime-graceful path existence is established by Panma–Rochanakul (2021). Do not submit Proposition 1 as a new theorem. The parameter D(n) is the sole remaining candidate; survey maximum-partial-graceful labelings before calling it new.
+The existence of prime-graceful paths was determined by Panma–Rochanakul (2021). The remaining question concerns the extremal number of distinct differences, whose relation to partial graceful labeling remains to be determined.
 
-This is a priority/novelty gate, not an independently refereed claim about whether the surviving problem is open.
+

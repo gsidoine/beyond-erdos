@@ -4,13 +4,13 @@
 
 ## Research decision
 
-Maintain the freeze at P001–P020. Prioritize mathematically meaningful questions that remain **clearly separated** from exact published predecessors. Place **P015** under especially high source-collision risk, preserve **P018** and **P020** only as **precisely scoped** new observables, and preserve **P016** as an *apparently distinct* hereditary complex, rather than claiming to invent Sidon/topological methods.
+The distinctions between the P001–P020 questions and established results require theorem-level comparisons. Place **P015** under especially high source-collision risk, preserve **P018** and **P020** only as **precisely scoped** new observables, and preserve **P016** as an *apparently distinct* hereditary complex, rather than claiming to invent Sidon/topological methods.
 
 The following comparisons were made from source-level publication text where accessible, not only title similarities. The unavailable full text of the August 2026 P015 preprint is an explicit limitation.
 
 ## P015: what the 2025 and 2026 triangulation papers do (and do not) establish
 
-Our [P015](../problems/geometry/P015-odd-area-lattice-triangulations.md) asks about **arbitrary fixed four-color sequences** around a convex polygon; each triangular face must use three pairwise distinct colors. The four colors are the reductions of lattice vertices modulo 2.
+[P015](../problems/geometry/P015-odd-area-lattice-triangulations.md) asks about **arbitrary fixed four-color sequences** around a convex polygon; each triangular face must use three pairwise distinct colors. The four colors are the reductions of lattice vertices modulo 2.
 
 1. **Debrohim, Sasaki, Nunes (26 August 2026)**, [*Cyclically Colored Triangulations: Enumeration and Connectedness of Reconfiguration Graphs*](https://arxiv.org/abs/2608.26006), establishes valid-flip connectivity for **cyclically repeated $j$-colorings, $j\ge4$**. This gives a genuine **settled subfamily** of P015. The available abstract does **not** assert arbitrary four-color patterns are connected. We could not obtain all full-text proofs in this pass; therefore the possibility that an argument extends immediately remains unresolved. **Do not claim P015 fully open or fully solved.**
 2. **Acharya, Mütze, Verciani (2025)**, [*Flips in colorful triangulations*](https://doi.org/10.20382/jocg.v16i1a9), proves connectivity/Hamiltonicity for various **two-color** vertex patterns where each triangle must contain **both** colors (no monochromatic triangle). Their "arbitrary coloring pattern with at least 10 changes" result is a two-color statement; it is **not the three-distinct-out-of-four constraint** in P015.
@@ -81,6 +81,6 @@ The reviewed manuscript is a **two-page A4 PDF** with title **The Minimum Number
 
 ## Decision
 
-The present consolidation pass finds **no evidence compelling us to delete a permanent ID immediately**. It does sharpen the distinction between a **proved known subcase**, an **existing mathematical object**, a **plausibly distinct new observable**, and a **certified historical open problem**. We have not yet certified the final category for any of the twenty.
+The comparison does not identify an exact published equivalent of every remaining question. It does sharpen the distinction between a **proved known subcase**, an **existing mathematical object**, a **plausibly distinct new observable**, and a **certified historical open problem**. We have not yet certified the final category for any of the twenty.
 
 Next source-level priorities: P008's arithmetic critical-window proof versus general deterministic-host percolation, P003's exact arithmetic factor-cut inequalities versus known prime-sum expansion, and P017's divisor-poset random height versus existing percolation time constants. **Keep P021+ frozen.**

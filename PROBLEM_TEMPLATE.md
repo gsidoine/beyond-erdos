@@ -1,49 +1,38 @@
-# PXXX — Short descriptive mathematical title
+# PXXX — Mathematical title
 
-**Area:** [subject]  
-**Formulation status:** candidate / reframe / needs specification / proved internally  
-**Novelty:** scope of source verification; not certified unless independently established  
-**Origin:** precise attribution; never label as an Erdős problem unless Erdős actually posed it
+**Subject:** [area]  
+**Status:** [candidate / reframe / needs specification / proved internally]
 
-## Statement
+## Problem
 
-Define every mathematical object first. Then state the question in one sentence or display. Avoid words such as "explicit" unless the allowed class is defined.
+Let [definitions and hypotheses].
 
-## Why it matters
+**Question.** [Precise mathematical statement.]
 
-Give the minimal motivating example, the nearby historical problem and the distinctive mathematical content.
+## Known results
 
-## Theorems already proved
+**Proposition.** [Statement.]
 
-**Proposition.** [Statement]  
-**Proof.** [Full proof with precise scope and assumptions.]
+**Proof.** [Argument, including conditions and exceptional cases.]
 
-For previously known theorems, give the original citation rather than implying new priority.
+Include established theorems with attribution and exact references. Distinguish consequences of known results from independent arguments.
 
-## Finite experiments (not proofs)
+## Examples and obstructions
 
-| Parameter | Result | Method / certification |
-|---|---|---|
-| ... | ... | solver status, gap, seed, and reproducibility |
+[Small cases, counterexamples, necessary conditions, reductions, or useful negative results.]
 
-Commands, source filenames, versions and hardware when relevant. Do not extrapolate.
+## Computation
 
-## Adversarial falsification
+[Finite parameters, method, implementation, exact certificates or numerical error bounds, and reproducibility instructions. Omit if not applicable.]
 
-What counterexamples, invariants, and exact reformulations were tested? What failed? Are there easy degenerate or impossible cases?
+## Relation to earlier work
 
-## Closest prior art / novelty audit
+[The closest mathematical statements in the literature, with a description of their scope and the unresolved distinction.]
 
-Cite **primary** mathematical references and state *exactly* which assertions they prove and which they do not. Record search terminology, accessible sources, and the exact mathematical distinction. Distinguish "not found" from "open".
+## Open cases
 
-## Remaining gap and next research step
+[Remaining precise questions.]
 
-State the precise theorem/obstruction needed. Avoid speculative significance claims.
+## References
 
-## Attribution and changes
-
-Credit earlier results and summarize substantial changes when relevant; Git history preserves individual revisions.
-
-## Markdown equations
-
-For mathematical notation use GitHub-compatible MathJax **inline** `$x^2$` and **display** `$$` blocks separated from text by blank lines. Avoid `\\(...\\)` and `\\[...\\]`. Code examples belong inside fenced code blocks, not mathematical delimiters.
+[Bibliographic entries and stable links.]

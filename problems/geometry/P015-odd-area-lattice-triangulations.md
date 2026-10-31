@@ -78,16 +78,16 @@ The **2025 arbitrary-pattern colorful-triangulation result** of Acharya–Mütze
 
 See the [source-level comparison](../../audits/2026-10-29-P015-P016-P018-P020-source-comparison-and-P010-snapshot.md). No complete full-text proof comparison with the 2026 preprint was possible during this pass.
 
-## Next falsification, without a proof-first agenda
+## Remaining cases
 
 1. Exhaustively verify the graph for every four-color pattern with $n=10$ using dynamic state-space enumeration and color-class/dihedral symmetries.
 2. Search for configurations that have a frozen triangulation despite using four parity residues.
 3. Read the proof in Debrohim–Sasaki–Nunes (2026), specifically whether the cyclic hypothesis is essential or merely expositional.
-4. If connectedness is already known, retain the arithmetic translation as a note and **demote** the conjecture rather than claim novelty.
+4. If a general connectivity theorem covers these patterns, the parity translation supplies a reformulation rather than a distinct conjecture.
 
 
-## Consolidation disposition (P001–P035 audit)
+## Relation to existing results
 
 **Disposition — source gate, downgrade apparent novelty.** The mod-2 parity reduction is elementary and connectedness of colored triangulation flip graphs has prior literature. Require an exact theorem-by-theorem comparison of allowed polygons, cyclic colorings, residue classes and flip constraints before retaining a genuinely distinct formulation.
 
-This is a priority/novelty gate, not an independently refereed claim about whether the surviving problem is open.
+

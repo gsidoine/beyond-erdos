@@ -46,7 +46,7 @@ Each candidate graph was checked for connectivity after deletion of each individ
 
 The complete prime-sum graph and its Hamiltonian questions have an established literature, including [Chen–Fu–Guo (2021)](https://doi.org/10.1007/s00373-020-02241-1) and [Croot–Jin (2026)](https://doi.org/10.1007/s00373-025-02999-2). The existing [P033](P033-prime-sum-three-palette.md) deals with **connectivity** using three labels; that does not imply 2-vertex-connectivity. In particular, central three-sum palettes with one sum above n typically give vertex n degree one.
 
-This dossier proposes the *sparse-label 2-vertex-connectivity extremum*, not a novel prime-sum host graph or a claim about Hamiltonian cycles. A specialist priority check against rainbow/Hamiltonian prime-set literature remains mandatory.
+The remaining question concerns the *sparse-label 2-vertex-connectivity extremum*; the prime-sum graph itself is an established object. A specialist priority check against rainbow/Hamiltonian prime-set literature remains mandatory.
 
 ## Falsification and research plan
 

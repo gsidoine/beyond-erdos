@@ -70,11 +70,9 @@ The combination is a plausible **new formulation**, not a certified new or open 
 Either prove $\liminf \chi_{\mathrm{PS}}(N)/\sqrt N>1$, or produce colorings with $(1+o(1))\sqrt N$ colors. More modestly, improve the elementary $1+\sqrt2$ upper constant without merely changing the dyadic cutoff.
 
 
-## Consolidation disposition (P001–P035 audit)
+## Relation to existing results
 
-**Disposition — source gate.** The Sidon partition theorem SR(k)=k²+o(k²) is established by Espinosa-García et al. (2024), Theorem 1, DOI 10.1007/s40590-024-00676-7. Our dyadic bound is a combination of classical coloring and primitive-band observations, not an original foundational theorem. Originality of the simultaneous constraint remains unverified.
-
-This is a priority/novelty gate, not an independently refereed claim about whether the surviving problem is open.
+**Known comparison.** The Sidon partition theorem SR(k)=k²+o(k²) is established by Espinosa-García et al. (2024), Theorem 1, DOI 10.1007/s40590-024-00676-7. The dyadic bound is a combination of classical coloring and primitive-band observations, not an original foundational theorem. Originality of the simultaneous constraint remains unverified.
 
 
 ## Related resolved extremal question (distinct from the coloring problem)

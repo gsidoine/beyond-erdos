@@ -2,11 +2,11 @@
 
 **Date:** 29 October 2026  
 **Coverage:** P008, P015, P018, P020; directly related [P010 manuscript policy audit](../manuscripts/P010-2026-10-29-submission-snapshot-and-policy-audit.md).  
-**Status:** targeted mathematical and bibliographic checks only. The 20-problem freeze remains in force.
+**Scope:** Mathematical and bibliographic comparisons for the indicated entries.
 
 ## P015: distinction from recent colored-triangulation theorems
 
-**Our object:** any strictly convex lattice polygon with an **arbitrary** cyclic sequence of the four parity classes in $(\mathbb Z/2\mathbb Z)^2$. All triangular faces must have **three different** parity classes. Edges of the configuration graph are **diagonal flips** preserving the three-distinct-class constraint.
+**Problem under consideration:** any strictly convex lattice polygon with an **arbitrary** cyclic sequence of the four parity classes in $(\mathbb Z/2\mathbb Z)^2$. All triangular faces must have **three different** parity classes. Edges of the configuration graph are **diagonal flips** preserving the three-distinct-class constraint.
 
 **Nearest direct results:**
 
@@ -48,7 +48,7 @@ Additional recent nearby sources:
 
 **Editorial decision:** retain P020 as high-upside conditional flagship, but *do not* claim that its full distribution is novel until specialists rule out known random-Hankel / linear-recurrence / moment-matrix Smith forms.
 
-## P008: precise rephrasing is the next editorial need
+## P008: precision of the formulation
 
 An implicit critical center $b_n$ defined by
 

@@ -1,4 +1,4 @@
-# P001–P025 historical-priority gate: source distinctions and further work
+# P001–P025: comparison with published results
 
 **Historical snapshot:** This review predates the complete 30-entry catalogue and the public upload of the P010 PDF. For current mathematical priorities use the [P001–P030 consolidated review](portfolio-consolidation-P001-P030.md); the submitted document is now at [manuscripts/P010/coprime_adjacencies.pdf](../manuscripts/P010/coprime_adjacencies.pdf). The file-path instructions that followed its original creation are superseded.
 
@@ -9,7 +9,7 @@
 
 This is a follow-up to the [first twenty-problem consolidation](../audits/2026-10-29-P001-P020-first-collection-consolidation.md) and the [seven-to-four flagship source comparison](../audits/2026-10-29-flagship-source-comparison-and-shortlist.md). It explicitly identifies high-risk overlaps rather than silently treating each question as independently new.
 
-## What is newly established during this pass?
+## Mathematical conclusions
 
 1. **P025 historical collision caught immediately:** [Erdős–Freud–Hegyvári (1983)](https://users.renyi.hu/~p_erdos/1983-02.pdf), **Theorem 1**, already proves $\min_{\text{linear permutations}}\max\mathrm{lcm}(a_i,a_{i+1})\sim N^2/(4\log N)$. [OEIS A064764](https://oeis.org/A064764) records this exact linear statistic. P025 must be limited to the **cyclic closing-edge** variation and held at high-risk, not sold as a new leading asymptotic question.
 2. **P020 source-derived theorem and group law:** [Yiasemides (2024), Theorem 2.4.4 and Remark 2.4.6](https://doi.org/10.1007/s40687-023-00418-7), imply that the kernel of **any finite-field square Hankel matrix** of corank $k$ has form $A\mathbb F_q[z]_{\le k-1}$: the second characteristic polynomial in the general *rectangular* classification disappears for a square matrix. Hence the kernel-product span has dimension **exactly $2k-1$**, for every $k$, not just the small exhaustive checks. This is a **corollary of published mathematics**, not an original kernel theorem. First-order lifts of Haar $p$-adic Hankel matrices are therefore **uniform Hankel**, not uniform unrestricted symmetric, and yield [new internally proved formulas for every elementary abelian cokernel](../theorems/P020-elementary-abelian-cokernel-laws.md). Higher-exponent three-generator laws remain unresolved; neither the finite-field theorem nor first-order lifting proves full convergence.
@@ -61,7 +61,7 @@ Several entries above are backed by checking titles, abstracts and selected theo
 - P021 and P023 have the strongest conceptual upside *among the five newly proposed*, but both need specialist anti-duplication checks.
 - P025 currently **fails a strong novelty gate** for its leading asymptotic: the known linear theorem gives the correct leading scale and coefficient, and closing the cycle may cost nothing asymptotically. Preserve the permanent ID but do not feature it until this is resolved.
 - The P020 polynomial-product rank equality is **proved as an elementary corollary of Yiasemides's existing kernel theorem**. First-order Hankel lifting gives exact laws for all elementary abelian $p$-group cokernels, but **not the complete higher-exponent $p$-group distribution**.
-- **Freeze further IDs after P025**, then run a fresh 25-entry consolidation and independent proof/priority review. Do not claim 25 original open problems.
+- The comparison concerns P001–P025. No general assertion about the originality or unresolved status of all twenty-five questions follows.
 
 ## Exact P010 submitted-manuscript provenance
 

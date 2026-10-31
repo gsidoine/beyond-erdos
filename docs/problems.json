@@ -985,7 +985,7 @@
     },
     {
       "id": "P040",
-      "title": "Half-resilience of coprime perfect matchings",
+      "title": "Local resilience of coprime perfect matchings",
       "area": "graph theory",
       "file": "problems/graph-theory/P040-coprime-matching-local-resilience.md",
       "question": "Does the local matching resilience of the even–odd coprime graph converge, and is its value determined by finite-prime Hall obstructions?",

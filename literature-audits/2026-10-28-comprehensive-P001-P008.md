@@ -140,7 +140,7 @@ Before claiming openness, define the desired finite expansion class (e.g. explic
 
 1. **Source attribution is mandatory**: P007's iff theorem was already published in 2021; P001–P003 arise from the 1998 combinatorial Bertrand literature; P002/P005 use established switching theory.
 2. **Prioritise credible exact novelty:** P005 and P006 appear most worth a separate specialized literature audit; P001 and P003 have clear arithmetic structure but need counterexample/expansion audits; P008 needs a full external probability-theory audit before any announcement.
-3. **No false certification:** As of this pass, **none of the eight full candidate questions is certified as previously unknown and unresolved** by a comprehensive scholarly search. P007's full-graceful subproblem is **positively known to be resolved**.
+3. **No false certification:** The literature comparison does not establish historical originality or unresolved status for all eight questions by a comprehensive scholarly search. P007's full-graceful subproblem is **positively known to be resolved**.
 4. **External follow-up:** search MathSciNet/zbMATH with MSC 05C70, 05C78, 05C80, 11B13, 11B30; ask a graph-labeling specialist about P007, a matching reconfiguration specialist about P002/P005, and a probabilistic combinatorialist about P008.
 
 ### Database provenance

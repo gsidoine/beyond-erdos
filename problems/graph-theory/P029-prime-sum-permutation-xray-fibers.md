@@ -43,13 +43,13 @@ both have histogram {3,5,5,7}; they differ in **all four positions**. The fiber 
 
 **High redundancy risk:** a known Markov basis for the anti-diagonal permutation matrix fibers may settle bounded connectivity, either with or without prime restriction. Check toric presentations and the exact swap support before flagship promotion. There is no assertion that the restricted question is independently open.
 
-## Immediate next checks
+## Finite cases and open questions
 
 Compute R_{n,c}^{(3)}, R_{n,c}^{(4)}, … for the small fibers and test whether prime support requires larger moves than unrestricted tomography. Distinguish (i) preserving the X-ray after every move from (ii) merely preserving it at the endpoints.
 
 
-## Consolidation disposition (P001–P035 audit)
+## Relation to existing results
 
-**Disposition — source gate, likely discrete-tomography overlap.** The anti-diagonal X-ray invariant and fiber switches predate this project. Unless the restriction to prime-supported permutations yields a new theorem or a demonstrably different obstruction, this should be demoted from active investigation to historical incubation.
+Anti-diagonal X-ray invariants and fiber moves are established objects of discrete tomography. The distinction of interest is the restriction to prime-supported permutations and the move size required within those fibers.
 
-This is a priority/novelty gate, not an independently refereed claim about whether the surviving problem is open.
+
