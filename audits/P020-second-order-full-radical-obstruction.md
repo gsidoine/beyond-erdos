@@ -34,7 +34,7 @@ $$
 \end{cases}}
 $$
 
-For $j=0$ this is the existing elementary-abelian law. For $1\le j<k$ the novelty in this pass is extending the *second-order residual-kernel* argument beyond dimension two. For $j=k$, in particular,
+For $j=0$ this is the existing elementary-abelian law. For $1\le j<k$ the second-order residual-kernel argument extends beyond dimension two. For $j=k$, in particular,
 
 $$
 \boxed{\Pr(C_n\simeq(\mathbb Z/p^2)^k)=
