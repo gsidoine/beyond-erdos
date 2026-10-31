@@ -70,7 +70,9 @@ $$
 29,1,13,10,3,26,21,6,5,25,22,17,30,16,31.
 $$
 
-The [independent finite verifier](../experiments/P042_kummer_carry_graph.py) checks both paths against binomial valuations (using binary digit sums and direct binomial arithmetic), the exact edge counts and the graph connectivity for $2\le m\le8$. These are finite witnesses, not an induction proof.
+Further complete paths for $m=6,7,8$ (respectively 63, 127, and 255 vertices) are preserved as [explicit integer certificates](../experiments/P042_one_carry_hamiltonian_witnesses.json). Each lists the vertices in path order and has been checked to contain each vertex exactly once and to have exactly one binary carry at each step.
+
+The [independent finite verifier](../experiments/P042_kummer_carry_graph.py) checks the listed paths against binomial valuations (using binary digit sums and direct binomial arithmetic), the exact edge counts and the graph connectivity for $2\le m\le8$. These are finite witnesses, not an induction proof.
 
 ## Open question
 
