@@ -50,6 +50,12 @@ Then $D(N)\ge r(N)$, since those $r(N)$ small prime witnesses cannot be adjacent
 
 The deficit is **unbounded**, by the theorem of Pintz (2015) and the elementary deduction recorded below. The open issue is its **maximal growth order** and how sharply it is controlled by local prime-gap asymmetry.
 
+## Known unboundedness consequence of prime-gap theory
+
+Pintz, [*On the ratio of consecutive gaps between primes*](https://doi.org/10.1007/978-3-319-22240-0_17) (2015), Theorem 1, proves that a prime gap can be arbitrarily large compared with each of the preceding $k$ gaps, for every fixed $k$. Setting $N=p^2$ at the prime $p$ immediately preceding that unusually large gap gives $r(N)\ge k$ and therefore $D(N)\ge k$. See the [complete deduction](../../theorems/P037-induced-gcd-cycles.md).
+
+Accordingly, **unboundedness is not asserted as a new problem**. The remaining question concerns the asymptotic growth of $\mathcal D(X)$ and the precision of known prime-gap bounds as transferred through the prime-product graph.
+
 ## Finite prime-gap witnesses
 
 The simple obstruction $D(N)\ge r(N)$ already gives the certified examples below, with $N=x^2$:
