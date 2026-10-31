@@ -38,7 +38,7 @@ All six vertices have degree two. Let $X_N$ count parameter triples for which al
    Consequently, the probability that the Schur hypergraph contains a nonempty 2-core has asymptotic lower bound
 
    $$
-   \liminf_{N\to\infty}\Pr(\operatorname{core}_2\ne\varnothing)
+   \liminf_{N\to\infty}\Pr(\mathrm{core}_2\ne\varnothing)
    \ge1-\exp(-10^{-6}c^6).
    $$
 
@@ -82,7 +82,7 @@ At $p=cN^{-1/2}$ both tend to zero. Since $\mathbb E X_N\to10^{-6}c^6$, the Pois
 For $pN^{1/2}\to\infty$, the covariance calculation gives
 
 $$
-\frac{\operatorname{Var}(X_N)}{(\mathbb EX_N)^2}
+\frac{\mathrm{Var}(X_N)}{(\mathbb EX_N)^2}
 \le\frac1{\mathbb EX_N}
 +O\left(\frac1{Np}+\frac1{N^2p^2}+\frac1{N^2p^3}\right)=o(1).
 $$
