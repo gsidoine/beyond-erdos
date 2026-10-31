@@ -1046,7 +1046,7 @@
       "status": "candidate",
       "novelty": "unverified; Kummer's theorem and digital carry combinatorics are classical, precise Hamiltonian question requires specialist review",
       "result": "Internally proved connectivity for all m>=4, precisely two forced leaves, and |E|=((m+2)3^(m-2)-m)/2; Hamiltonicity remains open",
-      "verification": "Complete edge and connectivity checks for m=2..8; explicit Hamiltonian paths for m=4,5 checked against carries and binomial valuations",
+      "verification": "Complete edge and connectivity checks for m=2..8; explicit Hamiltonian paths for m=4..8 checked against carries and binomial valuations",
       "priority": "test Hamiltonian-path existence with its two forced endpoints and identify an inductive structure",
       "sources": [
         {
