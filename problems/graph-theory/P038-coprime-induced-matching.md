@@ -41,4 +41,4 @@ The proof combines the classical Bollobás inequality with an explicit blockwise
 - *Variations on the Bollobás set-pair theorem* (2024): https://doi.org/10.1016/j.ejc.2024.103983.
 - Erdős–Sárközy (1997), *On cycles in the coprime graph of integers*: https://www.combinatorics.org/ojs/index.php/eljc/article/download/v4i2r8/pdf/.
 
-The exact arithmetic induced-matching asymptotic was not found in a targeted literature search, but the general set-pair mechanism is classical. The main remaining research issue concerns the fine cost of representing complementary set systems by integer prime products. **Historical novelty unverified. Editorial placement: The Seedbed.**
+The exact arithmetic induced-matching asymptotic was not found in a targeted literature search, but the general set-pair mechanism is classical. The main remaining research issue concerns the fine cost of representing complementary set systems by integer prime products. The finer extremal problem has not been identified in the cited sources.
