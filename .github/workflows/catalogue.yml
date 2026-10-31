@@ -117,6 +117,8 @@ jobs:
 
       - name: Verify P040 fractional-sieve rational certificate
         run: python experiments/P040_fractional_sieve_certificate.py
+      - name: Verify P042 one-carry graph and Hamiltonian witnesses
+        run: python experiments/P042_kummer_carry_graph.py
       - name: Verify P041 random-order divisibility finite cases
         run: python experiments/P041_random_divisibility_order.py
       - name: Verify P040 coprime local matching resilience exact small cases
