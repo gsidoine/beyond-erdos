@@ -1,10 +1,10 @@
 # P041 — Random-order divisibility chains
 
 <!-- DOSSIER-SUMMARY -->
-> **Research question:** Does the second-order difference between longest unrestricted and squarefree divisibility subsequences have a limiting constant?
-> **Formulation:** candidate. **Novelty:** unverified; related random-order arithmetic subsequences and hypercube accessibility theory are established.
-> **Verified/known progress:** Internally proved equal first-order lengths, with a diverging second-order gap between 1 and 2 times log N log log log N/(log log N)^2.
-> **Finite evidence:** Reproducible dynamic programming on random permutations; asymptotic conclusions require the supporting proof.
+> **Research question:** Does the second-order gap between unrestricted and squarefree divisibility subsequences in a random permutation have a limiting constant?  
+> **Formulation:** candidate. **Novelty:** unverified; related arithmetic-subsequence and hypercube accessibility results are established.  
+> **Verified/known progress:** Internally proved D_N and S_N have common leading scale log N/log log N; their difference is between (1-o(1)) and (2+o(1)) times log N log log log N/(log log N)^2 with high probability.  
+> **Finite evidence:** Exact finite dynamic-programming checks and seeded samples; asymptotic bounds proved using divisor-chain counting, prime asymptotics, and the Hegarty–Martinsson accessible-cube theorem.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 

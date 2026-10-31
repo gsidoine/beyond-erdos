@@ -1009,6 +1009,33 @@
         }
       ],
       "portfolio_tier": "A"
+    },
+    {
+      "id": "P041",
+      "title": "Random-order divisibility chains",
+      "area": "probability",
+      "file": "problems/probability/P041-random-order-divisibility-chains.md",
+      "question": "Does the second-order gap between unrestricted and squarefree divisibility subsequences in a random permutation have a limiting constant?",
+      "status": "candidate",
+      "novelty": "unverified; related arithmetic-subsequence and hypercube accessibility results are established",
+      "result": "Internally proved D_N and S_N have common leading scale log N/log log N; their difference is between (1-o(1)) and (2+o(1)) times log N log log log N/(log log N)^2 with high probability",
+      "verification": "Exact finite dynamic-programming checks and seeded samples; asymptotic bounds proved using divisor-chain counting, prime asymptotics, and the Hegarty–Martinsson accessible-cube theorem",
+      "priority": "structural random-order comparison; determine second-order limit or fluctuations",
+      "sources": [
+        {
+          "name": "Hegarty and Martinsson (2014), accessible paths",
+          "url": "https://doi.org/10.1214/13-AAP949"
+        },
+        {
+          "name": "Goh and Zhao (2021), arithmetic subsequences",
+          "url": "https://arxiv.org/abs/2012.12339"
+        },
+        {
+          "name": "Lewis and Souza (2021), divisibility poset dimension",
+          "url": "https://doi.org/10.1016/j.jcta.2020.105391"
+        }
+      ],
+      "portfolio_tier": "B"
     }
   ],
   "catalogue_policy": "Open to community contributions; proposed additions and status changes require source review"
