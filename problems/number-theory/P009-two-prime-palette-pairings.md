@@ -120,7 +120,7 @@ partition $[8]$ and have prime sums **$7,7,11,11$**, respectively. The two prime
 
 This does **not** show that the existence of a two-palette matching can hold where *no* standard prime-pair certificate exists; a separate such certificate exists when $n=4$. Therefore the logical relationship between the **two existence statements** remains unproved. See the [dated source-level audit](../../audits/2026-10-29-P015-P016-P018-P020-source-comparison-and-P010-snapshot.md).
 
-## Next mathematical attacks
+## Further questions
 
 1. Characterize two-color matchings directly via the union of two reflection matchings (paths and even cycles), without presupposing $p-q=2n$.
 2. Determine whether the two-color statement can be reduced to a theorem *strictly weaker* than Maillet's prime-difference conjecture.
@@ -128,8 +128,8 @@ This does **not** show that the existence of a two-palette matching can hold whe
 4. Study the number of possible prime palettes and the trade-off with P001's maximum spectrum.
 
 
-## Consolidation disposition (P001–P035 audit)
+## Relation to existing results
 
-**Disposition — source gate, not a flagship open conjecture.** The two-label pairing phenomenon is closely tied to prime differences and Maillet-type questions. Compare logical implications in both directions with the literature; finite certificates do not imply unconditional all-n existence.
+Two-label pairings are closely related to Maillet-type prime-difference questions. An equivalence between the pairing statement and an established prime-difference conjecture has not been proved; finite certificates do not establish existence for every order.
 
-This is a priority/novelty gate, not an independently refereed claim about whether the surviving problem is open.
+
