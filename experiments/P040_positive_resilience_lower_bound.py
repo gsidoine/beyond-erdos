@@ -42,7 +42,7 @@ def main():
     assert 0.12 < c < 0.122
     C4_upper = (113/48)*(1649/1280)*exp(7*(1/49 + 1/14))
     assert C4_upper < 6
-    assert 6 * (2/5)**3 / (4/5)**4 == 15/16
+    assert abs(6 * (2/5)**3 / (4/5)**4 - 15/16) < 1e-12
     for n in (100, 300, 1000):
         d, a, b = density_and_moments(n)
         assert abs(d-q) < 0.02, (n, d)
