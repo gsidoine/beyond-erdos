@@ -76,11 +76,34 @@ For the deficit $D(N)=2\pi(\sqrt N)-H(N)$, Theorem 2 gives $D(N)=o(\pi(\sqrt N))
 
 A simple lower bound is $D(N)\ge r(N)$, where $r(N)$ counts small primes $p\le\sqrt N$ with $pq_1>N$ and $q_1$ is the first prime above $\sqrt N$: such small primes cannot neighbor any large witness, so at most $m-r(N)$ large witnesses can occur on a cycle.
 
+## Corollary: unbounded deficit (from Pintz's theorem)
+
+$
+\boxed{\limsup_{N\to\infty}\bigl(2\pi(\sqrt N)-H(N)\bigr)=\infty.}
+$
+
+**Proof.** Fix an arbitrary integer $k\ge1$. Let $p_1<p_2<\cdots$ denote consecutive primes and $d_i=p_{i+1}-p_i$. Pintz's [Theorem 1 (2015)](https://arxiv.org/abs/1406.2658) supplies infinitely many indices $n$ with
+
+$
+d_{n+1}>2k\max(d_n,d_{n-1},\ldots,d_{n-k+1}).
+$
+
+Set $x=p_{n+1}$ and $g=d_{n+1}$, so the first prime greater than $x$ is $q_1=x+g$. The $k+1$ primes $p_{n-k+1},\ldots,p_{n+1}$ all lie in $[x-kM,x]$, where $M$ is the maximum of the preceding $k$ gaps. By the prime number theorem $g=o(x)$, so eventually
+
+$
+kM<g/2<\frac{xg}{x+g}=x-\frac{x^2}{q_1}.
+$
+
+Thus each of these $k+1$ primes $p$ satisfies $pq_1>x^2$. Consequently $r(x^2)\ge k+1$, and the previously proved graph-theoretic bound gives $D(x^2)\ge k+1$. Since $k$ was arbitrary, the deficit is unbounded. QED.
+
+**Attribution:** the difficult number-theoretic input is wholly Pintz's theorem on prescribed large gaps following blocks of small gaps. The deduction to induced gcd cycles is elementary. The open question is now the **rate of growth of the maximal deficit**, not whether it is unbounded.
+
 ## Sources and verification
 
 - [Mahadev and Peled, *Longest cycles in threshold graphs*](https://doi.org/10.1016/0012-365X(93)E0077-H), Discrete Mathematics 135 (1994), 169–176.
 - [Harary and Peled, *Hamiltonian threshold graphs*](https://doi.org/10.1016/0166-218X(87)90050-3), Discrete Applied Mathematics 16 (1987), 11–15.
 - [Rilwan, Sameema and Oli, *Non-Coprime Graph of Integers*](https://doi.org/10.14445/22315373/IJMTT-V66I2P513), 2020: ordinary cycles, not the above induced-cycle calculation.
+- [Pintz, *On the Ratio of Consecutive Gaps Between Primes*](https://doi.org/10.1007/978-3-319-22240-0_17), Analytic Number Theory (2015), 285–304; Theorem 1.
 - [Erdős and Sárközy, *On cycles in the coprime graph of integers*](https://doi.org/10.37236/1323), Electronic Journal of Combinatorics 4 (1997), R8, treats the complementary arithmetic adjacency.
 
 The accompanying verifier constructs explicit prime-product induced cycles, audits the saturation inequalities and tests the upper bound in finite cases.
