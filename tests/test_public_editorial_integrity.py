@@ -91,5 +91,21 @@ class PublicEditorialIntegrityTests(unittest.TestCase):
         self.assertIn(f"**{len(ids)} numbered research entries", readme)
 
 
+    def test_published_erdos_portrait_and_quotation(self):
+        page = (ROOT / "docs/index.html").read_text(encoding="utf-8")
+        published = ROOT / "docs/assets/erdos-portrait.jpg"
+        original = ROOT / "assets/erdos-portrait.jpg"
+        self.assertTrue(published.is_file())
+        self.assertEqual(published.read_bytes(), original.read_bytes())
+        self.assertIn('src="./assets/erdos-portrait.jpg"', page)
+        self.assertIn("The purpose of life is to prove and to conjecture.", page)
+        self.assertIn(
+            "https://mathshistory.st-andrews.ac.uk/Biographies/Erdos/quotations/",
+            page,
+        )
+        self.assertIn("The Acorns (13)", page)
+        self.assertIn("The Seedbed (26)", page)
+
+
 if __name__ == "__main__":
     unittest.main()
