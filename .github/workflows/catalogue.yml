@@ -96,3 +96,6 @@ jobs:
 
       - name: Verify P033 prime palette connectivity and twin-prime baseline
         run: python experiments/P033_prime_sum_three_palette.py
+
+      - name: Verify P036 Pasch overlap rank conditions
+        run: python experiments/P036_pasch_overlap_ranks.py
