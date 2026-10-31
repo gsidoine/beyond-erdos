@@ -35,7 +35,7 @@ Contributions are welcome: new statements, proofs, counterexamples, calculations
 
 ## The Acorns
 
-Thirteen problems selected for their possible structural consequences. The term follows Erdős's [acorn metaphor](https://www.erdosproblems.com/). The classification is editorial and does not determine historical priority.
+Fifteen problems selected for their possible structural consequences. The term follows Erdős's [acorn metaphor](https://www.erdosproblems.com/). The classification is editorial and does not determine historical priority.
 
 <!-- ACORNS:START -->
 | ID | Problem | Area |
@@ -53,11 +53,13 @@ Thirteen problems selected for their possible structural consequences. The term 
 | [P031](problems/number-theory/P031-coprime-sidon-extremum.md) | How large can a pairwise-coprime Sidon set be? | number theory |
 | [P033](problems/graph-theory/P033-prime-sum-three-palette.md) | Can three prime sums connect all integers? | graph theory |
 | [P040](problems/graph-theory/P040-coprime-matching-local-resilience.md) | Local resilience of coprime perfect matchings | graph theory |
+| [P043](problems/graph-theory/P043-prime-denominator-farey-components.md) | Components of the prime-denominator Farey graph | graph theory |
+| [P044](problems/probability/P044-squarefree-displacement-permutations.md) | Squarefree displacement permutations | probability |
 <!-- ACORNS:END -->
 
 ## The Seedbed
 
-Thirty further questions, together with their partial results, obstructions and references.
+Twenty-eight further questions, together with their partial results, obstructions and references.
 
 <!-- SEEDBED:START -->
 | ID | Problem | Area |
@@ -90,8 +92,6 @@ Thirty further questions, together with their partial results, obstructions and 
 | [P039](problems/number-theory/P039-prime-product-plus-one-matching.md) | Perfect matchings with prime product plus one | number theory |
 | [P041](problems/probability/P041-random-order-divisibility-chains.md) | Random-order divisibility chains | probability |
 | [P042](problems/graph-theory/P042-kummer-one-carry-graph.md) | Hamiltonian paths in one-carry graphs | graph theory |
-| [P043](problems/graph-theory/P043-prime-denominator-farey-components.md) | Components of the prime-denominator Farey graph | graph theory |
-| [P044](problems/probability/P044-squarefree-displacement-permutations.md) | Squarefree displacement permutations | probability |
 <!-- SEEDBED:END -->
 
 ## The Harvest — internally resolved results
