@@ -79,7 +79,7 @@ These are consistency checks only; the theorem is established by the direct symb
 
 The result is a structural **classification**, rather than an improvement to the unresolved connectivity threshold. It requires no PNT, sieve argument, gcd-one hypothesis, or conjecture concerning prime gaps. The four-cycle count is exact even when the graph is disconnected; the girth conclusion does use the existing six-cycle theorem's near-n hypothesis.
 
-The reflection identity and the additive relation $p+r=2q$ are elementary. We have **not** established whether this particular exact four-cycle formula already appears in prime-sum graph literature. Main adjacent references: Chen–Fu–Guo (2021), *Hamiltonicity in Prime Sum Graphs*, and Croot–Jin (2026), *Prime Sum Graphs and the Induced Trees They Contain*.
+The reflection identity and the additive relation $p+r=2q$ are elementary. The occurrence of this exact four-cycle formula in earlier prime-sum graph literature has not been determined. Main adjacent references: Chen–Fu–Guo (2021), *Hamiltonicity in Prime Sum Graphs*, and Croot–Jin (2026), *Prime Sum Graphs and the Induced Trees They Contain*.
 
 ### P031 parallel investigation
 
