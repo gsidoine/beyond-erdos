@@ -72,7 +72,7 @@ Either prove $\liminf \chi_{\mathrm{PS}}(N)/\sqrt N>1$, or produce colorings wit
 
 ## Relation to existing results
 
-**Known comparison.** The Sidon partition theorem SR(k)=k²+o(k²) is established by Espinosa-García et al. (2024), Theorem 1, DOI 10.1007/s40590-024-00676-7. Our dyadic bound is a combination of classical coloring and primitive-band observations, not an original foundational theorem. Originality of the simultaneous constraint remains unverified.
+**Known comparison.** The Sidon partition theorem SR(k)=k²+o(k²) is established by Espinosa-García et al. (2024), Theorem 1, DOI 10.1007/s40590-024-00676-7. The dyadic bound is a combination of classical coloring and primitive-band observations, not an original foundational theorem. Originality of the simultaneous constraint remains unverified.
 
 
 ## Related resolved extremal question (distinct from the coloring problem)
