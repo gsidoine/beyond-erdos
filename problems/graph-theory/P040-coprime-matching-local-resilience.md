@@ -3,8 +3,8 @@
 <!-- DOSSIER-SUMMARY -->
 > **Research question:** Does the local matching resilience of the even–odd coprime graph converge, and is its value determined by finite-prime Hall obstructions?  
 > **Formulation:** candidate. **Novelty:** unverified; original half-resilience conjecture disproved by finite-prime Hall cuts; true sharp limit unknown.  
-> **Verified/known progress:** Proved limsup rho_n ≤ 914/2145 < 1/2 by finite-prime Hall obstructions, refining an elementary 7/15 cut; convergence unknown.  
-> **Finite evidence:** Exact rational prime-support certificates and a concrete n=1155 Hall cut; exhaustive finite Hall values n≤10.  
+> **Verified/known progress:** Proved 16/π²−3/2 ≤ liminf rho_n ≤ limsup rho_n ≤ 914/2145; sharp limit and finite-prime variational equality remain open.  
+> **Finite evidence:** Full Hall-cut lower-bound proof using coprime density and fourth reciprocal-degree moment; exact modular upper certificates and finite values n≤10.  
 > **Navigation:** [Full problem catalogue](../../README.md#problem-catalogue) · [Status and scope](../../README.md#status-and-scope) · [Literature and audits](../../README.md#literature-and-audits)
 <!-- /DOSSIER-SUMMARY -->
 
