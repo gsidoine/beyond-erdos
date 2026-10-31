@@ -6,6 +6,8 @@
 
 <p align="center"><em>Paul Erdős</em></p>
 
+<p align="center"><small>Photograph: George Csicsery / Zala Films, from <em>N Is a Number: A Portrait of Paul Erdős</em> (1993). © George Csicsery / Zala Films.</small></p>
+
 <p align="center"><em>“The purpose of life is to prove and to conjecture.”</em><br><small>— Paul Erdős, as recorded by <a href="https://mathshistory.st-andrews.ac.uk/Biographies/Erdos/quotations/">MacTutor</a>.</small></p>
 
 **Meta Erdős** is a collection of **41 numbered research entries (P001–P041)** in number theory, combinatorics, graph theory, probability and related fields. The entries include conjectures, exact results, counterexamples and finite computations.
