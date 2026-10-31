@@ -107,8 +107,8 @@ class PublicEditorialIntegrityTests(unittest.TestCase):
             "https://mathshistory.st-andrews.ac.uk/Biographies/Erdos/quotations/",
             page,
         )
-        self.assertIn("The Acorns (13)", page)
-        self.assertIn("The Seedbed (30)", page)
+        self.assertIn("The Acorns (15)", page)
+        self.assertIn("The Seedbed (28)", page)
 
 
 if __name__ == "__main__":
