@@ -54,8 +54,8 @@ The [exact graph verifier](../../experiments/P032_prime_sum_diameter.py) checks 
 **Priority warning:** this question may be an elementary reformulation of already-studied prime-difference coverage. Establish independent mathematical significance before presenting it as a novel conjecture.
 
 
-## Consolidation disposition (P001–P035 audit)
+## Relation to existing results
 
-**Disposition — source gate, high analytic dependence.** Diameter seven translates into uniformly constrained prime-pair differences. Check exact relation to Erdős problem 17 and sieve barriers before describing this as an independent tractable problem. Preserve finite experiments only as finite evidence.
+The diameter-seven assertion imposes uniformly constrained differences of primes. Its relation to Erdős Problem 17 and existing prime-difference results remains unresolved. The enumerated cases are finite evidence only.
 
-This is a priority/novelty gate, not an independently refereed claim about whether the surviving problem is open.
+
