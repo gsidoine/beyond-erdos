@@ -988,7 +988,7 @@
       "title": "Half-resilience of coprime perfect matchings",
       "area": "graph theory",
       "file": "problems/graph-theory/P040-coprime-matching-local-resilience.md",
-      "question": "Can every matching of the even–odd coprime graph survive adversarial deletion of less than half of each vertex's incident edges?",
+      "question": "Does the even–odd coprime graph retain a perfect matching after any deletion of less than half of each vertex's incident edges?",
       "status": "candidate",
       "novelty": "unverified; Pomerance (2021) proves coprime matching existence but not sharp local deletion resilience",
       "result": "Proved limsup of local matching resilience ≤1/2; exact Hall-obstruction values for n≤10",
